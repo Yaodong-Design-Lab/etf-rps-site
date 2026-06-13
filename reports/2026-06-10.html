@@ -18,7 +18,7 @@
       <section class="report-section conclusion">
         <div class="section-head">
           <div class="section-title">今日关注</div>
-          <span>RPS20 主视角</span>
+          <span>RPS 20 主视角</span>
         </div>
         <div class="conclusion-list">
           <div class="conclusion-row">
@@ -33,39 +33,40 @@
             <span>代表标的</span>
             <strong id="topEtf">-</strong>
           </div>
-          <div class="conclusion-note" id="riskTip">-</div>
         </div>
       </section>
 
       <section class="report-section ranking">
         <div class="ranking-head">
-          <div>
-          <div class="section-title">ETF 排名</div>
-            <p id="rankingHint">RPS20 ≥ 90 强度榜</p>
+          <div class="ranking-copy">
+            <div class="ranking-title-row">
+              <div class="section-title">ETF 排名</div>
+              <button id="toggleAll" class="mode-toggle" type="button"><span>强度榜</span><b>全部ETF</b></button>
+            </div>
+            <p id="rankingHint">RPS 20 ≥ 90 强度榜</p>
             <div class="ranking-note">
               <span><i class="res-swatch hot"></i>强共振</span>
               <span><i class="res-swatch warm"></i>中等共振</span>
               <span><i class="res-swatch soft"></i>轻度共振</span>
             </div>
           </div>
-          <button id="toggleAll" class="mode-toggle" type="button"><span>强度榜</span><b>全部ETF</b></button>
         </div>
         <div class="rps-switcher" aria-label="切换 RPS 排序">
-          <button class="rps-sort" type="button" data-key="rps3">RPS3</button>
-          <button class="rps-sort" type="button" data-key="rps5">RPS5</button>
-          <button class="rps-sort" type="button" data-key="rps10">RPS10</button>
-          <button class="rps-sort active" type="button" data-key="rps20">RPS20</button>
-          <button class="rps-sort" type="button" data-key="rps50">RPS50</button>
-          <button class="rps-sort" type="button" data-key="rps120">RPS120</button>
-          <button class="rps-sort" type="button" data-key="rps250">RPS250</button>
+          <button class="rps-sort" type="button" data-key="rps3">RPS 3</button>
+          <button class="rps-sort" type="button" data-key="rps5">RPS 5</button>
+          <button class="rps-sort" type="button" data-key="rps10">RPS 10</button>
+          <button class="rps-sort active" type="button" data-key="rps20">RPS 20</button>
+          <button class="rps-sort" type="button" data-key="rps50">RPS 50</button>
+          <button class="rps-sort" type="button" data-key="rps120">RPS 120</button>
+          <button class="rps-sort" type="button" data-key="rps250">RPS 250</button>
         </div>
         <div class="table-scroll">
           <table class="etf-table">
             <thead>
-              <tr class="group-row"><th colspan="4">基础信息</th><th colspan="1" id="rpsGroupHead">RPS强度</th><th colspan="4">净值涨跌（%）</th></tr>
+              <tr class="group-row"><th colspan="4">基础信息</th><th colspan="1" id="rpsGroupHead">RPS 强度</th><th colspan="4">净值涨跌（%）</th></tr>
               <tr>
                 <th>排</th><th>代码</th><th>名称</th><th>主题</th>
-                <th id="activeRpsHead">RPS20</th>
+                <th id="activeRpsHead">RPS 20</th>
                 <th>1日</th><th>3日</th><th>5日</th><th>20日</th>
               </tr>
             </thead>

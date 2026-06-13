@@ -9,7 +9,7 @@
 
   const $ = (selector) => document.querySelector(selector);
   const $$ = (selector) => Array.from(document.querySelectorAll(selector));
-  const rpsLabels = { rps3: "RPS3", rps5: "RPS5", rps10: "RPS10", rps20: "RPS20", rps50: "RPS50", rps120: "RPS120", rps250: "RPS250" };
+  const rpsLabels = { rps3: "RPS 3", rps5: "RPS 5", rps10: "RPS 10", rps20: "RPS 20", rps50: "RPS 50", rps120: "RPS 120", rps250: "RPS 250" };
   const resonanceKeys = ["rps3", "rps5", "rps10", "rps20", "rps50", "rps120", "rps250"];
 
   const fmt = (value) => value === null || value === undefined || Number.isNaN(Number(value)) ? "-" : Number(value).toFixed(1);
@@ -39,11 +39,10 @@
     $("#strongestDirection").textContent = data.summary.strongestDirection;
     $("#topEtf").textContent = data.summary.topEtf;
     $("#watchDirections").textContent = data.summary.watchDirections.join(" / ") || "-";
-    $("#riskTip").textContent = data.summary.riskTip;
     if (!$("#focusBasis")) {
-      $("#riskTip").insertAdjacentHTML("afterend", '<div class="focus-basis" id="focusBasis"></div>');
+      $(".conclusion-list").insertAdjacentHTML("beforeend", '<div class="focus-basis" id="focusBasis"></div>');
     }
-    $("#focusBasis").textContent = "最强方向口径：取当日 R20 排名前 12 只 ETF，按主题出现数量优先、平均 R20 次之排序。";
+    $("#focusBasis").textContent = "最强方向口径：取当日 RPS 20 排名前 12 只 ETF，按主题出现数量优先、平均 RPS 20 次之排序；观察方向取其后的前 3 个主题。";
   }
 
   function sortedEtfs() {
@@ -66,7 +65,7 @@
     }
     $("#rankingExplain").textContent = showAll
       ? "显示当前 ETF 池全部标的，可用上方 RPS 周期切换排序。"
-      : `${label} 代表近 ${label.replace("RPS", "")} 个交易日相对价格强度；90 分以上约等于强度排名进入前 10%。`;
+      : `${label} 代表近 ${label.replace("RPS ", "")} 个交易日相对价格强度；90 分以上约等于强度排名进入前 10%。`;
     $("#activeRpsHead").textContent = label;
     $("#rpsGroupHead").textContent = `${label} 强度`;
     $("#etfTableBody").innerHTML = list.map((item, index) => `

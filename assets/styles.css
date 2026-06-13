@@ -181,7 +181,18 @@ footer,
 }
 
 .ranking-head {
+  display: block;
+}
+
+.ranking-title-row {
+  display: flex;
   align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.ranking-copy {
+  min-width: 0;
 }
 
 .ranking-head p {
@@ -281,11 +292,11 @@ button {
 
 .rps-switcher {
   display: flex;
-  gap: 8px;
+  gap: 6px;
   overflow-x: auto;
   border-bottom: 1px solid var(--line);
   background: #fbfcfe;
-  padding: 10px 12px;
+  padding: 10px;
   scrollbar-width: none;
 }
 
@@ -297,12 +308,13 @@ button {
 .bt-sort,
 .range-sort,
 .hold-sort {
-  min-width: 54px;
+  flex: 0 0 auto;
+  min-width: 72px;
   border-radius: 8px;
   background: #fff;
   color: #374151;
-  padding: 8px 10px;
-  font-size: 13px;
+  padding: 8px 9px;
+  font-size: 12px;
 }
 
 .rps-sort.active,
@@ -841,23 +853,36 @@ button {
   width: 78px;
 }
 
-.etf-table tbody tr.res-hot td:first-child {
-  border-left: 5px solid #e85d7c;
-}
-
-.etf-table tbody tr.res-warm td:first-child {
-  border-left: 5px solid #f6c75f;
-}
-
-.etf-table tbody tr.res-soft td:first-child {
-  border-left: 5px solid #3b82f6;
-}
-
 .rank-cell,
 .code-cell {
   color: #111827;
   font-weight: 900;
   text-align: left !important;
+}
+
+.rank-cell {
+  position: relative;
+}
+
+.rank-cell::before {
+  position: absolute;
+  top: 0;
+  bottom: -1px;
+  left: 0;
+  width: 4px;
+  content: "";
+}
+
+.res-hot .rank-cell::before {
+  background: #e85d7c;
+}
+
+.res-warm .rank-cell::before {
+  background: #f6c75f;
+}
+
+.res-soft .rank-cell::before {
+  background: #3b82f6;
 }
 
 .name-cell,
