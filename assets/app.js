@@ -4,6 +4,8 @@
 
   let showAll = false;
   let sortKey = "rps20";
+  let historyPage = 1;
+  const historyPageSize = 8;
 
   const $ = (selector) => document.querySelector(selector);
   const $$ = (selector) => Array.from(document.querySelectorAll(selector));
@@ -38,6 +40,10 @@
     $("#topEtf").textContent = data.summary.topEtf;
     $("#watchDirections").textContent = data.summary.watchDirections.join(" / ") || "-";
     $("#riskTip").textContent = data.summary.riskTip;
+    if (!$("#focusBasis")) {
+      $("#riskTip").insertAdjacentHTML("afterend", '<div class="focus-basis" id="focusBasis"></div>');
+    }
+    $("#focusBasis").textContent = "最强方向口径：取当日 R20 排名前 12 只 ETF，按主题出现数量优先、平均 R20 次之排序。";
   }
 
   function sortedEtfs() {
@@ -74,12 +80,37 @@
 
   function renderHistory() {
     const prefix = location.pathname.includes("/reports/") ? "../" : "";
-    $("#historyList").innerHTML = data.history.map((item) => `
+    const totalPages = Math.max(1, Math.ceil(data.history.length / historyPageSize));
+    historyPage = Math.min(Math.max(1, historyPage), totalPages);
+    const start = (historyPage - 1) * historyPageSize;
+    const items = data.history.slice(start, start + historyPageSize);
+    $("#historyList").innerHTML = items.map((item) => `
       <a class="history-item" href="${prefix}${item.url}">
         <strong>${item.title}</strong>
         <span>查看</span>
       </a>
     `).join("");
+    if (!$("#historyPager")) {
+      $("#historyList").insertAdjacentHTML("afterend", `
+        <div class="history-pager" id="historyPager">
+          <button type="button" id="historyPrev">上一页</button>
+          <span id="historyPageText"></span>
+          <button type="button" id="historyNext">下一页</button>
+        </div>
+      `);
+      $("#historyPrev").addEventListener("click", () => {
+        historyPage -= 1;
+        renderHistory();
+      });
+      $("#historyNext").addEventListener("click", () => {
+        historyPage += 1;
+        renderHistory();
+      });
+    }
+    $("#historyPageText").textContent = `${historyPage} / ${totalPages}`;
+    $("#historyPrev").disabled = historyPage <= 1;
+    $("#historyNext").disabled = historyPage >= totalPages;
+    $("#historyPager").hidden = data.history.length <= historyPageSize;
   }
 
   $("#toggleAll").addEventListener("click", () => {

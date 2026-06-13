@@ -52,7 +52,8 @@ h1 {
 .ranking-head p,
 footer,
 .section-head span,
-.conclusion-note {
+.conclusion-note,
+.focus-basis {
   color: var(--muted);
   font-size: 13px;
 }
@@ -631,6 +632,12 @@ button {
   padding: 9px 10px;
 }
 
+.focus-basis {
+  margin-top: 8px;
+  font-size: 12px;
+  line-height: 1.55;
+}
+
 .chart-panel {
   padding-bottom: 12px;
 }
@@ -960,6 +967,37 @@ button {
 .history-item span {
   color: var(--muted);
   font-size: 12px;
+}
+
+.history-pager {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border-top: 1px solid var(--line);
+  padding: 10px 12px 12px;
+}
+
+.history-pager button {
+  min-width: 72px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: #fff;
+  color: var(--ink);
+  font: inherit;
+  font-size: 12px;
+  font-weight: 800;
+  padding: 7px 10px;
+}
+
+.history-pager button:disabled {
+  opacity: 0.42;
+}
+
+.history-pager span {
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 800;
 }
 
 footer {
