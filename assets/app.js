@@ -9,7 +9,7 @@
 
   const $ = (selector) => document.querySelector(selector);
   const $$ = (selector) => Array.from(document.querySelectorAll(selector));
-  const rpsLabels = { rps3: "R3", rps5: "R5", rps10: "R10", rps20: "R20", rps50: "R50", rps120: "R120", rps250: "R250" };
+  const rpsLabels = { rps3: "RPS3", rps5: "RPS5", rps10: "RPS10", rps20: "RPS20", rps50: "RPS50", rps120: "RPS120", rps250: "RPS250" };
   const resonanceKeys = ["rps3", "rps5", "rps10", "rps20", "rps50", "rps120", "rps250"];
 
   const fmt = (value) => value === null || value === undefined || Number.isNaN(Number(value)) ? "-" : Number(value).toFixed(1);
@@ -61,6 +61,12 @@
     const list = sortedEtfs();
     $("#toggleAll").classList.toggle("show-all", showAll);
     $("#rankingHint").textContent = showAll ? "全部ETF" : `${label} ≥ 90 强度榜`;
+    if (!$("#rankingExplain")) {
+      $("#rankingHint").insertAdjacentHTML("afterend", '<p class="ranking-explain" id="rankingExplain"></p>');
+    }
+    $("#rankingExplain").textContent = showAll
+      ? "显示当前 ETF 池全部标的，可用上方 RPS 周期切换排序。"
+      : `${label} 代表近 ${label.replace("RPS", "")} 个交易日相对价格强度；90 分以上约等于强度排名进入前 10%。`;
     $("#activeRpsHead").textContent = label;
     $("#rpsGroupHead").textContent = `${label} 强度`;
     $("#etfTableBody").innerHTML = list.map((item, index) => `
