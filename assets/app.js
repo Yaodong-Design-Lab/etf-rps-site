@@ -72,7 +72,7 @@
       <tr class="${resonanceClass(item)}">
         <td class="rank-cell">${index + 1}</td>
         <td class="code-cell">${item.code}</td>
-        <td class="name-cell"><span class="res-dot"></span>${item.shortName}</td>
+        <td class="name-cell">${item.shortName}</td>
         <td class="theme-cell">${item.theme}</td>
         ${cell(item[sortKey], rpsTone(item[sortKey]))}
         <td class="${tone(item.ret1)}">${signed(item.ret1)}</td>

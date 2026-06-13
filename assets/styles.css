@@ -897,33 +897,6 @@ button {
   font-weight: 900;
 }
 
-.name-cell .res-dot {
-  display: none;
-  width: 8px;
-  height: 8px;
-  margin-right: 6px;
-  border-radius: 999px;
-  vertical-align: 1px;
-}
-
-.res-hot .name-cell .res-dot,
-.res-warm .name-cell .res-dot,
-.res-soft .name-cell .res-dot {
-  display: inline-block;
-}
-
-.res-hot .name-cell .res-dot {
-  background: #e85d7c;
-}
-
-.res-warm .name-cell .res-dot {
-  background: #f6c75f;
-}
-
-.res-soft .name-cell .res-dot {
-  background: #3b82f6;
-}
-
 .res-hot .name-cell {
   background: #fff1f4;
 }
@@ -962,6 +935,14 @@ button {
 
 .down {
   color: var(--green);
+}
+
+.table-note {
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.55;
+  padding: 9px 12px 11px;
 }
 
 .strong,
