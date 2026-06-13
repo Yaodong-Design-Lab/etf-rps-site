@@ -1,0 +1,80 @@
+{
+  "title": "今日 ETF RPS 观察",
+  "date": "2026-06-12",
+  "latestReport": {
+    "title": "2026-06-12 ETF RPS 日报",
+    "url": "reports/daily_observation_full_2026-06-12.html",
+    "summary": {
+      "strongestDirection": "半导体",
+      "watchDirections": [
+        "科创成长",
+        "通信",
+        "信息技术"
+      ],
+      "riskTip": "RPS20≥95 的标的有 9 只，强势方向较集中；若高开过多或 RPS5/RPS10 转弱，优先控制仓位。",
+      "topEtf": "韩交所中韩半导体ETF（513310）",
+      "buyAdvice": "买入观察：优先 R20≥95，且 R5/R10 同步走强、R60/R120 不弱的 ETF；不追高开，等盘中回踩后仍保持强势再试。",
+      "sellAdvice": "卖出纪律：回测里 R20 跌破 60 退出表现最好；风险敏感时叠加 8% 止损，若 R5/R10 先转弱可先减仓。",
+      "positionAdvice": "仓位建议：当前强势集中在半导体，先小仓观察；若强势扩散到科创成长、通信、金融等方向，再考虑加仓。",
+      "highCount": 9,
+      "warmCount": 17,
+      "themeStrength": [
+        {
+          "theme": "半导体",
+          "count": 3,
+          "avgRps20": 99.4,
+          "avgRet20": 11.3
+        },
+        {
+          "theme": "科创成长",
+          "count": 2,
+          "avgRps20": 96.9,
+          "avgRet20": 7.9
+        },
+        {
+          "theme": "通信",
+          "count": 2,
+          "avgRps20": 95.3,
+          "avgRet20": 6.0
+        },
+        {
+          "theme": "信息技术",
+          "count": 1,
+          "avgRps20": 97.5,
+          "avgRet20": 8.3
+        },
+        {
+          "theme": "煤炭",
+          "count": 1,
+          "avgRps20": 96.9,
+          "avgRet20": 7.3
+        },
+        {
+          "theme": "野村日经225",
+          "count": 1,
+          "avgRps20": 95.0,
+          "avgRet20": 5.7
+        },
+        {
+          "theme": "科技龙头",
+          "count": 1,
+          "avgRps20": 93.8,
+          "avgRet20": 4.7
+        },
+        {
+          "theme": "银行",
+          "count": 1,
+          "avgRps20": 93.2,
+          "avgRet20": 4.6
+        }
+      ]
+    }
+  },
+  "history": [
+    {
+      "date": "2026-06-12",
+      "title": "2026-06-12 ETF RPS 日报",
+      "url": "reports/daily_observation_full_2026-06-12.html"
+    }
+  ]
+}
