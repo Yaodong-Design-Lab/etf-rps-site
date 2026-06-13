@@ -5,6 +5,7 @@
   let showAll = false;
   let sortKey = "rps20";
   let historyPage = 1;
+  let resonanceTipTimer = null;
   const historyPageSize = 8;
 
   const $ = (selector) => document.querySelector(selector);
@@ -129,6 +130,19 @@
       $$(".rps-sort").forEach((item) => item.classList.remove("active"));
       button.classList.add("active");
       renderEtfTable();
+    });
+  });
+
+  $$(".res-tip").forEach((tip) => {
+    tip.addEventListener("toggle", () => {
+      if (!tip.open) return;
+      $$(".res-tip").forEach((item) => {
+        if (item !== tip) item.open = false;
+      });
+      clearTimeout(resonanceTipTimer);
+      resonanceTipTimer = setTimeout(() => {
+        tip.open = false;
+      }, 5000);
     });
   });
 
