@@ -1,9 +1,9 @@
 {
-  "title": "今日 ETF RPS 观察",
   "date": "2026-06-12",
   "latestReport": {
+    "date": "2026-06-12",
     "title": "2026-06-12 ETF RPS 日报",
-    "url": "reports/daily_observation_full_2026-06-12.html",
+    "url": "reports/2026-06-12.html",
     "summary": {
       "strongestDirection": "半导体",
       "watchDirections": [
@@ -74,7 +74,122 @@
     {
       "date": "2026-06-12",
       "title": "2026-06-12 ETF RPS 日报",
-      "url": "reports/daily_observation_full_2026-06-12.html"
+      "url": "reports/2026-06-12.html"
+    },
+    {
+      "date": "2026-06-11",
+      "title": "2026-06-11 ETF RPS 日报",
+      "url": "reports/2026-06-11.html"
+    },
+    {
+      "date": "2026-06-10",
+      "title": "2026-06-10 ETF RPS 日报",
+      "url": "reports/2026-06-10.html"
+    },
+    {
+      "date": "2026-06-09",
+      "title": "2026-06-09 ETF RPS 日报",
+      "url": "reports/2026-06-09.html"
+    },
+    {
+      "date": "2026-06-08",
+      "title": "2026-06-08 ETF RPS 日报",
+      "url": "reports/2026-06-08.html"
+    },
+    {
+      "date": "2026-06-05",
+      "title": "2026-06-05 ETF RPS 日报",
+      "url": "reports/2026-06-05.html"
+    },
+    {
+      "date": "2026-06-04",
+      "title": "2026-06-04 ETF RPS 日报",
+      "url": "reports/2026-06-04.html"
+    },
+    {
+      "date": "2026-06-03",
+      "title": "2026-06-03 ETF RPS 日报",
+      "url": "reports/2026-06-03.html"
+    },
+    {
+      "date": "2026-06-02",
+      "title": "2026-06-02 ETF RPS 日报",
+      "url": "reports/2026-06-02.html"
+    },
+    {
+      "date": "2026-06-01",
+      "title": "2026-06-01 ETF RPS 日报",
+      "url": "reports/2026-06-01.html"
+    },
+    {
+      "date": "2026-05-29",
+      "title": "2026-05-29 ETF RPS 日报",
+      "url": "reports/2026-05-29.html"
+    },
+    {
+      "date": "2026-05-28",
+      "title": "2026-05-28 ETF RPS 日报",
+      "url": "reports/2026-05-28.html"
+    },
+    {
+      "date": "2026-05-27",
+      "title": "2026-05-27 ETF RPS 日报",
+      "url": "reports/2026-05-27.html"
+    },
+    {
+      "date": "2026-05-26",
+      "title": "2026-05-26 ETF RPS 日报",
+      "url": "reports/2026-05-26.html"
+    },
+    {
+      "date": "2026-05-25",
+      "title": "2026-05-25 ETF RPS 日报",
+      "url": "reports/2026-05-25.html"
+    },
+    {
+      "date": "2026-05-22",
+      "title": "2026-05-22 ETF RPS 日报",
+      "url": "reports/2026-05-22.html"
+    },
+    {
+      "date": "2026-05-21",
+      "title": "2026-05-21 ETF RPS 日报",
+      "url": "reports/2026-05-21.html"
+    },
+    {
+      "date": "2026-05-20",
+      "title": "2026-05-20 ETF RPS 日报",
+      "url": "reports/2026-05-20.html"
+    },
+    {
+      "date": "2026-05-19",
+      "title": "2026-05-19 ETF RPS 日报",
+      "url": "reports/2026-05-19.html"
+    },
+    {
+      "date": "2026-05-18",
+      "title": "2026-05-18 ETF RPS 日报",
+      "url": "reports/2026-05-18.html"
+    },
+    {
+      "date": "2026-05-15",
+      "title": "2026-05-15 ETF RPS 日报",
+      "url": "reports/2026-05-15.html"
+    },
+    {
+      "date": "2026-05-14",
+      "title": "2026-05-14 ETF RPS 日报",
+      "url": "reports/2026-05-14.html"
+    },
+    {
+      "date": "2026-05-13",
+      "title": "2026-05-13 ETF RPS 日报",
+      "url": "reports/2026-05-13.html"
+    },
+    {
+      "date": "2026-05-12",
+      "title": "2026-05-12 ETF RPS 日报",
+      "url": "reports/2026-05-12.html"
     }
   ]
 }

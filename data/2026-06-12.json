@@ -1,4 +1,4 @@
-window.ETF_RPS_DAILY = {
+{
   "date": "2026-06-12",
   "universe": 175,
   "validCount": 161,
@@ -3893,4 +3893,4 @@ window.ETF_RPS_DAILY = {
       "url": "reports/2026-05-12.html"
     }
   ]
-};
+}
