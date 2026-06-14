@@ -72,10 +72,8 @@
     .legend-dot.medium { background: #f5c451; }
     .legend-dot.light { background: #3b82f6; }
     .resonance-tip { position: absolute; left: 0; top: calc(100% + 8px); z-index: 5; max-width: min(320px, 86vw); border: 1px solid #dbe4ef; border-radius: 10px; background: #fff; box-shadow: 0 10px 28px rgba(15, 23, 42, .12); color: #374151; font-size: 13px; font-weight: 950; line-height: 1.45; padding: 10px 12px; }
-    .rule-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
-    .rule-box { border: 1px solid #dbe4ef; border-radius: 10px; background: rgba(255, 255, 255, .58); padding: 9px 10px; }
-    .rule-box b { display: block; margin-bottom: 5px; color: #334155; font-size: 13px; }
-    .rule-box div { font-size: 12px; line-height: 1.55; }
+    .head-tip { display: inline-flex; align-items: center; justify-content: flex-end; border: 0; background: transparent; color: inherit; cursor: pointer; font: inherit; font-weight: inherit; padding: 0; text-align: inherit; }
+    .head-tip::after { content: "?"; display: inline-flex; align-items: center; justify-content: center; width: 13px; height: 13px; margin-left: 4px; border-radius: 999px; background: rgba(100, 116, 139, .18); color: #64748b; font-size: 9px; font-weight: 950; }
     .rank-tabs { display: flex; gap: 8px; overflow-x: auto; padding: 12px 14px; border-bottom: 1px solid var(--line); background: #fff; }
     .rank-tabs button { flex: 0 0 auto; min-width: 74px; border: 1px solid var(--line); border-radius: 10px; background: #fff; color: #374151; cursor: pointer; font: inherit; font-size: 14px; font-weight: 950; padding: 10px 12px; }
     .rank-tabs button.active { border-color: #f0a0b5; background: #fff0f3; color: #a1161d; }
@@ -124,7 +122,6 @@
       .status-main { font-size: 22px; }
       .position-number { font-size: 34px; }
       .board-line { grid-template-columns: 74px 1fr; }
-      .rule-grid { grid-template-columns: 1fr; }
     }
   </style>
 </head>
@@ -159,11 +156,6 @@
           <button type="button" class="legend-item" data-tip="1 个 RPS 周期 ≥ 90，代表轻度共振。"><span class="legend-dot light"></span>轻度共振</button>
           <div class="resonance-tip" id="resonanceTip" hidden></div>
         </div>
-        <div>连续前10 = 连续多少个交易日排进当前所选 RPS 周期前 10；趋势分 = 连续前10天数 × 当前 RPS。单日 RPS 很高但刚进前10，趋势分会低。</div>
-        <div class="rule-grid">
-          <div class="rule-box"><b>信号规则</b><div>持有：连续前10≥10天且当前 RPS≥90；建仓：连续前10≥3天且当前 RPS≥90；观察：当前 RPS≥80但连续性不足；回避：跌出前20、排名靠后或当前 RPS&lt;60。</div></div>
-          <div class="rule-box"><b>阶段规则</b><div>主升浪：当前 RPS≥90 且连续前10≥10天；启动期：连续前10≥3天且当前 RPS≥90；分歧期：跌出前10但仍在前20；退潮期：跌出前20；下跌趋势：当前 RPS&lt;60。</div></div>
-        </div>
       </div>
       <div class="rank-tabs">
         <button data-rps="rps3">RPS 3</button>
@@ -183,10 +175,10 @@
               <th class="name-col left">名称</th>
               <th class="theme-col left">主题</th>
               <th class="rps-col" id="rpsHead">RPS 20</th>
-              <th class="streak-col">连续前10</th>
-              <th class="signal-col">信号</th>
-              <th class="phase-col">阶段</th>
-              <th class="score-col">趋势分</th>
+              <th class="streak-col"><button type="button" class="head-tip" data-tip="连续前10：连续多少个交易日排进当前所选 RPS 周期前 10。">连续前10</button></th>
+              <th class="signal-col"><button type="button" class="head-tip" data-tip="信号规则：持有=连续前10≥10天且当前 RPS≥90；建仓=连续前10≥3天且当前 RPS≥90；观察=当前 RPS≥80但连续性不足；回避=跌出前20、排名靠后或当前 RPS&lt;60。">信号</button></th>
+              <th class="phase-col"><button type="button" class="head-tip" data-tip="阶段规则：主升浪=当前 RPS≥90 且连续前10≥10天；启动期=连续前10≥3天且当前 RPS≥90；分歧期=跌出前10但仍在前20；退潮期=跌出前20；下跌趋势=当前 RPS&lt;60。">阶段</button></th>
+              <th class="score-col"><button type="button" class="head-tip" data-tip="趋势分 = 连续前10天数 × 当前 RPS。单日 RPS 很高但刚进前10，趋势分会低；连续霸榜越久，趋势分越高。">趋势分</button></th>
             </tr>
           </thead>
           <tbody id="rankBody"></tbody>
@@ -327,14 +319,17 @@
         </tr>`;
       }).join("");
     }
-    document.querySelectorAll(".legend-item").forEach(button => {
+    function showTip(text) {
+      resonanceTip.textContent = text;
+      resonanceTip.hidden = false;
+      clearTimeout(resonanceTimer);
+      resonanceTimer = setTimeout(() => {
+        resonanceTip.hidden = true;
+      }, 5000);
+    }
+    document.querySelectorAll(".legend-item, .head-tip").forEach(button => {
       button.addEventListener("click", () => {
-        resonanceTip.textContent = button.dataset.tip;
-        resonanceTip.hidden = false;
-        clearTimeout(resonanceTimer);
-        resonanceTimer = setTimeout(() => {
-          resonanceTip.hidden = true;
-        }, 5000);
+        showTip(button.dataset.tip);
       });
     });
     document.querySelectorAll(".rank-tabs button").forEach(button => {
