@@ -58,6 +58,119 @@
       "streak": 9
     }
   ],
+  "portfolioBacktests": [
+    {
+      "startDate": "2026-06-05",
+      "endDate": "2026-06-12",
+      "label": "5个交易日前",
+      "holdDays": 5,
+      "return": 1.8,
+      "items": [
+        {
+          "theme": "半导体",
+          "name": "科创板半导体材料设备ETF",
+          "code": "588170",
+          "weight": 40,
+          "return": 9.9,
+          "rps20": 100.0,
+          "streak": 19
+        },
+        {
+          "theme": "通信",
+          "name": "全指通信设备ETF",
+          "code": "515880",
+          "weight": 30,
+          "return": -4.6,
+          "rps20": 98.9,
+          "streak": 4
+        },
+        {
+          "theme": "科技龙头",
+          "name": "科技龙头ETF",
+          "code": "515000",
+          "weight": 30,
+          "return": -2.7,
+          "rps20": 98.3,
+          "streak": 4
+        }
+      ],
+      "targetDays": 5
+    },
+    {
+      "startDate": "2026-05-29",
+      "endDate": "2026-06-12",
+      "label": "10个交易日前",
+      "holdDays": 10,
+      "return": -2.9,
+      "items": [
+        {
+          "theme": "半导体",
+          "name": "韩交所中韩半导体ETF",
+          "code": "513310",
+          "weight": 40,
+          "return": -0.2,
+          "rps20": 100.0,
+          "streak": 23
+        },
+        {
+          "theme": "科创成长",
+          "name": "科创创业50ETF",
+          "code": "159781",
+          "weight": 30,
+          "return": -5.5,
+          "rps20": 96.0,
+          "streak": 2
+        },
+        {
+          "theme": "创成长",
+          "name": "创成长ETF",
+          "code": "159967",
+          "weight": 30,
+          "return": -3.9,
+          "rps20": 95.4,
+          "streak": 2
+        }
+      ],
+      "targetDays": 10
+    },
+    {
+      "startDate": "2026-05-15",
+      "endDate": "2026-06-12",
+      "label": "20个交易日前",
+      "holdDays": 20,
+      "return": 4.3,
+      "items": [
+        {
+          "theme": "半导体",
+          "name": "韩交所中韩半导体ETF",
+          "code": "513310",
+          "weight": 40,
+          "return": 11.8,
+          "rps20": 98.9,
+          "streak": 13
+        },
+        {
+          "theme": "信息技术",
+          "name": "科创创业人工智能ETF",
+          "code": "588410",
+          "weight": 30,
+          "return": -7.0,
+          "rps20": 95.4,
+          "streak": 8
+        },
+        {
+          "theme": "通信",
+          "name": "全指通信设备ETF",
+          "code": "515880",
+          "weight": 30,
+          "return": 5.6,
+          "rps20": 94.9,
+          "streak": 2
+        }
+      ],
+      "targetDays": 20
+    }
+  ],
   "portfolioScore": 98,
   "leaders": [
     {
