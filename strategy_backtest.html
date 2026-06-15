@@ -54,6 +54,12 @@
     summary::-webkit-details-marker { display:none; }
     .table-wrap { overflow-x:auto; }
     table { width:100%; min-width:820px; border-collapse:collapse; }
+    .cycle-table { min-width:980px; table-layout:fixed; }
+    .cycle-table th, .cycle-table td { padding:9px 10px; font-size:12px; white-space:nowrap; }
+    .cycle-table th:nth-child(1), .cycle-table td:nth-child(1), .cycle-table th:nth-child(2), .cycle-table td:nth-child(2) { width:92px; }
+    .cycle-table th:nth-child(4), .cycle-table td:nth-child(4) { width:82px; }
+    .cycle-table th:nth-child(5), .cycle-table td:nth-child(5) { width:62px; }
+    .cycle-table td b, .cycle-table td small { overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
     th, td { border-bottom:1px solid var(--line); padding:10px 12px; text-align:right; vertical-align:middle; font-size:13px; }
     th { background:#fafafa; color:#3f3f46; font-size:12px; font-weight:650; }
     th:first-child, td:first-child, th:nth-child(2), td:nth-child(2), th:nth-child(3), td:nth-child(3) { text-align:left; }
@@ -135,9 +141,10 @@
       <div class="rule-grid">
         <div class="rule-box">
           <span>买入</span>
-          <b>近 1 个月进入市场最强区</b>
-          <b>近 3 个月仍保持强势</b>
-          <b>连续 3 天保持领先</b>
+          <b>RPS 20 &gt; 95</b>
+          <b>RPS 60 &gt; 80</b>
+          <b>连续 3 个交易日进入 RPS 20 前 5</b>
+          <b>取前三只 ETF，按 40% / 30% / 30% 分配</b>
         </div>
         <div class="rule-box">
           <span>卖出</span>
@@ -146,12 +153,11 @@
           <b>任一条件触发即卖出</b>
         </div>
       </div>
-      <div class="note">专业规则：RPS 20 &gt; 95，RPS 60 &gt; 80，且连续 3 个交易日排名进入 RPS 20 前 5；每次取前三只 ETF，按 40% / 30% / 30% 分配；当天出信号，下一交易日收盘执行。</div>
     </section>
     <section class="panel">
       <div class="panel-head"><h2>最近组合轮动</h2></div>
       <div class="table-wrap">
-        <table>
+        <table class="cycle-table">
           <thead><tr><th>买入日</th><th>卖出日</th><th>组合</th><th>组合收益</th><th>持仓</th></tr></thead>
           <tbody>
         <tr>
