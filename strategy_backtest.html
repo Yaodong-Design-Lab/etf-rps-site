@@ -64,6 +64,8 @@
     .cycle-table th:nth-child(4), .cycle-table td:nth-child(4) { width:78px; }
     .cycle-table th:nth-child(5), .cycle-table td:nth-child(5) { width:58px; }
     .cycle-table td b { overflow:hidden; text-overflow:ellipsis; white-space:nowrap; font-size:13px; font-weight:700; }
+    .cycle-table .cycle-status { color:var(--ink); font-size:12px; }
+    .cycle-table td:nth-child(2) small { display:block; margin-top:4px; color:var(--muted); font-size:10px; font-weight:400; }
     .combo-cell { text-align:left; }
     .combo-details { margin:5px 0 0; border:0; border-radius:0; background:transparent; box-shadow:none; overflow:visible; }
     .combo-details summary { padding:0; color:var(--muted); font-size:11px; font-weight:500; }
@@ -130,7 +132,7 @@
         <section class="panel">
           <div class="panel-head split-head"><h2>当前满足买入条件</h2><span>2026-06-15 · 1 只</span></div>
           <div class="signal-list"><div class="signal-row"><span>科创成长</span><b>成长ETF易方达</b><strong>40%</strong></div></div>
-          <div class="note">组合最多取前三只 ETF，筛不满时只显示已满足条件的标的；这不是完整买卖建议，实盘仍需要结合流动性、溢价和个人仓位。</div>
+          <div class="note">这是当前交易日的候选买入信号；策略只有在空仓时才会按 40% / 30% / 30% 买入前三只，若已有持仓则继续等卖出规则触发。</div>
         </section>
         
     <section class="panel">
@@ -172,18 +174,19 @@
     </section>
     <section class="panel" id="cycle-detail">
       <div class="panel-head"><h2>最近组合轮动</h2></div>
+      <div class="note">组合轮动是策略的实际交易记录：空仓后出现买入信号，下一交易日买入最多三只 ETF；每只 ETF 按卖出规则独立退出。最新一轮如显示“持有中”，代表尚未完全结束。</div>
       <div class="table-wrap">
         <table class="cycle-table">
-          <thead><tr><th>买入日</th><th>卖出日</th><th>组合</th><th>组合收益</th><th>持仓</th></tr></thead>
+          <thead><tr><th>买入日</th><th>状态</th><th>组合</th><th>组合收益</th><th>持仓</th></tr></thead>
           <tbody>
         <tr>
           <td>2026-06-08</td>
-          <td>2026-06-15</td>
+          <td><b class="cycle-status">持有中</b><small>截至 2026-06-15</small></td>
           <td class="combo-cell">
             <b>科创成长 / 通信 / 半导体</b>
             <details class="combo-details">
               <summary>3 只明细</summary>
-              <div>华夏创成长ETF<br>国泰中证全指通信设备ETF<br>华夏上证科创板半导体材料设备主题ETF</div>
+              <div>华夏创成长ETF · 已退出 · +2.5%<br>国泰中证全指通信设备ETF · 已退出 · -1.1%<br>华夏上证科创板半导体材料设备主题ETF · 持有中 · +19.0%</div>
             </details>
           </td>
           <td class="num red">+8.0%</td>
@@ -192,12 +195,12 @@
         
         <tr>
           <td>2026-06-02</td>
-          <td>2026-06-05</td>
+          <td><b class="cycle-status">已结束</b><small>截至 2026-06-05</small></td>
           <td class="combo-cell">
             <b>半导体</b>
             <details class="combo-details">
               <summary>3 只明细</summary>
-              <div>华夏上证科创板半导体材料设备主题ETF<br>华泰柏瑞中证韩交所中韩半导体ETF(QDII)<br>华夏国证半导体芯片ETF</div>
+              <div>华夏上证科创板半导体材料设备主题ETF · 已退出 · +2.6%<br>华泰柏瑞中证韩交所中韩半导体ETF(QDII) · 已退出 · -4.6%<br>华夏国证半导体芯片ETF · 已退出 · +0.1%</div>
             </details>
           </td>
           <td class="num green">-1.0%</td>
@@ -206,12 +209,12 @@
         
         <tr>
           <td>2026-05-22</td>
-          <td>2026-06-01</td>
+          <td><b class="cycle-status">已结束</b><small>截至 2026-06-01</small></td>
           <td class="combo-cell">
             <b>半导体</b>
             <details class="combo-details">
               <summary>3 只明细</summary>
-              <div>华夏上证科创板半导体材料设备主题ETF<br>华夏国证半导体芯片ETF<br>嘉实上证科创板芯片ETF</div>
+              <div>华夏上证科创板半导体材料设备主题ETF · 已退出 · -4.7%<br>华夏国证半导体芯片ETF · 已退出 · -1.4%<br>嘉实上证科创板芯片ETF · 已退出 · -7.5%</div>
             </details>
           </td>
           <td class="num green">-4.5%</td>
@@ -220,12 +223,12 @@
         
         <tr>
           <td>2026-04-14</td>
-          <td>2026-05-21</td>
+          <td><b class="cycle-status">已结束</b><small>截至 2026-05-21</small></td>
           <td class="combo-cell">
             <b>通信</b>
             <details class="combo-details">
               <summary>1 只明细</summary>
-              <div>富国中证通信设备主题ETF</div>
+              <div>富国中证通信设备主题ETF · 已退出 · +11.6%</div>
             </details>
           </td>
           <td class="num red">+4.7%</td>
@@ -234,12 +237,12 @@
         
         <tr>
           <td>2026-04-10</td>
-          <td>2026-04-13</td>
+          <td><b class="cycle-status">已结束</b><small>截至 2026-04-13</small></td>
           <td class="combo-cell">
             <b>能源化工</b>
             <details class="combo-details">
               <summary>1 只明细</summary>
-              <div>建信能源化工期货ETF</div>
+              <div>建信能源化工期货ETF · 已退出 · -1.1%</div>
             </details>
           </td>
           <td class="num green">-0.4%</td>
@@ -248,12 +251,12 @@
         
         <tr>
           <td>2026-03-18</td>
-          <td>2026-04-09</td>
+          <td><b class="cycle-status">已结束</b><small>截至 2026-04-09</small></td>
           <td class="combo-cell">
             <b>煤炭 / 嘉实标普石油 / 能源化工</b>
             <details class="combo-details">
               <summary>3 只明细</summary>
-              <div>国泰中证煤炭ETF<br>嘉实标普石油天然气勘探及生产精选行业ETF(QDII)<br>建信能源化工期货ETF</div>
+              <div>国泰中证煤炭ETF · 已退出 · +1.5%<br>嘉实标普石油天然气勘探及生产精选行业ETF(QDII) · 已退出 · -0.9%<br>建信能源化工期货ETF · 已退出 · -0.8%</div>
             </details>
           </td>
           <td class="num green">-0.1%</td>
