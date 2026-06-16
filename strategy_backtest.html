@@ -9,13 +9,13 @@
   <meta property="og:title" content="ETF 趋势轮动策略">
   <meta property="og:description" content="识别市场主线，生成可执行的 ETF 配置方案">
   <meta property="og:url" content="https://yaodong-design-lab.github.io/etf-rps-site/strategy_backtest.html">
-  <meta property="og:image" content="https://yaodong-design-lab.github.io/etf-rps-site/assets/share-cover-rps.jpg">
+  <meta property="og:image" content="https://yaodong-design-lab.github.io/etf-rps-site/assets/share-cover.jpg">
   <meta property="og:image:width" content="624">
   <meta property="og:image:height" content="624">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="ETF 趋势轮动策略">
   <meta name="twitter:description" content="识别市场主线，生成可执行的 ETF 配置方案">
-  <meta name="twitter:image" content="https://yaodong-design-lab.github.io/etf-rps-site/assets/share-cover-rps.jpg">
+  <meta name="twitter:image" content="https://yaodong-design-lab.github.io/etf-rps-site/assets/share-cover.jpg">
   <style>
     :root { --bg:#f4f4f5; --card:#fff; --ink:#09090b; --muted:#71717a; --line:#e4e4e7; --soft:#fafafa; --red:#b91c1c; --green:#047857; }
     * { box-sizing:border-box; }
@@ -90,16 +90,15 @@
     .cycle-wrap { max-height:520px; overflow:auto; border-top:1px solid var(--line); overscroll-behavior:contain; -webkit-overflow-scrolling:touch; }
     table { width:100%; min-width:820px; border-collapse:collapse; }
     .cycle-table { min-width:560px; table-layout:fixed; }
-    .cycle-table th, .cycle-table td { padding:11px 14px; font-size:12px; white-space:nowrap; }
-    .cycle-table th:nth-child(1), .cycle-table td:nth-child(1) { width:96px; }
-    .cycle-table th:nth-child(2), .cycle-table td:nth-child(2) { width:128px; }
-    .cycle-table th:nth-child(3), .cycle-table td:nth-child(3) { width:188px; }
-    .cycle-table th:nth-child(4), .cycle-table td:nth-child(4) { width:92px; }
-    .cycle-table th:nth-child(5), .cycle-table td:nth-child(5) { width:72px; }
+    .cycle-table th, .cycle-table td { padding:9px 10px; font-size:12px; white-space:nowrap; }
+    .cycle-table th:nth-child(1), .cycle-table td:nth-child(1) { width:88px; }
+    .cycle-table th:nth-child(2), .cycle-table td:nth-child(2) { width:96px; }
+    .cycle-table th:nth-child(3), .cycle-table td:nth-child(3) { width:180px; }
+    .cycle-table th:nth-child(4), .cycle-table td:nth-child(4) { width:84px; }
+    .cycle-table th:nth-child(5), .cycle-table td:nth-child(5) { width:62px; }
     .cycle-table td b { overflow:hidden; text-overflow:ellipsis; white-space:nowrap; font-size:13px; font-weight:700; }
     .cycle-table .cycle-status { color:var(--ink); font-size:12px; }
-    .cycle-table .cycle-status.is-open { color:#3b82f6; }
-    .cycle-table td:nth-child(2) small { display:block; margin-top:4px; color:var(--muted); font-size:10px; font-weight:400; white-space:nowrap; }
+    .cycle-table td:nth-child(2) small { display:block; margin-top:4px; color:var(--muted); font-size:10px; font-weight:400; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
     .combo-cell { text-align:left; }
     .cycle-table td b.etf-name { display:block; overflow:visible; text-overflow:clip; white-space:normal; overflow-wrap:anywhere; word-break:break-word; line-height:1.3; }
     .combo-details { margin:5px 0 0; border:0; border-radius:0; background:transparent; box-shadow:none; overflow:visible; }
@@ -133,20 +132,20 @@
       .metric strong { font-size:18px; }
       .metric:nth-child(2) strong { font-size:16px; line-height:1.35; }
       .note { padding-top:8px; font-size:13px; line-height:1.65; }
-      .legend text { font-size:18px; font-weight:700; }
-      .axis-label { font-size:18px; font-weight:700; }
+      .legend text { font-size:15px; }
+      .axis-label { font-size:14px; }
       .page-footnote { font-size:12px; padding:0 8px; }
       .cycle-wrap { max-height:none; overflow-x:auto; overflow-y:visible; overscroll-behavior:auto; -webkit-overflow-scrolling:touch; }
-      .cycle-table { width:100%; min-width:560px; table-layout:fixed; }
-      .cycle-table th, .cycle-table td { padding:10px 12px; font-size:11px; }
-      .cycle-table th:nth-child(1), .cycle-table td:nth-child(1) { width:92px; }
-      .cycle-table th:nth-child(2), .cycle-table td:nth-child(2) { width:132px; }
-      .cycle-table th:nth-child(3), .cycle-table td:nth-child(3) { width:168px; padding-left:12px; }
-      .cycle-table th:nth-child(4), .cycle-table td:nth-child(4) { width:92px; }
-      .cycle-table th:nth-child(5), .cycle-table td:nth-child(5) { width:72px; display:table-cell; }
+      .cycle-table { width:100%; min-width:430px; table-layout:fixed; }
+      .cycle-table th, .cycle-table td { padding:8px 6px; font-size:11px; }
+      .cycle-table th:nth-child(1), .cycle-table td:nth-child(1) { width:74px; }
+      .cycle-table th:nth-child(2), .cycle-table td:nth-child(2) { width:92px; }
+      .cycle-table th:nth-child(3), .cycle-table td:nth-child(3) { width:118px; padding-left:10px; }
+      .cycle-table th:nth-child(4), .cycle-table td:nth-child(4) { width:76px; }
+      .cycle-table th:nth-child(5), .cycle-table td:nth-child(5) { width:52px; display:table-cell; }
       .cycle-table td b { font-size:11px; }
       .cycle-table .cycle-status { font-size:12px; }
-      .cycle-table td:nth-child(2) small { font-size:11px; line-height:1.35; }
+      .cycle-table td:nth-child(2) small { font-size:10px; line-height:1.3; }
       .combo-details summary { margin-top:4px; font-size:10px; }
       .combo-details div { font-size:10px; }
       .rule-grid { grid-template-columns:1fr; }
@@ -163,24 +162,24 @@
     <section class="hero">
       <div class="kicker">ETF STRATEGY BACKTEST</div>
       <div class="title-row"><h1>ETF 趋势轮动策略</h1><span class="beta-badge">Beta</span></div>
-      <div class="hero-meta"><span>2026-01-01 至 2026-06-15 · 175 只 ETF · 本地测试版</span></div>
+      <div class="hero-meta"><span>2026-01-01 至 2026-06-16 · 175 只 ETF · 本地测试版</span></div>
     </section>
     <section class="score-card">
       <div class="score-top">
         <div><span>当前最佳策略</span><h2>强势方向买入，回撤6% 或跌破20日均线卖出</h2></div>
-        <strong>+54.0%</strong>
+        <strong>+55.4%</strong>
       </div>
-      <p class="score-note">按 100 万初始资金测算：100万 → 154.1万。买入后用价格风险规则退出，而不是等 RPS 排名明显转弱后再卖。</p>
-      <div class="metrics"><div class="metric"><span>累计收益</span><strong class="red">+54.0%</strong></div><div class="metric"><span>资金结果</span><strong class="red">100万 → 154.1万</strong></div><div class="metric"><span>最大回撤</span><strong class="green">-24.7%</strong></div><div class="metric"><span>胜率</span><strong class="">60.0%</strong></div><div class="metric"><span>平均持仓</span><strong class="">9.3天</strong></div><a class="metric metric-link" href="#cycle-detail"><span>组合轮动</span><strong>15轮</strong><small>查看明细</small></a></div>
+      <p class="score-note">按 100 万初始资金测算：100万 → 155.4万。买入后用价格风险规则退出，而不是等 RPS 排名明显转弱后再卖。</p>
+      <div class="metrics"><div class="metric"><span>累计收益</span><strong class="red">+55.4%</strong></div><div class="metric"><span>资金结果</span><strong class="red">100万 → 155.4万</strong></div><div class="metric"><span>最大回撤</span><strong class="green">-24.7%</strong></div><div class="metric"><span>胜率</span><strong class="">60.0%</strong></div><div class="metric"><span>平均持仓</span><strong class="">9.4天</strong></div><a class="metric metric-link" href="#cycle-detail"><span>组合轮动</span><strong>15轮</strong><small>查看明细</small></a></div>
     </section>
     
         <section class="panel">
-          <div class="panel-head split-head"><h2>今日操作建议</h2><span>2026-06-15 · 1 只</span></div>
+          <div class="panel-head split-head"><h2>今日操作建议</h2><span>2026-06-16 · 1 只</span></div>
           <div class="action-panel">
             <p class="signal-lead">当前信号</p>
             <div class="action-card signal-card">
               <span>当前显示</span>
-              <b>成长ETF（159259）</b>
+              <b>中韩半导体ETF（513310）</b>
             </div>
             <p class="signal-lead">建议动作</p>
             <div class="action-card action-buy">
@@ -191,7 +190,7 @@
             <div class="action-detail">
               <div><span>含义</span><b>当前规则只筛出 1 只 ETF，按策略应以 100% 仓位执行</b></div>
               
-              <div><span>触发条件</span><b>RPS 20 = 98.3<br>RPS 60 = 96.6<br>连续 3 天保持领先</b></div>
+              <div><span>触发条件</span><b>RPS 20 = 100.0<br>RPS 60 = 100.0<br>连续 3 天保持领先</b></div>
         
             </div>
           </div>
@@ -219,20 +218,20 @@
         
       <g class="legend">
         <circle cx="30" cy="16" r="5" class="legend-strategy"></circle>
-        <text x="42" y="20">策略 1.54</text>
+        <text x="42" y="20">策略 1.55</text>
         <circle cx="146" cy="16" r="5" class="legend-benchmark"></circle><text x="158" y="20">ETF池等权 1.01</text>
       </g>
     
-        <line x1="30" y1="239.1" x2="890" y2="239.1" class="baseline"></line>
-        <polyline points="30.0,239.1 38.2,233.0 46.4,231.3 54.6,231.5 62.8,227.1 71.0,220.0 79.1,222.8 87.3,221.2 95.5,222.3 103.7,223.1 111.9,223.7 120.1,226.9 128.3,224.2 136.5,222.8 144.7,219.0 152.9,221.2 161.0,220.0 169.2,217.9 177.4,218.1 185.6,223.1 193.8,237.0 202.0,230.6 210.2,229.7 218.4,233.8 226.6,234.8 234.8,227.8 243.0,226.6 251.1,226.7 259.3,225.7 267.5,229.8 275.7,227.5 283.9,224.4 292.1,226.0 300.3,224.2 308.5,225.9 316.7,236.8 324.9,239.7 333.0,236.9 341.2,233.8 349.4,236.0 357.6,230.5 365.8,230.4 374.0,232.7 382.2,236.8 390.4,235.5 398.6,239.9 406.8,237.2 415.0,244.4 423.1,248.4 431.3,261.3 439.5,254.6 447.7,248.8 455.9,254.4 464.1,251.8 472.3,252.1 480.5,256.2 488.7,248.6 496.9,253.2 505.0,255.7 513.2,254.8 521.4,241.5 529.6,244.4 537.8,240.3 546.0,240.3 554.2,235.4 562.4,235.3 570.6,230.0 578.8,229.9 587.0,227.8 595.1,228.2 603.3,226.0 611.5,230.1 619.7,230.9 627.9,230.0 636.1,233.1 644.3,228.3 652.5,227.1 660.7,219.5 668.9,215.9 677.0,217.2 685.2,212.0 693.4,215.4 701.6,212.2 709.8,219.4 718.0,224.5 726.2,226.2 734.4,224.3 742.6,223.7 750.8,230.4 759.0,226.3 767.1,222.6 775.3,223.7 783.5,228.0 791.7,228.6 799.9,231.7 808.1,233.6 816.3,231.1 824.5,231.0 832.7,233.5 840.9,238.6 849.0,247.5 857.2,243.6 865.4,247.1 873.6,248.4 881.8,243.5 890.0,234.4" class="benchmark-curve"></polyline>
-        <polyline points="30.0,239.1 38.2,239.1 46.4,241.2 54.6,221.2 62.8,197.3 71.0,153.3 79.1,177.0 87.3,176.7 95.5,211.1 103.7,211.1 111.9,208.7 120.1,226.7 128.3,230.2 136.5,216.6 144.7,179.6 152.9,212.3 161.0,212.3 169.2,220.8 177.4,220.8 185.6,256.8 193.8,256.8 202.0,249.3 210.2,252.5 218.4,270.0 226.6,270.0 234.8,261.4 243.0,261.4 251.1,252.4 259.3,252.4 267.5,267.3 275.7,244.7 283.9,238.1 292.1,237.9 300.3,231.3 308.5,201.2 316.7,172.6 324.9,185.3 333.0,188.6 341.2,196.9 349.4,199.8 357.6,199.8 365.8,201.9 374.0,207.7 382.2,219.6 390.4,229.3 398.6,229.3 406.8,222.3 415.0,207.3 423.1,223.4 431.3,203.4 439.5,212.0 447.7,227.6 455.9,219.0 464.1,209.9 472.3,199.2 480.5,209.8 488.7,220.6 496.9,218.8 505.0,208.6 513.2,195.9 521.4,214.8 529.6,225.3 537.8,225.3 546.0,229.8 554.2,229.8 562.4,234.6 570.6,221.7 578.8,203.7 587.0,198.9 595.1,199.2 603.3,181.4 611.5,188.6 619.7,206.2 627.9,205.7 636.1,215.9 644.3,215.9 652.5,212.1 660.7,159.4 668.9,149.3 677.0,154.3 685.2,123.0 693.4,138.3 701.6,121.0 709.8,121.8 718.0,151.3 726.2,151.3 734.4,156.1 742.6,149.7 750.8,123.3 759.0,120.0 767.1,107.8 775.3,96.0 783.5,93.1 791.7,98.0 799.9,103.0 808.1,104.9 816.3,101.0 824.5,95.7 832.7,88.8 840.9,125.1 849.0,125.1 857.2,85.0 865.4,74.3 873.6,42.2 881.8,58.8 890.0,30.0" class="curve"></polyline>
+        <line x1="30" y1="239.8" x2="890" y2="239.8" class="baseline"></line>
+        <polyline points="30.0,239.8 38.1,233.8 46.2,232.1 54.3,232.3 62.5,228.0 70.6,221.0 78.7,223.8 86.8,222.2 94.9,223.3 103.0,224.1 111.1,224.7 119.2,227.8 127.4,225.2 135.5,223.8 143.6,220.1 151.7,222.3 159.8,221.1 167.9,219.1 176.0,219.3 184.2,224.1 192.3,237.7 200.4,231.4 208.5,230.6 216.6,234.6 224.7,235.6 232.8,228.7 240.9,227.5 249.1,227.6 257.2,226.6 265.3,230.7 273.4,228.4 281.5,225.4 289.6,227.0 297.7,225.2 305.8,226.9 314.0,237.5 322.1,240.4 330.2,237.7 338.3,234.6 346.4,236.8 354.5,231.4 362.6,231.3 370.8,233.5 378.9,237.5 387.0,236.3 395.1,240.6 403.2,237.9 411.3,244.9 419.4,248.8 427.5,261.5 435.7,254.9 443.8,249.3 451.9,254.7 460.0,252.2 468.1,252.5 476.2,256.5 484.3,249.1 492.5,253.6 500.6,256.0 508.7,255.1 516.8,242.1 524.9,244.9 533.0,241.0 541.1,240.9 549.2,236.2 557.4,236.0 565.5,230.9 573.6,230.8 581.7,228.7 589.8,229.1 597.9,227.0 606.0,230.9 614.2,231.7 622.3,230.9 630.4,233.9 638.5,229.2 646.6,228.0 654.7,220.6 662.8,217.1 670.9,218.3 679.1,213.2 687.2,216.6 695.3,213.4 703.4,220.5 711.5,225.5 719.6,227.1 727.7,225.3 735.8,224.7 744.0,231.2 752.1,227.2 760.2,223.6 768.3,224.7 776.4,229.0 784.5,229.5 792.6,232.6 800.8,234.4 808.9,231.9 817.0,231.9 825.1,234.3 833.2,239.2 841.3,248.0 849.4,244.1 857.5,247.6 865.7,248.9 873.8,244.1 881.9,235.2 890.0,236.2" class="benchmark-curve"></polyline>
+        <polyline points="30.0,239.8 38.1,239.8 46.2,241.9 54.3,222.2 62.5,198.9 70.6,155.8 78.7,179.0 86.8,178.7 94.9,212.4 103.0,212.4 111.1,210.1 119.2,227.6 127.4,231.1 135.5,217.7 143.6,181.5 151.7,213.5 159.8,213.5 167.9,221.9 176.0,221.9 184.2,257.1 192.3,257.1 200.4,249.7 208.5,252.9 216.6,270.0 224.7,270.0 232.8,261.6 240.9,261.6 249.1,252.8 257.2,252.8 265.3,267.4 273.4,245.3 281.5,238.8 289.6,238.5 297.7,232.1 305.8,202.7 314.0,174.7 322.1,187.2 330.2,190.4 338.3,198.5 346.4,201.4 354.5,201.4 362.6,203.4 370.8,209.1 378.9,220.7 387.0,230.2 395.1,230.2 403.2,223.3 411.3,208.7 419.4,224.4 427.5,204.8 435.7,213.3 443.8,228.5 451.9,220.1 460.0,211.2 468.1,200.7 476.2,211.1 484.3,221.6 492.5,220.0 500.6,209.9 508.7,197.5 516.8,216.0 524.9,226.3 533.0,226.3 541.1,230.7 549.2,230.7 557.4,235.3 565.5,222.7 573.6,205.1 581.7,200.4 589.8,200.7 597.9,183.3 606.0,190.3 614.2,207.6 622.3,207.1 630.4,217.1 638.5,217.1 646.6,213.4 654.7,161.8 662.8,151.9 670.9,156.8 679.1,126.2 687.2,141.1 695.3,124.2 703.4,125.0 711.5,153.9 719.6,153.9 727.7,158.6 735.8,152.3 744.0,126.5 752.1,123.3 760.2,111.4 768.3,99.8 776.4,96.9 784.5,101.7 792.6,106.6 800.8,108.5 808.9,104.7 817.0,99.4 825.1,92.7 833.2,128.2 841.3,128.2 849.4,89.0 857.5,78.5 865.7,47.2 873.8,63.3 881.9,35.2 890.0,30.0" class="curve"></polyline>
         <text x="30" y="292" class="axis-label">1.00</text>
-        <text x="890" y="18" text-anchor="end" class="axis-label">1.54</text>
+        <text x="890" y="18" text-anchor="end" class="axis-label">1.55</text>
       </svg>
     </div>
     </section>
     <section class="panel" id="cycle-detail">
-      <div class="panel-head split-head"><h2>组合轮动明细</h2><span>累计 +54.0% · 15 轮</span></div>
+      <div class="panel-head split-head"><h2>组合轮动明细</h2><span>累计 +55.4% · 15 轮</span></div>
       <div class="note">轮动明细是策略的实际交易记录：空仓后出现买入信号，下一交易日买入当前最强的一只 ETF；触发卖出规则后退出，等待下一次买入信号。</div>
       <div class="table-wrap cycle-wrap">
         <table class="cycle-table">
@@ -240,16 +239,16 @@
           <tbody>
         <tr>
           <td>2026-06-08</td>
-          <td><b class="cycle-status is-open">持有中</b><small>截至 2026-06-15</small></td>
+          <td><b class="cycle-status">持有中</b><small>截至 2026-06-16</small></td>
           <td class="combo-cell">
             <b class="etf-name">半导体设备ETF（588170）</b>
             <details class="combo-details">
               <summary>明细</summary>
-              <div>持有中 · 截至 06-15 · +19.0%</div>
+              <div>持有中 · 截至 06-16 · +20.0%</div>
             </details>
           </td>
-          <td class="num red">+19.0%</td>
-          <td class="num">7天</td>
+          <td class="num red">+20.0%</td>
+          <td class="num">8天</td>
         </tr>
         
         <tr>
@@ -461,37 +460,37 @@
         <tr>
           <td>1</td>
           <td><b>回撤6% 或跌破20日均线</b><small>从买入后最高收盘价回撤 6%，或收盘价跌破 20 日均线，任一触发卖出</small></td>
-          <td class="num red">+54.0%</td>
+          <td class="num red">+55.4%</td>
           <td class="num green">-24.7%</td>
           <td class="num">15</td>
           <td class="num">60.0%</td>
-          <td class="num">9.3天</td>
+          <td class="num">9.4天</td>
         </tr>
         
         <tr>
           <td>2</td>
           <td><b>回撤7% 或跌破20日均线</b><small>从买入后最高收盘价回撤 7%，或收盘价跌破 20 日均线，任一触发卖出</small></td>
-          <td class="num red">+44.7%</td>
+          <td class="num red">+46.0%</td>
           <td class="num green">-24.7%</td>
           <td class="num">14</td>
           <td class="num">50.0%</td>
-          <td class="num">10.2天</td>
+          <td class="num">10.3天</td>
         </tr>
         
         <tr>
           <td>3</td>
           <td><b>回撤7%</b><small>从买入后最高收盘价回撤 7% 卖出</small></td>
-          <td class="num red">+19.4%</td>
+          <td class="num red">+20.4%</td>
           <td class="num green">-25.6%</td>
           <td class="num">9</td>
           <td class="num">55.6%</td>
-          <td class="num">16.1天</td>
+          <td class="num">16.2天</td>
         </tr>
         
         <tr>
           <td>4</td>
           <td><b>回撤8% 或跌破20日均线</b><small>从买入后最高收盘价回撤 8%，或收盘价跌破 20 日均线，任一触发卖出</small></td>
-          <td class="num red">+16.0%</td>
+          <td class="num red">+17.1%</td>
           <td class="num green">-24.2%</td>
           <td class="num">14</td>
           <td class="num">42.9%</td>
@@ -501,17 +500,17 @@
         <tr>
           <td>5</td>
           <td><b>回撤10% 或跌破20日均线</b><small>从买入后最高收盘价回撤 10%，或收盘价跌破 20 日均线，任一触发卖出</small></td>
-          <td class="num red">+5.4%</td>
+          <td class="num red">+6.4%</td>
           <td class="num green">-32.3%</td>
           <td class="num">13</td>
           <td class="num">46.2%</td>
-          <td class="num">11.1天</td>
+          <td class="num">11.2天</td>
         </tr>
         
         <tr>
           <td>6</td>
           <td><b>跌破20日均线</b><small>收盘价跌破 20 日均线卖出</small></td>
-          <td class="num red">+5.0%</td>
+          <td class="num red">+5.9%</td>
           <td class="num green">-31.5%</td>
           <td class="num">11</td>
           <td class="num">54.5%</td>
@@ -521,37 +520,37 @@
         <tr>
           <td>7</td>
           <td><b>回撤9% 或跌破20日均线</b><small>从买入后最高收盘价回撤 9%，或收盘价跌破 20 日均线，任一触发卖出</small></td>
-          <td class="num red">+3.5%</td>
+          <td class="num red">+4.5%</td>
           <td class="num green">-32.3%</td>
           <td class="num">14</td>
           <td class="num">42.9%</td>
-          <td class="num">10.2天</td>
+          <td class="num">10.3天</td>
         </tr>
         
         <tr>
           <td>8</td>
           <td><b>回撤6%</b><small>从买入后最高收盘价回撤 6% 卖出</small></td>
-          <td class="num red">+1.8%</td>
+          <td class="num red">+2.7%</td>
           <td class="num green">-30.0%</td>
           <td class="num">11</td>
           <td class="num">36.4%</td>
-          <td class="num">12.4天</td>
+          <td class="num">12.5天</td>
         </tr>
         
         <tr>
           <td>9</td>
           <td><b>回撤5%</b><small>从买入后最高收盘价回撤 5% 卖出</small></td>
-          <td class="num red">+1.7%</td>
+          <td class="num red">+2.6%</td>
           <td class="num green">-34.4%</td>
           <td class="num">16</td>
           <td class="num">43.8%</td>
-          <td class="num">8.7天</td>
+          <td class="num">8.8天</td>
         </tr>
         
         <tr>
           <td>10</td>
           <td><b>跌破10日均线</b><small>收盘价跌破 10 日均线卖出</small></td>
-          <td class="num red">-4.3%</td>
+          <td class="num red">-3.5%</td>
           <td class="num green">-38.1%</td>
           <td class="num">21</td>
           <td class="num">33.3%</td>
@@ -561,41 +560,41 @@
         <tr>
           <td>11</td>
           <td><b>回撤8%</b><small>从买入后最高收盘价回撤 8% 卖出</small></td>
-          <td class="num red">-17.7%</td>
+          <td class="num red">-16.9%</td>
           <td class="num green">-38.8%</td>
           <td class="num">10</td>
           <td class="num">30.0%</td>
-          <td class="num">14.5天</td>
+          <td class="num">14.6天</td>
         </tr>
         
         <tr>
           <td>12</td>
           <td><b>回撤10%</b><small>从买入后最高收盘价回撤 10% 卖出</small></td>
-          <td class="num red">-25.5%</td>
+          <td class="num red">-24.8%</td>
           <td class="num green">-44.6%</td>
           <td class="num">8</td>
           <td class="num">25.0%</td>
-          <td class="num">18.6天</td>
+          <td class="num">18.8天</td>
         </tr>
         
         <tr>
           <td>13</td>
           <td><b>回撤9%</b><small>从买入后最高收盘价回撤 9% 卖出</small></td>
-          <td class="num red">-34.3%</td>
+          <td class="num red">-33.7%</td>
           <td class="num green">-51.2%</td>
           <td class="num">9</td>
           <td class="num">33.3%</td>
-          <td class="num">16.7天</td>
+          <td class="num">16.8天</td>
         </tr>
         
         <tr>
           <td>14</td>
           <td><b>回撤5% 或跌破20日均线</b><small>从买入后最高收盘价回撤 5%，或收盘价跌破 20 日均线，任一触发卖出</small></td>
-          <td class="num red">-55.0%</td>
+          <td class="num red">-54.6%</td>
           <td class="num green">-71.0%</td>
           <td class="num">20</td>
           <td class="num">45.0%</td>
-          <td class="num">6.5天</td>
+          <td class="num">6.6天</td>
         </tr>
         </tbody>
         </table>
@@ -606,11 +605,11 @@
           <tbody>
         <tr>
           <td>2026-06-08</td>
-          <td>2026-06-15</td>
+          <td>2026-06-16</td>
           <td>华夏上证科创板半导体材料设备主题ETF（588170）</td>
           <td class="num">100%</td>
-          <td class="num red">+19.0%</td>
-          <td class="num">7天</td>
+          <td class="num red">+20.0%</td>
+          <td class="num">8天</td>
         </tr>
         
         <tr>
