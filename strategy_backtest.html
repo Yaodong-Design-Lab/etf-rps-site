@@ -35,6 +35,7 @@
     .signal-row span { color:var(--muted); font-size:12px; font-weight:750; }
     .signal-row b { overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
     .signal-row strong { color:var(--red); font-size:16px; font-weight:800; }
+    .empty-signal { border:1px solid var(--line); border-radius:14px; padding:12px; color:var(--muted); font-size:13px; }
     .rule-grid { display:grid; grid-template-columns:1fr 1fr; gap:12px; padding:16px 18px; }
     .rule-box { border:1px solid var(--line); background:var(--soft); border-radius:14px; padding:12px; }
     .rule-box span { display:block; color:var(--muted); font-size:12px; font-weight:750; margin-bottom:8px; }
@@ -54,12 +55,17 @@
     summary::-webkit-details-marker { display:none; }
     .table-wrap { overflow-x:auto; }
     table { width:100%; min-width:820px; border-collapse:collapse; }
-    .cycle-table { min-width:980px; table-layout:fixed; }
+    .cycle-table { min-width:720px; table-layout:fixed; }
     .cycle-table th, .cycle-table td { padding:9px 10px; font-size:12px; white-space:nowrap; }
-    .cycle-table th:nth-child(1), .cycle-table td:nth-child(1), .cycle-table th:nth-child(2), .cycle-table td:nth-child(2) { width:92px; }
-    .cycle-table th:nth-child(4), .cycle-table td:nth-child(4) { width:82px; }
-    .cycle-table th:nth-child(5), .cycle-table td:nth-child(5) { width:62px; }
-    .cycle-table td b, .cycle-table td small { overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+    .cycle-table th:nth-child(1), .cycle-table td:nth-child(1), .cycle-table th:nth-child(2), .cycle-table td:nth-child(2) { width:88px; }
+    .cycle-table th:nth-child(3), .cycle-table td:nth-child(3) { width:300px; }
+    .cycle-table th:nth-child(4), .cycle-table td:nth-child(4) { width:78px; }
+    .cycle-table th:nth-child(5), .cycle-table td:nth-child(5) { width:58px; }
+    .cycle-table td b { overflow:hidden; text-overflow:ellipsis; white-space:nowrap; font-size:13px; font-weight:700; }
+    .combo-cell { text-align:left; }
+    .combo-details { margin:5px 0 0; border:0; border-radius:0; background:transparent; box-shadow:none; overflow:visible; }
+    .combo-details summary { padding:0; color:var(--muted); font-size:11px; font-weight:500; }
+    .combo-details div { margin-top:5px; color:var(--muted); font-size:11px; line-height:1.5; white-space:normal; }
     th, td { border-bottom:1px solid var(--line); padding:10px 12px; text-align:right; vertical-align:middle; font-size:13px; }
     th { background:#fafafa; color:#3f3f46; font-size:12px; font-weight:650; }
     th:first-child, td:first-child, th:nth-child(2), td:nth-child(2), th:nth-child(3), td:nth-child(3) { text-align:left; }
@@ -89,6 +95,14 @@
       .legend text { font-size:15px; }
       .axis-label { font-size:14px; }
       .page-footnote { font-size:12px; padding:0 8px; }
+      .cycle-table { min-width:620px; }
+      .cycle-table th, .cycle-table td { padding:8px 8px; font-size:11px; }
+      .cycle-table th:nth-child(1), .cycle-table td:nth-child(1), .cycle-table th:nth-child(2), .cycle-table td:nth-child(2) { width:82px; }
+      .cycle-table th:nth-child(3), .cycle-table td:nth-child(3) { width:240px; }
+      .cycle-table th:nth-child(4), .cycle-table td:nth-child(4) { width:70px; }
+      .cycle-table th:nth-child(5), .cycle-table td:nth-child(5) { width:52px; }
+      .cycle-table td b { font-size:12px; }
+      .combo-details summary, .combo-details div { font-size:10px; }
       .rule-grid { grid-template-columns:1fr; }
       .signal-row { grid-template-columns:1fr auto; }
       .signal-row span { grid-column:1 / -1; }
@@ -112,9 +126,9 @@
     </section>
     
         <section class="panel">
-          <div class="panel-head split-head"><h2>当前规则信号</h2><span>2026-06-15</span></div>
+          <div class="panel-head split-head"><h2>当前满足买入条件</h2><span>2026-06-15 · 1 只</span></div>
           <div class="signal-list"><div class="signal-row"><span>科创成长</span><b>成长ETF易方达</b><strong>40%</strong></div></div>
-          <div class="note">含义：如果只按这套回测规则执行，当前满足买入条件的方向如上；实盘仍需要结合流动性、溢价和个人仓位。</div>
+          <div class="note">组合最多取前三只 ETF，筛不满时只显示已满足条件的标的；这不是完整买卖建议，实盘仍需要结合流动性、溢价和个人仓位。</div>
         </section>
         
     <section class="panel">
@@ -163,7 +177,13 @@
         <tr>
           <td>2026-06-08</td>
           <td>2026-06-15</td>
-          <td><b>科创成长 / 通信 / 半导体</b><small>华夏创成长ETF / 国泰中证全指通信设备ETF / 华夏上证科创板半导体材料设备主题ETF</small></td>
+          <td class="combo-cell">
+            <b>科创成长 / 通信 / 半导体</b>
+            <details class="combo-details">
+              <summary>3 只明细</summary>
+              <div>华夏创成长ETF<br>国泰中证全指通信设备ETF<br>华夏上证科创板半导体材料设备主题ETF</div>
+            </details>
+          </td>
           <td class="num red">+8.0%</td>
           <td class="num">7天</td>
         </tr>
@@ -171,7 +191,13 @@
         <tr>
           <td>2026-06-02</td>
           <td>2026-06-05</td>
-          <td><b>半导体</b><small>华夏上证科创板半导体材料设备主题ETF / 华泰柏瑞中证韩交所中韩半导体ETF(QDII) / 华夏国证半导体芯片ETF</small></td>
+          <td class="combo-cell">
+            <b>半导体</b>
+            <details class="combo-details">
+              <summary>3 只明细</summary>
+              <div>华夏上证科创板半导体材料设备主题ETF<br>华泰柏瑞中证韩交所中韩半导体ETF(QDII)<br>华夏国证半导体芯片ETF</div>
+            </details>
+          </td>
           <td class="num green">-1.0%</td>
           <td class="num">3天</td>
         </tr>
@@ -179,7 +205,13 @@
         <tr>
           <td>2026-05-22</td>
           <td>2026-06-01</td>
-          <td><b>半导体</b><small>华夏上证科创板半导体材料设备主题ETF / 华夏国证半导体芯片ETF / 嘉实上证科创板芯片ETF</small></td>
+          <td class="combo-cell">
+            <b>半导体</b>
+            <details class="combo-details">
+              <summary>3 只明细</summary>
+              <div>华夏上证科创板半导体材料设备主题ETF<br>华夏国证半导体芯片ETF<br>嘉实上证科创板芯片ETF</div>
+            </details>
+          </td>
           <td class="num green">-4.5%</td>
           <td class="num">10天</td>
         </tr>
@@ -187,7 +219,13 @@
         <tr>
           <td>2026-04-14</td>
           <td>2026-05-21</td>
-          <td><b>通信</b><small>富国中证通信设备主题ETF</small></td>
+          <td class="combo-cell">
+            <b>通信</b>
+            <details class="combo-details">
+              <summary>1 只明细</summary>
+              <div>富国中证通信设备主题ETF</div>
+            </details>
+          </td>
           <td class="num red">+4.7%</td>
           <td class="num">37天</td>
         </tr>
@@ -195,7 +233,13 @@
         <tr>
           <td>2026-04-10</td>
           <td>2026-04-13</td>
-          <td><b>能源化工</b><small>建信能源化工期货ETF</small></td>
+          <td class="combo-cell">
+            <b>能源化工</b>
+            <details class="combo-details">
+              <summary>1 只明细</summary>
+              <div>建信能源化工期货ETF</div>
+            </details>
+          </td>
           <td class="num green">-0.4%</td>
           <td class="num">3天</td>
         </tr>
@@ -203,7 +247,13 @@
         <tr>
           <td>2026-03-18</td>
           <td>2026-04-09</td>
-          <td><b>煤炭 / 嘉实标普石油 / 能源化工</b><small>国泰中证煤炭ETF / 嘉实标普石油天然气勘探及生产精选行业ETF(QDII) / 建信能源化工期货ETF</small></td>
+          <td class="combo-cell">
+            <b>煤炭 / 嘉实标普石油 / 能源化工</b>
+            <details class="combo-details">
+              <summary>3 只明细</summary>
+              <div>国泰中证煤炭ETF<br>嘉实标普石油天然气勘探及生产精选行业ETF(QDII)<br>建信能源化工期货ETF</div>
+            </details>
+          </td>
           <td class="num green">-0.1%</td>
           <td class="num">22天</td>
         </tr>
