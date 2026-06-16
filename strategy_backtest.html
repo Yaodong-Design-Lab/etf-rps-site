@@ -40,7 +40,22 @@
     .signal-row b { overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
     .signal-row strong { color:var(--red); font-size:16px; font-weight:800; }
     .empty-signal { border:1px solid var(--line); border-radius:14px; padding:12px; color:var(--muted); font-size:13px; }
+    .action-panel { padding:16px 18px 4px; }
+    .signal-lead { margin:0 0 10px; color:var(--ink); font-size:15px; line-height:1.45; font-weight:750; }
+    .action-card { position:relative; display:grid; grid-template-columns:1fr auto; gap:8px 14px; align-items:center; margin-bottom:18px; border:1px solid var(--line); border-radius:18px; background:var(--soft); padding:14px 16px; }
+    .signal-card { grid-template-columns:1fr; }
+    .action-card span:not(.action-dot) { grid-column:1 / -1; color:var(--muted); font-size:12px; font-weight:700; }
+    .action-card b { min-width:0; font-size:15px; line-height:1.35; font-weight:750; }
+    .action-card strong { color:var(--red); font-size:18px; line-height:1; font-weight:800; }
+    .action-buy, .action-wait { grid-template-columns:auto 1fr auto; }
+    .action-dot { width:11px; height:11px; border-radius:999px; background:#16a34a; box-shadow:0 0 0 3px color-mix(in oklab, #16a34a 14%, transparent); }
+    .action-wait .action-dot { background:#a1a1aa; box-shadow:0 0 0 3px color-mix(in oklab, #a1a1aa 16%, transparent); }
+    .action-detail { display:grid; gap:12px; padding:0 2px 12px; }
+    .action-detail div { display:grid; grid-template-columns:76px 1fr; gap:12px; padding-top:12px; border-top:1px solid var(--line); }
+    .action-detail span { color:var(--muted); font-size:12px; line-height:1.6; font-weight:750; }
+    .action-detail b { font-size:13px; line-height:1.65; font-weight:500; }
     .rule-grid { display:grid; grid-template-columns:1fr 1fr; gap:12px; padding:16px 18px; }
+    .compact-rules { padding-top:8px; }
     .rule-box { border:1px solid var(--line); background:var(--soft); border-radius:14px; padding:12px; }
     .rule-box span { display:block; color:var(--muted); font-size:12px; font-weight:750; margin-bottom:8px; }
     .rule-box b { display:block; margin:6px 0; font-size:14px; line-height:1.35; font-weight:750; }
@@ -124,6 +139,9 @@
       .rule-grid { grid-template-columns:1fr; }
       .signal-row { grid-template-columns:1fr auto; }
       .signal-row span { grid-column:1 / -1; }
+      .action-panel { padding:14px 16px 2px; }
+      .action-card { border-radius:16px; padding:13px 14px; }
+      .action-detail div { grid-template-columns:64px 1fr; }
     }
   </style>
 </head>
@@ -144,9 +162,41 @@
     </section>
     
         <section class="panel">
-          <div class="panel-head split-head"><h2>当前满足买入条件</h2><span>2026-06-15 · 1 只</span></div>
-          <div class="signal-list"><div class="signal-row"><span>科创成长</span><b>成长ETF易方达</b><strong>100%</strong></div></div>
-          <div class="note">这是当前交易日的候选买入信号；这版回测只取 RPS 20 排名第一的 ETF，空仓后出现信号则下一交易日按 100% 仓位买入。</div>
+          <div class="panel-head split-head"><h2>今日操作建议</h2><span>2026-06-15 · 1 只</span></div>
+          <div class="action-panel">
+            <p class="signal-lead">当前信号</p>
+            <div class="action-card signal-card">
+              <span>当前显示</span>
+              <b>成长ETF（159259）</b>
+            </div>
+            <p class="signal-lead">建议动作</p>
+            <div class="action-card action-buy">
+              <span class="action-dot"></span>
+              <b>满仓买入</b>
+              <strong>100%</strong>
+            </div>
+            <div class="action-detail">
+              <div><span>含义</span><b>当前规则只筛出 1 只 ETF，按策略应以 100% 仓位执行</b></div>
+              
+              <div><span>触发条件</span><b>RPS 20 = 98.3<br>RPS 60 = 96.6<br>连续 3 天保持领先</b></div>
+        
+            </div>
+          </div>
+          <div class="rule-grid compact-rules">
+            <div class="rule-box">
+              <span>买入规则</span>
+              <b>RPS 20 &gt; 95</b>
+              <b>RPS 60 &gt; 80</b>
+              <b>连续 3 个交易日进入 RPS 20 前 5</b>
+              <b>只取排名第一的 ETF，按 100% 仓位买入</b>
+            </div>
+            <div class="rule-box">
+              <span>卖出规则</span>
+              <b>回撤6% 或跌破20日均线</b>
+              <b>以价格风控优先退出</b>
+              <b>任一条件触发即卖出</b>
+            </div>
+          </div>
         </section>
         
     <section class="panel">
@@ -167,24 +217,6 @@
         <text x="890" y="18" text-anchor="end" class="axis-label">1.54</text>
       </svg>
     </div>
-    </section>
-    <section class="panel">
-      <div class="panel-head"><h2>策略规则</h2></div>
-      <div class="rule-grid">
-        <div class="rule-box">
-          <span>买入</span>
-          <b>RPS 20 &gt; 95</b>
-          <b>RPS 60 &gt; 80</b>
-          <b>连续 3 个交易日进入 RPS 20 前 5</b>
-          <b>只取排名第一的 ETF，按 100% 仓位买入</b>
-        </div>
-        <div class="rule-box">
-          <span>卖出</span>
-          <b>回撤6% 或跌破20日均线</b>
-          <b>以价格风控优先退出</b>
-          <b>任一条件触发即卖出</b>
-        </div>
-      </div>
     </section>
     <section class="panel" id="cycle-detail">
       <div class="panel-head split-head"><h2>组合轮动明细</h2><span>累计 +54.0% · 15 轮</span></div>
