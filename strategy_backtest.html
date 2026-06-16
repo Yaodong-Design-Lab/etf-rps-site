@@ -56,7 +56,7 @@
     summary { cursor:pointer; padding:14px 18px; font-size:16px; font-weight:750; list-style:none; }
     summary::-webkit-details-marker { display:none; }
     .table-wrap { overflow-x:auto; }
-    .cycle-wrap { max-height:520px; overflow:auto; border-top:1px solid var(--line); }
+    .cycle-wrap { max-height:520px; overflow-y:auto; overflow-x:auto; border-top:1px solid var(--line); overscroll-behavior:contain; }
     table { width:100%; min-width:820px; border-collapse:collapse; }
     .cycle-table { min-width:720px; table-layout:fixed; }
     .cycle-table th, .cycle-table td { padding:9px 10px; font-size:12px; white-space:nowrap; }
@@ -101,14 +101,17 @@
       .legend text { font-size:15px; }
       .axis-label { font-size:14px; }
       .page-footnote { font-size:12px; padding:0 8px; }
-      .cycle-wrap { max-height:470px; }
-      .cycle-table { min-width:620px; }
-      .cycle-table th, .cycle-table td { padding:8px 8px; font-size:11px; }
-      .cycle-table th:nth-child(1), .cycle-table td:nth-child(1), .cycle-table th:nth-child(2), .cycle-table td:nth-child(2) { width:82px; }
-      .cycle-table th:nth-child(3), .cycle-table td:nth-child(3) { width:240px; }
-      .cycle-table th:nth-child(4), .cycle-table td:nth-child(4) { width:70px; }
-      .cycle-table th:nth-child(5), .cycle-table td:nth-child(5) { width:52px; }
-      .cycle-table td b { font-size:12px; }
+      .cycle-wrap { max-height:470px; overflow-y:auto; overflow-x:hidden; touch-action:pan-y; }
+      .cycle-table { width:100%; min-width:0; table-layout:fixed; }
+      .cycle-table th, .cycle-table td { padding:8px 7px; font-size:10px; }
+      .cycle-table th:nth-child(1), .cycle-table td:nth-child(1) { width:25%; }
+      .cycle-table th:nth-child(2), .cycle-table td:nth-child(2) { width:24%; }
+      .cycle-table th:nth-child(3), .cycle-table td:nth-child(3) { width:34%; }
+      .cycle-table th:nth-child(4), .cycle-table td:nth-child(4) { width:17%; }
+      .cycle-table th:nth-child(5), .cycle-table td:nth-child(5) { display:none; }
+      .cycle-table td b { font-size:11px; }
+      .cycle-table .cycle-status { font-size:11px; }
+      .cycle-table td:nth-child(2) small { font-size:9px; line-height:1.25; }
       .combo-details summary, .combo-details div { font-size:10px; }
       .rule-grid { grid-template-columns:1fr; }
       .signal-row { grid-template-columns:1fr auto; }
