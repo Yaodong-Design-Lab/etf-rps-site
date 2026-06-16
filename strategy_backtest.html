@@ -56,6 +56,7 @@
     summary { cursor:pointer; padding:14px 18px; font-size:16px; font-weight:750; list-style:none; }
     summary::-webkit-details-marker { display:none; }
     .table-wrap { overflow-x:auto; }
+    .cycle-wrap { max-height:520px; overflow:auto; border-top:1px solid var(--line); }
     table { width:100%; min-width:820px; border-collapse:collapse; }
     .cycle-table { min-width:720px; table-layout:fixed; }
     .cycle-table th, .cycle-table td { padding:9px 10px; font-size:12px; white-space:nowrap; }
@@ -72,6 +73,7 @@
     .combo-details div { margin-top:5px; color:var(--muted); font-size:11px; line-height:1.5; white-space:normal; }
     th, td { border-bottom:1px solid var(--line); padding:10px 12px; text-align:right; vertical-align:middle; font-size:13px; }
     th { background:#fafafa; color:#3f3f46; font-size:12px; font-weight:650; }
+    .cycle-wrap th { position:sticky; top:0; z-index:1; }
     th:first-child, td:first-child, th:nth-child(2), td:nth-child(2), th:nth-child(3), td:nth-child(3) { text-align:left; }
     td b { display:block; }
     td small { display:block; margin-top:5px; color:var(--muted); font-size:12px; line-height:1.35; }
@@ -99,6 +101,7 @@
       .legend text { font-size:15px; }
       .axis-label { font-size:14px; }
       .page-footnote { font-size:12px; padding:0 8px; }
+      .cycle-wrap { max-height:470px; }
       .cycle-table { min-width:620px; }
       .cycle-table th, .cycle-table td { padding:8px 8px; font-size:11px; }
       .cycle-table th:nth-child(1), .cycle-table td:nth-child(1), .cycle-table th:nth-child(2), .cycle-table td:nth-child(2) { width:82px; }
@@ -132,7 +135,7 @@
         <section class="panel">
           <div class="panel-head split-head"><h2>当前满足买入条件</h2><span>2026-06-15 · 1 只</span></div>
           <div class="signal-list"><div class="signal-row"><span>科创成长</span><b>成长ETF易方达</b><strong>40%</strong></div></div>
-          <div class="note">这是当前交易日的候选买入信号；策略只有在空仓时才会按 40% / 30% / 30% 买入前三只，若已有持仓则继续等卖出规则触发。</div>
+          <div class="note">这是当前交易日的候选买入信号；这版回测采用组合级轮动，只有完全空仓时才会按 40% / 30% / 30% 买入前三只。若本轮仍有持仓，则不会用新信号补仓。</div>
         </section>
         
     <section class="panel">
@@ -173,9 +176,9 @@
       </div>
     </section>
     <section class="panel" id="cycle-detail">
-      <div class="panel-head"><h2>最近组合轮动</h2></div>
-      <div class="note">组合轮动是策略的实际交易记录：空仓后出现买入信号，下一交易日买入最多三只 ETF；每只 ETF 按卖出规则独立退出。最新一轮如显示“持有中”，代表尚未完全结束。</div>
-      <div class="table-wrap">
+      <div class="panel-head split-head"><h2>组合轮动明细</h2><span>累计 +116.9% · 21 轮</span></div>
+      <div class="note">组合轮动是策略的实际交易记录：空仓后出现买入信号，下一交易日买入最多三只 ETF；本回测采用“组合级轮动”，等本轮 ETF 全部退出后才开下一轮。最新一轮如显示“持有中”，代表尚未完全结束。</div>
+      <div class="table-wrap cycle-wrap">
         <table class="cycle-table">
           <thead><tr><th>买入日</th><th>状态</th><th>组合</th><th>组合收益</th><th>持仓</th></tr></thead>
           <tbody>
@@ -186,7 +189,7 @@
             <b>科创成长 / 通信 / 半导体</b>
             <details class="combo-details">
               <summary>3 只明细</summary>
-              <div>华夏创成长ETF · 已退出 · +2.5%<br>国泰中证全指通信设备ETF · 已退出 · -1.1%<br>华夏上证科创板半导体材料设备主题ETF · 持有中 · +19.0%</div>
+              <div>华夏创成长ETF · 已退出 · 退出 2026-06-10 · +2.5%<br>国泰中证全指通信设备ETF · 已退出 · 退出 2026-06-12 · -1.1%<br>华夏上证科创板半导体材料设备主题ETF · 持有中 · 截至 2026-06-15 · +19.0%</div>
             </details>
           </td>
           <td class="num red">+8.0%</td>
@@ -200,7 +203,7 @@
             <b>半导体</b>
             <details class="combo-details">
               <summary>3 只明细</summary>
-              <div>华夏上证科创板半导体材料设备主题ETF · 已退出 · +2.6%<br>华泰柏瑞中证韩交所中韩半导体ETF(QDII) · 已退出 · -4.6%<br>华夏国证半导体芯片ETF · 已退出 · +0.1%</div>
+              <div>华夏上证科创板半导体材料设备主题ETF · 已退出 · 退出 2026-06-03 · +2.6%<br>华泰柏瑞中证韩交所中韩半导体ETF(QDII) · 已退出 · 退出 2026-06-05 · -4.6%<br>华夏国证半导体芯片ETF · 已退出 · 退出 2026-06-05 · +0.1%</div>
             </details>
           </td>
           <td class="num green">-1.0%</td>
@@ -214,7 +217,7 @@
             <b>半导体</b>
             <details class="combo-details">
               <summary>3 只明细</summary>
-              <div>华夏上证科创板半导体材料设备主题ETF · 已退出 · -4.7%<br>华夏国证半导体芯片ETF · 已退出 · -1.4%<br>嘉实上证科创板芯片ETF · 已退出 · -7.5%</div>
+              <div>华夏上证科创板半导体材料设备主题ETF · 已退出 · 退出 2026-05-29 · -4.7%<br>华夏国证半导体芯片ETF · 已退出 · 退出 2026-05-29 · -1.4%<br>嘉实上证科创板芯片ETF · 已退出 · 退出 2026-06-01 · -7.5%</div>
             </details>
           </td>
           <td class="num green">-4.5%</td>
@@ -228,7 +231,7 @@
             <b>通信</b>
             <details class="combo-details">
               <summary>1 只明细</summary>
-              <div>富国中证通信设备主题ETF · 已退出 · +11.6%</div>
+              <div>富国中证通信设备主题ETF · 已退出 · 退出 2026-05-21 · +11.6%</div>
             </details>
           </td>
           <td class="num red">+4.7%</td>
@@ -242,7 +245,7 @@
             <b>能源化工</b>
             <details class="combo-details">
               <summary>1 只明细</summary>
-              <div>建信能源化工期货ETF · 已退出 · -1.1%</div>
+              <div>建信能源化工期货ETF · 已退出 · 退出 2026-04-13 · -1.1%</div>
             </details>
           </td>
           <td class="num green">-0.4%</td>
@@ -256,11 +259,221 @@
             <b>煤炭 / 嘉实标普石油 / 能源化工</b>
             <details class="combo-details">
               <summary>3 只明细</summary>
-              <div>国泰中证煤炭ETF · 已退出 · +1.5%<br>嘉实标普石油天然气勘探及生产精选行业ETF(QDII) · 已退出 · -0.9%<br>建信能源化工期货ETF · 已退出 · -0.8%</div>
+              <div>国泰中证煤炭ETF · 已退出 · 退出 2026-03-30 · +1.5%<br>嘉实标普石油天然气勘探及生产精选行业ETF(QDII) · 已退出 · 退出 2026-04-08 · -0.9%<br>建信能源化工期货ETF · 已退出 · 退出 2026-04-09 · -0.8%</div>
             </details>
           </td>
           <td class="num green">-0.1%</td>
           <td class="num">22天</td>
+        </tr>
+        
+        <tr>
+          <td>2026-02-06</td>
+          <td><b class="cycle-status">已结束</b><small>截至 2026-03-17</small></td>
+          <td class="combo-cell">
+            <b>黄金股永赢 / 华夏中证电网</b>
+            <details class="combo-details">
+              <summary>2 只明细</summary>
+              <div>黄金股ETF永赢 · 已退出 · 退出 2026-02-09 · +2.4%<br>华夏中证电网设备主题ETF · 已退出 · 退出 2026-03-17 · +9.7%</div>
+            </details>
+          </td>
+          <td class="num red">+3.9%</td>
+          <td class="num">39天</td>
+        </tr>
+        
+        <tr>
+          <td>2026-02-02</td>
+          <td><b class="cycle-status">已结束</b><small>截至 2026-02-05</small></td>
+          <td class="combo-cell">
+            <b>黄金股永赢 / 有色金属</b>
+            <details class="combo-details">
+              <summary>3 只明细</summary>
+              <div>黄金股ETF永赢 · 已退出 · 退出 2026-02-05 · -3.6%<br>国泰中证有色金属矿业主题ETF · 已退出 · 退出 2026-02-05 · -2.3%<br>万家中证工业有色金属主题ETF · 已退出 · 退出 2026-02-05 · -1.1%</div>
+            </details>
+          </td>
+          <td class="num green">-2.5%</td>
+          <td class="num">3天</td>
+        </tr>
+        
+        <tr>
+          <td>2026-01-21</td>
+          <td><b class="cycle-status">已结束</b><small>截至 2026-01-30</small></td>
+          <td class="combo-cell">
+            <b>招商中证卫星 / 卫星永赢 / 半导体</b>
+            <details class="combo-details">
+              <summary>3 只明细</summary>
+              <div>招商中证卫星产业ETF · 已退出 · 退出 2026-01-28 · +3.1%<br>卫星ETF永赢 · 已退出 · 退出 2026-01-29 · +2.8%<br>国泰中证半导体材料设备主题ETF · 已退出 · 退出 2026-01-30 · -5.3%</div>
+            </details>
+          </td>
+          <td class="num red">+0.5%</td>
+          <td class="num">9天</td>
+        </tr>
+        
+        <tr>
+          <td>2025-12-18</td>
+          <td><b class="cycle-status">已结束</b><small>截至 2026-01-20</small></td>
+          <td class="combo-cell">
+            <b>卫星永赢 / 招商中证卫星 / 通信</b>
+            <details class="combo-details">
+              <summary>3 只明细</summary>
+              <div>卫星ETF永赢 · 已退出 · 退出 2026-01-15 · +41.5%<br>招商中证卫星产业ETF · 已退出 · 退出 2026-01-15 · +44.9%<br>国泰中证全指通信设备ETF · 已退出 · 退出 2026-01-20 · +4.7%</div>
+            </details>
+          </td>
+          <td class="num red">+31.5%</td>
+          <td class="num">33天</td>
+        </tr>
+        
+        <tr>
+          <td>2025-11-26</td>
+          <td><b class="cycle-status">已结束</b><small>截至 2025-12-17</small></td>
+          <td class="combo-cell">
+            <b>汇添富纳斯达 / 嘉实标普生物</b>
+            <details class="combo-details">
+              <summary>2 只明细</summary>
+              <div>汇添富纳斯达克生物科技ETF · 已退出 · 退出 2025-12-09 · -3.4%<br>嘉实标普生物科技精选行业ETF(QDII) · 已退出 · 退出 2025-12-17 · -1.9%</div>
+            </details>
+          </td>
+          <td class="num green">-1.9%</td>
+          <td class="num">21天</td>
+        </tr>
+        
+        <tr>
+          <td>2025-11-24</td>
+          <td><b class="cycle-status">已结束</b><small>截至 2025-11-25</small></td>
+          <td class="combo-cell">
+            <b>能源化工</b>
+            <details class="combo-details">
+              <summary>1 只明细</summary>
+              <div>化工ETF · 已退出 · 退出 2025-11-25 · +1.1%</div>
+            </details>
+          </td>
+          <td class="num red">+0.4%</td>
+          <td class="num">1天</td>
+        </tr>
+        
+        <tr>
+          <td>2025-11-19</td>
+          <td><b class="cycle-status">已结束</b><small>截至 2025-11-21</small></td>
+          <td class="combo-cell">
+            <b>科创成长 / 能源化工</b>
+            <details class="combo-details">
+              <summary>3 只明细</summary>
+              <div>鹏华科创板新能源ETF · 已退出 · 退出 2025-11-20 · -2.8%<br>南方中证新能源ETF · 已退出 · 退出 2025-11-20 · -1.6%<br>化工ETF · 已退出 · 退出 2025-11-21 · -5.7%</div>
+            </details>
+          </td>
+          <td class="num green">-3.3%</td>
+          <td class="num">2天</td>
+        </tr>
+        
+        <tr>
+          <td>2025-11-07</td>
+          <td><b class="cycle-status">已结束</b><small>截至 2025-11-18</small></td>
+          <td class="combo-cell">
+            <b>华夏中证电网</b>
+            <details class="combo-details">
+              <summary>1 只明细</summary>
+              <div>华夏中证电网设备主题ETF · 已退出 · 退出 2025-11-18 · -8.2%</div>
+            </details>
+          </td>
+          <td class="num green">-3.3%</td>
+          <td class="num">11天</td>
+        </tr>
+        
+        <tr>
+          <td>2025-10-20</td>
+          <td><b class="cycle-status">已结束</b><small>截至 2025-11-05</small></td>
+          <td class="combo-cell">
+            <b>半导体</b>
+            <details class="combo-details">
+              <summary>3 只明细</summary>
+              <div>国泰中证半导体材料设备主题ETF · 已退出 · 退出 2025-10-21 · +2.0%<br>华夏上证科创板半导体材料设备主题ETF · 已退出 · 退出 2025-10-21 · +2.1%<br>华泰柏瑞中证韩交所中韩半导体ETF(QDII) · 已退出 · 退出 2025-11-05 · +2.3%</div>
+            </details>
+          </td>
+          <td class="num red">+2.1%</td>
+          <td class="num">16天</td>
+        </tr>
+        
+        <tr>
+          <td>2025-10-14</td>
+          <td><b class="cycle-status">已结束</b><small>截至 2025-10-17</small></td>
+          <td class="combo-cell">
+            <b>半导体</b>
+            <details class="combo-details">
+              <summary>1 只明细</summary>
+              <div>国泰中证半导体材料设备主题ETF · 已退出 · 退出 2025-10-17 · -5.4%</div>
+            </details>
+          </td>
+          <td class="num green">-2.1%</td>
+          <td class="num">3天</td>
+        </tr>
+        
+        <tr>
+          <td>2025-09-05</td>
+          <td><b class="cycle-status">已结束</b><small>截至 2025-10-13</small></td>
+          <td class="combo-cell">
+            <b>通信</b>
+            <details class="combo-details">
+              <summary>3 只明细</summary>
+              <div>富国中证通信设备主题ETF · 已退出 · 退出 2025-10-10 · +1.9%<br>国泰中证全指通信设备ETF · 已退出 · 退出 2025-10-13 · +3.5%<br>华夏中证5G通信主题ETF · 已退出 · 退出 2025-10-13 · +7.3%</div>
+            </details>
+          </td>
+          <td class="num red">+4.2%</td>
+          <td class="num">38天</td>
+        </tr>
+        
+        <tr>
+          <td>2025-07-02</td>
+          <td><b class="cycle-status">已结束</b><small>截至 2025-09-04</small></td>
+          <td class="combo-cell">
+            <b>金融 / 通信</b>
+            <details class="combo-details">
+              <summary>3 只明细</summary>
+              <div>易方达中证香港证券投资主题(港股通)ETF · 已退出 · 退出 2025-08-27 · +26.7%<br>国泰中证全指通信设备ETF · 已退出 · 退出 2025-09-04 · +66.6%<br>富国中证通信设备主题ETF · 已退出 · 退出 2025-09-04 · +55.9%</div>
+            </details>
+          </td>
+          <td class="num red">+51.4%</td>
+          <td class="num">64天</td>
+        </tr>
+        
+        <tr>
+          <td>2025-06-16</td>
+          <td><b class="cycle-status">已结束</b><small>截至 2025-07-01</small></td>
+          <td class="combo-cell">
+            <b>医药</b>
+            <details class="combo-details">
+              <summary>3 只明细</summary>
+              <div>广发中证香港创新药(QDII-ETF) · 已退出 · 退出 2025-06-27 · -5.3%<br>汇添富国证港股通创新药ETF · 已退出 · 退出 2025-06-27 · -5.1%<br>景顺长城中证港股通创新药ETF · 已退出 · 退出 2025-07-01 · -4.2%</div>
+            </details>
+          </td>
+          <td class="num green">-4.9%</td>
+          <td class="num">15天</td>
+        </tr>
+        
+        <tr>
+          <td>2025-05-14</td>
+          <td><b class="cycle-status">已结束</b><small>截至 2025-06-13</small></td>
+          <td class="combo-cell">
+            <b>华安德国(D</b>
+            <details class="combo-details">
+              <summary>1 只明细</summary>
+              <div>华安德国(DAX)ETF · 已退出 · 退出 2025-06-13 · +3.0%</div>
+            </details>
+          </td>
+          <td class="num red">+1.2%</td>
+          <td class="num">30天</td>
+        </tr>
+        
+        <tr>
+          <td>2025-04-10</td>
+          <td><b class="cycle-status">已结束</b><small>截至 2025-05-12</small></td>
+          <td class="combo-cell">
+            <b>国泰中证畜牧 / 华安黄金 / 富国上海金</b>
+            <details class="combo-details">
+              <summary>3 只明细</summary>
+              <div>国泰中证畜牧养殖ETF · 已退出 · 退出 2025-04-23 · -4.5%<br>华安黄金ETF · 已退出 · 退出 2025-05-12 · +2.4%<br>富国上海金ETF · 已退出 · 退出 2025-05-12 · +7.7%</div>
+            </details>
+          </td>
+          <td class="num red">+1.2%</td>
+          <td class="num">32天</td>
         </tr>
         </tbody>
         </table>
