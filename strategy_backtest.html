@@ -98,6 +98,7 @@
     .cycle-table th:nth-child(5), .cycle-table td:nth-child(5) { width:72px; }
     .cycle-table td b { overflow:hidden; text-overflow:ellipsis; white-space:nowrap; font-size:13px; font-weight:700; }
     .cycle-table .cycle-status { color:var(--ink); font-size:12px; }
+    .cycle-table .cycle-status.is-open { color:#3b82f6; }
     .cycle-table td:nth-child(2) small { display:block; margin-top:4px; color:var(--muted); font-size:10px; font-weight:400; white-space:nowrap; }
     .combo-cell { text-align:left; }
     .cycle-table td b.etf-name { display:block; overflow:visible; text-overflow:clip; white-space:normal; overflow-wrap:anywhere; word-break:break-word; line-height:1.3; }
@@ -132,8 +133,8 @@
       .metric strong { font-size:18px; }
       .metric:nth-child(2) strong { font-size:16px; line-height:1.35; }
       .note { padding-top:8px; font-size:13px; line-height:1.65; }
-      .legend text { font-size:30px; font-weight:700; }
-      .axis-label { font-size:28px; font-weight:700; }
+      .legend text { font-size:18px; font-weight:700; }
+      .axis-label { font-size:18px; font-weight:700; }
       .page-footnote { font-size:12px; padding:0 8px; }
       .cycle-wrap { max-height:none; overflow-x:auto; overflow-y:visible; overscroll-behavior:auto; -webkit-overflow-scrolling:touch; }
       .cycle-table { width:100%; min-width:560px; table-layout:fixed; }
@@ -239,7 +240,7 @@
           <tbody>
         <tr>
           <td>2026-06-08</td>
-          <td><b class="cycle-status">持有中</b><small>截至 2026-06-15</small></td>
+          <td><b class="cycle-status is-open">持有中</b><small>截至 2026-06-15</small></td>
           <td class="combo-cell">
             <b class="etf-name">半导体设备ETF（588170）</b>
             <details class="combo-details">
