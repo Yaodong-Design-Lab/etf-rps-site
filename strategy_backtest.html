@@ -94,13 +94,13 @@
     .cycle-table { min-width:640px; table-layout:fixed; }
     .cycle-table th, .cycle-table td { padding:12px 18px; font-size:12px; white-space:nowrap; }
     .cycle-table th:nth-child(1), .cycle-table td:nth-child(1) { width:122px; padding-left:20px; }
-    .cycle-table th:nth-child(2), .cycle-table td:nth-child(2) { width:132px; }
+    .cycle-table th:nth-child(2), .cycle-table td:nth-child(2) { width:150px; }
     .cycle-table th:nth-child(3), .cycle-table td:nth-child(3) { width:230px; }
     .cycle-table th:nth-child(4), .cycle-table td:nth-child(4) { width:92px; }
     .cycle-table th:nth-child(5), .cycle-table td:nth-child(5) { width:76px; padding-right:20px; }
     .cycle-table td b { overflow:hidden; text-overflow:ellipsis; white-space:nowrap; font-size:13px; font-weight:700; }
     .cycle-table .cycle-status { color:var(--ink); font-size:12px; }
-    .cycle-table td:nth-child(2) small { display:block; margin-top:4px; color:var(--muted); font-size:10px; font-weight:400; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+    .cycle-table td:nth-child(2) small { display:block; margin-top:4px; color:var(--muted); font-size:10px; font-weight:400; overflow:visible; text-overflow:clip; white-space:nowrap; }
     .combo-cell { text-align:left; }
     .cycle-table td b.etf-name { display:block; overflow:visible; text-overflow:clip; white-space:normal; overflow-wrap:anywhere; word-break:break-word; line-height:1.3; }
     .combo-details { margin:5px 0 0; border:0; border-radius:0; background:transparent; box-shadow:none; overflow:visible; }
@@ -138,11 +138,11 @@
       .axis-label { font-size:20px; }
       .page-footnote { font-size:12px; padding:0 8px; }
       .cycle-wrap { max-height:none; overflow-x:auto; overflow-y:visible; overscroll-behavior:auto; -webkit-overflow-scrolling:touch; }
-      .cycle-table { width:100%; min-width:520px; table-layout:fixed; }
+      .cycle-table { width:100%; min-width:560px; table-layout:fixed; }
       .cycle-table th, .cycle-table td { padding:10px 12px; font-size:11px; }
       .cycle-table th:nth-child(1), .cycle-table td:nth-child(1) { width:92px; padding-left:14px; }
-      .cycle-table th:nth-child(2), .cycle-table td:nth-child(2) { width:104px; }
-      .cycle-table th:nth-child(3), .cycle-table td:nth-child(3) { width:180px; }
+      .cycle-table th:nth-child(2), .cycle-table td:nth-child(2) { width:132px; }
+      .cycle-table th:nth-child(3), .cycle-table td:nth-child(3) { width:176px; }
       .cycle-table th:nth-child(4), .cycle-table td:nth-child(4) { width:76px; }
       .cycle-table th:nth-child(5), .cycle-table td:nth-child(5) { width:70px; padding-right:14px; display:table-cell; }
       .cycle-table td b { font-size:11px; }
@@ -221,8 +221,8 @@
         
       <g class="legend">
         <circle cx="30" cy="16" r="5" class="legend-strategy"></circle>
-        <text x="42" y="20">策略 1.55</text>
-        <circle cx="146" cy="16" r="5" class="legend-benchmark"></circle><text x="158" y="20">ETF池等权 1.01</text>
+        <text x="44" y="16" dominant-baseline="middle">策略 1.55</text>
+        <circle cx="172" cy="16" r="5" class="legend-benchmark"></circle><text x="186" y="16" dominant-baseline="middle">ETF池等权 1.01</text>
       </g>
     
         <line x1="30" y1="239.8" x2="890" y2="239.8" class="baseline"></line>
