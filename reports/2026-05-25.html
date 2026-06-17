@@ -64,11 +64,10 @@
     .board-label { color: var(--muted); font-size: 13px; font-weight: 650; }
     .board-value { color: var(--ink); font-size: 18px; line-height: 1.4; font-weight: 800; }
     .board-value.small { color: var(--secondary-foreground); font-size: 14px; font-weight: 650; }
-    .mainline-combo-list { display: inline-grid; gap: 8px; border: 1px solid var(--line); border-radius: 18px; background: var(--secondary); padding: 14px 16px; min-width: min(100%, 320px); }
-    .mainline-combo-row { display: grid; grid-template-columns: 24px 86px minmax(0, 1fr); align-items: baseline; column-gap: 8px; }
-    .mainline-combo-row span { color: var(--muted); text-align: right; font-size: 15px; line-height: 1.35; font-weight: 650; font-variant-numeric: tabular-nums; }
-    .mainline-combo-row b { color: var(--ink); font-size: 16px; line-height: 1.35; font-weight: 650; }
-    .mainline-combo-row em { color: var(--ink); font-style: normal; font-size: 16px; line-height: 1.35; font-weight: 400; }
+    .mainline-combo-list { display: inline-grid; gap: 4px; padding: 0; min-width: min(100%, 220px); }
+    .mainline-combo-row { display: grid; grid-template-columns: 30px minmax(0, 1fr); align-items: baseline; column-gap: 8px; }
+    .mainline-combo-row span { color: var(--muted); text-align: right; font-size: 18px; line-height: 1.35; font-weight: 650; font-variant-numeric: tabular-nums; }
+    .mainline-combo-row b { color: var(--ink); font-size: 20px; line-height: 1.35; font-weight: 800; }
     .weekly-change { display: grid; grid-template-columns: 18px minmax(0, 1fr); column-gap: 6px; align-items: start; font-size: 15px; line-height: 1.5; font-weight: 400; }
     .weekly-arrow { font-weight: 800; line-height: 1.45; text-align: center; }
     .weekly-arrow.up { color: var(--red); }
@@ -218,7 +217,7 @@
     <section class="panel">
       <div class="panel-head"><h2>今日主线</h2><span>当前交易日 2026-05-25</span></div>
       <div class="today-board">
-        <div class="board-line"><div class="board-label">主线方向</div><div><div class="board-value"><div class="mainline-combo-list"><div class="mainline-combo-row"><span>1.</span><b>半导体</b><em>科创板芯片ETF</em></div><div class="mainline-combo-row"><span>2.</span><b>科创板50成份</b><em>科创板50成份ETF</em></div><div class="mainline-combo-row"><span>3.</span><b>消费</b><em>消费电子ETF</em></div></div></div><div class="rule-note">取主线前三方向，每个方向选择趋势分最高的代表 ETF</div></div></div>
+        <div class="board-line"><div class="board-label">主线方向</div><div><div class="board-value"><div class="mainline-combo-list"><div class="mainline-combo-row"><span>1.</span><b>半导体</b></div><div class="mainline-combo-row"><span>2.</span><b>科创板50成份</b></div><div class="mainline-combo-row"><span>3.</span><b>消费</b></div></div></div><div class="rule-note">取主线前三方向，每个方向选择趋势分最高的代表 ETF</div></div></div>
         <div class="board-line"><div class="board-label">今日变化</div><div><div class="board-value small weekly"><div class="weekly-change"><span>主线延续</span></div></div><div class="rule-note">对比上一个交易日的主线前三方向</div></div></div>
       </div>
     </section>
