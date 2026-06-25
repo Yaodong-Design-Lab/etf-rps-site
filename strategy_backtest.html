@@ -17,12 +17,12 @@
   <meta name="twitter:description" content="识别市场主线，生成可执行的 ETF 配置方案">
   <meta name="twitter:image" content="https://yaodong.design/assets/share-cover.jpg">
   <style>
-    :root { --bg:#f4f4f5; --card:#fff; --ink:#09090b; --muted:#71717a; --line:#e4e4e7; --soft:#fafafa; --red:#b91c1c; --green:#047857; }
+    :root { --bg:#f4f4f5; --card:#fff; --ink:#09090b; --muted:#71717a; --line:#e4e4e7; --soft:#fafafa; --red:#b91c1c; --green:#047857; --muted-token:#f1f5f9; }
     * { box-sizing:border-box; }
     body { margin:0; background:var(--bg); color:var(--ink); font-family:Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", sans-serif; }
     .shell { width:min(100%, 940px); margin:0 auto; padding:20px 14px 96px; }
     .hero { display:grid; gap:12px; padding:4px 2px 16px; }
-    h1 { margin:0; font-size:30px; line-height:1.1; letter-spacing:0; font-weight:800; }
+    h1 { margin:0; font-size:30px; line-height:1.1; letter-spacing:0; font-weight:700; }
     .title-row { display:flex; align-items:center; gap:9px; flex-wrap:wrap; }
     .beta-badge { display:inline-flex; align-items:center; height:22px; padding:0 9px; border:1px solid var(--line); border-radius:999px; background:var(--card); color:var(--muted); font-size:11px; line-height:1; font-weight:750; text-transform:uppercase; letter-spacing:.04em; transform:translateY(2px); }
     p { color:var(--muted); font-size:13px; line-height:1.6; font-weight:400; }
@@ -42,11 +42,28 @@
     .metric strong { display:block; margin-top:7px; font-size:18px; line-height:1.15; font-variant-numeric:tabular-nums; }
     .metric small { display:block; margin-top:5px; color:var(--muted); font-size:11px; font-weight:400; }
     .panel { overflow:hidden; }
-    .panel-head { padding:16px 18px; border-bottom:1px solid var(--line); }
+    .panel-head { position:relative; display:flex; align-items:center; justify-content:space-between; gap:10px; padding:16px 18px; border-bottom:1px solid var(--line); background:var(--card); }
     .panel-head h2 { margin:0; font-size:18px; letter-spacing:0; font-weight:750; }
+    .panel-head-meta { flex:0 0 auto; color:var(--muted); font-size:12px; font-weight:650; white-space:nowrap; }
     .split-head { display:flex; justify-content:space-between; gap:12px; align-items:center; }
     .split-head span { color:var(--muted); font-size:12px; font-weight:650; }
     .signal-list { display:grid; gap:8px; padding:16px 18px 0; }
+    .compact-after-cycle { padding:0 18px 16px; background:linear-gradient(180deg, rgba(250,250,250,.75), rgba(250,250,250,.35)); }
+    .compact-grid { display:grid; gap:0; }
+    .compact-row { display:grid; grid-template-columns:92px minmax(0, 1fr); gap:12px; align-items:start; padding:10px 0; color:var(--muted); font-size:13px; line-height:1.6; }
+    .compact-grid .compact-row:first-child { padding-top:14px; }
+    .compact-row span { color:var(--muted); font-size:13px; font-weight:400; letter-spacing:0; }
+    .compact-row b { color:var(--ink); font-size:17px; line-height:1.45; font-weight:800; min-width:0; letter-spacing:0; }
+    .compact-row-strategy { grid-template-columns:92px minmax(0, 1fr); }
+    .compact-row-strategy b { grid-column:2; }
+    .compact-statline { display:flex; flex-wrap:wrap; gap:10px 20px; padding-top:14px; border-top:1px solid var(--line); color:var(--muted); font-size:12px; line-height:1.65; }
+    .compact-statline span { white-space:nowrap; }
+    .compact-statline b { color:var(--ink); font-size:13px; font-weight:750; }
+    .title-tip-anchor { position: static; display: inline-flex; align-items: center; }
+    .resonance-tip { position: absolute; left: 18px; right: 18px; top: calc(100% - 1px); z-index: 8; border: 1px solid var(--line); border-radius: 16px; background: #fff; box-shadow: 0 16px 36px rgba(24, 24, 27, .12); color: var(--ink); font-size: 14px; font-weight: 700; line-height: 1.6; padding: 12px 14px; }
+    .head-tip { display: inline-flex; align-items: center; justify-content: center; border: 0; background: transparent; color: inherit; cursor: pointer; font: inherit; padding: 0; margin-left: 4px; vertical-align: middle; }
+    .head-tip::after { content: "?"; display: inline-flex; align-items: center; justify-content: center; width: 14px; height: 14px; border-radius: 999px; background: color-mix(in oklab, var(--line) 60%, white); color: var(--muted); font-size: 9px; font-weight: 950; }
+    .title-with-tip { display:inline-flex; align-items:center; gap:2px; }
     .signal-row { display:grid; grid-template-columns:92px 1fr auto; gap:10px; align-items:center; border:1px solid var(--line); border-radius:14px; padding:10px 12px; }
     .signal-row span { color:var(--muted); font-size:12px; font-weight:750; }
     .signal-row b { overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
@@ -87,29 +104,26 @@
     summary { cursor:pointer; padding:14px 18px; font-size:16px; font-weight:750; list-style:none; }
     summary::-webkit-details-marker { display:none; }
     .table-wrap { overflow-x:auto; }
-    .cycle-wrap { max-height:520px; overflow:auto; border-top:1px solid var(--line); overscroll-behavior:contain; -webkit-overflow-scrolling:touch; }
-    table { width:100%; min-width:820px; border-collapse:collapse; }
-    .cycle-table { min-width:640px; table-layout:fixed; }
-    .cycle-table th, .cycle-table td { padding:12px 18px; font-size:12px; white-space:nowrap; }
-    .cycle-table th:nth-child(1), .cycle-table td:nth-child(1) { width:122px; padding-left:20px; }
-    .cycle-table th:nth-child(2), .cycle-table td:nth-child(2) { width:150px; }
-    .cycle-table th:nth-child(3), .cycle-table td:nth-child(3) { width:230px; }
-    .cycle-table th:nth-child(4), .cycle-table td:nth-child(4) { width:92px; }
-    .cycle-table th:nth-child(5), .cycle-table td:nth-child(5) { width:76px; padding-right:20px; }
-    .cycle-table td b { overflow:hidden; text-overflow:ellipsis; white-space:nowrap; font-size:13px; font-weight:700; }
-    .cycle-table .cycle-status { color:var(--ink); font-size:12px; }
-    .cycle-table td:nth-child(2) small { display:block; margin-top:4px; color:var(--muted); font-size:10px; font-weight:400; overflow:visible; text-overflow:clip; white-space:nowrap; }
+    .cycle-wrap { max-height:520px; overflow:auto; overscroll-behavior:contain; -webkit-overflow-scrolling:touch; background:var(--card); }
+    table { width:100%; min-width:700px; border-collapse:collapse; }
+    .cycle-table { width:100%; min-width:620px; border-collapse:collapse; table-layout:fixed; background:var(--card); }
+    .cycle-table th, .cycle-table td { border:1px solid var(--line); padding:9px 8px; text-align:right; font-size:14px; font-weight:650; white-space:nowrap; vertical-align:middle; }
+    .cycle-table th { background:var(--muted-token); color:#334155; font-weight:700; }
+    .cycle-table th:nth-child(1), .cycle-table td:nth-child(1) { width:118px; padding-left:14px; }
+    .cycle-table th:nth-child(2), .cycle-table td:nth-child(2) { width:154px; }
+    .cycle-table th:nth-child(3), .cycle-table td:nth-child(3) { width:84px; }
+    .cycle-table th:nth-child(4), .cycle-table td:nth-child(4) { width:60px; padding-right:14px; }
+    .cycle-table td b { overflow:hidden; text-overflow:ellipsis; white-space:nowrap; font-size:14px; font-weight:800; }
+    .cycle-table .cycle-status { color:var(--ink); font-size:14px; font-weight:800; }
+    .status-cell small { display:block; margin-top:4px; color:var(--muted); font-size:11px; font-weight:500; overflow:visible; text-overflow:clip; white-space:nowrap; line-height:1.4; }
     .combo-cell { text-align:left; }
-    .cycle-table td b.etf-name { display:block; overflow:visible; text-overflow:clip; white-space:normal; overflow-wrap:anywhere; word-break:break-word; line-height:1.3; }
-    .combo-details { margin:5px 0 0; border:0; border-radius:0; background:transparent; box-shadow:none; overflow:visible; }
-    .combo-details summary { display:block; padding:0; color:var(--muted); font-size:11px; font-weight:500; }
-    .combo-details div { margin-top:5px; color:var(--muted); font-size:11px; line-height:1.5; white-space:normal; }
-    th, td { border-bottom:1px solid var(--line); padding:10px 12px; text-align:right; vertical-align:middle; font-size:13px; }
-    th { background:#fafafa; color:#3f3f46; font-size:12px; font-weight:650; }
+    .cycle-table td b.etf-name { display:block; overflow:visible; text-overflow:clip; white-space:normal; overflow-wrap:anywhere; word-break:break-word; line-height:1.35; }
+    .combo-cell small { display:block; margin-top:4px; color:var(--muted); font-size:11px; font-weight:500; line-height:1.4; }
+    .cycle-return { font-size:14px; font-weight:800; }
     .cycle-wrap th { position:sticky; top:0; z-index:1; }
-    th:first-child, td:first-child, th:nth-child(2), td:nth-child(2), th:nth-child(3), td:nth-child(3) { text-align:left; }
-    td b { display:block; }
-    td small { display:block; margin-top:5px; color:var(--muted); font-size:12px; line-height:1.35; }
+    .cycle-table th:first-child, .cycle-table td:first-child, .cycle-table th:nth-child(2), .cycle-table td:nth-child(2), .cycle-table th:nth-child(3), .cycle-table td:nth-child(3) { text-align:left; }
+    .cycle-table td b { display:block; }
+    .cycle-table td small { display:block; margin-top:5px; color:var(--muted); font-size:11px; line-height:1.35; }
     .num { font-variant-numeric:tabular-nums; font-weight:750; }
     .red { color:var(--red); }
     .green { color:var(--green); }
@@ -135,25 +149,34 @@
       .legend text { font-size:22px; }
       .axis-label { font-size:20px; }
       .page-footnote { font-size:12px; padding:0 8px; }
+      .panel-head-meta { font-size:12px; }
       .cycle-wrap { max-height:none; overflow-x:auto; overflow-y:visible; overscroll-behavior:auto; -webkit-overflow-scrolling:touch; }
-      .cycle-table { width:100%; min-width:560px; table-layout:fixed; }
-      .cycle-table th, .cycle-table td { padding:10px 12px; font-size:11px; }
-      .cycle-table th:nth-child(1), .cycle-table td:nth-child(1) { width:92px; padding-left:14px; }
+      .cycle-table { width:100%; min-width:500px; table-layout:fixed; }
+      .cycle-table th, .cycle-table td { padding:9px 8px; font-size:14px; }
+      .cycle-table th:nth-child(1), .cycle-table td:nth-child(1) { width:96px; padding-left:14px; }
       .cycle-table th:nth-child(2), .cycle-table td:nth-child(2) { width:132px; }
-      .cycle-table th:nth-child(3), .cycle-table td:nth-child(3) { width:176px; }
-      .cycle-table th:nth-child(4), .cycle-table td:nth-child(4) { width:76px; }
-      .cycle-table th:nth-child(5), .cycle-table td:nth-child(5) { width:70px; padding-right:14px; display:table-cell; }
-      .cycle-table td b { font-size:11px; }
-      .cycle-table .cycle-status { font-size:12px; }
-      .cycle-table td:nth-child(2) small { font-size:10px; line-height:1.3; }
-      .combo-details summary { margin-top:4px; font-size:10px; }
-      .combo-details div { font-size:10px; }
+      .cycle-table th:nth-child(3), .cycle-table td:nth-child(3) { width:76px; }
+      .cycle-table th:nth-child(4), .cycle-table td:nth-child(4) { width:56px; padding-right:14px; display:table-cell; }
+      .cycle-table td b { font-size:14px; line-height:1.4; }
+      .cycle-table .cycle-status { font-size:14px; }
+      .status-cell small { font-size:12px; line-height:1.4; }
+      .combo-cell small { font-size:12px; line-height:1.4; }
+      .cycle-return { font-size:14px; }
       .rule-grid { grid-template-columns:1fr; }
       .signal-row { grid-template-columns:1fr auto; }
       .signal-row span { grid-column:1 / -1; }
       .action-panel { padding:14px 16px 2px; }
       .action-card { border-radius:16px; padding:13px 14px; }
       .action-detail div { grid-template-columns:64px 1fr; }
+      .compact-after-cycle { padding:0 14px 14px; }
+      .compact-row { grid-template-columns:72px minmax(0, 1fr); gap:10px; padding:10px 0; }
+      .compact-grid .compact-row:first-child { padding-top:14px; }
+      .compact-row-strategy { grid-template-columns:72px minmax(0, 1fr); }
+      .compact-row span { font-size:13px; font-weight:400; }
+      .compact-row b { font-size:15px; line-height:1.45; }
+      .compact-statline { gap:8px 14px; font-size:12px; }
+      .compact-statline b { font-size:12px; }
+      .resonance-tip { left: 12px; right: 12px; top: calc(100% - 1px); font-size: 13px; line-height: 1.55; padding: 11px 12px; }
     }
   </style>
 </head>
@@ -162,55 +185,338 @@
     <section class="hero">
       <div class="kicker">ETF STRATEGY BACKTEST</div>
       <div class="title-row"><h1>ETF 趋势轮动策略</h1><span class="beta-badge">Beta</span></div>
-      <div class="hero-meta"><span>2025-01-01 至 2026-06-25 · 175 只 ETF · 本地测试版</span></div>
-    </section>
-    <section class="score-card">
-      <div class="score-top">
-        <div><span>当前最佳策略</span><h2>强势方向买入，回撤6% 或跌破20日均线卖出</h2></div>
-        <strong>+245.3%</strong>
-      </div>
-      <p class="score-note">按 100 万初始资金测算：100万 → 345.3万。买入后用价格风险规则退出，而不是等 RPS 排名明显转弱后再卖。</p>
-      <div class="metrics"><div class="metric"><span>累计收益</span><strong class="red">+245.3%</strong></div><div class="metric"><span>资金结果</span><strong class="red">100万 → 345.3万</strong></div><div class="metric"><span>最大回撤</span><strong class="green">-25.7%</strong></div><div class="metric"><span>胜率</span><strong class="">50.0%</strong></div><div class="metric"><span>平均持仓</span><strong class="">13.2天</strong></div><a class="metric metric-link" href="#cycle-detail"><span>组合轮动</span><strong>30轮</strong><small>查看明细</small></a></div>
+      <div class="hero-meta"><span>2025-01-01 至 2026-06-25 · 175 只 ETF</span></div>
     </section>
     
-        <section class="panel">
-          <div class="panel-head split-head"><h2>今日操作建议</h2><span>2026-06-25 · 1 只</span></div>
-          <div class="action-panel">
-            <p class="signal-lead">当前信号</p>
-            <div class="action-card signal-card">
-              <span>当前显示</span>
-              <b>科创半导体ETF（588170）</b>
-            </div>
-            <p class="signal-lead">建议动作</p>
-            <div class="action-card action-buy">
-              <span class="action-dot"></span>
-              <b>满仓买入</b>
-              <strong>100%</strong>
-            </div>
-            <div class="action-detail">
-              <div><span>含义</span><b>当前规则只筛出 1 只 ETF，按策略应以 100% 仓位执行</b></div>
-              
-              <div><span>触发条件</span><b>RPS 20 = 100.0<br>RPS 60 = 100.0<br>连续 3 天保持领先</b></div>
-        
-            </div>
+    
+    <section class="panel" id="cycle-detail">
+      <div class="panel-head"><h2 class="title-with-tip">组合轮动明细<span class="title-tip-anchor"><button type="button" class="head-tip" data-tip="轮动明细记录的是策略实际交易过程：当前规则只筛出 1 只 ETF，按策略以 100% 仓位执行；买点出现后下一交易日执行，卖点触发即退出，再等待下一次买入信号。<br><br>当前信号：科创半导体ETF（588170）<br>买入规则：RPS 20 &gt; 95，RPS 60 &gt; 80，且连续 3 个交易日进入 RPS 20 前 5。<br>卖出规则：回撤6% 或跌破20日均线，任一条件触发即退出。"></button><div class="resonance-tip" id="cycleDetailTip" hidden></div></span></h2><span class="panel-head-meta">第 30 轮</span></div>
+      
+      <div class="compact-after-cycle">
+        <div class="compact-grid">
+          <div class="compact-row compact-row-strategy">
+            <span>当前策略</span>
+            <b>强势方向买入，回撤6% 或跌破20日均线卖出</b>
           </div>
-          <div class="rule-grid compact-rules">
-            <div class="rule-box">
-              <span>买入规则</span>
-              <b>RPS 20 &gt; 95</b>
-              <b>RPS 60 &gt; 80</b>
-              <b>连续 3 个交易日进入 RPS 20 前 5</b>
-              <b>只取排名第一的 ETF，按 100% 仓位买入</b>
-            </div>
-            <div class="rule-box">
-              <span>卖出规则</span>
-              <b>回撤6% 或跌破20日均线</b>
-              <b>以价格风控优先退出</b>
-              <b>任一条件触发即卖出</b>
-            </div>
+          <div class="compact-row compact-row-signal">
+            <span>当前信号</span>
+            <b>科创半导体ETF（588170）</b>
           </div>
-        </section>
+          <div class="compact-statline">
+            <span>累计收益 <b class="red">+245.3%</b></span>
+            <span>最大回撤 <b class="green">-25.7%</b></span>
+            <span>平均持仓 <b>13.2天</b></span>
+          </div>
+        </div>
+      </div>
         
+      <div class="table-wrap cycle-wrap">
+        <table class="cycle-table">
+          <thead><tr><th>状态</th><th>ETF</th><th>收益</th><th>持仓</th></tr></thead>
+          <tbody>
+        <tr>
+          <td class="status-cell"><b class="cycle-status">持有中</b><small>买入 2026-06-08</small><small>截至 2026-06-25</small></td>
+          <td class="combo-cell">
+            <b class="etf-name">半导体设备ETF</b>
+            <small>588170</small>
+          </td>
+          <td class="num cycle-return red">+48.6%</td>
+          <td class="num">17天</td>
+        </tr>
+        
+        <tr>
+          <td class="status-cell"><b class="cycle-status">已结束</b><small>买入 2026-05-18</small><small>截至 2026-06-05</small></td>
+          <td class="combo-cell">
+            <b class="etf-name">中韩半导体ETF</b>
+            <small>513310</small>
+          </td>
+          <td class="num cycle-return red">+5.5%</td>
+          <td class="num">18天</td>
+        </tr>
+        
+        <tr>
+          <td class="status-cell"><b class="cycle-status">已结束</b><small>买入 2026-04-29</small><small>截至 2026-05-15</small></td>
+          <td class="combo-cell">
+            <b class="etf-name">中韩半导体ETF</b>
+            <small>513310</small>
+          </td>
+          <td class="num cycle-return red">+15.8%</td>
+          <td class="num">16天</td>
+        </tr>
+        
+        <tr>
+          <td class="status-cell"><b class="cycle-status">已结束</b><small>买入 2026-04-14</small><small>截至 2026-04-28</small></td>
+          <td class="combo-cell">
+            <b class="etf-name">通信设备ETF</b>
+            <small>159583</small>
+          </td>
+          <td class="num cycle-return red">+3.5%</td>
+          <td class="num">14天</td>
+        </tr>
+        
+        <tr>
+          <td class="status-cell"><b class="cycle-status">已结束</b><small>买入 2026-04-10</small><small>截至 2026-04-13</small></td>
+          <td class="combo-cell">
+            <b class="etf-name">能源化工ETF</b>
+            <small>159981</small>
+          </td>
+          <td class="num cycle-return green">-1.1%</td>
+          <td class="num">3天</td>
+        </tr>
+        
+        <tr>
+          <td class="status-cell"><b class="cycle-status">已结束</b><small>买入 2026-03-17</small><small>截至 2026-04-09</small></td>
+          <td class="combo-cell">
+            <b class="etf-name">能源化工ETF</b>
+            <small>159981</small>
+          </td>
+          <td class="num cycle-return red">+1.0%</td>
+          <td class="num">23天</td>
+        </tr>
+        
+        <tr>
+          <td class="status-cell"><b class="cycle-status">已结束</b><small>买入 2026-03-10</small><small>截至 2026-03-16</small></td>
+          <td class="combo-cell">
+            <b class="etf-name">电网ETF</b>
+            <small>159326</small>
+          </td>
+          <td class="num cycle-return green">-6.9%</td>
+          <td class="num">6天</td>
+        </tr>
+        
+        <tr>
+          <td class="status-cell"><b class="cycle-status">已结束</b><small>买入 2026-02-12</small><small>截至 2026-03-09</small></td>
+          <td class="combo-cell">
+            <b class="etf-name">油气ETF</b>
+            <small>561360</small>
+          </td>
+          <td class="num cycle-return red">+14.1%</td>
+          <td class="num">25天</td>
+        </tr>
+        
+        <tr>
+          <td class="status-cell"><b class="cycle-status">已结束</b><small>买入 2026-02-10</small><small>截至 2026-02-11</small></td>
+          <td class="combo-cell">
+            <b class="etf-name">黄金ETF</b>
+            <small>517520</small>
+          </td>
+          <td class="num cycle-return red">+2.5%</td>
+          <td class="num">1天</td>
+        </tr>
+        
+        <tr>
+          <td class="status-cell"><b class="cycle-status">已结束</b><small>买入 2026-02-06</small><small>截至 2026-02-09</small></td>
+          <td class="combo-cell">
+            <b class="etf-name">黄金ETF</b>
+            <small>517520</small>
+          </td>
+          <td class="num cycle-return red">+2.4%</td>
+          <td class="num">3天</td>
+        </tr>
+        
+        <tr>
+          <td class="status-cell"><b class="cycle-status">已结束</b><small>买入 2026-02-02</small><small>截至 2026-02-05</small></td>
+          <td class="combo-cell">
+            <b class="etf-name">黄金ETF</b>
+            <small>517520</small>
+          </td>
+          <td class="num cycle-return green">-3.6%</td>
+          <td class="num">3天</td>
+        </tr>
+        
+        <tr>
+          <td class="status-cell"><b class="cycle-status">已结束</b><small>买入 2026-01-29</small><small>截至 2026-01-30</small></td>
+          <td class="combo-cell">
+            <b class="etf-name">黄金ETF</b>
+            <small>517520</small>
+          </td>
+          <td class="num cycle-return green">-8.9%</td>
+          <td class="num">1天</td>
+        </tr>
+        
+        <tr>
+          <td class="status-cell"><b class="cycle-status">已结束</b><small>买入 2026-01-27</small><small>截至 2026-01-28</small></td>
+          <td class="combo-cell">
+            <b class="etf-name">卫星ETF</b>
+            <small>159218</small>
+          </td>
+          <td class="num cycle-return green">-2.1%</td>
+          <td class="num">1天</td>
+        </tr>
+        
+        <tr>
+          <td class="status-cell"><b class="cycle-status">已结束</b><small>买入 2026-01-16</small><small>截至 2026-01-26</small></td>
+          <td class="combo-cell">
+            <b class="etf-name">卫星ETF</b>
+            <small>159218</small>
+          </td>
+          <td class="num cycle-return green">-0.3%</td>
+          <td class="num">10天</td>
+        </tr>
+        
+        <tr>
+          <td class="status-cell"><b class="cycle-status">已结束</b><small>买入 2025-12-10</small><small>截至 2026-01-15</small></td>
+          <td class="combo-cell">
+            <b class="etf-name">卫星ETF</b>
+            <small>159206</small>
+          </td>
+          <td class="num cycle-return red">+50.1%</td>
+          <td class="num">36天</td>
+        </tr>
+        
+        <tr>
+          <td class="status-cell"><b class="cycle-status">已结束</b><small>买入 2025-11-26</small><small>截至 2025-12-09</small></td>
+          <td class="combo-cell">
+            <b class="etf-name">汇添富纳斯达克生ETF</b>
+            <small>513290</small>
+          </td>
+          <td class="num cycle-return green">-3.4%</td>
+          <td class="num">13天</td>
+        </tr>
+        
+        <tr>
+          <td class="status-cell"><b class="cycle-status">已结束</b><small>买入 2025-11-24</small><small>截至 2025-11-25</small></td>
+          <td class="combo-cell">
+            <b class="etf-name">化工ETF</b>
+            <small>159870</small>
+          </td>
+          <td class="num cycle-return red">+1.1%</td>
+          <td class="num">1天</td>
+        </tr>
+        
+        <tr>
+          <td class="status-cell"><b class="cycle-status">已结束</b><small>买入 2025-11-18</small><small>截至 2025-11-21</small></td>
+          <td class="combo-cell">
+            <b class="etf-name">化工ETF</b>
+            <small>159870</small>
+          </td>
+          <td class="num cycle-return green">-4.5%</td>
+          <td class="num">3天</td>
+        </tr>
+        
+        <tr>
+          <td class="status-cell"><b class="cycle-status">已结束</b><small>买入 2025-11-07</small><small>截至 2025-11-17</small></td>
+          <td class="combo-cell">
+            <b class="etf-name">电网ETF</b>
+            <small>159326</small>
+          </td>
+          <td class="num cycle-return green">-6.5%</td>
+          <td class="num">10天</td>
+        </tr>
+        
+        <tr>
+          <td class="status-cell"><b class="cycle-status">已结束</b><small>买入 2025-10-20</small><small>截至 2025-11-05</small></td>
+          <td class="combo-cell">
+            <b class="etf-name">中韩半导体ETF</b>
+            <small>513310</small>
+          </td>
+          <td class="num cycle-return red">+2.3%</td>
+          <td class="num">16天</td>
+        </tr>
+        
+        <tr>
+          <td class="status-cell"><b class="cycle-status">已结束</b><small>买入 2025-10-15</small><small>截至 2025-10-17</small></td>
+          <td class="combo-cell">
+            <b class="etf-name">半导体设备ETF</b>
+            <small>159516</small>
+          </td>
+          <td class="num cycle-return green">-5.2%</td>
+          <td class="num">2天</td>
+        </tr>
+        
+        <tr>
+          <td class="status-cell"><b class="cycle-status">已结束</b><small>买入 2025-10-13</small><small>截至 2025-10-14</small></td>
+          <td class="combo-cell">
+            <b class="etf-name">汇添富电池ETF</b>
+            <small>159796</small>
+          </td>
+          <td class="num cycle-return green">-4.0%</td>
+          <td class="num">1天</td>
+        </tr>
+        
+        <tr>
+          <td class="status-cell"><b class="cycle-status">已结束</b><small>买入 2025-09-10</small><small>截至 2025-10-10</small></td>
+          <td class="combo-cell">
+            <b class="etf-name">汇添富电池ETF</b>
+            <small>159796</small>
+          </td>
+          <td class="num cycle-return red">+12.5%</td>
+          <td class="num">30天</td>
+        </tr>
+        
+        <tr>
+          <td class="status-cell"><b class="cycle-status">已结束</b><small>买入 2025-09-05</small><small>截至 2025-09-09</small></td>
+          <td class="combo-cell">
+            <b class="etf-name">通信设备ETF</b>
+            <small>515880</small>
+          </td>
+          <td class="num cycle-return green">-6.8%</td>
+          <td class="num">4天</td>
+        </tr>
+        
+        <tr>
+          <td class="status-cell"><b class="cycle-status">已结束</b><small>买入 2025-07-02</small><small>截至 2025-09-04</small></td>
+          <td class="combo-cell">
+            <b class="etf-name">通信设备ETF</b>
+            <small>515880</small>
+          </td>
+          <td class="num cycle-return red">+66.6%</td>
+          <td class="num">64天</td>
+        </tr>
+        
+        <tr>
+          <td class="status-cell"><b class="cycle-status">已结束</b><small>买入 2025-06-20</small><small>截至 2025-07-01</small></td>
+          <td class="combo-cell">
+            <b class="etf-name">创新药ETF</b>
+            <small>513780</small>
+          </td>
+          <td class="num cycle-return red">+3.2%</td>
+          <td class="num">11天</td>
+        </tr>
+        
+        <tr>
+          <td class="status-cell"><b class="cycle-status">已结束</b><small>买入 2025-06-16</small><small>截至 2025-06-19</small></td>
+          <td class="combo-cell">
+            <b class="etf-name">创新药ETF</b>
+            <small>513120</small>
+          </td>
+          <td class="num cycle-return green">-7.9%</td>
+          <td class="num">3天</td>
+        </tr>
+        
+        <tr>
+          <td class="status-cell"><b class="cycle-status">已结束</b><small>买入 2025-05-14</small><small>截至 2025-06-13</small></td>
+          <td class="combo-cell">
+            <b class="etf-name">德国DAXETF</b>
+            <small>513030</small>
+          </td>
+          <td class="num cycle-return red">+3.0%</td>
+          <td class="num">30天</td>
+        </tr>
+        
+        <tr>
+          <td class="status-cell"><b class="cycle-status">已结束</b><small>买入 2025-04-24</small><small>截至 2025-05-12</small></td>
+          <td class="combo-cell">
+            <b class="etf-name">上海金ETF</b>
+            <small>518680</small>
+          </td>
+          <td class="num cycle-return green">-3.4%</td>
+          <td class="num">18天</td>
+        </tr>
+        
+        <tr>
+          <td class="status-cell"><b class="cycle-status">已结束</b><small>买入 2025-04-10</small><small>截至 2025-04-23</small></td>
+          <td class="combo-cell">
+            <b class="etf-name">畜牧养殖ETF</b>
+            <small>159865</small>
+          </td>
+          <td class="num cycle-return green">-4.5%</td>
+          <td class="num">13天</td>
+        </tr>
+        </tbody>
+        </table>
+      </div>
+    </section>
     <section class="panel">
       <div class="panel-head"><h2>策略净值曲线</h2></div>
       <div class="chart-wrap">
@@ -230,436 +536,6 @@
       </svg>
     </div>
     </section>
-    <section class="panel" id="cycle-detail">
-      <div class="panel-head split-head"><h2>组合轮动明细</h2><span>累计 +245.3% · 30 轮</span></div>
-      <div class="note">轮动明细是策略的实际交易记录：空仓后出现买入信号，下一交易日买入当前最强的一只 ETF；触发卖出规则后退出，等待下一次买入信号。</div>
-      <div class="table-wrap cycle-wrap">
-        <table class="cycle-table">
-          <thead><tr><th>买入日</th><th>状态</th><th>ETF</th><th>收益</th><th>持仓</th></tr></thead>
-          <tbody>
-        <tr>
-          <td>2026-06-08</td>
-          <td><b class="cycle-status">持有中</b><small>截至 2026-06-25</small></td>
-          <td class="combo-cell">
-            <b class="etf-name">半导体设备ETF（588170）</b>
-            <details class="combo-details">
-              <summary>明细</summary>
-              <div>持有中 · 截至 06-25 · +48.6%</div>
-            </details>
-          </td>
-          <td class="num red">+48.6%</td>
-          <td class="num">17天</td>
-        </tr>
-        
-        <tr>
-          <td>2026-05-18</td>
-          <td><b class="cycle-status">已结束</b><small>截至 2026-06-05</small></td>
-          <td class="combo-cell">
-            <b class="etf-name">中韩半导体ETF（513310）</b>
-            <details class="combo-details">
-              <summary>明细</summary>
-              <div>已退出 · 退出 06-05 · +5.5%</div>
-            </details>
-          </td>
-          <td class="num red">+5.5%</td>
-          <td class="num">18天</td>
-        </tr>
-        
-        <tr>
-          <td>2026-04-29</td>
-          <td><b class="cycle-status">已结束</b><small>截至 2026-05-15</small></td>
-          <td class="combo-cell">
-            <b class="etf-name">中韩半导体ETF（513310）</b>
-            <details class="combo-details">
-              <summary>明细</summary>
-              <div>已退出 · 退出 05-15 · +15.8%</div>
-            </details>
-          </td>
-          <td class="num red">+15.8%</td>
-          <td class="num">16天</td>
-        </tr>
-        
-        <tr>
-          <td>2026-04-14</td>
-          <td><b class="cycle-status">已结束</b><small>截至 2026-04-28</small></td>
-          <td class="combo-cell">
-            <b class="etf-name">通信设备ETF（159583）</b>
-            <details class="combo-details">
-              <summary>明细</summary>
-              <div>已退出 · 退出 04-28 · +3.5%</div>
-            </details>
-          </td>
-          <td class="num red">+3.5%</td>
-          <td class="num">14天</td>
-        </tr>
-        
-        <tr>
-          <td>2026-04-10</td>
-          <td><b class="cycle-status">已结束</b><small>截至 2026-04-13</small></td>
-          <td class="combo-cell">
-            <b class="etf-name">能源化工ETF（159981）</b>
-            <details class="combo-details">
-              <summary>明细</summary>
-              <div>已退出 · 退出 04-13 · -1.1%</div>
-            </details>
-          </td>
-          <td class="num green">-1.1%</td>
-          <td class="num">3天</td>
-        </tr>
-        
-        <tr>
-          <td>2026-03-17</td>
-          <td><b class="cycle-status">已结束</b><small>截至 2026-04-09</small></td>
-          <td class="combo-cell">
-            <b class="etf-name">能源化工ETF（159981）</b>
-            <details class="combo-details">
-              <summary>明细</summary>
-              <div>已退出 · 退出 04-09 · +1.0%</div>
-            </details>
-          </td>
-          <td class="num red">+1.0%</td>
-          <td class="num">23天</td>
-        </tr>
-        
-        <tr>
-          <td>2026-03-10</td>
-          <td><b class="cycle-status">已结束</b><small>截至 2026-03-16</small></td>
-          <td class="combo-cell">
-            <b class="etf-name">电网ETF（159326）</b>
-            <details class="combo-details">
-              <summary>明细</summary>
-              <div>已退出 · 退出 03-16 · -6.9%</div>
-            </details>
-          </td>
-          <td class="num green">-6.9%</td>
-          <td class="num">6天</td>
-        </tr>
-        
-        <tr>
-          <td>2026-02-12</td>
-          <td><b class="cycle-status">已结束</b><small>截至 2026-03-09</small></td>
-          <td class="combo-cell">
-            <b class="etf-name">油气ETF（561360）</b>
-            <details class="combo-details">
-              <summary>明细</summary>
-              <div>已退出 · 退出 03-09 · +14.1%</div>
-            </details>
-          </td>
-          <td class="num red">+14.1%</td>
-          <td class="num">25天</td>
-        </tr>
-        
-        <tr>
-          <td>2026-02-10</td>
-          <td><b class="cycle-status">已结束</b><small>截至 2026-02-11</small></td>
-          <td class="combo-cell">
-            <b class="etf-name">黄金ETF（517520）</b>
-            <details class="combo-details">
-              <summary>明细</summary>
-              <div>已退出 · 退出 02-11 · +2.5%</div>
-            </details>
-          </td>
-          <td class="num red">+2.5%</td>
-          <td class="num">1天</td>
-        </tr>
-        
-        <tr>
-          <td>2026-02-06</td>
-          <td><b class="cycle-status">已结束</b><small>截至 2026-02-09</small></td>
-          <td class="combo-cell">
-            <b class="etf-name">黄金ETF（517520）</b>
-            <details class="combo-details">
-              <summary>明细</summary>
-              <div>已退出 · 退出 02-09 · +2.4%</div>
-            </details>
-          </td>
-          <td class="num red">+2.4%</td>
-          <td class="num">3天</td>
-        </tr>
-        
-        <tr>
-          <td>2026-02-02</td>
-          <td><b class="cycle-status">已结束</b><small>截至 2026-02-05</small></td>
-          <td class="combo-cell">
-            <b class="etf-name">黄金ETF（517520）</b>
-            <details class="combo-details">
-              <summary>明细</summary>
-              <div>已退出 · 退出 02-05 · -3.6%</div>
-            </details>
-          </td>
-          <td class="num green">-3.6%</td>
-          <td class="num">3天</td>
-        </tr>
-        
-        <tr>
-          <td>2026-01-29</td>
-          <td><b class="cycle-status">已结束</b><small>截至 2026-01-30</small></td>
-          <td class="combo-cell">
-            <b class="etf-name">黄金ETF（517520）</b>
-            <details class="combo-details">
-              <summary>明细</summary>
-              <div>已退出 · 退出 01-30 · -8.9%</div>
-            </details>
-          </td>
-          <td class="num green">-8.9%</td>
-          <td class="num">1天</td>
-        </tr>
-        
-        <tr>
-          <td>2026-01-27</td>
-          <td><b class="cycle-status">已结束</b><small>截至 2026-01-28</small></td>
-          <td class="combo-cell">
-            <b class="etf-name">卫星ETF（159218）</b>
-            <details class="combo-details">
-              <summary>明细</summary>
-              <div>已退出 · 退出 01-28 · -2.1%</div>
-            </details>
-          </td>
-          <td class="num green">-2.1%</td>
-          <td class="num">1天</td>
-        </tr>
-        
-        <tr>
-          <td>2026-01-16</td>
-          <td><b class="cycle-status">已结束</b><small>截至 2026-01-26</small></td>
-          <td class="combo-cell">
-            <b class="etf-name">卫星ETF（159218）</b>
-            <details class="combo-details">
-              <summary>明细</summary>
-              <div>已退出 · 退出 01-26 · -0.3%</div>
-            </details>
-          </td>
-          <td class="num green">-0.3%</td>
-          <td class="num">10天</td>
-        </tr>
-        
-        <tr>
-          <td>2025-12-10</td>
-          <td><b class="cycle-status">已结束</b><small>截至 2026-01-15</small></td>
-          <td class="combo-cell">
-            <b class="etf-name">卫星ETF（159206）</b>
-            <details class="combo-details">
-              <summary>明细</summary>
-              <div>已退出 · 退出 01-15 · +50.1%</div>
-            </details>
-          </td>
-          <td class="num red">+50.1%</td>
-          <td class="num">36天</td>
-        </tr>
-        
-        <tr>
-          <td>2025-11-26</td>
-          <td><b class="cycle-status">已结束</b><small>截至 2025-12-09</small></td>
-          <td class="combo-cell">
-            <b class="etf-name">汇添富纳斯达克生ETF（513290）</b>
-            <details class="combo-details">
-              <summary>明细</summary>
-              <div>已退出 · 退出 12-09 · -3.4%</div>
-            </details>
-          </td>
-          <td class="num green">-3.4%</td>
-          <td class="num">13天</td>
-        </tr>
-        
-        <tr>
-          <td>2025-11-24</td>
-          <td><b class="cycle-status">已结束</b><small>截至 2025-11-25</small></td>
-          <td class="combo-cell">
-            <b class="etf-name">化工ETF（159870）</b>
-            <details class="combo-details">
-              <summary>明细</summary>
-              <div>已退出 · 退出 11-25 · +1.1%</div>
-            </details>
-          </td>
-          <td class="num red">+1.1%</td>
-          <td class="num">1天</td>
-        </tr>
-        
-        <tr>
-          <td>2025-11-18</td>
-          <td><b class="cycle-status">已结束</b><small>截至 2025-11-21</small></td>
-          <td class="combo-cell">
-            <b class="etf-name">化工ETF（159870）</b>
-            <details class="combo-details">
-              <summary>明细</summary>
-              <div>已退出 · 退出 11-21 · -4.5%</div>
-            </details>
-          </td>
-          <td class="num green">-4.5%</td>
-          <td class="num">3天</td>
-        </tr>
-        
-        <tr>
-          <td>2025-11-07</td>
-          <td><b class="cycle-status">已结束</b><small>截至 2025-11-17</small></td>
-          <td class="combo-cell">
-            <b class="etf-name">电网ETF（159326）</b>
-            <details class="combo-details">
-              <summary>明细</summary>
-              <div>已退出 · 退出 11-17 · -6.5%</div>
-            </details>
-          </td>
-          <td class="num green">-6.5%</td>
-          <td class="num">10天</td>
-        </tr>
-        
-        <tr>
-          <td>2025-10-20</td>
-          <td><b class="cycle-status">已结束</b><small>截至 2025-11-05</small></td>
-          <td class="combo-cell">
-            <b class="etf-name">中韩半导体ETF（513310）</b>
-            <details class="combo-details">
-              <summary>明细</summary>
-              <div>已退出 · 退出 11-05 · +2.3%</div>
-            </details>
-          </td>
-          <td class="num red">+2.3%</td>
-          <td class="num">16天</td>
-        </tr>
-        
-        <tr>
-          <td>2025-10-15</td>
-          <td><b class="cycle-status">已结束</b><small>截至 2025-10-17</small></td>
-          <td class="combo-cell">
-            <b class="etf-name">半导体设备ETF（159516）</b>
-            <details class="combo-details">
-              <summary>明细</summary>
-              <div>已退出 · 退出 10-17 · -5.2%</div>
-            </details>
-          </td>
-          <td class="num green">-5.2%</td>
-          <td class="num">2天</td>
-        </tr>
-        
-        <tr>
-          <td>2025-10-13</td>
-          <td><b class="cycle-status">已结束</b><small>截至 2025-10-14</small></td>
-          <td class="combo-cell">
-            <b class="etf-name">汇添富电池ETF（159796）</b>
-            <details class="combo-details">
-              <summary>明细</summary>
-              <div>已退出 · 退出 10-14 · -4.0%</div>
-            </details>
-          </td>
-          <td class="num green">-4.0%</td>
-          <td class="num">1天</td>
-        </tr>
-        
-        <tr>
-          <td>2025-09-10</td>
-          <td><b class="cycle-status">已结束</b><small>截至 2025-10-10</small></td>
-          <td class="combo-cell">
-            <b class="etf-name">汇添富电池ETF（159796）</b>
-            <details class="combo-details">
-              <summary>明细</summary>
-              <div>已退出 · 退出 10-10 · +12.5%</div>
-            </details>
-          </td>
-          <td class="num red">+12.5%</td>
-          <td class="num">30天</td>
-        </tr>
-        
-        <tr>
-          <td>2025-09-05</td>
-          <td><b class="cycle-status">已结束</b><small>截至 2025-09-09</small></td>
-          <td class="combo-cell">
-            <b class="etf-name">通信设备ETF（515880）</b>
-            <details class="combo-details">
-              <summary>明细</summary>
-              <div>已退出 · 退出 09-09 · -6.8%</div>
-            </details>
-          </td>
-          <td class="num green">-6.8%</td>
-          <td class="num">4天</td>
-        </tr>
-        
-        <tr>
-          <td>2025-07-02</td>
-          <td><b class="cycle-status">已结束</b><small>截至 2025-09-04</small></td>
-          <td class="combo-cell">
-            <b class="etf-name">通信设备ETF（515880）</b>
-            <details class="combo-details">
-              <summary>明细</summary>
-              <div>已退出 · 退出 09-04 · +66.6%</div>
-            </details>
-          </td>
-          <td class="num red">+66.6%</td>
-          <td class="num">64天</td>
-        </tr>
-        
-        <tr>
-          <td>2025-06-20</td>
-          <td><b class="cycle-status">已结束</b><small>截至 2025-07-01</small></td>
-          <td class="combo-cell">
-            <b class="etf-name">创新药ETF（513780）</b>
-            <details class="combo-details">
-              <summary>明细</summary>
-              <div>已退出 · 退出 07-01 · +3.2%</div>
-            </details>
-          </td>
-          <td class="num red">+3.2%</td>
-          <td class="num">11天</td>
-        </tr>
-        
-        <tr>
-          <td>2025-06-16</td>
-          <td><b class="cycle-status">已结束</b><small>截至 2025-06-19</small></td>
-          <td class="combo-cell">
-            <b class="etf-name">创新药ETF（513120）</b>
-            <details class="combo-details">
-              <summary>明细</summary>
-              <div>已退出 · 退出 06-19 · -7.9%</div>
-            </details>
-          </td>
-          <td class="num green">-7.9%</td>
-          <td class="num">3天</td>
-        </tr>
-        
-        <tr>
-          <td>2025-05-14</td>
-          <td><b class="cycle-status">已结束</b><small>截至 2025-06-13</small></td>
-          <td class="combo-cell">
-            <b class="etf-name">德国DAXETF（513030）</b>
-            <details class="combo-details">
-              <summary>明细</summary>
-              <div>已退出 · 退出 06-13 · +3.0%</div>
-            </details>
-          </td>
-          <td class="num red">+3.0%</td>
-          <td class="num">30天</td>
-        </tr>
-        
-        <tr>
-          <td>2025-04-24</td>
-          <td><b class="cycle-status">已结束</b><small>截至 2025-05-12</small></td>
-          <td class="combo-cell">
-            <b class="etf-name">上海金ETF（518680）</b>
-            <details class="combo-details">
-              <summary>明细</summary>
-              <div>已退出 · 退出 05-12 · -3.4%</div>
-            </details>
-          </td>
-          <td class="num green">-3.4%</td>
-          <td class="num">18天</td>
-        </tr>
-        
-        <tr>
-          <td>2025-04-10</td>
-          <td><b class="cycle-status">已结束</b><small>截至 2025-04-23</small></td>
-          <td class="combo-cell">
-            <b class="etf-name">畜牧养殖ETF（159865）</b>
-            <details class="combo-details">
-              <summary>明细</summary>
-              <div>已退出 · 退出 04-23 · -4.5%</div>
-            </details>
-          </td>
-          <td class="num green">-4.5%</td>
-          <td class="num">13天</td>
-        </tr>
-        </tbody>
-        </table>
-      </div>
-    </section>
     <div class="page-footnote">
       <div class="copyright">数据仅供观察，不构成投资建议 · © yaodong-design-lab</div>
     </div>
@@ -668,5 +544,43 @@
     <a href="./index.html">每日观察</a>
     <a class="active" href="./strategy_backtest.html">轮动策略</a>
   </nav>
+  <script>
+    const cycleDetailTip = document.getElementById("cycleDetailTip");
+    const cycleDetailButton = document.querySelector(".head-tip[data-tip]");
+    if (cycleDetailButton && cycleDetailTip) {
+      let cycleDetailTipTimer = null;
+      const closeCycleDetailTip = () => {
+        cycleDetailTip.hidden = true;
+        if (cycleDetailTipTimer) {
+          clearTimeout(cycleDetailTipTimer);
+          cycleDetailTipTimer = null;
+        }
+      };
+      const armCycleDetailTipTimer = () => {
+        if (cycleDetailTipTimer) clearTimeout(cycleDetailTipTimer);
+        cycleDetailTipTimer = setTimeout(() => {
+          cycleDetailTip.hidden = true;
+          cycleDetailTipTimer = null;
+        }, 5000);
+      };
+      cycleDetailButton.addEventListener("click", (event) => {
+        event.stopPropagation();
+        const willOpen = cycleDetailTip.hidden;
+        cycleDetailTip.hidden = !willOpen;
+        if (willOpen) {
+          cycleDetailTip.innerHTML = cycleDetailButton.dataset.tip;
+          armCycleDetailTipTimer();
+        } else {
+          closeCycleDetailTip();
+        }
+      });
+      document.addEventListener("click", (event) => {
+        if (cycleDetailTip.hidden) return;
+        if (!cycleDetailTip.contains(event.target) && !cycleDetailButton.contains(event.target)) {
+          closeCycleDetailTip();
+        }
+      });
+    }
+  </script>
 </body>
 </html>
