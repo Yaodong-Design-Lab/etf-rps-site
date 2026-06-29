@@ -3773,6 +3773,31 @@ window.ETF_RPS_DAILY = {
   ],
   "history": [
     {
+      "date": "2026-06-29",
+      "title": "2026-06-29 ETF RPS 日报",
+      "url": "reports/2026-06-29.html"
+    },
+    {
+      "date": "2026-06-26",
+      "title": "2026-06-26 ETF RPS 日报",
+      "url": "reports/2026-06-26.html"
+    },
+    {
+      "date": "2026-06-25",
+      "title": "2026-06-25 ETF RPS 日报",
+      "url": "reports/2026-06-25.html"
+    },
+    {
+      "date": "2026-06-24",
+      "title": "2026-06-24 ETF RPS 日报",
+      "url": "reports/2026-06-24.html"
+    },
+    {
+      "date": "2026-06-23",
+      "title": "2026-06-23 ETF RPS 日报",
+      "url": "reports/2026-06-23.html"
+    },
+    {
       "date": "2026-06-22",
       "title": "2026-06-22 ETF RPS 日报",
       "url": "reports/2026-06-22.html"
@@ -3851,31 +3876,6 @@ window.ETF_RPS_DAILY = {
       "date": "2026-05-29",
       "title": "2026-05-29 ETF RPS 日报",
       "url": "reports/2026-05-29.html"
-    },
-    {
-      "date": "2026-05-28",
-      "title": "2026-05-28 ETF RPS 日报",
-      "url": "reports/2026-05-28.html"
-    },
-    {
-      "date": "2026-05-27",
-      "title": "2026-05-27 ETF RPS 日报",
-      "url": "reports/2026-05-27.html"
-    },
-    {
-      "date": "2026-05-26",
-      "title": "2026-05-26 ETF RPS 日报",
-      "url": "reports/2026-05-26.html"
-    },
-    {
-      "date": "2026-05-25",
-      "title": "2026-05-25 ETF RPS 日报",
-      "url": "reports/2026-05-25.html"
-    },
-    {
-      "date": "2026-05-22",
-      "title": "2026-05-22 ETF RPS 日报",
-      "url": "reports/2026-05-22.html"
     }
   ]
 };
