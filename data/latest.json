@@ -1,9 +1,9 @@
 {
-  "date": "2026-06-30",
+  "date": "2026-07-01",
   "latestReport": {
-    "date": "2026-06-30",
-    "title": "2026-06-30 ETF RPS 日报",
-    "url": "reports/2026-06-30.html",
+    "date": "2026-07-01",
+    "title": "2026-07-01 ETF RPS 日报",
+    "url": "reports/2026-07-01.html",
     "summary": {
       "strongestDirection": "半导体",
       "watchDirections": [
@@ -23,36 +23,41 @@
           "theme": "半导体",
           "count": 8,
           "avgRps20": 97.9,
-          "avgRet20": 50.7
+          "avgRet20": 46.1
         },
         {
           "theme": "科创成长",
           "count": 1,
           "avgRps20": 96.0,
-          "avgRet20": 38.0
+          "avgRet20": 29.9
         },
         {
           "theme": "科创50",
           "count": 1,
           "avgRps20": 94.9,
-          "avgRet20": 33.7
+          "avgRet20": 28.5
         },
         {
           "theme": "科创100",
           "count": 1,
           "avgRps20": 94.3,
-          "avgRet20": 29.3
+          "avgRet20": 26.6
         },
         {
-          "theme": "科技",
+          "theme": "科创综指",
           "count": 1,
           "avgRps20": 93.7,
-          "avgRet20": 27.7
+          "avgRet20": 23.4
         }
       ]
     }
   },
   "history": [
+    {
+      "date": "2026-07-01",
+      "title": "2026-07-01 ETF RPS 日报",
+      "url": "reports/2026-07-01.html"
+    },
     {
       "date": "2026-06-30",
       "title": "2026-06-30 ETF RPS 日报",
