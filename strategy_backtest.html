@@ -50,6 +50,12 @@
     .signal-list { display:grid; gap:8px; padding:16px 18px 0; }
     .compact-after-cycle { padding:0 18px 16px; background:linear-gradient(180deg, rgba(250,250,250,.75), rgba(250,250,250,.35)); }
     .compact-grid { display:grid; gap:0; }
+    .compact-position-card { display:grid; gap:8px; margin-top:14px; border:1px solid var(--line); border-radius:16px; background:var(--soft); padding:14px; }
+    .compact-position-top { display:flex; align-items:center; justify-content:space-between; gap:12px; }
+    .compact-position-top span { color:var(--muted); font-size:12px; font-weight:750; }
+    .compact-position-top b { color:var(--red); font-size:14px; font-weight:850; }
+    .compact-position-card strong { font-size:16px; line-height:1.45; font-weight:800; }
+    .compact-position-card small { color:var(--muted); font-size:12px; line-height:1.55; font-weight:500; }
     .compact-row { display:grid; grid-template-columns:92px minmax(0, 1fr); gap:12px; align-items:start; padding:10px 0; color:var(--muted); font-size:13px; line-height:1.6; }
     .compact-grid .compact-row:first-child { padding-top:14px; }
     .compact-row span { color:var(--muted); font-size:13px; font-weight:400; letter-spacing:0; }
@@ -190,16 +196,25 @@
     
     
     <section class="panel" id="cycle-detail">
-      <div class="panel-head"><h2 class="title-with-tip">组合轮动明细<span class="title-tip-anchor"><button type="button" class="head-tip" data-tip="轮动明细记录的是策略实际交易过程：当前规则只筛出 1 只 ETF，按策略以 100% 仓位执行；买点出现后下一交易日执行，卖点触发即退出，再等待下一次买入信号。<br><br>当前信号：科创半导体ETF（588170）<br>买入规则：RPS 20 &gt; 95，RPS 60 &gt; 80，且连续 3 个交易日进入 RPS 20 前 5。<br>卖出规则：回撤6% 或跌破20日均线，任一条件触发即退出。"></button><div class="resonance-tip" id="cycleDetailTip" hidden></div></span></h2><span class="panel-head-meta">第 31 轮</span></div>
+      <div class="panel-head"><h2 class="title-with-tip">组合轮动明细<span class="title-tip-anchor"><button type="button" class="head-tip" data-tip="轮动明细记录的是策略实际交易过程：当前规则只筛出 1 只 ETF，按策略以 100% 仓位执行；买点出现后下一交易日执行，卖点触发即退出，再等待下一次买入信号。<br><br>当前仓位：已持有 · 科创半导体ETF（588170）<br>当前说明：第 31 轮已在 2026-07-03 买入，当前继续持有，直到触发“回撤6% 或跌破20日均线”卖出规则。<br>当日候选：科创半导体ETF（588170）<br>买入规则：RPS 20 &gt; 95，RPS 60 &gt; 80，且连续 3 个交易日进入 RPS 20 前 5。<br>卖出规则：回撤6% 或跌破20日均线，任一条件触发即退出。"></button><div class="resonance-tip" id="cycleDetailTip" hidden></div></span></h2><span class="panel-head-meta">第 31 轮</span></div>
       
       <div class="compact-after-cycle">
         <div class="compact-grid">
+          <div class="compact-position-card">
+            <div class="compact-position-top">
+              <span>当前仓位状态</span>
+              <b>已持有</b>
+            </div>
+            <strong>科创半导体ETF（588170）</strong>
+            <small>第 31 轮已在 2026-07-03 买入，当前继续持有，直到触发“回撤6% 或跌破20日均线”卖出规则。</small>
+            <small>下一步：继续持有，等待卖出信号</small>
+          </div>
           <div class="compact-row compact-row-strategy">
             <span>当前策略</span>
             <b>强势方向买入，回撤6% 或跌破20日均线卖出</b>
           </div>
           <div class="compact-row compact-row-signal">
-            <span>当前信号</span>
+            <span>当日候选</span>
             <b>科创半导体ETF（588170）</b>
           </div>
           <div class="compact-statline">
