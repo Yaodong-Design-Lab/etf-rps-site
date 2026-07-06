@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="format-detection" content="telephone=no">
+  <title>主理人手记</title>
+  <style>
+    :root {
+      --bg: #f7f7f8;
+      --panel: #ffffff;
+      --ink: #171717;
+      --muted: #737373;
+      --line: #e5e7eb;
+      --red: #b91c1c;
+      --green: #067a73;
+      --blue: #2563eb;
+    }
+    * { box-sizing: border-box; }
+    html { background: var(--bg); color: var(--ink); font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif; -webkit-font-smoothing: antialiased; }
+    body { margin: 0; background: var(--bg); }
+    button, input, textarea { font: inherit; }
+    .shell { width: min(100%, 760px); margin: 0 auto; padding: 52px 14px 96px; }
+    .hero { display: grid; gap: 12px; padding: 4px 2px 20px; }
+    .eyebrow { color: var(--red); font-size: 11px; font-weight: 800; letter-spacing: .12em; }
+    h1 { margin: 0; font-size: 30px; line-height: 1.1; font-weight: 850; letter-spacing: 0; }
+    h2, h3, p { margin: 0; letter-spacing: 0; }
+    .hero p, .muted, .post-body, .footer, .hint { color: var(--muted); font-size: 14px; line-height: 1.65; }
+    .panel { margin-top: 16px; border: 1px solid var(--line); border-radius: 22px; background: var(--panel); box-shadow: 0 10px 28px rgba(24, 24, 27, .08), 0 1px 2px rgba(24, 24, 27, .04); overflow: hidden; }
+    .composer { display: grid; gap: 12px; padding: 16px; }
+    .composer-head { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; }
+    .composer h2, .timeline-title { font-size: 19px; font-weight: 850; }
+    .field-grid { display: grid; grid-template-columns: 160px 1fr; gap: 10px; }
+    input, textarea { width: 100%; border: 1px solid var(--line); border-radius: 14px; background: #f8fafc; color: var(--ink); padding: 11px 12px; outline: none; }
+    textarea { min-height: 112px; resize: vertical; line-height: 1.65; }
+    input:focus, textarea:focus { border-color: #111827; background: #fff; }
+    .button-row { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+    .btn { border: 0; border-radius: 999px; background: #111827; color: #fff; cursor: pointer; font-weight: 750; padding: 10px 16px; }
+    .btn.secondary { border: 1px solid var(--line); background: #fff; color: var(--ink); }
+    .filters { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 18px; }
+    .chip { border: 1px solid var(--line); border-radius: 999px; background: #fff; color: var(--muted); cursor: pointer; font-size: 13px; font-weight: 750; padding: 8px 12px; }
+    .chip.active { border-color: #111827; background: #111827; color: #fff; }
+    .timeline-wrap { margin-top: 18px; }
+    .timeline-head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; padding: 0 2px 10px; }
+    .post-list { display: grid; gap: 12px; }
+    .post { border: 1px solid var(--line); border-radius: 20px; background: #fff; padding: 16px; box-shadow: 0 6px 18px rgba(24, 24, 27, .06); }
+    .post-head { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; }
+    .post h3 { font-size: 18px; line-height: 1.35; font-weight: 850; }
+    .post time { color: var(--muted); font-size: 12px; font-weight: 750; white-space: nowrap; }
+    .post-body { margin-top: 10px; white-space: pre-wrap; }
+    .tag-row { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 12px; }
+    .tag { border-radius: 999px; background: #f1f5f9; color: #475569; font-size: 12px; font-weight: 750; padding: 5px 8px; }
+    .empty { border: 1px dashed var(--line); border-radius: 18px; color: var(--muted); padding: 18px; text-align: center; }
+    .footer { margin-top: 22px; text-align: center; }
+    .bottom-nav { position: fixed; left: 50%; bottom: 14px; z-index: 30; transform: translateX(-50%); display: inline-flex; gap: 3px; width: min(calc(100vw - 28px), 520px); border: 1px solid var(--line); border-radius: 999px; background: rgba(255, 255, 255, .94); padding: 4px; box-shadow: 0 14px 34px rgba(24, 24, 27, .14); backdrop-filter: blur(14px); }
+    .bottom-nav a { flex: 1 1 0; min-width: 0; border-radius: 999px; color: var(--muted); text-align: center; text-decoration: none; font-size: 13px; font-weight: 650; padding: 9px 8px; white-space: nowrap; }
+    .bottom-nav a.active { background: #111827; color: #fff; }
+    @media (max-width: 560px) {
+      .shell { padding-top: 44px; }
+      h1 { font-size: 28px; }
+      .field-grid { grid-template-columns: 1fr; }
+      .bottom-nav a { font-size: 12px; padding-inline: 4px; }
+      .post-head { display: grid; gap: 4px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <section class="hero">
+      <div class="eyebrow">CAIWEISI NOTES</div>
+      <h1>主理人手记</h1>
+      <p>按时间记录 RPS 观察、交易复盘和当下感悟。先做成静态站可用的本地发帖原型。</p>
+    </section>
+
+    <section class="panel composer">
+      <div class="composer-head">
+        <h2>写一条手记</h2>
+        <span class="muted">保存在当前浏览器</span>
+      </div>
+      <div class="field-grid">
+        <input id="postDate" type="date" aria-label="日期">
+        <input id="postTitle" type="text" placeholder="标题，例如：今天只做一件事" aria-label="标题">
+      </div>
+      <input id="postTags" type="text" placeholder="标签，用逗号分隔，例如：RPS, 复盘, 心态" aria-label="标签">
+      <textarea id="postBody" placeholder="写下今天的观察、感悟或复盘..." aria-label="正文"></textarea>
+      <div class="button-row">
+        <button class="btn" type="button" id="savePost">保存手记</button>
+        <button class="btn secondary" type="button" id="exportPosts">导出 JSON</button>
+        <span class="hint" id="saveHint">静态站不会自动同步到云端。</span>
+      </div>
+    </section>
+
+    <div class="filters" id="filters"></div>
+
+    <section class="timeline-wrap">
+      <div class="timeline-head">
+        <h2 class="timeline-title">时间线</h2>
+        <span class="muted" id="postCount"></span>
+      </div>
+      <div class="post-list" id="postList"></div>
+    </section>
+
+    <div class="footer">数据仅供观察，不构成投资建议 · © yaodong-design-lab</div>
+  </main>
+
+  <nav class="bottom-nav" aria-label="页面切换">
+    <a href="./index.html">每日观察</a>
+    <a href="./strategy_backtest.html">轮动策略</a>
+    <a href="./practice.html">实践案例</a>
+    <a class="active" href="./notes.html">手记</a>
+  </nav>
+
+  <script>
+    const STORAGE_KEY = "caiweisi-notes-v1";
+    const seedPosts = [
+      {
+        id: "seed-20260703",
+        date: "2026-07-03",
+        title: "强势不是一个点，而是一段连续状态",
+        tags: ["RPS", "主线", "复盘"],
+        body: "今天看半导体继续留在前排，我更在意的是强势天数和多周期共振，而不是单日涨跌。真正能跟踪的趋势，需要在榜单里反复出现。"
+      },
+      {
+        id: "seed-20260628",
+        date: "2026-06-28",
+        title: "把观察和操作分开",
+        tags: ["心态", "纪律"],
+        body: "观察可以敏锐，操作要迟钝一点。RPS 先帮我发现变化，但是否行动，还要看位置、连续性和风险回撤。"
+      }
+    ];
+
+    let activeTag = "全部";
+    const $ = (selector) => document.querySelector(selector);
+
+    function today() {
+      return new Date().toISOString().slice(0, 10);
+    }
+
+    function loadPosts() {
+      try {
+        const local = JSON.parse(localStorage.getItem(STORAGE_KEY) || "[]");
+        return [...local, ...seedPosts].sort((a, b) => b.date.localeCompare(a.date));
+      } catch (error) {
+        return seedPosts.slice();
+      }
+    }
+
+    function saveLocalPosts(posts) {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(posts));
+    }
+
+    function localPosts() {
+      try {
+        return JSON.parse(localStorage.getItem(STORAGE_KEY) || "[]");
+      } catch (error) {
+        return [];
+      }
+    }
+
+    function escapeHtml(text) {
+      return String(text || "").replace(/[&<>"']/g, (char) => ({
+        "&": "&amp;",
+        "<": "&lt;",
+        ">": "&gt;",
+        '"': "&quot;",
+        "'": "&#39;"
+      }[char]));
+    }
+
+    function allTags(posts) {
+      return ["全部", ...Array.from(new Set(posts.flatMap((post) => post.tags || [])))];
+    }
+
+    function renderFilters(posts) {
+      $("#filters").innerHTML = allTags(posts).map((tag) => (
+        `<button class="chip ${tag === activeTag ? "active" : ""}" type="button" data-tag="${escapeHtml(tag)}">${escapeHtml(tag)}</button>`
+      )).join("");
+      document.querySelectorAll(".chip").forEach((button) => {
+        button.addEventListener("click", () => {
+          activeTag = button.dataset.tag;
+          render();
+        });
+      });
+    }
+
+    function renderPosts(posts) {
+      const filtered = activeTag === "全部" ? posts : posts.filter((post) => (post.tags || []).includes(activeTag));
+      $("#postCount").textContent = `${filtered.length} 条`;
+      if (!filtered.length) {
+        $("#postList").innerHTML = '<div class="empty">这个标签下还没有手记。</div>';
+        return;
+      }
+      $("#postList").innerHTML = filtered.map((post) => `
+        <article class="post">
+          <div class="post-head">
+            <h3>${escapeHtml(post.title)}</h3>
+            <time>${escapeHtml(post.date)}</time>
+          </div>
+          <div class="post-body">${escapeHtml(post.body)}</div>
+          <div class="tag-row">${(post.tags || []).map((tag) => `<span class="tag">${escapeHtml(tag)}</span>`).join("")}</div>
+        </article>
+      `).join("");
+    }
+
+    function render() {
+      const posts = loadPosts();
+      renderFilters(posts);
+      renderPosts(posts);
+    }
+
+    $("#postDate").value = today();
+    $("#savePost").addEventListener("click", () => {
+      const title = $("#postTitle").value.trim();
+      const body = $("#postBody").value.trim();
+      if (!title || !body) {
+        $("#saveHint").textContent = "标题和正文都要填。";
+        return;
+      }
+      const tags = $("#postTags").value.split(/[,，]/).map((tag) => tag.trim()).filter(Boolean);
+      const posts = localPosts();
+      posts.unshift({
+        id: `local-${Date.now()}`,
+        date: $("#postDate").value || today(),
+        title,
+        tags: tags.length ? tags : ["手记"],
+        body
+      });
+      saveLocalPosts(posts);
+      $("#postTitle").value = "";
+      $("#postTags").value = "";
+      $("#postBody").value = "";
+      $("#postDate").value = today();
+      activeTag = "全部";
+      $("#saveHint").textContent = "已保存到当前浏览器。";
+      render();
+    });
+
+    $("#exportPosts").addEventListener("click", async () => {
+      const text = JSON.stringify(localPosts(), null, 2);
+      try {
+        await navigator.clipboard.writeText(text);
+        $("#saveHint").textContent = "已复制 JSON，可用于正式发布。";
+      } catch (error) {
+        $("#saveHint").textContent = text || "暂无本地手记。";
+      }
+    });
+
+    render();
+  </script>
+</body>
+</html>

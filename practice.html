@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="format-detection" content="telephone=no">
+  <title>RPS 实践案例</title>
+  <style>
+    :root {
+      --bg: #f7f7f8;
+      --panel: #ffffff;
+      --ink: #171717;
+      --muted: #737373;
+      --line: #e5e7eb;
+      --red: #b91c1c;
+      --green: #067a73;
+      --blue: #3b82f6;
+      --yellow: #f5c451;
+    }
+    * { box-sizing: border-box; }
+    html { background: var(--bg); color: var(--ink); font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif; -webkit-font-smoothing: antialiased; }
+    body { margin: 0; background: var(--bg); }
+    .shell { width: min(100%, 760px); margin: 0 auto; padding: 52px 14px 96px; }
+    .hero { display: grid; gap: 12px; padding: 4px 2px 20px; }
+    .eyebrow { color: var(--red); font-size: 11px; font-weight: 800; letter-spacing: .12em; }
+    h1 { margin: 0; font-size: 30px; line-height: 1.1; font-weight: 850; letter-spacing: 0; }
+    h2, h3 { margin: 0; letter-spacing: 0; }
+    .hero p, .copy, .muted, .signal p, .timeline p, .footer { color: var(--muted); font-size: 14px; line-height: 1.65; margin: 0; }
+    .panel { margin-top: 16px; border: 1px solid var(--line); border-radius: 22px; background: var(--panel); box-shadow: 0 10px 28px rgba(24, 24, 27, .08), 0 1px 2px rgba(24, 24, 27, .04); overflow: hidden; }
+    .lead { display: grid; gap: 14px; padding: 18px; }
+    .lead h2 { font-size: 22px; line-height: 1.25; font-weight: 850; }
+    .meta-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
+    .meta-card { min-height: 76px; border: 1px solid var(--line); border-radius: 14px; background: #f8fafc; padding: 12px; }
+    .meta-card span { display: block; color: var(--muted); font-size: 12px; font-weight: 700; }
+    .meta-card b { display: block; margin-top: 7px; font-size: 14px; line-height: 1.35; }
+    .section-head { display: flex; justify-content: space-between; gap: 12px; align-items: baseline; margin: 22px 2px 10px; }
+    .section-head h2 { font-size: 19px; font-weight: 850; }
+    .section-head span { color: var(--muted); font-size: 12px; white-space: nowrap; }
+    .signal-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+    .signal { min-height: 142px; border: 1px solid var(--line); border-radius: 18px; background: var(--panel); padding: 15px; box-shadow: 0 6px 18px rgba(24, 24, 27, .06); }
+    .dot { width: 11px; height: 11px; border-radius: 999px; margin-bottom: 12px; }
+    .dot.red { background: #ef5d7e; }
+    .dot.yellow { background: var(--yellow); }
+    .dot.blue { background: var(--blue); }
+    .dot.green { background: var(--green); }
+    .signal h3 { font-size: 16px; font-weight: 850; }
+    .signal p { margin-top: 8px; font-size: 13px; }
+    .panel-title { padding: 16px 18px; border-bottom: 1px solid var(--line); font-size: 19px; font-weight: 850; }
+    .timeline { padding: 4px 18px 18px; }
+    .step { display: grid; grid-template-columns: 42px 1fr; gap: 14px; padding: 16px 0; border-bottom: 1px solid var(--line); }
+    .step:last-child { border-bottom: 0; padding-bottom: 0; }
+    .index { display: flex; align-items: center; justify-content: center; width: 36px; height: 36px; border-radius: 999px; background: #111827; color: #fff; font-size: 12px; font-weight: 850; }
+    .timeline h3 { font-size: 17px; font-weight: 850; }
+    .timeline .muted { margin-top: 4px; font-weight: 700; }
+    .timeline p { margin-top: 8px; }
+    .takeaways { display: grid; gap: 12px; padding: 16px 18px 18px; }
+    .takeaway { display: grid; grid-template-columns: 10px 1fr; gap: 12px; align-items: start; font-size: 15px; line-height: 1.6; font-weight: 650; }
+    .takeaway::before { content: ""; width: 7px; height: 7px; margin-top: 9px; border-radius: 999px; background: var(--red); }
+    .footer { margin-top: 22px; text-align: center; }
+    .bottom-nav { position: fixed; left: 50%; bottom: 14px; z-index: 30; transform: translateX(-50%); display: inline-flex; gap: 3px; width: min(calc(100vw - 28px), 520px); border: 1px solid var(--line); border-radius: 999px; background: rgba(255, 255, 255, .94); padding: 4px; box-shadow: 0 14px 34px rgba(24, 24, 27, .14); backdrop-filter: blur(14px); }
+    .bottom-nav a { flex: 1 1 0; min-width: 0; border-radius: 999px; color: var(--muted); text-align: center; text-decoration: none; font-size: 13px; font-weight: 650; padding: 9px 8px; white-space: nowrap; }
+    .bottom-nav a.active { background: #111827; color: #fff; }
+    @media (max-width: 560px) {
+      .shell { padding-top: 44px; }
+      h1 { font-size: 28px; }
+      .meta-grid, .signal-grid { grid-template-columns: 1fr; }
+      .bottom-nav a { font-size: 12px; padding-inline: 4px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <section class="hero">
+      <div class="eyebrow">RPS PRACTICE CASE</div>
+      <h1>实践案例</h1>
+      <p>把 RPS 从榜单信号拆成一条可以复盘的主线跟踪过程。</p>
+    </section>
+
+    <section class="panel lead">
+      <div class="eyebrow">案例 01</div>
+      <h2>从强度抬升到趋势确认</h2>
+      <p class="copy">这类案例的重点不是某一天排名很高，而是 RPS 排名连续靠前、多周期指标同步改善，再结合主线扩散去判断趋势是否值得持续观察。</p>
+      <div class="meta-grid">
+        <div class="meta-card"><span>观察对象</span><b>强势主线 ETF</b></div>
+        <div class="meta-card"><span>核心指标</span><b>RPS 20 / 50 / 120</b></div>
+        <div class="meta-card"><span>确认方式</span><b>连续强势 + 多周期共振</b></div>
+      </div>
+    </section>
+
+    <div class="section-head">
+      <h2>关键观察</h2>
+      <span>从榜单抓四个变化</span>
+    </div>
+    <section class="signal-grid">
+      <article class="signal"><div class="dot red"></div><h3>RPS 20 ≥ 90</h3><p>短周期进入强势区，适合先放入观察池。</p></article>
+      <article class="signal"><div class="dot yellow"></div><h3>强势天数 ≥ 3</h3><p>不是一天冲高，而是排名持续停留在前排。</p></article>
+      <article class="signal"><div class="dot blue"></div><h3>多周期共振</h3><p>20、50、120 日强度同步抬升，趋势质量更稳。</p></article>
+      <article class="signal"><div class="dot green"></div><h3>跌出前 20</h3><p>短线强度开始降温，需要降低观察优先级。</p></article>
+    </section>
+
+    <section class="panel">
+      <h2 class="panel-title">推演时间线</h2>
+      <div class="timeline">
+        <article class="step"><div class="index">01</div><div><h3>首次异动</h3><div class="muted">从全量 ETF 表里筛出 RPS 20 靠前的品种</div><p>这个阶段不急着下结论，重点是确认它是不是连续出现在强度榜前排。</p></div></article>
+        <article class="step"><div class="index">02</div><div><h3>强度确认</h3><div class="muted">RPS 20 保持高位，RPS 50 / 120 同步改善</div><p>当短中周期一起转强，说明资金不是只做一日脉冲，而是开始沿着同一条主线聚集。</p></div></article>
+        <article class="step"><div class="index">03</div><div><h3>趋势跟踪</h3><div class="muted">强势天数拉长，榜单位置稳定</div><p>进入跟踪阶段后，核心不是每天换标的，而是看强势状态有没有延续，以及同方向 ETF 是否继续扩散。</p></div></article>
+        <article class="step"><div class="index">04</div><div><h3>风险降级</h3><div class="muted">短周期掉队，或排名跌出前 20</div><p>如果短周期率先走弱，就先把它从重点观察降到普通观察；如果多个周期一起转弱，再考虑结束跟踪。</p></div></article>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2 class="panel-title">复盘结论</h2>
+      <div class="takeaways">
+        <div class="takeaway">单日 RPS 很高只代表异动，连续强势才代表趋势开始稳定。</div>
+        <div class="takeaway">主线判断要看一组 ETF 的扩散，不只盯一个名字。</div>
+        <div class="takeaway">RPS 20 适合发现变化，RPS 50 / 120 更适合确认趋势质量。</div>
+        <div class="takeaway">卖出或降级信号通常来自短周期先转弱，再传导到中长期。</div>
+      </div>
+    </section>
+
+    <div class="footer">数据仅供观察，不构成投资建议 · © yaodong-design-lab</div>
+  </main>
+
+  <nav class="bottom-nav" aria-label="页面切换">
+    <a href="./index.html">每日观察</a>
+    <a href="./strategy_backtest.html">轮动策略</a>
+    <a class="active" href="./practice.html">实践案例</a>
+    <a href="./notes.html">手记</a>
+  </nav>
+</body>
+</html>
