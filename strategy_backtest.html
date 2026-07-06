@@ -50,14 +50,9 @@
     .signal-list { display:grid; gap:8px; padding:16px 18px 0; }
     .compact-after-cycle { padding:0 18px 16px; background:linear-gradient(180deg, rgba(250,250,250,.75), rgba(250,250,250,.35)); }
     .compact-grid { display:grid; gap:0; }
-    .compact-position-card { display:grid; gap:8px; margin-top:14px; border:1px solid var(--line); border-radius:16px; background:var(--soft); padding:14px; }
-    .compact-position-top { display:flex; align-items:center; justify-content:space-between; gap:12px; }
-    .compact-position-top span { color:var(--muted); font-size:12px; font-weight:750; }
-    .compact-position-top b { color:var(--red); font-size:14px; font-weight:850; }
-    .compact-position-card strong { font-size:16px; line-height:1.45; font-weight:800; }
-    .compact-position-card small { color:var(--muted); font-size:12px; line-height:1.55; font-weight:500; }
-    .compact-row { display:grid; grid-template-columns:92px minmax(0, 1fr); gap:12px; align-items:start; padding:10px 0; color:var(--muted); font-size:13px; line-height:1.6; }
-    .compact-grid .compact-row:first-child { padding-top:14px; }
+    .compact-row { display:grid; grid-template-columns:92px minmax(0, 1fr); gap:12px; align-items:start; padding:6px 0; color:var(--muted); font-size:13px; line-height:1.6; }
+    .compact-grid .compact-row:first-child { padding-top:16px; }
+    .compact-grid .compact-row:nth-last-child(2) { padding-bottom:16px; }
     .compact-row span { color:var(--muted); font-size:13px; font-weight:400; letter-spacing:0; }
     .compact-row b { color:var(--ink); font-size:17px; line-height:1.45; font-weight:800; min-width:0; letter-spacing:0; }
     .compact-row-strategy { grid-template-columns:92px minmax(0, 1fr); }
@@ -175,8 +170,9 @@
       .action-card { border-radius:16px; padding:13px 14px; }
       .action-detail div { grid-template-columns:64px 1fr; }
       .compact-after-cycle { padding:0 14px 14px; }
-      .compact-row { grid-template-columns:72px minmax(0, 1fr); gap:10px; padding:10px 0; }
-      .compact-grid .compact-row:first-child { padding-top:14px; }
+      .compact-row { grid-template-columns:72px minmax(0, 1fr); gap:10px; padding:6px 0; }
+      .compact-grid .compact-row:first-child { padding-top:16px; }
+      .compact-grid .compact-row:nth-last-child(2) { padding-bottom:16px; }
       .compact-row-strategy { grid-template-columns:72px minmax(0, 1fr); }
       .compact-row span { font-size:13px; font-weight:400; }
       .compact-row b { font-size:15px; line-height:1.45; }
@@ -200,15 +196,6 @@
       
       <div class="compact-after-cycle">
         <div class="compact-grid">
-          <div class="compact-position-card">
-            <div class="compact-position-top">
-              <span>当前仓位状态</span>
-              <b>已持有</b>
-            </div>
-            <strong>科创半导体ETF（588170）</strong>
-            <small>第 51 轮已在 2026-07-06 买入，当前继续持有，直到触发“跌破10日均线”卖出规则。</small>
-            <small>下一步：继续持有，等待卖出信号</small>
-          </div>
           <div class="compact-row compact-row-strategy">
             <span>当前策略</span>
             <b>强势方向买入，跌破10日均线卖出</b>
