@@ -135,8 +135,8 @@
     .green { color:var(--green); }
     .page-footnote { margin:18px 0 0; color:var(--muted); text-align:center; font-size:12px; line-height:1.5; font-weight:400; }
     .copyright { margin-top:8px; }
-    .bottom-nav { position:fixed; left:50%; bottom:14px; z-index:30; transform:translateX(-50%); display:inline-flex; gap:3px; width:min(calc(100vw - 28px), 520px); border:1px solid var(--line); border-radius:999px; background:color-mix(in oklab, var(--card) 92%, transparent); padding:4px; box-shadow:0 14px 34px rgba(24,24,27,.14), 0 1px 2px rgba(24,24,27,.08); backdrop-filter:blur(14px); }
-    .bottom-nav a { flex:1 1 0; min-width:0; border-radius:999px; color:var(--muted); text-align:center; text-decoration:none; font-size:13px; font-weight:650; padding:9px 8px; white-space:nowrap; }
+    .bottom-nav { position:fixed; left:50%; bottom:14px; z-index:30; transform:translateX(-50%); display:inline-flex; gap:3px; width:min(calc(100vw - 28px), 340px); border:1px solid var(--line); border-radius:999px; background:color-mix(in oklab, var(--card) 92%, transparent); padding:4px; box-shadow:0 14px 34px rgba(24,24,27,.14), 0 1px 2px rgba(24,24,27,.08); backdrop-filter:blur(14px); }
+    .bottom-nav a { flex:1 1 0; min-width:132px; border-radius:999px; color:var(--muted); text-align:center; text-decoration:none; font-size:13px; font-weight:650; padding:9px 14px; }
     .bottom-nav a.active { background:var(--ink); color:#fff; box-shadow:0 1px 2px rgba(24,24,27,.12); }
     @media(max-width:760px) {
       h1 { font-size:28px; }
@@ -191,12 +191,12 @@
     <section class="hero">
       <div class="kicker">ETF STRATEGY BACKTEST</div>
       <div class="title-row"><h1>ETF 趋势轮动策略</h1><span class="beta-badge">Beta</span></div>
-      <div class="hero-meta"><span>2025-01-01 至 2026-07-03 · 175 只 ETF</span></div>
+      <div class="hero-meta"><span>2025-01-01 至 2026-07-06 · 175 只 ETF</span></div>
     </section>
     
     
     <section class="panel" id="cycle-detail">
-      <div class="panel-head"><h2 class="title-with-tip">组合轮动明细<span class="title-tip-anchor"><button type="button" class="head-tip" data-tip="轮动明细记录的是策略实际交易过程：当前规则只筛出 1 只 ETF，按策略以 100% 仓位执行；买点出现后下一交易日执行，卖点触发即退出，再等待下一次买入信号。<br><br>当前仓位：已持有 · 科创半导体ETF（588170）<br>当前说明：第 31 轮已在 2026-07-03 买入，当前继续持有，直到触发“回撤6% 或跌破20日均线”卖出规则。<br>当日候选：科创半导体ETF（588170）<br>买入规则：RPS 20 &gt; 95，RPS 60 &gt; 80，且连续 3 个交易日进入 RPS 20 前 5。<br>卖出规则：回撤6% 或跌破20日均线，任一条件触发即退出。"></button><div class="resonance-tip" id="cycleDetailTip" hidden></div></span></h2><span class="panel-head-meta">第 31 轮</span></div>
+      <div class="panel-head"><h2 class="title-with-tip">组合轮动明细<span class="title-tip-anchor"><button type="button" class="head-tip" data-tip="轮动明细记录的是策略实际交易过程：当前规则只筛出 1 只 ETF，按策略以 100% 仓位执行；买点出现后下一交易日执行，卖点触发即退出，再等待下一次买入信号。<br><br>当前仓位：已持有 · 科创半导体ETF（588170）<br>当前说明：第 51 轮已在 2026-07-06 买入，当前继续持有，直到触发“跌破10日均线”卖出规则。<br>当日候选：半导体设备ETF（159516）<br>买入规则：RPS 20 &gt; 95，RPS 60 &gt; 80，且连续 3 个交易日进入 RPS 20 前 5。<br>卖出规则：跌破10日均线，任一条件触发即退出。"></button><div class="resonance-tip" id="cycleDetailTip" hidden></div></span></h2><span class="panel-head-meta">第 51 轮</span></div>
       
       <div class="compact-after-cycle">
         <div class="compact-grid">
@@ -206,21 +206,21 @@
               <b>已持有</b>
             </div>
             <strong>科创半导体ETF（588170）</strong>
-            <small>第 31 轮已在 2026-07-03 买入，当前继续持有，直到触发“回撤6% 或跌破20日均线”卖出规则。</small>
+            <small>第 51 轮已在 2026-07-06 买入，当前继续持有，直到触发“跌破10日均线”卖出规则。</small>
             <small>下一步：继续持有，等待卖出信号</small>
           </div>
           <div class="compact-row compact-row-strategy">
             <span>当前策略</span>
-            <b>强势方向买入，回撤6% 或跌破20日均线卖出</b>
+            <b>强势方向买入，跌破10日均线卖出</b>
           </div>
           <div class="compact-row compact-row-signal">
             <span>当日候选</span>
-            <b>科创半导体ETF（588170）</b>
+            <b>半导体设备ETF（159516）</b>
           </div>
           <div class="compact-statline">
-            <span>累计收益 <b class="red">+265.8%</b></span>
-            <span>最大回撤 <b class="green">-25.7%</b></span>
-            <span>平均持仓 <b>13.0天</b></span>
+            <span>累计收益 <b class="red">+25.5%</b></span>
+            <span>最大回撤 <b class="green">-46.7%</b></span>
+            <span>平均持仓 <b>7.0天</b></span>
           </div>
         </div>
       </div>
@@ -230,7 +230,7 @@
           <thead><tr><th>状态</th><th>ETF</th><th>收益</th><th>持仓</th></tr></thead>
           <tbody>
         <tr>
-          <td class="status-cell"><b class="cycle-status">持有中</b><small>买入 2026-07-03</small><small>截至 2026-07-03</small></td>
+          <td class="status-cell"><b class="cycle-status">持有中</b><small>买入 2026-07-06</small><small>截至 2026-07-06</small></td>
           <td class="combo-cell">
             <b class="etf-name">科创半导体ETF</b>
             <small>588170</small>
@@ -240,33 +240,43 @@
         </tr>
         
         <tr>
-          <td class="status-cell"><b class="cycle-status">已结束</b><small>买入 2026-06-08</small><small>截至 2026-07-02</small></td>
+          <td class="status-cell"><b class="cycle-status">已结束</b><small>买入 2026-06-08</small><small>截至 2026-07-03</small></td>
           <td class="combo-cell">
             <b class="etf-name">半导体设备ETF</b>
             <small>588170</small>
           </td>
-          <td class="num cycle-return red">+57.5%</td>
-          <td class="num">24天</td>
+          <td class="num cycle-return red">+52.1%</td>
+          <td class="num">25天</td>
         </tr>
         
         <tr>
-          <td class="status-cell"><b class="cycle-status">已结束</b><small>买入 2026-05-18</small><small>截至 2026-06-05</small></td>
+          <td class="status-cell"><b class="cycle-status">已结束</b><small>买入 2026-06-01</small><small>截至 2026-06-05</small></td>
           <td class="combo-cell">
             <b class="etf-name">中韩半导体ETF</b>
             <small>513310</small>
           </td>
-          <td class="num cycle-return red">+5.5%</td>
-          <td class="num">18天</td>
+          <td class="num cycle-return green">-3.9%</td>
+          <td class="num">4天</td>
         </tr>
         
         <tr>
-          <td class="status-cell"><b class="cycle-status">已结束</b><small>买入 2026-04-29</small><small>截至 2026-05-15</small></td>
+          <td class="status-cell"><b class="cycle-status">已结束</b><small>买入 2026-05-20</small><small>截至 2026-05-29</small></td>
+          <td class="combo-cell">
+            <b class="etf-name">半导体设备ETF</b>
+            <small>588170</small>
+          </td>
+          <td class="num cycle-return green">-9.8%</td>
+          <td class="num">9天</td>
+        </tr>
+        
+        <tr>
+          <td class="status-cell"><b class="cycle-status">已结束</b><small>买入 2026-04-29</small><small>截至 2026-05-19</small></td>
           <td class="combo-cell">
             <b class="etf-name">中韩半导体ETF</b>
             <small>513310</small>
           </td>
-          <td class="num cycle-return red">+15.8%</td>
-          <td class="num">16天</td>
+          <td class="num cycle-return red">+16.4%</td>
+          <td class="num">20天</td>
         </tr>
         
         <tr>
@@ -280,83 +290,113 @@
         </tr>
         
         <tr>
-          <td class="status-cell"><b class="cycle-status">已结束</b><small>买入 2026-04-10</small><small>截至 2026-04-13</small></td>
+          <td class="status-cell"><b class="cycle-status">已结束</b><small>买入 2026-04-09</small><small>截至 2026-04-10</small></td>
           <td class="combo-cell">
             <b class="etf-name">能源化工ETF</b>
             <small>159981</small>
           </td>
           <td class="num cycle-return green">-1.1%</td>
-          <td class="num">3天</td>
+          <td class="num">1天</td>
         </tr>
         
         <tr>
-          <td class="status-cell"><b class="cycle-status">已结束</b><small>买入 2026-03-17</small><small>截至 2026-04-09</small></td>
+          <td class="status-cell"><b class="cycle-status">已结束</b><small>买入 2026-04-02</small><small>截至 2026-04-08</small></td>
           <td class="combo-cell">
             <b class="etf-name">能源化工ETF</b>
             <small>159981</small>
           </td>
           <td class="num cycle-return red">+1.0%</td>
-          <td class="num">23天</td>
-        </tr>
-        
-        <tr>
-          <td class="status-cell"><b class="cycle-status">已结束</b><small>买入 2026-03-10</small><small>截至 2026-03-16</small></td>
-          <td class="combo-cell">
-            <b class="etf-name">电网ETF</b>
-            <small>159326</small>
-          </td>
-          <td class="num cycle-return green">-6.9%</td>
           <td class="num">6天</td>
         </tr>
         
         <tr>
-          <td class="status-cell"><b class="cycle-status">已结束</b><small>买入 2026-02-12</small><small>截至 2026-03-09</small></td>
+          <td class="status-cell"><b class="cycle-status">已结束</b><small>买入 2026-03-26</small><small>截至 2026-04-01</small></td>
+          <td class="combo-cell">
+            <b class="etf-name">能源化工ETF</b>
+            <small>159981</small>
+          </td>
+          <td class="num cycle-return green">-0.4%</td>
+          <td class="num">6天</td>
+        </tr>
+        
+        <tr>
+          <td class="status-cell"><b class="cycle-status">已结束</b><small>买入 2026-03-16</small><small>截至 2026-03-25</small></td>
+          <td class="combo-cell">
+            <b class="etf-name">能源化工ETF</b>
+            <small>159981</small>
+          </td>
+          <td class="num cycle-return green">-1.3%</td>
+          <td class="num">9天</td>
+        </tr>
+        
+        <tr>
+          <td class="status-cell"><b class="cycle-status">已结束</b><small>买入 2026-03-11</small><small>截至 2026-03-13</small></td>
+          <td class="combo-cell">
+            <b class="etf-name">电网ETF</b>
+            <small>159326</small>
+          </td>
+          <td class="num cycle-return green">-4.2%</td>
+          <td class="num">2天</td>
+        </tr>
+        
+        <tr>
+          <td class="status-cell"><b class="cycle-status">已结束</b><small>买入 2026-02-24</small><small>截至 2026-03-10</small></td>
           <td class="combo-cell">
             <b class="etf-name">油气ETF</b>
             <small>561360</small>
           </td>
-          <td class="num cycle-return red">+14.1%</td>
-          <td class="num">25天</td>
+          <td class="num cycle-return red">+8.1%</td>
+          <td class="num">14天</td>
         </tr>
         
         <tr>
-          <td class="status-cell"><b class="cycle-status">已结束</b><small>买入 2026-02-10</small><small>截至 2026-02-11</small></td>
+          <td class="status-cell"><b class="cycle-status">已结束</b><small>买入 2026-02-11</small><small>截至 2026-02-13</small></td>
+          <td class="combo-cell">
+            <b class="etf-name">油气ETF</b>
+            <small>561360</small>
+          </td>
+          <td class="num cycle-return green">-2.2%</td>
+          <td class="num">2天</td>
+        </tr>
+        
+        <tr>
+          <td class="status-cell"><b class="cycle-status">已结束</b><small>买入 2026-02-09</small><small>截至 2026-02-10</small></td>
           <td class="combo-cell">
             <b class="etf-name">黄金ETF</b>
             <small>517520</small>
           </td>
-          <td class="num cycle-return red">+2.5%</td>
+          <td class="num cycle-return green">-1.1%</td>
           <td class="num">1天</td>
         </tr>
         
         <tr>
-          <td class="status-cell"><b class="cycle-status">已结束</b><small>买入 2026-02-06</small><small>截至 2026-02-09</small></td>
+          <td class="status-cell"><b class="cycle-status">已结束</b><small>买入 2026-02-05</small><small>截至 2026-02-06</small></td>
           <td class="combo-cell">
             <b class="etf-name">黄金ETF</b>
             <small>517520</small>
           </td>
-          <td class="num cycle-return red">+2.4%</td>
-          <td class="num">3天</td>
-        </tr>
-        
-        <tr>
-          <td class="status-cell"><b class="cycle-status">已结束</b><small>买入 2026-02-02</small><small>截至 2026-02-05</small></td>
-          <td class="combo-cell">
-            <b class="etf-name">黄金ETF</b>
-            <small>517520</small>
-          </td>
-          <td class="num cycle-return green">-3.6%</td>
-          <td class="num">3天</td>
-        </tr>
-        
-        <tr>
-          <td class="status-cell"><b class="cycle-status">已结束</b><small>买入 2026-01-29</small><small>截至 2026-01-30</small></td>
-          <td class="combo-cell">
-            <b class="etf-name">黄金ETF</b>
-            <small>517520</small>
-          </td>
-          <td class="num cycle-return green">-8.9%</td>
+          <td class="num cycle-return green">-0.5%</td>
           <td class="num">1天</td>
+        </tr>
+        
+        <tr>
+          <td class="status-cell"><b class="cycle-status">已结束</b><small>买入 2026-02-03</small><small>截至 2026-02-04</small></td>
+          <td class="combo-cell">
+            <b class="etf-name">黄金ETF</b>
+            <small>517520</small>
+          </td>
+          <td class="num cycle-return green">-0.9%</td>
+          <td class="num">1天</td>
+        </tr>
+        
+        <tr>
+          <td class="status-cell"><b class="cycle-status">已结束</b><small>买入 2026-01-29</small><small>截至 2026-02-02</small></td>
+          <td class="combo-cell">
+            <b class="etf-name">黄金ETF</b>
+            <small>517520</small>
+          </td>
+          <td class="num cycle-return green">-17.0%</td>
+          <td class="num">4天</td>
         </tr>
         
         <tr>
@@ -370,83 +410,153 @@
         </tr>
         
         <tr>
-          <td class="status-cell"><b class="cycle-status">已结束</b><small>买入 2026-01-16</small><small>截至 2026-01-26</small></td>
+          <td class="status-cell"><b class="cycle-status">已结束</b><small>买入 2026-01-23</small><small>截至 2026-01-26</small></td>
           <td class="combo-cell">
             <b class="etf-name">卫星ETF</b>
             <small>159218</small>
           </td>
-          <td class="num cycle-return green">-0.3%</td>
-          <td class="num">10天</td>
-        </tr>
-        
-        <tr>
-          <td class="status-cell"><b class="cycle-status">已结束</b><small>买入 2025-12-10</small><small>截至 2026-01-15</small></td>
-          <td class="combo-cell">
-            <b class="etf-name">卫星ETF</b>
-            <small>159206</small>
-          </td>
-          <td class="num cycle-return red">+50.1%</td>
-          <td class="num">36天</td>
-        </tr>
-        
-        <tr>
-          <td class="status-cell"><b class="cycle-status">已结束</b><small>买入 2025-11-26</small><small>截至 2025-12-09</small></td>
-          <td class="combo-cell">
-            <b class="etf-name">汇添富纳斯达克生ETF</b>
-            <small>513290</small>
-          </td>
-          <td class="num cycle-return green">-3.4%</td>
-          <td class="num">13天</td>
-        </tr>
-        
-        <tr>
-          <td class="status-cell"><b class="cycle-status">已结束</b><small>买入 2025-11-24</small><small>截至 2025-11-25</small></td>
-          <td class="combo-cell">
-            <b class="etf-name">化工ETF</b>
-            <small>159870</small>
-          </td>
-          <td class="num cycle-return red">+1.1%</td>
-          <td class="num">1天</td>
-        </tr>
-        
-        <tr>
-          <td class="status-cell"><b class="cycle-status">已结束</b><small>买入 2025-11-18</small><small>截至 2025-11-21</small></td>
-          <td class="combo-cell">
-            <b class="etf-name">化工ETF</b>
-            <small>159870</small>
-          </td>
-          <td class="num cycle-return green">-4.5%</td>
+          <td class="num cycle-return green">-7.3%</td>
           <td class="num">3天</td>
         </tr>
         
         <tr>
-          <td class="status-cell"><b class="cycle-status">已结束</b><small>买入 2025-11-07</small><small>截至 2025-11-17</small></td>
+          <td class="status-cell"><b class="cycle-status">已结束</b><small>买入 2026-01-21</small><small>截至 2026-01-22</small></td>
+          <td class="combo-cell">
+            <b class="etf-name">卫星ETF</b>
+            <small>159218</small>
+          </td>
+          <td class="num cycle-return red">+3.5%</td>
+          <td class="num">1天</td>
+        </tr>
+        
+        <tr>
+          <td class="status-cell"><b class="cycle-status">已结束</b><small>买入 2026-01-19</small><small>截至 2026-01-20</small></td>
+          <td class="combo-cell">
+            <b class="etf-name">卫星ETF</b>
+            <small>159218</small>
+          </td>
+          <td class="num cycle-return green">-4.3%</td>
+          <td class="num">1天</td>
+        </tr>
+        
+        <tr>
+          <td class="status-cell"><b class="cycle-status">已结束</b><small>买入 2026-01-14</small><small>截至 2026-01-16</small></td>
+          <td class="combo-cell">
+            <b class="etf-name">卫星ETF</b>
+            <small>159218</small>
+          </td>
+          <td class="num cycle-return green">-8.4%</td>
+          <td class="num">2天</td>
+        </tr>
+        
+        <tr>
+          <td class="status-cell"><b class="cycle-status">已结束</b><small>买入 2025-12-24</small><small>截至 2026-01-13</small></td>
+          <td class="combo-cell">
+            <b class="etf-name">通信设备ETF</b>
+            <small>515880</small>
+          </td>
+          <td class="num cycle-return green">-0.6%</td>
+          <td class="num">20天</td>
+        </tr>
+        
+        <tr>
+          <td class="status-cell"><b class="cycle-status">已结束</b><small>买入 2025-12-10</small><small>截至 2025-12-23</small></td>
+          <td class="combo-cell">
+            <b class="etf-name">卫星ETF</b>
+            <small>159206</small>
+          </td>
+          <td class="num cycle-return red">+3.8%</td>
+          <td class="num">13天</td>
+        </tr>
+        
+        <tr>
+          <td class="status-cell"><b class="cycle-status">已结束</b><small>买入 2025-12-02</small><small>截至 2025-12-09</small></td>
+          <td class="combo-cell">
+            <b class="etf-name">标普生物科技精选ETF</b>
+            <small>159502</small>
+          </td>
+          <td class="num cycle-return red">+2.3%</td>
+          <td class="num">7天</td>
+        </tr>
+        
+        <tr>
+          <td class="status-cell"><b class="cycle-status">已结束</b><small>买入 2025-11-26</small><small>截至 2025-12-01</small></td>
+          <td class="combo-cell">
+            <b class="etf-name">汇添富纳斯达克生ETF</b>
+            <small>513290</small>
+          </td>
+          <td class="num cycle-return green">-2.2%</td>
+          <td class="num">5天</td>
+        </tr>
+        
+        <tr>
+          <td class="status-cell"><b class="cycle-status">已结束</b><small>买入 2025-11-21</small><small>截至 2025-11-24</small></td>
+          <td class="combo-cell">
+            <b class="etf-name">化工ETF</b>
+            <small>159870</small>
+          </td>
+          <td class="num cycle-return green">-0.9%</td>
+          <td class="num">3天</td>
+        </tr>
+        
+        <tr>
+          <td class="status-cell"><b class="cycle-status">已结束</b><small>买入 2025-11-19</small><small>截至 2025-11-20</small></td>
+          <td class="combo-cell">
+            <b class="etf-name">鹏华科创板新能源ETF</b>
+            <small>588830</small>
+          </td>
+          <td class="num cycle-return green">-2.8%</td>
+          <td class="num">1天</td>
+        </tr>
+        
+        <tr>
+          <td class="status-cell"><b class="cycle-status">已结束</b><small>买入 2025-11-17</small><small>截至 2025-11-18</small></td>
+          <td class="combo-cell">
+            <b class="etf-name">汇添富电池ETF</b>
+            <small>159796</small>
+          </td>
+          <td class="num cycle-return green">-4.5%</td>
+          <td class="num">1天</td>
+        </tr>
+        
+        <tr>
+          <td class="status-cell"><b class="cycle-status">已结束</b><small>买入 2025-11-07</small><small>截至 2025-11-14</small></td>
           <td class="combo-cell">
             <b class="etf-name">电网ETF</b>
             <small>159326</small>
           </td>
-          <td class="num cycle-return green">-6.5%</td>
-          <td class="num">10天</td>
+          <td class="num cycle-return green">-5.5%</td>
+          <td class="num">7天</td>
         </tr>
         
         <tr>
-          <td class="status-cell"><b class="cycle-status">已结束</b><small>买入 2025-10-20</small><small>截至 2025-11-05</small></td>
+          <td class="status-cell"><b class="cycle-status">已结束</b><small>买入 2025-10-21</small><small>截至 2025-11-04</small></td>
           <td class="combo-cell">
             <b class="etf-name">中韩半导体ETF</b>
             <small>513310</small>
           </td>
-          <td class="num cycle-return red">+2.3%</td>
-          <td class="num">16天</td>
+          <td class="num cycle-return red">+3.7%</td>
+          <td class="num">14天</td>
         </tr>
         
         <tr>
-          <td class="status-cell"><b class="cycle-status">已结束</b><small>买入 2025-10-15</small><small>截至 2025-10-17</small></td>
+          <td class="status-cell"><b class="cycle-status">已结束</b><small>买入 2025-10-17</small><small>截至 2025-10-20</small></td>
           <td class="combo-cell">
             <b class="etf-name">半导体设备ETF</b>
             <small>159516</small>
           </td>
-          <td class="num cycle-return green">-5.2%</td>
-          <td class="num">2天</td>
+          <td class="num cycle-return green">-0.1%</td>
+          <td class="num">3天</td>
+        </tr>
+        
+        <tr>
+          <td class="status-cell"><b class="cycle-status">已结束</b><small>买入 2025-10-15</small><small>截至 2025-10-16</small></td>
+          <td class="combo-cell">
+            <b class="etf-name">半导体设备ETF</b>
+            <small>159516</small>
+          </td>
+          <td class="num cycle-return green">-1.1%</td>
+          <td class="num">1天</td>
         </tr>
         
         <tr>
@@ -460,83 +570,173 @@
         </tr>
         
         <tr>
-          <td class="status-cell"><b class="cycle-status">已结束</b><small>买入 2025-09-10</small><small>截至 2025-10-10</small></td>
+          <td class="status-cell"><b class="cycle-status">已结束</b><small>买入 2025-09-11</small><small>截至 2025-10-10</small></td>
           <td class="combo-cell">
             <b class="etf-name">汇添富电池ETF</b>
             <small>159796</small>
           </td>
-          <td class="num cycle-return red">+12.5%</td>
-          <td class="num">30天</td>
+          <td class="num cycle-return red">+9.3%</td>
+          <td class="num">29天</td>
         </tr>
         
         <tr>
-          <td class="status-cell"><b class="cycle-status">已结束</b><small>买入 2025-09-05</small><small>截至 2025-09-09</small></td>
+          <td class="status-cell"><b class="cycle-status">已结束</b><small>买入 2025-09-09</small><small>截至 2025-09-10</small></td>
+          <td class="combo-cell">
+            <b class="etf-name">通信设备ETF</b>
+            <small>515880</small>
+          </td>
+          <td class="num cycle-return red">+4.5%</td>
+          <td class="num">1天</td>
+        </tr>
+        
+        <tr>
+          <td class="status-cell"><b class="cycle-status">已结束</b><small>买入 2025-09-05</small><small>截至 2025-09-08</small></td>
+          <td class="combo-cell">
+            <b class="etf-name">通信设备ETF</b>
+            <small>515880</small>
+          </td>
+          <td class="num cycle-return green">-5.0%</td>
+          <td class="num">3天</td>
+        </tr>
+        
+        <tr>
+          <td class="status-cell"><b class="cycle-status">已结束</b><small>买入 2025-08-28</small><small>截至 2025-09-04</small></td>
           <td class="combo-cell">
             <b class="etf-name">通信设备ETF</b>
             <small>515880</small>
           </td>
           <td class="num cycle-return green">-6.8%</td>
-          <td class="num">4天</td>
+          <td class="num">7天</td>
         </tr>
         
         <tr>
-          <td class="status-cell"><b class="cycle-status">已结束</b><small>买入 2025-07-02</small><small>截至 2025-09-04</small></td>
-          <td class="combo-cell">
-            <b class="etf-name">通信设备ETF</b>
-            <small>515880</small>
-          </td>
-          <td class="num cycle-return red">+66.6%</td>
-          <td class="num">64天</td>
-        </tr>
-        
-        <tr>
-          <td class="status-cell"><b class="cycle-status">已结束</b><small>买入 2025-06-20</small><small>截至 2025-07-01</small></td>
+          <td class="status-cell"><b class="cycle-status">已结束</b><small>买入 2025-08-12</small><small>截至 2025-08-27</small></td>
           <td class="combo-cell">
             <b class="etf-name">创新药ETF</b>
-            <small>513780</small>
+            <small>520500</small>
           </td>
-          <td class="num cycle-return red">+3.2%</td>
-          <td class="num">11天</td>
+          <td class="num cycle-return red">+2.4%</td>
+          <td class="num">15天</td>
         </tr>
         
         <tr>
-          <td class="status-cell"><b class="cycle-status">已结束</b><small>买入 2025-06-16</small><small>截至 2025-06-19</small></td>
+          <td class="status-cell"><b class="cycle-status">已结束</b><small>买入 2025-08-08</small><small>截至 2025-08-11</small></td>
           <td class="combo-cell">
             <b class="etf-name">创新药ETF</b>
-            <small>513120</small>
+            <small>520500</small>
           </td>
-          <td class="num cycle-return green">-7.9%</td>
+          <td class="num cycle-return red">+0.4%</td>
           <td class="num">3天</td>
         </tr>
         
         <tr>
-          <td class="status-cell"><b class="cycle-status">已结束</b><small>买入 2025-05-14</small><small>截至 2025-06-13</small></td>
+          <td class="status-cell"><b class="cycle-status">已结束</b><small>买入 2025-08-05</small><small>截至 2025-08-07</small></td>
+          <td class="combo-cell">
+            <b class="etf-name">创新药ETF</b>
+            <small>520500</small>
+          </td>
+          <td class="num cycle-return green">-3.6%</td>
+          <td class="num">2天</td>
+        </tr>
+        
+        <tr>
+          <td class="status-cell"><b class="cycle-status">已结束</b><small>买入 2025-06-27</small><small>截至 2025-08-04</small></td>
+          <td class="combo-cell">
+            <b class="etf-name">创新药ETF</b>
+            <small>513780</small>
+          </td>
+          <td class="num cycle-return red">+25.0%</td>
+          <td class="num">38天</td>
+        </tr>
+        
+        <tr>
+          <td class="status-cell"><b class="cycle-status">已结束</b><small>买入 2025-06-23</small><small>截至 2025-06-26</small></td>
+          <td class="combo-cell">
+            <b class="etf-name">创新药ETF</b>
+            <small>513780</small>
+          </td>
+          <td class="num cycle-return red">+1.2%</td>
+          <td class="num">3天</td>
+        </tr>
+        
+        <tr>
+          <td class="status-cell"><b class="cycle-status">已结束</b><small>买入 2025-06-19</small><small>截至 2025-06-20</small></td>
+          <td class="combo-cell">
+            <b class="etf-name">创新药ETF</b>
+            <small>513780</small>
+          </td>
+          <td class="num cycle-return red">+0.3%</td>
+          <td class="num">1天</td>
+        </tr>
+        
+        <tr>
+          <td class="status-cell"><b class="cycle-status">已结束</b><small>买入 2025-05-28</small><small>截至 2025-06-18</small></td>
+          <td class="combo-cell">
+            <b class="etf-name">港股非银ETF</b>
+            <small>513750</small>
+          </td>
+          <td class="num cycle-return red">+7.1%</td>
+          <td class="num">21天</td>
+        </tr>
+        
+        <tr>
+          <td class="status-cell"><b class="cycle-status">已结束</b><small>买入 2025-05-26</small><small>截至 2025-05-27</small></td>
+          <td class="combo-cell">
+            <b class="etf-name">港股通汽车ETF</b>
+            <small>520600</small>
+          </td>
+          <td class="num cycle-return green">-0.4%</td>
+          <td class="num">1天</td>
+        </tr>
+        
+        <tr>
+          <td class="status-cell"><b class="cycle-status">已结束</b><small>买入 2025-05-14</small><small>截至 2025-05-23</small></td>
           <td class="combo-cell">
             <b class="etf-name">德国DAXETF</b>
             <small>513030</small>
           </td>
-          <td class="num cycle-return red">+3.0%</td>
-          <td class="num">30天</td>
+          <td class="num cycle-return red">+1.3%</td>
+          <td class="num">9天</td>
         </tr>
         
         <tr>
-          <td class="status-cell"><b class="cycle-status">已结束</b><small>买入 2025-04-24</small><small>截至 2025-05-12</small></td>
+          <td class="status-cell"><b class="cycle-status">已结束</b><small>买入 2025-04-30</small><small>截至 2025-05-08</small></td>
           <td class="combo-cell">
             <b class="etf-name">上海金ETF</b>
             <small>518680</small>
           </td>
-          <td class="num cycle-return green">-3.4%</td>
-          <td class="num">18天</td>
+          <td class="num cycle-return red">+1.0%</td>
+          <td class="num">8天</td>
         </tr>
         
         <tr>
-          <td class="status-cell"><b class="cycle-status">已结束</b><small>买入 2025-04-10</small><small>截至 2025-04-23</small></td>
+          <td class="status-cell"><b class="cycle-status">已结束</b><small>买入 2025-04-28</small><small>截至 2025-04-29</small></td>
+          <td class="combo-cell">
+            <b class="etf-name">上海金ETF</b>
+            <small>518680</small>
+          </td>
+          <td class="num cycle-return red">+0.5%</td>
+          <td class="num">1天</td>
+        </tr>
+        
+        <tr>
+          <td class="status-cell"><b class="cycle-status">已结束</b><small>买入 2025-04-17</small><small>截至 2025-04-25</small></td>
+          <td class="combo-cell">
+            <b class="etf-name">黄金ETF</b>
+            <small>518880</small>
+          </td>
+          <td class="num cycle-return green">-0.1%</td>
+          <td class="num">8天</td>
+        </tr>
+        
+        <tr>
+          <td class="status-cell"><b class="cycle-status">已结束</b><small>买入 2025-04-10</small><small>截至 2025-04-16</small></td>
           <td class="combo-cell">
             <b class="etf-name">畜牧养殖ETF</b>
             <small>159865</small>
           </td>
-          <td class="num cycle-return green">-4.5%</td>
-          <td class="num">13天</td>
+          <td class="num cycle-return green">-3.2%</td>
+          <td class="num">6天</td>
         </tr>
         </tbody>
         </table>
@@ -549,15 +749,15 @@
         
       <g class="legend">
         <circle cx="30" cy="16" r="5" class="legend-strategy"></circle>
-        <text x="44" y="16" dominant-baseline="middle">策略 3.66</text>
-        <circle cx="172" cy="16" r="5" class="legend-benchmark"></circle><text x="186" y="16" dominant-baseline="middle">ETF池等权 1.38</text>
+        <text x="44" y="16" dominant-baseline="middle">策略 1.26</text>
+        <circle cx="172" cy="16" r="5" class="legend-benchmark"></circle><text x="186" y="16" dominant-baseline="middle">ETF池等权 1.37</text>
       </g>
     
-        <line x1="30" y1="260.7" x2="890" y2="260.7" class="baseline"></line>
-        <polyline points="30.0,260.7 32.4,261.7 34.8,261.7 37.1,261.2 39.5,261.5 41.9,261.5 44.3,262.5 46.7,262.6 49.1,260.5 51.4,260.8 53.8,260.6 56.2,260.2 58.6,259.7 61.0,259.5 63.4,259.9 65.7,260.0 68.1,259.2 70.5,259.7 72.9,259.2 75.3,257.6 77.6,256.8 80.0,256.2 82.4,256.7 84.8,255.8 87.2,256.3 89.6,255.2 91.9,255.0 94.3,255.6 96.7,254.6 99.1,254.7 101.5,253.2 103.9,253.4 106.2,254.2 108.6,253.1 111.0,253.3 113.4,255.4 115.8,255.4 118.1,255.2 120.5,254.5 122.9,253.2 125.3,253.5 127.7,253.9 130.1,253.6 132.4,253.8 134.8,254.4 137.2,252.8 139.6,252.8 142.0,252.5 144.3,252.6 146.7,253.2 149.1,254.6 151.5,254.5 153.9,255.0 156.3,255.0 158.6,254.7 161.0,255.2 163.4,255.8 165.8,255.4 168.2,255.3 170.6,256.3 172.9,264.0 175.3,263.2 177.7,261.6 180.1,260.5 182.5,259.6 184.8,258.7 187.2,259.0 189.6,259.6 192.0,259.4 194.4,259.4 196.8,258.9 199.1,258.5 201.5,258.0 203.9,258.2 206.3,258.0 208.7,258.4 211.1,258.2 213.4,257.9 215.8,256.7 218.2,256.6 220.6,256.2 223.0,256.6 225.3,255.5 227.7,255.7 230.1,255.2 232.5,256.1 234.9,256.1 237.3,256.0 239.6,255.5 242.0,255.2 244.4,255.7 246.8,256.2 249.2,256.4 251.6,256.5 253.9,256.7 256.3,255.6 258.7,256.2 261.1,255.7 263.5,255.0 265.8,254.7 268.2,254.6 270.6,253.7 273.0,254.1 275.4,253.7 277.8,253.5 280.1,254.1 282.5,253.8 284.9,254.2 287.3,254.2 289.7,255.2 292.0,255.3 294.4,254.7 296.8,253.5 299.2,252.4 301.6,252.7 304.0,252.7 306.3,252.0 308.7,252.0 311.1,252.2 313.5,251.7 315.9,252.0 318.3,252.4 320.6,251.5 323.0,251.7 325.4,251.4 327.8,251.1 330.2,250.9 332.5,250.7 334.9,250.6 337.3,249.7 339.7,249.4 342.1,248.9 344.5,248.3 346.8,248.2 349.2,247.2 351.6,247.3 354.0,246.9 356.4,246.3 358.8,246.8 361.1,247.9 363.5,248.6 365.9,247.8 368.3,247.1 370.7,246.5 373.0,246.7 375.4,247.3 377.8,246.6 380.2,246.3 382.6,245.0 385.0,245.4 387.3,244.3 389.7,243.3 392.1,243.6 394.5,242.9 396.9,243.0 399.3,241.1 401.6,239.4 404.0,239.8 406.4,241.1 408.8,239.7 411.2,239.2 413.5,238.1 415.9,239.3 418.3,239.9 420.7,242.2 423.1,240.0 425.5,239.4 427.8,240.0 430.2,239.8 432.6,238.1 435.0,237.9 437.4,237.8 439.8,237.6 442.1,236.9 444.5,237.6 446.9,237.8 449.3,237.3 451.7,237.8 454.0,236.5 456.4,236.2 458.8,237.3 461.2,235.9 463.6,234.9 466.0,233.7 468.3,235.9 470.7,236.1 473.1,238.0 475.5,236.6 477.9,236.7 480.2,239.1 482.6,238.2 485.0,236.9 487.4,237.6 489.8,237.5 492.2,236.1 494.5,234.9 496.9,235.4 499.3,234.4 501.7,235.3 504.1,236.0 506.5,235.7 508.8,236.9 511.2,237.0 513.6,235.7 516.0,236.2 518.4,235.6 520.7,236.2 523.1,236.3 525.5,235.1 527.9,236.5 530.3,236.8 532.7,237.8 535.0,238.0 537.4,238.5 539.8,241.2 542.2,240.3 544.6,239.3 547.0,238.9 549.3,238.9 551.7,238.4 554.1,237.7 556.5,238.3 558.9,239.0 561.2,238.5 563.6,237.6 566.0,237.0 568.4,237.7 570.8,237.5 573.2,238.3 575.5,237.5 577.9,238.4 580.3,239.8 582.7,238.5 585.1,238.8 587.5,238.0 589.8,237.1 592.2,237.2 594.6,236.7 597.0,236.2 599.4,235.9 601.7,236.3 604.1,236.1 606.5,236.3 608.9,234.0 611.3,232.4 613.7,232.0 616.0,232.0 618.4,230.9 620.8,229.0 623.2,229.7 625.6,229.3 628.0,229.6 630.3,229.8 632.7,230.0 635.1,230.8 637.5,230.1 639.9,229.7 642.2,228.8 644.6,229.3 647.0,229.0 649.4,228.5 651.8,228.5 654.2,229.8 656.5,233.4 658.9,231.8 661.3,231.6 663.7,232.6 666.1,232.9 668.4,231.0 670.8,230.7 673.2,230.8 675.6,230.5 678.0,231.6 680.4,231.0 682.7,230.2 685.1,230.6 687.5,230.1 689.9,230.6 692.3,233.4 694.7,234.2 697.0,233.4 699.4,232.6 701.8,233.2 704.2,231.8 706.6,231.7 708.9,232.3 711.3,233.4 713.7,233.1 716.1,234.2 718.5,233.5 720.9,235.4 723.2,236.4 725.6,239.8 728.0,238.0 730.4,236.5 732.8,238.0 735.2,237.3 737.5,237.4 739.9,238.4 742.3,236.5 744.7,237.7 747.1,238.3 749.4,238.1 751.8,234.6 754.2,235.4 756.6,234.3 759.0,234.3 761.4,233.0 763.7,233.0 766.1,231.6 768.5,231.6 770.9,231.1 773.3,231.2 775.7,230.6 778.0,231.6 780.4,231.9 782.8,231.6 785.2,232.4 787.6,231.2 789.9,230.9 792.3,228.9 794.7,228.0 797.1,228.3 799.5,226.9 801.9,227.8 804.2,227.0 806.6,228.9 809.0,230.2 811.4,230.6 813.8,230.1 816.1,230.0 818.5,231.7 820.9,230.7 823.3,229.7 825.7,230.0 828.1,231.1 830.4,231.3 832.8,232.1 835.2,232.6 837.6,231.9 840.0,231.9 842.4,232.5 844.7,233.9 847.1,236.2 849.5,235.2 851.9,236.1 854.3,236.4 856.6,235.1 859.0,232.8 861.4,233.0 863.8,232.6 866.2,232.5 868.6,231.0 870.9,233.4 873.3,232.6 875.7,233.0 878.1,235.3 880.5,233.5 882.9,232.6 885.2,232.1 887.6,233.9 890.0,232.8" class="benchmark-curve"></polyline>
-        <polyline points="30.0,260.7 32.4,260.7 34.8,260.7 37.1,260.7 39.5,260.7 41.9,260.7 44.3,260.7 46.7,260.7 49.1,260.7 51.4,260.7 53.8,260.7 56.2,260.7 58.6,260.7 61.0,260.7 63.4,260.7 65.7,260.7 68.1,260.7 70.5,260.7 72.9,260.7 75.3,260.7 77.6,260.7 80.0,260.7 82.4,260.7 84.8,260.7 87.2,260.7 89.6,260.7 91.9,260.7 94.3,260.7 96.7,260.7 99.1,260.7 101.5,260.7 103.9,260.7 106.2,260.7 108.6,260.7 111.0,260.7 113.4,260.7 115.8,260.7 118.1,260.7 120.5,260.7 122.9,260.7 125.3,260.7 127.7,260.7 130.1,260.7 132.4,260.7 134.8,260.7 137.2,260.7 139.6,260.7 142.0,260.7 144.3,260.7 146.7,260.7 149.1,260.7 151.5,260.7 153.9,260.7 156.3,260.7 158.6,260.7 161.0,260.7 163.4,260.7 165.8,260.7 168.2,260.7 170.6,260.7 172.9,260.7 175.3,260.7 177.7,260.7 180.1,260.7 182.5,262.8 184.8,262.3 187.2,262.5 189.6,263.1 192.0,263.1 194.4,264.1 196.8,263.6 199.1,262.8 201.5,264.1 203.9,264.1 206.3,264.7 208.7,265.4 211.1,265.0 213.4,265.4 215.8,264.1 218.2,263.6 220.6,264.7 223.0,264.8 225.3,266.5 227.7,266.5 230.1,266.5 232.5,265.9 234.9,265.7 237.3,265.3 239.6,264.8 242.0,264.1 244.4,264.3 246.8,265.6 249.2,264.1 251.6,263.4 253.9,264.2 256.3,264.9 258.7,264.3 261.1,263.6 263.5,263.3 265.8,263.0 268.2,263.0 270.6,263.5 273.0,263.9 275.4,264.0 277.8,264.2 280.1,264.5 282.5,264.5 284.9,267.9 287.3,267.9 289.7,270.0 292.0,270.0 294.4,268.4 296.8,266.2 299.2,266.0 301.6,267.6 304.0,268.4 306.3,267.9 308.7,267.9 311.1,267.9 313.5,266.2 315.9,267.0 318.3,267.7 320.6,264.7 323.0,264.6 325.4,264.6 327.8,264.9 330.2,264.8 332.5,260.7 334.9,260.5 337.3,257.9 339.7,258.0 342.1,257.8 344.5,258.2 346.8,258.4 349.2,257.9 351.6,257.9 354.0,256.4 356.4,252.9 358.8,252.8 361.1,252.1 363.5,253.4 365.9,253.1 368.3,251.6 370.7,251.4 373.0,251.5 375.4,251.5 377.8,249.8 380.2,247.1 382.6,241.3 385.0,243.8 387.3,242.8 389.7,239.0 392.1,235.3 394.5,234.9 396.9,235.9 399.3,232.0 401.6,225.9 404.0,227.4 406.4,224.9 408.8,215.4 411.2,214.5 413.5,207.1 415.9,214.7 418.3,212.1 420.7,223.5 423.1,223.5 425.5,229.0 427.8,231.0 430.2,231.0 432.6,228.0 435.0,228.9 437.4,226.6 439.8,225.5 442.1,223.5 444.5,223.7 446.9,225.1 449.3,224.2 451.7,221.8 454.0,217.7 456.4,216.2 458.8,218.3 461.2,212.7 463.6,209.6 466.0,208.9 468.3,218.0 470.7,218.0 473.1,222.7 475.5,222.7 477.9,224.0 480.2,228.5 482.6,228.5 485.0,227.3 487.4,227.2 489.8,228.2 492.2,223.6 494.5,220.9 496.9,222.5 499.3,221.0 501.7,221.2 504.1,223.4 506.5,221.4 508.8,223.3 511.2,226.1 513.6,226.1 516.0,226.1 518.4,227.0 520.7,228.3 523.1,231.0 525.5,229.2 527.9,232.0 530.3,233.1 532.7,233.1 535.0,231.8 537.4,233.3 539.8,237.7 542.2,237.7 544.6,236.6 547.0,236.6 549.3,236.6 551.7,236.6 554.1,238.7 556.5,239.3 558.9,237.5 561.2,237.5 563.6,238.0 566.0,238.2 568.4,239.9 570.8,239.9 573.2,239.0 575.5,237.8 577.9,235.9 580.3,236.4 582.7,237.0 585.1,234.2 587.5,232.7 589.8,232.3 592.2,236.4 594.6,231.5 597.0,224.4 599.4,221.1 601.7,219.8 604.1,220.4 606.5,214.3 608.9,210.9 611.3,206.5 613.7,207.5 616.0,200.1 618.4,191.7 620.8,176.8 623.2,183.5 625.6,182.2 628.0,192.5 630.3,192.5 632.7,191.6 635.1,197.8 637.5,199.0 639.9,194.3 642.2,181.7 644.6,192.9 647.0,192.9 649.4,195.8 651.8,195.8 654.2,208.1 656.5,208.1 658.9,205.5 661.3,206.7 663.7,212.7 666.1,212.7 668.4,209.7 670.8,209.7 673.2,206.6 675.6,206.6 678.0,211.7 680.4,204.0 682.7,201.7 685.1,201.6 687.5,199.4 689.9,189.1 692.3,179.3 694.7,183.6 697.0,184.7 699.4,187.6 701.8,188.6 704.2,188.6 706.6,189.3 708.9,191.3 711.3,195.4 713.7,198.7 716.1,198.7 718.5,196.3 720.9,191.2 723.2,196.7 725.6,189.8 728.0,192.8 730.4,198.1 732.8,195.2 735.2,192.0 737.5,188.4 739.9,192.0 742.3,195.7 744.7,195.1 747.1,191.6 749.4,187.3 751.8,193.7 754.2,197.3 756.6,197.3 759.0,198.9 761.4,198.9 763.7,200.5 766.1,196.1 768.5,189.9 770.9,188.3 773.3,188.4 775.7,182.3 778.0,184.7 780.4,190.8 782.8,190.6 785.2,194.1 787.6,194.1 789.9,192.8 792.3,174.7 794.7,171.3 797.1,173.0 799.5,162.3 801.9,167.5 804.2,161.6 806.6,161.9 809.0,172.0 811.4,172.0 813.8,173.6 816.1,171.4 818.5,162.4 820.9,161.2 823.3,157.1 825.7,153.0 828.1,152.0 830.4,153.7 832.8,155.4 835.2,156.1 837.6,154.7 840.0,152.9 842.4,150.5 844.7,163.0 847.1,163.0 849.5,149.2 851.9,145.6 854.3,134.6 856.6,140.2 859.0,130.4 861.4,128.6 863.8,110.6 866.2,107.1 868.6,100.2 870.9,99.3 873.3,87.3 875.7,79.5 878.1,71.1 880.5,45.7 882.9,33.2 885.2,30.0 887.6,64.3 890.0,64.3" class="curve"></polyline>
+        <line x1="30" y1="191.9" x2="890" y2="191.9" class="baseline"></line>
+        <polyline points="30.0,191.9 32.4,196.2 34.8,196.6 37.1,194.2 39.5,195.6 41.9,195.5 44.3,200.4 46.6,200.5 49.0,190.8 51.4,192.3 53.8,191.3 56.1,189.2 58.5,187.1 60.9,185.9 63.3,188.1 65.6,188.6 68.0,184.5 70.4,187.0 72.8,184.4 75.1,177.3 77.5,173.4 79.9,170.2 82.3,172.7 84.6,168.6 87.0,171.1 89.4,165.9 91.8,164.7 94.1,167.8 96.5,163.2 98.9,163.3 101.3,156.1 103.6,157.3 106.0,160.9 108.4,155.7 110.8,156.8 113.1,166.9 115.5,166.9 117.9,165.6 120.3,162.6 122.7,156.3 125.0,157.7 127.4,159.5 129.8,158.2 132.2,159.1 134.5,162.1 136.9,154.5 139.3,154.2 141.7,152.9 144.0,153.7 146.4,156.4 148.8,163.0 151.2,162.3 153.5,164.8 155.9,164.7 158.3,163.4 160.7,165.8 163.0,168.8 165.4,166.7 167.8,166.4 170.2,170.8 172.5,207.4 174.9,203.4 177.3,196.0 179.7,190.7 182.0,186.4 184.4,182.5 186.8,183.5 189.2,186.4 191.5,185.7 193.9,185.8 196.3,183.0 198.7,181.2 201.0,178.8 203.4,179.8 205.8,179.1 208.2,180.6 210.6,180.0 212.9,178.3 215.3,172.8 217.7,172.5 220.1,170.3 222.4,172.5 224.8,167.4 227.2,168.3 229.6,165.6 231.9,169.8 234.3,169.8 236.7,169.6 239.1,167.1 241.4,165.9 243.8,168.0 246.2,170.6 248.6,171.5 250.9,171.7 253.3,172.6 255.7,167.6 258.1,170.4 260.4,168.1 262.8,165.0 265.2,163.2 267.6,162.8 269.9,158.9 272.3,160.6 274.7,158.4 277.1,157.8 279.4,160.7 281.8,159.1 284.2,161.1 286.6,161.1 289.0,165.6 291.3,166.2 293.7,163.5 296.1,157.7 298.5,152.6 300.8,154.0 303.2,153.8 305.6,150.7 308.0,150.7 310.3,151.6 312.7,149.2 315.1,150.8 317.5,152.5 319.8,148.3 322.2,149.2 324.6,147.9 327.0,146.6 329.3,145.6 331.7,144.4 334.1,144.2 336.5,139.8 338.8,138.5 341.2,135.9 343.6,133.3 346.0,132.6 348.3,128.1 350.7,128.3 353.1,126.7 355.5,123.6 357.8,126.1 360.2,131.5 362.6,134.5 365.0,131.0 367.3,127.5 369.7,124.9 372.1,125.7 374.5,128.3 376.9,125.2 379.2,123.6 381.6,117.4 384.0,119.5 386.4,114.5 388.7,109.6 391.1,110.9 393.5,108.0 395.9,108.0 398.2,99.3 400.6,91.4 403.0,93.1 405.4,99.0 407.7,92.7 410.1,90.5 412.5,85.1 414.9,90.5 417.2,93.7 419.6,104.5 422.0,94.2 424.4,91.3 426.7,94.0 429.1,93.0 431.5,84.9 433.9,84.1 436.2,83.7 438.6,82.8 441.0,79.2 443.4,82.7 445.7,83.6 448.1,81.4 450.5,83.8 452.9,77.6 455.2,75.9 457.6,81.3 460.0,74.6 462.4,69.8 464.8,64.2 467.1,74.6 469.5,75.5 471.9,84.7 474.3,78.0 476.6,78.7 479.0,89.9 481.4,85.7 483.8,79.6 486.1,82.7 488.5,82.3 490.9,75.7 493.3,69.9 495.6,72.4 498.0,67.6 500.4,71.8 502.8,75.1 505.1,73.5 507.5,79.6 509.9,80.0 512.3,73.9 514.6,76.3 517.0,73.5 519.4,76.0 521.8,76.5 524.1,70.7 526.5,77.5 528.9,79.0 531.3,83.8 533.6,84.4 536.0,86.9 538.4,99.8 540.8,95.6 543.1,91.0 545.5,88.9 547.9,89.1 550.3,86.7 552.7,83.2 555.0,86.0 557.4,89.2 559.8,86.7 562.2,82.6 564.5,79.9 566.9,83.2 569.3,82.3 571.7,86.2 574.0,82.1 576.4,86.6 578.8,93.0 581.2,86.9 583.5,88.2 585.9,84.8 588.3,80.5 590.7,80.8 593.0,78.3 595.4,76.2 597.8,74.5 600.2,76.4 602.5,75.5 604.9,76.8 607.3,65.8 609.7,58.2 612.0,56.1 614.4,56.4 616.8,51.0 619.2,42.2 621.5,45.7 623.9,43.7 626.3,45.1 628.7,46.1 631.0,46.8 633.4,50.8 635.8,47.5 638.2,45.7 640.6,41.1 642.9,43.8 645.3,42.3 647.7,39.8 650.1,40.0 652.4,46.1 654.8,63.1 657.2,55.3 659.6,54.3 661.9,59.3 664.3,60.5 666.7,51.8 669.1,50.4 671.4,50.5 673.8,49.3 676.2,54.4 678.6,51.4 680.9,47.7 683.3,49.7 685.7,47.4 688.1,49.6 690.4,62.9 692.8,66.5 695.2,63.1 697.6,59.3 699.9,62.0 702.3,55.2 704.7,55.1 707.1,57.8 709.4,62.9 711.8,61.4 714.2,66.8 716.6,63.4 719.0,72.2 721.3,77.1 723.7,93.0 726.1,84.8 728.5,77.6 730.8,84.5 733.2,81.3 735.6,81.7 738.0,86.7 740.3,77.4 742.7,83.1 745.1,86.1 747.5,85.0 749.8,68.7 752.2,72.2 754.6,67.3 757.0,67.2 759.3,61.3 761.7,61.1 764.1,54.6 766.5,54.5 768.8,51.9 771.2,52.4 773.6,49.7 776.0,54.6 778.3,55.6 780.7,54.6 783.1,58.3 785.5,52.5 787.8,51.0 790.2,41.7 792.6,37.3 795.0,38.8 797.3,32.5 799.7,36.7 802.1,32.7 804.5,41.5 806.9,47.8 809.2,49.9 811.6,47.6 814.0,46.8 816.4,55.0 818.7,50.0 821.1,45.5 823.5,46.8 825.9,52.2 828.2,52.8 830.6,56.7 833.0,59.0 835.4,55.9 837.7,55.8 840.1,58.9 842.5,65.1 844.9,76.0 847.2,71.2 849.6,75.6 852.0,77.1 854.4,71.1 856.7,60.0 859.1,61.2 861.5,59.4 863.9,58.6 866.2,51.7 868.6,62.9 871.0,59.2 873.4,60.8 875.7,72.0 878.1,63.3 880.5,58.9 882.9,56.7 885.2,65.2 887.6,60.3 890.0,64.5" class="benchmark-curve"></polyline>
+        <polyline points="30.0,191.9 32.4,191.9 34.8,191.9 37.1,191.9 39.5,191.9 41.9,191.9 44.3,191.9 46.6,191.9 49.0,191.9 51.4,191.9 53.8,191.9 56.1,191.9 58.5,191.9 60.9,191.9 63.3,191.9 65.6,191.9 68.0,191.9 70.4,191.9 72.8,191.9 75.1,191.9 77.5,191.9 79.9,191.9 82.3,191.9 84.6,191.9 87.0,191.9 89.4,191.9 91.8,191.9 94.1,191.9 96.5,191.9 98.9,191.9 101.3,191.9 103.6,191.9 106.0,191.9 108.4,191.9 110.8,191.9 113.1,191.9 115.5,191.9 117.9,191.9 120.3,191.9 122.7,191.9 125.0,191.9 127.4,191.9 129.8,191.9 132.2,191.9 134.5,191.9 136.9,191.9 139.3,191.9 141.7,191.9 144.0,191.9 146.4,191.9 148.8,191.9 151.2,191.9 153.5,191.9 155.9,191.9 158.3,191.9 160.7,191.9 163.0,191.9 165.4,191.9 167.8,191.9 170.2,191.9 172.5,191.9 174.9,191.9 177.3,191.9 179.7,191.9 182.0,201.7 184.4,199.4 186.8,200.3 189.2,203.1 191.5,203.1 193.9,202.0 196.3,195.4 198.7,186.1 201.0,202.7 203.4,200.4 205.8,203.3 208.2,203.3 210.6,201.6 212.9,201.6 215.3,195.5 217.7,192.8 220.1,198.1 222.4,198.1 224.8,198.1 227.2,198.1 229.6,198.1 231.9,195.1 234.3,194.2 236.7,192.0 239.1,189.4 241.4,186.2 243.8,187.3 246.2,193.5 248.6,193.5 250.9,195.0 253.3,195.0 255.7,187.5 258.1,191.2 260.4,186.6 262.8,184.2 265.2,178.9 267.6,182.1 269.9,173.7 272.3,172.2 274.7,164.5 277.1,166.6 279.4,168.4 281.8,163.3 284.2,164.6 286.6,170.6 289.0,170.6 291.3,169.4 293.7,169.4 296.1,157.3 298.5,156.4 300.8,164.8 303.2,164.8 305.6,161.6 308.0,161.9 310.3,158.3 312.7,144.8 315.1,137.3 317.5,147.8 319.8,148.2 322.2,141.1 324.6,144.2 327.0,137.9 329.3,128.6 331.7,115.1 334.1,111.3 336.5,87.6 338.8,83.0 341.2,89.1 343.6,89.8 346.0,90.7 348.3,79.8 350.7,82.3 353.1,65.1 355.5,43.8 357.8,53.8 360.2,59.6 362.6,71.2 365.0,70.9 367.3,70.9 369.7,69.8 372.1,88.0 374.5,88.0 376.9,86.1 379.2,86.1 381.6,68.6 384.0,63.5 386.4,53.3 388.7,45.7 391.1,49.5 393.5,65.3 395.9,55.2 398.2,46.2 400.6,48.6 403.0,52.5 405.4,75.0 407.7,75.0 410.1,71.8 412.5,42.9 414.9,72.6 417.2,62.1 419.6,106.6 422.0,106.6 424.4,128.1 426.7,128.1 429.1,109.7 431.5,109.7 433.9,113.3 436.2,104.3 438.6,99.6 441.0,91.7 443.4,92.6 445.7,98.3 448.1,94.7 450.5,84.8 452.9,68.2 455.2,62.4 457.6,70.6 460.0,48.3 462.4,35.6 464.8,32.8 467.1,69.6 469.5,69.6 471.9,88.7 474.3,88.7 476.6,93.7 479.0,93.7 481.4,94.0 483.8,94.0 486.1,93.6 488.5,98.0 490.9,78.8 493.3,67.4 495.6,74.4 498.0,68.1 500.4,68.7 502.8,77.9 505.1,69.6 507.5,77.6 509.9,77.6 512.3,77.6 514.6,77.6 517.0,81.5 519.4,87.3 521.8,98.5 524.1,91.1 526.5,103.1 528.9,103.1 531.3,122.7 533.6,122.7 536.0,134.5 538.4,134.5 540.8,138.3 543.1,138.3 545.5,138.3 547.9,138.4 550.3,138.2 552.7,147.0 555.0,147.0 557.4,136.1 559.8,131.6 562.2,130.9 564.5,130.1 566.9,138.0 569.3,138.0 571.7,134.2 574.0,128.9 576.4,120.7 578.8,123.0 581.2,125.5 583.5,113.5 585.9,107.1 588.3,105.4 590.7,122.8 593.0,122.8 595.4,122.1 597.8,126.2 600.2,125.4 602.5,125.0 604.9,129.5 607.3,122.0 609.7,123.4 612.0,119.4 614.4,122.8 616.8,121.6 619.2,110.7 621.5,125.1 623.9,125.1 626.3,156.9 628.7,160.1 631.0,160.1 633.4,176.5 635.8,176.5 638.2,163.9 640.6,163.9 642.9,191.5 645.3,191.5 647.7,198.7 650.1,198.7 652.4,229.1 654.8,256.9 657.2,256.9 659.6,259.4 661.9,259.4 664.3,260.8 666.7,260.8 669.1,263.9 671.4,263.9 673.8,258.7 676.2,270.0 678.6,270.0 680.9,265.3 683.3,265.1 685.7,260.5 688.1,239.1 690.4,218.8 692.8,227.9 695.2,230.2 697.6,236.1 699.9,238.2 702.3,248.2 704.7,248.2 707.1,252.2 709.4,260.4 711.8,260.4 714.2,265.2 716.6,260.3 719.0,249.9 721.3,261.1 723.7,247.2 726.1,253.2 728.5,264.0 730.8,264.0 733.2,257.8 735.6,250.5 738.0,257.7 740.3,265.0 742.7,265.0 745.1,258.1 747.5,249.5 749.8,262.3 752.2,262.3 754.6,265.2 757.0,265.2 759.3,265.2 761.7,268.5 764.1,259.6 766.5,247.1 768.8,243.7 771.2,243.9 773.6,231.6 776.0,236.6 778.3,248.8 780.7,248.5 783.1,255.6 785.5,255.6 787.8,253.0 790.2,216.3 792.6,209.3 795.0,212.8 797.3,191.0 799.7,201.6 802.1,189.6 804.5,190.2 806.9,210.7 809.2,205.4 811.6,208.8 814.0,208.8 816.4,231.6 818.7,226.6 821.1,208.8 823.5,215.6 825.9,226.6 828.2,221.4 830.6,241.3 833.0,241.3 835.4,239.0 837.7,236.0 840.1,232.0 842.5,252.9 844.9,252.9 847.2,229.8 849.6,223.7 852.0,205.3 854.4,214.8 856.7,198.2 859.1,195.2 861.5,165.1 863.9,159.2 866.2,147.6 868.6,146.2 871.0,126.1 873.4,112.9 875.7,99.0 878.1,56.3 880.5,35.4 882.9,30.0 885.2,87.5 887.6,103.0 890.0,103.0" class="curve"></polyline>
         <text x="30" y="292" class="axis-label">1.00</text>
-        <text x="890" y="18" text-anchor="end" class="axis-label">3.66</text>
+        <text x="890" y="18" text-anchor="end" class="axis-label">1.26</text>
       </svg>
     </div>
     </section>
@@ -568,8 +768,6 @@
   <nav class="bottom-nav" aria-label="页面切换">
     <a href="./index.html">每日观察</a>
     <a class="active" href="./strategy_backtest.html">轮动策略</a>
-    <a href="./practice.html">实践案例</a>
-    <a href="./notes.html">手记</a>
   </nav>
   <script>
     const cycleDetailTip = document.getElementById("cycleDetailTip");
