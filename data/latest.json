@@ -1,15 +1,15 @@
 {
-  "date": "2026-07-06",
+  "date": "2026-07-07",
   "latestReport": {
-    "date": "2026-07-06",
-    "title": "2026-07-06 ETF RPS 日报",
-    "url": "reports/2026-07-06.html",
+    "date": "2026-07-07",
+    "title": "2026-07-07 ETF RPS 日报",
+    "url": "reports/2026-07-07.html",
     "summary": {
       "strongestDirection": "半导体",
       "watchDirections": [
         "医药",
         "科创50",
-        "科创成长"
+        "科创100"
       ],
       "riskTip": "RPS20≥95 的标的有 9 只，强势方向较集中；若高开过多或 RPS5/RPS10 转弱，优先控制仓位。",
       "topEtf": "半导体设备ETF（159516）",
@@ -21,32 +21,55 @@
       "themeStrength": [
         {
           "theme": "半导体",
-          "count": 6,
-          "avgRps20": 98.0,
-          "avgRet20": 28.7
+          "count": 5,
+          "avgRps20": 98.9,
+          "avgRet20": 36.0
         },
         {
           "theme": "医药",
-          "count": 4,
-          "avgRps20": 96.1,
-          "avgRet20": 22.9
+          "count": 2,
+          "avgRps20": 96.6,
+          "avgRet20": 25.8
         },
         {
           "theme": "科创50",
           "count": 1,
+          "avgRps20": 96.6,
+          "avgRet20": 26.1
+        },
+        {
+          "theme": "科创100",
+          "count": 1,
           "avgRps20": 95.4,
-          "avgRet20": 20.2
+          "avgRet20": 19.5
         },
         {
           "theme": "科创成长",
           "count": 1,
+          "avgRps20": 94.9,
+          "avgRet20": 19.3
+        },
+        {
+          "theme": "纳指科技",
+          "count": 1,
           "avgRps20": 94.3,
-          "avgRet20": 20.1
+          "avgRet20": 19.2
+        },
+        {
+          "theme": "科创综指",
+          "count": 1,
+          "avgRps20": 93.7,
+          "avgRet20": 18.6
         }
       ]
     }
   },
   "history": [
+    {
+      "date": "2026-07-07",
+      "title": "2026-07-07 ETF RPS 日报",
+      "url": "reports/2026-07-07.html"
+    },
     {
       "date": "2026-07-06",
       "title": "2026-07-06 ETF RPS 日报",
@@ -146,11 +169,6 @@
       "date": "2026-06-08",
       "title": "2026-06-08 ETF RPS 日报",
       "url": "reports/2026-06-08.html"
-    },
-    {
-      "date": "2026-06-05",
-      "title": "2026-06-05 ETF RPS 日报",
-      "url": "reports/2026-06-05.html"
     }
   ]
 }
