@@ -4041,6 +4041,11 @@ window.ETF_RPS_DAILY = {
   ],
   "history": [
     {
+      "date": "2026-07-09",
+      "title": "2026-07-09 ETF RPS 日报",
+      "url": "reports/2026-07-09.html"
+    },
+    {
       "date": "2026-07-08",
       "title": "2026-07-08 ETF RPS 日报",
       "url": "reports/2026-07-08.html"

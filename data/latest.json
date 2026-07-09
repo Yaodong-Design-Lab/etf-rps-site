@@ -1,15 +1,15 @@
 {
-  "date": "2026-07-08",
+  "date": "2026-07-09",
   "latestReport": {
-    "date": "2026-07-08",
-    "title": "2026-07-08 ETF RPS 日报",
-    "url": "reports/2026-07-08.html",
+    "date": "2026-07-09",
+    "title": "2026-07-09 ETF RPS 日报",
+    "url": "reports/2026-07-09.html",
     "summary": {
       "strongestDirection": "半导体",
       "watchDirections": [
         "医药",
         "科创50",
-        "纳指科技"
+        "科创综指"
       ],
       "riskTip": "RPS20≥95 的标的有 9 只，强势方向较集中；若高开过多或 RPS5/RPS10 转弱，优先控制仓位。",
       "topEtf": "半导体设备ETF（159516）",
@@ -22,31 +22,48 @@
         {
           "theme": "半导体",
           "count": 5,
-          "avgRps20": 98.2,
-          "avgRet20": 27.8
+          "avgRps20": 98.6,
+          "avgRet20": 39.0
         },
         {
           "theme": "医药",
-          "count": 5,
-          "avgRps20": 95.9,
-          "avgRet20": 20.7
+          "count": 3,
+          "avgRps20": 95.4,
+          "avgRet20": 23.1
         },
         {
           "theme": "科创50",
           "count": 1,
-          "avgRps20": 97.1,
-          "avgRet20": 22.1
+          "avgRps20": 98.3,
+          "avgRet20": 33.3
+        },
+        {
+          "theme": "科创综指",
+          "count": 1,
+          "avgRps20": 96.0,
+          "avgRet20": 22.5
+        },
+        {
+          "theme": "科创100",
+          "count": 1,
+          "avgRps20": 94.9,
+          "avgRet20": 21.9
         },
         {
           "theme": "纳指科技",
           "count": 1,
-          "avgRps20": 94.9,
-          "avgRet20": 15.2
+          "avgRps20": 93.7,
+          "avgRet20": 19.6
         }
       ]
     }
   },
   "history": [
+    {
+      "date": "2026-07-09",
+      "title": "2026-07-09 ETF RPS 日报",
+      "url": "reports/2026-07-09.html"
+    },
     {
       "date": "2026-07-08",
       "title": "2026-07-08 ETF RPS 日报",
