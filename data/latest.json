@@ -1,18 +1,18 @@
 {
-  "date": "2026-07-09",
+  "date": "2026-07-10",
   "latestReport": {
-    "date": "2026-07-09",
-    "title": "2026-07-09 ETF RPS 日报",
-    "url": "reports/2026-07-09.html",
+    "date": "2026-07-10",
+    "title": "2026-07-10 ETF RPS 日报",
+    "url": "reports/2026-07-10.html",
     "summary": {
-      "strongestDirection": "半导体",
+      "strongestDirection": "医药",
       "watchDirections": [
-        "医药",
+        "半导体",
         "科创50",
-        "科创综指"
+        "纳指科技"
       ],
       "riskTip": "RPS20≥95 的标的有 9 只，强势方向较集中；若高开过多或 RPS5/RPS10 转弱，优先控制仓位。",
-      "topEtf": "半导体设备ETF（159516）",
+      "topEtf": "标普生物科技ETF（159502）",
       "buyAdvice": "买入观察：优先 R20≥95，且 R5/R10 同步走强、R60/R120 不弱的 ETF；不追高开，等盘中回踩后仍保持强势再试。",
       "sellAdvice": "卖出纪律：回测里 R20 跌破 60 退出表现最好；风险敏感时叠加 8% 止损，若 R5/R10 先转弱可先减仓。",
       "positionAdvice": "仓位建议：当前强势集中在半导体，先小仓观察；若强势扩散到科创成长、通信、金融等方向，再考虑加仓。",
@@ -20,45 +20,38 @@
       "warmCount": 18,
       "themeStrength": [
         {
-          "theme": "半导体",
-          "count": 5,
-          "avgRps20": 98.6,
-          "avgRet20": 39.0
+          "theme": "医药",
+          "count": 6,
+          "avgRps20": 96.1,
+          "avgRet20": 22.6
         },
         {
-          "theme": "医药",
-          "count": 3,
-          "avgRps20": 95.4,
-          "avgRet20": 23.1
+          "theme": "半导体",
+          "count": 4,
+          "avgRps20": 97.9,
+          "avgRet20": 26.5
         },
         {
           "theme": "科创50",
           "count": 1,
-          "avgRps20": 98.3,
-          "avgRet20": 33.3
-        },
-        {
-          "theme": "科创综指",
-          "count": 1,
-          "avgRps20": 96.0,
-          "avgRet20": 22.5
-        },
-        {
-          "theme": "科创100",
-          "count": 1,
-          "avgRps20": 94.9,
-          "avgRet20": 21.9
+          "avgRps20": 97.7,
+          "avgRet20": 25.7
         },
         {
           "theme": "纳指科技",
           "count": 1,
-          "avgRps20": 93.7,
-          "avgRet20": 19.6
+          "avgRps20": 96.6,
+          "avgRet20": 22.8
         }
       ]
     }
   },
   "history": [
+    {
+      "date": "2026-07-10",
+      "title": "2026-07-10 ETF RPS 日报",
+      "url": "reports/2026-07-10.html"
+    },
     {
       "date": "2026-07-09",
       "title": "2026-07-09 ETF RPS 日报",
@@ -168,11 +161,6 @@
       "date": "2026-06-09",
       "title": "2026-06-09 ETF RPS 日报",
       "url": "reports/2026-06-09.html"
-    },
-    {
-      "date": "2026-06-08",
-      "title": "2026-06-08 ETF RPS 日报",
-      "url": "reports/2026-06-08.html"
     }
   ]
 }
