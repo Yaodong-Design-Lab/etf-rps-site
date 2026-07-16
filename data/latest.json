@@ -1,9 +1,9 @@
 {
-  "date": "2026-07-15",
+  "date": "2026-07-16",
   "latestReport": {
-    "date": "2026-07-15",
-    "title": "2026-07-15 ETF RPS 日报",
-    "url": "reports/2026-07-15.html",
+    "date": "2026-07-16",
+    "title": "2026-07-16 ETF RPS 日报",
+    "url": "reports/2026-07-16.html",
     "summary": {
       "strongestDirection": "医药",
       "watchDirections": [
@@ -21,25 +21,30 @@
         {
           "theme": "医药",
           "count": 10,
-          "avgRps20": 97.1,
+          "avgRps20": 97.2,
           "avgRet20": 23.3
         },
         {
           "theme": "恒生医药",
           "count": 1,
           "avgRps20": 96.6,
-          "avgRet20": 21.4
+          "avgRet20": 21.8
         },
         {
           "theme": "香港医药",
           "count": 1,
-          "avgRps20": 94.9,
-          "avgRet20": 20.0
+          "avgRps20": 93.7,
+          "avgRet20": 19.6
         }
       ]
     }
   },
   "history": [
+    {
+      "date": "2026-07-16",
+      "title": "2026-07-16 ETF RPS 日报",
+      "url": "reports/2026-07-16.html"
+    },
     {
       "date": "2026-07-15",
       "title": "2026-07-15 ETF RPS 日报",

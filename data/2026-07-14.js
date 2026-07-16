@@ -2754,26 +2754,6 @@ window.ETF_RPS_DAILY = {
     },
     {
       "rank": 113,
-      "code": "159201",
-      "name": "自由现金流ETF",
-      "shortName": "自由现金流ETF",
-      "theme": "自由现金流",
-      "rps20": 35.7,
-      "rps3": 94.3,
-      "rps5": 69.1,
-      "rps10": 74.9,
-      "rps50": 16.0,
-      "rps60": 21.7,
-      "rps120": 44.0,
-      "rps250": 48.2,
-      "ret1": 2.7,
-      "ret3": 3.2,
-      "ret5": 1.8,
-      "ret10": 4.9,
-      "ret20": -4.9
-    },
-    {
-      "rank": 114,
       "code": "563760",
       "name": "全指自由现金流ETF",
       "shortName": "全指自由现金流ETF",
@@ -2790,6 +2770,26 @@ window.ETF_RPS_DAILY = {
       "ret3": 2.8,
       "ret5": 1.2,
       "ret10": 2.8,
+      "ret20": -4.9
+    },
+    {
+      "rank": 114,
+      "code": "159201",
+      "name": "自由现金流ETF",
+      "shortName": "自由现金流ETF",
+      "theme": "自由现金流",
+      "rps20": 35.7,
+      "rps3": 94.3,
+      "rps5": 69.1,
+      "rps10": 74.9,
+      "rps50": 16.0,
+      "rps60": 21.7,
+      "rps120": 44.0,
+      "rps250": 48.2,
+      "ret1": 2.7,
+      "ret3": 3.2,
+      "ret5": 1.8,
+      "ret10": 4.9,
       "ret20": -4.9
     },
     {
@@ -4014,6 +4014,11 @@ window.ETF_RPS_DAILY = {
     }
   ],
   "history": [
+    {
+      "date": "2026-07-16",
+      "title": "2026-07-16 ETF RPS 日报",
+      "url": "reports/2026-07-16.html"
+    },
     {
       "date": "2026-07-15",
       "title": "2026-07-15 ETF RPS 日报",
