@@ -7,6 +7,7 @@
     "summary": {
       "strongestDirection": "医药",
       "watchDirections": [
+        "半导体",
         "恒生医药",
         "香港医药"
       ],
@@ -20,21 +21,27 @@
       "themeStrength": [
         {
           "theme": "医药",
-          "count": 10,
-          "avgRps20": 97.0,
-          "avgRet20": 13.2
+          "count": 9,
+          "avgRps20": 96.9,
+          "avgRet20": 15.6
+        },
+        {
+          "theme": "半导体",
+          "count": 1,
+          "avgRps20": 98.9,
+          "avgRet20": 17.1
         },
         {
           "theme": "恒生医药",
           "count": 1,
-          "avgRps20": 97.1,
-          "avgRet20": 13.2
+          "avgRps20": 96.6,
+          "avgRet20": 14.9
         },
         {
           "theme": "香港医药",
           "count": 1,
           "avgRps20": 94.9,
-          "avgRet20": 12.3
+          "avgRet20": 13.4
         }
       ]
     }
@@ -44,11 +51,6 @@
       "date": "2026-07-17",
       "title": "2026-07-17 ETF RPS 日报",
       "url": "reports/2026-07-17.html"
-    },
-    {
-      "date": "2026-07-16",
-      "title": "2026-07-16 ETF RPS 日报",
-      "url": "reports/2026-07-16.html"
     },
     {
       "date": "2026-07-15",
