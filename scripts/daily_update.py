@@ -105,12 +105,10 @@ def main() -> None:
     trend_out = build_dir / "site"
     run(
         [
-            str(SCRIPTS / "build_etf_trend_decision.py"),
+            str(SCRIPTS / "build_etf_rps_site_history.py"),
             "--history-csv",
             str(next_history),
-            "--date",
-            target_date,
-            "--today",
+            "--latest-date",
             target_date,
             "--out",
             str(trend_out),
@@ -118,10 +116,12 @@ def main() -> None:
     )
     run(
         [
-            str(SCRIPTS / "build_etf_rps_site_history.py"),
+            str(SCRIPTS / "build_etf_trend_decision.py"),
             "--history-csv",
             str(next_history),
-            "--latest-date",
+            "--date",
+            target_date,
+            "--today",
             target_date,
             "--out",
             str(trend_out),
