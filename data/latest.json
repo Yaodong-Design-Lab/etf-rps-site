@@ -7,8 +7,8 @@
     "summary": {
       "mainlines": [
         "医药",
-        "通信",
-        "半导体"
+        "恒生医药",
+        "香港医药"
       ],
       "action": "持有为主",
       "position": 90,
@@ -16,7 +16,7 @@
       "topName": "科创创新药ETF",
       "topStreak": 13,
       "weeklyChanges": [
-        "↑ 通信 / 半导体"
+        "主线延续"
       ],
       "weeklyRule": "对比上一个交易日的主线前三方向",
       "portfolioRule": "取主线前三方向，每个方向选择趋势分最高的代表 ETF"

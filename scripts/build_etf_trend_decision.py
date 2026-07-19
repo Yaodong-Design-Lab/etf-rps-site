@@ -172,15 +172,24 @@ def build_payload(history_csv: Path, latest_date: str, today: str) -> dict:
     else:
         market_status, position = "风险市场", 0
 
-    themes = (
-        latest_day.sort_values("rps20", ascending=False)
-        .head(12)
-        .groupby("theme")
-        .agg(count=("code", "count"), avg_rps20=("rps20", "mean"), avg_ret20=("ret20", "mean"))
-        .sort_values(["count", "avg_rps20"], ascending=False)
-        .reset_index()
-    )
-    mainlines = themes.head(3)["theme"].tolist()
+    def derive_mainlines(day: pd.DataFrame) -> list[str]:
+        theme_rank = (
+            day.sort_values("rps20", ascending=False)
+            .head(12)
+            .groupby("theme")
+            .agg(count=("code", "count"), avg_rps20=("rps20", "mean"), avg_ret20=("ret20", "mean"))
+            .sort_values(["count", "avg_rps20"], ascending=False)
+            .reset_index()
+        )
+        selected = theme_rank.head(3)["theme"].tolist()
+        for theme in day.sort_values("rps20", ascending=False).drop_duplicates("theme")["theme"].tolist():
+            if theme not in selected:
+                selected.append(theme)
+            if len(selected) >= 3:
+                break
+        return selected[:3]
+
+    mainlines = derive_mainlines(latest_day)
 
     prev_mainlines: list[str] = []
     past_dates = [d for d in dates if d < latest]
@@ -189,15 +198,7 @@ def build_payload(history_csv: Path, latest_date: str, today: str) -> dict:
         prev_day = ranked[ranked["date"] == compare_date].copy()
         if not prev_day.empty:
             prev_day["theme"] = prev_day["name"].map(theme_of)
-            prev_themes = (
-                prev_day.sort_values("rps20", ascending=False)
-                .head(12)
-                .groupby("theme")
-                .agg(count=("code", "count"), avg_rps20=("rps20", "mean"))
-                .sort_values(["count", "avg_rps20"], ascending=False)
-                .reset_index()
-            )
-            prev_mainlines = prev_themes.head(3)["theme"].tolist()
+            prev_mainlines = derive_mainlines(prev_day)
     representatives = latest_day.sort_values(["theme", "trend_score", "rps20"], ascending=[True, False, False]).drop_duplicates("theme")
     latest_theme_rep = {
         row["theme"]: f'{row["short_name"]}（{row["code"]}）'
@@ -256,15 +257,7 @@ def build_payload(history_csv: Path, latest_date: str, today: str) -> dict:
             start_day["rps20"] * start_day["rps20_strong_streak_all"]
             + start_day["rps20"] * start_day["rps20_top10_streak_all"] * 0.5
         )
-        start_themes = (
-            start_day.sort_values("rps20", ascending=False)
-            .head(12)
-            .groupby("theme")
-            .agg(count=("code", "count"), avg_rps20=("rps20", "mean"), avg_ret20=("ret20", "mean"))
-            .sort_values(["count", "avg_rps20"], ascending=False)
-            .reset_index()
-        )
-        start_mainlines = start_themes.head(3)["theme"].tolist()
+        start_mainlines = derive_mainlines(start_day)
         if len(start_mainlines) < 3:
             return None
         start_reps = (
