@@ -13,6 +13,12 @@ import pandas as pd
 from generate_etf_observation import simplify_name, theme_of
 
 
+MAINLINE_THEME_ALIASES = {
+    "恒生医药": "医药",
+    "香港医药": "医药",
+}
+
+
 def clean(value, digits: int = 1):
     if pd.isna(value):
         return None
@@ -34,6 +40,10 @@ def set_history_prefix(payload: dict, prefix: str) -> dict:
     for item in copied.get("history", []):
         item["url"] = f"{prefix}{item['date']}.html?v=trend-decision"
     return copied
+
+
+def mainline_theme_of(theme: str) -> str:
+    return MAINLINE_THEME_ALIASES.get(str(theme), str(theme))
 
 
 def signal_of(row: pd.Series) -> tuple[str, str]:
@@ -93,6 +103,7 @@ def build_payload(history_csv: Path, latest_date: str, today: str) -> dict:
 
     latest_day["short_name"] = latest_day["name"].map(simplify_name)
     latest_day["theme"] = latest_day["name"].map(theme_of)
+    latest_day["mainline_theme"] = latest_day["theme"].map(mainline_theme_of)
 
     ranked = ranked.sort_values(["code", "date"]).copy()
 
@@ -176,13 +187,13 @@ def build_payload(history_csv: Path, latest_date: str, today: str) -> dict:
         theme_rank = (
             day.sort_values("rps20", ascending=False)
             .head(12)
-            .groupby("theme")
+            .groupby("mainline_theme")
             .agg(count=("code", "count"), avg_rps20=("rps20", "mean"), avg_ret20=("ret20", "mean"))
             .sort_values(["count", "avg_rps20"], ascending=False)
             .reset_index()
         )
-        selected = theme_rank.head(3)["theme"].tolist()
-        for theme in day.sort_values("rps20", ascending=False).drop_duplicates("theme")["theme"].tolist():
+        selected = theme_rank.head(3)["mainline_theme"].tolist()
+        for theme in day.sort_values("rps20", ascending=False).drop_duplicates("mainline_theme")["mainline_theme"].tolist():
             if theme not in selected:
                 selected.append(theme)
             if len(selected) >= 3:
@@ -198,10 +209,11 @@ def build_payload(history_csv: Path, latest_date: str, today: str) -> dict:
         prev_day = ranked[ranked["date"] == compare_date].copy()
         if not prev_day.empty:
             prev_day["theme"] = prev_day["name"].map(theme_of)
+            prev_day["mainline_theme"] = prev_day["theme"].map(mainline_theme_of)
             prev_mainlines = derive_mainlines(prev_day)
-    representatives = latest_day.sort_values(["theme", "trend_score", "rps20"], ascending=[True, False, False]).drop_duplicates("theme")
+    representatives = latest_day.sort_values(["mainline_theme", "trend_score", "rps20"], ascending=[True, False, False]).drop_duplicates("mainline_theme")
     latest_theme_rep = {
-        row["theme"]: f'{row["short_name"]}（{row["code"]}）'
+        row["mainline_theme"]: f'{row["short_name"]}（{row["code"]}）'
         for _, row in representatives.iterrows()
     }
 
@@ -212,9 +224,10 @@ def build_payload(history_csv: Path, latest_date: str, today: str) -> dict:
         if not prev_day.empty:
             prev_day["short_name"] = prev_day["name"].map(simplify_name)
             prev_day["theme"] = prev_day["name"].map(theme_of)
-            prev_rep = prev_day.sort_values(["theme", "rps20"], ascending=[True, False]).drop_duplicates("theme")
+            prev_day["mainline_theme"] = prev_day["theme"].map(mainline_theme_of)
+            prev_rep = prev_day.sort_values(["mainline_theme", "rps20"], ascending=[True, False]).drop_duplicates("mainline_theme")
             prev_theme_rep = {
-                row["theme"]: f'{row["short_name"]}（{row["code"]}）'
+                row["mainline_theme"]: f'{row["short_name"]}（{row["code"]}）'
                 for _, row in prev_rep.iterrows()
             }
 
@@ -231,7 +244,7 @@ def build_payload(history_csv: Path, latest_date: str, today: str) -> dict:
     current_holdings = []
     weights = [40, 30, 30]
     for weight, theme in zip(weights, mainlines):
-        row = representatives[representatives["theme"] == theme].iloc[0]
+        row = representatives[representatives["mainline_theme"] == theme].iloc[0]
         current_holdings.append(
             {
                 "theme": theme,
@@ -253,6 +266,7 @@ def build_payload(history_csv: Path, latest_date: str, today: str) -> dict:
             return None
         start_day["short_name"] = start_day["name"].map(simplify_name)
         start_day["theme"] = start_day["name"].map(theme_of)
+        start_day["mainline_theme"] = start_day["theme"].map(mainline_theme_of)
         start_day["trend_score_for_day"] = (
             start_day["rps20"] * start_day["rps20_strong_streak_all"]
             + start_day["rps20"] * start_day["rps20_top10_streak_all"] * 0.5
@@ -261,14 +275,14 @@ def build_payload(history_csv: Path, latest_date: str, today: str) -> dict:
         if len(start_mainlines) < 3:
             return None
         start_reps = (
-            start_day.sort_values(["theme", "trend_score_for_day", "rps20"], ascending=[True, False, False])
-            .drop_duplicates("theme")
+            start_day.sort_values(["mainline_theme", "trend_score_for_day", "rps20"], ascending=[True, False, False])
+            .drop_duplicates("mainline_theme")
         )
         items = []
         total_return = 0.0
         valid_weight = 0
         for weight, theme in zip(weights, start_mainlines):
-            rep = start_reps[start_reps["theme"] == theme]
+            rep = start_reps[start_reps["mainline_theme"] == theme]
             if rep.empty:
                 continue
             row = rep.iloc[0]

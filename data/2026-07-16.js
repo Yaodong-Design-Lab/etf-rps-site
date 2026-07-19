@@ -17,8 +17,8 @@ window.COCKPIT_DATA = {
   "decision": {
     "mainlines": [
       "医药",
-      "恒生医药",
-      "香港医药"
+      "中药",
+      "中概互联网"
     ],
     "action": "持有为主",
     "position": 90,
@@ -26,7 +26,8 @@ window.COCKPIT_DATA = {
     "topName": "科创创新药ETF",
     "topStreak": 12,
     "weeklyChanges": [
-      "主线延续"
+      "↑ 中药 / 中概互联网",
+      "↓ 半导体 / 豆粕"
     ],
     "weeklyRule": "对比上一个交易日的主线前三方向",
     "portfolioRule": "取主线前三方向，每个方向选择趋势分最高的代表 ETF"
@@ -41,19 +42,19 @@ window.COCKPIT_DATA = {
       "streak": 5
     },
     {
-      "theme": "恒生医药",
-      "name": "恒生医药ETF",
-      "code": "159892",
+      "theme": "中药",
+      "name": "中药ETF",
+      "code": "560080",
       "weight": 30,
-      "rps20": 96.6,
-      "streak": 2
+      "rps20": 90.9,
+      "streak": 0
     },
     {
-      "theme": "香港医药",
-      "name": "香港医药ETF",
-      "code": "513700",
+      "theme": "中概互联网",
+      "name": "中概互联网ETF",
+      "code": "513050",
       "weight": 30,
-      "rps20": 93.7,
+      "rps20": 89.1,
       "streak": 0
     }
   ],
@@ -197,22 +198,22 @@ window.COCKPIT_DATA = {
                 "streak": 12
               },
               {
-                "theme": "恒生医药",
-                "name": "恒生医药ETF",
-                "code": "159892",
+                "theme": "中药",
+                "name": "中药ETF",
+                "code": "560080",
                 "weight": 30,
                 "return": 0.0,
-                "rps20": 96.6,
-                "streak": 3
+                "rps20": 90.9,
+                "streak": 1
               },
               {
-                "theme": "香港医药",
-                "name": "香港医药ETF",
-                "code": "513700",
+                "theme": "中概互联网",
+                "name": "中概互联网ETF",
+                "code": "513050",
                 "weight": 30,
                 "return": 0.0,
-                "rps20": 93.7,
-                "streak": 3
+                "rps20": 89.1,
+                "streak": 0
               }
             ],
             "targetDays": 5,
@@ -235,22 +236,22 @@ window.COCKPIT_DATA = {
                 "streak": 12
               },
               {
-                "theme": "恒生医药",
-                "name": "恒生医药ETF",
-                "code": "159892",
+                "theme": "中药",
+                "name": "中药ETF",
+                "code": "560080",
                 "weight": 30,
                 "return": 0.0,
-                "rps20": 96.6,
-                "streak": 3
+                "rps20": 90.9,
+                "streak": 1
               },
               {
-                "theme": "香港医药",
-                "name": "香港医药ETF",
-                "code": "513700",
+                "theme": "中概互联网",
+                "name": "中概互联网ETF",
+                "code": "513050",
                 "weight": 30,
                 "return": 0.0,
-                "rps20": 93.7,
-                "streak": 3
+                "rps20": 89.1,
+                "streak": 0
               }
             ],
             "targetDays": 10,
@@ -273,22 +274,22 @@ window.COCKPIT_DATA = {
                 "streak": 12
               },
               {
-                "theme": "恒生医药",
-                "name": "恒生医药ETF",
-                "code": "159892",
+                "theme": "中药",
+                "name": "中药ETF",
+                "code": "560080",
                 "weight": 30,
                 "return": 0.0,
-                "rps20": 96.6,
-                "streak": 3
+                "rps20": 90.9,
+                "streak": 1
               },
               {
-                "theme": "香港医药",
-                "name": "香港医药ETF",
-                "code": "513700",
+                "theme": "中概互联网",
+                "name": "中概互联网ETF",
+                "code": "513050",
                 "weight": 30,
                 "return": 0.0,
-                "rps20": 93.7,
-                "streak": 3
+                "rps20": 89.1,
+                "streak": 0
               }
             ],
             "targetDays": 20,
@@ -304,7 +305,7 @@ window.COCKPIT_DATA = {
             "endDate": "2026-07-16",
             "label": "1个交易日前",
             "holdDays": 1,
-            "return": -1.1,
+            "return": -24.7,
             "items": [
               {
                 "theme": "医药",
@@ -316,22 +317,22 @@ window.COCKPIT_DATA = {
                 "streak": 11
               },
               {
-                "theme": "恒生医药",
-                "name": "恒生医药ETF",
-                "code": "159892",
+                "theme": "半导体",
+                "name": "半导体设备ETF",
+                "code": "159516",
                 "weight": 30,
-                "return": -0.7,
-                "rps20": 96.6,
-                "streak": 2
+                "return": -76.9,
+                "rps20": 90.3,
+                "streak": 51
               },
               {
-                "theme": "香港医药",
-                "name": "香港医药ETF",
-                "code": "513700",
+                "theme": "豆粕",
+                "name": "豆粕ETF",
+                "code": "159985",
                 "weight": 30,
-                "return": -1.2,
-                "rps20": 94.9,
-                "streak": 2
+                "return": -3.7,
+                "rps20": 88.0,
+                "streak": 0
               }
             ],
             "targetDays": 5,
@@ -342,7 +343,7 @@ window.COCKPIT_DATA = {
             "endDate": "2026-07-16",
             "label": "1个交易日前",
             "holdDays": 1,
-            "return": -1.1,
+            "return": -24.7,
             "items": [
               {
                 "theme": "医药",
@@ -354,22 +355,22 @@ window.COCKPIT_DATA = {
                 "streak": 11
               },
               {
-                "theme": "恒生医药",
-                "name": "恒生医药ETF",
-                "code": "159892",
+                "theme": "半导体",
+                "name": "半导体设备ETF",
+                "code": "159516",
                 "weight": 30,
-                "return": -0.7,
-                "rps20": 96.6,
-                "streak": 2
+                "return": -76.9,
+                "rps20": 90.3,
+                "streak": 51
               },
               {
-                "theme": "香港医药",
-                "name": "香港医药ETF",
-                "code": "513700",
+                "theme": "豆粕",
+                "name": "豆粕ETF",
+                "code": "159985",
                 "weight": 30,
-                "return": -1.2,
-                "rps20": 94.9,
-                "streak": 2
+                "return": -3.7,
+                "rps20": 88.0,
+                "streak": 0
               }
             ],
             "targetDays": 10,
@@ -380,7 +381,7 @@ window.COCKPIT_DATA = {
             "endDate": "2026-07-16",
             "label": "1个交易日前",
             "holdDays": 1,
-            "return": -1.1,
+            "return": -24.7,
             "items": [
               {
                 "theme": "医药",
@@ -392,22 +393,22 @@ window.COCKPIT_DATA = {
                 "streak": 11
               },
               {
-                "theme": "恒生医药",
-                "name": "恒生医药ETF",
-                "code": "159892",
+                "theme": "半导体",
+                "name": "半导体设备ETF",
+                "code": "159516",
                 "weight": 30,
-                "return": -0.7,
-                "rps20": 96.6,
-                "streak": 2
+                "return": -76.9,
+                "rps20": 90.3,
+                "streak": 51
               },
               {
-                "theme": "香港医药",
-                "name": "香港医药ETF",
-                "code": "513700",
+                "theme": "豆粕",
+                "name": "豆粕ETF",
+                "code": "159985",
                 "weight": 30,
-                "return": -1.2,
-                "rps20": 94.9,
-                "streak": 2
+                "return": -3.7,
+                "rps20": 88.0,
+                "streak": 0
               }
             ],
             "targetDays": 20,
@@ -8515,7 +8516,7 @@ window.COCKPIT_DATA = {
             "endDate": "2026-04-10",
             "label": "5个交易日前",
             "holdDays": 5,
-            "return": -2.6,
+            "return": -1.1,
             "items": [
               {
                 "theme": "医药",
@@ -8536,13 +8537,13 @@ window.COCKPIT_DATA = {
                 "streak": 22
               },
               {
-                "theme": "香港医药",
-                "name": "香港医药",
-                "code": "513700",
+                "theme": "汽车",
+                "name": "港股通汽车ETF",
+                "code": "520600",
                 "weight": 30,
-                "return": -1.2,
-                "rps20": 94.3,
-                "streak": 2
+                "return": 3.8,
+                "rps20": 93.7,
+                "streak": 3
               }
             ],
             "targetDays": 5,
@@ -8553,7 +8554,7 @@ window.COCKPIT_DATA = {
             "endDate": "2026-04-17",
             "label": "10个交易日前",
             "holdDays": 10,
-            "return": 0.1,
+            "return": 1.1,
             "items": [
               {
                 "theme": "医药",
@@ -8574,13 +8575,13 @@ window.COCKPIT_DATA = {
                 "streak": 22
               },
               {
-                "theme": "香港医药",
-                "name": "香港医药",
-                "code": "513700",
+                "theme": "汽车",
+                "name": "港股通汽车ETF",
+                "code": "520600",
                 "weight": 30,
-                "return": 0.8,
-                "rps20": 94.3,
-                "streak": 2
+                "return": 4.5,
+                "rps20": 93.7,
+                "streak": 3
               }
             ],
             "targetDays": 10,
@@ -8591,7 +8592,7 @@ window.COCKPIT_DATA = {
             "endDate": "2026-05-06",
             "label": "20个交易日前",
             "holdDays": 20,
-            "return": -2.1,
+            "return": -0.3,
             "items": [
               {
                 "theme": "医药",
@@ -8612,13 +8613,13 @@ window.COCKPIT_DATA = {
                 "streak": 22
               },
               {
-                "theme": "香港医药",
-                "name": "香港医药",
-                "code": "513700",
+                "theme": "汽车",
+                "name": "港股通汽车ETF",
+                "code": "520600",
                 "weight": 30,
-                "return": -6.3,
-                "rps20": 94.3,
-                "streak": 2
+                "return": -0.2,
+                "rps20": 93.7,
+                "streak": 3
               }
             ],
             "targetDays": 20,
@@ -8634,7 +8635,7 @@ window.COCKPIT_DATA = {
             "endDate": "2026-04-09",
             "label": "5个交易日前",
             "holdDays": 5,
-            "return": -1.6,
+            "return": -2.6,
             "items": [
               {
                 "theme": "医药",
@@ -8655,13 +8656,13 @@ window.COCKPIT_DATA = {
                 "streak": 21
               },
               {
-                "theme": "香港医药",
-                "name": "香港医药",
-                "code": "513700",
+                "theme": "标普石油天然气勘探及生产",
+                "name": "标普石油天然气勘探及生产精选行业ETF",
+                "code": "159518",
                 "weight": 30,
-                "return": -1.1,
-                "rps20": 94.3,
-                "streak": 1
+                "return": -4.6,
+                "rps20": 92.6,
+                "streak": 36
               }
             ],
             "targetDays": 5,
@@ -8672,7 +8673,7 @@ window.COCKPIT_DATA = {
             "endDate": "2026-04-16",
             "label": "10个交易日前",
             "holdDays": 10,
-            "return": 2.1,
+            "return": -0.2,
             "items": [
               {
                 "theme": "医药",
@@ -8693,13 +8694,13 @@ window.COCKPIT_DATA = {
                 "streak": 21
               },
               {
-                "theme": "香港医药",
-                "name": "香港医药",
-                "code": "513700",
+                "theme": "标普石油天然气勘探及生产",
+                "name": "标普石油天然气勘探及生产精选行业ETF",
+                "code": "159518",
                 "weight": 30,
-                "return": 3.3,
-                "rps20": 94.3,
-                "streak": 1
+                "return": -4.6,
+                "rps20": 92.6,
+                "streak": 36
               }
             ],
             "targetDays": 10,
@@ -8710,7 +8711,7 @@ window.COCKPIT_DATA = {
             "endDate": "2026-04-30",
             "label": "20个交易日前",
             "holdDays": 20,
-            "return": -1.7,
+            "return": 0.2,
             "items": [
               {
                 "theme": "医药",
@@ -8731,13 +8732,13 @@ window.COCKPIT_DATA = {
                 "streak": 21
               },
               {
-                "theme": "香港医药",
-                "name": "香港医药",
-                "code": "513700",
+                "theme": "标普石油天然气勘探及生产",
+                "name": "标普石油天然气勘探及生产精选行业ETF",
+                "code": "159518",
                 "weight": 30,
-                "return": -5.2,
-                "rps20": 94.3,
-                "streak": 1
+                "return": 1.3,
+                "rps20": 92.6,
+                "streak": 36
               }
             ],
             "targetDays": 20,
@@ -26960,7 +26961,7 @@ window.COCKPIT_DATA = {
             "endDate": "2025-08-15",
             "label": "5个交易日前",
             "holdDays": 5,
-            "return": 7.7,
+            "return": 6.7,
             "items": [
               {
                 "theme": "医药",
@@ -26981,13 +26982,13 @@ window.COCKPIT_DATA = {
                 "streak": 9
               },
               {
-                "theme": "香港医药",
-                "name": "香港医药",
-                "code": "513700",
+                "theme": "有色金属",
+                "name": "稀有金属ETF",
+                "code": "562800",
                 "weight": 30,
-                "return": 7.1,
-                "rps20": 94.6,
-                "streak": 12
+                "return": 3.7,
+                "rps20": 94.0,
+                "streak": 16
               }
             ],
             "targetDays": 5,
@@ -26998,7 +26999,7 @@ window.COCKPIT_DATA = {
             "endDate": "2025-08-22",
             "label": "10个交易日前",
             "holdDays": 10,
-            "return": 12.7,
+            "return": 12.8,
             "items": [
               {
                 "theme": "医药",
@@ -27019,13 +27020,13 @@ window.COCKPIT_DATA = {
                 "streak": 9
               },
               {
-                "theme": "香港医药",
-                "name": "香港医药",
-                "code": "513700",
+                "theme": "有色金属",
+                "name": "稀有金属ETF",
+                "code": "562800",
                 "weight": 30,
-                "return": 8.5,
-                "rps20": 94.6,
-                "streak": 12
+                "return": 9.0,
+                "rps20": 94.0,
+                "streak": 16
               }
             ],
             "targetDays": 10,
@@ -27036,7 +27037,7 @@ window.COCKPIT_DATA = {
             "endDate": "2025-09-05",
             "label": "20个交易日前",
             "holdDays": 20,
-            "return": 19.8,
+            "return": 20.9,
             "items": [
               {
                 "theme": "医药",
@@ -27057,13 +27058,13 @@ window.COCKPIT_DATA = {
                 "streak": 9
               },
               {
-                "theme": "香港医药",
-                "name": "香港医药",
-                "code": "513700",
+                "theme": "有色金属",
+                "name": "稀有金属ETF",
+                "code": "562800",
                 "weight": 30,
-                "return": 11.9,
-                "rps20": 94.6,
-                "streak": 12
+                "return": 15.4,
+                "rps20": 94.0,
+                "streak": 16
               }
             ],
             "targetDays": 20,
@@ -27198,7 +27199,7 @@ window.COCKPIT_DATA = {
             "endDate": "2025-08-13",
             "label": "5个交易日前",
             "holdDays": 5,
-            "return": 0.2,
+            "return": 3.9,
             "items": [
               {
                 "theme": "医药",
@@ -27210,15 +27211,6 @@ window.COCKPIT_DATA = {
                 "streak": 17
               },
               {
-                "theme": "香港医药",
-                "name": "香港医药",
-                "code": "513700",
-                "weight": 30,
-                "return": -0.3,
-                "rps20": 96.4,
-                "streak": 10
-              },
-              {
                 "theme": "稀土产业",
                 "name": "稀土产业ETF",
                 "code": "516150",
@@ -27226,6 +27218,15 @@ window.COCKPIT_DATA = {
                 "return": 3.8,
                 "rps20": 94.6,
                 "streak": 14
+              },
+              {
+                "theme": "通信",
+                "name": "全指通信设备ETF",
+                "code": "515880",
+                "weight": 30,
+                "return": 12.1,
+                "rps20": 94.0,
+                "streak": 7
               }
             ],
             "targetDays": 5,
@@ -27236,7 +27237,7 @@ window.COCKPIT_DATA = {
             "endDate": "2025-08-20",
             "label": "10个交易日前",
             "holdDays": 10,
-            "return": 4.4,
+            "return": 10.1,
             "items": [
               {
                 "theme": "医药",
@@ -27248,15 +27249,6 @@ window.COCKPIT_DATA = {
                 "streak": 17
               },
               {
-                "theme": "香港医药",
-                "name": "香港医药",
-                "code": "513700",
-                "weight": 30,
-                "return": 0.9,
-                "rps20": 96.4,
-                "streak": 10
-              },
-              {
                 "theme": "稀土产业",
                 "name": "稀土产业ETF",
                 "code": "516150",
@@ -27264,6 +27256,15 @@ window.COCKPIT_DATA = {
                 "return": 15.8,
                 "rps20": 94.6,
                 "streak": 14
+              },
+              {
+                "theme": "通信",
+                "name": "全指通信设备ETF",
+                "code": "515880",
+                "weight": 30,
+                "return": 19.8,
+                "rps20": 94.0,
+                "streak": 7
               }
             ],
             "targetDays": 10,
@@ -27274,7 +27275,7 @@ window.COCKPIT_DATA = {
             "endDate": "2025-09-03",
             "label": "20个交易日前",
             "holdDays": 20,
-            "return": 10.1,
+            "return": 22.0,
             "items": [
               {
                 "theme": "医药",
@@ -27286,15 +27287,6 @@ window.COCKPIT_DATA = {
                 "streak": 17
               },
               {
-                "theme": "香港医药",
-                "name": "香港医药",
-                "code": "513700",
-                "weight": 30,
-                "return": 7.4,
-                "rps20": 96.4,
-                "streak": 10
-              },
-              {
                 "theme": "稀土产业",
                 "name": "稀土产业ETF",
                 "code": "516150",
@@ -27302,6 +27294,15 @@ window.COCKPIT_DATA = {
                 "return": 22.1,
                 "rps20": 94.6,
                 "streak": 14
+              },
+              {
+                "theme": "通信",
+                "name": "全指通信设备ETF",
+                "code": "515880",
+                "weight": 30,
+                "return": 47.3,
+                "rps20": 94.0,
+                "streak": 7
               }
             ],
             "targetDays": 20,
@@ -27317,7 +27318,7 @@ window.COCKPIT_DATA = {
             "endDate": "2025-08-12",
             "label": "5个交易日前",
             "holdDays": 5,
-            "return": -1.8,
+            "return": 0.3,
             "items": [
               {
                 "theme": "医药",
@@ -27329,15 +27330,6 @@ window.COCKPIT_DATA = {
                 "streak": 16
               },
               {
-                "theme": "香港医药",
-                "name": "香港医药",
-                "code": "513700",
-                "weight": 30,
-                "return": -3.8,
-                "rps20": 96.4,
-                "streak": 9
-              },
-              {
                 "theme": "通信",
                 "name": "5G通信ETF",
                 "code": "515050",
@@ -27345,6 +27337,15 @@ window.COCKPIT_DATA = {
                 "return": 5.2,
                 "rps20": 91.1,
                 "streak": 34
+              },
+              {
+                "theme": "稀土产业",
+                "name": "稀土产业ETF",
+                "code": "516150",
+                "weight": 30,
+                "return": 3.0,
+                "rps20": 94.0,
+                "streak": 13
               }
             ],
             "targetDays": 5,
@@ -27355,7 +27356,7 @@ window.COCKPIT_DATA = {
             "endDate": "2025-08-19",
             "label": "10个交易日前",
             "holdDays": 10,
-            "return": 6.6,
+            "return": 10.2,
             "items": [
               {
                 "theme": "医药",
@@ -27367,15 +27368,6 @@ window.COCKPIT_DATA = {
                 "streak": 16
               },
               {
-                "theme": "香港医药",
-                "name": "香港医药",
-                "code": "513700",
-                "weight": 30,
-                "return": 3.5,
-                "rps20": 96.4,
-                "streak": 9
-              },
-              {
                 "theme": "通信",
                 "name": "5G通信ETF",
                 "code": "515050",
@@ -27383,6 +27375,15 @@ window.COCKPIT_DATA = {
                 "return": 15.9,
                 "rps20": 91.1,
                 "streak": 34
+              },
+              {
+                "theme": "稀土产业",
+                "name": "稀土产业ETF",
+                "code": "516150",
+                "weight": 30,
+                "return": 15.3,
+                "rps20": 94.0,
+                "streak": 13
               }
             ],
             "targetDays": 10,
@@ -27393,7 +27394,7 @@ window.COCKPIT_DATA = {
             "endDate": "2025-09-02",
             "label": "20个交易日前",
             "holdDays": 20,
-            "return": 14.2,
+            "return": 19.9,
             "items": [
               {
                 "theme": "医药",
@@ -27405,15 +27406,6 @@ window.COCKPIT_DATA = {
                 "streak": 16
               },
               {
-                "theme": "香港医药",
-                "name": "香港医药",
-                "code": "513700",
-                "weight": 30,
-                "return": 6.2,
-                "rps20": 96.4,
-                "streak": 9
-              },
-              {
                 "theme": "通信",
                 "name": "5G通信ETF",
                 "code": "515050",
@@ -27421,6 +27413,15 @@ window.COCKPIT_DATA = {
                 "return": 38.6,
                 "rps20": 91.1,
                 "streak": 34
+              },
+              {
+                "theme": "稀土产业",
+                "name": "稀土产业ETF",
+                "code": "516150",
+                "weight": 30,
+                "return": 25.4,
+                "rps20": 94.0,
+                "streak": 13
               }
             ],
             "targetDays": 20,
@@ -27793,7 +27794,7 @@ window.COCKPIT_DATA = {
             "endDate": "2025-08-06",
             "label": "5个交易日前",
             "holdDays": 5,
-            "return": -0.1,
+            "return": -0.4,
             "items": [
               {
                 "theme": "医药",
@@ -27814,13 +27815,13 @@ window.COCKPIT_DATA = {
                 "streak": 28
               },
               {
-                "theme": "香港医药",
-                "name": "香港医药",
-                "code": "513700",
+                "theme": "通信",
+                "name": "5G通信ETF",
+                "code": "515050",
                 "weight": 30,
-                "return": 0.2,
-                "rps20": 95.8,
-                "streak": 5
+                "return": -0.6,
+                "rps20": 92.9,
+                "streak": 30
               }
             ],
             "targetDays": 5,
@@ -27831,7 +27832,7 @@ window.COCKPIT_DATA = {
             "endDate": "2025-08-13",
             "label": "10个交易日前",
             "holdDays": 10,
-            "return": -0.0,
+            "return": 2.9,
             "items": [
               {
                 "theme": "医药",
@@ -27852,13 +27853,13 @@ window.COCKPIT_DATA = {
                 "streak": 28
               },
               {
-                "theme": "香港医药",
-                "name": "香港医药",
-                "code": "513700",
+                "theme": "通信",
+                "name": "5G通信ETF",
+                "code": "515050",
                 "weight": 30,
-                "return": -0.1,
-                "rps20": 95.8,
-                "streak": 5
+                "return": 9.8,
+                "rps20": 92.9,
+                "streak": 30
               }
             ],
             "targetDays": 10,
@@ -27869,7 +27870,7 @@ window.COCKPIT_DATA = {
             "endDate": "2025-08-27",
             "label": "20个交易日前",
             "holdDays": 20,
-            "return": -0.7,
+            "return": 7.7,
             "items": [
               {
                 "theme": "医药",
@@ -27890,13 +27891,13 @@ window.COCKPIT_DATA = {
                 "streak": 28
               },
               {
-                "theme": "香港医药",
-                "name": "香港医药",
-                "code": "513700",
+                "theme": "通信",
+                "name": "5G通信ETF",
+                "code": "515050",
                 "weight": 30,
-                "return": -0.4,
-                "rps20": 95.8,
-                "streak": 5
+                "return": 27.6,
+                "rps20": 92.9,
+                "streak": 30
               }
             ],
             "targetDays": 20,
@@ -27912,7 +27913,7 @@ window.COCKPIT_DATA = {
             "endDate": "2025-08-05",
             "label": "5个交易日前",
             "holdDays": 5,
-            "return": -2.1,
+            "return": -3.1,
             "items": [
               {
                 "theme": "医药",
@@ -27933,13 +27934,13 @@ window.COCKPIT_DATA = {
                 "streak": 27
               },
               {
-                "theme": "香港医药",
-                "name": "香港医药",
-                "code": "513700",
+                "theme": "稀土产业",
+                "name": "稀土产业ETF",
+                "code": "516150",
                 "weight": 30,
-                "return": -1.1,
-                "rps20": 95.8,
-                "streak": 4
+                "return": -4.7,
+                "rps20": 94.0,
+                "streak": 8
               }
             ],
             "targetDays": 5,
@@ -27950,7 +27951,7 @@ window.COCKPIT_DATA = {
             "endDate": "2025-08-12",
             "label": "10个交易日前",
             "holdDays": 10,
-            "return": -4.7,
+            "return": -3.8,
             "items": [
               {
                 "theme": "医药",
@@ -27971,13 +27972,13 @@ window.COCKPIT_DATA = {
                 "streak": 27
               },
               {
-                "theme": "香港医药",
-                "name": "香港医药",
-                "code": "513700",
+                "theme": "稀土产业",
+                "name": "稀土产业ETF",
+                "code": "516150",
                 "weight": 30,
-                "return": -4.8,
-                "rps20": 95.8,
-                "streak": 4
+                "return": -1.8,
+                "rps20": 94.0,
+                "streak": 8
               }
             ],
             "targetDays": 10,
@@ -27988,7 +27989,7 @@ window.COCKPIT_DATA = {
             "endDate": "2025-08-26",
             "label": "20个交易日前",
             "holdDays": 20,
-            "return": 1.9,
+            "return": 5.9,
             "items": [
               {
                 "theme": "医药",
@@ -28009,13 +28010,13 @@ window.COCKPIT_DATA = {
                 "streak": 27
               },
               {
-                "theme": "香港医药",
-                "name": "香港医药",
-                "code": "513700",
+                "theme": "稀土产业",
+                "name": "稀土产业ETF",
+                "code": "516150",
                 "weight": 30,
-                "return": 2.7,
-                "rps20": 95.8,
-                "streak": 4
+                "return": 16.1,
+                "rps20": 94.0,
+                "streak": 8
               }
             ],
             "targetDays": 20,
@@ -30887,7 +30888,7 @@ window.COCKPIT_DATA = {
             "endDate": "2025-07-01",
             "label": "5个交易日前",
             "holdDays": 5,
-            "return": -0.2,
+            "return": 2.4,
             "items": [
               {
                 "theme": "医药",
@@ -30908,13 +30909,13 @@ window.COCKPIT_DATA = {
                 "streak": 2
               },
               {
-                "theme": "香港医药",
-                "name": "香港医药",
-                "code": "513700",
+                "theme": "通信",
+                "name": "全指通信设备ETF",
+                "code": "515880",
                 "weight": 30,
-                "return": -1.7,
-                "rps20": 96.4,
-                "streak": 15
+                "return": 6.9,
+                "rps20": 92.1,
+                "streak": 7
               }
             ],
             "targetDays": 5,
@@ -30925,7 +30926,7 @@ window.COCKPIT_DATA = {
             "endDate": "2025-07-08",
             "label": "10个交易日前",
             "holdDays": 10,
-            "return": 3.1,
+            "return": 5.8,
             "items": [
               {
                 "theme": "医药",
@@ -30946,13 +30947,13 @@ window.COCKPIT_DATA = {
                 "streak": 2
               },
               {
-                "theme": "香港医药",
-                "name": "香港医药",
-                "code": "513700",
+                "theme": "通信",
+                "name": "全指通信设备ETF",
+                "code": "515880",
                 "weight": 30,
-                "return": 0.4,
-                "rps20": 96.4,
-                "streak": 15
+                "return": 9.5,
+                "rps20": 92.1,
+                "streak": 7
               }
             ],
             "targetDays": 10,
@@ -30963,7 +30964,7 @@ window.COCKPIT_DATA = {
             "endDate": "2025-07-22",
             "label": "20个交易日前",
             "holdDays": 20,
-            "return": 12.7,
+            "return": 14.7,
             "items": [
               {
                 "theme": "医药",
@@ -30984,13 +30985,13 @@ window.COCKPIT_DATA = {
                 "streak": 2
               },
               {
-                "theme": "香港医药",
-                "name": "香港医药",
-                "code": "513700",
+                "theme": "通信",
+                "name": "全指通信设备ETF",
+                "code": "515880",
                 "weight": 30,
-                "return": 12.9,
-                "rps20": 96.4,
-                "streak": 15
+                "return": 19.7,
+                "rps20": 92.1,
+                "streak": 7
               }
             ],
             "targetDays": 20,
@@ -31363,7 +31364,7 @@ window.COCKPIT_DATA = {
             "endDate": "2025-06-25",
             "label": "5个交易日前",
             "holdDays": 5,
-            "return": 2.2,
+            "return": 0.5,
             "items": [
               {
                 "theme": "医药",
@@ -31375,15 +31376,6 @@ window.COCKPIT_DATA = {
                 "streak": 14
               },
               {
-                "theme": "香港医药",
-                "name": "香港医药",
-                "code": "513700",
-                "weight": 30,
-                "return": 2.6,
-                "rps20": 96.4,
-                "streak": 11
-              },
-              {
                 "theme": "通信",
                 "name": "全指通信设备ETF",
                 "code": "515880",
@@ -31391,6 +31383,15 @@ window.COCKPIT_DATA = {
                 "return": 0.5,
                 "rps20": 95.2,
                 "streak": 3
+              },
+              {
+                "theme": "黄金",
+                "name": "黄金股ETF",
+                "code": "517520",
+                "weight": 30,
+                "return": -3.1,
+                "rps20": 94.5,
+                "streak": 5
               }
             ],
             "targetDays": 5,
@@ -31401,7 +31402,7 @@ window.COCKPIT_DATA = {
             "endDate": "2025-07-02",
             "label": "10个交易日前",
             "holdDays": 10,
-            "return": 2.0,
+            "return": 1.9,
             "items": [
               {
                 "theme": "医药",
@@ -31413,15 +31414,6 @@ window.COCKPIT_DATA = {
                 "streak": 14
               },
               {
-                "theme": "香港医药",
-                "name": "香港医药",
-                "code": "513700",
-                "weight": 30,
-                "return": 1.3,
-                "rps20": 96.4,
-                "streak": 11
-              },
-              {
                 "theme": "通信",
                 "name": "全指通信设备ETF",
                 "code": "515880",
@@ -31429,6 +31421,15 @@ window.COCKPIT_DATA = {
                 "return": 3.3,
                 "rps20": 95.2,
                 "streak": 3
+              },
+              {
+                "theme": "黄金",
+                "name": "黄金股ETF",
+                "code": "517520",
+                "weight": 30,
+                "return": 1.1,
+                "rps20": 94.5,
+                "streak": 5
               }
             ],
             "targetDays": 10,
@@ -31439,7 +31440,7 @@ window.COCKPIT_DATA = {
             "endDate": "2025-07-16",
             "label": "20个交易日前",
             "holdDays": 20,
-            "return": 13.2,
+            "return": 9.6,
             "items": [
               {
                 "theme": "医药",
@@ -31451,15 +31452,6 @@ window.COCKPIT_DATA = {
                 "streak": 14
               },
               {
-                "theme": "香港医药",
-                "name": "香港医药",
-                "code": "513700",
-                "weight": 30,
-                "return": 10.7,
-                "rps20": 96.4,
-                "streak": 11
-              },
-              {
                 "theme": "通信",
                 "name": "全指通信设备ETF",
                 "code": "515880",
@@ -31467,6 +31459,15 @@ window.COCKPIT_DATA = {
                 "return": 14.8,
                 "rps20": 95.2,
                 "streak": 3
+              },
+              {
+                "theme": "黄金",
+                "name": "黄金股ETF",
+                "code": "517520",
+                "weight": 30,
+                "return": -1.3,
+                "rps20": 94.5,
+                "streak": 5
               }
             ],
             "targetDays": 20,
@@ -31482,7 +31483,7 @@ window.COCKPIT_DATA = {
             "endDate": "2025-06-24",
             "label": "5个交易日前",
             "holdDays": 5,
-            "return": 1.8,
+            "return": 2.1,
             "items": [
               {
                 "theme": "医药",
@@ -31494,15 +31495,6 @@ window.COCKPIT_DATA = {
                 "streak": 13
               },
               {
-                "theme": "香港医药",
-                "name": "香港医药",
-                "code": "513700",
-                "weight": 30,
-                "return": 1.9,
-                "rps20": 96.4,
-                "streak": 10
-              },
-              {
                 "theme": "动漫游戏",
                 "name": "动漫游戏ETF",
                 "code": "159869",
@@ -31510,6 +31502,15 @@ window.COCKPIT_DATA = {
                 "return": -0.1,
                 "rps20": 95.2,
                 "streak": 5
+              },
+              {
+                "theme": "非银金融",
+                "name": "港股通非银ETF",
+                "code": "513750",
+                "weight": 30,
+                "return": 3.2,
+                "rps20": 92.7,
+                "streak": 26
               }
             ],
             "targetDays": 5,
@@ -31520,7 +31521,7 @@ window.COCKPIT_DATA = {
             "endDate": "2025-07-01",
             "label": "10个交易日前",
             "holdDays": 10,
-            "return": 1.9,
+            "return": 2.9,
             "items": [
               {
                 "theme": "医药",
@@ -31532,15 +31533,6 @@ window.COCKPIT_DATA = {
                 "streak": 13
               },
               {
-                "theme": "香港医药",
-                "name": "香港医药",
-                "code": "513700",
-                "weight": 30,
-                "return": 0.1,
-                "rps20": 96.4,
-                "streak": 10
-              },
-              {
                 "theme": "动漫游戏",
                 "name": "动漫游戏ETF",
                 "code": "159869",
@@ -31548,6 +31540,15 @@ window.COCKPIT_DATA = {
                 "return": 5.6,
                 "rps20": 95.2,
                 "streak": 5
+              },
+              {
+                "theme": "非银金融",
+                "name": "港股通非银ETF",
+                "code": "513750",
+                "weight": 30,
+                "return": 3.4,
+                "rps20": 92.7,
+                "streak": 26
               }
             ],
             "targetDays": 10,
@@ -31558,7 +31559,7 @@ window.COCKPIT_DATA = {
             "endDate": "2025-07-15",
             "label": "20个交易日前",
             "holdDays": 20,
-            "return": 9.7,
+            "return": 9.4,
             "items": [
               {
                 "theme": "医药",
@@ -31570,15 +31571,6 @@ window.COCKPIT_DATA = {
                 "streak": 13
               },
               {
-                "theme": "香港医药",
-                "name": "香港医药",
-                "code": "513700",
-                "weight": 30,
-                "return": 9.3,
-                "rps20": 96.4,
-                "streak": 10
-              },
-              {
                 "theme": "动漫游戏",
                 "name": "动漫游戏ETF",
                 "code": "159869",
@@ -31586,6 +31578,15 @@ window.COCKPIT_DATA = {
                 "return": 6.0,
                 "rps20": 95.2,
                 "streak": 5
+              },
+              {
+                "theme": "非银金融",
+                "name": "港股通非银ETF",
+                "code": "513750",
+                "weight": 30,
+                "return": 8.2,
+                "rps20": 92.7,
+                "streak": 26
               }
             ],
             "targetDays": 20,
@@ -31601,7 +31602,7 @@ window.COCKPIT_DATA = {
             "endDate": "2025-06-23",
             "label": "5个交易日前",
             "holdDays": 5,
-            "return": -5.1,
+            "return": -3.9,
             "items": [
               {
                 "theme": "医药",
@@ -31613,15 +31614,6 @@ window.COCKPIT_DATA = {
                 "streak": 12
               },
               {
-                "theme": "香港医药",
-                "name": "香港医药",
-                "code": "513700",
-                "weight": 30,
-                "return": -4.9,
-                "rps20": 96.3,
-                "streak": 9
-              },
-              {
                 "theme": "动漫游戏",
                 "name": "动漫游戏ETF",
                 "code": "159869",
@@ -31629,6 +31621,15 @@ window.COCKPIT_DATA = {
                 "return": -5.1,
                 "rps20": 95.1,
                 "streak": 4
+              },
+              {
+                "theme": "非银金融",
+                "name": "港股通非银ETF",
+                "code": "513750",
+                "weight": 30,
+                "return": -1.0,
+                "rps20": 92.7,
+                "streak": 25
               }
             ],
             "targetDays": 5,
@@ -31639,7 +31640,7 @@ window.COCKPIT_DATA = {
             "endDate": "2025-06-30",
             "label": "10个交易日前",
             "holdDays": 10,
-            "return": -2.1,
+            "return": -0.0,
             "items": [
               {
                 "theme": "医药",
@@ -31651,15 +31652,6 @@ window.COCKPIT_DATA = {
                 "streak": 12
               },
               {
-                "theme": "香港医药",
-                "name": "香港医药",
-                "code": "513700",
-                "weight": 30,
-                "return": -3.8,
-                "rps20": 96.3,
-                "streak": 9
-              },
-              {
                 "theme": "动漫游戏",
                 "name": "动漫游戏ETF",
                 "code": "159869",
@@ -31667,6 +31659,15 @@ window.COCKPIT_DATA = {
                 "return": 2.7,
                 "rps20": 95.1,
                 "streak": 4
+              },
+              {
+                "theme": "非银金融",
+                "name": "港股通非银ETF",
+                "code": "513750",
+                "weight": 30,
+                "return": 3.2,
+                "rps20": 92.7,
+                "streak": 25
               }
             ],
             "targetDays": 10,
@@ -31677,7 +31678,7 @@ window.COCKPIT_DATA = {
             "endDate": "2025-07-14",
             "label": "20个交易日前",
             "holdDays": 20,
-            "return": 2.9,
+            "return": 4.8,
             "items": [
               {
                 "theme": "医药",
@@ -31689,15 +31690,6 @@ window.COCKPIT_DATA = {
                 "streak": 12
               },
               {
-                "theme": "香港医药",
-                "name": "香港医药",
-                "code": "513700",
-                "weight": 30,
-                "return": 2.1,
-                "rps20": 96.3,
-                "streak": 9
-              },
-              {
                 "theme": "动漫游戏",
                 "name": "动漫游戏ETF",
                 "code": "159869",
@@ -31705,6 +31697,15 @@ window.COCKPIT_DATA = {
                 "return": 2.5,
                 "rps20": 95.1,
                 "streak": 4
+              },
+              {
+                "theme": "非银金融",
+                "name": "港股通非银ETF",
+                "code": "513750",
+                "weight": 30,
+                "return": 8.4,
+                "rps20": 92.7,
+                "streak": 25
               }
             ],
             "targetDays": 20,
@@ -31720,7 +31721,7 @@ window.COCKPIT_DATA = {
             "endDate": "2025-06-20",
             "label": "5个交易日前",
             "holdDays": 5,
-            "return": -7.3,
+            "return": -5.3,
             "items": [
               {
                 "theme": "医药",
@@ -31732,15 +31733,6 @@ window.COCKPIT_DATA = {
                 "streak": 11
               },
               {
-                "theme": "香港医药",
-                "name": "香港医药",
-                "code": "513700",
-                "weight": 30,
-                "return": -7.6,
-                "rps20": 96.3,
-                "streak": 8
-              },
-              {
                 "theme": "黄金",
                 "name": "黄金股ETF",
                 "code": "517520",
@@ -31748,6 +31740,15 @@ window.COCKPIT_DATA = {
                 "return": -5.3,
                 "rps20": 94.5,
                 "streak": 2
+              },
+              {
+                "theme": "动漫游戏",
+                "name": "动漫游戏ETF",
+                "code": "159869",
+                "weight": 30,
+                "return": -1.2,
+                "rps20": 93.3,
+                "streak": 3
               }
             ],
             "targetDays": 5,
@@ -31758,7 +31759,7 @@ window.COCKPIT_DATA = {
             "endDate": "2025-06-27",
             "label": "10个交易日前",
             "holdDays": 10,
-            "return": -5.1,
+            "return": -3.1,
             "items": [
               {
                 "theme": "医药",
@@ -31770,15 +31771,6 @@ window.COCKPIT_DATA = {
                 "streak": 11
               },
               {
-                "theme": "香港医药",
-                "name": "香港医药",
-                "code": "513700",
-                "weight": 30,
-                "return": -4.9,
-                "rps20": 96.3,
-                "streak": 8
-              },
-              {
                 "theme": "黄金",
                 "name": "黄金股ETF",
                 "code": "517520",
@@ -31786,6 +31778,15 @@ window.COCKPIT_DATA = {
                 "return": -3.7,
                 "rps20": 94.5,
                 "streak": 2
+              },
+              {
+                "theme": "动漫游戏",
+                "name": "动漫游戏ETF",
+                "code": "159869",
+                "weight": 30,
+                "return": 1.7,
+                "rps20": 93.3,
+                "streak": 3
               }
             ],
             "targetDays": 10,
@@ -31796,7 +31797,7 @@ window.COCKPIT_DATA = {
             "endDate": "2025-07-11",
             "label": "20个交易日前",
             "holdDays": 20,
-            "return": -1.4,
+            "return": 1.8,
             "items": [
               {
                 "theme": "医药",
@@ -31808,15 +31809,6 @@ window.COCKPIT_DATA = {
                 "streak": 11
               },
               {
-                "theme": "香港医药",
-                "name": "香港医药",
-                "code": "513700",
-                "weight": 30,
-                "return": -0.5,
-                "rps20": 96.3,
-                "streak": 8
-              },
-              {
                 "theme": "黄金",
                 "name": "黄金股ETF",
                 "code": "517520",
@@ -31824,6 +31816,15 @@ window.COCKPIT_DATA = {
                 "return": -4.6,
                 "rps20": 94.5,
                 "streak": 2
+              },
+              {
+                "theme": "动漫游戏",
+                "name": "动漫游戏ETF",
+                "code": "159869",
+                "weight": 30,
+                "return": 10.0,
+                "rps20": 93.3,
+                "streak": 3
               }
             ],
             "targetDays": 20,
@@ -31839,7 +31840,7 @@ window.COCKPIT_DATA = {
             "endDate": "2025-06-19",
             "label": "5个交易日前",
             "holdDays": 5,
-            "return": -7.4,
+            "return": -5.1,
             "items": [
               {
                 "theme": "医药",
@@ -31851,15 +31852,6 @@ window.COCKPIT_DATA = {
                 "streak": 10
               },
               {
-                "theme": "香港医药",
-                "name": "香港医药",
-                "code": "513700",
-                "weight": 30,
-                "return": -9.2,
-                "rps20": 96.3,
-                "streak": 7
-              },
-              {
                 "theme": "黄金",
                 "name": "黄金股ETF",
                 "code": "517520",
@@ -31867,6 +31859,15 @@ window.COCKPIT_DATA = {
                 "return": -2.0,
                 "rps20": 93.9,
                 "streak": 1
+              },
+              {
+                "theme": "动漫游戏",
+                "name": "动漫游戏ETF",
+                "code": "159869",
+                "weight": 30,
+                "return": -1.3,
+                "rps20": 91.5,
+                "streak": 2
               }
             ],
             "targetDays": 5,
@@ -31877,7 +31878,7 @@ window.COCKPIT_DATA = {
             "endDate": "2025-06-26",
             "label": "10个交易日前",
             "holdDays": 10,
-            "return": -4.7,
+            "return": -2.9,
             "items": [
               {
                 "theme": "医药",
@@ -31889,15 +31890,6 @@ window.COCKPIT_DATA = {
                 "streak": 10
               },
               {
-                "theme": "香港医药",
-                "name": "香港医药",
-                "code": "513700",
-                "weight": 30,
-                "return": -5.4,
-                "rps20": 96.3,
-                "streak": 7
-              },
-              {
                 "theme": "黄金",
                 "name": "黄金股ETF",
                 "code": "517520",
@@ -31905,6 +31897,15 @@ window.COCKPIT_DATA = {
                 "return": -1.8,
                 "rps20": 93.9,
                 "streak": 1
+              },
+              {
+                "theme": "动漫游戏",
+                "name": "动漫游戏ETF",
+                "code": "159869",
+                "weight": 30,
+                "return": 0.7,
+                "rps20": 91.5,
+                "streak": 2
               }
             ],
             "targetDays": 10,
@@ -31915,7 +31916,7 @@ window.COCKPIT_DATA = {
             "endDate": "2025-07-10",
             "label": "20个交易日前",
             "holdDays": 20,
-            "return": -2.8,
+            "return": 0.7,
             "items": [
               {
                 "theme": "医药",
@@ -31927,15 +31928,6 @@ window.COCKPIT_DATA = {
                 "streak": 10
               },
               {
-                "theme": "香港医药",
-                "name": "香港医药",
-                "code": "513700",
-                "weight": 30,
-                "return": -3.1,
-                "rps20": 96.3,
-                "streak": 7
-              },
-              {
                 "theme": "黄金",
                 "name": "黄金股ETF",
                 "code": "517520",
@@ -31943,6 +31935,15 @@ window.COCKPIT_DATA = {
                 "return": -2.8,
                 "rps20": 93.9,
                 "streak": 1
+              },
+              {
+                "theme": "动漫游戏",
+                "name": "动漫游戏ETF",
+                "code": "159869",
+                "weight": 30,
+                "return": 8.4,
+                "rps20": 91.5,
+                "streak": 2
               }
             ],
             "targetDays": 20,
@@ -31958,7 +31959,7 @@ window.COCKPIT_DATA = {
             "endDate": "2025-06-18",
             "label": "5个交易日前",
             "holdDays": 5,
-            "return": -2.4,
+            "return": -1.5,
             "items": [
               {
                 "theme": "医药",
@@ -31979,13 +31980,13 @@ window.COCKPIT_DATA = {
                 "streak": 22
               },
               {
-                "theme": "香港医药",
-                "name": "香港医药",
-                "code": "513700",
+                "theme": "红利",
+                "name": "恒生港股通中国央企红利ETF",
+                "code": "513920",
                 "weight": 30,
-                "return": -2.5,
-                "rps20": 96.3,
-                "streak": 6
+                "return": 0.7,
+                "rps20": 91.5,
+                "streak": 1
               }
             ],
             "targetDays": 5,
@@ -31996,7 +31997,7 @@ window.COCKPIT_DATA = {
             "endDate": "2025-06-25",
             "label": "10个交易日前",
             "holdDays": 10,
-            "return": 2.1,
+            "return": 2.6,
             "items": [
               {
                 "theme": "医药",
@@ -32017,13 +32018,13 @@ window.COCKPIT_DATA = {
                 "streak": 22
               },
               {
-                "theme": "香港医药",
-                "name": "香港医药",
-                "code": "513700",
+                "theme": "红利",
+                "name": "恒生港股通中国央企红利ETF",
+                "code": "513920",
                 "weight": 30,
-                "return": 0.0,
-                "rps20": 96.3,
-                "streak": 6
+                "return": 1.6,
+                "rps20": 91.5,
+                "streak": 1
               }
             ],
             "targetDays": 10,
@@ -32055,13 +32056,13 @@ window.COCKPIT_DATA = {
                 "streak": 22
               },
               {
-                "theme": "香港医药",
-                "name": "香港医药",
-                "code": "513700",
+                "theme": "红利",
+                "name": "恒生港股通中国央企红利ETF",
+                "code": "513920",
                 "weight": 30,
-                "return": 1.5,
-                "rps20": 96.3,
-                "streak": 6
+                "return": 1.7,
+                "rps20": 91.5,
+                "streak": 1
               }
             ],
             "targetDays": 20,
@@ -32077,7 +32078,7 @@ window.COCKPIT_DATA = {
             "endDate": "2025-06-17",
             "label": "5个交易日前",
             "holdDays": 5,
-            "return": -1.6,
+            "return": 0.1,
             "items": [
               {
                 "theme": "医药",
@@ -32089,15 +32090,6 @@ window.COCKPIT_DATA = {
                 "streak": 8
               },
               {
-                "theme": "香港医药",
-                "name": "香港医药",
-                "code": "513700",
-                "weight": 30,
-                "return": -2.7,
-                "rps20": 96.3,
-                "streak": 5
-              },
-              {
                 "theme": "非银金融",
                 "name": "港股通非银ETF",
                 "code": "513750",
@@ -32105,6 +32097,15 @@ window.COCKPIT_DATA = {
                 "return": 2.1,
                 "rps20": 93.3,
                 "streak": 21
+              },
+              {
+                "theme": "黄金",
+                "name": "黄金股ETF",
+                "code": "517520",
+                "weight": 30,
+                "return": 3.1,
+                "rps20": 92.6,
+                "streak": 1
               }
             ],
             "targetDays": 5,
@@ -32115,7 +32116,7 @@ window.COCKPIT_DATA = {
             "endDate": "2025-06-24",
             "label": "10个交易日前",
             "holdDays": 10,
-            "return": 1.0,
+            "return": 1.2,
             "items": [
               {
                 "theme": "医药",
@@ -32127,15 +32128,6 @@ window.COCKPIT_DATA = {
                 "streak": 8
               },
               {
-                "theme": "香港医药",
-                "name": "香港医药",
-                "code": "513700",
-                "weight": 30,
-                "return": -0.9,
-                "rps20": 96.3,
-                "streak": 5
-              },
-              {
                 "theme": "非银金融",
                 "name": "港股通非银ETF",
                 "code": "513750",
@@ -32143,6 +32135,15 @@ window.COCKPIT_DATA = {
                 "return": 5.3,
                 "rps20": 93.3,
                 "streak": 21
+              },
+              {
+                "theme": "黄金",
+                "name": "黄金股ETF",
+                "code": "517520",
+                "weight": 30,
+                "return": -0.3,
+                "rps20": 92.6,
+                "streak": 1
               }
             ],
             "targetDays": 10,
@@ -32153,7 +32154,7 @@ window.COCKPIT_DATA = {
             "endDate": "2025-07-08",
             "label": "20个交易日前",
             "holdDays": 20,
-            "return": 2.2,
+            "return": 3.4,
             "items": [
               {
                 "theme": "医药",
@@ -32165,15 +32166,6 @@ window.COCKPIT_DATA = {
                 "streak": 8
               },
               {
-                "theme": "香港医药",
-                "name": "香港医药",
-                "code": "513700",
-                "weight": 30,
-                "return": -0.6,
-                "rps20": 96.3,
-                "streak": 5
-              },
-              {
                 "theme": "非银金融",
                 "name": "港股通非银ETF",
                 "code": "513750",
@@ -32181,6 +32173,15 @@ window.COCKPIT_DATA = {
                 "return": 7.5,
                 "rps20": 93.3,
                 "streak": 21
+              },
+              {
+                "theme": "黄金",
+                "name": "黄金股ETF",
+                "code": "517520",
+                "weight": 30,
+                "return": 3.4,
+                "rps20": 92.6,
+                "streak": 1
               }
             ],
             "targetDays": 20,
@@ -32196,7 +32197,7 @@ window.COCKPIT_DATA = {
             "endDate": "2025-06-16",
             "label": "5个交易日前",
             "holdDays": 5,
-            "return": 3.4,
+            "return": 2.8,
             "items": [
               {
                 "theme": "医药",
@@ -32208,15 +32209,6 @@ window.COCKPIT_DATA = {
                 "streak": 7
               },
               {
-                "theme": "香港医药",
-                "name": "香港医药",
-                "code": "513700",
-                "weight": 30,
-                "return": 3.1,
-                "rps20": 96.3,
-                "streak": 4
-              },
-              {
                 "theme": "非银金融",
                 "name": "港股通非银ETF",
                 "code": "513750",
@@ -32224,6 +32216,15 @@ window.COCKPIT_DATA = {
                 "return": 2.8,
                 "rps20": 92.6,
                 "streak": 20
+              },
+              {
+                "theme": "纳斯达克科技",
+                "name": "纳斯达克科技ETF",
+                "code": "159509",
+                "weight": 30,
+                "return": 1.0,
+                "rps20": 93.3,
+                "streak": 19
               }
             ],
             "targetDays": 5,
@@ -32234,7 +32235,7 @@ window.COCKPIT_DATA = {
             "endDate": "2025-06-23",
             "label": "10个交易日前",
             "holdDays": 10,
-            "return": -0.6,
+            "return": 0.1,
             "items": [
               {
                 "theme": "医药",
@@ -32246,15 +32247,6 @@ window.COCKPIT_DATA = {
                 "streak": 7
               },
               {
-                "theme": "香港医药",
-                "name": "香港医药",
-                "code": "513700",
-                "weight": 30,
-                "return": -2.0,
-                "rps20": 96.3,
-                "streak": 4
-              },
-              {
                 "theme": "非银金融",
                 "name": "港股通非银ETF",
                 "code": "513750",
@@ -32262,6 +32254,15 @@ window.COCKPIT_DATA = {
                 "return": 1.8,
                 "rps20": 92.6,
                 "streak": 20
+              },
+              {
+                "theme": "纳斯达克科技",
+                "name": "纳斯达克科技ETF",
+                "code": "159509",
+                "weight": 30,
+                "return": 0.3,
+                "rps20": 93.3,
+                "streak": 19
               }
             ],
             "targetDays": 10,
@@ -32272,7 +32273,7 @@ window.COCKPIT_DATA = {
             "endDate": "2025-07-07",
             "label": "20个交易日前",
             "holdDays": 20,
-            "return": 3.4,
+            "return": 4.5,
             "items": [
               {
                 "theme": "医药",
@@ -32284,15 +32285,6 @@ window.COCKPIT_DATA = {
                 "streak": 7
               },
               {
-                "theme": "香港医药",
-                "name": "香港医药",
-                "code": "513700",
-                "weight": 30,
-                "return": 1.3,
-                "rps20": 96.3,
-                "streak": 4
-              },
-              {
                 "theme": "非银金融",
                 "name": "港股通非银ETF",
                 "code": "513750",
@@ -32300,6 +32292,15 @@ window.COCKPIT_DATA = {
                 "return": 6.2,
                 "rps20": 92.6,
                 "streak": 20
+              },
+              {
+                "theme": "纳斯达克科技",
+                "name": "纳斯达克科技ETF",
+                "code": "159509",
+                "weight": 30,
+                "return": 4.9,
+                "rps20": 93.3,
+                "streak": 19
               }
             ],
             "targetDays": 20,
@@ -32315,7 +32316,7 @@ window.COCKPIT_DATA = {
             "endDate": "2025-06-13",
             "label": "5个交易日前",
             "holdDays": 5,
-            "return": 6.8,
+            "return": 5.3,
             "items": [
               {
                 "theme": "医药",
@@ -32327,15 +32328,6 @@ window.COCKPIT_DATA = {
                 "streak": 6
               },
               {
-                "theme": "香港医药",
-                "name": "香港医药",
-                "code": "513700",
-                "weight": 30,
-                "return": 8.6,
-                "rps20": 96.3,
-                "streak": 3
-              },
-              {
                 "theme": "纳斯达克科技",
                 "name": "纳斯达克科技ETF",
                 "code": "159509",
@@ -32343,6 +32335,15 @@ window.COCKPIT_DATA = {
                 "return": -0.3,
                 "rps20": 95.1,
                 "streak": 18
+              },
+              {
+                "theme": "非银金融",
+                "name": "港股通非银ETF",
+                "code": "513750",
+                "weight": 30,
+                "return": 3.8,
+                "rps20": 93.9,
+                "streak": 19
               }
             ],
             "targetDays": 5,
@@ -32353,7 +32354,7 @@ window.COCKPIT_DATA = {
             "endDate": "2025-06-20",
             "label": "10个交易日前",
             "holdDays": 10,
-            "return": 0.6,
+            "return": 1.2,
             "items": [
               {
                 "theme": "医药",
@@ -32365,15 +32366,6 @@ window.COCKPIT_DATA = {
                 "streak": 6
               },
               {
-                "theme": "香港医药",
-                "name": "香港医药",
-                "code": "513700",
-                "weight": 30,
-                "return": 0.4,
-                "rps20": 96.3,
-                "streak": 3
-              },
-              {
                 "theme": "纳斯达克科技",
                 "name": "纳斯达克科技ETF",
                 "code": "159509",
@@ -32381,6 +32373,15 @@ window.COCKPIT_DATA = {
                 "return": -0.2,
                 "rps20": 95.1,
                 "streak": 18
+              },
+              {
+                "theme": "非银金融",
+                "name": "港股通非银ETF",
+                "code": "513750",
+                "weight": 30,
+                "return": 2.5,
+                "rps20": 93.9,
+                "streak": 19
               }
             ],
             "targetDays": 10,
@@ -32391,7 +32392,7 @@ window.COCKPIT_DATA = {
             "endDate": "2025-07-04",
             "label": "20个交易日前",
             "holdDays": 20,
-            "return": 8.9,
+            "return": 9.0,
             "items": [
               {
                 "theme": "医药",
@@ -32403,15 +32404,6 @@ window.COCKPIT_DATA = {
                 "streak": 6
               },
               {
-                "theme": "香港医药",
-                "name": "香港医药",
-                "code": "513700",
-                "weight": 30,
-                "return": 8.4,
-                "rps20": 96.3,
-                "streak": 3
-              },
-              {
                 "theme": "纳斯达克科技",
                 "name": "纳斯达克科技ETF",
                 "code": "159509",
@@ -32419,6 +32411,15 @@ window.COCKPIT_DATA = {
                 "return": 6.1,
                 "rps20": 95.1,
                 "streak": 18
+              },
+              {
+                "theme": "非银金融",
+                "name": "港股通非银ETF",
+                "code": "513750",
+                "weight": 30,
+                "return": 8.7,
+                "rps20": 93.9,
+                "streak": 19
               }
             ],
             "targetDays": 20,
@@ -32434,7 +32435,7 @@ window.COCKPIT_DATA = {
             "endDate": "2025-06-12",
             "label": "5个交易日前",
             "holdDays": 5,
-            "return": 10.4,
+            "return": 7.5,
             "items": [
               {
                 "theme": "医药",
@@ -32455,13 +32456,13 @@ window.COCKPIT_DATA = {
                 "streak": 18
               },
               {
-                "theme": "香港医药",
-                "name": "香港医药",
-                "code": "513700",
+                "theme": "纳斯达克科技",
+                "name": "纳斯达克科技ETF",
+                "code": "159509",
                 "weight": 30,
-                "return": 11.8,
-                "rps20": 96.3,
-                "streak": 2
+                "return": 2.1,
+                "rps20": 95.1,
+                "streak": 17
               }
             ],
             "targetDays": 5,
@@ -32493,13 +32494,13 @@ window.COCKPIT_DATA = {
                 "streak": 18
               },
               {
-                "theme": "香港医药",
-                "name": "香港医药",
-                "code": "513700",
+                "theme": "纳斯达克科技",
+                "name": "纳斯达克科技ETF",
+                "code": "159509",
                 "weight": 30,
-                "return": 1.6,
-                "rps20": 96.3,
-                "streak": 2
+                "return": 1.5,
+                "rps20": 95.1,
+                "streak": 17
               }
             ],
             "targetDays": 10,
@@ -32510,7 +32511,7 @@ window.COCKPIT_DATA = {
             "endDate": "2025-07-03",
             "label": "20个交易日前",
             "holdDays": 20,
-            "return": 9.8,
+            "return": 9.2,
             "items": [
               {
                 "theme": "医药",
@@ -32531,13 +32532,13 @@ window.COCKPIT_DATA = {
                 "streak": 18
               },
               {
-                "theme": "香港医药",
-                "name": "香港医药",
-                "code": "513700",
+                "theme": "纳斯达克科技",
+                "name": "纳斯达克科技ETF",
+                "code": "159509",
                 "weight": 30,
-                "return": 9.0,
-                "rps20": 96.3,
-                "streak": 2
+                "return": 7.0,
+                "rps20": 95.1,
+                "streak": 17
               }
             ],
             "targetDays": 20,
@@ -32553,7 +32554,7 @@ window.COCKPIT_DATA = {
             "endDate": "2025-06-11",
             "label": "5个交易日前",
             "holdDays": 5,
-            "return": 5.7,
+            "return": 3.9,
             "items": [
               {
                 "theme": "医药",
@@ -32574,13 +32575,13 @@ window.COCKPIT_DATA = {
                 "streak": 16
               },
               {
-                "theme": "香港医药",
-                "name": "香港医药",
-                "code": "513700",
+                "theme": "纳指100",
+                "name": "纳指100ETF",
+                "code": "159941",
                 "weight": 30,
-                "return": 6.3,
-                "rps20": 95.7,
-                "streak": 1
+                "return": 0.5,
+                "rps20": 93.9,
+                "streak": 16
               }
             ],
             "targetDays": 5,
@@ -32591,7 +32592,7 @@ window.COCKPIT_DATA = {
             "endDate": "2025-06-18",
             "label": "10个交易日前",
             "holdDays": 10,
-            "return": 3.5,
+            "return": 2.3,
             "items": [
               {
                 "theme": "医药",
@@ -32612,13 +32613,13 @@ window.COCKPIT_DATA = {
                 "streak": 16
               },
               {
-                "theme": "香港医药",
-                "name": "香港医药",
-                "code": "513700",
+                "theme": "纳指100",
+                "name": "纳指100ETF",
+                "code": "159941",
                 "weight": 30,
-                "return": 3.6,
-                "rps20": 95.7,
-                "streak": 1
+                "return": -0.2,
+                "rps20": 93.9,
+                "streak": 16
               }
             ],
             "targetDays": 10,
@@ -32629,7 +32630,7 @@ window.COCKPIT_DATA = {
             "endDate": "2025-07-02",
             "label": "20个交易日前",
             "holdDays": 20,
-            "return": 5.7,
+            "return": 5.3,
             "items": [
               {
                 "theme": "医药",
@@ -32650,13 +32651,13 @@ window.COCKPIT_DATA = {
                 "streak": 16
               },
               {
-                "theme": "香港医药",
-                "name": "香港医药",
-                "code": "513700",
+                "theme": "纳指100",
+                "name": "纳指100ETF",
+                "code": "159941",
                 "weight": 30,
-                "return": 5.0,
-                "rps20": 95.7,
-                "streak": 1
+                "return": 3.6,
+                "rps20": 93.9,
+                "streak": 16
               }
             ],
             "targetDays": 20,
@@ -37432,7 +37433,7 @@ window.COCKPIT_DATA = {
             "endDate": "2025-04-09",
             "label": "5个交易日前",
             "holdDays": 5,
-            "return": -14.4,
+            "return": -10.0,
             "items": [
               {
                 "theme": "医药",
@@ -37453,13 +37454,13 @@ window.COCKPIT_DATA = {
                 "streak": 11
               },
               {
-                "theme": "香港医药",
-                "name": "香港医药",
-                "code": "513700",
+                "theme": "上海金",
+                "name": "上海金ETF",
+                "code": "518680",
                 "weight": 30,
-                "return": -15.7,
-                "rps20": 95.0,
-                "streak": 3
+                "return": -1.3,
+                "rps20": 94.3,
+                "streak": 5
               }
             ],
             "targetDays": 5,
@@ -37470,7 +37471,7 @@ window.COCKPIT_DATA = {
             "endDate": "2025-04-16",
             "label": "10个交易日前",
             "holdDays": 10,
-            "return": -5.7,
+            "return": -0.8,
             "items": [
               {
                 "theme": "医药",
@@ -37491,13 +37492,13 @@ window.COCKPIT_DATA = {
                 "streak": 11
               },
               {
-                "theme": "香港医药",
-                "name": "香港医药",
-                "code": "513700",
+                "theme": "上海金",
+                "name": "上海金ETF",
+                "code": "518680",
                 "weight": 30,
-                "return": -10.3,
-                "rps20": 95.0,
-                "streak": 3
+                "return": 6.0,
+                "rps20": 94.3,
+                "streak": 5
               }
             ],
             "targetDays": 10,
@@ -37508,7 +37509,7 @@ window.COCKPIT_DATA = {
             "endDate": "2025-04-30",
             "label": "20个交易日前",
             "holdDays": 20,
-            "return": -1.3,
+            "return": 2.5,
             "items": [
               {
                 "theme": "医药",
@@ -37529,13 +37530,13 @@ window.COCKPIT_DATA = {
                 "streak": 11
               },
               {
-                "theme": "香港医药",
-                "name": "香港医药",
-                "code": "513700",
+                "theme": "上海金",
+                "name": "上海金ETF",
+                "code": "518680",
                 "weight": 30,
-                "return": -2.1,
-                "rps20": 95.0,
-                "streak": 3
+                "return": 10.6,
+                "rps20": 94.3,
+                "streak": 5
               }
             ],
             "targetDays": 20,
@@ -53799,7 +53800,7 @@ window.COCKPIT_DATA = {
       ]
     }
   },
-  "portfolioScore": 97,
+  "portfolioScore": 94,
   "leaders": [
     {
       "name": "科创创新药ETF",
