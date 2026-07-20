@@ -1,14 +1,14 @@
 {
-  "date": "2026-07-17",
+  "date": "2026-07-20",
   "latestReport": {
-    "date": "2026-07-17",
-    "title": "2026-07-17 ETF RPS 日报",
-    "url": "reports/2026-07-17.html?v=trend-decision",
+    "date": "2026-07-20",
+    "title": "2026-07-20 ETF RPS 日报",
+    "url": "reports/2026-07-20.html?v=trend-decision",
     "summary": {
       "mainlines": [
         "医药",
-        "中药",
-        "能源化工"
+        "能源化工",
+        "中药"
       ],
       "action": "持有为主",
       "position": 90,
@@ -16,8 +16,7 @@
       "topName": "科创创新药ETF",
       "topStreak": 13,
       "weeklyChanges": [
-        "↑ 能源化工",
-        "↓ 中概互联网"
+        "主线延续"
       ],
       "weeklyRule": "对比上一个交易日的主线前三方向",
       "portfolioRule": "取主线前三方向，每个方向选择趋势分最高的代表 ETF"
@@ -25,14 +24,14 @@
   },
   "history": [
     {
+      "date": "2026-07-20",
+      "title": "2026-07-20 ETF RPS 日报",
+      "url": "reports/2026-07-20.html?v=trend-decision"
+    },
+    {
       "date": "2026-07-17",
       "title": "2026-07-17 ETF RPS 日报",
       "url": "reports/2026-07-17.html?v=trend-decision"
-    },
-    {
-      "date": "2026-07-16",
-      "title": "2026-07-16 ETF RPS 日报",
-      "url": "reports/2026-07-16.html?v=trend-decision"
     },
     {
       "date": "2026-07-15",
@@ -123,21 +122,6 @@
       "date": "2026-06-22",
       "title": "2026-06-22 ETF RPS 日报",
       "url": "reports/2026-06-22.html?v=trend-decision"
-    },
-    {
-      "date": "2026-06-18",
-      "title": "2026-06-18 ETF RPS 日报",
-      "url": "reports/2026-06-18.html?v=trend-decision"
-    },
-    {
-      "date": "2026-06-17",
-      "title": "2026-06-17 ETF RPS 日报",
-      "url": "reports/2026-06-17.html?v=trend-decision"
-    },
-    {
-      "date": "2026-06-16",
-      "title": "2026-06-16 ETF RPS 日报",
-      "url": "reports/2026-06-16.html?v=trend-decision"
     }
   ]
 }
