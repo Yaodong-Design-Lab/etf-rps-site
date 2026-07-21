@@ -18,7 +18,7 @@ window.COCKPIT_DATA = {
     "mainlines": [
       "医药",
       "能源化工",
-      "中药"
+      "豆粕"
     ],
     "action": "持有为主",
     "position": 90,
@@ -26,7 +26,8 @@ window.COCKPIT_DATA = {
     "topName": "科创创新药ETF",
     "topStreak": 14,
     "weeklyChanges": [
-      "主线延续"
+      "↑ 豆粕",
+      "↓ 中概互联网"
     ],
     "weeklyRule": "对比上一个交易日的主线前三方向",
     "portfolioRule": "取主线前三方向，每个方向选择趋势分最高的代表 ETF"
@@ -49,11 +50,11 @@ window.COCKPIT_DATA = {
       "streak": 0
     },
     {
-      "theme": "中药",
-      "name": "中药ETF",
-      "code": "560080",
+      "theme": "豆粕",
+      "name": "豆粕ETF",
+      "code": "159985",
       "weight": 30,
-      "rps20": 90.9,
+      "rps20": 90.3,
       "streak": 0
     }
   ],
@@ -206,13 +207,13 @@ window.COCKPIT_DATA = {
                 "streak": 2
               },
               {
-                "theme": "中药",
-                "name": "中药ETF",
-                "code": "560080",
+                "theme": "豆粕",
+                "name": "豆粕ETF",
+                "code": "159985",
                 "weight": 30,
                 "return": 0.0,
-                "rps20": 90.9,
-                "streak": 3
+                "rps20": 90.3,
+                "streak": 1
               }
             ],
             "targetDays": 5,
@@ -244,13 +245,13 @@ window.COCKPIT_DATA = {
                 "streak": 2
               },
               {
-                "theme": "中药",
-                "name": "中药ETF",
-                "code": "560080",
+                "theme": "豆粕",
+                "name": "豆粕ETF",
+                "code": "159985",
                 "weight": 30,
                 "return": 0.0,
-                "rps20": 90.9,
-                "streak": 3
+                "rps20": 90.3,
+                "streak": 1
               }
             ],
             "targetDays": 10,
@@ -282,13 +283,13 @@ window.COCKPIT_DATA = {
                 "streak": 2
               },
               {
-                "theme": "中药",
-                "name": "中药ETF",
-                "code": "560080",
+                "theme": "豆粕",
+                "name": "豆粕ETF",
+                "code": "159985",
                 "weight": 30,
                 "return": 0.0,
-                "rps20": 90.9,
-                "streak": 3
+                "rps20": 90.3,
+                "streak": 1
               }
             ],
             "targetDays": 20,
@@ -325,13 +326,13 @@ window.COCKPIT_DATA = {
                 "streak": 1
               },
               {
-                "theme": "中药",
-                "name": "中药ETF",
-                "code": "560080",
+                "theme": "中概互联网",
+                "name": "中概互联网ETF",
+                "code": "513050",
                 "weight": 30,
-                "return": -0.3,
-                "rps20": 90.9,
-                "streak": 2
+                "return": -0.4,
+                "rps20": 89.7,
+                "streak": 0
               }
             ],
             "targetDays": 5,
@@ -363,13 +364,13 @@ window.COCKPIT_DATA = {
                 "streak": 1
               },
               {
-                "theme": "中药",
-                "name": "中药ETF",
-                "code": "560080",
+                "theme": "中概互联网",
+                "name": "中概互联网ETF",
+                "code": "513050",
                 "weight": 30,
-                "return": -0.3,
-                "rps20": 90.9,
-                "streak": 2
+                "return": -0.4,
+                "rps20": 89.7,
+                "streak": 0
               }
             ],
             "targetDays": 10,
@@ -401,13 +402,13 @@ window.COCKPIT_DATA = {
                 "streak": 1
               },
               {
-                "theme": "中药",
-                "name": "中药ETF",
-                "code": "560080",
+                "theme": "中概互联网",
+                "name": "中概互联网ETF",
+                "code": "513050",
                 "weight": 30,
-                "return": -0.3,
-                "rps20": 90.9,
-                "streak": 2
+                "return": -0.4,
+                "rps20": 89.7,
+                "streak": 0
               }
             ],
             "targetDays": 20,
@@ -423,7 +424,7 @@ window.COCKPIT_DATA = {
             "endDate": "2026-07-21",
             "label": "2个交易日前",
             "holdDays": 2,
-            "return": 3.4,
+            "return": 3.1,
             "items": [
               {
                 "theme": "医药",
@@ -435,21 +436,21 @@ window.COCKPIT_DATA = {
                 "streak": 12
               },
               {
-                "theme": "中药",
-                "name": "中药ETF",
-                "code": "560080",
-                "weight": 30,
-                "return": 0.6,
-                "rps20": 91.4,
-                "streak": 1
-              },
-              {
                 "theme": "能源化工",
                 "name": "标普油气ETF",
                 "code": "159518",
                 "weight": 30,
                 "return": 2.4,
                 "rps20": 89.1,
+                "streak": 0
+              },
+              {
+                "theme": "养殖",
+                "name": "养殖ETF",
+                "code": "159865",
+                "weight": 30,
+                "return": -0.4,
+                "rps20": 88.6,
                 "streak": 0
               }
             ],
@@ -461,7 +462,7 @@ window.COCKPIT_DATA = {
             "endDate": "2026-07-21",
             "label": "2个交易日前",
             "holdDays": 2,
-            "return": 3.4,
+            "return": 3.1,
             "items": [
               {
                 "theme": "医药",
@@ -473,21 +474,21 @@ window.COCKPIT_DATA = {
                 "streak": 12
               },
               {
-                "theme": "中药",
-                "name": "中药ETF",
-                "code": "560080",
-                "weight": 30,
-                "return": 0.6,
-                "rps20": 91.4,
-                "streak": 1
-              },
-              {
                 "theme": "能源化工",
                 "name": "标普油气ETF",
                 "code": "159518",
                 "weight": 30,
                 "return": 2.4,
                 "rps20": 89.1,
+                "streak": 0
+              },
+              {
+                "theme": "养殖",
+                "name": "养殖ETF",
+                "code": "159865",
+                "weight": 30,
+                "return": -0.4,
+                "rps20": 88.6,
                 "streak": 0
               }
             ],
@@ -499,7 +500,7 @@ window.COCKPIT_DATA = {
             "endDate": "2026-07-21",
             "label": "2个交易日前",
             "holdDays": 2,
-            "return": 3.4,
+            "return": 3.1,
             "items": [
               {
                 "theme": "医药",
@@ -511,21 +512,21 @@ window.COCKPIT_DATA = {
                 "streak": 12
               },
               {
-                "theme": "中药",
-                "name": "中药ETF",
-                "code": "560080",
-                "weight": 30,
-                "return": 0.6,
-                "rps20": 91.4,
-                "streak": 1
-              },
-              {
                 "theme": "能源化工",
                 "name": "标普油气ETF",
                 "code": "159518",
                 "weight": 30,
                 "return": 2.4,
                 "rps20": 89.1,
+                "streak": 0
+              },
+              {
+                "theme": "养殖",
+                "name": "养殖ETF",
+                "code": "159865",
+                "weight": 30,
+                "return": -0.4,
+                "rps20": 88.6,
                 "streak": 0
               }
             ],
@@ -42798,7 +42799,7 @@ window.COCKPIT_DATA = {
       {
         "code": "159892",
         "name": "恒生医药ETF",
-        "theme": "恒生医药",
+        "theme": "医药",
         "currentSignal": "建仓",
         "currentRps20": 96.6,
         "currentStreak": 5,
@@ -43102,7 +43103,7 @@ window.COCKPIT_DATA = {
       {
         "code": "513700",
         "name": "香港医药ETF",
-        "theme": "香港医药",
+        "theme": "医药",
         "currentSignal": "建仓",
         "currentRps20": 94.3,
         "currentStreak": 5,
@@ -43434,7 +43435,7 @@ window.COCKPIT_DATA = {
       {
         "code": "560080",
         "name": "中药ETF",
-        "theme": "中药",
+        "theme": "医药",
         "currentSignal": "建仓",
         "currentRps20": 90.9,
         "currentStreak": 3,
@@ -54051,7 +54052,7 @@ window.COCKPIT_DATA = {
         {
           "code": "159892",
           "name": "恒生医药ETF",
-          "theme": "恒生医药",
+          "theme": "医药",
           "currentSignal": "建仓",
           "rps20": 96.6,
           "streak": 5,
@@ -54063,7 +54064,7 @@ window.COCKPIT_DATA = {
         {
           "code": "513700",
           "name": "香港医药ETF",
-          "theme": "香港医药",
+          "theme": "医药",
           "currentSignal": "建仓",
           "rps20": 94.3,
           "streak": 5,
@@ -54175,7 +54176,7 @@ window.COCKPIT_DATA = {
     {
       "name": "恒生医药ETF",
       "code": "159892",
-      "theme": "恒生医药",
+      "theme": "医药",
       "rank": 7,
       "rps20": 96.6,
       "streak": 5,
@@ -54278,7 +54279,7 @@ window.COCKPIT_DATA = {
     },
     {
       "name": "恒生医药ETF",
-      "theme": "恒生医药",
+      "theme": "医药",
       "rank": 7,
       "streak": 5,
       "top10Streak": 4,
@@ -54328,33 +54329,15 @@ window.COCKPIT_DATA = {
   "marketMap": [
     {
       "theme": "医药",
-      "count": 17,
-      "avgRps20": 93.0,
+      "count": 20,
+      "avgRps20": 93.1,
       "width": 100
-    },
-    {
-      "theme": "恒生医药",
-      "count": 1,
-      "avgRps20": 96.6,
-      "width": 97
-    },
-    {
-      "theme": "香港医药",
-      "count": 1,
-      "avgRps20": 94.3,
-      "width": 94
     },
     {
       "theme": "能源化工",
       "count": 3,
       "avgRps20": 63.4,
       "width": 93
-    },
-    {
-      "theme": "中药",
-      "count": 1,
-      "avgRps20": 90.9,
-      "width": 91
     },
     {
       "theme": "豆粕",
@@ -54385,6 +54368,24 @@ window.COCKPIT_DATA = {
       "count": 1,
       "avgRps20": 86.3,
       "width": 86
+    },
+    {
+      "theme": "养殖",
+      "count": 1,
+      "avgRps20": 85.1,
+      "width": 85
+    },
+    {
+      "theme": "恒生",
+      "count": 1,
+      "avgRps20": 84.6,
+      "width": 85
+    },
+    {
+      "theme": "港股通50",
+      "count": 1,
+      "avgRps20": 84.0,
+      "width": 84
     }
   ],
   "rankings": [
@@ -54620,7 +54621,7 @@ window.COCKPIT_DATA = {
       "rank": 7,
       "code": "159892",
       "name": "恒生医药ETF",
-      "theme": "恒生医药",
+      "theme": "医药",
       "streak": 5,
       "top10Streak": 4,
       "trendScore": 676.0,
@@ -54772,7 +54773,7 @@ window.COCKPIT_DATA = {
       "rank": 11,
       "code": "513700",
       "name": "香港医药ETF",
-      "theme": "香港医药",
+      "theme": "医药",
       "streak": 5,
       "top10Streak": 0,
       "trendScore": 471.0,
@@ -55000,7 +55001,7 @@ window.COCKPIT_DATA = {
       "rank": 17,
       "code": "560080",
       "name": "中药ETF",
-      "theme": "中药",
+      "theme": "医药",
       "streak": 3,
       "top10Streak": 0,
       "trendScore": 273.0,

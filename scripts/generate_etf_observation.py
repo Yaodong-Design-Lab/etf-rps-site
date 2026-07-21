@@ -56,7 +56,7 @@ BROAD_INDUSTRY_RULES = [
     ("电网设备", r"电网设备"),
     ("黄金", r"黄金"),
     ("有色金属", r"有色|稀有金属"),
-    ("医药", r"创新药|生物医药|生物科技|疫苗|医疗"),
+    ("医药", r"创新药|生物医药|生物科技|疫苗|医疗|医药|中药"),
     ("汽车", r"汽车"),
     ("旅游", r"旅游"),
     ("电池", r"电池"),
@@ -64,6 +64,14 @@ BROAD_INDUSTRY_RULES = [
     ("军工", r"军工|航空|航天"),
     ("消费", r"消费"),
     ("红利", r"红利"),
+]
+
+SUB_THEME_RULES = [
+    ("港股医药", r"恒生.*(医药|医疗|创新药)|香港.*医药|港股.*(医药|医疗|创新药)|港股通.*(医药|医疗|创新药)"),
+    ("海外生物科技", r"标普.*生物科技|纳指.*生物科技"),
+    ("中药", r"中药"),
+    ("创新药", r"创新药"),
+    ("生物医药", r"生物医药|生物科技|疫苗|医疗"),
 ]
 
 THEME_RULES = [
@@ -118,6 +126,14 @@ def theme_of(name: str) -> str:
     simple = simplify_name(text)
     simple = simple.replace("ETF", "")
     return simple[:12] or text[:12]
+
+
+def sub_theme_of(name: str) -> str:
+    text = str(name)
+    for sub_theme, pattern in SUB_THEME_RULES:
+        if re.search(pattern, text, flags=re.I):
+            return sub_theme
+    return theme_of(text)
 
 
 def dedupe_by_theme(df: pd.DataFrame, sort_cols: list[str], n: int) -> pd.DataFrame:

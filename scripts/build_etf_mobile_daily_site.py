@@ -8,6 +8,8 @@ from pathlib import Path
 
 import pandas as pd
 
+from generate_etf_observation import sub_theme_of, theme_of
+
 
 SIGNAL_RPS_KEYS = ["rps3", "rps5", "rps10", "rps20", "rps50", "rps120"]
 SIGNAL_HOLDS = [5, 10, 20, 40]
@@ -59,13 +61,29 @@ def clean_number(value, digits: int = 1):
     return round(float(value), digits)
 
 
+def enrich_theme_columns(df: pd.DataFrame) -> pd.DataFrame:
+    enriched = df.copy()
+    enriched["theme"] = enriched["name"].map(theme_of)
+    enriched["sub_theme"] = enriched["name"].map(sub_theme_of)
+    return enriched
+
+
+def row_short_name(row: pd.Series) -> str:
+    for key in ("short_name", "shortName", "name"):
+        value = row.get(key)
+        if value is not None and not pd.isna(value):
+            return str(value)
+    return ""
+
+
 def card_item(row: pd.Series) -> dict:
     return {
         "rank": int(row["rank"]),
         "code": str(row["code"]).zfill(6),
         "name": str(row["name"]),
-        "shortName": str(row["short_name"]),
+        "shortName": row_short_name(row),
         "theme": str(row["theme"]),
+        "subTheme": str(row.get("sub_theme", row["theme"])),
         "rps20": clean_number(row.get("rps20")),
         "rps3": clean_number(row.get("rps3")),
         "rps5": clean_number(row.get("rps5")),
@@ -74,6 +92,7 @@ def card_item(row: pd.Series) -> dict:
         "rps60": clean_number(row.get("rps60")),
         "rps120": clean_number(row.get("rps120")),
         "rps250": clean_number(row.get("rps250")),
+        "change_pct": clean_number(row.get("change_pct")),
         "ret1": clean_number(row.get("ret1")),
         "ret3": clean_number(row.get("ret3")),
         "ret5": clean_number(row.get("ret5")),
@@ -361,19 +380,31 @@ def build_summary(df: pd.DataFrame) -> dict:
         .sort_values(["count", "avgRps20"], ascending=False)
         .reset_index()
     )
+    sub_strength = (
+        strong.groupby(["theme", "sub_theme"])
+        .agg(count=("code", "count"), avgRps20=("rps20", "mean"), avgRet20=("ret20", "mean"))
+        .sort_values(["theme", "count", "avgRps20"], ascending=[True, False, False])
+        .reset_index()
+    )
     strongest = theme_strength.iloc[0]
     watchers = theme_strength.iloc[1:4]["theme"].tolist()
     high_count = int((df["rps20"] >= 95).sum())
     warm_count = int((df["rps20"] >= 90).sum())
     top = by_r20.iloc[0]
+    strongest_theme = str(strongest["theme"])
+    position_advice = (
+        f"仓位建议：当前强势集中在{strongest_theme}，先小仓观察；若强势扩散到{'、'.join(watchers)}等方向，再考虑加仓。"
+        if watchers
+        else f"仓位建议：当前强势集中在{strongest_theme}，先小仓观察；等强势方向扩散后再考虑加仓。"
+    )
     return {
         "strongestDirection": str(strongest["theme"]),
         "watchDirections": watchers,
         "riskTip": f"RPS20≥95 的标的有 {high_count} 只，强势方向较集中；若高开过多或 RPS5/RPS10 转弱，优先控制仓位。",
-        "topEtf": f"{str(top['short_name'])}（{str(top['code']).zfill(6)}）",
+        "topEtf": f"{row_short_name(top)}（{str(top['code']).zfill(6)}）",
         "buyAdvice": "买入观察：优先 R20≥95，且 R5/R10 同步走强、R60/R120 不弱的 ETF；不追高开，等盘中回踩后仍保持强势再试。",
         "sellAdvice": "卖出纪律：回测里 R20 跌破 60 退出表现最好；风险敏感时叠加 8% 止损，若 R5/R10 先转弱可先减仓。",
-        "positionAdvice": "仓位建议：当前强势集中在半导体，先小仓观察；若强势扩散到科创成长、通信、金融等方向，再考虑加仓。",
+        "positionAdvice": position_advice,
         "highCount": high_count,
         "warmCount": warm_count,
         "themeStrength": [
@@ -382,6 +413,15 @@ def build_summary(df: pd.DataFrame) -> dict:
                 "count": int(row["count"]),
                 "avgRps20": clean_number(row["avgRps20"]),
                 "avgRet20": clean_number(row["avgRet20"]),
+                "subThemes": [
+                    {
+                        "theme": str(sub["sub_theme"]),
+                        "count": int(sub["count"]),
+                        "avgRps20": clean_number(sub["avgRps20"]),
+                        "avgRet20": clean_number(sub["avgRet20"]),
+                    }
+                    for _, sub in sub_strength[sub_strength["theme"] == row["theme"]].iterrows()
+                ],
             }
             for _, row in theme_strength.head(8).iterrows()
         ],
@@ -396,12 +436,15 @@ def build_payload(
 ) -> dict:
     df = df.copy()
     df["code"] = df["code"].astype(str).str.zfill(6)
+    df = enrich_theme_columns(df)
     df = df.sort_values("rps20", ascending=False)
+    if "rank" not in df.columns:
+        df["rank"] = range(1, len(df) + 1)
 
     seen = set()
     deduped = []
     for _, row in df.iterrows():
-        theme = str(row["theme"])
+        theme = str(row["sub_theme"])
         if theme in seen:
             continue
         seen.add(theme)

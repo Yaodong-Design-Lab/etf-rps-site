@@ -8,7 +8,7 @@
       "mainlines": [
         "医药",
         "能源化工",
-        "中药"
+        "豆粕"
       ],
       "action": "持有为主",
       "position": 90,
@@ -16,7 +16,8 @@
       "topName": "科创创新药ETF",
       "topStreak": 14,
       "weeklyChanges": [
-        "主线延续"
+        "↑ 豆粕",
+        "↓ 中概互联网"
       ],
       "weeklyRule": "对比上一个交易日的主线前三方向",
       "portfolioRule": "取主线前三方向，每个方向选择趋势分最高的代表 ETF"
