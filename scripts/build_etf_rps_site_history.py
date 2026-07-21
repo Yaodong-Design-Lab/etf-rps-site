@@ -11,6 +11,14 @@ from build_etf_mobile_daily_site import INDEX_HTML, build_payload
 from generate_etf_observation import simplify_name, theme_of
 
 
+def verify_wrapper_script(path: Path, expected_marker: str) -> None:
+    text = path.read_text(encoding="utf-8")
+    if expected_marker not in text:
+        raise RuntimeError(
+            f"{path.name} is not delegating to the canonical root script; aborting historical rebuild."
+        )
+
+
 def report_html(data_file: str) -> str:
     return (
         INDEX_HTML
@@ -37,6 +45,10 @@ def main() -> None:
     parser.add_argument("--latest-date", default="2026-06-12")
     parser.add_argument("--days", type=int, default=31)
     args = parser.parse_args()
+
+    script_dir = Path(__file__).resolve().parent
+    verify_wrapper_script(script_dir / "build_etf_mobile_daily_site.py", "codex_canonical_build_etf_mobile_daily_site")
+    verify_wrapper_script(script_dir / "generate_etf_observation.py", "codex_canonical_generate_etf_observation")
 
     out = Path(args.out)
     (out / "assets").mkdir(parents=True, exist_ok=True)
