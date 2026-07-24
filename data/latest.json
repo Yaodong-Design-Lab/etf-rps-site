@@ -1,9 +1,9 @@
 {
-  "date": "2026-07-23",
+  "date": "2026-07-24",
   "latestReport": {
-    "date": "2026-07-23",
-    "title": "2026-07-23 ETF RPS 日报",
-    "url": "reports/2026-07-23.html?v=trend-decision",
+    "date": "2026-07-24",
+    "title": "2026-07-24 ETF RPS 日报",
+    "url": "reports/2026-07-24.html?v=trend-decision",
     "summary": {
       "mainlines": [
         "医药",
@@ -13,8 +13,8 @@
       "action": "持有为主",
       "position": 90,
       "risk": "低",
-      "topName": "科创创新药ETF",
-      "topStreak": 16,
+      "topName": "港股创新药50ETF",
+      "topStreak": 10,
       "weeklyChanges": [
         "主线延续"
       ],
@@ -23,6 +23,11 @@
     }
   },
   "history": [
+    {
+      "date": "2026-07-24",
+      "title": "2026-07-24 ETF RPS 日报",
+      "url": "reports/2026-07-24.html?v=trend-decision"
+    },
     {
       "date": "2026-07-23",
       "title": "2026-07-23 ETF RPS 日报",
@@ -132,11 +137,6 @@
       "date": "2026-06-23",
       "title": "2026-06-23 ETF RPS 日报",
       "url": "reports/2026-06-23.html?v=trend-decision"
-    },
-    {
-      "date": "2026-06-22",
-      "title": "2026-06-22 ETF RPS 日报",
-      "url": "reports/2026-06-22.html?v=trend-decision"
     }
   ]
 }
