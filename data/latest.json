@@ -1,142 +1,239 @@
 {
-  "date": "2026-07-24",
+  "date": "2026-07-27",
   "latestReport": {
-    "date": "2026-07-24",
-    "title": "2026-07-24 ETF RPS 日报",
-    "url": "reports/2026-07-24.html?v=trend-decision",
+    "date": "2026-07-27",
+    "title": "2026-07-27 ETF RPS 日报",
+    "url": "reports/2026-07-27.html",
     "summary": {
-      "mainlines": [
-        "医药",
-        "能源化工",
-        "豆粕"
+      "strongestDirection": "医药",
+      "watchDirections": [
+        "港股通互联网",
+        "中概互联网",
+        "黄金"
       ],
-      "action": "持有为主",
-      "position": 90,
-      "risk": "低",
-      "topName": "港股创新药50ETF",
-      "topStreak": 10,
-      "weeklyChanges": [
-        "主线延续"
-      ],
-      "weeklyRule": "对比上一个交易日的主线前三方向",
-      "portfolioRule": "取主线前三方向，每个方向选择趋势分最高的代表 ETF"
+      "riskTip": "RPS20≥95 的标的有 9 只，强势方向较集中；若高开过多或 RPS5/RPS10 转弱，优先控制仓位。",
+      "topEtf": "恒生创新药ETF（520500）",
+      "buyAdvice": "买入观察：优先 R20≥95，且 R5/R10 同步走强、R60/R120 不弱的 ETF；不追高开，等盘中回踩后仍保持强势再试。",
+      "sellAdvice": "卖出纪律：回测里 R20 跌破 60 退出表现最好；风险敏感时叠加 8% 止损，若 R5/R10 先转弱可先减仓。",
+      "positionAdvice": "仓位建议：当前强势集中在医药，先小仓观察；若强势扩散到港股通互联网、中概互联网、黄金等方向，再考虑加仓。",
+      "highCount": 9,
+      "warmCount": 18,
+      "themeStrength": [
+        {
+          "theme": "医药",
+          "count": 9,
+          "avgRps20": 97.5,
+          "avgRet20": 17.2,
+          "subThemes": [
+            {
+              "theme": "港股医药",
+              "count": 8,
+              "avgRps20": 97.9,
+              "avgRet20": 17.4
+            },
+            {
+              "theme": "中药",
+              "count": 1,
+              "avgRps20": 94.3,
+              "avgRet20": 15.6
+            }
+          ]
+        },
+        {
+          "theme": "港股通互联网",
+          "count": 1,
+          "avgRps20": 96.0,
+          "avgRet20": 16.0,
+          "subThemes": [
+            {
+              "theme": "港股通互联网",
+              "count": 1,
+              "avgRps20": 96.0,
+              "avgRet20": 16.0
+            }
+          ]
+        },
+        {
+          "theme": "中概互联网",
+          "count": 1,
+          "avgRps20": 95.4,
+          "avgRet20": 15.8,
+          "subThemes": [
+            {
+              "theme": "中概互联网",
+              "count": 1,
+              "avgRps20": 95.4,
+              "avgRet20": 15.8
+            }
+          ]
+        },
+        {
+          "theme": "黄金",
+          "count": 1,
+          "avgRps20": 93.7,
+          "avgRet20": 15.6,
+          "subThemes": [
+            {
+              "theme": "黄金",
+              "count": 1,
+              "avgRps20": 93.7,
+              "avgRet20": 15.6
+            }
+          ]
+        }
+      ]
     }
   },
   "history": [
     {
+      "date": "2026-07-27",
+      "title": "2026-07-27 ETF RPS 日报",
+      "url": "reports/2026-07-27.html"
+    },
+    {
       "date": "2026-07-24",
       "title": "2026-07-24 ETF RPS 日报",
-      "url": "reports/2026-07-24.html?v=trend-decision"
+      "url": "reports/2026-07-24.html"
     },
     {
       "date": "2026-07-23",
       "title": "2026-07-23 ETF RPS 日报",
-      "url": "reports/2026-07-23.html?v=trend-decision"
+      "url": "reports/2026-07-23.html"
     },
     {
       "date": "2026-07-22",
       "title": "2026-07-22 ETF RPS 日报",
-      "url": "reports/2026-07-22.html?v=trend-decision"
+      "url": "reports/2026-07-22.html"
     },
     {
       "date": "2026-07-21",
       "title": "2026-07-21 ETF RPS 日报",
-      "url": "reports/2026-07-21.html?v=trend-decision"
+      "url": "reports/2026-07-21.html"
     },
     {
       "date": "2026-07-20",
       "title": "2026-07-20 ETF RPS 日报",
-      "url": "reports/2026-07-20.html?v=trend-decision"
+      "url": "reports/2026-07-20.html"
     },
     {
       "date": "2026-07-17",
       "title": "2026-07-17 ETF RPS 日报",
-      "url": "reports/2026-07-17.html?v=trend-decision"
+      "url": "reports/2026-07-17.html"
     },
     {
       "date": "2026-07-15",
       "title": "2026-07-15 ETF RPS 日报",
-      "url": "reports/2026-07-15.html?v=trend-decision"
+      "url": "reports/2026-07-15.html"
     },
     {
       "date": "2026-07-14",
       "title": "2026-07-14 ETF RPS 日报",
-      "url": "reports/2026-07-14.html?v=trend-decision"
+      "url": "reports/2026-07-14.html"
     },
     {
       "date": "2026-07-13",
       "title": "2026-07-13 ETF RPS 日报",
-      "url": "reports/2026-07-13.html?v=trend-decision"
+      "url": "reports/2026-07-13.html"
     },
     {
       "date": "2026-07-10",
       "title": "2026-07-10 ETF RPS 日报",
-      "url": "reports/2026-07-10.html?v=trend-decision"
+      "url": "reports/2026-07-10.html"
     },
     {
       "date": "2026-07-09",
       "title": "2026-07-09 ETF RPS 日报",
-      "url": "reports/2026-07-09.html?v=trend-decision"
+      "url": "reports/2026-07-09.html"
     },
     {
       "date": "2026-07-08",
       "title": "2026-07-08 ETF RPS 日报",
-      "url": "reports/2026-07-08.html?v=trend-decision"
+      "url": "reports/2026-07-08.html"
     },
     {
       "date": "2026-07-07",
       "title": "2026-07-07 ETF RPS 日报",
-      "url": "reports/2026-07-07.html?v=trend-decision"
+      "url": "reports/2026-07-07.html"
     },
     {
       "date": "2026-07-06",
       "title": "2026-07-06 ETF RPS 日报",
-      "url": "reports/2026-07-06.html?v=trend-decision"
+      "url": "reports/2026-07-06.html"
     },
     {
       "date": "2026-07-03",
       "title": "2026-07-03 ETF RPS 日报",
-      "url": "reports/2026-07-03.html?v=trend-decision"
+      "url": "reports/2026-07-03.html"
     },
     {
       "date": "2026-07-02",
       "title": "2026-07-02 ETF RPS 日报",
-      "url": "reports/2026-07-02.html?v=trend-decision"
+      "url": "reports/2026-07-02.html"
     },
     {
       "date": "2026-07-01",
       "title": "2026-07-01 ETF RPS 日报",
-      "url": "reports/2026-07-01.html?v=trend-decision"
+      "url": "reports/2026-07-01.html"
     },
     {
       "date": "2026-06-30",
       "title": "2026-06-30 ETF RPS 日报",
-      "url": "reports/2026-06-30.html?v=trend-decision"
+      "url": "reports/2026-06-30.html"
     },
     {
       "date": "2026-06-29",
       "title": "2026-06-29 ETF RPS 日报",
-      "url": "reports/2026-06-29.html?v=trend-decision"
+      "url": "reports/2026-06-29.html"
     },
     {
       "date": "2026-06-26",
       "title": "2026-06-26 ETF RPS 日报",
-      "url": "reports/2026-06-26.html?v=trend-decision"
+      "url": "reports/2026-06-26.html"
     },
     {
       "date": "2026-06-25",
       "title": "2026-06-25 ETF RPS 日报",
-      "url": "reports/2026-06-25.html?v=trend-decision"
+      "url": "reports/2026-06-25.html"
     },
     {
       "date": "2026-06-24",
       "title": "2026-06-24 ETF RPS 日报",
-      "url": "reports/2026-06-24.html?v=trend-decision"
+      "url": "reports/2026-06-24.html"
     },
     {
       "date": "2026-06-23",
       "title": "2026-06-23 ETF RPS 日报",
-      "url": "reports/2026-06-23.html?v=trend-decision"
+      "url": "reports/2026-06-23.html"
+    },
+    {
+      "date": "2026-06-22",
+      "title": "2026-06-22 ETF RPS 日报",
+      "url": "reports/2026-06-22.html"
+    },
+    {
+      "date": "2026-06-18",
+      "title": "2026-06-18 ETF RPS 日报",
+      "url": "reports/2026-06-18.html"
+    },
+    {
+      "date": "2026-06-17",
+      "title": "2026-06-17 ETF RPS 日报",
+      "url": "reports/2026-06-17.html"
+    },
+    {
+      "date": "2026-06-16",
+      "title": "2026-06-16 ETF RPS 日报",
+      "url": "reports/2026-06-16.html"
+    },
+    {
+      "date": "2026-06-15",
+      "title": "2026-06-15 ETF RPS 日报",
+      "url": "reports/2026-06-15.html"
+    },
+    {
+      "date": "2026-06-12",
+      "title": "2026-06-12 ETF RPS 日报",
+      "url": "reports/2026-06-12.html"
     }
   ]
 }
