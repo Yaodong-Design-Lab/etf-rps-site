@@ -1,21 +1,21 @@
 {
-  "date": "2026-07-28",
+  "date": "2026-07-29",
   "latestReport": {
-    "date": "2026-07-28",
-    "title": "2026-07-28 ETF RPS 日报",
-    "url": "reports/2026-07-28.html",
+    "date": "2026-07-29",
+    "title": "2026-07-29 ETF RPS 日报",
+    "url": "reports/2026-07-29.html",
     "summary": {
       "strongestDirection": "港股通互联网",
       "watchDirections": [
-        "中概互联网",
         "黄金",
-        "恒生互联网"
+        "中概互联网",
+        "恒生中国企业"
       ],
       "riskTip": "RPS20≥95 的标的有 9 只，强势方向较集中；若高开过多或 RPS5/RPS10 转弱，优先控制仓位。",
       "topEtf": "港股通互联网ETF（159792）",
       "buyAdvice": "买入观察：优先 R20≥95，且 R5/R10 同步走强、R60/R120 不弱的 ETF；不追高开，等盘中回踩后仍保持强势再试。",
       "sellAdvice": "卖出纪律：回测里 R20 跌破 60 退出表现最好；风险敏感时叠加 8% 止损，若 R5/R10 先转弱可先减仓。",
-      "positionAdvice": "仓位建议：当前强势集中在港股通互联网，先小仓观察；若强势扩散到中概互联网、黄金、恒生互联网等方向，再考虑加仓。",
+      "positionAdvice": "仓位建议：当前强势集中在港股通互联网，先小仓观察；若强势扩散到黄金、中概互联网、恒生中国企业等方向，再考虑加仓。",
       "highCount": 9,
       "warmCount": 18,
       "themeStrength": [
@@ -23,111 +23,111 @@
           "theme": "港股通互联网",
           "count": 1,
           "avgRps20": 100.0,
-          "avgRet20": 12.7,
+          "avgRet20": 18.3,
           "subThemes": [
             {
               "theme": "港股通互联网",
               "count": 1,
               "avgRps20": 100.0,
-              "avgRet20": 12.7
-            }
-          ]
-        },
-        {
-          "theme": "中概互联网",
-          "count": 1,
-          "avgRps20": 99.4,
-          "avgRet20": 12.5,
-          "subThemes": [
-            {
-              "theme": "中概互联网",
-              "count": 1,
-              "avgRps20": 99.4,
-              "avgRet20": 12.5
+              "avgRet20": 18.3
             }
           ]
         },
         {
           "theme": "黄金",
           "count": 1,
-          "avgRps20": 98.9,
-          "avgRet20": 11.9,
+          "avgRps20": 99.4,
+          "avgRet20": 15.8,
           "subThemes": [
             {
               "theme": "黄金",
               "count": 1,
-              "avgRps20": 98.9,
-              "avgRet20": 11.9
+              "avgRps20": 99.4,
+              "avgRet20": 15.8
             }
           ]
         },
         {
-          "theme": "恒生互联网",
+          "theme": "中概互联网",
           "count": 1,
-          "avgRps20": 98.3,
-          "avgRet20": 11.5,
+          "avgRps20": 98.9,
+          "avgRet20": 15.7,
           "subThemes": [
             {
-              "theme": "恒生互联网",
+              "theme": "中概互联网",
               "count": 1,
-              "avgRps20": 98.3,
-              "avgRet20": 11.5
+              "avgRps20": 98.9,
+              "avgRet20": 15.7
             }
           ]
         },
         {
           "theme": "恒生中国企业",
           "count": 1,
-          "avgRps20": 97.7,
-          "avgRet20": 10.7,
+          "avgRps20": 98.3,
+          "avgRet20": 15.0,
           "subThemes": [
             {
               "theme": "恒生中国企业",
               "count": 1,
-              "avgRps20": 97.7,
-              "avgRet20": 10.7
+              "avgRps20": 98.3,
+              "avgRet20": 15.0
             }
           ]
         },
         {
-          "theme": "消费",
+          "theme": "恒生互联网",
           "count": 1,
-          "avgRps20": 97.1,
-          "avgRet20": 10.3,
+          "avgRps20": 97.7,
+          "avgRet20": 14.9,
           "subThemes": [
             {
-              "theme": "消费",
+              "theme": "恒生互联网",
               "count": 1,
-              "avgRps20": 97.1,
-              "avgRet20": 10.3
+              "avgRps20": 97.7,
+              "avgRet20": 14.9
             }
           ]
         },
         {
           "theme": "港股通50",
           "count": 1,
-          "avgRps20": 96.6,
-          "avgRet20": 10.1,
+          "avgRps20": 97.1,
+          "avgRet20": 14.0,
           "subThemes": [
             {
               "theme": "港股通50",
               "count": 1,
-              "avgRps20": 96.6,
-              "avgRet20": 10.1
+              "avgRps20": 97.1,
+              "avgRet20": 14.0
             }
           ]
         },
         {
-          "theme": "能源",
+          "theme": "红利",
           "count": 1,
-          "avgRps20": 96.0,
-          "avgRet20": 10.1,
+          "avgRps20": 96.6,
+          "avgRet20": 14.0,
           "subThemes": [
             {
-              "theme": "能源",
+              "theme": "红利",
+              "count": 1,
+              "avgRps20": 96.6,
+              "avgRet20": 14.0
+            }
+          ]
+        },
+        {
+          "theme": "非银金融",
+          "count": 1,
+          "avgRps20": 96.0,
+          "avgRet20": 13.7,
+          "subThemes": [
+            {
+              "theme": "非银金融",
               "count": 1,
               "avgRps20": 96.0,
-              "avgRet20": 10.1
+              "avgRet20": 13.7
             }
           ]
         }
@@ -135,6 +135,11 @@
     }
   },
   "history": [
+    {
+      "date": "2026-07-29",
+      "title": "2026-07-29 ETF RPS 日报",
+      "url": "reports/2026-07-29.html"
+    },
     {
       "date": "2026-07-28",
       "title": "2026-07-28 ETF RPS 日报",
