@@ -1,6 +1,6 @@
 {
-  "status": "skipped",
-  "date": "2026-08-03",
-  "detail": "history already includes 2026-08-03",
-  "updatedAt": "2026-08-03T13:14:16.635203+00:00"
+  "status": "updated",
+  "date": "2026-08-04",
+  "detail": "site, strategy backtest, and automation baseline rebuilt",
+  "updatedAt": "2026-08-04T10:28:14Z"
 }

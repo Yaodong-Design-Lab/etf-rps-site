@@ -1,5 +1,5 @@
 window.COCKPIT_DATA = {
-  "today": "2026-08-03",
+  "today": "2026-08-04",
   "date": "2026-07-29",
   "market": {
     "status": "强趋势",
@@ -61779,6 +61779,11 @@ window.COCKPIT_DATA = {
   ],
   "history": [
     {
+      "date": "2026-08-04",
+      "title": "2026-08-04 ETF RPS 日报",
+      "url": "2026-08-04.html?v=trend-decision"
+    },
+    {
       "date": "2026-08-03",
       "title": "2026-08-03 ETF RPS 日报",
       "url": "2026-08-03.html?v=trend-decision"
@@ -61872,11 +61877,6 @@ window.COCKPIT_DATA = {
       "date": "2026-07-06",
       "title": "2026-07-06 ETF RPS 日报",
       "url": "2026-07-06.html?v=trend-decision"
-    },
-    {
-      "date": "2026-07-03",
-      "title": "2026-07-03 ETF RPS 日报",
-      "url": "2026-07-03.html?v=trend-decision"
     }
   ],
   "navPrefix": "../"
