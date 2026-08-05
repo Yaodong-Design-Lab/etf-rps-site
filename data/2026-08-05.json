@@ -62335,107 +62335,108 @@
     {
       "date": "2026-08-05",
       "title": "2026-08-05 ETF RPS 日报",
-      "url": "reports/2026-08-05.html"
+      "url": "2026-08-05.html?v=trend-decision"
     },
     {
       "date": "2026-08-04",
       "title": "2026-08-04 ETF RPS 日报",
-      "url": "reports/2026-08-04.html"
+      "url": "2026-08-04.html?v=trend-decision"
     },
     {
       "date": "2026-08-03",
       "title": "2026-08-03 ETF RPS 日报",
-      "url": "reports/2026-08-03.html"
+      "url": "2026-08-03.html?v=trend-decision"
     },
     {
       "date": "2026-07-30",
       "title": "2026-07-30 ETF RPS 日报",
-      "url": "reports/2026-07-30.html"
+      "url": "2026-07-30.html?v=trend-decision"
     },
     {
       "date": "2026-07-29",
       "title": "2026-07-29 ETF RPS 日报",
-      "url": "reports/2026-07-29.html"
+      "url": "2026-07-29.html?v=trend-decision"
     },
     {
       "date": "2026-07-28",
       "title": "2026-07-28 ETF RPS 日报",
-      "url": "reports/2026-07-28.html"
+      "url": "2026-07-28.html?v=trend-decision"
     },
     {
       "date": "2026-07-27",
       "title": "2026-07-27 ETF RPS 日报",
-      "url": "reports/2026-07-27.html"
+      "url": "2026-07-27.html?v=trend-decision"
     },
     {
       "date": "2026-07-24",
       "title": "2026-07-24 ETF RPS 日报",
-      "url": "reports/2026-07-24.html"
+      "url": "2026-07-24.html?v=trend-decision"
     },
     {
       "date": "2026-07-23",
       "title": "2026-07-23 ETF RPS 日报",
-      "url": "reports/2026-07-23.html"
+      "url": "2026-07-23.html?v=trend-decision"
     },
     {
       "date": "2026-07-22",
       "title": "2026-07-22 ETF RPS 日报",
-      "url": "reports/2026-07-22.html"
+      "url": "2026-07-22.html?v=trend-decision"
     },
     {
       "date": "2026-07-21",
       "title": "2026-07-21 ETF RPS 日报",
-      "url": "reports/2026-07-21.html"
+      "url": "2026-07-21.html?v=trend-decision"
     },
     {
       "date": "2026-07-20",
       "title": "2026-07-20 ETF RPS 日报",
-      "url": "reports/2026-07-20.html"
+      "url": "2026-07-20.html?v=trend-decision"
     },
     {
       "date": "2026-07-17",
       "title": "2026-07-17 ETF RPS 日报",
-      "url": "reports/2026-07-17.html"
+      "url": "2026-07-17.html?v=trend-decision"
     },
     {
       "date": "2026-07-15",
       "title": "2026-07-15 ETF RPS 日报",
-      "url": "reports/2026-07-15.html"
+      "url": "2026-07-15.html?v=trend-decision"
     },
     {
       "date": "2026-07-14",
       "title": "2026-07-14 ETF RPS 日报",
-      "url": "reports/2026-07-14.html"
+      "url": "2026-07-14.html?v=trend-decision"
     },
     {
       "date": "2026-07-13",
       "title": "2026-07-13 ETF RPS 日报",
-      "url": "reports/2026-07-13.html"
+      "url": "2026-07-13.html?v=trend-decision"
     },
     {
       "date": "2026-07-10",
       "title": "2026-07-10 ETF RPS 日报",
-      "url": "reports/2026-07-10.html"
+      "url": "2026-07-10.html?v=trend-decision"
     },
     {
       "date": "2026-07-09",
       "title": "2026-07-09 ETF RPS 日报",
-      "url": "reports/2026-07-09.html"
+      "url": "2026-07-09.html?v=trend-decision"
     },
     {
       "date": "2026-07-08",
       "title": "2026-07-08 ETF RPS 日报",
-      "url": "reports/2026-07-08.html"
+      "url": "2026-07-08.html?v=trend-decision"
     },
     {
       "date": "2026-07-07",
       "title": "2026-07-07 ETF RPS 日报",
-      "url": "reports/2026-07-07.html"
+      "url": "2026-07-07.html?v=trend-decision"
     },
     {
       "date": "2026-07-06",
       "title": "2026-07-06 ETF RPS 日报",
-      "url": "reports/2026-07-06.html"
+      "url": "2026-07-06.html?v=trend-decision"
     }
-  ]
+  ],
+  "navPrefix": "../"
 }
