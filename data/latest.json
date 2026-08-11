@@ -7,16 +7,17 @@
     "summary": {
       "mainlines": [
         "医药",
-        "有色金属",
-        "黄金"
+        "黄金",
+        "煤炭"
       ],
       "action": "持有为主",
       "position": 90,
       "risk": "低",
       "topName": "酒ETF",
-      "topStreak": 7,
+      "topStreak": 8,
       "weeklyChanges": [
-        "主线延续"
+        "↑ 煤炭",
+        "↓ 有色金属"
       ],
       "weeklyRule": "对比上一个交易日的主线前三方向",
       "portfolioRule": "取主线前三方向，每个方向选择趋势分最高的代表 ETF"
@@ -27,6 +28,11 @@
       "date": "2026-08-11",
       "title": "2026-08-11 ETF RPS 日报",
       "url": "reports/2026-08-11.html?v=trend-decision"
+    },
+    {
+      "date": "2026-08-10",
+      "title": "2026-08-10 ETF RPS 日报",
+      "url": "reports/2026-08-10.html?v=trend-decision"
     },
     {
       "date": "2026-08-07",
