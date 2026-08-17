@@ -1,29 +1,34 @@
 {
-  "date": "2026-08-13",
+  "date": "2026-08-17",
   "latestReport": {
-    "date": "2026-08-13",
-    "title": "2026-08-13 ETF RPS 日报",
-    "url": "reports/2026-08-13.html?v=trend-decision",
+    "date": "2026-08-17",
+    "title": "2026-08-17 ETF RPS 日报",
+    "url": "reports/2026-08-17.html?v=trend-decision",
     "summary": {
       "mainlines": [
-        "医药",
+        "有色金属",
         "黄金",
-        "酒"
+        "矿业"
       ],
       "action": "持有为主",
       "position": 90,
       "risk": "低",
-      "topName": "酒ETF",
-      "topStreak": 10,
+      "topName": "黄金股ETF",
+      "topStreak": 8,
       "weeklyChanges": [
-        "↑ 酒",
-        "↓ 有色金属"
+        "↑ 有色金属 / 矿业",
+        "↓ 医药 / 酒"
       ],
       "weeklyRule": "对比上一个交易日的主线前三方向",
       "portfolioRule": "取主线前三方向，每个方向选择趋势分最高的代表 ETF"
     }
   },
   "history": [
+    {
+      "date": "2026-08-17",
+      "title": "2026-08-17 ETF RPS 日报",
+      "url": "reports/2026-08-17.html?v=trend-decision"
+    },
     {
       "date": "2026-08-13",
       "title": "2026-08-13 ETF RPS 日报",
@@ -118,21 +123,6 @@
       "date": "2026-07-17",
       "title": "2026-07-17 ETF RPS 日报",
       "url": "reports/2026-07-17.html?v=trend-decision"
-    },
-    {
-      "date": "2026-07-15",
-      "title": "2026-07-15 ETF RPS 日报",
-      "url": "reports/2026-07-15.html?v=trend-decision"
-    },
-    {
-      "date": "2026-07-14",
-      "title": "2026-07-14 ETF RPS 日报",
-      "url": "reports/2026-07-14.html?v=trend-decision"
-    },
-    {
-      "date": "2026-07-13",
-      "title": "2026-07-13 ETF RPS 日报",
-      "url": "reports/2026-07-13.html?v=trend-decision"
     }
   ]
 }
