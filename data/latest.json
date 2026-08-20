@@ -1,12 +1,12 @@
 {
-  "date": "2026-08-19",
+  "date": "2026-08-20",
   "latestReport": {
-    "date": "2026-08-19",
-    "title": "2026-08-19 ETF RPS 日报",
-    "url": "reports/2026-08-19.html?v=trend-decision",
+    "date": "2026-08-20",
+    "title": "2026-08-20 ETF RPS 日报",
+    "url": "reports/2026-08-20.html?v=trend-decision",
     "summary": {
       "mainlines": [
-        "有色金属",
+        "医药",
         "黄金",
         "矿业"
       ],
@@ -14,15 +14,21 @@
       "position": 90,
       "risk": "低",
       "topName": "黄金股ETF",
-      "topStreak": 10,
+      "topStreak": 11,
       "weeklyChanges": [
-        "主线延续"
+        "↑ 医药",
+        "↓ 有色金属"
       ],
       "weeklyRule": "对比上一个交易日的主线前三方向",
       "portfolioRule": "取主线前三方向，每个方向选择趋势分最高的代表 ETF"
     }
   },
   "history": [
+    {
+      "date": "2026-08-20",
+      "title": "2026-08-20 ETF RPS 日报",
+      "url": "reports/2026-08-20.html?v=trend-decision"
+    },
     {
       "date": "2026-08-19",
       "title": "2026-08-19 ETF RPS 日报",
