@@ -1500,7 +1500,8 @@ def main() -> None:
     out = Path(args.out)
     out.mkdir(parents=True, exist_ok=True)
     source_site = Path(".")
-    for dirname in ("reports", "data", "assets"):
+    # Only carry over static assets; report/data artifacts are rebuilt for the target history CSV.
+    for dirname in ("assets",):
         source = source_site / dirname
         target = out / dirname
         if source.exists():
