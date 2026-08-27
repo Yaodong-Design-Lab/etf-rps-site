@@ -116,11 +116,11 @@ def build_payload(history_csv: Path, latest_date: str, today: str) -> dict:
             frames.append(pd.DataFrame({"date": day["date"].to_numpy(), "code": day["code"].to_numpy(), flag_col: flags.to_numpy()}))
         if not frames:
             return pd.DataFrame(columns=["date", "code", f"{rps_col}_{label}_streak_all"])
-        streak_ranked = pd.concat(frames, ignore_index=True).sort_values(["code", "date"])
+        streak_ranked = pd.concat(frames, ignore_index=True)
         streak_rows = []
-        for code, group in streak_ranked.groupby("code"):
+        for code, group in streak_ranked.groupby("code", sort=False):
             streak = 0
-            for _, row in group.sort_values("date").iterrows():
+            for _, row in group.iterrows():
                 streak = streak + 1 if bool(row[flag_col]) else 0
                 streak_rows.append({"date": row["date"], "code": code, f"{rps_col}_{label}_streak_all": streak})
         return pd.DataFrame(streak_rows)
@@ -147,11 +147,12 @@ def build_payload(history_csv: Path, latest_date: str, today: str) -> dict:
             frames.append(pd.DataFrame({"date": day["date"].to_numpy(), "code": day["code"].to_numpy(), flag_col: flags.to_numpy()}))
         if not frames:
             return {}
-        streak_ranked = pd.concat(frames, ignore_index=True).sort_values(["code", "date"])
+        streak_ranked = pd.concat(frames, ignore_index=True)
         streak_map = {}
-        for code, group in streak_ranked.groupby("code"):
+        for code, group in streak_ranked.groupby("code", sort=False):
             streak = 0
-            for _, row in group.sort_values("date", ascending=False).iterrows():
+            valid_group = group[group["date"] <= latest]
+            for _, row in valid_group.iloc[::-1].iterrows():
                 if row["date"] > latest:
                     continue
                 if bool(row[flag_col]):
