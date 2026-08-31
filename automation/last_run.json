@@ -1,6 +1,6 @@
 {
-  "status": "skipped",
-  "date": "2026-08-29",
-  "detail": "quote fetch/build failed: Command '['/opt/hostedtoolcache/Python/3.11.16/x64/bin/python', '/home/runner/work/etf-rps-site/etf-rps-site/scripts/update_etf_chart_universe_with_tencent.py', '--history-csv', '/home/runner/work/etf-rps-site/etf-rps-site/automation/etf_nav_daily_chart_universe_latest.csv', '--universe', '/home/runner/work/etf-rps-site/etf-rps-site/automation/chart_universe_codes.csv', '--date', '2026-08-29', '--out-dir', '/home/runner/work/etf-rps-site/etf-rps-site/_daily_build/rps', '--batch-size', '40', '--pause', '0.6', '--min-rows', '160']' returned non-zero exit status 1.",
-  "updatedAt": "2026-08-28T21:09:23.329566+00:00"
+  "status": "updated",
+  "date": "2026-08-31",
+  "detail": "site and automation baseline rebuilt",
+  "updatedAt": "2026-08-31T10:07:19Z"
 }
