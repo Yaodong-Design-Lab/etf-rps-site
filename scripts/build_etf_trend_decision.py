@@ -270,17 +270,20 @@ def build_payload(history_csv: Path, latest_date: str, today: str) -> dict:
         start_day["short_name"] = start_day["name"].map(simplify_name)
         start_day["theme"] = start_day["name"].map(theme_of)
         start_day["mainline_theme"] = start_day["theme"].map(mainline_theme_of)
-        start_day["trend_score_for_day"] = (
-            start_day["rps20"] * start_day["rps20_strong_streak_all"]
-            + start_day["rps20"] * start_day["rps20_top10_streak_all"] * 0.5
-        )
         start_mainlines = derive_mainlines(start_day)
         if len(start_mainlines) < 3:
             return None
-        start_reps = (
-            start_day.sort_values(["mainline_theme", "trend_score_for_day", "rps20"], ascending=[True, False, False])
-            .drop_duplicates("mainline_theme")
+        trend_scores = (
+            start_day["rps20"].astype(float) * start_day["rps20_strong_streak_all"].astype(float)
+            + start_day["rps20"].astype(float) * start_day["rps20_top10_streak_all"].astype(float) * 0.5
+        ).tolist()
+        theme_values = start_day["mainline_theme"].astype(str).tolist()
+        rps20_values = start_day["rps20"].astype(float).tolist()
+        sort_idx = sorted(
+            range(len(start_day)),
+            key=lambda i: (theme_values[i], -trend_scores[i], -rps20_values[i]),
         )
+        start_reps = start_day.iloc[sort_idx].drop_duplicates("mainline_theme")
         items = []
         total_return = 0.0
         valid_weight = 0
