@@ -675,6 +675,62 @@ def build_payload(history_csv: Path, latest_date: str, today: str) -> dict:
             }
         )
 
+    def alert_item(row: pd.Series, label: str, reason: str, score: float) -> dict:
+        return {
+            "label": label,
+            "code": row["code"],
+            "name": row["short_name"],
+            "theme": row["theme"],
+            "rps3": clean(row.get("rps3")),
+            "rps5": clean(row.get("rps5")),
+            "rps10": clean(row.get("rps10")),
+            "rps20": clean(row.get("rps20")),
+            "ret3": clean(row.get("ret3")),
+            "ret5": clean(row.get("ret5")),
+            "ret10": clean(row.get("ret10")),
+            "score": clean(score),
+            "reason": reason,
+        }
+
+    watch_pool = latest_day[
+        (latest_day["rps5"] >= 85)
+        & (latest_day["rps10"] >= 70)
+        & (latest_day["rps20"] < 60)
+    ].copy()
+    if not watch_pool.empty:
+        watch_pool["alert_score"] = (
+            watch_pool["rps5"].astype(float) * 0.35
+            + watch_pool["rps10"].astype(float) * 0.35
+            + watch_pool["rps3"].astype(float) * 0.20
+            + (60 - watch_pool["rps20"].astype(float)).clip(lower=0, upper=60) * 0.10
+        )
+
+    confirm_pool = latest_day[
+        (latest_day["rps3"] >= 90)
+        & (latest_day["rps5"] >= 85)
+        & (latest_day["rps10"] >= 80)
+    ].copy()
+    if not confirm_pool.empty:
+        confirm_pool["alert_score"] = (
+            confirm_pool["rps3"].astype(float) * 0.30
+            + confirm_pool["rps5"].astype(float) * 0.30
+            + confirm_pool["rps10"].astype(float) * 0.25
+            + confirm_pool["rps20"].astype(float) * 0.15
+        )
+
+    early_alerts = {
+        "watchRule": "潜伏观察：RPS 5≥85 且 RPS 10≥70，但 RPS 20<60，代表短中周期先转强、20日强度尚未充分确认",
+        "confirmRule": "确认介入：RPS 3≥90、RPS 5≥85、RPS 10≥80，代表短线爆发扩散到 3/5/10 日共振",
+        "watch": [
+            alert_item(row, "潜伏观察", "短中周期先转强，RPS 20 还没跟上", float(row["alert_score"]))
+            for _, row in watch_pool.sort_values("alert_score", ascending=False).head(6).iterrows()
+        ],
+        "confirm": [
+            alert_item(row, "确认介入", "RPS 3/5/10 多周期共振，短线强度已确认", float(row["alert_score"]))
+            for _, row in confirm_pool.sort_values("alert_score", ascending=False).head(6).iterrows()
+        ],
+    }
+
     action = "持有"
     risk = "低" if position >= 70 else "中" if position >= 30 else "高"
     if position == 0:
@@ -735,6 +791,7 @@ def build_payload(history_csv: Path, latest_date: str, today: str) -> dict:
                 "notes": insight_lines,
             },
         },
+        "earlyAlerts": early_alerts,
         "portfolioScore": portfolio_score,
         "leaders": leaders,
         "lifecycle": lifecycle,
@@ -782,6 +839,28 @@ def render(payload: dict) -> str:
         if backtest_cards
         else ""
     )
+    early_alerts = payload.get("earlyAlerts", {})
+
+    def early_alert_cards(items: list[dict]) -> str:
+        if not items:
+            return '<div class="alert-empty">今天没有触发项，继续等短周期先冒头。</div>'
+        return "".join(
+            (
+                f'<div class="alert-card">'
+                f'<div class="alert-card-head"><b>{esc(item["name"])}</b><span>{esc(item["code"])}</span></div>'
+                f'<div class="alert-theme">{esc(item["theme"])} · {esc(item["reason"])}</div>'
+                f'<div class="alert-rps-row">'
+                f'<span>R3 <b>{item["rps3"]}</b></span>'
+                f'<span>R5 <b>{item["rps5"]}</b></span>'
+                f'<span>R10 <b>{item["rps10"]}</b></span>'
+                f'<span>R20 <b>{item["rps20"]}</b></span>'
+                f'</div>'
+                f'<div class="alert-foot">5日{pct(item.get("ret5"))} · 10日{pct(item.get("ret10"))} · 评分 {item["score"]}</div>'
+                f'</div>'
+            )
+            for item in items
+        )
+
     return f"""<!doctype html>
 <html lang="zh-CN">
 <head>
@@ -858,6 +937,21 @@ def render(payload: dict) -> str:
     .weekly-arrow.up {{ color: var(--red); }}
     .weekly-arrow.down {{ color: var(--green); }}
     .rule-note {{ margin-top: 5px; color: var(--muted); font-size: 12px; line-height: 1.45; font-weight: 400; }}
+    .alert-wrap {{ display: grid; gap: 14px; padding: 18px; }}
+    .alert-rule {{ border-left: 3px solid var(--hot); border-radius: 14px; background: var(--secondary); color: var(--muted); font-size: 12px; line-height: 1.55; padding: 10px 12px; }}
+    .alert-columns {{ display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }}
+    .alert-column {{ display: grid; gap: 10px; align-content: start; }}
+    .alert-column h3 {{ margin: 0; font-size: 15px; font-weight: 850; }}
+    .alert-card {{ border: 1px solid var(--line); border-radius: 17px; background: var(--panel); padding: 12px; box-shadow: 0 1px 2px rgba(24, 24, 27, .04); }}
+    .alert-card-head {{ display: flex; align-items: baseline; justify-content: space-between; gap: 8px; }}
+    .alert-card-head b {{ overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 15px; font-weight: 850; }}
+    .alert-card-head span {{ color: var(--muted); font-size: 12px; font-weight: 750; }}
+    .alert-theme {{ margin-top: 5px; color: var(--muted); font-size: 12px; line-height: 1.45; }}
+    .alert-rps-row {{ display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px; margin-top: 10px; }}
+    .alert-rps-row span {{ border-radius: 11px; background: var(--secondary); color: var(--muted); font-size: 11px; font-weight: 750; padding: 7px 6px; text-align: center; }}
+    .alert-rps-row b {{ display: block; margin-top: 2px; color: var(--red); font-size: 15px; }}
+    .alert-foot, .alert-empty {{ margin-top: 9px; color: var(--muted); font-size: 12px; line-height: 1.4; }}
+    .alert-empty {{ border: 1px dashed var(--line); border-radius: 14px; padding: 12px; }}
     .backtest-wrap {{ display: grid; gap: 14px; padding: 18px; }}
     .backtest-grid {{ display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }}
     .backtest-box {{ border: 1px solid var(--line); border-radius: 18px; background: var(--panel); padding: 14px; box-shadow: 0 1px 2px rgba(24, 24, 27, .04); }}
@@ -984,6 +1078,7 @@ def render(payload: dict) -> str:
       .board-line {{ grid-template-columns: 74px 1fr; }}
       .backtest-grid {{ grid-template-columns: 1fr; }}
       .candidate-grid {{ grid-template-columns: 1fr; }}
+      .alert-columns {{ grid-template-columns: 1fr; }}
       .signal-row {{ grid-template-columns: 1fr; }}
       .signal-name {{ justify-content: flex-start; padding: 9px 10px; }}
       .etf-signal-grid {{ grid-template-columns: 1fr; }}
@@ -1003,6 +1098,23 @@ def render(payload: dict) -> str:
       <div class="today-board">
         <div class="board-line"><div class="board-label">主线方向</div><div><div class="board-value">{mainlines_html}</div></div></div>
         <div class="board-line"><div class="board-label">今日变化</div><div><div class="board-value small weekly">{weekly_html}</div><div class="rule-note">{payload['decision']['weeklyRule']}</div></div></div>
+      </div>
+    </section>
+
+    <section class="panel alert-panel">
+      <div class="panel-head"><h2>短线异动预警</h2><span>先看冒头，再看确认</span></div>
+      <div class="alert-wrap">
+        <div class="alert-rule">{esc(early_alerts.get("watchRule", ""))}<br>{esc(early_alerts.get("confirmRule", ""))}</div>
+        <div class="alert-columns">
+          <div class="alert-column">
+            <h3>提前预警池</h3>
+            {early_alert_cards(early_alerts.get("watch", []))}
+          </div>
+          <div class="alert-column">
+            <h3>确认介入池</h3>
+            {early_alert_cards(early_alerts.get("confirm", []))}
+          </div>
+        </div>
       </div>
     </section>
 
