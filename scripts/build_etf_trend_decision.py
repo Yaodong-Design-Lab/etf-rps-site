@@ -731,6 +731,41 @@ def build_payload(history_csv: Path, latest_date: str, today: str) -> dict:
         ],
     }
 
+    short_term_mainlines = [
+        {
+            "theme": row["mainline_theme"],
+            "name": row["short_name"],
+            "code": row["code"],
+            "rps3": clean(row.get("rps3")),
+            "rps5": clean(row.get("rps5")),
+            "rps10": clean(row.get("rps10")),
+        }
+        for _, row in (
+            confirm_pool.sort_values(["rps3", "rps5", "rps10"], ascending=False)
+            .drop_duplicates("mainline_theme")
+            .head(3)
+            .iterrows()
+        )
+    ]
+    if len(short_term_mainlines) < 3:
+        existing_themes = {item["theme"] for item in short_term_mainlines}
+        for _, row in watch_pool.sort_values(["rps3", "alert_score"], ascending=False).iterrows():
+            if row["mainline_theme"] in existing_themes:
+                continue
+            short_term_mainlines.append(
+                {
+                    "theme": row["mainline_theme"],
+                    "name": row["short_name"],
+                    "code": row["code"],
+                    "rps3": clean(row.get("rps3")),
+                    "rps5": clean(row.get("rps5")),
+                    "rps10": clean(row.get("rps10")),
+                }
+            )
+            existing_themes.add(row["mainline_theme"])
+            if len(short_term_mainlines) >= 3:
+                break
+
     action = "持有"
     risk = "低" if position >= 70 else "中" if position >= 30 else "高"
     if position == 0:
@@ -773,8 +808,12 @@ def build_payload(history_csv: Path, latest_date: str, today: str) -> dict:
             "risk": risk,
             "topName": leaders[0]["name"] if leaders else "-",
             "topStreak": leaders[0]["streak"] if leaders else 0,
+            "shortTermMainlines": [item["theme"] for item in short_term_mainlines],
+            "shortTermMainlineDetails": short_term_mainlines,
             "weeklyChanges": weekly_changes,
             "weeklyRule": "对比上一个交易日的主线前三方向",
+            "mainlineRule": "中期主线按 RPS 20 前 12 的主题聚合",
+            "shortTermRule": "短线异动主线按 RPS 3/5/10 共振候选中 RPS 3 领先的不同主题取前三",
             "portfolioRule": "取主线前三方向，每个方向选择趋势分最高的代表 ETF",
         },
         "holdings": current_holdings,
@@ -807,6 +846,11 @@ def render(payload: dict) -> str:
     mainlines_html = '<div class="mainline-combo-list">' + "".join(
         f'<div class="mainline-combo-row"><span>{idx}.</span><b>{esc(item["theme"])}</b></div>'
         for idx, item in enumerate(payload["holdings"], 1)
+    ) + "</div>"
+    short_mainlines = payload["decision"].get("shortTermMainlineDetails", [])
+    short_mainlines_html = '<div class="mainline-combo-list">' + "".join(
+        f'<div class="mainline-combo-row"><span>{idx}.</span><b>{esc(item["theme"])}</b><small>{esc(item["name"])} · R3 {item["rps3"]}</small></div>'
+        for idx, item in enumerate(short_mainlines, 1)
     ) + "</div>"
     weekly_html = "".join(
         (
@@ -931,6 +975,7 @@ def render(payload: dict) -> str:
     .mainline-combo-row {{ display: grid; grid-template-columns: 18px minmax(0, 1fr); align-items: baseline; column-gap: 8px; }}
     .mainline-combo-row span {{ color: var(--muted); text-align: center; font-size: 18px; line-height: 1.35; font-weight: 650; font-variant-numeric: tabular-nums; }}
     .mainline-combo-row b {{ color: var(--ink); font-size: 20px; line-height: 1.35; font-weight: 800; }}
+    .mainline-combo-row small {{ grid-column: 2; margin-top: -2px; color: var(--muted); font-size: 12px; font-weight: 650; }}
     .weekly-change {{ display: grid; grid-template-columns: 18px minmax(0, 1fr); column-gap: 6px; align-items: start; font-size: 15px; line-height: 1.5; font-weight: 400; }}
     .weekly-change > span:only-child {{ grid-column: 1 / -1; white-space: nowrap; }}
     .weekly-arrow {{ font-weight: 800; line-height: 1.45; text-align: center; }}
@@ -1096,7 +1141,8 @@ def render(payload: dict) -> str:
     <section class="panel">
       <div class="panel-head"><h2>今日主线</h2><span>当前交易日 {payload['date']}</span></div>
       <div class="today-board">
-        <div class="board-line"><div class="board-label">主线方向</div><div><div class="board-value">{mainlines_html}</div></div></div>
+        <div class="board-line"><div class="board-label">中期主线</div><div><div class="board-value">{mainlines_html}</div><div class="rule-note">{payload['decision']['mainlineRule']}</div></div></div>
+        <div class="board-line"><div class="board-label">短线异动</div><div><div class="board-value">{short_mainlines_html}</div><div class="rule-note">{payload['decision']['shortTermRule']}</div></div></div>
         <div class="board-line"><div class="board-label">今日变化</div><div><div class="board-value small weekly">{weekly_html}</div><div class="rule-note">{payload['decision']['weeklyRule']}</div></div></div>
       </div>
     </section>

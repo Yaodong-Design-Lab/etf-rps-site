@@ -25,11 +25,44 @@
     "risk": "低",
     "topName": "港股创新药50ETF",
     "topStreak": 13,
+    "shortTermMainlines": [
+      "游戏",
+      "传媒",
+      "养殖"
+    ],
+    "shortTermMainlineDetails": [
+      {
+        "theme": "游戏",
+        "name": "游戏ETF",
+        "code": "159869",
+        "rps3": 100.0,
+        "rps5": 98.9,
+        "rps10": 98.3
+      },
+      {
+        "theme": "传媒",
+        "name": "传媒ETF",
+        "code": "512980",
+        "rps3": 99.4,
+        "rps5": 97.7,
+        "rps10": 99.4
+      },
+      {
+        "theme": "养殖",
+        "name": "养殖ETF",
+        "code": "159865",
+        "rps3": 97.7,
+        "rps5": 99.4,
+        "rps10": 98.9
+      }
+    ],
     "weeklyChanges": [
       "↑ 银行",
       "↓ 豆粕"
     ],
     "weeklyRule": "对比上一个交易日的主线前三方向",
+    "mainlineRule": "中期主线按 RPS 20 前 12 的主题聚合",
+    "shortTermRule": "短线异动主线按 RPS 3/5/10 共振候选中 RPS 3 领先的不同主题取前三",
     "portfolioRule": "取主线前三方向，每个方向选择趋势分最高的代表 ETF"
   },
   "holdings": [
