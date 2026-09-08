@@ -1,7 +1,6 @@
 {
+  "status": "updated",
   "date": "2026-09-08",
-  "history_csv": "/Users/bytedance/Desktop/codex/output/etf_rps_chart_universe_2026-09-08_continuous/etf_nav_daily_chart_universe_2026-09-08.csv",
-  "tencent_meta": "/Users/bytedance/Desktop/codex/output/etf_rps_chart_universe_2026-09-08_continuous/tencent_quote_meta_2026-09-08.json",
-  "rows": 178,
-  "source": "tencent+backfilled_sina_for_new_symbols"
+  "detail": "site and automation baseline rebuilt",
+  "updatedAt": "2026-09-08T10:09:29.426658+00:00"
 }
