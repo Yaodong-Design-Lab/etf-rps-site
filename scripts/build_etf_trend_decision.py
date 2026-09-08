@@ -718,17 +718,19 @@ def build_payload(history_csv: Path, latest_date: str, today: str) -> dict:
             + confirm_pool["rps20"].astype(float) * 0.15
         )
 
+    def sorted_alert_items(pool: pd.DataFrame, label: str, reason: str) -> list[dict]:
+        if pool.empty or "alert_score" not in pool.columns:
+            return []
+        return [
+            alert_item(row, label, reason, float(row["alert_score"]))
+            for _, row in pool.sort_values("alert_score", ascending=False).head(6).iterrows()
+        ]
+
     early_alerts = {
         "watchRule": "潜伏观察：RPS 5≥85 且 RPS 10≥70，但 RPS 20<60，代表短中周期先转强、20日强度尚未充分确认",
         "confirmRule": "确认介入：RPS 3≥90、RPS 5≥85、RPS 10≥80，代表短线爆发扩散到 3/5/10 日共振",
-        "watch": [
-            alert_item(row, "潜伏观察", "短中周期先转强，RPS 20 还没跟上", float(row["alert_score"]))
-            for _, row in watch_pool.sort_values("alert_score", ascending=False).head(6).iterrows()
-        ],
-        "confirm": [
-            alert_item(row, "确认介入", "RPS 3/5/10 多周期共振，短线强度已确认", float(row["alert_score"]))
-            for _, row in confirm_pool.sort_values("alert_score", ascending=False).head(6).iterrows()
-        ],
+        "watch": sorted_alert_items(watch_pool, "潜伏观察", "短中周期先转强，RPS 20 还没跟上"),
+        "confirm": sorted_alert_items(confirm_pool, "确认介入", "RPS 3/5/10 多周期共振，短线强度已确认"),
     }
 
     short_term_mainlines = [
@@ -749,7 +751,12 @@ def build_payload(history_csv: Path, latest_date: str, today: str) -> dict:
     ]
     if len(short_term_mainlines) < 3:
         existing_themes = {item["theme"] for item in short_term_mainlines}
-        for _, row in watch_pool.sort_values(["rps3", "alert_score"], ascending=False).iterrows():
+        watch_candidates = (
+            watch_pool.sort_values(["rps3", "alert_score"], ascending=False)
+            if not watch_pool.empty and "alert_score" in watch_pool.columns
+            else watch_pool
+        )
+        for _, row in watch_candidates.iterrows():
             if row["mainline_theme"] in existing_themes:
                 continue
             short_term_mainlines.append(

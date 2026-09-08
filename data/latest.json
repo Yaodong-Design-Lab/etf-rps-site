@@ -1,166 +1,299 @@
 {
-  "date": "2026-09-07",
+  "date": "2026-09-08",
   "latestReport": {
-    "date": "2026-09-07",
-    "title": "2026-09-07 ETF RPS 日报",
-    "url": "reports/2026-09-07.html?v=trend-decision",
+    "date": "2026-09-08",
+    "title": "2026-09-08 ETF RPS 日报",
+    "url": "reports/2026-09-08.html",
     "summary": {
-      "mainlines": [
-        "医药",
-        "能源化工",
-        "银行"
+      "strongestDirection": "能源化工",
+      "watchDirections": [
+        "银行",
+        "粮食",
+        "豆粕"
       ],
-      "action": "持有为主",
-      "position": 90,
-      "risk": "低",
-      "topName": "港股创新药50ETF",
-      "topStreak": 13,
-      "shortTermMainlines": [
-        "游戏",
-        "传媒",
-        "养殖"
-      ],
-      "shortTermMainlineDetails": [
+      "riskTip": "RPS20≥95 的标的有 9 只，强势方向较集中；若高开过多或 RPS5/RPS10 转弱，优先控制仓位。",
+      "topEtf": "粮食ETF（159698）",
+      "buyAdvice": "买入观察：优先 R20≥95，且 R5/R10 同步走强、R60/R120 不弱的 ETF；不追高开，等盘中回踩后仍保持强势再试。",
+      "sellAdvice": "卖出纪律：回测里 R20 跌破 60 退出表现最好；风险敏感时叠加 8% 止损，若 R5/R10 先转弱可先减仓。",
+      "positionAdvice": "仓位建议：当前强势集中在能源化工，先小仓观察；若强势扩散到银行、粮食、豆粕等方向，再考虑加仓。",
+      "highCount": 9,
+      "warmCount": 18,
+      "themeStrength": [
         {
-          "theme": "游戏",
-          "name": "游戏ETF",
-          "code": "159869",
-          "rps3": 100.0,
-          "rps5": 98.9,
-          "rps10": 98.3
+          "theme": "能源化工",
+          "count": 2,
+          "avgRps20": 99.2,
+          "avgRet20": 18.9,
+          "subThemes": [
+            {
+              "theme": "能源化工",
+              "count": 2,
+              "avgRps20": 99.2,
+              "avgRet20": 18.9
+            }
+          ]
         },
         {
-          "theme": "传媒",
-          "name": "传媒ETF",
-          "code": "512980",
-          "rps3": 99.4,
-          "rps5": 97.7,
-          "rps10": 99.4
+          "theme": "银行",
+          "count": 2,
+          "avgRps20": 94.9,
+          "avgRet20": 4.9,
+          "subThemes": [
+            {
+              "theme": "银行",
+              "count": 2,
+              "avgRps20": 94.9,
+              "avgRet20": 4.9
+            }
+          ]
         },
         {
-          "theme": "养殖",
-          "name": "养殖ETF",
-          "code": "159865",
-          "rps3": 97.7,
-          "rps5": 99.4,
-          "rps10": 98.9
+          "theme": "粮食",
+          "count": 1,
+          "avgRps20": 100.0,
+          "avgRet20": 19.7,
+          "subThemes": [
+            {
+              "theme": "粮食",
+              "count": 1,
+              "avgRps20": 100.0,
+              "avgRet20": 19.7
+            }
+          ]
+        },
+        {
+          "theme": "豆粕",
+          "count": 1,
+          "avgRps20": 98.3,
+          "avgRet20": 14.9,
+          "subThemes": [
+            {
+              "theme": "豆粕",
+              "count": 1,
+              "avgRps20": 98.3,
+              "avgRet20": 14.9
+            }
+          ]
+        },
+        {
+          "theme": "医药",
+          "count": 1,
+          "avgRps20": 97.8,
+          "avgRet20": 6.8,
+          "subThemes": [
+            {
+              "theme": "海外生物科技",
+              "count": 1,
+              "avgRps20": 97.8,
+              "avgRet20": 6.8
+            }
+          ]
+        },
+        {
+          "theme": "农业",
+          "count": 1,
+          "avgRps20": 97.2,
+          "avgRet20": 6.2,
+          "subThemes": [
+            {
+              "theme": "农业",
+              "count": 1,
+              "avgRps20": 97.2,
+              "avgRet20": 6.2
+            }
+          ]
+        },
+        {
+          "theme": "非银金融",
+          "count": 1,
+          "avgRps20": 96.6,
+          "avgRet20": 5.5,
+          "subThemes": [
+            {
+              "theme": "非银金融",
+              "count": 1,
+              "avgRps20": 96.6,
+              "avgRet20": 5.5
+            }
+          ]
+        },
+        {
+          "theme": "通信",
+          "count": 1,
+          "avgRps20": 95.5,
+          "avgRet20": 5.0,
+          "subThemes": [
+            {
+              "theme": "通信",
+              "count": 1,
+              "avgRps20": 95.5,
+              "avgRet20": 5.0
+            }
+          ]
         }
-      ],
-      "weeklyChanges": [
-        "↑ 银行",
-        "↓ 豆粕"
-      ],
-      "weeklyRule": "对比上一个交易日的主线前三方向",
-      "mainlineRule": "中期主线按 RPS 20 前 12 的主题聚合",
-      "shortTermRule": "短线异动主线按 RPS 3/5/10 共振候选中 RPS 3 领先的不同主题取前三",
-      "portfolioRule": "取主线前三方向，每个方向选择趋势分最高的代表 ETF"
+      ]
     }
   },
   "history": [
     {
+      "date": "2026-09-08",
+      "title": "2026-09-08 ETF RPS 日报",
+      "url": "reports/2026-09-08.html"
+    },
+    {
       "date": "2026-09-07",
       "title": "2026-09-07 ETF RPS 日报",
-      "url": "reports/2026-09-07.html?v=trend-decision"
+      "url": "reports/2026-09-07.html"
     },
     {
       "date": "2026-09-04",
       "title": "2026-09-04 ETF RPS 日报",
-      "url": "reports/2026-09-04.html?v=trend-decision"
+      "url": "reports/2026-09-04.html"
     },
     {
       "date": "2026-09-03",
       "title": "2026-09-03 ETF RPS 日报",
-      "url": "reports/2026-09-03.html?v=trend-decision"
+      "url": "reports/2026-09-03.html"
     },
     {
       "date": "2026-09-02",
       "title": "2026-09-02 ETF RPS 日报",
-      "url": "reports/2026-09-02.html?v=trend-decision"
+      "url": "reports/2026-09-02.html"
     },
     {
       "date": "2026-09-01",
       "title": "2026-09-01 ETF RPS 日报",
-      "url": "reports/2026-09-01.html?v=trend-decision"
+      "url": "reports/2026-09-01.html"
     },
     {
       "date": "2026-08-31",
       "title": "2026-08-31 ETF RPS 日报",
-      "url": "reports/2026-08-31.html?v=trend-decision"
+      "url": "reports/2026-08-31.html"
     },
     {
       "date": "2026-08-28",
       "title": "2026-08-28 ETF RPS 日报",
-      "url": "reports/2026-08-28.html?v=trend-decision"
+      "url": "reports/2026-08-28.html"
     },
     {
       "date": "2026-08-27",
       "title": "2026-08-27 ETF RPS 日报",
-      "url": "reports/2026-08-27.html?v=trend-decision"
+      "url": "reports/2026-08-27.html"
     },
     {
       "date": "2026-08-26",
       "title": "2026-08-26 ETF RPS 日报",
-      "url": "reports/2026-08-26.html?v=trend-decision"
+      "url": "reports/2026-08-26.html"
     },
     {
       "date": "2026-08-25",
       "title": "2026-08-25 ETF RPS 日报",
-      "url": "reports/2026-08-25.html?v=trend-decision"
+      "url": "reports/2026-08-25.html"
     },
     {
       "date": "2026-08-24",
       "title": "2026-08-24 ETF RPS 日报",
-      "url": "reports/2026-08-24.html?v=trend-decision"
+      "url": "reports/2026-08-24.html"
     },
     {
       "date": "2026-08-21",
       "title": "2026-08-21 ETF RPS 日报",
-      "url": "reports/2026-08-21.html?v=trend-decision"
+      "url": "reports/2026-08-21.html"
     },
     {
       "date": "2026-08-20",
       "title": "2026-08-20 ETF RPS 日报",
-      "url": "reports/2026-08-20.html?v=trend-decision"
+      "url": "reports/2026-08-20.html"
     },
     {
       "date": "2026-08-19",
       "title": "2026-08-19 ETF RPS 日报",
-      "url": "reports/2026-08-19.html?v=trend-decision"
+      "url": "reports/2026-08-19.html"
     },
     {
       "date": "2026-08-18",
       "title": "2026-08-18 ETF RPS 日报",
-      "url": "reports/2026-08-18.html?v=trend-decision"
+      "url": "reports/2026-08-18.html"
     },
     {
       "date": "2026-08-17",
       "title": "2026-08-17 ETF RPS 日报",
-      "url": "reports/2026-08-17.html?v=trend-decision"
+      "url": "reports/2026-08-17.html"
+    },
+    {
+      "date": "2026-08-14",
+      "title": "2026-08-14 ETF RPS 日报",
+      "url": "reports/2026-08-14.html"
     },
     {
       "date": "2026-08-13",
       "title": "2026-08-13 ETF RPS 日报",
-      "url": "reports/2026-08-13.html?v=trend-decision"
+      "url": "reports/2026-08-13.html"
     },
     {
       "date": "2026-08-12",
       "title": "2026-08-12 ETF RPS 日报",
-      "url": "reports/2026-08-12.html?v=trend-decision"
+      "url": "reports/2026-08-12.html"
     },
     {
       "date": "2026-08-11",
       "title": "2026-08-11 ETF RPS 日报",
-      "url": "reports/2026-08-11.html?v=trend-decision"
+      "url": "reports/2026-08-11.html"
     },
     {
       "date": "2026-08-10",
       "title": "2026-08-10 ETF RPS 日报",
-      "url": "reports/2026-08-10.html?v=trend-decision"
+      "url": "reports/2026-08-10.html"
     },
     {
       "date": "2026-08-07",
       "title": "2026-08-07 ETF RPS 日报",
-      "url": "reports/2026-08-07.html?v=trend-decision"
+      "url": "reports/2026-08-07.html"
+    },
+    {
+      "date": "2026-08-06",
+      "title": "2026-08-06 ETF RPS 日报",
+      "url": "reports/2026-08-06.html"
+    },
+    {
+      "date": "2026-08-05",
+      "title": "2026-08-05 ETF RPS 日报",
+      "url": "reports/2026-08-05.html"
+    },
+    {
+      "date": "2026-08-04",
+      "title": "2026-08-04 ETF RPS 日报",
+      "url": "reports/2026-08-04.html"
+    },
+    {
+      "date": "2026-08-03",
+      "title": "2026-08-03 ETF RPS 日报",
+      "url": "reports/2026-08-03.html"
+    },
+    {
+      "date": "2026-07-31",
+      "title": "2026-07-31 ETF RPS 日报",
+      "url": "reports/2026-07-31.html"
+    },
+    {
+      "date": "2026-07-30",
+      "title": "2026-07-30 ETF RPS 日报",
+      "url": "reports/2026-07-30.html"
+    },
+    {
+      "date": "2026-07-29",
+      "title": "2026-07-29 ETF RPS 日报",
+      "url": "reports/2026-07-29.html"
+    },
+    {
+      "date": "2026-07-28",
+      "title": "2026-07-28 ETF RPS 日报",
+      "url": "reports/2026-07-28.html"
+    },
+    {
+      "date": "2026-07-27",
+      "title": "2026-07-27 ETF RPS 日报",
+      "url": "reports/2026-07-27.html"
     }
   ]
 }
