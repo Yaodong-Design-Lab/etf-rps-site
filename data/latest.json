@@ -1,54 +1,53 @@
 {
-  "date": "2026-09-11",
+  "date": "2026-09-14",
   "latestReport": {
-    "date": "2026-09-11",
-    "title": "2026-09-11 ETF RPS 日报",
-    "url": "reports/2026-09-11.html?v=trend-decision",
+    "date": "2026-09-14",
+    "title": "2026-09-14 ETF RPS 日报",
+    "url": "reports/2026-09-14.html?v=trend-decision",
     "summary": {
       "mainlines": [
+        "红利",
         "能源化工",
-        "银行",
-        "红利"
+        "银行"
       ],
       "action": "持有为主",
       "position": 90,
       "risk": "低",
       "topName": "能源化工ETF",
-      "topStreak": 9,
+      "topStreak": 10,
       "shortTermMainlines": [
-        "军工",
-        "国防",
-        "绿色电力"
+        "银行",
+        "非银金融",
+        "能源化工"
       ],
       "shortTermMainlineDetails": [
         {
-          "theme": "军工",
-          "name": "军工龙头ETF",
-          "code": "512710",
+          "theme": "银行",
+          "name": "银行ETF",
+          "code": "512800",
           "rps3": 100.0,
-          "rps5": 96.6,
+          "rps5": 98.9,
           "rps10": 98.9
         },
         {
-          "theme": "国防",
-          "name": "国防ETF",
-          "code": "512670",
-          "rps3": 99.4,
-          "rps5": 96.1,
-          "rps10": 97.8
+          "theme": "非银金融",
+          "name": "港股通金融ETF",
+          "code": "513190",
+          "rps3": 98.9,
+          "rps5": 91.6,
+          "rps10": 96.6
         },
         {
-          "theme": "绿色电力",
-          "name": "绿色电力ETF",
-          "code": "159625",
-          "rps3": 98.9,
-          "rps5": 90.4,
-          "rps10": 92.1
+          "theme": "能源化工",
+          "name": "能源化工ETF",
+          "code": "159981",
+          "rps3": 98.3,
+          "rps5": 100.0,
+          "rps10": 100.0
         }
       ],
       "weeklyChanges": [
-        "↑ 红利",
-        "↓ 石油"
+        "主线延续"
       ],
       "weeklyRule": "对比上一个交易日的主线前三方向",
       "mainlineRule": "中期主线按 RPS 20 前 12 的主题聚合",
@@ -57,6 +56,11 @@
     }
   },
   "history": [
+    {
+      "date": "2026-09-14",
+      "title": "2026-09-14 ETF RPS 日报",
+      "url": "reports/2026-09-14.html?v=trend-decision"
+    },
     {
       "date": "2026-09-11",
       "title": "2026-09-11 ETF RPS 日报",
@@ -161,21 +165,6 @@
       "date": "2026-08-14",
       "title": "2026-08-14 ETF RPS 日报",
       "url": "reports/2026-08-14.html?v=trend-decision"
-    },
-    {
-      "date": "2026-08-13",
-      "title": "2026-08-13 ETF RPS 日报",
-      "url": "reports/2026-08-13.html?v=trend-decision"
-    },
-    {
-      "date": "2026-08-12",
-      "title": "2026-08-12 ETF RPS 日报",
-      "url": "reports/2026-08-12.html?v=trend-decision"
-    },
-    {
-      "date": "2026-08-11",
-      "title": "2026-08-11 ETF RPS 日报",
-      "url": "reports/2026-08-11.html?v=trend-decision"
     }
   ]
 }
