@@ -6,8 +6,8 @@
     "url": "reports/2026-09-16.html?v=trend-decision",
     "summary": {
       "mainlines": [
-        "通信",
         "军工",
+        "通信",
         "能源化工"
       ],
       "action": "持有为主",
@@ -17,8 +17,8 @@
       "topStreak": 12,
       "shortTermMainlines": [
         "半导体",
-        "科创成长",
-        "科创200"
+        "科创200",
+        "科创成长"
       ],
       "shortTermMainlineDetails": [
         {
@@ -27,27 +27,27 @@
           "code": "588170",
           "rps3": 100.0,
           "rps5": 100.0,
-          "rps10": 96.6
-        },
-        {
-          "theme": "科创成长",
-          "name": "科创成长ETF",
-          "code": "588020",
-          "rps3": 98.3,
-          "rps5": 98.9,
-          "rps10": 97.2
+          "rps10": 95.5
         },
         {
           "theme": "科创200",
           "name": "科创200ETF",
           "code": "588230",
-          "rps3": 97.8,
-          "rps5": 91.6,
+          "rps3": 98.9,
+          "rps5": 93.8,
           "rps10": 93.3
+        },
+        {
+          "theme": "科创成长",
+          "name": "科创成长ETF",
+          "code": "588020",
+          "rps3": 97.8,
+          "rps5": 97.8,
+          "rps10": 96.6
         }
       ],
       "weeklyChanges": [
-        "↑ 通信 / 军工",
+        "↑ 军工 / 通信",
         "↓ 非银金融 / 红利"
       ],
       "weeklyRule": "对比上一个交易日的主线前三方向",
