@@ -1,54 +1,54 @@
 {
-  "date": "2026-09-15",
+  "date": "2026-09-16",
   "latestReport": {
-    "date": "2026-09-15",
-    "title": "2026-09-15 ETF RPS 日报",
-    "url": "reports/2026-09-15.html?v=trend-decision",
+    "date": "2026-09-16",
+    "title": "2026-09-16 ETF RPS 日报",
+    "url": "reports/2026-09-16.html?v=trend-decision",
     "summary": {
       "mainlines": [
-        "非银金融",
-        "红利",
+        "通信",
+        "军工",
         "能源化工"
       ],
       "action": "持有为主",
       "position": 90,
       "risk": "低",
       "topName": "能源化工ETF",
-      "topStreak": 11,
+      "topStreak": 12,
       "shortTermMainlines": [
-        "能源化工",
+        "半导体",
         "科创成长",
-        "电网设备"
+        "科创200"
       ],
       "shortTermMainlineDetails": [
         {
-          "theme": "能源化工",
-          "name": "能源化工ETF",
-          "code": "159981",
-          "rps3": 96.6,
+          "theme": "半导体",
+          "name": "科创半导体ETF",
+          "code": "588170",
+          "rps3": 100.0,
           "rps5": 100.0,
-          "rps10": 100.0
+          "rps10": 96.6
         },
         {
           "theme": "科创成长",
           "name": "科创成长ETF",
           "code": "588020",
-          "rps3": 83.1,
-          "rps5": 87.1,
-          "rps10": 93.3
+          "rps3": 98.3,
+          "rps5": 98.9,
+          "rps10": 97.2
         },
         {
-          "theme": "电网设备",
-          "name": "恒生A股电网设备ETF",
-          "code": "561380",
-          "rps3": 76.4,
-          "rps5": 93.8,
-          "rps10": 74.7
+          "theme": "科创200",
+          "name": "科创200ETF",
+          "code": "588230",
+          "rps3": 97.8,
+          "rps5": 91.6,
+          "rps10": 93.3
         }
       ],
       "weeklyChanges": [
-        "↑ 非银金融",
-        "↓ 银行"
+        "↑ 通信 / 军工",
+        "↓ 非银金融 / 红利"
       ],
       "weeklyRule": "对比上一个交易日的主线前三方向",
       "mainlineRule": "中期主线按 RPS 20 前 12 的主题聚合",
@@ -57,6 +57,11 @@
     }
   },
   "history": [
+    {
+      "date": "2026-09-16",
+      "title": "2026-09-16 ETF RPS 日报",
+      "url": "reports/2026-09-16.html?v=trend-decision"
+    },
     {
       "date": "2026-09-15",
       "title": "2026-09-15 ETF RPS 日报",
