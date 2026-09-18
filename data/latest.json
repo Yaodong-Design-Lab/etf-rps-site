@@ -1,24 +1,24 @@
 {
-  "date": "2026-09-17",
+  "date": "2026-09-18",
   "latestReport": {
-    "date": "2026-09-17",
-    "title": "2026-09-17 ETF RPS 日报",
-    "url": "reports/2026-09-17.html?v=trend-decision",
+    "date": "2026-09-18",
+    "title": "2026-09-18 ETF RPS 日报",
+    "url": "reports/2026-09-18.html?v=trend-decision",
     "summary": {
       "mainlines": [
         "军工",
-        "能源化工",
-        "通信"
+        "通信",
+        "能源化工"
       ],
       "action": "持有为主",
       "position": 90,
       "risk": "低",
       "topName": "能源化工ETF",
-      "topStreak": 13,
+      "topStreak": 14,
       "shortTermMainlines": [
         "半导体",
-        "科创50",
-        "通信"
+        "通信",
+        "信息技术"
       ],
       "shortTermMainlineDetails": [
         {
@@ -27,23 +27,23 @@
           "code": "588170",
           "rps3": 100.0,
           "rps5": 100.0,
-          "rps10": 98.3
-        },
-        {
-          "theme": "科创50",
-          "name": "科创50ETF",
-          "code": "588000",
-          "rps3": 96.6,
-          "rps5": 92.7,
-          "rps10": 83.1
+          "rps10": 100.0
         },
         {
           "theme": "通信",
           "name": "通信设备ETF",
           "code": "159583",
-          "rps3": 95.5,
-          "rps5": 94.4,
+          "rps3": 98.3,
+          "rps5": 89.3,
           "rps10": 98.9
+        },
+        {
+          "theme": "信息技术",
+          "name": "创业板人工智能ETF",
+          "code": "159363",
+          "rps3": 95.5,
+          "rps5": 88.2,
+          "rps10": 94.4
         }
       ],
       "weeklyChanges": [
@@ -56,6 +56,11 @@
     }
   },
   "history": [
+    {
+      "date": "2026-09-18",
+      "title": "2026-09-18 ETF RPS 日报",
+      "url": "reports/2026-09-18.html?v=trend-decision"
+    },
     {
       "date": "2026-09-17",
       "title": "2026-09-17 ETF RPS 日报",
@@ -170,11 +175,6 @@
       "date": "2026-08-18",
       "title": "2026-08-18 ETF RPS 日报",
       "url": "reports/2026-08-18.html?v=trend-decision"
-    },
-    {
-      "date": "2026-08-17",
-      "title": "2026-08-17 ETF RPS 日报",
-      "url": "reports/2026-08-17.html?v=trend-decision"
     }
   ]
 }
