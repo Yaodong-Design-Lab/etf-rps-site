@@ -4553,6 +4553,11 @@ window.ETF_RPS_DAILY = {
   ],
   "history": [
     {
+      "date": "2026-09-21",
+      "title": "2026-09-21 ETF RPS 日报",
+      "url": "reports/2026-09-21.html"
+    },
+    {
       "date": "2026-09-18",
       "title": "2026-09-18 ETF RPS 日报",
       "url": "reports/2026-09-18.html"
@@ -4706,21 +4711,6 @@ window.ETF_RPS_DAILY = {
       "date": "2026-08-07",
       "title": "2026-08-07 ETF RPS 日报",
       "url": "reports/2026-08-07.html"
-    },
-    {
-      "date": "2026-08-06",
-      "title": "2026-08-06 ETF RPS 日报",
-      "url": "reports/2026-08-06.html"
-    },
-    {
-      "date": "2026-08-05",
-      "title": "2026-08-05 ETF RPS 日报",
-      "url": "reports/2026-08-05.html"
-    },
-    {
-      "date": "2026-08-04",
-      "title": "2026-08-04 ETF RPS 日报",
-      "url": "reports/2026-08-04.html"
     }
   ]
 };
