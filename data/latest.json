@@ -8,7 +8,7 @@
       "mainlines": [
         "信息技术",
         "通信",
-        "纳指科技"
+        "能源化工"
       ],
       "action": "持有为主",
       "position": 90,
@@ -16,39 +16,39 @@
       "topName": "能源化工ETF",
       "topStreak": 16,
       "shortTermMainlines": [
-        "纳指科技",
         "信息技术",
-        "半导体"
+        "纳指科技",
+        "医药"
       ],
       "shortTermMainlineDetails": [
-        {
-          "theme": "纳指科技",
-          "name": "纳指科技ETF",
-          "code": "159509",
-          "rps3": 100.0,
-          "rps5": 96.6,
-          "rps10": 98.9
-        },
         {
           "theme": "信息技术",
           "name": "科创AIETF",
           "code": "588790",
           "rps3": 99.4,
           "rps5": 99.4,
-          "rps10": 95.5
+          "rps10": 97.8
         },
         {
-          "theme": "半导体",
-          "name": "科创芯片设计ETF",
-          "code": "588780",
+          "theme": "纳指科技",
+          "name": "纳指科技ETF",
+          "code": "159509",
+          "rps3": 98.9,
+          "rps5": 94.9,
+          "rps10": 98.9
+        },
+        {
+          "theme": "医药",
+          "name": "科创创新药ETF",
+          "code": "589720",
           "rps3": 98.3,
-          "rps5": 100.0,
-          "rps10": 99.4
+          "rps5": 97.8,
+          "rps10": 88.2
         }
       ],
       "weeklyChanges": [
-        "↑ 信息技术 / 纳指科技",
-        "↓ 军工 / 能源化工"
+        "↑ 信息技术",
+        "↓ 军工"
       ],
       "weeklyRule": "对比上一个交易日的主线前三方向",
       "mainlineRule": "中期主线按 RPS 20 前 12 的主题聚合",
