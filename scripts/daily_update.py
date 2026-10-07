@@ -18,8 +18,16 @@ HISTORY_CSV = AUTOMATION / "etf_nav_daily_chart_universe_latest.csv"
 UNIVERSE_CSV = AUTOMATION / "chart_universe_codes.csv"
 
 
-def beijing_today() -> str:
-    return datetime.now(timezone(timedelta(hours=8))).date().isoformat()
+def scheduled_target_date() -> str:
+    now = datetime.now(timezone(timedelta(hours=8)))
+    target = now.date()
+    # GitHub scheduled jobs can be delayed past midnight. Before the close,
+    # the most recent possible A-share session is the preceding weekday.
+    if now.hour < 15:
+        target -= timedelta(days=1)
+    while target.weekday() >= 5:
+        target -= timedelta(days=1)
+    return target.isoformat()
 
 
 def latest_history_date() -> str:
@@ -59,7 +67,7 @@ def main() -> None:
     parser.add_argument("--min-rows", type=int, default=160)
     args = parser.parse_args()
 
-    target_date = args.date or beijing_today()
+    target_date = args.date or scheduled_target_date()
     current_latest = latest_history_date()
     if target_date <= current_latest:
         write_marker("skipped", target_date, f"history already includes {current_latest}")
@@ -72,9 +80,8 @@ def main() -> None:
     build_dir.mkdir(parents=True)
 
     update_out = build_dir / "rps"
-    try:
-        run(
-            [
+    run(
+        [
                 str(SCRIPTS / "update_etf_chart_universe_with_tencent.py"),
                 "--history-csv",
                 str(HISTORY_CSV),
@@ -90,12 +97,8 @@ def main() -> None:
                 str(args.pause),
                 "--min-rows",
                 str(args.min_rows),
-            ]
-        )
-    except subprocess.CalledProcessError as exc:
-        write_marker("skipped", target_date, f"quote fetch/build failed: {exc}")
-        print(f"No update generated for {target_date}: {exc}")
-        return
+        ]
+    )
 
     next_history = update_out / f"etf_nav_daily_chart_universe_{target_date}.csv"
     latest_daily = update_out / f"daily_observation_full_{target_date}.csv"
