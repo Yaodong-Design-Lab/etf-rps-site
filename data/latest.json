@@ -1,54 +1,53 @@
 {
-  "date": "2026-09-22",
+  "date": "2026-09-30",
   "latestReport": {
-    "date": "2026-09-22",
-    "title": "2026-09-22 ETF RPS 日报",
-    "url": "reports/2026-09-22.html?v=trend-decision",
+    "date": "2026-09-30",
+    "title": "2026-09-30 ETF RPS 日报",
+    "url": "reports/2026-09-30.html?v=trend-decision",
     "summary": {
       "mainlines": [
-        "信息技术",
-        "通信",
+        "医药",
+        "纳指科技",
         "能源化工"
       ],
       "action": "持有为主",
       "position": 90,
       "risk": "低",
       "topName": "能源化工ETF",
-      "topStreak": 16,
+      "topStreak": 21,
       "shortTermMainlines": [
-        "信息技术",
+        "医药",
         "纳指科技",
-        "医药"
+        "日经"
       ],
       "shortTermMainlineDetails": [
         {
-          "theme": "信息技术",
-          "name": "科创AIETF",
-          "code": "588790",
-          "rps3": 99.4,
-          "rps5": 99.4,
-          "rps10": 97.8
+          "theme": "医药",
+          "name": "纳指生物科技ETF",
+          "code": "513290",
+          "rps3": 100.0,
+          "rps5": 100.0,
+          "rps10": 96.1
         },
         {
           "theme": "纳指科技",
           "name": "纳指科技ETF",
           "code": "159509",
-          "rps3": 98.9,
-          "rps5": 94.9,
-          "rps10": 98.9
+          "rps3": 94.4,
+          "rps5": 99.4,
+          "rps10": 100.0
         },
         {
-          "theme": "医药",
-          "name": "科创创新药ETF",
-          "code": "589720",
-          "rps3": 98.3,
-          "rps5": 97.8,
-          "rps10": 88.2
+          "theme": "日经",
+          "name": "日经ETF",
+          "code": "513520",
+          "rps3": 93.3,
+          "rps5": 96.1,
+          "rps10": 90.4
         }
       ],
       "weeklyChanges": [
-        "↑ 信息技术",
-        "↓ 军工"
+        "主线延续"
       ],
       "weeklyRule": "对比上一个交易日的主线前三方向",
       "mainlineRule": "中期主线按 RPS 20 前 12 的主题聚合",
@@ -57,6 +56,31 @@
     }
   },
   "history": [
+    {
+      "date": "2026-09-30",
+      "title": "2026-09-30 ETF RPS 日报",
+      "url": "reports/2026-09-30.html?v=trend-decision"
+    },
+    {
+      "date": "2026-09-29",
+      "title": "2026-09-29 ETF RPS 日报",
+      "url": "reports/2026-09-29.html?v=trend-decision"
+    },
+    {
+      "date": "2026-09-28",
+      "title": "2026-09-28 ETF RPS 日报",
+      "url": "reports/2026-09-28.html?v=trend-decision"
+    },
+    {
+      "date": "2026-09-24",
+      "title": "2026-09-24 ETF RPS 日报",
+      "url": "reports/2026-09-24.html?v=trend-decision"
+    },
+    {
+      "date": "2026-09-23",
+      "title": "2026-09-23 ETF RPS 日报",
+      "url": "reports/2026-09-23.html?v=trend-decision"
+    },
     {
       "date": "2026-09-22",
       "title": "2026-09-22 ETF RPS 日报",
@@ -141,31 +165,6 @@
       "date": "2026-08-31",
       "title": "2026-08-31 ETF RPS 日报",
       "url": "reports/2026-08-31.html?v=trend-decision"
-    },
-    {
-      "date": "2026-08-28",
-      "title": "2026-08-28 ETF RPS 日报",
-      "url": "reports/2026-08-28.html?v=trend-decision"
-    },
-    {
-      "date": "2026-08-27",
-      "title": "2026-08-27 ETF RPS 日报",
-      "url": "reports/2026-08-27.html?v=trend-decision"
-    },
-    {
-      "date": "2026-08-26",
-      "title": "2026-08-26 ETF RPS 日报",
-      "url": "reports/2026-08-26.html?v=trend-decision"
-    },
-    {
-      "date": "2026-08-25",
-      "title": "2026-08-25 ETF RPS 日报",
-      "url": "reports/2026-08-25.html?v=trend-decision"
-    },
-    {
-      "date": "2026-08-24",
-      "title": "2026-08-24 ETF RPS 日报",
-      "url": "reports/2026-08-24.html?v=trend-decision"
     }
   ]
 }
