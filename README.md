@@ -45,6 +45,19 @@ etf.fengyaodong.com
 
 先不要做复杂后端。后续如果需要每日自动更新、API、Cron 定时任务，再逐步接入 Vercel Functions 或独立服务。
 
+## Vercel Web Analytics
+
+Vercel 按 `vercel.json` 执行 `node scripts/build_vercel_site.mjs`，将现有的首页、回测页、payload、assets、data 和 reports 复制到 `public/`，并给每个 HTML 注入官方 Web Analytics 脚本。构建不拉取行情、不改写源页面；每日更新后仍会自动注入。
+
+运行验证：
+
+```bash
+node --test tests/test_build_vercel_site.mjs
+node scripts/build_vercel_site.mjs
+```
+
+需在目标 Vercel 项目启用 Web Analytics，并让需要统计的域名由该项目提供服务。GitHub Pages 不提供 `/_vercel/insights/` 接口；仅合并代码无法统计仍指向 Pages 的域名。验证时应检查真实浏览器的上报请求和 Analytics 后台接收结果，构建成功或脚本返回 200 并不代表统计已入库。
+
 ## 本地预览
 
 在仓库根目录启动静态服务：
