@@ -1,54 +1,54 @@
 {
-  "date": "2026-10-13",
+  "date": "2026-10-14",
   "latestReport": {
-    "date": "2026-10-13",
-    "title": "2026-10-13 ETF RPS 日报",
-    "url": "reports/2026-10-13.html?v=trend-decision",
+    "date": "2026-10-14",
+    "title": "2026-10-14 ETF RPS 日报",
+    "url": "reports/2026-10-14.html?v=trend-decision",
     "summary": {
       "mainlines": [
         "红利",
-        "银行",
-        "纳指科技"
+        "能源化工",
+        "银行"
       ],
       "action": "持有为主",
       "position": 90,
       "risk": "低",
       "topName": "能源化工ETF",
-      "topStreak": 25,
+      "topStreak": 26,
       "shortTermMainlines": [
-        "道琼斯",
-        "消费",
+        "能源化工",
+        "能源",
         "红利"
       ],
       "shortTermMainlineDetails": [
         {
-          "theme": "道琼斯",
-          "name": "道琼斯ETF",
-          "code": "513400",
-          "rps3": 98.9,
-          "rps5": 92.7,
-          "rps10": 88.2
+          "theme": "能源化工",
+          "name": "标普油气ETF",
+          "code": "159518",
+          "rps3": 100.0,
+          "rps5": 100.0,
+          "rps10": 99.4
         },
         {
-          "theme": "消费",
-          "name": "标普消费ETF",
-          "code": "159529",
-          "rps3": 96.1,
-          "rps5": 94.9,
-          "rps10": 91.6
+          "theme": "能源",
+          "name": "能源ETF",
+          "code": "159930",
+          "rps3": 99.4,
+          "rps5": 98.9,
+          "rps10": 97.2
         },
         {
           "theme": "红利",
           "name": "港股央企红利ETF",
           "code": "513910",
-          "rps3": 94.9,
-          "rps5": 96.1,
-          "rps10": 92.1
+          "rps3": 98.3,
+          "rps5": 95.5,
+          "rps10": 94.9
         }
       ],
       "weeklyChanges": [
-        "↑ 银行",
-        "↓ 医药"
+        "↑ 能源化工",
+        "↓ 纳指科技"
       ],
       "weeklyRule": "对比上一个交易日的主线前三方向",
       "mainlineRule": "中期主线按 RPS 20 前 12 的主题聚合",
@@ -57,6 +57,11 @@
     }
   },
   "history": [
+    {
+      "date": "2026-10-14",
+      "title": "2026-10-14 ETF RPS 日报",
+      "url": "reports/2026-10-14.html?v=trend-decision"
+    },
     {
       "date": "2026-10-13",
       "title": "2026-10-13 ETF RPS 日报",
