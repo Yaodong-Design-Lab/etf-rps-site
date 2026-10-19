@@ -1,6 +1,6 @@
 window.COCKPIT_DATA = {
-  "today": "2026-10-15",
-  "date": "2026-10-15",
+  "today": "2026-10-19",
+  "date": "2026-10-19",
   "market": {
     "status": "强趋势",
     "temperature": 94,
@@ -17,47 +17,48 @@ window.COCKPIT_DATA = {
   "decision": {
     "mainlines": [
       "红利",
-      "能源化工",
-      "银行"
+      "纳指科技",
+      "消费"
     ],
     "action": "持有为主",
     "position": 90,
     "risk": "低",
     "topName": "能源化工ETF",
-    "topStreak": 27,
+    "topStreak": 28,
     "shortTermMainlines": [
-      "能源化工",
       "消费",
-      "红利"
+      "医药",
+      "能源化工"
     ],
     "shortTermMainlineDetails": [
-      {
-        "theme": "能源化工",
-        "name": "标普油气ETF",
-        "code": "159518",
-        "rps3": 100.0,
-        "rps5": 88.2,
-        "rps10": 100.0
-      },
       {
         "theme": "消费",
         "name": "标普消费ETF",
         "code": "159529",
-        "rps3": 99.4,
-        "rps5": 99.4,
-        "rps10": 97.2
+        "rps3": 100.0,
+        "rps5": 100.0,
+        "rps10": 100.0
       },
       {
-        "theme": "红利",
-        "name": "红利低波50ETF",
-        "code": "515450",
-        "rps3": 97.8,
+        "theme": "医药",
+        "name": "中药ETF",
+        "code": "560080",
+        "rps3": 98.9,
         "rps5": 94.9,
-        "rps10": 98.3
+        "rps10": 98.9
+      },
+      {
+        "theme": "能源化工",
+        "name": "标普油气ETF",
+        "code": "159518",
+        "rps3": 97.2,
+        "rps5": 97.8,
+        "rps10": 99.4
       }
     ],
     "weeklyChanges": [
-      "主线延续"
+      "↑ 纳指科技 / 消费",
+      "↓ 能源化工 / 银行"
     ],
     "weeklyRule": "对比上一个交易日的主线前三方向",
     "mainlineRule": "中期主线按 RPS 20 前 12 的主题聚合",
@@ -70,134 +71,134 @@ window.COCKPIT_DATA = {
       "name": "300红利低波ETF",
       "code": "515300",
       "weight": 40,
-      "rps20": 98.3,
-      "streak": 4
+      "rps20": 96.6,
+      "streak": 5
     },
     {
-      "theme": "能源化工",
-      "name": "能源化工ETF",
-      "code": "159981",
+      "theme": "纳指科技",
+      "name": "纳指科技ETF",
+      "code": "159509",
+      "weight": 30,
+      "rps20": 100.0,
+      "streak": 15
+    },
+    {
+      "theme": "消费",
+      "name": "标普消费ETF",
+      "code": "159529",
       "weight": 30,
       "rps20": 99.4,
-      "streak": 26
-    },
-    {
-      "theme": "银行",
-      "name": "银行ETF",
-      "code": "512800",
-      "weight": 30,
-      "rps20": 96.1,
-      "streak": 4
+      "streak": 2
     }
   ],
   "portfolioBacktests": [
     {
-      "startDate": "2026-10-08",
-      "endDate": "2026-10-15",
+      "startDate": "2026-10-09",
+      "endDate": "2026-10-19",
       "label": "5个交易日前",
       "holdDays": 5,
-      "return": -5.4,
+      "return": -5.7,
       "items": [
         {
           "theme": "医药",
           "name": "港股医疗ETF",
           "code": "159366",
           "weight": 40,
-          "return": -7.2,
-          "rps20": 96.6,
-          "streak": 4
+          "return": -6.8,
+          "rps20": 96.1,
+          "streak": 5
         },
         {
           "theme": "纳指科技",
           "name": "纳指科技ETF",
           "code": "159509",
           "weight": 30,
-          "return": -2.9,
+          "return": -3.8,
           "rps20": 100.0,
-          "streak": 9
+          "streak": 10
         },
         {
           "theme": "能源化工",
           "name": "能源化工ETF",
           "code": "159981",
           "weight": 30,
-          "return": -5.5,
+          "return": -6.2,
           "rps20": 99.4,
-          "streak": 22
+          "streak": 23
         }
       ],
       "targetDays": 5
     },
     {
-      "startDate": "2026-09-23",
-      "endDate": "2026-10-15",
+      "startDate": "2026-09-24",
+      "endDate": "2026-10-19",
       "label": "10个交易日前",
       "holdDays": 10,
-      "return": -15.4,
+      "return": 3.5,
       "items": [
         {
-          "theme": "信息技术",
-          "name": "科创创业人工智能ETF",
-          "code": "588410",
+          "theme": "银行",
+          "name": "银行AH优选ETF",
+          "code": "517900",
           "weight": 40,
-          "return": -20.5,
-          "rps20": 98.3,
-          "streak": 3
+          "return": 2.7,
+          "rps20": 98.9,
+          "streak": 1
         },
         {
-          "theme": "通信",
-          "name": "通信ETF",
-          "code": "515880",
+          "theme": "能源化工",
+          "name": "能源化工ETF",
+          "code": "159981",
           "weight": 30,
-          "return": -25.7,
-          "rps20": 97.8,
-          "streak": 6
+          "return": 3.4,
+          "rps20": 100.0,
+          "streak": 18
         },
         {
           "theme": "纳指科技",
           "name": "纳指科技ETF",
           "code": "159509",
           "weight": 30,
-          "return": 1.8,
-          "rps20": 100.0,
-          "streak": 4
+          "return": 4.7,
+          "rps20": 99.4,
+          "streak": 5
         }
       ],
       "targetDays": 10
     },
     {
-      "startDate": "2026-09-09",
-      "endDate": "2026-10-15",
+      "startDate": "2026-09-10",
+      "endDate": "2026-10-19",
       "label": "20个交易日前",
       "holdDays": 20,
-      "return": -6.2,
+      "return": -0.8,
       "items": [
         {
           "theme": "能源化工",
           "name": "能源化工ETF",
           "code": "159981",
           "weight": 40,
-          "return": 4.3,
-          "rps20": 99.4,
-          "streak": 7
+          "return": 2.3,
+          "rps20": 100.0,
+          "streak": 8
+        },
+        {
+          "theme": "银行",
+          "name": "银行AH优选ETF",
+          "code": "517900",
+          "weight": 30,
+          "return": 1.0,
+          "rps20": 97.2,
+          "streak": 4
         },
         {
           "theme": "石油",
           "name": "石油ETF",
           "code": "561360",
           "weight": 30,
-          "return": -8.1,
-          "rps20": 96.6,
-          "streak": 2
-        },
-        {
-          "theme": "粮食",
-          "name": "粮食ETF",
-          "code": "159698",
-          "weight": 30,
-          "return": -18.2,
-          "rps20": 100.0,
-          "streak": 7
+          "return": -6.7,
+          "rps20": 96.1,
+          "streak": 3
         }
       ],
       "targetDays": 20
@@ -211,11 +212,11 @@ window.COCKPIT_DATA = {
     ],
     "replays": [
       {
-        "date": "2026-10-15",
+        "date": "2026-10-19",
         "results": [
           {
-            "startDate": "2026-10-15",
-            "endDate": "2026-10-15",
+            "startDate": "2026-10-19",
+            "endDate": "2026-10-19",
             "label": "0个交易日前",
             "holdDays": 0,
             "return": 0.0,
@@ -226,6 +227,125 @@ window.COCKPIT_DATA = {
                 "code": "515300",
                 "weight": 40,
                 "return": 0.0,
+                "rps20": 96.6,
+                "streak": 7
+              },
+              {
+                "theme": "纳指科技",
+                "name": "纳指科技ETF",
+                "code": "159509",
+                "weight": 30,
+                "return": 0.0,
+                "rps20": 100.0,
+                "streak": 15
+              },
+              {
+                "theme": "消费",
+                "name": "标普消费ETF",
+                "code": "159529",
+                "weight": 30,
+                "return": 0.0,
+                "rps20": 99.4,
+                "streak": 2
+              }
+            ],
+            "targetDays": 5,
+            "isPartial": true
+          },
+          {
+            "startDate": "2026-10-19",
+            "endDate": "2026-10-19",
+            "label": "0个交易日前",
+            "holdDays": 0,
+            "return": 0.0,
+            "items": [
+              {
+                "theme": "红利",
+                "name": "300红利低波ETF",
+                "code": "515300",
+                "weight": 40,
+                "return": 0.0,
+                "rps20": 96.6,
+                "streak": 7
+              },
+              {
+                "theme": "纳指科技",
+                "name": "纳指科技ETF",
+                "code": "159509",
+                "weight": 30,
+                "return": 0.0,
+                "rps20": 100.0,
+                "streak": 15
+              },
+              {
+                "theme": "消费",
+                "name": "标普消费ETF",
+                "code": "159529",
+                "weight": 30,
+                "return": 0.0,
+                "rps20": 99.4,
+                "streak": 2
+              }
+            ],
+            "targetDays": 10,
+            "isPartial": true
+          },
+          {
+            "startDate": "2026-10-19",
+            "endDate": "2026-10-19",
+            "label": "0个交易日前",
+            "holdDays": 0,
+            "return": 0.0,
+            "items": [
+              {
+                "theme": "红利",
+                "name": "300红利低波ETF",
+                "code": "515300",
+                "weight": 40,
+                "return": 0.0,
+                "rps20": 96.6,
+                "streak": 7
+              },
+              {
+                "theme": "纳指科技",
+                "name": "纳指科技ETF",
+                "code": "159509",
+                "weight": 30,
+                "return": 0.0,
+                "rps20": 100.0,
+                "streak": 15
+              },
+              {
+                "theme": "消费",
+                "name": "标普消费ETF",
+                "code": "159529",
+                "weight": 30,
+                "return": 0.0,
+                "rps20": 99.4,
+                "streak": 2
+              }
+            ],
+            "targetDays": 20,
+            "isPartial": true
+          }
+        ]
+      },
+      {
+        "date": "2026-10-15",
+        "results": [
+          {
+            "startDate": "2026-10-15",
+            "endDate": "2026-10-19",
+            "label": "1个交易日前",
+            "holdDays": 1,
+            "return": 0.5,
+            "items": [
+              {
+                "theme": "红利",
+                "name": "300红利低波ETF",
+                "code": "515300",
+                "weight": 40,
+                "return": 0.9,
                 "rps20": 98.3,
                 "streak": 6
               },
@@ -234,7 +354,7 @@ window.COCKPIT_DATA = {
                 "name": "能源化工ETF",
                 "code": "159981",
                 "weight": 30,
-                "return": 0.0,
+                "return": -1.2,
                 "rps20": 99.4,
                 "streak": 27
               },
@@ -243,7 +363,7 @@ window.COCKPIT_DATA = {
                 "name": "银行ETF",
                 "code": "512800",
                 "weight": 30,
-                "return": 0.0,
+                "return": 1.6,
                 "rps20": 96.1,
                 "streak": 6
               }
@@ -253,17 +373,17 @@ window.COCKPIT_DATA = {
           },
           {
             "startDate": "2026-10-15",
-            "endDate": "2026-10-15",
-            "label": "0个交易日前",
-            "holdDays": 0,
-            "return": 0.0,
+            "endDate": "2026-10-19",
+            "label": "1个交易日前",
+            "holdDays": 1,
+            "return": 0.5,
             "items": [
               {
                 "theme": "红利",
                 "name": "300红利低波ETF",
                 "code": "515300",
                 "weight": 40,
-                "return": 0.0,
+                "return": 0.9,
                 "rps20": 98.3,
                 "streak": 6
               },
@@ -272,7 +392,7 @@ window.COCKPIT_DATA = {
                 "name": "能源化工ETF",
                 "code": "159981",
                 "weight": 30,
-                "return": 0.0,
+                "return": -1.2,
                 "rps20": 99.4,
                 "streak": 27
               },
@@ -281,7 +401,7 @@ window.COCKPIT_DATA = {
                 "name": "银行ETF",
                 "code": "512800",
                 "weight": 30,
-                "return": 0.0,
+                "return": 1.6,
                 "rps20": 96.1,
                 "streak": 6
               }
@@ -291,17 +411,17 @@ window.COCKPIT_DATA = {
           },
           {
             "startDate": "2026-10-15",
-            "endDate": "2026-10-15",
-            "label": "0个交易日前",
-            "holdDays": 0,
-            "return": 0.0,
+            "endDate": "2026-10-19",
+            "label": "1个交易日前",
+            "holdDays": 1,
+            "return": 0.5,
             "items": [
               {
                 "theme": "红利",
                 "name": "300红利低波ETF",
                 "code": "515300",
                 "weight": 40,
-                "return": 0.0,
+                "return": 0.9,
                 "rps20": 98.3,
                 "streak": 6
               },
@@ -310,7 +430,7 @@ window.COCKPIT_DATA = {
                 "name": "能源化工ETF",
                 "code": "159981",
                 "weight": 30,
-                "return": 0.0,
+                "return": -1.2,
                 "rps20": 99.4,
                 "streak": 27
               },
@@ -319,7 +439,7 @@ window.COCKPIT_DATA = {
                 "name": "银行ETF",
                 "code": "512800",
                 "weight": 30,
-                "return": 0.0,
+                "return": 1.6,
                 "rps20": 96.1,
                 "streak": 6
               }
@@ -334,17 +454,17 @@ window.COCKPIT_DATA = {
         "results": [
           {
             "startDate": "2026-10-14",
-            "endDate": "2026-10-15",
-            "label": "1个交易日前",
-            "holdDays": 1,
-            "return": -0.8,
+            "endDate": "2026-10-19",
+            "label": "2个交易日前",
+            "holdDays": 2,
+            "return": -0.3,
             "items": [
               {
                 "theme": "红利",
                 "name": "300红利低波ETF",
                 "code": "515300",
                 "weight": 40,
-                "return": -0.3,
+                "return": 0.6,
                 "rps20": 97.8,
                 "streak": 5
               },
@@ -353,7 +473,7 @@ window.COCKPIT_DATA = {
                 "name": "能源化工ETF",
                 "code": "159981",
                 "weight": 30,
-                "return": -2.0,
+                "return": -3.2,
                 "rps20": 99.4,
                 "streak": 26
               },
@@ -362,7 +482,7 @@ window.COCKPIT_DATA = {
                 "name": "银行ETF",
                 "code": "512800",
                 "weight": 30,
-                "return": -0.2,
+                "return": 1.4,
                 "rps20": 97.2,
                 "streak": 5
               }
@@ -372,17 +492,17 @@ window.COCKPIT_DATA = {
           },
           {
             "startDate": "2026-10-14",
-            "endDate": "2026-10-15",
-            "label": "1个交易日前",
-            "holdDays": 1,
-            "return": -0.8,
+            "endDate": "2026-10-19",
+            "label": "2个交易日前",
+            "holdDays": 2,
+            "return": -0.3,
             "items": [
               {
                 "theme": "红利",
                 "name": "300红利低波ETF",
                 "code": "515300",
                 "weight": 40,
-                "return": -0.3,
+                "return": 0.6,
                 "rps20": 97.8,
                 "streak": 5
               },
@@ -391,7 +511,7 @@ window.COCKPIT_DATA = {
                 "name": "能源化工ETF",
                 "code": "159981",
                 "weight": 30,
-                "return": -2.0,
+                "return": -3.2,
                 "rps20": 99.4,
                 "streak": 26
               },
@@ -400,7 +520,7 @@ window.COCKPIT_DATA = {
                 "name": "银行ETF",
                 "code": "512800",
                 "weight": 30,
-                "return": -0.2,
+                "return": 1.4,
                 "rps20": 97.2,
                 "streak": 5
               }
@@ -410,17 +530,17 @@ window.COCKPIT_DATA = {
           },
           {
             "startDate": "2026-10-14",
-            "endDate": "2026-10-15",
-            "label": "1个交易日前",
-            "holdDays": 1,
-            "return": -0.8,
+            "endDate": "2026-10-19",
+            "label": "2个交易日前",
+            "holdDays": 2,
+            "return": -0.3,
             "items": [
               {
                 "theme": "红利",
                 "name": "300红利低波ETF",
                 "code": "515300",
                 "weight": 40,
-                "return": -0.3,
+                "return": 0.6,
                 "rps20": 97.8,
                 "streak": 5
               },
@@ -429,7 +549,7 @@ window.COCKPIT_DATA = {
                 "name": "能源化工ETF",
                 "code": "159981",
                 "weight": 30,
-                "return": -2.0,
+                "return": -3.2,
                 "rps20": 99.4,
                 "streak": 26
               },
@@ -438,7 +558,7 @@ window.COCKPIT_DATA = {
                 "name": "银行ETF",
                 "code": "512800",
                 "weight": 30,
-                "return": -0.2,
+                "return": 1.4,
                 "rps20": 97.2,
                 "streak": 5
               }
@@ -453,17 +573,17 @@ window.COCKPIT_DATA = {
         "results": [
           {
             "startDate": "2026-10-13",
-            "endDate": "2026-10-15",
-            "label": "2个交易日前",
-            "holdDays": 2,
-            "return": 0.2,
+            "endDate": "2026-10-19",
+            "label": "3个交易日前",
+            "holdDays": 3,
+            "return": 1.5,
             "items": [
               {
                 "theme": "红利",
                 "name": "300红利低波ETF",
                 "code": "515300",
                 "weight": 40,
-                "return": 0.9,
+                "return": 1.8,
                 "rps20": 96.1,
                 "streak": 4
               },
@@ -472,7 +592,7 @@ window.COCKPIT_DATA = {
                 "name": "银行ETF",
                 "code": "512800",
                 "weight": 30,
-                "return": -0.1,
+                "return": 1.5,
                 "rps20": 97.8,
                 "streak": 4
               },
@@ -481,7 +601,7 @@ window.COCKPIT_DATA = {
                 "name": "纳指科技ETF",
                 "code": "159509",
                 "weight": 30,
-                "return": -0.5,
+                "return": 1.2,
                 "rps20": 100.0,
                 "streak": 12
               }
@@ -491,17 +611,17 @@ window.COCKPIT_DATA = {
           },
           {
             "startDate": "2026-10-13",
-            "endDate": "2026-10-15",
-            "label": "2个交易日前",
-            "holdDays": 2,
-            "return": 0.2,
+            "endDate": "2026-10-19",
+            "label": "3个交易日前",
+            "holdDays": 3,
+            "return": 1.5,
             "items": [
               {
                 "theme": "红利",
                 "name": "300红利低波ETF",
                 "code": "515300",
                 "weight": 40,
-                "return": 0.9,
+                "return": 1.8,
                 "rps20": 96.1,
                 "streak": 4
               },
@@ -510,7 +630,7 @@ window.COCKPIT_DATA = {
                 "name": "银行ETF",
                 "code": "512800",
                 "weight": 30,
-                "return": -0.1,
+                "return": 1.5,
                 "rps20": 97.8,
                 "streak": 4
               },
@@ -519,7 +639,7 @@ window.COCKPIT_DATA = {
                 "name": "纳指科技ETF",
                 "code": "159509",
                 "weight": 30,
-                "return": -0.5,
+                "return": 1.2,
                 "rps20": 100.0,
                 "streak": 12
               }
@@ -529,17 +649,17 @@ window.COCKPIT_DATA = {
           },
           {
             "startDate": "2026-10-13",
-            "endDate": "2026-10-15",
-            "label": "2个交易日前",
-            "holdDays": 2,
-            "return": 0.2,
+            "endDate": "2026-10-19",
+            "label": "3个交易日前",
+            "holdDays": 3,
+            "return": 1.5,
             "items": [
               {
                 "theme": "红利",
                 "name": "300红利低波ETF",
                 "code": "515300",
                 "weight": 40,
-                "return": 0.9,
+                "return": 1.8,
                 "rps20": 96.1,
                 "streak": 4
               },
@@ -548,7 +668,7 @@ window.COCKPIT_DATA = {
                 "name": "银行ETF",
                 "code": "512800",
                 "weight": 30,
-                "return": -0.1,
+                "return": 1.5,
                 "rps20": 97.8,
                 "streak": 4
               },
@@ -557,7 +677,7 @@ window.COCKPIT_DATA = {
                 "name": "纳指科技ETF",
                 "code": "159509",
                 "weight": 30,
-                "return": -0.5,
+                "return": 1.2,
                 "rps20": 100.0,
                 "streak": 12
               }
@@ -572,17 +692,17 @@ window.COCKPIT_DATA = {
         "results": [
           {
             "startDate": "2026-10-12",
-            "endDate": "2026-10-15",
-            "label": "3个交易日前",
-            "holdDays": 3,
-            "return": -2.6,
+            "endDate": "2026-10-19",
+            "label": "4个交易日前",
+            "holdDays": 4,
+            "return": -1.9,
             "items": [
               {
                 "theme": "医药",
                 "name": "港股医疗ETF",
                 "code": "159366",
                 "weight": 40,
-                "return": -6.3,
+                "return": -6.4,
                 "rps20": 97.2,
                 "streak": 6
               },
@@ -591,7 +711,7 @@ window.COCKPIT_DATA = {
                 "name": "300红利低波ETF",
                 "code": "515300",
                 "weight": 30,
-                "return": 0.3,
+                "return": 1.2,
                 "rps20": 95.5,
                 "streak": 3
               },
@@ -600,7 +720,7 @@ window.COCKPIT_DATA = {
                 "name": "纳指科技ETF",
                 "code": "159509",
                 "weight": 30,
-                "return": -0.7,
+                "return": 1.1,
                 "rps20": 100.0,
                 "streak": 11
               }
@@ -610,17 +730,17 @@ window.COCKPIT_DATA = {
           },
           {
             "startDate": "2026-10-12",
-            "endDate": "2026-10-15",
-            "label": "3个交易日前",
-            "holdDays": 3,
-            "return": -2.6,
+            "endDate": "2026-10-19",
+            "label": "4个交易日前",
+            "holdDays": 4,
+            "return": -1.9,
             "items": [
               {
                 "theme": "医药",
                 "name": "港股医疗ETF",
                 "code": "159366",
                 "weight": 40,
-                "return": -6.3,
+                "return": -6.4,
                 "rps20": 97.2,
                 "streak": 6
               },
@@ -629,7 +749,7 @@ window.COCKPIT_DATA = {
                 "name": "300红利低波ETF",
                 "code": "515300",
                 "weight": 30,
-                "return": 0.3,
+                "return": 1.2,
                 "rps20": 95.5,
                 "streak": 3
               },
@@ -638,7 +758,7 @@ window.COCKPIT_DATA = {
                 "name": "纳指科技ETF",
                 "code": "159509",
                 "weight": 30,
-                "return": -0.7,
+                "return": 1.1,
                 "rps20": 100.0,
                 "streak": 11
               }
@@ -648,17 +768,17 @@ window.COCKPIT_DATA = {
           },
           {
             "startDate": "2026-10-12",
-            "endDate": "2026-10-15",
-            "label": "3个交易日前",
-            "holdDays": 3,
-            "return": -2.6,
+            "endDate": "2026-10-19",
+            "label": "4个交易日前",
+            "holdDays": 4,
+            "return": -1.9,
             "items": [
               {
                 "theme": "医药",
                 "name": "港股医疗ETF",
                 "code": "159366",
                 "weight": 40,
-                "return": -6.3,
+                "return": -6.4,
                 "rps20": 97.2,
                 "streak": 6
               },
@@ -667,7 +787,7 @@ window.COCKPIT_DATA = {
                 "name": "300红利低波ETF",
                 "code": "515300",
                 "weight": 30,
-                "return": 0.3,
+                "return": 1.2,
                 "rps20": 95.5,
                 "streak": 3
               },
@@ -676,7 +796,7 @@ window.COCKPIT_DATA = {
                 "name": "纳指科技ETF",
                 "code": "159509",
                 "weight": 30,
-                "return": -0.7,
+                "return": 1.1,
                 "rps20": 100.0,
                 "streak": 11
               }
@@ -691,17 +811,17 @@ window.COCKPIT_DATA = {
         "results": [
           {
             "startDate": "2026-10-09",
-            "endDate": "2026-10-15",
-            "label": "4个交易日前",
-            "holdDays": 4,
-            "return": -5.8,
+            "endDate": "2026-10-19",
+            "label": "5个交易日前",
+            "holdDays": 5,
+            "return": -5.7,
             "items": [
               {
                 "theme": "医药",
                 "name": "港股医疗ETF",
                 "code": "159366",
                 "weight": 40,
-                "return": -6.7,
+                "return": -6.8,
                 "rps20": 96.1,
                 "streak": 5
               },
@@ -710,7 +830,7 @@ window.COCKPIT_DATA = {
                 "name": "纳指科技ETF",
                 "code": "159509",
                 "weight": 30,
-                "return": -5.5,
+                "return": -3.8,
                 "rps20": 100.0,
                 "streak": 10
               },
@@ -719,27 +839,27 @@ window.COCKPIT_DATA = {
                 "name": "能源化工ETF",
                 "code": "159981",
                 "weight": 30,
-                "return": -5.0,
+                "return": -6.2,
                 "rps20": 99.4,
                 "streak": 23
               }
             ],
             "targetDays": 5,
-            "isPartial": true
+            "isPartial": false
           },
           {
             "startDate": "2026-10-09",
-            "endDate": "2026-10-15",
-            "label": "4个交易日前",
-            "holdDays": 4,
-            "return": -5.8,
+            "endDate": "2026-10-19",
+            "label": "5个交易日前",
+            "holdDays": 5,
+            "return": -5.7,
             "items": [
               {
                 "theme": "医药",
                 "name": "港股医疗ETF",
                 "code": "159366",
                 "weight": 40,
-                "return": -6.7,
+                "return": -6.8,
                 "rps20": 96.1,
                 "streak": 5
               },
@@ -748,7 +868,7 @@ window.COCKPIT_DATA = {
                 "name": "纳指科技ETF",
                 "code": "159509",
                 "weight": 30,
-                "return": -5.5,
+                "return": -3.8,
                 "rps20": 100.0,
                 "streak": 10
               },
@@ -757,7 +877,7 @@ window.COCKPIT_DATA = {
                 "name": "能源化工ETF",
                 "code": "159981",
                 "weight": 30,
-                "return": -5.0,
+                "return": -6.2,
                 "rps20": 99.4,
                 "streak": 23
               }
@@ -767,17 +887,17 @@ window.COCKPIT_DATA = {
           },
           {
             "startDate": "2026-10-09",
-            "endDate": "2026-10-15",
-            "label": "4个交易日前",
-            "holdDays": 4,
-            "return": -5.8,
+            "endDate": "2026-10-19",
+            "label": "5个交易日前",
+            "holdDays": 5,
+            "return": -5.7,
             "items": [
               {
                 "theme": "医药",
                 "name": "港股医疗ETF",
                 "code": "159366",
                 "weight": 40,
-                "return": -6.7,
+                "return": -6.8,
                 "rps20": 96.1,
                 "streak": 5
               },
@@ -786,7 +906,7 @@ window.COCKPIT_DATA = {
                 "name": "纳指科技ETF",
                 "code": "159509",
                 "weight": 30,
-                "return": -5.5,
+                "return": -3.8,
                 "rps20": 100.0,
                 "streak": 10
               },
@@ -795,7 +915,7 @@ window.COCKPIT_DATA = {
                 "name": "能源化工ETF",
                 "code": "159981",
                 "weight": 30,
-                "return": -5.0,
+                "return": -6.2,
                 "rps20": 99.4,
                 "streak": 23
               }
@@ -848,17 +968,17 @@ window.COCKPIT_DATA = {
           },
           {
             "startDate": "2026-10-08",
-            "endDate": "2026-10-15",
-            "label": "5个交易日前",
-            "holdDays": 5,
-            "return": -5.4,
+            "endDate": "2026-10-19",
+            "label": "6个交易日前",
+            "holdDays": 6,
+            "return": -5.3,
             "items": [
               {
                 "theme": "医药",
                 "name": "港股医疗ETF",
                 "code": "159366",
                 "weight": 40,
-                "return": -7.2,
+                "return": -7.4,
                 "rps20": 96.6,
                 "streak": 4
               },
@@ -867,7 +987,7 @@ window.COCKPIT_DATA = {
                 "name": "纳指科技ETF",
                 "code": "159509",
                 "weight": 30,
-                "return": -2.9,
+                "return": -1.2,
                 "rps20": 100.0,
                 "streak": 9
               },
@@ -876,7 +996,7 @@ window.COCKPIT_DATA = {
                 "name": "能源化工ETF",
                 "code": "159981",
                 "weight": 30,
-                "return": -5.5,
+                "return": -6.6,
                 "rps20": 99.4,
                 "streak": 22
               }
@@ -886,17 +1006,17 @@ window.COCKPIT_DATA = {
           },
           {
             "startDate": "2026-10-08",
-            "endDate": "2026-10-15",
-            "label": "5个交易日前",
-            "holdDays": 5,
-            "return": -5.4,
+            "endDate": "2026-10-19",
+            "label": "6个交易日前",
+            "holdDays": 6,
+            "return": -5.3,
             "items": [
               {
                 "theme": "医药",
                 "name": "港股医疗ETF",
                 "code": "159366",
                 "weight": 40,
-                "return": -7.2,
+                "return": -7.4,
                 "rps20": 96.6,
                 "streak": 4
               },
@@ -905,7 +1025,7 @@ window.COCKPIT_DATA = {
                 "name": "纳指科技ETF",
                 "code": "159509",
                 "weight": 30,
-                "return": -2.9,
+                "return": -1.2,
                 "rps20": 100.0,
                 "streak": 9
               },
@@ -914,7 +1034,7 @@ window.COCKPIT_DATA = {
                 "name": "能源化工ETF",
                 "code": "159981",
                 "weight": 30,
-                "return": -5.5,
+                "return": -6.6,
                 "rps20": 99.4,
                 "streak": 22
               }
@@ -967,17 +1087,17 @@ window.COCKPIT_DATA = {
           },
           {
             "startDate": "2026-09-30",
-            "endDate": "2026-10-15",
-            "label": "6个交易日前",
-            "holdDays": 6,
-            "return": -3.7,
+            "endDate": "2026-10-19",
+            "label": "7个交易日前",
+            "holdDays": 7,
+            "return": -3.6,
             "items": [
               {
                 "theme": "医药",
                 "name": "港股医疗ETF",
                 "code": "159366",
                 "weight": 40,
-                "return": -10.9,
+                "return": -11.0,
                 "rps20": 98.9,
                 "streak": 3
               },
@@ -986,7 +1106,7 @@ window.COCKPIT_DATA = {
                 "name": "纳指科技ETF",
                 "code": "159509",
                 "weight": 30,
-                "return": -1.0,
+                "return": 0.7,
                 "rps20": 100.0,
                 "streak": 8
               },
@@ -995,7 +1115,7 @@ window.COCKPIT_DATA = {
                 "name": "能源化工ETF",
                 "code": "159981",
                 "weight": 30,
-                "return": 3.3,
+                "return": 2.1,
                 "rps20": 97.8,
                 "streak": 21
               }
@@ -1005,17 +1125,17 @@ window.COCKPIT_DATA = {
           },
           {
             "startDate": "2026-09-30",
-            "endDate": "2026-10-15",
-            "label": "6个交易日前",
-            "holdDays": 6,
-            "return": -3.7,
+            "endDate": "2026-10-19",
+            "label": "7个交易日前",
+            "holdDays": 7,
+            "return": -3.6,
             "items": [
               {
                 "theme": "医药",
                 "name": "港股医疗ETF",
                 "code": "159366",
                 "weight": 40,
-                "return": -10.9,
+                "return": -11.0,
                 "rps20": 98.9,
                 "streak": 3
               },
@@ -1024,7 +1144,7 @@ window.COCKPIT_DATA = {
                 "name": "纳指科技ETF",
                 "code": "159509",
                 "weight": 30,
-                "return": -1.0,
+                "return": 0.7,
                 "rps20": 100.0,
                 "streak": 8
               },
@@ -1033,7 +1153,7 @@ window.COCKPIT_DATA = {
                 "name": "能源化工ETF",
                 "code": "159981",
                 "weight": 30,
-                "return": 3.3,
+                "return": 2.1,
                 "rps20": 97.8,
                 "streak": 21
               }
@@ -1086,17 +1206,17 @@ window.COCKPIT_DATA = {
           },
           {
             "startDate": "2026-09-29",
-            "endDate": "2026-10-15",
-            "label": "7个交易日前",
-            "holdDays": 7,
-            "return": -1.9,
+            "endDate": "2026-10-19",
+            "label": "8个交易日前",
+            "holdDays": 8,
+            "return": -1.8,
             "items": [
               {
                 "theme": "医药",
                 "name": "港股医疗ETF",
                 "code": "159366",
                 "weight": 40,
-                "return": -7.6,
+                "return": -7.7,
                 "rps20": 98.3,
                 "streak": 2
               },
@@ -1105,7 +1225,7 @@ window.COCKPIT_DATA = {
                 "name": "纳指科技ETF",
                 "code": "159509",
                 "weight": 30,
-                "return": 0.7,
+                "return": 2.5,
                 "rps20": 100.0,
                 "streak": 7
               },
@@ -1114,7 +1234,7 @@ window.COCKPIT_DATA = {
                 "name": "能源化工ETF",
                 "code": "159981",
                 "weight": 30,
-                "return": 3.0,
+                "return": 1.7,
                 "rps20": 99.4,
                 "streak": 20
               }
@@ -1124,17 +1244,17 @@ window.COCKPIT_DATA = {
           },
           {
             "startDate": "2026-09-29",
-            "endDate": "2026-10-15",
-            "label": "7个交易日前",
-            "holdDays": 7,
-            "return": -1.9,
+            "endDate": "2026-10-19",
+            "label": "8个交易日前",
+            "holdDays": 8,
+            "return": -1.8,
             "items": [
               {
                 "theme": "医药",
                 "name": "港股医疗ETF",
                 "code": "159366",
                 "weight": 40,
-                "return": -7.6,
+                "return": -7.7,
                 "rps20": 98.3,
                 "streak": 2
               },
@@ -1143,7 +1263,7 @@ window.COCKPIT_DATA = {
                 "name": "纳指科技ETF",
                 "code": "159509",
                 "weight": 30,
-                "return": 0.7,
+                "return": 2.5,
                 "rps20": 100.0,
                 "streak": 7
               },
@@ -1152,7 +1272,7 @@ window.COCKPIT_DATA = {
                 "name": "能源化工ETF",
                 "code": "159981",
                 "weight": 30,
-                "return": 3.0,
+                "return": 1.7,
                 "rps20": 99.4,
                 "streak": 20
               }
@@ -1205,17 +1325,17 @@ window.COCKPIT_DATA = {
           },
           {
             "startDate": "2026-09-28",
-            "endDate": "2026-10-15",
-            "label": "8个交易日前",
-            "holdDays": 8,
-            "return": 2.2,
+            "endDate": "2026-10-19",
+            "label": "9个交易日前",
+            "holdDays": 9,
+            "return": 2.1,
             "items": [
               {
                 "theme": "红利",
                 "name": "港股通央企红利ETF",
                 "code": "513920",
                 "weight": 40,
-                "return": 0.2,
+                "return": 0.6,
                 "rps20": 95.5,
                 "streak": 1
               },
@@ -1224,7 +1344,7 @@ window.COCKPIT_DATA = {
                 "name": "银行AH优选ETF",
                 "code": "517900",
                 "weight": 30,
-                "return": 2.4,
+                "return": 3.0,
                 "rps20": 98.9,
                 "streak": 2
               },
@@ -1233,7 +1353,7 @@ window.COCKPIT_DATA = {
                 "name": "能源化工ETF",
                 "code": "159981",
                 "weight": 30,
-                "return": 4.6,
+                "return": 3.3,
                 "rps20": 100.0,
                 "streak": 19
               }
@@ -1243,17 +1363,17 @@ window.COCKPIT_DATA = {
           },
           {
             "startDate": "2026-09-28",
-            "endDate": "2026-10-15",
-            "label": "8个交易日前",
-            "holdDays": 8,
-            "return": 2.2,
+            "endDate": "2026-10-19",
+            "label": "9个交易日前",
+            "holdDays": 9,
+            "return": 2.1,
             "items": [
               {
                 "theme": "红利",
                 "name": "港股通央企红利ETF",
                 "code": "513920",
                 "weight": 40,
-                "return": 0.2,
+                "return": 0.6,
                 "rps20": 95.5,
                 "streak": 1
               },
@@ -1262,7 +1382,7 @@ window.COCKPIT_DATA = {
                 "name": "银行AH优选ETF",
                 "code": "517900",
                 "weight": 30,
-                "return": 2.4,
+                "return": 3.0,
                 "rps20": 98.9,
                 "streak": 2
               },
@@ -1271,7 +1391,7 @@ window.COCKPIT_DATA = {
                 "name": "能源化工ETF",
                 "code": "159981",
                 "weight": 30,
-                "return": 4.6,
+                "return": 3.3,
                 "rps20": 100.0,
                 "streak": 19
               }
@@ -1324,17 +1444,17 @@ window.COCKPIT_DATA = {
           },
           {
             "startDate": "2026-09-24",
-            "endDate": "2026-10-15",
-            "label": "9个交易日前",
-            "holdDays": 9,
-            "return": 3.1,
+            "endDate": "2026-10-19",
+            "label": "10个交易日前",
+            "holdDays": 10,
+            "return": 3.5,
             "items": [
               {
                 "theme": "银行",
                 "name": "银行AH优选ETF",
                 "code": "517900",
                 "weight": 40,
-                "return": 2.1,
+                "return": 2.7,
                 "rps20": 98.9,
                 "streak": 1
               },
@@ -1343,7 +1463,7 @@ window.COCKPIT_DATA = {
                 "name": "能源化工ETF",
                 "code": "159981",
                 "weight": 30,
-                "return": 4.7,
+                "return": 3.4,
                 "rps20": 100.0,
                 "streak": 18
               },
@@ -1352,27 +1472,27 @@ window.COCKPIT_DATA = {
                 "name": "纳指科技ETF",
                 "code": "159509",
                 "weight": 30,
-                "return": 2.9,
+                "return": 4.7,
                 "rps20": 99.4,
                 "streak": 5
               }
             ],
             "targetDays": 10,
-            "isPartial": true
+            "isPartial": false
           },
           {
             "startDate": "2026-09-24",
-            "endDate": "2026-10-15",
-            "label": "9个交易日前",
-            "holdDays": 9,
-            "return": 3.1,
+            "endDate": "2026-10-19",
+            "label": "10个交易日前",
+            "holdDays": 10,
+            "return": 3.5,
             "items": [
               {
                 "theme": "银行",
                 "name": "银行AH优选ETF",
                 "code": "517900",
                 "weight": 40,
-                "return": 2.1,
+                "return": 2.7,
                 "rps20": 98.9,
                 "streak": 1
               },
@@ -1381,7 +1501,7 @@ window.COCKPIT_DATA = {
                 "name": "能源化工ETF",
                 "code": "159981",
                 "weight": 30,
-                "return": 4.7,
+                "return": 3.4,
                 "rps20": 100.0,
                 "streak": 18
               },
@@ -1390,7 +1510,7 @@ window.COCKPIT_DATA = {
                 "name": "纳指科技ETF",
                 "code": "159509",
                 "weight": 30,
-                "return": 2.9,
+                "return": 4.7,
                 "rps20": 99.4,
                 "streak": 5
               }
@@ -1481,17 +1601,17 @@ window.COCKPIT_DATA = {
           },
           {
             "startDate": "2026-09-23",
-            "endDate": "2026-10-15",
-            "label": "10个交易日前",
-            "holdDays": 10,
-            "return": -15.4,
+            "endDate": "2026-10-19",
+            "label": "11个交易日前",
+            "holdDays": 11,
+            "return": -14.5,
             "items": [
               {
                 "theme": "信息技术",
                 "name": "科创创业人工智能ETF",
                 "code": "588410",
                 "weight": 40,
-                "return": -20.5,
+                "return": -19.9,
                 "rps20": 98.3,
                 "streak": 3
               },
@@ -1500,7 +1620,7 @@ window.COCKPIT_DATA = {
                 "name": "通信ETF",
                 "code": "515880",
                 "weight": 30,
-                "return": -25.7,
+                "return": -25.4,
                 "rps20": 97.8,
                 "streak": 6
               },
@@ -1509,7 +1629,7 @@ window.COCKPIT_DATA = {
                 "name": "纳指科技ETF",
                 "code": "159509",
                 "weight": 30,
-                "return": 1.8,
+                "return": 3.6,
                 "rps20": 100.0,
                 "streak": 4
               }
@@ -1600,9 +1720,9 @@ window.COCKPIT_DATA = {
           },
           {
             "startDate": "2026-09-22",
-            "endDate": "2026-10-15",
-            "label": "11个交易日前",
-            "holdDays": 11,
+            "endDate": "2026-10-19",
+            "label": "12个交易日前",
+            "holdDays": 12,
             "return": -14.9,
             "items": [
               {
@@ -1610,7 +1730,7 @@ window.COCKPIT_DATA = {
                 "name": "科创创业人工智能ETF",
                 "code": "588410",
                 "weight": 40,
-                "return": -21.2,
+                "return": -20.6,
                 "rps20": 100.0,
                 "streak": 2
               },
@@ -1619,7 +1739,7 @@ window.COCKPIT_DATA = {
                 "name": "通信ETF",
                 "code": "515880",
                 "weight": 30,
-                "return": -26.3,
+                "return": -26.0,
                 "rps20": 98.3,
                 "streak": 5
               },
@@ -1628,7 +1748,7 @@ window.COCKPIT_DATA = {
                 "name": "能源化工ETF",
                 "code": "159981",
                 "weight": 30,
-                "return": 5.0,
+                "return": 3.8,
                 "rps20": 99.4,
                 "streak": 16
               }
@@ -1719,17 +1839,17 @@ window.COCKPIT_DATA = {
           },
           {
             "startDate": "2026-09-21",
-            "endDate": "2026-10-15",
-            "label": "12个交易日前",
-            "holdDays": 12,
-            "return": -11.6,
+            "endDate": "2026-10-19",
+            "label": "13个交易日前",
+            "holdDays": 13,
+            "return": -10.4,
             "items": [
               {
                 "theme": "通信",
                 "name": "通信ETF",
                 "code": "515880",
                 "weight": 40,
-                "return": -26.8,
+                "return": -26.5,
                 "rps20": 99.4,
                 "streak": 4
               },
@@ -1738,7 +1858,7 @@ window.COCKPIT_DATA = {
                 "name": "军工龙头ETF",
                 "code": "512710",
                 "weight": 30,
-                "return": -7.6,
+                "return": -2.6,
                 "rps20": 95.5,
                 "streak": 4
               },
@@ -1747,7 +1867,7 @@ window.COCKPIT_DATA = {
                 "name": "能源化工ETF",
                 "code": "159981",
                 "weight": 30,
-                "return": 4.7,
+                "return": 3.5,
                 "rps20": 100.0,
                 "streak": 15
               }
@@ -1838,17 +1958,17 @@ window.COCKPIT_DATA = {
           },
           {
             "startDate": "2026-09-18",
-            "endDate": "2026-10-15",
-            "label": "13个交易日前",
-            "holdDays": 13,
-            "return": -8.7,
+            "endDate": "2026-10-19",
+            "label": "14个交易日前",
+            "holdDays": 14,
+            "return": -7.0,
             "items": [
               {
                 "theme": "军工",
                 "name": "军工龙头ETF",
                 "code": "512710",
                 "weight": 40,
-                "return": -6.1,
+                "return": -1.1,
                 "rps20": 98.3,
                 "streak": 3
               },
@@ -1857,7 +1977,7 @@ window.COCKPIT_DATA = {
                 "name": "通信ETF",
                 "code": "515880",
                 "weight": 30,
-                "return": -26.0,
+                "return": -25.7,
                 "rps20": 94.9,
                 "streak": 3
               },
@@ -1866,7 +1986,7 @@ window.COCKPIT_DATA = {
                 "name": "能源化工ETF",
                 "code": "159981",
                 "weight": 30,
-                "return": 5.1,
+                "return": 3.8,
                 "rps20": 100.0,
                 "streak": 14
               }
@@ -1957,17 +2077,17 @@ window.COCKPIT_DATA = {
           },
           {
             "startDate": "2026-09-17",
-            "endDate": "2026-10-15",
-            "label": "14个交易日前",
-            "holdDays": 14,
-            "return": -8.2,
+            "endDate": "2026-10-19",
+            "label": "15个交易日前",
+            "holdDays": 15,
+            "return": -6.5,
             "items": [
               {
                 "theme": "军工",
                 "name": "军工龙头ETF",
                 "code": "512710",
                 "weight": 40,
-                "return": -5.1,
+                "return": 0.0,
                 "rps20": 97.8,
                 "streak": 2
               },
@@ -1976,7 +2096,7 @@ window.COCKPIT_DATA = {
                 "name": "能源化工ETF",
                 "code": "159981",
                 "weight": 30,
-                "return": 3.3,
+                "return": 2.1,
                 "rps20": 100.0,
                 "streak": 13
               },
@@ -1985,7 +2105,7 @@ window.COCKPIT_DATA = {
                 "name": "通信ETF",
                 "code": "515880",
                 "weight": 30,
-                "return": -24.1,
+                "return": -23.8,
                 "rps20": 94.9,
                 "streak": 2
               }
@@ -2076,17 +2196,17 @@ window.COCKPIT_DATA = {
           },
           {
             "startDate": "2026-09-16",
-            "endDate": "2026-10-15",
-            "label": "15个交易日前",
-            "holdDays": 15,
-            "return": -9.3,
+            "endDate": "2026-10-19",
+            "label": "16个交易日前",
+            "holdDays": 16,
+            "return": -7.6,
             "items": [
               {
                 "theme": "军工",
                 "name": "军工龙头ETF",
                 "code": "512710",
                 "weight": 40,
-                "return": -5.8,
+                "return": -0.8,
                 "rps20": 97.2,
                 "streak": 1
               },
@@ -2095,7 +2215,7 @@ window.COCKPIT_DATA = {
                 "name": "通信ETF",
                 "code": "515880",
                 "weight": 30,
-                "return": -23.9,
+                "return": -23.6,
                 "rps20": 97.8,
                 "streak": 1
               },
@@ -2104,7 +2224,7 @@ window.COCKPIT_DATA = {
                 "name": "能源化工ETF",
                 "code": "159981",
                 "weight": 30,
-                "return": 0.5,
+                "return": -0.7,
                 "rps20": 100.0,
                 "streak": 12
               }
@@ -2195,17 +2315,17 @@ window.COCKPIT_DATA = {
           },
           {
             "startDate": "2026-09-15",
-            "endDate": "2026-10-15",
-            "label": "16个交易日前",
-            "holdDays": 16,
-            "return": 0.3,
+            "endDate": "2026-10-19",
+            "label": "17个交易日前",
+            "holdDays": 17,
+            "return": -0.1,
             "items": [
               {
                 "theme": "非银金融",
                 "name": "港股通金融ETF",
                 "code": "513190",
                 "weight": 40,
-                "return": -1.4,
+                "return": -1.6,
                 "rps20": 98.9,
                 "streak": 8
               },
@@ -2214,7 +2334,7 @@ window.COCKPIT_DATA = {
                 "name": "港股央企红利ETF",
                 "code": "513910",
                 "weight": 30,
-                "return": 0.4,
+                "return": 0.6,
                 "rps20": 95.5,
                 "streak": 7
               },
@@ -2223,7 +2343,7 @@ window.COCKPIT_DATA = {
                 "name": "能源化工ETF",
                 "code": "159981",
                 "weight": 30,
-                "return": 2.5,
+                "return": 1.2,
                 "rps20": 100.0,
                 "streak": 11
               }
@@ -2314,17 +2434,17 @@ window.COCKPIT_DATA = {
           },
           {
             "startDate": "2026-09-14",
-            "endDate": "2026-10-15",
-            "label": "17个交易日前",
-            "holdDays": 17,
-            "return": 1.0,
+            "endDate": "2026-10-19",
+            "label": "18个交易日前",
+            "holdDays": 18,
+            "return": 1.1,
             "items": [
               {
                 "theme": "红利",
                 "name": "港股央企红利ETF",
                 "code": "513910",
                 "weight": 40,
-                "return": -0.4,
+                "return": -0.3,
                 "rps20": 94.4,
                 "streak": 6
               },
@@ -2333,7 +2453,7 @@ window.COCKPIT_DATA = {
                 "name": "能源化工ETF",
                 "code": "159981",
                 "weight": 30,
-                "return": 3.0,
+                "return": 1.7,
                 "rps20": 100.0,
                 "streak": 10
               },
@@ -2342,7 +2462,7 @@ window.COCKPIT_DATA = {
                 "name": "银行ETF",
                 "code": "512800",
                 "weight": 30,
-                "return": 0.8,
+                "return": 2.5,
                 "rps20": 98.9,
                 "streak": 6
               }
@@ -2433,17 +2553,17 @@ window.COCKPIT_DATA = {
           },
           {
             "startDate": "2026-09-11",
-            "endDate": "2026-10-15",
-            "label": "18个交易日前",
-            "holdDays": 18,
-            "return": 1.8,
+            "endDate": "2026-10-19",
+            "label": "19个交易日前",
+            "holdDays": 19,
+            "return": 1.5,
             "items": [
               {
                 "theme": "能源化工",
                 "name": "能源化工ETF",
                 "code": "159981",
                 "weight": 40,
-                "return": 4.1,
+                "return": 2.8,
                 "rps20": 100.0,
                 "streak": 9
               },
@@ -2452,7 +2572,7 @@ window.COCKPIT_DATA = {
                 "name": "银行AH优选ETF",
                 "code": "517900",
                 "weight": 30,
-                "return": 1.0,
+                "return": 1.6,
                 "rps20": 96.6,
                 "streak": 5
               },
@@ -2461,7 +2581,7 @@ window.COCKPIT_DATA = {
                 "name": "港股央企红利ETF",
                 "code": "513910",
                 "weight": 30,
-                "return": -0.5,
+                "return": -0.4,
                 "rps20": 96.1,
                 "streak": 5
               }
@@ -2552,17 +2672,17 @@ window.COCKPIT_DATA = {
           },
           {
             "startDate": "2026-09-10",
-            "endDate": "2026-10-15",
-            "label": "19个交易日前",
-            "holdDays": 19,
-            "return": -0.5,
+            "endDate": "2026-10-19",
+            "label": "20个交易日前",
+            "holdDays": 20,
+            "return": -0.8,
             "items": [
               {
                 "theme": "能源化工",
                 "name": "能源化工ETF",
                 "code": "159981",
                 "weight": 40,
-                "return": 3.5,
+                "return": 2.3,
                 "rps20": 100.0,
                 "streak": 8
               },
@@ -2571,7 +2691,7 @@ window.COCKPIT_DATA = {
                 "name": "银行AH优选ETF",
                 "code": "517900",
                 "weight": 30,
-                "return": 0.4,
+                "return": 1.0,
                 "rps20": 97.2,
                 "streak": 4
               },
@@ -2580,13 +2700,13 @@ window.COCKPIT_DATA = {
                 "name": "石油ETF",
                 "code": "561360",
                 "weight": 30,
-                "return": -6.8,
+                "return": -6.7,
                 "rps20": 96.1,
                 "streak": 3
               }
             ],
             "targetDays": 20,
-            "isPartial": true
+            "isPartial": false
           }
         ]
       },
@@ -49009,18 +49129,18 @@ window.COCKPIT_DATA = {
         "stats": [
           {
             "holdDays": 5,
-            "count": 13,
-            "avgReturn": -2.0,
-            "winRate": 15.4,
+            "count": 10,
+            "avgReturn": -2.7,
+            "winRate": 20.0,
             "best": 6.3,
             "worst": -8.0
           },
           {
             "holdDays": 10,
-            "count": 8,
-            "avgReturn": -6.1,
-            "winRate": 0.0,
-            "best": -0.3,
+            "count": 5,
+            "avgReturn": -7.5,
+            "winRate": 20.0,
+            "best": 3.5,
             "worst": -15.4
           },
           {
@@ -49040,27 +49160,27 @@ window.COCKPIT_DATA = {
         "stats": [
           {
             "holdDays": 5,
-            "count": 56,
-            "avgReturn": -1.0,
-            "winRate": 30.4,
+            "count": 54,
+            "avgReturn": -1.1,
+            "winRate": 27.8,
             "best": 6.3,
             "worst": -8.0
           },
           {
             "holdDays": 10,
-            "count": 51,
-            "avgReturn": -2.0,
-            "winRate": 33.3,
+            "count": 49,
+            "avgReturn": -1.9,
+            "winRate": 34.7,
             "best": 7.8,
             "worst": -15.4
           },
           {
             "holdDays": 20,
-            "count": 41,
-            "avgReturn": -1.5,
-            "winRate": 41.5,
+            "count": 39,
+            "avgReturn": -1.3,
+            "winRate": 41.0,
             "best": 6.7,
-            "worst": -18.7
+            "worst": -10.4
           }
         ]
       }
@@ -49070,23 +49190,23 @@ window.COCKPIT_DATA = {
         "signal": "建仓",
         "stats": [
           {
-            "count": 2773,
+            "count": 2779,
             "avgReturn": 0.6,
-            "winRate": 51.0,
+            "winRate": 50.8,
             "best": 23.7,
             "worst": -21.6,
             "holdDays": 5
           },
           {
-            "count": 2738,
+            "count": 2746,
             "avgReturn": 1.2,
-            "winRate": 52.7,
+            "winRate": 52.6,
             "best": 35.4,
             "worst": -25.7,
             "holdDays": 10
           },
           {
-            "count": 2650,
+            "count": 2661,
             "avgReturn": 2.7,
             "winRate": 55.8,
             "best": 77.0,
@@ -49099,15 +49219,15 @@ window.COCKPIT_DATA = {
         "signal": "持有",
         "stats": [
           {
-            "count": 1932,
+            "count": 1934,
             "avgReturn": 0.9,
-            "winRate": 54.6,
+            "winRate": 54.5,
             "best": 30.5,
             "worst": -25.9,
             "holdDays": 5
           },
           {
-            "count": 1933,
+            "count": 1934,
             "avgReturn": 1.9,
             "winRate": 56.0,
             "best": 51.3,
@@ -49128,15 +49248,15 @@ window.COCKPIT_DATA = {
         "signal": "观察",
         "stats": [
           {
-            "count": 3278,
+            "count": 3290,
             "avgReturn": 0.6,
-            "winRate": 52.7,
+            "winRate": 52.8,
             "best": 31.0,
             "worst": -22.1,
             "holdDays": 5
           },
           {
-            "count": 3232,
+            "count": 3243,
             "avgReturn": 1.5,
             "winRate": 53.7,
             "best": 38.5,
@@ -49144,9 +49264,9 @@ window.COCKPIT_DATA = {
             "holdDays": 10
           },
           {
-            "count": 3126,
+            "count": 3135,
             "avgReturn": 2.8,
-            "winRate": 57.7,
+            "winRate": 57.5,
             "best": 50.3,
             "worst": -33.3,
             "holdDays": 20
@@ -49161,20 +49281,20 @@ window.COCKPIT_DATA = {
         "theme": "纳指科技",
         "currentSignal": "持有",
         "currentRps20": 100.0,
-        "currentStreak": 14,
+        "currentStreak": 15,
         "stats": [
           {
-            "count": 40,
-            "avgReturn": 1.6,
-            "winRate": 65.0,
+            "count": 41,
+            "avgReturn": 1.4,
+            "winRate": 63.4,
             "best": 10.0,
             "worst": -6.1,
             "holdDays": 5
           },
           {
-            "count": 37,
+            "count": 38,
             "avgReturn": 2.0,
-            "winRate": 64.9,
+            "winRate": 65.8,
             "best": 11.4,
             "worst": -6.6,
             "holdDays": 10
@@ -49189,6 +49309,14 @@ window.COCKPIT_DATA = {
           }
         ],
         "recentSignals": [
+          {
+            "date": "2026-10-19",
+            "signal": "持有",
+            "rps20": 100.0,
+            "streak": 15,
+            "ret10": null,
+            "endDate": null
+          },
           {
             "date": "2026-10-15",
             "signal": "持有",
@@ -49220,242 +49348,82 @@ window.COCKPIT_DATA = {
             "streak": 11,
             "ret10": null,
             "endDate": null
-          },
-          {
-            "date": "2026-10-09",
-            "signal": "持有",
-            "rps20": 100.0,
-            "streak": 10,
-            "ret10": null,
-            "endDate": null
           }
         ]
       },
       {
-        "code": "159981",
-        "name": "能源化工ETF",
-        "theme": "能源化工",
+        "code": "513850",
+        "name": "美国50ETF",
+        "theme": "美国50",
         "currentSignal": "持有",
-        "currentRps20": 99.4,
-        "currentStreak": 27,
+        "currentRps20": 98.9,
+        "currentStreak": 10,
         "stats": [
           {
-            "count": 44,
-            "avgReturn": 1.9,
-            "winRate": 68.2,
-            "best": 15.4,
-            "worst": -8.6,
+            "count": 12,
+            "avgReturn": 0.5,
+            "winRate": 75.0,
+            "best": 3.5,
+            "worst": -3.0,
             "holdDays": 5
           },
           {
-            "count": 39,
-            "avgReturn": 2.1,
-            "winRate": 56.4,
-            "best": 14.7,
-            "worst": -7.9,
+            "count": 9,
+            "avgReturn": 2.4,
+            "winRate": 100.0,
+            "best": 5.0,
+            "worst": 0.2,
             "holdDays": 10
           },
           {
-            "count": 29,
-            "avgReturn": 2.8,
-            "winRate": 51.7,
-            "best": 19.0,
-            "worst": -6.7,
+            "count": 9,
+            "avgReturn": 3.4,
+            "winRate": 100.0,
+            "best": 5.6,
+            "worst": 1.3,
             "holdDays": 20
           }
         ],
         "recentSignals": [
           {
-            "date": "2026-10-15",
+            "date": "2026-10-19",
             "signal": "持有",
-            "rps20": 99.4,
-            "streak": 27,
+            "rps20": 98.9,
+            "streak": 10,
+            "ret10": null,
+            "endDate": null
+          },
+          {
+            "date": "2026-10-15",
+            "signal": "建仓",
+            "rps20": 96.6,
+            "streak": 9,
             "ret10": null,
             "endDate": null
           },
           {
             "date": "2026-10-14",
-            "signal": "持有",
-            "rps20": 99.4,
-            "streak": 26,
+            "signal": "建仓",
+            "rps20": 98.3,
+            "streak": 8,
             "ret10": null,
             "endDate": null
           },
           {
             "date": "2026-10-13",
-            "signal": "持有",
-            "rps20": 99.4,
-            "streak": 25,
+            "signal": "建仓",
+            "rps20": 98.3,
+            "streak": 7,
             "ret10": null,
             "endDate": null
           },
           {
             "date": "2026-10-12",
-            "signal": "持有",
-            "rps20": 99.4,
-            "streak": 24,
-            "ret10": null,
-            "endDate": null
-          },
-          {
-            "date": "2026-10-09",
-            "signal": "持有",
-            "rps20": 99.4,
-            "streak": 23,
-            "ret10": null,
-            "endDate": null
-          }
-        ]
-      },
-      {
-        "code": "515300",
-        "name": "300红利低波ETF",
-        "theme": "红利",
-        "currentSignal": "建仓",
-        "currentRps20": 98.3,
-        "currentStreak": 6,
-        "stats": [
-          {
-            "count": 12,
-            "avgReturn": 0.8,
-            "winRate": 75.0,
-            "best": 2.4,
-            "worst": -0.9,
-            "holdDays": 5
-          },
-          {
-            "count": 12,
-            "avgReturn": -0.3,
-            "winRate": 58.3,
-            "best": 1.5,
-            "worst": -2.4,
-            "holdDays": 10
-          },
-          {
-            "count": 12,
-            "avgReturn": 0.4,
-            "winRate": 50.0,
-            "best": 4.1,
-            "worst": -2.1,
-            "holdDays": 20
-          }
-        ],
-        "recentSignals": [
-          {
-            "date": "2026-10-15",
             "signal": "建仓",
             "rps20": 98.3,
             "streak": 6,
             "ret10": null,
             "endDate": null
-          },
-          {
-            "date": "2026-10-14",
-            "signal": "建仓",
-            "rps20": 97.8,
-            "streak": 5,
-            "ret10": null,
-            "endDate": null
-          },
-          {
-            "date": "2026-10-13",
-            "signal": "建仓",
-            "rps20": 96.1,
-            "streak": 4,
-            "ret10": null,
-            "endDate": null
-          },
-          {
-            "date": "2026-10-12",
-            "signal": "建仓",
-            "rps20": 95.5,
-            "streak": 3,
-            "ret10": null,
-            "endDate": null
-          },
-          {
-            "date": "2026-03-27",
-            "signal": "建仓",
-            "rps20": 92.7,
-            "streak": 7,
-            "ret10": -1.8,
-            "endDate": "2026-04-13"
-          }
-        ]
-      },
-      {
-        "code": "515450",
-        "name": "红利低波50ETF",
-        "theme": "红利",
-        "currentSignal": "建仓",
-        "currentRps20": 97.8,
-        "currentStreak": 4,
-        "stats": [
-          {
-            "count": 5,
-            "avgReturn": 0.7,
-            "winRate": 60.0,
-            "best": 1.8,
-            "worst": -0.6,
-            "holdDays": 5
-          },
-          {
-            "count": 5,
-            "avgReturn": 0.3,
-            "winRate": 60.0,
-            "best": 1.6,
-            "worst": -1.1,
-            "holdDays": 10
-          },
-          {
-            "count": 5,
-            "avgReturn": 2.4,
-            "winRate": 100.0,
-            "best": 3.0,
-            "worst": 1.6,
-            "holdDays": 20
-          }
-        ],
-        "recentSignals": [
-          {
-            "date": "2026-10-15",
-            "signal": "建仓",
-            "rps20": 97.8,
-            "streak": 4,
-            "ret10": null,
-            "endDate": null
-          },
-          {
-            "date": "2026-10-14",
-            "signal": "建仓",
-            "rps20": 96.6,
-            "streak": 3,
-            "ret10": null,
-            "endDate": null
-          },
-          {
-            "date": "2025-04-21",
-            "signal": "建仓",
-            "rps20": 95.7,
-            "streak": 5,
-            "ret10": 0.4,
-            "endDate": "2025-05-08"
-          },
-          {
-            "date": "2025-04-18",
-            "signal": "建仓",
-            "rps20": 96.3,
-            "streak": 4,
-            "ret10": -0.2,
-            "endDate": "2025-05-07"
-          },
-          {
-            "date": "2025-04-17",
-            "signal": "建仓",
-            "rps20": 95.7,
-            "streak": 3,
-            "ret10": -1.1,
-            "endDate": "2025-05-06"
           }
         ]
       },
@@ -49464,15 +49432,15 @@ window.COCKPIT_DATA = {
         "name": "纳指ETF",
         "theme": "纳指",
         "currentSignal": "持有",
-        "currentRps20": 97.2,
-        "currentStreak": 11,
+        "currentRps20": 97.8,
+        "currentStreak": 12,
         "stats": [
           {
-            "count": 23,
-            "avgReturn": 1.0,
-            "winRate": 73.9,
+            "count": 24,
+            "avgReturn": 0.8,
+            "winRate": 70.8,
             "best": 6.6,
-            "worst": -2.5,
+            "worst": -2.6,
             "holdDays": 5
           },
           {
@@ -49493,6 +49461,14 @@ window.COCKPIT_DATA = {
           }
         ],
         "recentSignals": [
+          {
+            "date": "2026-10-19",
+            "signal": "持有",
+            "rps20": 97.8,
+            "streak": 12,
+            "ret10": null,
+            "endDate": null
+          },
           {
             "date": "2026-10-15",
             "signal": "持有",
@@ -49524,77 +49500,129 @@ window.COCKPIT_DATA = {
             "streak": 8,
             "ret10": null,
             "endDate": null
-          },
-          {
-            "date": "2026-10-09",
-            "signal": "建仓",
-            "rps20": 98.9,
-            "streak": 7,
-            "ret10": null,
-            "endDate": null
           }
         ]
       },
       {
-        "code": "513850",
-        "name": "美国50ETF",
-        "theme": "美国50",
+        "code": "515450",
+        "name": "红利低波50ETF",
+        "theme": "红利",
         "currentSignal": "建仓",
-        "currentRps20": 96.6,
-        "currentStreak": 9,
+        "currentRps20": 97.2,
+        "currentStreak": 5,
         "stats": [
           {
-            "count": 11,
+            "count": 5,
             "avgReturn": 0.7,
-            "winRate": 81.8,
-            "best": 3.5,
-            "worst": -3.0,
+            "winRate": 60.0,
+            "best": 1.8,
+            "worst": -0.6,
             "holdDays": 5
           },
           {
-            "count": 9,
-            "avgReturn": 2.4,
-            "winRate": 100.0,
-            "best": 5.0,
-            "worst": 0.2,
+            "count": 5,
+            "avgReturn": 0.3,
+            "winRate": 60.0,
+            "best": 1.6,
+            "worst": -1.1,
             "holdDays": 10
           },
           {
-            "count": 9,
-            "avgReturn": 3.4,
+            "count": 5,
+            "avgReturn": 2.4,
             "winRate": 100.0,
-            "best": 5.6,
-            "worst": 1.3,
+            "best": 3.0,
+            "worst": 1.6,
             "holdDays": 20
           }
         ],
         "recentSignals": [
           {
+            "date": "2026-10-19",
+            "signal": "建仓",
+            "rps20": 97.2,
+            "streak": 5,
+            "ret10": null,
+            "endDate": null
+          },
+          {
             "date": "2026-10-15",
             "signal": "建仓",
-            "rps20": 96.6,
-            "streak": 9,
+            "rps20": 97.8,
+            "streak": 4,
             "ret10": null,
             "endDate": null
           },
           {
             "date": "2026-10-14",
             "signal": "建仓",
-            "rps20": 98.3,
-            "streak": 8,
+            "rps20": 96.6,
+            "streak": 3,
             "ret10": null,
             "endDate": null
           },
           {
-            "date": "2026-10-13",
+            "date": "2025-04-21",
             "signal": "建仓",
-            "rps20": 98.3,
+            "rps20": 95.7,
+            "streak": 5,
+            "ret10": 0.4,
+            "endDate": "2025-05-08"
+          },
+          {
+            "date": "2025-04-18",
+            "signal": "建仓",
+            "rps20": 96.3,
+            "streak": 4,
+            "ret10": -0.2,
+            "endDate": "2025-05-07"
+          }
+        ]
+      },
+      {
+        "code": "515300",
+        "name": "300红利低波ETF",
+        "theme": "红利",
+        "currentSignal": "建仓",
+        "currentRps20": 96.6,
+        "currentStreak": 7,
+        "stats": [
+          {
+            "count": 12,
+            "avgReturn": 0.8,
+            "winRate": 75.0,
+            "best": 2.4,
+            "worst": -0.9,
+            "holdDays": 5
+          },
+          {
+            "count": 12,
+            "avgReturn": -0.3,
+            "winRate": 58.3,
+            "best": 1.5,
+            "worst": -2.4,
+            "holdDays": 10
+          },
+          {
+            "count": 12,
+            "avgReturn": 0.4,
+            "winRate": 50.0,
+            "best": 4.1,
+            "worst": -2.1,
+            "holdDays": 20
+          }
+        ],
+        "recentSignals": [
+          {
+            "date": "2026-10-19",
+            "signal": "建仓",
+            "rps20": 96.6,
             "streak": 7,
             "ret10": null,
             "endDate": null
           },
           {
-            "date": "2026-10-12",
+            "date": "2026-10-15",
             "signal": "建仓",
             "rps20": 98.3,
             "streak": 6,
@@ -49602,10 +49630,26 @@ window.COCKPIT_DATA = {
             "endDate": null
           },
           {
-            "date": "2026-10-09",
+            "date": "2026-10-14",
             "signal": "建仓",
             "rps20": 97.8,
             "streak": 5,
+            "ret10": null,
+            "endDate": null
+          },
+          {
+            "date": "2026-10-13",
+            "signal": "建仓",
+            "rps20": 96.1,
+            "streak": 4,
+            "ret10": null,
+            "endDate": null
+          },
+          {
+            "date": "2026-10-12",
+            "signal": "建仓",
+            "rps20": 95.5,
+            "streak": 3,
             "ret10": null,
             "endDate": null
           }
@@ -49617,7 +49661,7 @@ window.COCKPIT_DATA = {
         "theme": "银行",
         "currentSignal": "建仓",
         "currentRps20": 96.1,
-        "currentStreak": 6,
+        "currentStreak": 7,
         "stats": [
           {
             "count": 26,
@@ -49636,15 +49680,23 @@ window.COCKPIT_DATA = {
             "holdDays": 10
           },
           {
-            "count": 18,
-            "avgReturn": -0.6,
-            "winRate": 38.9,
+            "count": 19,
+            "avgReturn": -0.4,
+            "winRate": 42.1,
             "best": 4.3,
             "worst": -4.4,
             "holdDays": 20
           }
         ],
         "recentSignals": [
+          {
+            "date": "2026-10-19",
+            "signal": "建仓",
+            "rps20": 96.1,
+            "streak": 7,
+            "ret10": null,
+            "endDate": null
+          },
           {
             "date": "2026-10-15",
             "signal": "建仓",
@@ -49676,11 +49728,47 @@ window.COCKPIT_DATA = {
             "streak": 3,
             "ret10": null,
             "endDate": null
+          }
+        ]
+      },
+      {
+        "code": "515100",
+        "name": "红利低波100ETF",
+        "theme": "红利",
+        "currentSignal": "建仓",
+        "currentRps20": 95.5,
+        "currentStreak": 3,
+        "stats": [
+          {
+            "count": 0,
+            "avgReturn": null,
+            "winRate": null,
+            "best": null,
+            "worst": null,
+            "holdDays": 5
           },
           {
-            "date": "2026-09-29",
+            "count": 0,
+            "avgReturn": null,
+            "winRate": null,
+            "best": null,
+            "worst": null,
+            "holdDays": 10
+          },
+          {
+            "count": 0,
+            "avgReturn": null,
+            "winRate": null,
+            "best": null,
+            "worst": null,
+            "holdDays": 20
+          }
+        ],
+        "recentSignals": [
+          {
+            "date": "2026-10-19",
             "signal": "建仓",
-            "rps20": 92.7,
+            "rps20": 95.5,
             "streak": 3,
             "ret10": null,
             "endDate": null
@@ -49688,76 +49776,76 @@ window.COCKPIT_DATA = {
         ]
       },
       {
-        "code": "517900",
-        "name": "银行AH优选ETF",
-        "theme": "银行",
-        "currentSignal": "建仓",
-        "currentRps20": 95.5,
-        "currentStreak": 6,
+        "code": "159981",
+        "name": "能源化工ETF",
+        "theme": "能源化工",
+        "currentSignal": "持有",
+        "currentRps20": 94.4,
+        "currentStreak": 28,
         "stats": [
           {
-            "count": 20,
-            "avgReturn": -0.8,
-            "winRate": 25.0,
-            "best": 3.1,
-            "worst": -4.4,
+            "count": 45,
+            "avgReturn": 1.7,
+            "winRate": 66.7,
+            "best": 15.4,
+            "worst": -8.6,
             "holdDays": 5
           },
           {
-            "count": 19,
-            "avgReturn": -1.5,
-            "winRate": 26.3,
-            "best": 2.9,
-            "worst": -7.2,
+            "count": 40,
+            "avgReturn": 2.1,
+            "winRate": 57.5,
+            "best": 14.7,
+            "worst": -7.9,
             "holdDays": 10
           },
           {
-            "count": 13,
-            "avgReturn": -0.4,
-            "winRate": 30.8,
-            "best": 6.9,
-            "worst": -3.4,
+            "count": 30,
+            "avgReturn": 2.8,
+            "winRate": 53.3,
+            "best": 19.0,
+            "worst": -6.7,
             "holdDays": 20
           }
         ],
         "recentSignals": [
           {
+            "date": "2026-10-19",
+            "signal": "持有",
+            "rps20": 94.4,
+            "streak": 28,
+            "ret10": null,
+            "endDate": null
+          },
+          {
             "date": "2026-10-15",
-            "signal": "建仓",
-            "rps20": 95.5,
-            "streak": 6,
+            "signal": "持有",
+            "rps20": 99.4,
+            "streak": 27,
             "ret10": null,
             "endDate": null
           },
           {
             "date": "2026-10-14",
-            "signal": "建仓",
-            "rps20": 94.4,
-            "streak": 5,
+            "signal": "持有",
+            "rps20": 99.4,
+            "streak": 26,
             "ret10": null,
             "endDate": null
           },
           {
             "date": "2026-10-13",
-            "signal": "建仓",
-            "rps20": 96.6,
-            "streak": 4,
+            "signal": "持有",
+            "rps20": 99.4,
+            "streak": 25,
             "ret10": null,
             "endDate": null
           },
           {
             "date": "2026-10-12",
-            "signal": "建仓",
-            "rps20": 92.7,
-            "streak": 3,
-            "ret10": null,
-            "endDate": null
-          },
-          {
-            "date": "2026-09-29",
-            "signal": "建仓",
-            "rps20": 93.3,
-            "streak": 3,
+            "signal": "持有",
+            "rps20": 99.4,
+            "streak": 24,
             "ret10": null,
             "endDate": null
           }
@@ -49768,8 +49856,8 @@ window.COCKPIT_DATA = {
         "name": "红利低波ETF",
         "theme": "红利",
         "currentSignal": "建仓",
-        "currentRps20": 93.3,
-        "currentStreak": 5,
+        "currentRps20": 93.8,
+        "currentStreak": 6,
         "stats": [
           {
             "count": 8,
@@ -49797,6 +49885,14 @@ window.COCKPIT_DATA = {
           }
         ],
         "recentSignals": [
+          {
+            "date": "2026-10-19",
+            "signal": "建仓",
+            "rps20": 93.8,
+            "streak": 6,
+            "ret10": null,
+            "endDate": null
+          },
           {
             "date": "2026-10-15",
             "signal": "建仓",
@@ -49828,55 +49924,55 @@ window.COCKPIT_DATA = {
             "streak": 4,
             "ret10": 0.0,
             "endDate": "2026-09-30"
-          },
-          {
-            "date": "2026-09-14",
-            "signal": "建仓",
-            "rps20": 94.9,
-            "streak": 3,
-            "ret10": -2.3,
-            "endDate": "2026-09-29"
           }
         ]
       },
       {
-        "code": "513500",
-        "name": "标普500ETF",
-        "theme": "标普500",
+        "code": "517900",
+        "name": "银行AH优选ETF",
+        "theme": "银行",
         "currentSignal": "建仓",
         "currentRps20": 91.0,
-        "currentStreak": 6,
+        "currentStreak": 7,
         "stats": [
           {
-            "count": 5,
-            "avgReturn": 0.3,
-            "winRate": 60.0,
-            "best": 2.9,
-            "worst": -2.8,
+            "count": 20,
+            "avgReturn": -0.8,
+            "winRate": 25.0,
+            "best": 3.1,
+            "worst": -4.4,
             "holdDays": 5
           },
           {
-            "count": 5,
-            "avgReturn": 1.8,
-            "winRate": 100.0,
-            "best": 4.1,
-            "worst": 0.0,
+            "count": 19,
+            "avgReturn": -1.5,
+            "winRate": 26.3,
+            "best": 2.9,
+            "worst": -7.2,
             "holdDays": 10
           },
           {
-            "count": 5,
-            "avgReturn": 2.4,
-            "winRate": 100.0,
-            "best": 4.8,
-            "worst": 0.1,
+            "count": 14,
+            "avgReturn": -0.3,
+            "winRate": 35.7,
+            "best": 6.9,
+            "worst": -3.4,
             "holdDays": 20
           }
         ],
         "recentSignals": [
           {
-            "date": "2026-10-15",
+            "date": "2026-10-19",
             "signal": "建仓",
             "rps20": 91.0,
+            "streak": 7,
+            "ret10": null,
+            "endDate": null
+          },
+          {
+            "date": "2026-10-15",
+            "signal": "建仓",
+            "rps20": 95.5,
             "streak": 6,
             "ret10": null,
             "endDate": null
@@ -49884,7 +49980,7 @@ window.COCKPIT_DATA = {
           {
             "date": "2026-10-14",
             "signal": "建仓",
-            "rps20": 95.5,
+            "rps20": 94.4,
             "streak": 5,
             "ret10": null,
             "endDate": null
@@ -49892,7 +49988,7 @@ window.COCKPIT_DATA = {
           {
             "date": "2026-10-13",
             "signal": "建仓",
-            "rps20": 93.8,
+            "rps20": 96.6,
             "streak": 4,
             "ret10": null,
             "endDate": null
@@ -49900,94 +49996,10 @@ window.COCKPIT_DATA = {
           {
             "date": "2026-10-12",
             "signal": "建仓",
-            "rps20": 93.3,
+            "rps20": 92.7,
             "streak": 3,
             "ret10": null,
             "endDate": null
-          },
-          {
-            "date": "2025-05-28",
-            "signal": "建仓",
-            "rps20": 95.2,
-            "streak": 5,
-            "ret10": 2.5,
-            "endDate": "2025-06-12"
-          }
-        ]
-      },
-      {
-        "code": "159625",
-        "name": "绿色电力ETF",
-        "theme": "绿色电力",
-        "currentSignal": "建仓",
-        "currentRps20": 90.4,
-        "currentStreak": 5,
-        "stats": [
-          {
-            "count": 30,
-            "avgReturn": -0.8,
-            "winRate": 53.3,
-            "best": 4.7,
-            "worst": -8.7,
-            "holdDays": 5
-          },
-          {
-            "count": 30,
-            "avgReturn": -1.6,
-            "winRate": 50.0,
-            "best": 3.1,
-            "worst": -9.9,
-            "holdDays": 10
-          },
-          {
-            "count": 28,
-            "avgReturn": -1.9,
-            "winRate": 42.9,
-            "best": 4.4,
-            "worst": -10.3,
-            "holdDays": 20
-          }
-        ],
-        "recentSignals": [
-          {
-            "date": "2026-10-15",
-            "signal": "建仓",
-            "rps20": 90.4,
-            "streak": 5,
-            "ret10": null,
-            "endDate": null
-          },
-          {
-            "date": "2026-10-14",
-            "signal": "建仓",
-            "rps20": 92.1,
-            "streak": 4,
-            "ret10": null,
-            "endDate": null
-          },
-          {
-            "date": "2026-10-13",
-            "signal": "建仓",
-            "rps20": 90.4,
-            "streak": 3,
-            "ret10": null,
-            "endDate": null
-          },
-          {
-            "date": "2026-09-18",
-            "signal": "建仓",
-            "rps20": 91.6,
-            "streak": 4,
-            "ret10": 1.2,
-            "endDate": "2026-10-12"
-          },
-          {
-            "date": "2026-09-17",
-            "signal": "建仓",
-            "rps20": 90.4,
-            "streak": 3,
-            "ret10": 1.2,
-            "endDate": "2026-10-09"
           }
         ]
       },
@@ -49996,8 +50008,8 @@ window.COCKPIT_DATA = {
         "name": "标普消费ETF",
         "theme": "消费",
         "currentSignal": "观察",
-        "currentRps20": 98.9,
-        "currentStreak": 1,
+        "currentRps20": 99.4,
+        "currentStreak": 2,
         "stats": [
           {
             "count": 2,
@@ -50052,199 +50064,12 @@ window.COCKPIT_DATA = {
         ]
       },
       {
-        "code": "515100",
-        "name": "红利低波100ETF",
-        "theme": "红利",
-        "currentSignal": "观察",
-        "currentRps20": 94.9,
-        "currentStreak": 2,
-        "stats": [
-          {
-            "count": 0,
-            "avgReturn": null,
-            "winRate": null,
-            "best": null,
-            "worst": null,
-            "holdDays": 5
-          },
-          {
-            "count": 0,
-            "avgReturn": null,
-            "winRate": null,
-            "best": null,
-            "worst": null,
-            "holdDays": 10
-          },
-          {
-            "count": 0,
-            "avgReturn": null,
-            "winRate": null,
-            "best": null,
-            "worst": null,
-            "holdDays": 20
-          }
-        ],
-        "recentSignals": []
-      },
-      {
-        "code": "512010",
-        "name": "医药ETF",
-        "theme": "医药",
-        "currentSignal": "观察",
-        "currentRps20": 94.4,
-        "currentStreak": 1,
-        "stats": [
-          {
-            "count": 7,
-            "avgReturn": -1.2,
-            "winRate": 0.0,
-            "best": -0.2,
-            "worst": -2.7,
-            "holdDays": 5
-          },
-          {
-            "count": 7,
-            "avgReturn": -1.2,
-            "winRate": 42.9,
-            "best": 2.7,
-            "worst": -5.0,
-            "holdDays": 10
-          },
-          {
-            "count": 7,
-            "avgReturn": 0.5,
-            "winRate": 57.1,
-            "best": 6.6,
-            "worst": -8.0,
-            "holdDays": 20
-          }
-        ],
-        "recentSignals": [
-          {
-            "date": "2026-08-13",
-            "signal": "建仓",
-            "rps20": 93.8,
-            "streak": 5,
-            "ret10": -3.7,
-            "endDate": "2026-08-27"
-          },
-          {
-            "date": "2026-08-12",
-            "signal": "建仓",
-            "rps20": 94.4,
-            "streak": 4,
-            "ret10": -4.2,
-            "endDate": "2026-08-26"
-          },
-          {
-            "date": "2026-08-11",
-            "signal": "建仓",
-            "rps20": 95.5,
-            "streak": 3,
-            "ret10": -5.0,
-            "endDate": "2026-08-25"
-          },
-          {
-            "date": "2026-07-23",
-            "signal": "建仓",
-            "rps20": 90.4,
-            "streak": 6,
-            "ret10": 0.5,
-            "endDate": "2026-08-06"
-          },
-          {
-            "date": "2026-07-22",
-            "signal": "建仓",
-            "rps20": 92.1,
-            "streak": 5,
-            "ret10": 2.7,
-            "endDate": "2026-08-05"
-          }
-        ]
-      },
-      {
-        "code": "159518",
-        "name": "标普油气ETF",
-        "theme": "能源化工",
-        "currentSignal": "观察",
-        "currentRps20": 93.8,
-        "currentStreak": 2,
-        "stats": [
-          {
-            "count": 70,
-            "avgReturn": 0.0,
-            "winRate": 55.7,
-            "best": 8.9,
-            "worst": -21.6,
-            "holdDays": 5
-          },
-          {
-            "count": 71,
-            "avgReturn": 0.3,
-            "winRate": 49.3,
-            "best": 13.7,
-            "worst": -15.9,
-            "holdDays": 10
-          },
-          {
-            "count": 65,
-            "avgReturn": 2.8,
-            "winRate": 56.9,
-            "best": 23.7,
-            "worst": -15.2,
-            "holdDays": 20
-          }
-        ],
-        "recentSignals": [
-          {
-            "date": "2026-09-17",
-            "signal": "持有",
-            "rps20": 98.9,
-            "streak": 12,
-            "ret10": -0.7,
-            "endDate": "2026-10-09"
-          },
-          {
-            "date": "2026-09-16",
-            "signal": "持有",
-            "rps20": 99.4,
-            "streak": 11,
-            "ret10": -2.7,
-            "endDate": "2026-10-08"
-          },
-          {
-            "date": "2026-09-15",
-            "signal": "持有",
-            "rps20": 99.4,
-            "streak": 10,
-            "ret10": -9.4,
-            "endDate": "2026-09-30"
-          },
-          {
-            "date": "2026-09-14",
-            "signal": "建仓",
-            "rps20": 99.4,
-            "streak": 9,
-            "ret10": -9.5,
-            "endDate": "2026-09-29"
-          },
-          {
-            "date": "2026-09-11",
-            "signal": "建仓",
-            "rps20": 98.9,
-            "streak": 8,
-            "ret10": -5.8,
-            "endDate": "2026-09-28"
-          }
-        ]
-      },
-      {
         "code": "560080",
         "name": "中药ETF",
         "theme": "医药",
         "currentSignal": "观察",
-        "currentRps20": 92.4,
-        "currentStreak": 1,
+        "currentRps20": 98.3,
+        "currentStreak": 2,
         "stats": [
           {
             "count": 4,
@@ -50311,8 +50136,8 @@ window.COCKPIT_DATA = {
         "name": "标普A股红利ETF",
         "theme": "红利",
         "currentSignal": "观察",
-        "currentRps20": 92.4,
-        "currentStreak": 1,
+        "currentRps20": 94.9,
+        "currentStreak": 2,
         "stats": [
           {
             "count": 3,
@@ -50367,471 +50192,12 @@ window.COCKPIT_DATA = {
         ]
       },
       {
-        "code": "510230",
-        "name": "金融ETF",
-        "theme": "非银金融",
-        "currentSignal": "观察",
-        "currentRps20": 91.6,
-        "currentStreak": 1,
-        "stats": [
-          {
-            "count": 0,
-            "avgReturn": null,
-            "winRate": null,
-            "best": null,
-            "worst": null,
-            "holdDays": 5
-          },
-          {
-            "count": 0,
-            "avgReturn": null,
-            "winRate": null,
-            "best": null,
-            "worst": null,
-            "holdDays": 10
-          },
-          {
-            "count": 0,
-            "avgReturn": null,
-            "winRate": null,
-            "best": null,
-            "worst": null,
-            "holdDays": 20
-          }
-        ],
-        "recentSignals": []
-      },
-      {
-        "code": "515170",
-        "name": "食品饮料ETF",
-        "theme": "食品饮料",
-        "currentSignal": "观察",
-        "currentRps20": 89.9,
-        "currentStreak": 0,
-        "stats": [
-          {
-            "count": 7,
-            "avgReturn": -1.0,
-            "winRate": 28.6,
-            "best": 0.3,
-            "worst": -3.9,
-            "holdDays": 5
-          },
-          {
-            "count": 7,
-            "avgReturn": -1.3,
-            "winRate": 28.6,
-            "best": 1.8,
-            "worst": -3.9,
-            "holdDays": 10
-          },
-          {
-            "count": 7,
-            "avgReturn": -1.4,
-            "winRate": 14.3,
-            "best": 0.9,
-            "worst": -4.8,
-            "holdDays": 20
-          }
-        ],
-        "recentSignals": [
-          {
-            "date": "2026-08-13",
-            "signal": "建仓",
-            "rps20": 94.9,
-            "streak": 4,
-            "ret10": -3.9,
-            "endDate": "2026-08-27"
-          },
-          {
-            "date": "2026-08-12",
-            "signal": "建仓",
-            "rps20": 93.3,
-            "streak": 3,
-            "ret10": -3.7,
-            "endDate": "2026-08-26"
-          },
-          {
-            "date": "2025-04-11",
-            "signal": "建仓",
-            "rps20": 93.2,
-            "streak": 5,
-            "ret10": -1.2,
-            "endDate": "2025-04-25"
-          },
-          {
-            "date": "2025-04-10",
-            "signal": "建仓",
-            "rps20": 94.4,
-            "streak": 4,
-            "ret10": -1.8,
-            "endDate": "2025-04-24"
-          },
-          {
-            "date": "2025-04-09",
-            "signal": "建仓",
-            "rps20": 93.8,
-            "streak": 3,
-            "ret10": -1.3,
-            "endDate": "2025-04-23"
-          }
-        ]
-      },
-      {
-        "code": "159655",
-        "name": "标普ETF",
-        "theme": "标普",
-        "currentSignal": "观察",
-        "currentRps20": 89.3,
-        "currentStreak": 0,
-        "stats": [
-          {
-            "count": 4,
-            "avgReturn": 1.0,
-            "winRate": 75.0,
-            "best": 3.0,
-            "worst": -0.6,
-            "holdDays": 5
-          },
-          {
-            "count": 4,
-            "avgReturn": 2.1,
-            "winRate": 100.0,
-            "best": 4.2,
-            "worst": 0.1,
-            "holdDays": 10
-          },
-          {
-            "count": 4,
-            "avgReturn": 2.9,
-            "winRate": 100.0,
-            "best": 4.9,
-            "worst": 0.2,
-            "holdDays": 20
-          }
-        ],
-        "recentSignals": [
-          {
-            "date": "2025-05-28",
-            "signal": "建仓",
-            "rps20": 90.3,
-            "streak": 5,
-            "ret10": 2.6,
-            "endDate": "2025-06-12"
-          },
-          {
-            "date": "2025-05-27",
-            "signal": "建仓",
-            "rps20": 93.3,
-            "streak": 4,
-            "ret10": 1.6,
-            "endDate": "2025-06-11"
-          },
-          {
-            "date": "2025-05-26",
-            "signal": "建仓",
-            "rps20": 95.2,
-            "streak": 3,
-            "ret10": 4.2,
-            "endDate": "2025-06-10"
-          },
-          {
-            "date": "2025-05-20",
-            "signal": "建仓",
-            "rps20": 92.7,
-            "streak": 3,
-            "ret10": 0.1,
-            "endDate": "2025-06-04"
-          }
-        ]
-      },
-      {
-        "code": "513920",
-        "name": "港股通央企红利ETF",
-        "theme": "红利",
-        "currentSignal": "回避",
-        "currentRps20": 88.8,
-        "currentStreak": 0,
-        "stats": [
-          {
-            "count": 3,
-            "avgReturn": 0.3,
-            "winRate": 33.3,
-            "best": 2.0,
-            "worst": -0.8,
-            "holdDays": 5
-          },
-          {
-            "count": 3,
-            "avgReturn": 1.6,
-            "winRate": 66.7,
-            "best": 4.9,
-            "worst": -0.9,
-            "holdDays": 10
-          },
-          {
-            "count": 1,
-            "avgReturn": 6.5,
-            "winRate": 100.0,
-            "best": 6.5,
-            "worst": 6.5,
-            "holdDays": 20
-          }
-        ],
-        "recentSignals": [
-          {
-            "date": "2026-09-15",
-            "signal": "建仓",
-            "rps20": 93.3,
-            "streak": 4,
-            "ret10": 0.8,
-            "endDate": "2026-09-30"
-          },
-          {
-            "date": "2026-09-14",
-            "signal": "建仓",
-            "rps20": 92.7,
-            "streak": 3,
-            "ret10": -0.9,
-            "endDate": "2026-09-29"
-          },
-          {
-            "date": "2025-05-28",
-            "signal": "建仓",
-            "rps20": 97.0,
-            "streak": 3,
-            "ret10": 4.9,
-            "endDate": "2025-06-12"
-          }
-        ]
-      },
-      {
-        "code": "159611",
-        "name": "电力ETF",
-        "theme": "电力",
-        "currentSignal": "回避",
-        "currentRps20": 88.2,
-        "currentStreak": 0,
-        "stats": [
-          {
-            "count": 26,
-            "avgReturn": -0.6,
-            "winRate": 57.7,
-            "best": 7.2,
-            "worst": -9.4,
-            "holdDays": 5
-          },
-          {
-            "count": 26,
-            "avgReturn": -2.1,
-            "winRate": 42.3,
-            "best": 1.9,
-            "worst": -10.0,
-            "holdDays": 10
-          },
-          {
-            "count": 26,
-            "avgReturn": -2.6,
-            "winRate": 34.6,
-            "best": 3.6,
-            "worst": -10.5,
-            "holdDays": 20
-          }
-        ],
-        "recentSignals": [
-          {
-            "date": "2026-03-30",
-            "signal": "持有",
-            "rps20": 93.8,
-            "streak": 20,
-            "ret10": -4.2,
-            "endDate": "2026-04-14"
-          },
-          {
-            "date": "2026-03-27",
-            "signal": "持有",
-            "rps20": 98.9,
-            "streak": 19,
-            "ret10": -7.8,
-            "endDate": "2026-04-13"
-          },
-          {
-            "date": "2026-03-26",
-            "signal": "持有",
-            "rps20": 98.9,
-            "streak": 18,
-            "ret10": -9.4,
-            "endDate": "2026-04-10"
-          },
-          {
-            "date": "2026-03-25",
-            "signal": "持有",
-            "rps20": 98.9,
-            "streak": 17,
-            "ret10": -10.0,
-            "endDate": "2026-04-09"
-          },
-          {
-            "date": "2026-03-24",
-            "signal": "持有",
-            "rps20": 98.9,
-            "streak": 16,
-            "ret10": -6.4,
-            "endDate": "2026-04-08"
-          }
-        ]
-      },
-      {
-        "code": "513910",
-        "name": "港股央企红利ETF",
-        "theme": "红利",
-        "currentSignal": "回避",
-        "currentRps20": 87.6,
-        "currentStreak": 0,
-        "stats": [
-          {
-            "count": 12,
-            "avgReturn": -0.1,
-            "winRate": 41.7,
-            "best": 2.5,
-            "worst": -2.1,
-            "holdDays": 5
-          },
-          {
-            "count": 12,
-            "avgReturn": 1.1,
-            "winRate": 41.7,
-            "best": 6.2,
-            "worst": -3.2,
-            "holdDays": 10
-          },
-          {
-            "count": 8,
-            "avgReturn": 3.2,
-            "winRate": 75.0,
-            "best": 7.0,
-            "worst": -2.8,
-            "holdDays": 20
-          }
-        ],
-        "recentSignals": [
-          {
-            "date": "2026-09-15",
-            "signal": "建仓",
-            "rps20": 95.5,
-            "streak": 7,
-            "ret10": -0.2,
-            "endDate": "2026-09-30"
-          },
-          {
-            "date": "2026-09-14",
-            "signal": "建仓",
-            "rps20": 94.4,
-            "streak": 6,
-            "ret10": -1.4,
-            "endDate": "2026-09-29"
-          },
-          {
-            "date": "2026-09-11",
-            "signal": "建仓",
-            "rps20": 96.1,
-            "streak": 5,
-            "ret10": -0.8,
-            "endDate": "2026-09-28"
-          },
-          {
-            "date": "2026-09-10",
-            "signal": "建仓",
-            "rps20": 95.5,
-            "streak": 4,
-            "ret10": -1.9,
-            "endDate": "2026-09-24"
-          },
-          {
-            "date": "2026-09-09",
-            "signal": "建仓",
-            "rps20": 94.4,
-            "streak": 3,
-            "ret10": -2.5,
-            "endDate": "2026-09-23"
-          }
-        ]
-      },
-      {
-        "code": "515650",
-        "name": "消费50ETF",
-        "theme": "消费",
-        "currentSignal": "回避",
-        "currentRps20": 87.1,
-        "currentStreak": 0,
-        "stats": [
-          {
-            "count": 4,
-            "avgReturn": -1.4,
-            "winRate": 25.0,
-            "best": 0.3,
-            "worst": -4.1,
-            "holdDays": 5
-          },
-          {
-            "count": 4,
-            "avgReturn": -2.6,
-            "winRate": 0.0,
-            "best": -1.0,
-            "worst": -4.1,
-            "holdDays": 10
-          },
-          {
-            "count": 4,
-            "avgReturn": -1.9,
-            "winRate": 0.0,
-            "best": 0.0,
-            "worst": -4.0,
-            "holdDays": 20
-          }
-        ],
-        "recentSignals": [
-          {
-            "date": "2026-08-04",
-            "signal": "建仓",
-            "rps20": 93.8,
-            "streak": 5,
-            "ret10": -1.7,
-            "endDate": "2026-08-18"
-          },
-          {
-            "date": "2026-08-03",
-            "signal": "建仓",
-            "rps20": 93.8,
-            "streak": 4,
-            "ret10": -4.1,
-            "endDate": "2026-08-17"
-          },
-          {
-            "date": "2026-07-30",
-            "signal": "建仓",
-            "rps20": 91.6,
-            "streak": 3,
-            "ret10": -3.6,
-            "endDate": "2026-08-13"
-          },
-          {
-            "date": "2025-03-26",
-            "signal": "建仓",
-            "rps20": 93.8,
-            "streak": 3,
-            "ret10": -1.0,
-            "endDate": "2025-04-10"
-          }
-        ]
-      },
-      {
         "code": "159930",
         "name": "能源ETF",
         "theme": "能源",
-        "currentSignal": "回避",
-        "currentRps20": 86.5,
-        "currentStreak": 0,
+        "currentSignal": "观察",
+        "currentRps20": 93.3,
+        "currentStreak": 1,
         "stats": [
           {
             "count": 39,
@@ -50902,183 +50268,12 @@ window.COCKPIT_DATA = {
         ]
       },
       {
-        "code": "159545",
-        "name": "恒生红利低波ETF",
-        "theme": "红利",
-        "currentSignal": "回避",
-        "currentRps20": 86.0,
-        "currentStreak": 0,
-        "stats": [
-          {
-            "count": 3,
-            "avgReturn": -1.4,
-            "winRate": 33.3,
-            "best": 1.0,
-            "worst": -2.7,
-            "holdDays": 5
-          },
-          {
-            "count": 3,
-            "avgReturn": -0.6,
-            "winRate": 33.3,
-            "best": 3.8,
-            "worst": -2.8,
-            "holdDays": 10
-          },
-          {
-            "count": 3,
-            "avgReturn": -0.0,
-            "winRate": 33.3,
-            "best": 6.5,
-            "worst": -4.8,
-            "holdDays": 20
-          }
-        ],
-        "recentSignals": [
-          {
-            "date": "2026-08-03",
-            "signal": "建仓",
-            "rps20": 92.1,
-            "streak": 3,
-            "ret10": -2.8,
-            "endDate": "2026-08-17"
-          },
-          {
-            "date": "2025-11-12",
-            "signal": "建仓",
-            "rps20": 92.0,
-            "streak": 3,
-            "ret10": -2.8,
-            "endDate": "2025-11-26"
-          },
-          {
-            "date": "2025-05-28",
-            "signal": "建仓",
-            "rps20": 96.4,
-            "streak": 3,
-            "ret10": 3.8,
-            "endDate": "2025-06-12"
-          }
-        ]
-      },
-      {
-        "code": "563960",
-        "name": "兴全沪深300质量ETF",
-        "theme": "兴全沪深300质量",
-        "currentSignal": "回避",
-        "currentRps20": 85.4,
-        "currentStreak": 0,
-        "stats": [
-          {
-            "count": 0,
-            "avgReturn": null,
-            "winRate": null,
-            "best": null,
-            "worst": null,
-            "holdDays": 5
-          },
-          {
-            "count": 0,
-            "avgReturn": null,
-            "winRate": null,
-            "best": null,
-            "worst": null,
-            "holdDays": 10
-          },
-          {
-            "count": 0,
-            "avgReturn": null,
-            "winRate": null,
-            "best": null,
-            "worst": null,
-            "holdDays": 20
-          }
-        ],
-        "recentSignals": []
-      },
-      {
-        "code": "513190",
-        "name": "港股通金融ETF",
-        "theme": "非银金融",
-        "currentSignal": "回避",
-        "currentRps20": 84.8,
-        "currentStreak": 0,
-        "stats": [
-          {
-            "count": 23,
-            "avgReturn": -1.6,
-            "winRate": 17.4,
-            "best": 0.6,
-            "worst": -4.8,
-            "holdDays": 5
-          },
-          {
-            "count": 23,
-            "avgReturn": -1.4,
-            "winRate": 30.4,
-            "best": 2.3,
-            "worst": -5.9,
-            "holdDays": 10
-          },
-          {
-            "count": 17,
-            "avgReturn": 0.7,
-            "winRate": 52.9,
-            "best": 6.0,
-            "worst": -5.7,
-            "holdDays": 20
-          }
-        ],
-        "recentSignals": [
-          {
-            "date": "2026-09-17",
-            "signal": "持有",
-            "rps20": 95.5,
-            "streak": 10,
-            "ret10": -1.0,
-            "endDate": "2026-10-09"
-          },
-          {
-            "date": "2026-09-16",
-            "signal": "建仓",
-            "rps20": 95.5,
-            "streak": 9,
-            "ret10": -1.2,
-            "endDate": "2026-10-08"
-          },
-          {
-            "date": "2026-09-15",
-            "signal": "建仓",
-            "rps20": 98.9,
-            "streak": 8,
-            "ret10": 0.1,
-            "endDate": "2026-09-30"
-          },
-          {
-            "date": "2026-09-14",
-            "signal": "建仓",
-            "rps20": 97.8,
-            "streak": 7,
-            "ret10": -2.3,
-            "endDate": "2026-09-29"
-          },
-          {
-            "date": "2026-09-11",
-            "signal": "建仓",
-            "rps20": 97.8,
-            "streak": 6,
-            "ret10": -1.6,
-            "endDate": "2026-09-28"
-          }
-        ]
-      },
-      {
         "code": "512690",
         "name": "酒ETF",
         "theme": "酒",
-        "currentSignal": "回避",
-        "currentRps20": 84.3,
-        "currentStreak": 0,
+        "currentSignal": "观察",
+        "currentRps20": 92.7,
+        "currentStreak": 1,
         "stats": [
           {
             "count": 12,
@@ -51149,631 +50344,12 @@ window.COCKPIT_DATA = {
         ]
       },
       {
-        "code": "159366",
-        "name": "港股医疗ETF",
-        "theme": "医药",
-        "currentSignal": "回避",
-        "currentRps20": 83.7,
-        "currentStreak": 0,
-        "stats": [
-          {
-            "count": 45,
-            "avgReturn": -0.7,
-            "winRate": 35.6,
-            "best": 9.3,
-            "worst": -9.2,
-            "holdDays": 5
-          },
-          {
-            "count": 44,
-            "avgReturn": 1.1,
-            "winRate": 45.5,
-            "best": 11.9,
-            "worst": -7.0,
-            "holdDays": 10
-          },
-          {
-            "count": 44,
-            "avgReturn": 5.0,
-            "winRate": 70.5,
-            "best": 18.7,
-            "worst": -3.7,
-            "holdDays": 20
-          }
-        ],
-        "recentSignals": [
-          {
-            "date": "2026-10-12",
-            "signal": "建仓",
-            "rps20": 97.2,
-            "streak": 6,
-            "ret10": null,
-            "endDate": null
-          },
-          {
-            "date": "2026-10-09",
-            "signal": "建仓",
-            "rps20": 96.1,
-            "streak": 5,
-            "ret10": null,
-            "endDate": null
-          },
-          {
-            "date": "2026-10-08",
-            "signal": "建仓",
-            "rps20": 96.6,
-            "streak": 4,
-            "ret10": null,
-            "endDate": null
-          },
-          {
-            "date": "2026-09-30",
-            "signal": "建仓",
-            "rps20": 98.9,
-            "streak": 3,
-            "ret10": null,
-            "endDate": null
-          },
-          {
-            "date": "2026-09-04",
-            "signal": "持有",
-            "rps20": 92.7,
-            "streak": 20,
-            "ret10": 2.1,
-            "endDate": "2026-09-18"
-          }
-        ]
-      },
-      {
-        "code": "513630",
-        "name": "港股红利指数ETF",
-        "theme": "红利",
-        "currentSignal": "回避",
-        "currentRps20": 83.1,
-        "currentStreak": 0,
-        "stats": [
-          {
-            "count": 7,
-            "avgReturn": -0.2,
-            "winRate": 57.1,
-            "best": 1.5,
-            "worst": -2.8,
-            "holdDays": 5
-          },
-          {
-            "count": 7,
-            "avgReturn": -1.8,
-            "winRate": 0.0,
-            "best": -0.5,
-            "worst": -4.0,
-            "holdDays": 10
-          },
-          {
-            "count": 7,
-            "avgReturn": -1.9,
-            "winRate": 0.0,
-            "best": -1.1,
-            "worst": -3.6,
-            "holdDays": 20
-          }
-        ],
-        "recentSignals": [
-          {
-            "date": "2026-08-03",
-            "signal": "建仓",
-            "rps20": 91.0,
-            "streak": 3,
-            "ret10": -1.8,
-            "endDate": "2026-08-17"
-          },
-          {
-            "date": "2025-12-02",
-            "signal": "建仓",
-            "rps20": 92.0,
-            "streak": 8,
-            "ret10": -4.0,
-            "endDate": "2025-12-16"
-          },
-          {
-            "date": "2025-12-01",
-            "signal": "建仓",
-            "rps20": 93.7,
-            "streak": 7,
-            "ret10": -1.6,
-            "endDate": "2025-12-15"
-          },
-          {
-            "date": "2025-11-28",
-            "signal": "建仓",
-            "rps20": 98.3,
-            "streak": 6,
-            "ret10": -0.5,
-            "endDate": "2025-12-12"
-          },
-          {
-            "date": "2025-11-27",
-            "signal": "建仓",
-            "rps20": 90.8,
-            "streak": 5,
-            "ret10": -1.8,
-            "endDate": "2025-12-11"
-          }
-        ]
-      },
-      {
-        "code": "512170",
-        "name": "医疗ETF",
-        "theme": "医药",
-        "currentSignal": "回避",
-        "currentRps20": 82.6,
-        "currentStreak": 0,
-        "stats": [
-          {
-            "count": 4,
-            "avgReturn": -0.0,
-            "winRate": 50.0,
-            "best": 1.1,
-            "worst": -1.7,
-            "holdDays": 5
-          },
-          {
-            "count": 4,
-            "avgReturn": -2.3,
-            "winRate": 0.0,
-            "best": -1.1,
-            "worst": -4.0,
-            "holdDays": 10
-          },
-          {
-            "count": 4,
-            "avgReturn": -4.3,
-            "winRate": 0.0,
-            "best": -2.8,
-            "worst": -6.2,
-            "holdDays": 20
-          }
-        ],
-        "recentSignals": [
-          {
-            "date": "2026-08-13",
-            "signal": "建仓",
-            "rps20": 98.3,
-            "streak": 6,
-            "ret10": -2.5,
-            "endDate": "2026-08-27"
-          },
-          {
-            "date": "2026-08-12",
-            "signal": "建仓",
-            "rps20": 95.5,
-            "streak": 5,
-            "ret10": -1.4,
-            "endDate": "2026-08-26"
-          },
-          {
-            "date": "2026-08-11",
-            "signal": "建仓",
-            "rps20": 96.1,
-            "streak": 4,
-            "ret10": -1.1,
-            "endDate": "2026-08-25"
-          },
-          {
-            "date": "2026-08-10",
-            "signal": "建仓",
-            "rps20": 96.1,
-            "streak": 3,
-            "ret10": -4.0,
-            "endDate": "2026-08-24"
-          }
-        ]
-      },
-      {
-        "code": "516820",
-        "name": "医疗创新ETF",
-        "theme": "医药",
-        "currentSignal": "回避",
-        "currentRps20": 82.0,
-        "currentStreak": 0,
-        "stats": [
-          {
-            "count": 3,
-            "avgReturn": -1.6,
-            "winRate": 0.0,
-            "best": -0.6,
-            "worst": -2.6,
-            "holdDays": 5
-          },
-          {
-            "count": 3,
-            "avgReturn": 0.3,
-            "winRate": 66.7,
-            "best": 1.1,
-            "worst": -1.1,
-            "holdDays": 10
-          },
-          {
-            "count": 3,
-            "avgReturn": 4.6,
-            "winRate": 100.0,
-            "best": 5.2,
-            "worst": 3.7,
-            "holdDays": 20
-          }
-        ],
-        "recentSignals": [
-          {
-            "date": "2026-07-22",
-            "signal": "建仓",
-            "rps20": 91.6,
-            "streak": 5,
-            "ret10": 1.1,
-            "endDate": "2026-08-05"
-          },
-          {
-            "date": "2026-07-21",
-            "signal": "建仓",
-            "rps20": 91.6,
-            "streak": 4,
-            "ret10": 0.9,
-            "endDate": "2026-08-04"
-          },
-          {
-            "date": "2026-07-20",
-            "signal": "建仓",
-            "rps20": 91.6,
-            "streak": 3,
-            "ret10": -1.1,
-            "endDate": "2026-08-03"
-          }
-        ]
-      },
-      {
-        "code": "510880",
-        "name": "红利ETF",
-        "theme": "红利",
-        "currentSignal": "回避",
-        "currentRps20": 81.5,
-        "currentStreak": 0,
-        "stats": [
-          {
-            "count": 17,
-            "avgReturn": 0.3,
-            "winRate": 47.1,
-            "best": 2.7,
-            "worst": -2.3,
-            "holdDays": 5
-          },
-          {
-            "count": 17,
-            "avgReturn": -1.0,
-            "winRate": 23.5,
-            "best": 1.5,
-            "worst": -2.7,
-            "holdDays": 10
-          },
-          {
-            "count": 14,
-            "avgReturn": -0.5,
-            "winRate": 42.9,
-            "best": 2.4,
-            "worst": -3.2,
-            "holdDays": 20
-          }
-        ],
-        "recentSignals": [
-          {
-            "date": "2026-09-15",
-            "signal": "建仓",
-            "rps20": 91.6,
-            "streak": 5,
-            "ret10": -0.4,
-            "endDate": "2026-09-30"
-          },
-          {
-            "date": "2026-09-14",
-            "signal": "建仓",
-            "rps20": 93.3,
-            "streak": 4,
-            "ret10": -2.3,
-            "endDate": "2026-09-29"
-          },
-          {
-            "date": "2026-09-11",
-            "signal": "建仓",
-            "rps20": 93.8,
-            "streak": 3,
-            "ret10": -2.3,
-            "endDate": "2026-09-28"
-          },
-          {
-            "date": "2026-03-26",
-            "signal": "建仓",
-            "rps20": 92.7,
-            "streak": 8,
-            "ret10": -1.6,
-            "endDate": "2026-04-10"
-          },
-          {
-            "date": "2026-03-25",
-            "signal": "建仓",
-            "rps20": 93.3,
-            "streak": 7,
-            "ret10": -1.4,
-            "endDate": "2026-04-09"
-          }
-        ]
-      },
-      {
-        "code": "513520",
-        "name": "日经ETF",
-        "theme": "日经",
-        "currentSignal": "回避",
-        "currentRps20": 80.9,
-        "currentStreak": 0,
-        "stats": [
-          {
-            "count": 28,
-            "avgReturn": -1.4,
-            "winRate": 39.3,
-            "best": 5.4,
-            "worst": -7.9,
-            "holdDays": 5
-          },
-          {
-            "count": 26,
-            "avgReturn": -4.0,
-            "winRate": 23.1,
-            "best": 3.2,
-            "worst": -10.4,
-            "holdDays": 10
-          },
-          {
-            "count": 25,
-            "avgReturn": -7.5,
-            "winRate": 16.0,
-            "best": 2.7,
-            "worst": -17.2,
-            "holdDays": 20
-          }
-        ],
-        "recentSignals": [
-          {
-            "date": "2026-10-14",
-            "signal": "建仓",
-            "rps20": 92.7,
-            "streak": 8,
-            "ret10": null,
-            "endDate": null
-          },
-          {
-            "date": "2026-10-13",
-            "signal": "建仓",
-            "rps20": 91.0,
-            "streak": 7,
-            "ret10": null,
-            "endDate": null
-          },
-          {
-            "date": "2026-10-12",
-            "signal": "建仓",
-            "rps20": 97.8,
-            "streak": 6,
-            "ret10": null,
-            "endDate": null
-          },
-          {
-            "date": "2026-10-09",
-            "signal": "建仓",
-            "rps20": 98.3,
-            "streak": 5,
-            "ret10": null,
-            "endDate": null
-          },
-          {
-            "date": "2026-10-08",
-            "signal": "建仓",
-            "rps20": 98.9,
-            "streak": 4,
-            "ret10": null,
-            "endDate": null
-          }
-        ]
-      },
-      {
-        "code": "513050",
-        "name": "中概互联网ETF",
-        "theme": "中概互联网",
-        "currentSignal": "回避",
-        "currentRps20": 80.3,
-        "currentStreak": 0,
-        "stats": [
-          {
-            "count": 33,
-            "avgReturn": 0.6,
-            "winRate": 45.5,
-            "best": 9.9,
-            "worst": -7.4,
-            "holdDays": 5
-          },
-          {
-            "count": 33,
-            "avgReturn": 0.0,
-            "winRate": 39.4,
-            "best": 11.6,
-            "worst": -6.3,
-            "holdDays": 10
-          },
-          {
-            "count": 33,
-            "avgReturn": -4.3,
-            "winRate": 30.3,
-            "best": 9.1,
-            "worst": -22.7,
-            "holdDays": 20
-          }
-        ],
-        "recentSignals": [
-          {
-            "date": "2026-08-06",
-            "signal": "建仓",
-            "rps20": 98.9,
-            "streak": 9,
-            "ret10": -2.6,
-            "endDate": "2026-08-20"
-          },
-          {
-            "date": "2026-08-05",
-            "signal": "建仓",
-            "rps20": 100.0,
-            "streak": 8,
-            "ret10": -6.3,
-            "endDate": "2026-08-19"
-          },
-          {
-            "date": "2026-08-04",
-            "signal": "建仓",
-            "rps20": 100.0,
-            "streak": 7,
-            "ret10": -5.3,
-            "endDate": "2026-08-18"
-          },
-          {
-            "date": "2026-08-03",
-            "signal": "建仓",
-            "rps20": 100.0,
-            "streak": 6,
-            "ret10": -5.6,
-            "endDate": "2026-08-17"
-          },
-          {
-            "date": "2026-07-30",
-            "signal": "建仓",
-            "rps20": 98.9,
-            "streak": 5,
-            "ret10": -2.1,
-            "endDate": "2026-08-13"
-          }
-        ]
-      },
-      {
-        "code": "159883",
-        "name": "医疗器械ETF",
-        "theme": "医药",
-        "currentSignal": "回避",
-        "currentRps20": 79.8,
-        "currentStreak": 0,
-        "stats": [
-          {
-            "count": 0,
-            "avgReturn": null,
-            "winRate": null,
-            "best": null,
-            "worst": null,
-            "holdDays": 5
-          },
-          {
-            "count": 0,
-            "avgReturn": null,
-            "winRate": null,
-            "best": null,
-            "worst": null,
-            "holdDays": 10
-          },
-          {
-            "count": 0,
-            "avgReturn": null,
-            "winRate": null,
-            "best": null,
-            "worst": null,
-            "holdDays": 20
-          }
-        ],
-        "recentSignals": []
-      },
-      {
-        "code": "159928",
-        "name": "消费ETF",
-        "theme": "消费",
-        "currentSignal": "回避",
-        "currentRps20": 79.2,
-        "currentStreak": 0,
-        "stats": [
-          {
-            "count": 5,
-            "avgReturn": -0.8,
-            "winRate": 0.0,
-            "best": -0.2,
-            "worst": -1.5,
-            "holdDays": 5
-          },
-          {
-            "count": 5,
-            "avgReturn": -1.5,
-            "winRate": 0.0,
-            "best": -0.5,
-            "worst": -2.4,
-            "holdDays": 10
-          },
-          {
-            "count": 5,
-            "avgReturn": -1.2,
-            "winRate": 20.0,
-            "best": 0.2,
-            "worst": -2.4,
-            "holdDays": 20
-          }
-        ],
-        "recentSignals": [
-          {
-            "date": "2025-04-22",
-            "signal": "建仓",
-            "rps20": 90.2,
-            "streak": 4,
-            "ret10": -0.6,
-            "endDate": "2025-05-09"
-          },
-          {
-            "date": "2025-04-21",
-            "signal": "建仓",
-            "rps20": 95.1,
-            "streak": 3,
-            "ret10": -0.5,
-            "endDate": "2025-05-08"
-          },
-          {
-            "date": "2025-04-11",
-            "signal": "建仓",
-            "rps20": 94.4,
-            "streak": 5,
-            "ret10": -1.6,
-            "endDate": "2025-04-25"
-          },
-          {
-            "date": "2025-04-10",
-            "signal": "建仓",
-            "rps20": 95.7,
-            "streak": 4,
-            "ret10": -2.4,
-            "endDate": "2025-04-24"
-          },
-          {
-            "date": "2025-04-09",
-            "signal": "建仓",
-            "rps20": 94.4,
-            "streak": 3,
-            "ret10": -2.4,
-            "endDate": "2025-04-23"
-          }
-        ]
-      },
-      {
         "code": "513970",
         "name": "恒生消费ETF",
         "theme": "消费",
-        "currentSignal": "回避",
-        "currentRps20": 78.7,
-        "currentStreak": 0,
+        "currentSignal": "观察",
+        "currentRps20": 92.1,
+        "currentStreak": 1,
         "stats": [
           {
             "count": 9,
@@ -51844,794 +50420,298 @@ window.COCKPIT_DATA = {
         ]
       },
       {
-        "code": "510900",
-        "name": "恒生中国企业ETF",
-        "theme": "恒生中国企业",
-        "currentSignal": "回避",
-        "currentRps20": 78.1,
-        "currentStreak": 0,
-        "stats": [
-          {
-            "count": 5,
-            "avgReturn": -1.4,
-            "winRate": 0.0,
-            "best": -0.6,
-            "worst": -2.4,
-            "holdDays": 5
-          },
-          {
-            "count": 5,
-            "avgReturn": -1.5,
-            "winRate": 20.0,
-            "best": 1.0,
-            "worst": -3.3,
-            "holdDays": 10
-          },
-          {
-            "count": 5,
-            "avgReturn": -2.0,
-            "winRate": 0.0,
-            "best": -1.3,
-            "worst": -2.5,
-            "holdDays": 20
-          }
-        ],
-        "recentSignals": [
-          {
-            "date": "2026-08-06",
-            "signal": "建仓",
-            "rps20": 94.9,
-            "streak": 7,
-            "ret10": 1.0,
-            "endDate": "2026-08-20"
-          },
-          {
-            "date": "2026-08-05",
-            "signal": "建仓",
-            "rps20": 95.5,
-            "streak": 6,
-            "ret10": -1.5,
-            "endDate": "2026-08-19"
-          },
-          {
-            "date": "2026-08-04",
-            "signal": "建仓",
-            "rps20": 96.6,
-            "streak": 5,
-            "ret10": -1.3,
-            "endDate": "2026-08-18"
-          },
-          {
-            "date": "2026-08-03",
-            "signal": "建仓",
-            "rps20": 96.6,
-            "streak": 4,
-            "ret10": -2.3,
-            "endDate": "2026-08-17"
-          },
-          {
-            "date": "2026-07-30",
-            "signal": "建仓",
-            "rps20": 97.2,
-            "streak": 3,
-            "ret10": -3.3,
-            "endDate": "2026-08-13"
-          }
-        ]
-      },
-      {
-        "code": "513400",
-        "name": "道琼斯ETF",
-        "theme": "道琼斯",
-        "currentSignal": "回避",
-        "currentRps20": 77.5,
-        "currentStreak": 0,
-        "stats": [
-          {
-            "count": 0,
-            "avgReturn": null,
-            "winRate": null,
-            "best": null,
-            "worst": null,
-            "holdDays": 5
-          },
-          {
-            "count": 0,
-            "avgReturn": null,
-            "winRate": null,
-            "best": null,
-            "worst": null,
-            "holdDays": 10
-          },
-          {
-            "count": 0,
-            "avgReturn": null,
-            "winRate": null,
-            "best": null,
-            "worst": null,
-            "holdDays": 20
-          }
-        ],
-        "recentSignals": []
-      },
-      {
-        "code": "159992",
-        "name": "创新药ETF",
+        "code": "512010",
+        "name": "医药ETF",
         "theme": "医药",
-        "currentSignal": "回避",
-        "currentRps20": 77.0,
-        "currentStreak": 0,
+        "currentSignal": "观察",
+        "currentRps20": 91.6,
+        "currentStreak": 2,
         "stats": [
           {
-            "count": 28,
-            "avgReturn": -0.8,
-            "winRate": 35.7,
-            "best": 12.3,
-            "worst": -7.4,
+            "count": 7,
+            "avgReturn": -1.2,
+            "winRate": 0.0,
+            "best": -0.2,
+            "worst": -2.7,
             "holdDays": 5
           },
           {
-            "count": 27,
-            "avgReturn": -2.2,
-            "winRate": 11.1,
-            "best": 8.4,
-            "worst": -7.0,
+            "count": 7,
+            "avgReturn": -1.2,
+            "winRate": 42.9,
+            "best": 2.7,
+            "worst": -5.0,
             "holdDays": 10
           },
           {
-            "count": 27,
+            "count": 7,
             "avgReturn": 0.5,
-            "winRate": 48.1,
-            "best": 6.7,
-            "worst": -4.7,
+            "winRate": 57.1,
+            "best": 6.6,
+            "worst": -8.0,
             "holdDays": 20
           }
         ],
         "recentSignals": [
-          {
-            "date": "2026-07-23",
-            "signal": "建仓",
-            "rps20": 93.8,
-            "streak": 9,
-            "ret10": -2.6,
-            "endDate": "2026-08-06"
-          },
-          {
-            "date": "2026-07-22",
-            "signal": "建仓",
-            "rps20": 94.4,
-            "streak": 8,
-            "ret10": -1.6,
-            "endDate": "2026-08-05"
-          },
-          {
-            "date": "2026-07-21",
-            "signal": "建仓",
-            "rps20": 98.3,
-            "streak": 7,
-            "ret10": -2.5,
-            "endDate": "2026-08-04"
-          },
-          {
-            "date": "2026-07-20",
-            "signal": "建仓",
-            "rps20": 98.3,
-            "streak": 6,
-            "ret10": -4.7,
-            "endDate": "2026-08-03"
-          },
-          {
-            "date": "2026-07-17",
-            "signal": "建仓",
-            "rps20": 99.4,
-            "streak": 5,
-            "ret10": null,
-            "endDate": null
-          }
-        ]
-      },
-      {
-        "code": "159201",
-        "name": "自由现金流ETF",
-        "theme": "自由现金流",
-        "currentSignal": "回避",
-        "currentRps20": 76.4,
-        "currentStreak": 0,
-        "stats": [
-          {
-            "count": 1,
-            "avgReturn": 1.7,
-            "winRate": 100.0,
-            "best": 1.7,
-            "worst": 1.7,
-            "holdDays": 5
-          },
-          {
-            "count": 1,
-            "avgReturn": -3.8,
-            "winRate": 0.0,
-            "best": -3.8,
-            "worst": -3.8,
-            "holdDays": 10
-          },
-          {
-            "count": 1,
-            "avgReturn": -5.5,
-            "winRate": 0.0,
-            "best": -5.5,
-            "worst": -5.5,
-            "holdDays": 20
-          }
-        ],
-        "recentSignals": [
-          {
-            "date": "2026-03-05",
-            "signal": "建仓",
-            "rps20": 90.4,
-            "streak": 3,
-            "ret10": -3.8,
-            "endDate": "2026-03-19"
-          }
-        ]
-      },
-      {
-        "code": "159263",
-        "name": "价值ETF",
-        "theme": "价值",
-        "currentSignal": "回避",
-        "currentRps20": 75.8,
-        "currentStreak": 0,
-        "stats": [
-          {
-            "count": 10,
-            "avgReturn": 0.4,
-            "winRate": 60.0,
-            "best": 4.9,
-            "worst": -2.8,
-            "holdDays": 5
-          },
-          {
-            "count": 10,
-            "avgReturn": -1.3,
-            "winRate": 30.0,
-            "best": 4.8,
-            "worst": -4.3,
-            "holdDays": 10
-          },
-          {
-            "count": 10,
-            "avgReturn": -1.8,
-            "winRate": 20.0,
-            "best": 1.0,
-            "worst": -4.6,
-            "holdDays": 20
-          }
-        ],
-        "recentSignals": [
-          {
-            "date": "2026-03-05",
-            "signal": "建仓",
-            "rps20": 92.7,
-            "streak": 3,
-            "ret10": -1.9,
-            "endDate": "2026-03-19"
-          },
-          {
-            "date": "2026-02-24",
-            "signal": "建仓",
-            "rps20": 91.6,
-            "streak": 4,
-            "ret10": 1.7,
-            "endDate": "2026-03-10"
-          },
-          {
-            "date": "2026-02-13",
-            "signal": "建仓",
-            "rps20": 91.0,
-            "streak": 3,
-            "ret10": 4.8,
-            "endDate": "2026-03-09"
-          },
-          {
-            "date": "2025-11-26",
-            "signal": "建仓",
-            "rps20": 93.1,
-            "streak": 4,
-            "ret10": 0.0,
-            "endDate": "2025-12-10"
-          },
-          {
-            "date": "2025-11-25",
-            "signal": "建仓",
-            "rps20": 94.3,
-            "streak": 3,
-            "ret10": 0.1,
-            "endDate": "2025-12-09"
-          }
-        ]
-      },
-      {
-        "code": "513290",
-        "name": "纳指生物科技ETF",
-        "theme": "医药",
-        "currentSignal": "回避",
-        "currentRps20": 75.3,
-        "currentStreak": 0,
-        "stats": [
-          {
-            "count": 34,
-            "avgReturn": -1.4,
-            "winRate": 29.4,
-            "best": 5.3,
-            "worst": -7.6,
-            "holdDays": 5
-          },
-          {
-            "count": 34,
-            "avgReturn": -1.6,
-            "winRate": 38.2,
-            "best": 6.9,
-            "worst": -8.9,
-            "holdDays": 10
-          },
-          {
-            "count": 34,
-            "avgReturn": -0.4,
-            "winRate": 41.2,
-            "best": 8.2,
-            "worst": -8.7,
-            "holdDays": 20
-          }
-        ],
-        "recentSignals": [
-          {
-            "date": "2026-10-08",
-            "signal": "建仓",
-            "rps20": 91.6,
-            "streak": 3,
-            "ret10": null,
-            "endDate": null
-          },
-          {
-            "date": "2026-09-09",
-            "signal": "建仓",
-            "rps20": 92.7,
-            "streak": 7,
-            "ret10": 3.1,
-            "endDate": "2026-09-23"
-          },
-          {
-            "date": "2026-09-08",
-            "signal": "建仓",
-            "rps20": 97.8,
-            "streak": 6,
-            "ret10": -2.2,
-            "endDate": "2026-09-22"
-          },
-          {
-            "date": "2026-09-07",
-            "signal": "建仓",
-            "rps20": 97.8,
-            "streak": 5,
-            "ret10": -1.2,
-            "endDate": "2026-09-21"
-          },
-          {
-            "date": "2026-09-04",
-            "signal": "建仓",
-            "rps20": 98.3,
-            "streak": 4,
-            "ret10": -3.6,
-            "endDate": "2026-09-18"
-          }
-        ]
-      },
-      {
-        "code": "159399",
-        "name": "现金流ETF",
-        "theme": "现金流",
-        "currentSignal": "回避",
-        "currentRps20": 74.7,
-        "currentStreak": 0,
-        "stats": [
-          {
-            "count": 0,
-            "avgReturn": null,
-            "winRate": null,
-            "best": null,
-            "worst": null,
-            "holdDays": 5
-          },
-          {
-            "count": 0,
-            "avgReturn": null,
-            "winRate": null,
-            "best": null,
-            "worst": null,
-            "holdDays": 10
-          },
-          {
-            "count": 0,
-            "avgReturn": null,
-            "winRate": null,
-            "best": null,
-            "worst": null,
-            "holdDays": 20
-          }
-        ],
-        "recentSignals": []
-      },
-      {
-        "code": "513700",
-        "name": "香港医药ETF",
-        "theme": "医药",
-        "currentSignal": "回避",
-        "currentRps20": 74.2,
-        "currentStreak": 0,
-        "stats": [
-          {
-            "count": 54,
-            "avgReturn": -0.6,
-            "winRate": 38.9,
-            "best": 8.6,
-            "worst": -15.7,
-            "holdDays": 5
-          },
-          {
-            "count": 54,
-            "avgReturn": 0.2,
-            "winRate": 50.0,
-            "best": 8.7,
-            "worst": -10.3,
-            "holdDays": 10
-          },
-          {
-            "count": 54,
-            "avgReturn": 4.4,
-            "winRate": 61.1,
-            "best": 19.9,
-            "worst": -6.2,
-            "holdDays": 20
-          }
-        ],
-        "recentSignals": [
-          {
-            "date": "2026-09-04",
-            "signal": "建仓",
-            "rps20": 94.9,
-            "streak": 3,
-            "ret10": -2.2,
-            "endDate": "2026-09-18"
-          },
-          {
-            "date": "2026-08-28",
-            "signal": "建仓",
-            "rps20": 91.0,
-            "streak": 7,
-            "ret10": -7.9,
-            "endDate": "2026-09-11"
-          },
-          {
-            "date": "2026-08-27",
-            "signal": "建仓",
-            "rps20": 95.5,
-            "streak": 6,
-            "ret10": -7.2,
-            "endDate": "2026-09-10"
-          },
-          {
-            "date": "2026-08-26",
-            "signal": "建仓",
-            "rps20": 96.6,
-            "streak": 5,
-            "ret10": -4.8,
-            "endDate": "2026-09-09"
-          },
-          {
-            "date": "2026-08-25",
-            "signal": "建仓",
-            "rps20": 94.9,
-            "streak": 4,
-            "ret10": -1.8,
-            "endDate": "2026-09-08"
-          }
-        ]
-      },
-      {
-        "code": "159859",
-        "name": "生物医药ETF",
-        "theme": "医药",
-        "currentSignal": "回避",
-        "currentRps20": 73.6,
-        "currentStreak": 0,
-        "stats": [
-          {
-            "count": 18,
-            "avgReturn": -1.3,
-            "winRate": 33.3,
-            "best": 3.1,
-            "worst": -6.8,
-            "holdDays": 5
-          },
-          {
-            "count": 16,
-            "avgReturn": -2.0,
-            "winRate": 18.8,
-            "best": 1.3,
-            "worst": -5.4,
-            "holdDays": 10
-          },
-          {
-            "count": 16,
-            "avgReturn": 1.0,
-            "winRate": 50.0,
-            "best": 12.1,
-            "worst": -9.6,
-            "holdDays": 20
-          }
-        ],
-        "recentSignals": [
-          {
-            "date": "2026-10-09",
-            "signal": "建仓",
-            "rps20": 94.4,
-            "streak": 4,
-            "ret10": null,
-            "endDate": null
-          },
-          {
-            "date": "2026-10-08",
-            "signal": "建仓",
-            "rps20": 95.5,
-            "streak": 3,
-            "ret10": null,
-            "endDate": null
-          },
           {
             "date": "2026-08-13",
             "signal": "建仓",
-            "rps20": 97.2,
+            "rps20": 93.8,
             "streak": 5,
-            "ret10": -4.2,
+            "ret10": -3.7,
             "endDate": "2026-08-27"
           },
           {
             "date": "2026-08-12",
             "signal": "建仓",
-            "rps20": 96.1,
+            "rps20": 94.4,
             "streak": 4,
-            "ret10": -3.6,
+            "ret10": -4.2,
             "endDate": "2026-08-26"
           },
           {
             "date": "2026-08-11",
             "signal": "建仓",
-            "rps20": 98.3,
+            "rps20": 95.5,
             "streak": 3,
-            "ret10": -3.8,
+            "ret10": -5.0,
             "endDate": "2026-08-25"
+          },
+          {
+            "date": "2026-07-23",
+            "signal": "建仓",
+            "rps20": 90.4,
+            "streak": 6,
+            "ret10": 0.5,
+            "endDate": "2026-08-06"
+          },
+          {
+            "date": "2026-07-22",
+            "signal": "建仓",
+            "rps20": 92.1,
+            "streak": 5,
+            "ret10": 2.7,
+            "endDate": "2026-08-05"
           }
         ]
       },
       {
-        "code": "159792",
-        "name": "港股通互联网ETF",
-        "theme": "港股通互联网",
-        "currentSignal": "回避",
-        "currentRps20": 73.0,
-        "currentStreak": 0,
+        "code": "515170",
+        "name": "食品饮料ETF",
+        "theme": "食品饮料",
+        "currentSignal": "观察",
+        "currentRps20": 90.4,
+        "currentStreak": 1,
         "stats": [
           {
-            "count": 28,
-            "avgReturn": 0.9,
-            "winRate": 57.1,
-            "best": 11.2,
-            "worst": -8.2,
+            "count": 7,
+            "avgReturn": -1.0,
+            "winRate": 28.6,
+            "best": 0.3,
+            "worst": -3.9,
             "holdDays": 5
           },
           {
-            "count": 28,
-            "avgReturn": -0.4,
-            "winRate": 35.7,
-            "best": 10.9,
-            "worst": -6.9,
+            "count": 7,
+            "avgReturn": -1.3,
+            "winRate": 28.6,
+            "best": 1.8,
+            "worst": -3.9,
             "holdDays": 10
           },
           {
-            "count": 28,
-            "avgReturn": -5.9,
-            "winRate": 21.4,
-            "best": 6.5,
-            "worst": -26.3,
+            "count": 7,
+            "avgReturn": -1.4,
+            "winRate": 14.3,
+            "best": 0.9,
+            "worst": -4.8,
             "holdDays": 20
           }
         ],
         "recentSignals": [
           {
-            "date": "2026-08-06",
+            "date": "2026-08-13",
             "signal": "建仓",
-            "rps20": 97.2,
-            "streak": 9,
-            "ret10": -3.6,
-            "endDate": "2026-08-20"
+            "rps20": 94.9,
+            "streak": 4,
+            "ret10": -3.9,
+            "endDate": "2026-08-27"
           },
           {
-            "date": "2026-08-05",
+            "date": "2026-08-12",
+            "signal": "建仓",
+            "rps20": 93.3,
+            "streak": 3,
+            "ret10": -3.7,
+            "endDate": "2026-08-26"
+          },
+          {
+            "date": "2025-04-11",
+            "signal": "建仓",
+            "rps20": 93.2,
+            "streak": 5,
+            "ret10": -1.2,
+            "endDate": "2025-04-25"
+          },
+          {
+            "date": "2025-04-10",
+            "signal": "建仓",
+            "rps20": 94.4,
+            "streak": 4,
+            "ret10": -1.8,
+            "endDate": "2025-04-24"
+          },
+          {
+            "date": "2025-04-09",
+            "signal": "建仓",
+            "rps20": 93.8,
+            "streak": 3,
+            "ret10": -1.3,
+            "endDate": "2025-04-23"
+          }
+        ]
+      },
+      {
+        "code": "159518",
+        "name": "标普油气ETF",
+        "theme": "能源化工",
+        "currentSignal": "观察",
+        "currentRps20": 89.9,
+        "currentStreak": 0,
+        "stats": [
+          {
+            "count": 70,
+            "avgReturn": 0.0,
+            "winRate": 55.7,
+            "best": 8.9,
+            "worst": -21.6,
+            "holdDays": 5
+          },
+          {
+            "count": 71,
+            "avgReturn": 0.3,
+            "winRate": 49.3,
+            "best": 13.7,
+            "worst": -15.9,
+            "holdDays": 10
+          },
+          {
+            "count": 66,
+            "avgReturn": 2.8,
+            "winRate": 57.6,
+            "best": 23.7,
+            "worst": -15.2,
+            "holdDays": 20
+          }
+        ],
+        "recentSignals": [
+          {
+            "date": "2026-09-17",
+            "signal": "持有",
+            "rps20": 98.9,
+            "streak": 12,
+            "ret10": -0.7,
+            "endDate": "2026-10-09"
+          },
+          {
+            "date": "2026-09-16",
+            "signal": "持有",
+            "rps20": 99.4,
+            "streak": 11,
+            "ret10": -2.7,
+            "endDate": "2026-10-08"
+          },
+          {
+            "date": "2026-09-15",
+            "signal": "持有",
+            "rps20": 99.4,
+            "streak": 10,
+            "ret10": -9.4,
+            "endDate": "2026-09-30"
+          },
+          {
+            "date": "2026-09-14",
+            "signal": "建仓",
+            "rps20": 99.4,
+            "streak": 9,
+            "ret10": -9.5,
+            "endDate": "2026-09-29"
+          },
+          {
+            "date": "2026-09-11",
             "signal": "建仓",
             "rps20": 98.9,
             "streak": 8,
-            "ret10": -6.9,
-            "endDate": "2026-08-19"
+            "ret10": -5.8,
+            "endDate": "2026-09-28"
+          }
+        ]
+      },
+      {
+        "code": "515650",
+        "name": "消费50ETF",
+        "theme": "消费",
+        "currentSignal": "观察",
+        "currentRps20": 89.3,
+        "currentStreak": 0,
+        "stats": [
+          {
+            "count": 4,
+            "avgReturn": -1.4,
+            "winRate": 25.0,
+            "best": 0.3,
+            "worst": -4.1,
+            "holdDays": 5
           },
+          {
+            "count": 4,
+            "avgReturn": -2.6,
+            "winRate": 0.0,
+            "best": -1.0,
+            "worst": -4.1,
+            "holdDays": 10
+          },
+          {
+            "count": 4,
+            "avgReturn": -1.9,
+            "winRate": 0.0,
+            "best": 0.0,
+            "worst": -4.0,
+            "holdDays": 20
+          }
+        ],
+        "recentSignals": [
           {
             "date": "2026-08-04",
             "signal": "建仓",
-            "rps20": 99.4,
-            "streak": 7,
-            "ret10": -6.5,
+            "rps20": 93.8,
+            "streak": 5,
+            "ret10": -1.7,
             "endDate": "2026-08-18"
           },
           {
             "date": "2026-08-03",
             "signal": "建仓",
-            "rps20": 99.4,
-            "streak": 6,
-            "ret10": -5.5,
+            "rps20": 93.8,
+            "streak": 4,
+            "ret10": -4.1,
             "endDate": "2026-08-17"
           },
           {
             "date": "2026-07-30",
             "signal": "建仓",
-            "rps20": 100.0,
-            "streak": 5,
+            "rps20": 91.6,
+            "streak": 3,
             "ret10": -3.6,
             "endDate": "2026-08-13"
-          }
-        ]
-      },
-      {
-        "code": "510810",
-        "name": "上海国企ETF",
-        "theme": "上海国企",
-        "currentSignal": "回避",
-        "currentRps20": 72.5,
-        "currentStreak": 0,
-        "stats": [
-          {
-            "count": 0,
-            "avgReturn": null,
-            "winRate": null,
-            "best": null,
-            "worst": null,
-            "holdDays": 5
           },
           {
-            "count": 0,
-            "avgReturn": null,
-            "winRate": null,
-            "best": null,
-            "worst": null,
-            "holdDays": 10
-          },
-          {
-            "count": 0,
-            "avgReturn": null,
-            "winRate": null,
-            "best": null,
-            "worst": null,
-            "holdDays": 20
-          }
-        ],
-        "recentSignals": []
-      },
-      {
-        "code": "512880",
-        "name": "证券ETF",
-        "theme": "非银金融",
-        "currentSignal": "回避",
-        "currentRps20": 71.9,
-        "currentStreak": 0,
-        "stats": [
-          {
-            "count": 0,
-            "avgReturn": null,
-            "winRate": null,
-            "best": null,
-            "worst": null,
-            "holdDays": 5
-          },
-          {
-            "count": 0,
-            "avgReturn": null,
-            "winRate": null,
-            "best": null,
-            "worst": null,
-            "holdDays": 10
-          },
-          {
-            "count": 0,
-            "avgReturn": null,
-            "winRate": null,
-            "best": null,
-            "worst": null,
-            "holdDays": 20
-          }
-        ],
-        "recentSignals": []
-      },
-      {
-        "code": "512980",
-        "name": "传媒ETF",
-        "theme": "传媒",
-        "currentSignal": "回避",
-        "currentRps20": 71.3,
-        "currentStreak": 0,
-        "stats": [
-          {
-            "count": 21,
-            "avgReturn": -1.1,
-            "winRate": 52.4,
-            "best": 4.9,
-            "worst": -10.0,
-            "holdDays": 5
-          },
-          {
-            "count": 21,
-            "avgReturn": -2.1,
-            "winRate": 33.3,
-            "best": 4.7,
-            "worst": -10.8,
-            "holdDays": 10
-          },
-          {
-            "count": 21,
-            "avgReturn": -6.2,
-            "winRate": 4.8,
-            "best": 0.3,
-            "worst": -11.8,
-            "holdDays": 20
-          }
-        ],
-        "recentSignals": [
-          {
-            "date": "2026-02-05",
-            "signal": "持有",
-            "rps20": 94.4,
-            "streak": 20,
-            "ret10": -0.7,
-            "endDate": "2026-02-27"
-          },
-          {
-            "date": "2026-02-04",
-            "signal": "持有",
-            "rps20": 94.4,
-            "streak": 19,
-            "ret10": -2.3,
-            "endDate": "2026-02-26"
-          },
-          {
-            "date": "2026-02-03",
-            "signal": "持有",
-            "rps20": 98.3,
-            "streak": 18,
-            "ret10": -4.5,
-            "endDate": "2026-02-25"
-          },
-          {
-            "date": "2026-02-02",
-            "signal": "持有",
-            "rps20": 98.9,
-            "streak": 17,
+            "date": "2025-03-26",
+            "signal": "建仓",
+            "rps20": 93.8,
+            "streak": 3,
             "ret10": -1.0,
-            "endDate": "2026-02-24"
-          },
-          {
-            "date": "2026-01-30",
-            "signal": "持有",
-            "rps20": 96.1,
-            "streak": 16,
-            "ret10": -0.1,
-            "endDate": "2026-02-13"
+            "endDate": "2025-04-10"
           }
         ]
       },
@@ -52640,7 +50720,7 @@ window.COCKPIT_DATA = {
         "name": "港股创新药50ETF",
         "theme": "医药",
         "currentSignal": "回避",
-        "currentRps20": 70.8,
+        "currentRps20": 88.8,
         "currentStreak": 0,
         "stats": [
           {
@@ -52712,78 +50792,662 @@ window.COCKPIT_DATA = {
         ]
       },
       {
-        "code": "513550",
-        "name": "港股通50ETF",
-        "theme": "港股通50",
+        "code": "513500",
+        "name": "标普500ETF",
+        "theme": "标普500",
         "currentSignal": "回避",
-        "currentRps20": 70.2,
+        "currentRps20": 88.2,
         "currentStreak": 0,
         "stats": [
           {
-            "count": 9,
-            "avgReturn": -0.8,
-            "winRate": 33.3,
-            "best": 1.3,
-            "worst": -2.7,
+            "count": 5,
+            "avgReturn": 0.3,
+            "winRate": 60.0,
+            "best": 2.9,
+            "worst": -2.8,
             "holdDays": 5
           },
           {
-            "count": 9,
-            "avgReturn": -1.5,
-            "winRate": 22.2,
-            "best": 0.5,
-            "worst": -2.9,
+            "count": 5,
+            "avgReturn": 1.8,
+            "winRate": 100.0,
+            "best": 4.1,
+            "worst": 0.0,
             "holdDays": 10
           },
           {
-            "count": 9,
-            "avgReturn": -2.4,
-            "winRate": 44.4,
-            "best": 2.1,
-            "worst": -15.4,
+            "count": 5,
+            "avgReturn": 2.4,
+            "winRate": 100.0,
+            "best": 4.8,
+            "worst": 0.1,
             "holdDays": 20
           }
         ],
         "recentSignals": [
           {
-            "date": "2026-08-05",
+            "date": "2026-10-15",
+            "signal": "建仓",
+            "rps20": 91.0,
+            "streak": 6,
+            "ret10": null,
+            "endDate": null
+          },
+          {
+            "date": "2026-10-14",
+            "signal": "建仓",
+            "rps20": 95.5,
+            "streak": 5,
+            "ret10": null,
+            "endDate": null
+          },
+          {
+            "date": "2026-10-13",
+            "signal": "建仓",
+            "rps20": 93.8,
+            "streak": 4,
+            "ret10": null,
+            "endDate": null
+          },
+          {
+            "date": "2026-10-12",
+            "signal": "建仓",
+            "rps20": 93.3,
+            "streak": 3,
+            "ret10": null,
+            "endDate": null
+          },
+          {
+            "date": "2025-05-28",
+            "signal": "建仓",
+            "rps20": 95.2,
+            "streak": 5,
+            "ret10": 2.5,
+            "endDate": "2025-06-12"
+          }
+        ]
+      },
+      {
+        "code": "159655",
+        "name": "标普ETF",
+        "theme": "标普",
+        "currentSignal": "回避",
+        "currentRps20": 87.6,
+        "currentStreak": 0,
+        "stats": [
+          {
+            "count": 4,
+            "avgReturn": 1.0,
+            "winRate": 75.0,
+            "best": 3.0,
+            "worst": -0.6,
+            "holdDays": 5
+          },
+          {
+            "count": 4,
+            "avgReturn": 2.1,
+            "winRate": 100.0,
+            "best": 4.2,
+            "worst": 0.1,
+            "holdDays": 10
+          },
+          {
+            "count": 4,
+            "avgReturn": 2.9,
+            "winRate": 100.0,
+            "best": 4.9,
+            "worst": 0.2,
+            "holdDays": 20
+          }
+        ],
+        "recentSignals": [
+          {
+            "date": "2025-05-28",
+            "signal": "建仓",
+            "rps20": 90.3,
+            "streak": 5,
+            "ret10": 2.6,
+            "endDate": "2025-06-12"
+          },
+          {
+            "date": "2025-05-27",
+            "signal": "建仓",
+            "rps20": 93.3,
+            "streak": 4,
+            "ret10": 1.6,
+            "endDate": "2025-06-11"
+          },
+          {
+            "date": "2025-05-26",
+            "signal": "建仓",
+            "rps20": 95.2,
+            "streak": 3,
+            "ret10": 4.2,
+            "endDate": "2025-06-10"
+          },
+          {
+            "date": "2025-05-20",
+            "signal": "建仓",
+            "rps20": 92.7,
+            "streak": 3,
+            "ret10": 0.1,
+            "endDate": "2025-06-04"
+          }
+        ]
+      },
+      {
+        "code": "159928",
+        "name": "消费ETF",
+        "theme": "消费",
+        "currentSignal": "回避",
+        "currentRps20": 87.1,
+        "currentStreak": 0,
+        "stats": [
+          {
+            "count": 5,
+            "avgReturn": -0.8,
+            "winRate": 0.0,
+            "best": -0.2,
+            "worst": -1.5,
+            "holdDays": 5
+          },
+          {
+            "count": 5,
+            "avgReturn": -1.5,
+            "winRate": 0.0,
+            "best": -0.5,
+            "worst": -2.4,
+            "holdDays": 10
+          },
+          {
+            "count": 5,
+            "avgReturn": -1.2,
+            "winRate": 20.0,
+            "best": 0.2,
+            "worst": -2.4,
+            "holdDays": 20
+          }
+        ],
+        "recentSignals": [
+          {
+            "date": "2025-04-22",
+            "signal": "建仓",
+            "rps20": 90.2,
+            "streak": 4,
+            "ret10": -0.6,
+            "endDate": "2025-05-09"
+          },
+          {
+            "date": "2025-04-21",
+            "signal": "建仓",
+            "rps20": 95.1,
+            "streak": 3,
+            "ret10": -0.5,
+            "endDate": "2025-05-08"
+          },
+          {
+            "date": "2025-04-11",
+            "signal": "建仓",
+            "rps20": 94.4,
+            "streak": 5,
+            "ret10": -1.6,
+            "endDate": "2025-04-25"
+          },
+          {
+            "date": "2025-04-10",
+            "signal": "建仓",
+            "rps20": 95.7,
+            "streak": 4,
+            "ret10": -2.4,
+            "endDate": "2025-04-24"
+          },
+          {
+            "date": "2025-04-09",
+            "signal": "建仓",
+            "rps20": 94.4,
+            "streak": 3,
+            "ret10": -2.4,
+            "endDate": "2025-04-23"
+          }
+        ]
+      },
+      {
+        "code": "513700",
+        "name": "香港医药ETF",
+        "theme": "医药",
+        "currentSignal": "回避",
+        "currentRps20": 86.5,
+        "currentStreak": 0,
+        "stats": [
+          {
+            "count": 54,
+            "avgReturn": -0.6,
+            "winRate": 38.9,
+            "best": 8.6,
+            "worst": -15.7,
+            "holdDays": 5
+          },
+          {
+            "count": 54,
+            "avgReturn": 0.2,
+            "winRate": 50.0,
+            "best": 8.7,
+            "worst": -10.3,
+            "holdDays": 10
+          },
+          {
+            "count": 54,
+            "avgReturn": 4.4,
+            "winRate": 61.1,
+            "best": 19.9,
+            "worst": -6.2,
+            "holdDays": 20
+          }
+        ],
+        "recentSignals": [
+          {
+            "date": "2026-09-04",
+            "signal": "建仓",
+            "rps20": 94.9,
+            "streak": 3,
+            "ret10": -2.2,
+            "endDate": "2026-09-18"
+          },
+          {
+            "date": "2026-08-28",
+            "signal": "建仓",
+            "rps20": 91.0,
+            "streak": 7,
+            "ret10": -7.9,
+            "endDate": "2026-09-11"
+          },
+          {
+            "date": "2026-08-27",
+            "signal": "建仓",
+            "rps20": 95.5,
+            "streak": 6,
+            "ret10": -7.2,
+            "endDate": "2026-09-10"
+          },
+          {
+            "date": "2026-08-26",
+            "signal": "建仓",
+            "rps20": 96.6,
+            "streak": 5,
+            "ret10": -4.8,
+            "endDate": "2026-09-09"
+          },
+          {
+            "date": "2026-08-25",
+            "signal": "建仓",
+            "rps20": 94.9,
+            "streak": 4,
+            "ret10": -1.8,
+            "endDate": "2026-09-08"
+          }
+        ]
+      },
+      {
+        "code": "513290",
+        "name": "纳指生物科技ETF",
+        "theme": "医药",
+        "currentSignal": "回避",
+        "currentRps20": 86.0,
+        "currentStreak": 0,
+        "stats": [
+          {
+            "count": 34,
+            "avgReturn": -1.4,
+            "winRate": 29.4,
+            "best": 5.3,
+            "worst": -7.6,
+            "holdDays": 5
+          },
+          {
+            "count": 34,
+            "avgReturn": -1.6,
+            "winRate": 38.2,
+            "best": 6.9,
+            "worst": -8.9,
+            "holdDays": 10
+          },
+          {
+            "count": 34,
+            "avgReturn": -0.4,
+            "winRate": 41.2,
+            "best": 8.2,
+            "worst": -8.7,
+            "holdDays": 20
+          }
+        ],
+        "recentSignals": [
+          {
+            "date": "2026-10-08",
+            "signal": "建仓",
+            "rps20": 91.6,
+            "streak": 3,
+            "ret10": null,
+            "endDate": null
+          },
+          {
+            "date": "2026-09-09",
+            "signal": "建仓",
+            "rps20": 92.7,
+            "streak": 7,
+            "ret10": 3.1,
+            "endDate": "2026-09-23"
+          },
+          {
+            "date": "2026-09-08",
             "signal": "建仓",
             "rps20": 97.8,
             "streak": 6,
             "ret10": -2.2,
+            "endDate": "2026-09-22"
+          },
+          {
+            "date": "2026-09-07",
+            "signal": "建仓",
+            "rps20": 97.8,
+            "streak": 5,
+            "ret10": -1.2,
+            "endDate": "2026-09-21"
+          },
+          {
+            "date": "2026-09-04",
+            "signal": "建仓",
+            "rps20": 98.3,
+            "streak": 4,
+            "ret10": -3.6,
+            "endDate": "2026-09-18"
+          }
+        ]
+      },
+      {
+        "code": "510880",
+        "name": "红利ETF",
+        "theme": "红利",
+        "currentSignal": "回避",
+        "currentRps20": 85.4,
+        "currentStreak": 0,
+        "stats": [
+          {
+            "count": 17,
+            "avgReturn": 0.3,
+            "winRate": 47.1,
+            "best": 2.7,
+            "worst": -2.3,
+            "holdDays": 5
+          },
+          {
+            "count": 17,
+            "avgReturn": -1.0,
+            "winRate": 23.5,
+            "best": 1.5,
+            "worst": -2.7,
+            "holdDays": 10
+          },
+          {
+            "count": 14,
+            "avgReturn": -0.5,
+            "winRate": 42.9,
+            "best": 2.4,
+            "worst": -3.2,
+            "holdDays": 20
+          }
+        ],
+        "recentSignals": [
+          {
+            "date": "2026-09-15",
+            "signal": "建仓",
+            "rps20": 91.6,
+            "streak": 5,
+            "ret10": -0.4,
+            "endDate": "2026-09-30"
+          },
+          {
+            "date": "2026-09-14",
+            "signal": "建仓",
+            "rps20": 93.3,
+            "streak": 4,
+            "ret10": -2.3,
+            "endDate": "2026-09-29"
+          },
+          {
+            "date": "2026-09-11",
+            "signal": "建仓",
+            "rps20": 93.8,
+            "streak": 3,
+            "ret10": -2.3,
+            "endDate": "2026-09-28"
+          },
+          {
+            "date": "2026-03-26",
+            "signal": "建仓",
+            "rps20": 92.7,
+            "streak": 8,
+            "ret10": -1.6,
+            "endDate": "2026-04-10"
+          },
+          {
+            "date": "2026-03-25",
+            "signal": "建仓",
+            "rps20": 93.3,
+            "streak": 7,
+            "ret10": -1.4,
+            "endDate": "2026-04-09"
+          }
+        ]
+      },
+      {
+        "code": "159366",
+        "name": "港股医疗ETF",
+        "theme": "医药",
+        "currentSignal": "回避",
+        "currentRps20": 84.8,
+        "currentStreak": 0,
+        "stats": [
+          {
+            "count": 46,
+            "avgReturn": -0.9,
+            "winRate": 34.8,
+            "best": 9.3,
+            "worst": -9.2,
+            "holdDays": 5
+          },
+          {
+            "count": 44,
+            "avgReturn": 1.1,
+            "winRate": 45.5,
+            "best": 11.9,
+            "worst": -7.0,
+            "holdDays": 10
+          },
+          {
+            "count": 44,
+            "avgReturn": 5.0,
+            "winRate": 70.5,
+            "best": 18.7,
+            "worst": -3.7,
+            "holdDays": 20
+          }
+        ],
+        "recentSignals": [
+          {
+            "date": "2026-10-12",
+            "signal": "建仓",
+            "rps20": 97.2,
+            "streak": 6,
+            "ret10": null,
+            "endDate": null
+          },
+          {
+            "date": "2026-10-09",
+            "signal": "建仓",
+            "rps20": 96.1,
+            "streak": 5,
+            "ret10": null,
+            "endDate": null
+          },
+          {
+            "date": "2026-10-08",
+            "signal": "建仓",
+            "rps20": 96.6,
+            "streak": 4,
+            "ret10": null,
+            "endDate": null
+          },
+          {
+            "date": "2026-09-30",
+            "signal": "建仓",
+            "rps20": 98.9,
+            "streak": 3,
+            "ret10": null,
+            "endDate": null
+          },
+          {
+            "date": "2026-09-04",
+            "signal": "持有",
+            "rps20": 92.7,
+            "streak": 20,
+            "ret10": 2.1,
+            "endDate": "2026-09-18"
+          }
+        ]
+      },
+      {
+        "code": "513050",
+        "name": "中概互联网ETF",
+        "theme": "中概互联网",
+        "currentSignal": "回避",
+        "currentRps20": 84.3,
+        "currentStreak": 0,
+        "stats": [
+          {
+            "count": 33,
+            "avgReturn": 0.6,
+            "winRate": 45.5,
+            "best": 9.9,
+            "worst": -7.4,
+            "holdDays": 5
+          },
+          {
+            "count": 33,
+            "avgReturn": 0.0,
+            "winRate": 39.4,
+            "best": 11.6,
+            "worst": -6.3,
+            "holdDays": 10
+          },
+          {
+            "count": 33,
+            "avgReturn": -4.3,
+            "winRate": 30.3,
+            "best": 9.1,
+            "worst": -22.7,
+            "holdDays": 20
+          }
+        ],
+        "recentSignals": [
+          {
+            "date": "2026-08-06",
+            "signal": "建仓",
+            "rps20": 98.9,
+            "streak": 9,
+            "ret10": -2.6,
+            "endDate": "2026-08-20"
+          },
+          {
+            "date": "2026-08-05",
+            "signal": "建仓",
+            "rps20": 100.0,
+            "streak": 8,
+            "ret10": -6.3,
             "endDate": "2026-08-19"
           },
           {
             "date": "2026-08-04",
             "signal": "建仓",
-            "rps20": 97.8,
-            "streak": 5,
-            "ret10": -2.2,
+            "rps20": 100.0,
+            "streak": 7,
+            "ret10": -5.3,
             "endDate": "2026-08-18"
           },
           {
             "date": "2026-08-03",
             "signal": "建仓",
-            "rps20": 98.3,
-            "streak": 4,
-            "ret10": -2.9,
+            "rps20": 100.0,
+            "streak": 6,
+            "ret10": -5.6,
             "endDate": "2026-08-17"
           },
           {
             "date": "2026-07-30",
             "signal": "建仓",
-            "rps20": 94.4,
-            "streak": 3,
-            "ret10": -2.9,
+            "rps20": 98.9,
+            "streak": 5,
+            "ret10": -2.1,
             "endDate": "2026-08-13"
+          }
+        ]
+      },
+      {
+        "code": "513920",
+        "name": "港股通央企红利ETF",
+        "theme": "红利",
+        "currentSignal": "回避",
+        "currentRps20": 83.7,
+        "currentStreak": 0,
+        "stats": [
+          {
+            "count": 3,
+            "avgReturn": 0.3,
+            "winRate": 33.3,
+            "best": 2.0,
+            "worst": -0.8,
+            "holdDays": 5
           },
           {
-            "date": "2025-05-19",
+            "count": 3,
+            "avgReturn": 1.6,
+            "winRate": 66.7,
+            "best": 4.9,
+            "worst": -0.9,
+            "holdDays": 10
+          },
+          {
+            "count": 1,
+            "avgReturn": 6.5,
+            "winRate": 100.0,
+            "best": 6.5,
+            "worst": 6.5,
+            "holdDays": 20
+          }
+        ],
+        "recentSignals": [
+          {
+            "date": "2026-09-15",
             "signal": "建仓",
-            "rps20": 92.1,
-            "streak": 6,
-            "ret10": 0.2,
-            "endDate": "2025-06-03"
+            "rps20": 93.3,
+            "streak": 4,
+            "ret10": 0.8,
+            "endDate": "2026-09-30"
+          },
+          {
+            "date": "2026-09-14",
+            "signal": "建仓",
+            "rps20": 92.7,
+            "streak": 3,
+            "ret10": -0.9,
+            "endDate": "2026-09-29"
+          },
+          {
+            "date": "2025-05-28",
+            "signal": "建仓",
+            "rps20": 97.0,
+            "streak": 3,
+            "ret10": 4.9,
+            "endDate": "2025-06-12"
           }
         ]
       },
@@ -52792,7 +51456,7 @@ window.COCKPIT_DATA = {
         "name": "港股创新药ETF",
         "theme": "医药",
         "currentSignal": "回避",
-        "currentRps20": 69.7,
+        "currentRps20": 83.1,
         "currentStreak": 0,
         "stats": [
           {
@@ -52864,27 +51528,27 @@ window.COCKPIT_DATA = {
         ]
       },
       {
-        "code": "512200",
-        "name": "房地产ETF",
-        "theme": "房地产",
+        "code": "510230",
+        "name": "金融ETF",
+        "theme": "非银金融",
         "currentSignal": "回避",
-        "currentRps20": 69.1,
+        "currentRps20": 82.6,
         "currentStreak": 0,
         "stats": [
           {
-            "count": 6,
-            "avgReturn": -2.8,
-            "winRate": 50.0,
-            "best": 2.1,
-            "worst": -8.6,
+            "count": 0,
+            "avgReturn": null,
+            "winRate": null,
+            "best": null,
+            "worst": null,
             "holdDays": 5
           },
           {
-            "count": 1,
-            "avgReturn": -8.3,
-            "winRate": 0.0,
-            "best": -8.3,
-            "worst": -8.3,
+            "count": 0,
+            "avgReturn": null,
+            "winRate": null,
+            "best": null,
+            "worst": null,
             "holdDays": 10
           },
           {
@@ -52896,879 +51560,669 @@ window.COCKPIT_DATA = {
             "holdDays": 20
           }
         ],
-        "recentSignals": [
-          {
-            "date": "2026-10-12",
-            "signal": "持有",
-            "rps20": 91.0,
-            "streak": 10,
-            "ret10": null,
-            "endDate": null
-          },
-          {
-            "date": "2026-10-09",
-            "signal": "建仓",
-            "rps20": 97.2,
-            "streak": 9,
-            "ret10": null,
-            "endDate": null
-          },
-          {
-            "date": "2026-10-08",
-            "signal": "建仓",
-            "rps20": 97.2,
-            "streak": 8,
-            "ret10": null,
-            "endDate": null
-          },
-          {
-            "date": "2026-09-30",
-            "signal": "建仓",
-            "rps20": 96.6,
-            "streak": 7,
-            "ret10": null,
-            "endDate": null
-          },
-          {
-            "date": "2026-09-29",
-            "signal": "建仓",
-            "rps20": 98.9,
-            "streak": 6,
-            "ret10": null,
-            "endDate": null
-          }
-        ]
+        "recentSignals": []
       },
       {
-        "code": "159920",
-        "name": "恒生ETF",
-        "theme": "恒生",
+        "code": "513400",
+        "name": "道琼斯ETF",
+        "theme": "道琼斯",
         "currentSignal": "回避",
-        "currentRps20": 68.5,
+        "currentRps20": 82.0,
         "currentStreak": 0,
         "stats": [
           {
-            "count": 9,
-            "avgReturn": -0.4,
-            "winRate": 44.4,
-            "best": 1.5,
-            "worst": -2.2,
+            "count": 0,
+            "avgReturn": null,
+            "winRate": null,
+            "best": null,
+            "worst": null,
             "holdDays": 5
           },
           {
-            "count": 9,
-            "avgReturn": -1.0,
-            "winRate": 33.3,
-            "best": 0.6,
-            "worst": -2.6,
+            "count": 0,
+            "avgReturn": null,
+            "winRate": null,
+            "best": null,
+            "worst": null,
             "holdDays": 10
           },
           {
-            "count": 9,
-            "avgReturn": -1.8,
-            "winRate": 44.4,
-            "best": 2.9,
-            "worst": -15.0,
+            "count": 0,
+            "avgReturn": null,
+            "winRate": null,
+            "best": null,
+            "worst": null,
+            "holdDays": 20
+          }
+        ],
+        "recentSignals": []
+      },
+      {
+        "code": "159545",
+        "name": "恒生红利低波ETF",
+        "theme": "红利",
+        "currentSignal": "回避",
+        "currentRps20": 81.5,
+        "currentStreak": 0,
+        "stats": [
+          {
+            "count": 3,
+            "avgReturn": -1.4,
+            "winRate": 33.3,
+            "best": 1.0,
+            "worst": -2.7,
+            "holdDays": 5
+          },
+          {
+            "count": 3,
+            "avgReturn": -0.6,
+            "winRate": 33.3,
+            "best": 3.8,
+            "worst": -2.8,
+            "holdDays": 10
+          },
+          {
+            "count": 3,
+            "avgReturn": -0.0,
+            "winRate": 33.3,
+            "best": 6.5,
+            "worst": -4.8,
             "holdDays": 20
           }
         ],
         "recentSignals": [
           {
+            "date": "2026-08-03",
+            "signal": "建仓",
+            "rps20": 92.1,
+            "streak": 3,
+            "ret10": -2.8,
+            "endDate": "2026-08-17"
+          },
+          {
+            "date": "2025-11-12",
+            "signal": "建仓",
+            "rps20": 92.0,
+            "streak": 3,
+            "ret10": -2.8,
+            "endDate": "2025-11-26"
+          },
+          {
+            "date": "2025-05-28",
+            "signal": "建仓",
+            "rps20": 96.4,
+            "streak": 3,
+            "ret10": 3.8,
+            "endDate": "2025-06-12"
+          }
+        ]
+      },
+      {
+        "code": "159625",
+        "name": "绿色电力ETF",
+        "theme": "绿色电力",
+        "currentSignal": "回避",
+        "currentRps20": 80.9,
+        "currentStreak": 0,
+        "stats": [
+          {
+            "count": 30,
+            "avgReturn": -0.8,
+            "winRate": 53.3,
+            "best": 4.7,
+            "worst": -8.7,
+            "holdDays": 5
+          },
+          {
+            "count": 30,
+            "avgReturn": -1.6,
+            "winRate": 50.0,
+            "best": 3.1,
+            "worst": -9.9,
+            "holdDays": 10
+          },
+          {
+            "count": 28,
+            "avgReturn": -1.9,
+            "winRate": 42.9,
+            "best": 4.4,
+            "worst": -10.3,
+            "holdDays": 20
+          }
+        ],
+        "recentSignals": [
+          {
+            "date": "2026-10-15",
+            "signal": "建仓",
+            "rps20": 90.4,
+            "streak": 5,
+            "ret10": null,
+            "endDate": null
+          },
+          {
+            "date": "2026-10-14",
+            "signal": "建仓",
+            "rps20": 92.1,
+            "streak": 4,
+            "ret10": null,
+            "endDate": null
+          },
+          {
+            "date": "2026-10-13",
+            "signal": "建仓",
+            "rps20": 90.4,
+            "streak": 3,
+            "ret10": null,
+            "endDate": null
+          },
+          {
+            "date": "2026-09-18",
+            "signal": "建仓",
+            "rps20": 91.6,
+            "streak": 4,
+            "ret10": 1.2,
+            "endDate": "2026-10-12"
+          },
+          {
+            "date": "2026-09-17",
+            "signal": "建仓",
+            "rps20": 90.4,
+            "streak": 3,
+            "ret10": 1.2,
+            "endDate": "2026-10-09"
+          }
+        ]
+      },
+      {
+        "code": "513630",
+        "name": "港股红利指数ETF",
+        "theme": "红利",
+        "currentSignal": "回避",
+        "currentRps20": 80.3,
+        "currentStreak": 0,
+        "stats": [
+          {
+            "count": 7,
+            "avgReturn": -0.2,
+            "winRate": 57.1,
+            "best": 1.5,
+            "worst": -2.8,
+            "holdDays": 5
+          },
+          {
+            "count": 7,
+            "avgReturn": -1.8,
+            "winRate": 0.0,
+            "best": -0.5,
+            "worst": -4.0,
+            "holdDays": 10
+          },
+          {
+            "count": 7,
+            "avgReturn": -1.9,
+            "winRate": 0.0,
+            "best": -1.1,
+            "worst": -3.6,
+            "holdDays": 20
+          }
+        ],
+        "recentSignals": [
+          {
+            "date": "2026-08-03",
+            "signal": "建仓",
+            "rps20": 91.0,
+            "streak": 3,
+            "ret10": -1.8,
+            "endDate": "2026-08-17"
+          },
+          {
+            "date": "2025-12-02",
+            "signal": "建仓",
+            "rps20": 92.0,
+            "streak": 8,
+            "ret10": -4.0,
+            "endDate": "2025-12-16"
+          },
+          {
+            "date": "2025-12-01",
+            "signal": "建仓",
+            "rps20": 93.7,
+            "streak": 7,
+            "ret10": -1.6,
+            "endDate": "2025-12-15"
+          },
+          {
+            "date": "2025-11-28",
+            "signal": "建仓",
+            "rps20": 98.3,
+            "streak": 6,
+            "ret10": -0.5,
+            "endDate": "2025-12-12"
+          },
+          {
+            "date": "2025-11-27",
+            "signal": "建仓",
+            "rps20": 90.8,
+            "streak": 5,
+            "ret10": -1.8,
+            "endDate": "2025-12-11"
+          }
+        ]
+      },
+      {
+        "code": "513910",
+        "name": "港股央企红利ETF",
+        "theme": "红利",
+        "currentSignal": "回避",
+        "currentRps20": 79.8,
+        "currentStreak": 0,
+        "stats": [
+          {
+            "count": 12,
+            "avgReturn": -0.1,
+            "winRate": 41.7,
+            "best": 2.5,
+            "worst": -2.1,
+            "holdDays": 5
+          },
+          {
+            "count": 12,
+            "avgReturn": 1.1,
+            "winRate": 41.7,
+            "best": 6.2,
+            "worst": -3.2,
+            "holdDays": 10
+          },
+          {
+            "count": 9,
+            "avgReturn": 2.7,
+            "winRate": 66.7,
+            "best": 7.0,
+            "worst": -2.8,
+            "holdDays": 20
+          }
+        ],
+        "recentSignals": [
+          {
+            "date": "2026-09-15",
+            "signal": "建仓",
+            "rps20": 95.5,
+            "streak": 7,
+            "ret10": -0.2,
+            "endDate": "2026-09-30"
+          },
+          {
+            "date": "2026-09-14",
+            "signal": "建仓",
+            "rps20": 94.4,
+            "streak": 6,
+            "ret10": -1.4,
+            "endDate": "2026-09-29"
+          },
+          {
+            "date": "2026-09-11",
+            "signal": "建仓",
+            "rps20": 96.1,
+            "streak": 5,
+            "ret10": -0.8,
+            "endDate": "2026-09-28"
+          },
+          {
+            "date": "2026-09-10",
+            "signal": "建仓",
+            "rps20": 95.5,
+            "streak": 4,
+            "ret10": -1.9,
+            "endDate": "2026-09-24"
+          },
+          {
+            "date": "2026-09-09",
+            "signal": "建仓",
+            "rps20": 94.4,
+            "streak": 3,
+            "ret10": -2.5,
+            "endDate": "2026-09-23"
+          }
+        ]
+      },
+      {
+        "code": "159611",
+        "name": "电力ETF",
+        "theme": "电力",
+        "currentSignal": "回避",
+        "currentRps20": 79.2,
+        "currentStreak": 0,
+        "stats": [
+          {
+            "count": 26,
+            "avgReturn": -0.6,
+            "winRate": 57.7,
+            "best": 7.2,
+            "worst": -9.4,
+            "holdDays": 5
+          },
+          {
+            "count": 26,
+            "avgReturn": -2.1,
+            "winRate": 42.3,
+            "best": 1.9,
+            "worst": -10.0,
+            "holdDays": 10
+          },
+          {
+            "count": 26,
+            "avgReturn": -2.6,
+            "winRate": 34.6,
+            "best": 3.6,
+            "worst": -10.5,
+            "holdDays": 20
+          }
+        ],
+        "recentSignals": [
+          {
+            "date": "2026-03-30",
+            "signal": "持有",
+            "rps20": 93.8,
+            "streak": 20,
+            "ret10": -4.2,
+            "endDate": "2026-04-14"
+          },
+          {
+            "date": "2026-03-27",
+            "signal": "持有",
+            "rps20": 98.9,
+            "streak": 19,
+            "ret10": -7.8,
+            "endDate": "2026-04-13"
+          },
+          {
+            "date": "2026-03-26",
+            "signal": "持有",
+            "rps20": 98.9,
+            "streak": 18,
+            "ret10": -9.4,
+            "endDate": "2026-04-10"
+          },
+          {
+            "date": "2026-03-25",
+            "signal": "持有",
+            "rps20": 98.9,
+            "streak": 17,
+            "ret10": -10.0,
+            "endDate": "2026-04-09"
+          },
+          {
+            "date": "2026-03-24",
+            "signal": "持有",
+            "rps20": 98.9,
+            "streak": 16,
+            "ret10": -6.4,
+            "endDate": "2026-04-08"
+          }
+        ]
+      },
+      {
+        "code": "516820",
+        "name": "医疗创新ETF",
+        "theme": "医药",
+        "currentSignal": "回避",
+        "currentRps20": 78.7,
+        "currentStreak": 0,
+        "stats": [
+          {
+            "count": 3,
+            "avgReturn": -1.6,
+            "winRate": 0.0,
+            "best": -0.6,
+            "worst": -2.6,
+            "holdDays": 5
+          },
+          {
+            "count": 3,
+            "avgReturn": 0.3,
+            "winRate": 66.7,
+            "best": 1.1,
+            "worst": -1.1,
+            "holdDays": 10
+          },
+          {
+            "count": 3,
+            "avgReturn": 4.6,
+            "winRate": 100.0,
+            "best": 5.2,
+            "worst": 3.7,
+            "holdDays": 20
+          }
+        ],
+        "recentSignals": [
+          {
+            "date": "2026-07-22",
+            "signal": "建仓",
+            "rps20": 91.6,
+            "streak": 5,
+            "ret10": 1.1,
+            "endDate": "2026-08-05"
+          },
+          {
+            "date": "2026-07-21",
+            "signal": "建仓",
+            "rps20": 91.6,
+            "streak": 4,
+            "ret10": 0.9,
+            "endDate": "2026-08-04"
+          },
+          {
+            "date": "2026-07-20",
+            "signal": "建仓",
+            "rps20": 91.6,
+            "streak": 3,
+            "ret10": -1.1,
+            "endDate": "2026-08-03"
+          }
+        ]
+      },
+      {
+        "code": "159201",
+        "name": "自由现金流ETF",
+        "theme": "自由现金流",
+        "currentSignal": "回避",
+        "currentRps20": 78.1,
+        "currentStreak": 0,
+        "stats": [
+          {
+            "count": 1,
+            "avgReturn": 1.7,
+            "winRate": 100.0,
+            "best": 1.7,
+            "worst": 1.7,
+            "holdDays": 5
+          },
+          {
+            "count": 1,
+            "avgReturn": -3.8,
+            "winRate": 0.0,
+            "best": -3.8,
+            "worst": -3.8,
+            "holdDays": 10
+          },
+          {
+            "count": 1,
+            "avgReturn": -5.5,
+            "winRate": 0.0,
+            "best": -5.5,
+            "worst": -5.5,
+            "holdDays": 20
+          }
+        ],
+        "recentSignals": [
+          {
+            "date": "2026-03-05",
+            "signal": "建仓",
+            "rps20": 90.4,
+            "streak": 3,
+            "ret10": -3.8,
+            "endDate": "2026-03-19"
+          }
+        ]
+      },
+      {
+        "code": "159792",
+        "name": "港股通互联网ETF",
+        "theme": "港股通互联网",
+        "currentSignal": "回避",
+        "currentRps20": 77.5,
+        "currentStreak": 0,
+        "stats": [
+          {
+            "count": 28,
+            "avgReturn": 0.9,
+            "winRate": 57.1,
+            "best": 11.2,
+            "worst": -8.2,
+            "holdDays": 5
+          },
+          {
+            "count": 28,
+            "avgReturn": -0.4,
+            "winRate": 35.7,
+            "best": 10.9,
+            "worst": -6.9,
+            "holdDays": 10
+          },
+          {
+            "count": 28,
+            "avgReturn": -5.9,
+            "winRate": 21.4,
+            "best": 6.5,
+            "worst": -26.3,
+            "holdDays": 20
+          }
+        ],
+        "recentSignals": [
+          {
+            "date": "2026-08-06",
+            "signal": "建仓",
+            "rps20": 97.2,
+            "streak": 9,
+            "ret10": -3.6,
+            "endDate": "2026-08-20"
+          },
+          {
             "date": "2026-08-05",
             "signal": "建仓",
-            "rps20": 94.9,
-            "streak": 6,
-            "ret10": -2.0,
+            "rps20": 98.9,
+            "streak": 8,
+            "ret10": -6.9,
             "endDate": "2026-08-19"
           },
           {
             "date": "2026-08-04",
             "signal": "建仓",
-            "rps20": 96.1,
-            "streak": 5,
-            "ret10": -1.7,
+            "rps20": 99.4,
+            "streak": 7,
+            "ret10": -6.5,
             "endDate": "2026-08-18"
           },
           {
             "date": "2026-08-03",
             "signal": "建仓",
-            "rps20": 95.5,
-            "streak": 4,
-            "ret10": -2.2,
+            "rps20": 99.4,
+            "streak": 6,
+            "ret10": -5.5,
             "endDate": "2026-08-17"
           },
           {
             "date": "2026-07-30",
             "signal": "建仓",
-            "rps20": 92.7,
-            "streak": 3,
-            "ret10": -2.6,
+            "rps20": 100.0,
+            "streak": 5,
+            "ret10": -3.6,
             "endDate": "2026-08-13"
-          },
-          {
-            "date": "2025-05-19",
-            "signal": "建仓",
-            "rps20": 90.3,
-            "streak": 6,
-            "ret10": 0.6,
-            "endDate": "2025-06-03"
           }
         ]
       },
       {
-        "code": "510050",
-        "name": "50ETF",
-        "theme": "50",
+        "code": "159263",
+        "name": "价值ETF",
+        "theme": "价值",
         "currentSignal": "回避",
-        "currentRps20": 68.0,
+        "currentRps20": 77.0,
         "currentStreak": 0,
         "stats": [
           {
-            "count": 0,
-            "avgReturn": null,
-            "winRate": null,
-            "best": null,
-            "worst": null,
-            "holdDays": 5
-          },
-          {
-            "count": 0,
-            "avgReturn": null,
-            "winRate": null,
-            "best": null,
-            "worst": null,
-            "holdDays": 10
-          },
-          {
-            "count": 0,
-            "avgReturn": null,
-            "winRate": null,
-            "best": null,
-            "worst": null,
-            "holdDays": 20
-          }
-        ],
-        "recentSignals": []
-      },
-      {
-        "code": "159980",
-        "name": "有色ETF",
-        "theme": "有色金属",
-        "currentSignal": "回避",
-        "currentRps20": 67.4,
-        "currentStreak": 0,
-        "stats": [
-          {
-            "count": 7,
-            "avgReturn": 1.5,
-            "winRate": 71.4,
-            "best": 3.5,
-            "worst": -0.3,
-            "holdDays": 5
-          },
-          {
-            "count": 7,
-            "avgReturn": 4.1,
-            "winRate": 100.0,
-            "best": 7.4,
-            "worst": 0.7,
-            "holdDays": 10
-          },
-          {
-            "count": 7,
-            "avgReturn": 12.0,
-            "winRate": 100.0,
-            "best": 15.0,
-            "worst": 10.2,
-            "holdDays": 20
-          }
-        ],
-        "recentSignals": [
-          {
-            "date": "2025-12-18",
-            "signal": "建仓",
-            "rps20": 90.9,
-            "streak": 6,
-            "ret10": 7.4,
-            "endDate": "2026-01-05"
-          },
-          {
-            "date": "2025-12-17",
-            "signal": "建仓",
-            "rps20": 92.0,
-            "streak": 5,
-            "ret10": 6.0,
-            "endDate": "2025-12-31"
-          },
-          {
-            "date": "2025-12-16",
-            "signal": "建仓",
-            "rps20": 93.2,
-            "streak": 4,
-            "ret10": 4.9,
-            "endDate": "2025-12-30"
-          },
-          {
-            "date": "2025-12-15",
-            "signal": "建仓",
-            "rps20": 93.2,
-            "streak": 3,
-            "ret10": 6.5,
-            "endDate": "2025-12-29"
-          },
-          {
-            "date": "2025-12-09",
-            "signal": "建仓",
-            "rps20": 92.6,
-            "streak": 5,
-            "ret10": 2.0,
-            "endDate": "2025-12-23"
-          }
-        ]
-      },
-      {
-        "code": "510720",
-        "name": "红利国企ETF",
-        "theme": "红利",
-        "currentSignal": "回避",
-        "currentRps20": 66.9,
-        "currentStreak": 0,
-        "stats": [
-          {
-            "count": 9,
-            "avgReturn": -0.8,
-            "winRate": 44.4,
-            "best": 2.5,
-            "worst": -5.8,
-            "holdDays": 5
-          },
-          {
-            "count": 9,
-            "avgReturn": -3.3,
-            "winRate": 0.0,
-            "best": -0.6,
-            "worst": -11.1,
-            "holdDays": 10
-          },
-          {
-            "count": 9,
-            "avgReturn": -3.0,
-            "winRate": 11.1,
-            "best": 0.2,
-            "worst": -7.8,
-            "holdDays": 20
-          }
-        ],
-        "recentSignals": [
-          {
-            "date": "2026-06-12",
-            "signal": "建仓",
-            "rps20": 92.7,
-            "streak": 3,
-            "ret10": -11.1,
-            "endDate": "2026-06-29"
-          },
-          {
-            "date": "2026-03-26",
-            "signal": "建仓",
-            "rps20": 92.1,
-            "streak": 6,
-            "ret10": -2.5,
-            "endDate": "2026-04-10"
-          },
-          {
-            "date": "2026-03-25",
-            "signal": "建仓",
-            "rps20": 90.4,
-            "streak": 5,
-            "ret10": -2.3,
-            "endDate": "2026-04-09"
-          },
-          {
-            "date": "2026-03-24",
-            "signal": "建仓",
-            "rps20": 92.7,
-            "streak": 4,
-            "ret10": -2.1,
-            "endDate": "2026-04-08"
-          },
-          {
-            "date": "2026-03-23",
-            "signal": "建仓",
-            "rps20": 93.3,
-            "streak": 3,
-            "ret10": -1.5,
-            "endDate": "2026-04-07"
-          }
-        ]
-      },
-      {
-        "code": "159892",
-        "name": "恒生医药ETF",
-        "theme": "医药",
-        "currentSignal": "回避",
-        "currentRps20": 66.3,
-        "currentStreak": 0,
-        "stats": [
-          {
-            "count": 72,
-            "avgReturn": -0.2,
-            "winRate": 45.8,
-            "best": 13.1,
-            "worst": -16.5,
-            "holdDays": 5
-          },
-          {
-            "count": 72,
-            "avgReturn": 0.8,
-            "winRate": 58.3,
-            "best": 8.7,
-            "worst": -10.5,
-            "holdDays": 10
-          },
-          {
-            "count": 72,
-            "avgReturn": 3.5,
-            "winRate": 63.9,
-            "best": 21.6,
-            "worst": -7.3,
-            "holdDays": 20
-          }
-        ],
-        "recentSignals": [
-          {
-            "date": "2026-09-07",
-            "signal": "建仓",
-            "rps20": 93.3,
-            "streak": 5,
-            "ret10": 4.4,
-            "endDate": "2026-09-21"
-          },
-          {
-            "date": "2026-09-04",
-            "signal": "建仓",
-            "rps20": 96.1,
-            "streak": 4,
-            "ret10": -1.5,
-            "endDate": "2026-09-18"
-          },
-          {
-            "date": "2026-09-03",
-            "signal": "建仓",
-            "rps20": 96.6,
-            "streak": 3,
-            "ret10": -3.2,
-            "endDate": "2026-09-17"
-          },
-          {
-            "date": "2026-08-28",
-            "signal": "建仓",
-            "rps20": 94.9,
-            "streak": 7,
-            "ret10": -7.8,
-            "endDate": "2026-09-11"
-          },
-          {
-            "date": "2026-08-27",
-            "signal": "建仓",
-            "rps20": 97.8,
-            "streak": 6,
-            "ret10": -7.4,
-            "endDate": "2026-09-10"
-          }
-        ]
-      },
-      {
-        "code": "515630",
-        "name": "保险证券ETF",
-        "theme": "非银金融",
-        "currentSignal": "回避",
-        "currentRps20": 65.7,
-        "currentStreak": 0,
-        "stats": [
-          {
-            "count": 0,
-            "avgReturn": null,
-            "winRate": null,
-            "best": null,
-            "worst": null,
-            "holdDays": 5
-          },
-          {
-            "count": 0,
-            "avgReturn": null,
-            "winRate": null,
-            "best": null,
-            "worst": null,
-            "holdDays": 10
-          },
-          {
-            "count": 0,
-            "avgReturn": null,
-            "winRate": null,
-            "best": null,
-            "worst": null,
-            "holdDays": 20
-          }
-        ],
-        "recentSignals": []
-      },
-      {
-        "code": "512070",
-        "name": "证券保险ETF",
-        "theme": "非银金融",
-        "currentSignal": "回避",
-        "currentRps20": 65.2,
-        "currentStreak": 0,
-        "stats": [
-          {
-            "count": 0,
-            "avgReturn": null,
-            "winRate": null,
-            "best": null,
-            "worst": null,
-            "holdDays": 5
-          },
-          {
-            "count": 0,
-            "avgReturn": null,
-            "winRate": null,
-            "best": null,
-            "worst": null,
-            "holdDays": 10
-          },
-          {
-            "count": 0,
-            "avgReturn": null,
-            "winRate": null,
-            "best": null,
-            "worst": null,
-            "holdDays": 20
-          }
-        ],
-        "recentSignals": []
-      },
-      {
-        "code": "510210",
-        "name": "指数ETF",
-        "theme": "指数",
-        "currentSignal": "回避",
-        "currentRps20": 64.6,
-        "currentStreak": 0,
-        "stats": [
-          {
-            "count": 0,
-            "avgReturn": null,
-            "winRate": null,
-            "best": null,
-            "worst": null,
-            "holdDays": 5
-          },
-          {
-            "count": 0,
-            "avgReturn": null,
-            "winRate": null,
-            "best": null,
-            "worst": null,
-            "holdDays": 10
-          },
-          {
-            "count": 0,
-            "avgReturn": null,
-            "winRate": null,
-            "best": null,
-            "worst": null,
-            "holdDays": 20
-          }
-        ],
-        "recentSignals": []
-      },
-      {
-        "code": "159588",
-        "name": "石油ETF",
-        "theme": "石油",
-        "currentSignal": "回避",
-        "currentRps20": 64.0,
-        "currentStreak": 0,
-        "stats": [
-          {
-            "count": 37,
-            "avgReturn": 1.6,
-            "winRate": 45.9,
-            "best": 23.5,
-            "worst": -13.4,
-            "holdDays": 5
-          },
-          {
-            "count": 37,
-            "avgReturn": 2.6,
-            "winRate": 54.1,
-            "best": 31.4,
-            "worst": -14.9,
-            "holdDays": 10
-          },
-          {
-            "count": 36,
-            "avgReturn": -0.0,
-            "winRate": 44.4,
-            "best": 15.6,
-            "worst": -18.9,
-            "holdDays": 20
-          }
-        ],
-        "recentSignals": [
-          {
-            "date": "2026-09-10",
-            "signal": "建仓",
-            "rps20": 94.4,
-            "streak": 3,
-            "ret10": -3.7,
-            "endDate": "2026-09-24"
-          },
-          {
-            "date": "2026-03-26",
-            "signal": "持有",
-            "rps20": 91.0,
-            "streak": 33,
-            "ret10": 0.4,
-            "endDate": "2026-04-10"
-          },
-          {
-            "date": "2026-03-25",
-            "signal": "持有",
-            "rps20": 93.8,
-            "streak": 32,
-            "ret10": 0.4,
-            "endDate": "2026-04-09"
-          },
-          {
-            "date": "2026-03-24",
-            "signal": "持有",
-            "rps20": 96.1,
-            "streak": 31,
-            "ret10": -1.7,
-            "endDate": "2026-04-08"
-          },
-          {
-            "date": "2026-03-23",
-            "signal": "持有",
-            "rps20": 97.8,
-            "streak": 30,
-            "ret10": 0.9,
-            "endDate": "2026-04-07"
-          }
-        ]
-      },
-      {
-        "code": "513060",
-        "name": "恒生医疗ETF",
-        "theme": "医药",
-        "currentSignal": "回避",
-        "currentRps20": 63.5,
-        "currentStreak": 0,
-        "stats": [
-          {
-            "count": 52,
-            "avgReturn": -0.5,
-            "winRate": 42.3,
-            "best": 8.6,
-            "worst": -15.6,
-            "holdDays": 5
-          },
-          {
-            "count": 53,
-            "avgReturn": 0.8,
-            "winRate": 62.3,
-            "best": 8.7,
-            "worst": -10.0,
-            "holdDays": 10
-          },
-          {
-            "count": 53,
-            "avgReturn": 3.8,
-            "winRate": 60.4,
-            "best": 20.0,
-            "worst": -13.3,
-            "holdDays": 20
-          }
-        ],
-        "recentSignals": [
-          {
-            "date": "2026-08-27",
-            "signal": "建仓",
-            "rps20": 92.7,
-            "streak": 3,
-            "ret10": -6.9,
-            "endDate": "2026-09-10"
-          },
-          {
-            "date": "2026-07-27",
-            "signal": "建仓",
-            "rps20": 93.3,
-            "streak": 8,
-            "ret10": 7.7,
-            "endDate": "2026-08-10"
-          },
-          {
-            "date": "2026-07-24",
-            "signal": "建仓",
-            "rps20": 94.4,
-            "streak": 7,
-            "ret10": 6.2,
-            "endDate": "2026-08-07"
-          },
-          {
-            "date": "2026-07-23",
-            "signal": "建仓",
-            "rps20": 94.4,
-            "streak": 6,
-            "ret10": -0.4,
-            "endDate": "2026-08-06"
-          },
-          {
-            "date": "2026-07-22",
-            "signal": "建仓",
-            "rps20": 94.9,
-            "streak": 5,
-            "ret10": 0.2,
-            "endDate": "2026-08-05"
-          }
-        ]
-      },
-      {
-        "code": "159506",
-        "name": "港股通医疗ETF",
-        "theme": "医药",
-        "currentSignal": "回避",
-        "currentRps20": 62.9,
-        "currentStreak": 0,
-        "stats": [
-          {
-            "count": 79,
-            "avgReturn": -0.1,
-            "winRate": 46.8,
-            "best": 14.1,
-            "worst": -18.6,
-            "holdDays": 5
-          },
-          {
-            "count": 79,
-            "avgReturn": 1.0,
-            "winRate": 57.0,
-            "best": 11.2,
-            "worst": -12.8,
-            "holdDays": 10
-          },
-          {
-            "count": 79,
-            "avgReturn": 3.9,
-            "winRate": 67.1,
-            "best": 22.7,
-            "worst": -17.1,
-            "holdDays": 20
-          }
-        ],
-        "recentSignals": [
-          {
-            "date": "2026-09-04",
-            "signal": "建仓",
-            "rps20": 95.5,
-            "streak": 3,
-            "ret10": -3.9,
-            "endDate": "2026-09-18"
-          },
-          {
-            "date": "2026-08-28",
-            "signal": "建仓",
-            "rps20": 90.4,
-            "streak": 3,
-            "ret10": -9.4,
-            "endDate": "2026-09-11"
-          },
-          {
-            "date": "2026-07-27",
-            "signal": "建仓",
-            "rps20": 98.9,
-            "streak": 9,
-            "ret10": 5.7,
-            "endDate": "2026-08-10"
-          },
-          {
-            "date": "2026-07-24",
-            "signal": "建仓",
-            "rps20": 98.9,
-            "streak": 8,
-            "ret10": 3.9,
-            "endDate": "2026-08-07"
-          },
-          {
-            "date": "2026-07-23",
-            "signal": "建仓",
-            "rps20": 96.6,
-            "streak": 7,
-            "ret10": -2.4,
-            "endDate": "2026-08-06"
-          }
-        ]
-      },
-      {
-        "code": "513360",
-        "name": "教育ETF",
-        "theme": "教育",
-        "currentSignal": "回避",
-        "currentRps20": 62.4,
-        "currentStreak": 0,
-        "stats": [
-          {
-            "count": 13,
-            "avgReturn": -0.2,
-            "winRate": 53.8,
-            "best": 4.6,
-            "worst": -9.9,
-            "holdDays": 5
-          },
-          {
-            "count": 13,
-            "avgReturn": -1.1,
-            "winRate": 38.5,
-            "best": 5.9,
-            "worst": -8.5,
-            "holdDays": 10
-          },
-          {
-            "count": 13,
-            "avgReturn": 0.2,
-            "winRate": 84.6,
-            "best": 3.4,
-            "worst": -5.6,
-            "holdDays": 20
-          }
-        ],
-        "recentSignals": [
-          {
-            "date": "2026-08-26",
-            "signal": "建仓",
-            "rps20": 92.1,
-            "streak": 6,
-            "ret10": 1.7,
-            "endDate": "2026-09-09"
-          },
-          {
-            "date": "2026-08-25",
-            "signal": "建仓",
-            "rps20": 94.4,
-            "streak": 5,
-            "ret10": 4.1,
-            "endDate": "2026-09-08"
-          },
-          {
-            "date": "2026-08-24",
-            "signal": "建仓",
-            "rps20": 93.3,
-            "streak": 4,
-            "ret10": 5.9,
-            "endDate": "2026-09-07"
-          },
-          {
-            "date": "2026-08-21",
-            "signal": "建仓",
-            "rps20": 90.4,
-            "streak": 3,
-            "ret10": 3.5,
-            "endDate": "2026-09-04"
-          },
-          {
-            "date": "2025-02-24",
-            "signal": "持有",
-            "rps20": 90.5,
-            "streak": 11,
-            "ret10": -1.7,
-            "endDate": "2025-03-10"
-          }
-        ]
-      },
-      {
-        "code": "518680",
-        "name": "金ETF",
-        "theme": "金",
-        "currentSignal": "回避",
-        "currentRps20": 61.8,
-        "currentStreak": 0,
-        "stats": [
-          {
-            "count": 53,
+            "count": 10,
             "avgReturn": 0.4,
-            "winRate": 49.1,
-            "best": 13.6,
-            "worst": -9.4,
+            "winRate": 60.0,
+            "best": 4.9,
+            "worst": -2.8,
             "holdDays": 5
           },
           {
-            "count": 53,
-            "avgReturn": 1.3,
-            "winRate": 58.5,
-            "best": 20.7,
-            "worst": -7.9,
+            "count": 10,
+            "avgReturn": -1.3,
+            "winRate": 30.0,
+            "best": 4.8,
+            "worst": -4.3,
             "holdDays": 10
           },
           {
-            "count": 53,
-            "avgReturn": 0.2,
-            "winRate": 41.5,
-            "best": 14.7,
-            "worst": -15.1,
+            "count": 10,
+            "avgReturn": -1.8,
+            "winRate": 20.0,
+            "best": 1.0,
+            "worst": -4.6,
             "holdDays": 20
           }
         ],
         "recentSignals": [
           {
-            "date": "2026-08-28",
+            "date": "2026-03-05",
             "signal": "建仓",
-            "rps20": 95.5,
-            "streak": 7,
-            "ret10": -5.5,
-            "endDate": "2026-09-11"
+            "rps20": 92.7,
+            "streak": 3,
+            "ret10": -1.9,
+            "endDate": "2026-03-19"
           },
           {
-            "date": "2026-08-27",
+            "date": "2026-02-24",
             "signal": "建仓",
             "rps20": 91.6,
-            "streak": 6,
-            "ret10": -3.8,
-            "endDate": "2026-09-10"
-          },
-          {
-            "date": "2026-08-26",
-            "signal": "建仓",
-            "rps20": 95.5,
-            "streak": 5,
-            "ret10": -4.9,
-            "endDate": "2026-09-09"
-          },
-          {
-            "date": "2026-08-25",
-            "signal": "建仓",
-            "rps20": 97.8,
             "streak": 4,
-            "ret10": -5.1,
-            "endDate": "2026-09-08"
+            "ret10": 1.7,
+            "endDate": "2026-03-10"
           },
           {
-            "date": "2026-08-24",
+            "date": "2026-02-13",
             "signal": "建仓",
-            "rps20": 98.3,
+            "rps20": 91.0,
             "streak": 3,
-            "ret10": -5.6,
-            "endDate": "2026-09-07"
+            "ret10": 4.8,
+            "endDate": "2026-03-09"
+          },
+          {
+            "date": "2025-11-26",
+            "signal": "建仓",
+            "rps20": 93.1,
+            "streak": 4,
+            "ret10": 0.0,
+            "endDate": "2025-12-10"
+          },
+          {
+            "date": "2025-11-25",
+            "signal": "建仓",
+            "rps20": 94.3,
+            "streak": 3,
+            "ret10": 0.1,
+            "endDate": "2025-12-09"
           }
         ]
       },
       {
-        "code": "510180",
-        "name": "180ETF",
-        "theme": "180",
+        "code": "159883",
+        "name": "医疗器械ETF",
+        "theme": "医药",
         "currentSignal": "回避",
-        "currentRps20": 61.2,
+        "currentRps20": 76.4,
         "currentStreak": 0,
         "stats": [
           {
@@ -53799,87 +52253,46 @@ window.COCKPIT_DATA = {
         "recentSignals": []
       },
       {
-        "code": "518880",
-        "name": "黄金ETF",
-        "theme": "黄金",
+        "code": "563960",
+        "name": "兴全沪深300质量ETF",
+        "theme": "兴全沪深300质量",
         "currentSignal": "回避",
-        "currentRps20": 60.7,
+        "currentRps20": 75.8,
         "currentStreak": 0,
         "stats": [
           {
-            "count": 53,
-            "avgReturn": 0.0,
-            "winRate": 52.8,
-            "best": 8.2,
-            "worst": -9.2,
+            "count": 0,
+            "avgReturn": null,
+            "winRate": null,
+            "best": null,
+            "worst": null,
             "holdDays": 5
           },
           {
-            "count": 53,
-            "avgReturn": 0.6,
-            "winRate": 56.6,
-            "best": 15.0,
-            "worst": -7.6,
+            "count": 0,
+            "avgReturn": null,
+            "winRate": null,
+            "best": null,
+            "worst": null,
             "holdDays": 10
           },
           {
-            "count": 53,
-            "avgReturn": -0.9,
-            "winRate": 35.8,
-            "best": 10.0,
-            "worst": -16.7,
+            "count": 0,
+            "avgReturn": null,
+            "winRate": null,
+            "best": null,
+            "worst": null,
             "holdDays": 20
           }
         ],
-        "recentSignals": [
-          {
-            "date": "2026-08-28",
-            "signal": "建仓",
-            "rps20": 96.1,
-            "streak": 6,
-            "ret10": -5.6,
-            "endDate": "2026-09-11"
-          },
-          {
-            "date": "2026-08-27",
-            "signal": "建仓",
-            "rps20": 91.0,
-            "streak": 5,
-            "ret10": -3.8,
-            "endDate": "2026-09-10"
-          },
-          {
-            "date": "2026-08-26",
-            "signal": "建仓",
-            "rps20": 96.1,
-            "streak": 4,
-            "ret10": -5.0,
-            "endDate": "2026-09-09"
-          },
-          {
-            "date": "2026-08-25",
-            "signal": "建仓",
-            "rps20": 97.2,
-            "streak": 3,
-            "ret10": -5.1,
-            "endDate": "2026-09-08"
-          },
-          {
-            "date": "2026-02-25",
-            "signal": "持有",
-            "rps20": 91.6,
-            "streak": 11,
-            "ret10": 0.4,
-            "endDate": "2026-03-11"
-          }
-        ]
+        "recentSignals": []
       },
       {
         "code": "159570",
         "name": "港股通创新药ETF",
         "theme": "医药",
         "currentSignal": "回避",
-        "currentRps20": 60.1,
+        "currentRps20": 75.3,
         "currentStreak": 0,
         "stats": [
           {
@@ -53951,148 +52364,1321 @@ window.COCKPIT_DATA = {
         ]
       },
       {
-        "code": "159996",
-        "name": "家电ETF",
-        "theme": "家电",
+        "code": "510900",
+        "name": "恒生中国企业ETF",
+        "theme": "恒生中国企业",
         "currentSignal": "回避",
-        "currentRps20": 59.6,
+        "currentRps20": 74.7,
         "currentStreak": 0,
         "stats": [
           {
-            "count": 0,
-            "avgReturn": null,
-            "winRate": null,
-            "best": null,
-            "worst": null,
+            "count": 5,
+            "avgReturn": -1.4,
+            "winRate": 0.0,
+            "best": -0.6,
+            "worst": -2.4,
             "holdDays": 5
           },
           {
-            "count": 0,
-            "avgReturn": null,
-            "winRate": null,
-            "best": null,
-            "worst": null,
+            "count": 5,
+            "avgReturn": -1.5,
+            "winRate": 20.0,
+            "best": 1.0,
+            "worst": -3.3,
             "holdDays": 10
           },
           {
-            "count": 0,
-            "avgReturn": null,
-            "winRate": null,
-            "best": null,
-            "worst": null,
-            "holdDays": 20
-          }
-        ],
-        "recentSignals": []
-      },
-      {
-        "code": "563760",
-        "name": "全指自由现金流ETF",
-        "theme": "全指自由现金流",
-        "currentSignal": "回避",
-        "currentRps20": 59.0,
-        "currentStreak": 0,
-        "stats": [
-          {
-            "count": 0,
-            "avgReturn": null,
-            "winRate": null,
-            "best": null,
-            "worst": null,
-            "holdDays": 5
-          },
-          {
-            "count": 0,
-            "avgReturn": null,
-            "winRate": null,
-            "best": null,
-            "worst": null,
-            "holdDays": 10
-          },
-          {
-            "count": 0,
-            "avgReturn": null,
-            "winRate": null,
-            "best": null,
-            "worst": null,
-            "holdDays": 20
-          }
-        ],
-        "recentSignals": []
-      },
-      {
-        "code": "159985",
-        "name": "豆粕ETF",
-        "theme": "豆粕",
-        "currentSignal": "回避",
-        "currentRps20": 58.4,
-        "currentStreak": 0,
-        "stats": [
-          {
-            "count": 36,
-            "avgReturn": -2.4,
-            "winRate": 11.1,
-            "best": 3.0,
-            "worst": -6.9,
-            "holdDays": 5
-          },
-          {
-            "count": 37,
-            "avgReturn": -3.4,
-            "winRate": 2.7,
-            "best": 0.7,
-            "worst": -7.2,
-            "holdDays": 10
-          },
-          {
-            "count": 30,
-            "avgReturn": -4.3,
-            "winRate": 3.3,
-            "best": 0.1,
-            "worst": -7.6,
+            "count": 5,
+            "avgReturn": -2.0,
+            "winRate": 0.0,
+            "best": -1.3,
+            "worst": -2.5,
             "holdDays": 20
           }
         ],
         "recentSignals": [
           {
-            "date": "2026-09-18",
-            "signal": "持有",
-            "rps20": 99.4,
-            "streak": 14,
-            "ret10": -0.4,
-            "endDate": "2026-10-12"
+            "date": "2026-08-06",
+            "signal": "建仓",
+            "rps20": 94.9,
+            "streak": 7,
+            "ret10": 1.0,
+            "endDate": "2026-08-20"
           },
+          {
+            "date": "2026-08-05",
+            "signal": "建仓",
+            "rps20": 95.5,
+            "streak": 6,
+            "ret10": -1.5,
+            "endDate": "2026-08-19"
+          },
+          {
+            "date": "2026-08-04",
+            "signal": "建仓",
+            "rps20": 96.6,
+            "streak": 5,
+            "ret10": -1.3,
+            "endDate": "2026-08-18"
+          },
+          {
+            "date": "2026-08-03",
+            "signal": "建仓",
+            "rps20": 96.6,
+            "streak": 4,
+            "ret10": -2.3,
+            "endDate": "2026-08-17"
+          },
+          {
+            "date": "2026-07-30",
+            "signal": "建仓",
+            "rps20": 97.2,
+            "streak": 3,
+            "ret10": -3.3,
+            "endDate": "2026-08-13"
+          }
+        ]
+      },
+      {
+        "code": "159892",
+        "name": "恒生医药ETF",
+        "theme": "医药",
+        "currentSignal": "回避",
+        "currentRps20": 74.2,
+        "currentStreak": 0,
+        "stats": [
+          {
+            "count": 72,
+            "avgReturn": -0.2,
+            "winRate": 45.8,
+            "best": 13.1,
+            "worst": -16.5,
+            "holdDays": 5
+          },
+          {
+            "count": 72,
+            "avgReturn": 0.8,
+            "winRate": 58.3,
+            "best": 8.7,
+            "worst": -10.5,
+            "holdDays": 10
+          },
+          {
+            "count": 72,
+            "avgReturn": 3.5,
+            "winRate": 63.9,
+            "best": 21.6,
+            "worst": -7.3,
+            "holdDays": 20
+          }
+        ],
+        "recentSignals": [
+          {
+            "date": "2026-09-07",
+            "signal": "建仓",
+            "rps20": 93.3,
+            "streak": 5,
+            "ret10": 4.4,
+            "endDate": "2026-09-21"
+          },
+          {
+            "date": "2026-09-04",
+            "signal": "建仓",
+            "rps20": 96.1,
+            "streak": 4,
+            "ret10": -1.5,
+            "endDate": "2026-09-18"
+          },
+          {
+            "date": "2026-09-03",
+            "signal": "建仓",
+            "rps20": 96.6,
+            "streak": 3,
+            "ret10": -3.2,
+            "endDate": "2026-09-17"
+          },
+          {
+            "date": "2026-08-28",
+            "signal": "建仓",
+            "rps20": 94.9,
+            "streak": 7,
+            "ret10": -7.8,
+            "endDate": "2026-09-11"
+          },
+          {
+            "date": "2026-08-27",
+            "signal": "建仓",
+            "rps20": 97.8,
+            "streak": 6,
+            "ret10": -7.4,
+            "endDate": "2026-09-10"
+          }
+        ]
+      },
+      {
+        "code": "159399",
+        "name": "现金流ETF",
+        "theme": "现金流",
+        "currentSignal": "回避",
+        "currentRps20": 73.6,
+        "currentStreak": 0,
+        "stats": [
+          {
+            "count": 0,
+            "avgReturn": null,
+            "winRate": null,
+            "best": null,
+            "worst": null,
+            "holdDays": 5
+          },
+          {
+            "count": 0,
+            "avgReturn": null,
+            "winRate": null,
+            "best": null,
+            "worst": null,
+            "holdDays": 10
+          },
+          {
+            "count": 0,
+            "avgReturn": null,
+            "winRate": null,
+            "best": null,
+            "worst": null,
+            "holdDays": 20
+          }
+        ],
+        "recentSignals": []
+      },
+      {
+        "code": "159992",
+        "name": "创新药ETF",
+        "theme": "医药",
+        "currentSignal": "回避",
+        "currentRps20": 73.0,
+        "currentStreak": 0,
+        "stats": [
+          {
+            "count": 28,
+            "avgReturn": -0.8,
+            "winRate": 35.7,
+            "best": 12.3,
+            "worst": -7.4,
+            "holdDays": 5
+          },
+          {
+            "count": 27,
+            "avgReturn": -2.2,
+            "winRate": 11.1,
+            "best": 8.4,
+            "worst": -7.0,
+            "holdDays": 10
+          },
+          {
+            "count": 27,
+            "avgReturn": 0.5,
+            "winRate": 48.1,
+            "best": 6.7,
+            "worst": -4.7,
+            "holdDays": 20
+          }
+        ],
+        "recentSignals": [
+          {
+            "date": "2026-07-23",
+            "signal": "建仓",
+            "rps20": 93.8,
+            "streak": 9,
+            "ret10": -2.6,
+            "endDate": "2026-08-06"
+          },
+          {
+            "date": "2026-07-22",
+            "signal": "建仓",
+            "rps20": 94.4,
+            "streak": 8,
+            "ret10": -1.6,
+            "endDate": "2026-08-05"
+          },
+          {
+            "date": "2026-07-21",
+            "signal": "建仓",
+            "rps20": 98.3,
+            "streak": 7,
+            "ret10": -2.5,
+            "endDate": "2026-08-04"
+          },
+          {
+            "date": "2026-07-20",
+            "signal": "建仓",
+            "rps20": 98.3,
+            "streak": 6,
+            "ret10": -4.7,
+            "endDate": "2026-08-03"
+          },
+          {
+            "date": "2026-07-17",
+            "signal": "建仓",
+            "rps20": 99.4,
+            "streak": 5,
+            "ret10": null,
+            "endDate": null
+          }
+        ]
+      },
+      {
+        "code": "512170",
+        "name": "医疗ETF",
+        "theme": "医药",
+        "currentSignal": "回避",
+        "currentRps20": 72.5,
+        "currentStreak": 0,
+        "stats": [
+          {
+            "count": 4,
+            "avgReturn": -0.0,
+            "winRate": 50.0,
+            "best": 1.1,
+            "worst": -1.7,
+            "holdDays": 5
+          },
+          {
+            "count": 4,
+            "avgReturn": -2.3,
+            "winRate": 0.0,
+            "best": -1.1,
+            "worst": -4.0,
+            "holdDays": 10
+          },
+          {
+            "count": 4,
+            "avgReturn": -4.3,
+            "winRate": 0.0,
+            "best": -2.8,
+            "worst": -6.2,
+            "holdDays": 20
+          }
+        ],
+        "recentSignals": [
+          {
+            "date": "2026-08-13",
+            "signal": "建仓",
+            "rps20": 98.3,
+            "streak": 6,
+            "ret10": -2.5,
+            "endDate": "2026-08-27"
+          },
+          {
+            "date": "2026-08-12",
+            "signal": "建仓",
+            "rps20": 95.5,
+            "streak": 5,
+            "ret10": -1.4,
+            "endDate": "2026-08-26"
+          },
+          {
+            "date": "2026-08-11",
+            "signal": "建仓",
+            "rps20": 96.1,
+            "streak": 4,
+            "ret10": -1.1,
+            "endDate": "2026-08-25"
+          },
+          {
+            "date": "2026-08-10",
+            "signal": "建仓",
+            "rps20": 96.1,
+            "streak": 3,
+            "ret10": -4.0,
+            "endDate": "2026-08-24"
+          }
+        ]
+      },
+      {
+        "code": "513060",
+        "name": "恒生医疗ETF",
+        "theme": "医药",
+        "currentSignal": "回避",
+        "currentRps20": 71.9,
+        "currentStreak": 0,
+        "stats": [
+          {
+            "count": 52,
+            "avgReturn": -0.5,
+            "winRate": 42.3,
+            "best": 8.6,
+            "worst": -15.6,
+            "holdDays": 5
+          },
+          {
+            "count": 53,
+            "avgReturn": 0.8,
+            "winRate": 62.3,
+            "best": 8.7,
+            "worst": -10.0,
+            "holdDays": 10
+          },
+          {
+            "count": 53,
+            "avgReturn": 3.8,
+            "winRate": 60.4,
+            "best": 20.0,
+            "worst": -13.3,
+            "holdDays": 20
+          }
+        ],
+        "recentSignals": [
+          {
+            "date": "2026-08-27",
+            "signal": "建仓",
+            "rps20": 92.7,
+            "streak": 3,
+            "ret10": -6.9,
+            "endDate": "2026-09-10"
+          },
+          {
+            "date": "2026-07-27",
+            "signal": "建仓",
+            "rps20": 93.3,
+            "streak": 8,
+            "ret10": 7.7,
+            "endDate": "2026-08-10"
+          },
+          {
+            "date": "2026-07-24",
+            "signal": "建仓",
+            "rps20": 94.4,
+            "streak": 7,
+            "ret10": 6.2,
+            "endDate": "2026-08-07"
+          },
+          {
+            "date": "2026-07-23",
+            "signal": "建仓",
+            "rps20": 94.4,
+            "streak": 6,
+            "ret10": -0.4,
+            "endDate": "2026-08-06"
+          },
+          {
+            "date": "2026-07-22",
+            "signal": "建仓",
+            "rps20": 94.9,
+            "streak": 5,
+            "ret10": 0.2,
+            "endDate": "2026-08-05"
+          }
+        ]
+      },
+      {
+        "code": "513520",
+        "name": "日经ETF",
+        "theme": "日经",
+        "currentSignal": "回避",
+        "currentRps20": 71.3,
+        "currentStreak": 0,
+        "stats": [
+          {
+            "count": 29,
+            "avgReturn": -1.6,
+            "winRate": 37.9,
+            "best": 5.4,
+            "worst": -7.9,
+            "holdDays": 5
+          },
+          {
+            "count": 26,
+            "avgReturn": -4.0,
+            "winRate": 23.1,
+            "best": 3.2,
+            "worst": -10.4,
+            "holdDays": 10
+          },
+          {
+            "count": 25,
+            "avgReturn": -7.5,
+            "winRate": 16.0,
+            "best": 2.7,
+            "worst": -17.2,
+            "holdDays": 20
+          }
+        ],
+        "recentSignals": [
+          {
+            "date": "2026-10-14",
+            "signal": "建仓",
+            "rps20": 92.7,
+            "streak": 8,
+            "ret10": null,
+            "endDate": null
+          },
+          {
+            "date": "2026-10-13",
+            "signal": "建仓",
+            "rps20": 91.0,
+            "streak": 7,
+            "ret10": null,
+            "endDate": null
+          },
+          {
+            "date": "2026-10-12",
+            "signal": "建仓",
+            "rps20": 97.8,
+            "streak": 6,
+            "ret10": null,
+            "endDate": null
+          },
+          {
+            "date": "2026-10-09",
+            "signal": "建仓",
+            "rps20": 98.3,
+            "streak": 5,
+            "ret10": null,
+            "endDate": null
+          },
+          {
+            "date": "2026-10-08",
+            "signal": "建仓",
+            "rps20": 98.9,
+            "streak": 4,
+            "ret10": null,
+            "endDate": null
+          }
+        ]
+      },
+      {
+        "code": "159506",
+        "name": "港股通医疗ETF",
+        "theme": "医药",
+        "currentSignal": "回避",
+        "currentRps20": 70.8,
+        "currentStreak": 0,
+        "stats": [
+          {
+            "count": 79,
+            "avgReturn": -0.1,
+            "winRate": 46.8,
+            "best": 14.1,
+            "worst": -18.6,
+            "holdDays": 5
+          },
+          {
+            "count": 79,
+            "avgReturn": 1.0,
+            "winRate": 57.0,
+            "best": 11.2,
+            "worst": -12.8,
+            "holdDays": 10
+          },
+          {
+            "count": 79,
+            "avgReturn": 3.9,
+            "winRate": 67.1,
+            "best": 22.7,
+            "worst": -17.1,
+            "holdDays": 20
+          }
+        ],
+        "recentSignals": [
+          {
+            "date": "2026-09-04",
+            "signal": "建仓",
+            "rps20": 95.5,
+            "streak": 3,
+            "ret10": -3.9,
+            "endDate": "2026-09-18"
+          },
+          {
+            "date": "2026-08-28",
+            "signal": "建仓",
+            "rps20": 90.4,
+            "streak": 3,
+            "ret10": -9.4,
+            "endDate": "2026-09-11"
+          },
+          {
+            "date": "2026-07-27",
+            "signal": "建仓",
+            "rps20": 98.9,
+            "streak": 9,
+            "ret10": 5.7,
+            "endDate": "2026-08-10"
+          },
+          {
+            "date": "2026-07-24",
+            "signal": "建仓",
+            "rps20": 98.9,
+            "streak": 8,
+            "ret10": 3.9,
+            "endDate": "2026-08-07"
+          },
+          {
+            "date": "2026-07-23",
+            "signal": "建仓",
+            "rps20": 96.6,
+            "streak": 7,
+            "ret10": -2.4,
+            "endDate": "2026-08-06"
+          }
+        ]
+      },
+      {
+        "code": "512200",
+        "name": "房地产ETF",
+        "theme": "房地产",
+        "currentSignal": "回避",
+        "currentRps20": 70.2,
+        "currentStreak": 0,
+        "stats": [
+          {
+            "count": 7,
+            "avgReturn": -3.5,
+            "winRate": 42.9,
+            "best": 2.1,
+            "worst": -8.6,
+            "holdDays": 5
+          },
+          {
+            "count": 2,
+            "avgReturn": -6.9,
+            "winRate": 0.0,
+            "best": -5.6,
+            "worst": -8.3,
+            "holdDays": 10
+          },
+          {
+            "count": 0,
+            "avgReturn": null,
+            "winRate": null,
+            "best": null,
+            "worst": null,
+            "holdDays": 20
+          }
+        ],
+        "recentSignals": [
+          {
+            "date": "2026-10-12",
+            "signal": "持有",
+            "rps20": 91.0,
+            "streak": 10,
+            "ret10": null,
+            "endDate": null
+          },
+          {
+            "date": "2026-10-09",
+            "signal": "建仓",
+            "rps20": 97.2,
+            "streak": 9,
+            "ret10": null,
+            "endDate": null
+          },
+          {
+            "date": "2026-10-08",
+            "signal": "建仓",
+            "rps20": 97.2,
+            "streak": 8,
+            "ret10": null,
+            "endDate": null
+          },
+          {
+            "date": "2026-09-30",
+            "signal": "建仓",
+            "rps20": 96.6,
+            "streak": 7,
+            "ret10": null,
+            "endDate": null
+          },
+          {
+            "date": "2026-09-29",
+            "signal": "建仓",
+            "rps20": 98.9,
+            "streak": 6,
+            "ret10": null,
+            "endDate": null
+          }
+        ]
+      },
+      {
+        "code": "515220",
+        "name": "煤炭ETF",
+        "theme": "煤炭",
+        "currentSignal": "回避",
+        "currentRps20": 69.7,
+        "currentStreak": 0,
+        "stats": [
+          {
+            "count": 50,
+            "avgReturn": -0.9,
+            "winRate": 44.0,
+            "best": 8.5,
+            "worst": -11.7,
+            "holdDays": 5
+          },
+          {
+            "count": 50,
+            "avgReturn": -2.3,
+            "winRate": 34.0,
+            "best": 14.0,
+            "worst": -17.4,
+            "holdDays": 10
+          },
+          {
+            "count": 49,
+            "avgReturn": -4.0,
+            "winRate": 20.4,
+            "best": 12.7,
+            "worst": -19.0,
+            "holdDays": 20
+          }
+        ],
+        "recentSignals": [
+          {
+            "date": "2026-09-11",
+            "signal": "建仓",
+            "rps20": 92.7,
+            "streak": 3,
+            "ret10": -2.2,
+            "endDate": "2026-09-28"
+          },
+          {
+            "date": "2026-09-03",
+            "signal": "建仓",
+            "rps20": 95.5,
+            "streak": 8,
+            "ret10": -3.2,
+            "endDate": "2026-09-17"
+          },
+          {
+            "date": "2026-09-02",
+            "signal": "建仓",
+            "rps20": 97.2,
+            "streak": 7,
+            "ret10": -2.4,
+            "endDate": "2026-09-16"
+          },
+          {
+            "date": "2026-09-01",
+            "signal": "建仓",
+            "rps20": 96.1,
+            "streak": 6,
+            "ret10": -5.4,
+            "endDate": "2026-09-15"
+          },
+          {
+            "date": "2026-08-31",
+            "signal": "建仓",
+            "rps20": 94.4,
+            "streak": 5,
+            "ret10": -7.6,
+            "endDate": "2026-09-14"
+          }
+        ]
+      },
+      {
+        "code": "159378",
+        "name": "通用航空ETF",
+        "theme": "军工",
+        "currentSignal": "回避",
+        "currentRps20": 69.1,
+        "currentStreak": 0,
+        "stats": [
+          {
+            "count": 13,
+            "avgReturn": 2.4,
+            "winRate": 46.2,
+            "best": 17.8,
+            "worst": -6.8,
+            "holdDays": 5
+          },
+          {
+            "count": 13,
+            "avgReturn": -0.2,
+            "winRate": 53.8,
+            "best": 9.8,
+            "worst": -8.9,
+            "holdDays": 10
+          },
+          {
+            "count": 13,
+            "avgReturn": -3.0,
+            "winRate": 38.5,
+            "best": 5.5,
+            "worst": -11.9,
+            "holdDays": 20
+          }
+        ],
+        "recentSignals": [
+          {
+            "date": "2026-01-19",
+            "signal": "持有",
+            "rps20": 93.2,
+            "streak": 14,
+            "ret10": -8.2,
+            "endDate": "2026-02-02"
+          },
+          {
+            "date": "2026-01-16",
+            "signal": "持有",
+            "rps20": 95.5,
+            "streak": 13,
+            "ret10": -4.7,
+            "endDate": "2026-01-30"
+          },
+          {
+            "date": "2026-01-15",
+            "signal": "持有",
+            "rps20": 91.5,
+            "streak": 12,
+            "ret10": -3.6,
+            "endDate": "2026-01-29"
+          },
+          {
+            "date": "2026-01-14",
+            "signal": "持有",
+            "rps20": 96.6,
+            "streak": 11,
+            "ret10": -5.3,
+            "endDate": "2026-01-28"
+          },
+          {
+            "date": "2026-01-13",
+            "signal": "持有",
+            "rps20": 94.9,
+            "streak": 10,
+            "ret10": -2.7,
+            "endDate": "2026-01-27"
+          }
+        ]
+      },
+      {
+        "code": "520690",
+        "name": "港股创新药精选ETF",
+        "theme": "医药",
+        "currentSignal": "回避",
+        "currentRps20": 68.5,
+        "currentStreak": 0,
+        "stats": [
+          {
+            "count": 22,
+            "avgReturn": -1.6,
+            "winRate": 27.3,
+            "best": 5.3,
+            "worst": -8.0,
+            "holdDays": 5
+          },
+          {
+            "count": 22,
+            "avgReturn": -3.3,
+            "winRate": 22.7,
+            "best": 3.4,
+            "worst": -10.0,
+            "holdDays": 10
+          },
+          {
+            "count": 22,
+            "avgReturn": -7.6,
+            "winRate": 22.7,
+            "best": 4.4,
+            "worst": -19.5,
+            "holdDays": 20
+          }
+        ],
+        "recentSignals": [
+          {
+            "date": "2026-07-27",
+            "signal": "建仓",
+            "rps20": 99.4,
+            "streak": 9,
+            "ret10": 3.4,
+            "endDate": "2026-08-10"
+          },
+          {
+            "date": "2026-07-24",
+            "signal": "建仓",
+            "rps20": 97.8,
+            "streak": 8,
+            "ret10": 3.0,
+            "endDate": "2026-08-07"
+          },
+          {
+            "date": "2026-07-23",
+            "signal": "建仓",
+            "rps20": 97.8,
+            "streak": 7,
+            "ret10": -3.9,
+            "endDate": "2026-08-06"
+          },
+          {
+            "date": "2026-07-22",
+            "signal": "建仓",
+            "rps20": 96.1,
+            "streak": 6,
+            "ret10": -3.3,
+            "endDate": "2026-08-05"
+          },
+          {
+            "date": "2026-07-21",
+            "signal": "建仓",
+            "rps20": 95.5,
+            "streak": 5,
+            "ret10": -3.6,
+            "endDate": "2026-08-04"
+          }
+        ]
+      },
+      {
+        "code": "512710",
+        "name": "军工龙头ETF",
+        "theme": "军工",
+        "currentSignal": "回避",
+        "currentRps20": 68.0,
+        "currentStreak": 0,
+        "stats": [
+          {
+            "count": 23,
+            "avgReturn": 1.4,
+            "winRate": 47.8,
+            "best": 19.4,
+            "worst": -9.3,
+            "holdDays": 5
+          },
+          {
+            "count": 23,
+            "avgReturn": 0.2,
+            "winRate": 39.1,
+            "best": 20.1,
+            "worst": -9.0,
+            "holdDays": 10
+          },
+          {
+            "count": 18,
+            "avgReturn": 0.0,
+            "winRate": 50.0,
+            "best": 13.8,
+            "worst": -11.1,
+            "holdDays": 20
+          }
+        ],
+        "recentSignals": [
+          {
+            "date": "2026-09-24",
+            "signal": "建仓",
+            "rps20": 91.0,
+            "streak": 7,
+            "ret10": 1.1,
+            "endDate": "2026-10-19"
+          },
+          {
+            "date": "2026-09-23",
+            "signal": "建仓",
+            "rps20": 90.4,
+            "streak": 6,
+            "ret10": -5.7,
+            "endDate": "2026-10-15"
+          },
+          {
+            "date": "2026-09-22",
+            "signal": "建仓",
+            "rps20": 92.7,
+            "streak": 5,
+            "ret10": -4.2,
+            "endDate": "2026-10-14"
+          },
+          {
+            "date": "2026-09-21",
+            "signal": "建仓",
+            "rps20": 95.5,
+            "streak": 4,
+            "ret10": -4.6,
+            "endDate": "2026-10-13"
+          },
+          {
+            "date": "2026-09-18",
+            "signal": "建仓",
+            "rps20": 98.3,
+            "streak": 3,
+            "ret10": -6.6,
+            "endDate": "2026-10-12"
+          }
+        ]
+      },
+      {
+        "code": "513190",
+        "name": "港股通金融ETF",
+        "theme": "非银金融",
+        "currentSignal": "回避",
+        "currentRps20": 67.4,
+        "currentStreak": 0,
+        "stats": [
+          {
+            "count": 23,
+            "avgReturn": -1.6,
+            "winRate": 17.4,
+            "best": 0.6,
+            "worst": -4.8,
+            "holdDays": 5
+          },
+          {
+            "count": 23,
+            "avgReturn": -1.4,
+            "winRate": 30.4,
+            "best": 2.3,
+            "worst": -5.9,
+            "holdDays": 10
+          },
+          {
+            "count": 18,
+            "avgReturn": 0.4,
+            "winRate": 50.0,
+            "best": 6.0,
+            "worst": -5.7,
+            "holdDays": 20
+          }
+        ],
+        "recentSignals": [
           {
             "date": "2026-09-17",
             "signal": "持有",
-            "rps20": 99.4,
-            "streak": 13,
-            "ret10": -2.9,
+            "rps20": 95.5,
+            "streak": 10,
+            "ret10": -1.0,
             "endDate": "2026-10-09"
           },
           {
             "date": "2026-09-16",
-            "signal": "持有",
-            "rps20": 98.9,
-            "streak": 12,
-            "ret10": -4.7,
+            "signal": "建仓",
+            "rps20": 95.5,
+            "streak": 9,
+            "ret10": -1.2,
             "endDate": "2026-10-08"
           },
           {
             "date": "2026-09-15",
-            "signal": "持有",
-            "rps20": 97.2,
-            "streak": 11,
-            "ret10": -1.7,
+            "signal": "建仓",
+            "rps20": 98.9,
+            "streak": 8,
+            "ret10": 0.1,
             "endDate": "2026-09-30"
           },
           {
             "date": "2026-09-14",
-            "signal": "持有",
-            "rps20": 96.6,
-            "streak": 10,
-            "ret10": -1.3,
+            "signal": "建仓",
+            "rps20": 97.8,
+            "streak": 7,
+            "ret10": -2.3,
             "endDate": "2026-09-29"
+          },
+          {
+            "date": "2026-09-11",
+            "signal": "建仓",
+            "rps20": 97.8,
+            "streak": 6,
+            "ret10": -1.6,
+            "endDate": "2026-09-28"
+          }
+        ]
+      },
+      {
+        "code": "513550",
+        "name": "港股通50ETF",
+        "theme": "港股通50",
+        "currentSignal": "回避",
+        "currentRps20": 66.9,
+        "currentStreak": 0,
+        "stats": [
+          {
+            "count": 9,
+            "avgReturn": -0.8,
+            "winRate": 33.3,
+            "best": 1.3,
+            "worst": -2.7,
+            "holdDays": 5
+          },
+          {
+            "count": 9,
+            "avgReturn": -1.5,
+            "winRate": 22.2,
+            "best": 0.5,
+            "worst": -2.9,
+            "holdDays": 10
+          },
+          {
+            "count": 9,
+            "avgReturn": -2.4,
+            "winRate": 44.4,
+            "best": 2.1,
+            "worst": -15.4,
+            "holdDays": 20
+          }
+        ],
+        "recentSignals": [
+          {
+            "date": "2026-08-05",
+            "signal": "建仓",
+            "rps20": 97.8,
+            "streak": 6,
+            "ret10": -2.2,
+            "endDate": "2026-08-19"
+          },
+          {
+            "date": "2026-08-04",
+            "signal": "建仓",
+            "rps20": 97.8,
+            "streak": 5,
+            "ret10": -2.2,
+            "endDate": "2026-08-18"
+          },
+          {
+            "date": "2026-08-03",
+            "signal": "建仓",
+            "rps20": 98.3,
+            "streak": 4,
+            "ret10": -2.9,
+            "endDate": "2026-08-17"
+          },
+          {
+            "date": "2026-07-30",
+            "signal": "建仓",
+            "rps20": 94.4,
+            "streak": 3,
+            "ret10": -2.9,
+            "endDate": "2026-08-13"
+          },
+          {
+            "date": "2025-05-19",
+            "signal": "建仓",
+            "rps20": 92.1,
+            "streak": 6,
+            "ret10": 0.2,
+            "endDate": "2025-06-03"
+          }
+        ]
+      },
+      {
+        "code": "159920",
+        "name": "恒生ETF",
+        "theme": "恒生",
+        "currentSignal": "回避",
+        "currentRps20": 66.3,
+        "currentStreak": 0,
+        "stats": [
+          {
+            "count": 9,
+            "avgReturn": -0.4,
+            "winRate": 44.4,
+            "best": 1.5,
+            "worst": -2.2,
+            "holdDays": 5
+          },
+          {
+            "count": 9,
+            "avgReturn": -1.0,
+            "winRate": 33.3,
+            "best": 0.6,
+            "worst": -2.6,
+            "holdDays": 10
+          },
+          {
+            "count": 9,
+            "avgReturn": -1.8,
+            "winRate": 44.4,
+            "best": 2.9,
+            "worst": -15.0,
+            "holdDays": 20
+          }
+        ],
+        "recentSignals": [
+          {
+            "date": "2026-08-05",
+            "signal": "建仓",
+            "rps20": 94.9,
+            "streak": 6,
+            "ret10": -2.0,
+            "endDate": "2026-08-19"
+          },
+          {
+            "date": "2026-08-04",
+            "signal": "建仓",
+            "rps20": 96.1,
+            "streak": 5,
+            "ret10": -1.7,
+            "endDate": "2026-08-18"
+          },
+          {
+            "date": "2026-08-03",
+            "signal": "建仓",
+            "rps20": 95.5,
+            "streak": 4,
+            "ret10": -2.2,
+            "endDate": "2026-08-17"
+          },
+          {
+            "date": "2026-07-30",
+            "signal": "建仓",
+            "rps20": 92.7,
+            "streak": 3,
+            "ret10": -2.6,
+            "endDate": "2026-08-13"
+          },
+          {
+            "date": "2025-05-19",
+            "signal": "建仓",
+            "rps20": 90.3,
+            "streak": 6,
+            "ret10": 0.6,
+            "endDate": "2025-06-03"
+          }
+        ]
+      },
+      {
+        "code": "510720",
+        "name": "红利国企ETF",
+        "theme": "红利",
+        "currentSignal": "回避",
+        "currentRps20": 65.7,
+        "currentStreak": 0,
+        "stats": [
+          {
+            "count": 9,
+            "avgReturn": -0.8,
+            "winRate": 44.4,
+            "best": 2.5,
+            "worst": -5.8,
+            "holdDays": 5
+          },
+          {
+            "count": 9,
+            "avgReturn": -3.3,
+            "winRate": 0.0,
+            "best": -0.6,
+            "worst": -11.1,
+            "holdDays": 10
+          },
+          {
+            "count": 9,
+            "avgReturn": -3.0,
+            "winRate": 11.1,
+            "best": 0.2,
+            "worst": -7.8,
+            "holdDays": 20
+          }
+        ],
+        "recentSignals": [
+          {
+            "date": "2026-06-12",
+            "signal": "建仓",
+            "rps20": 92.7,
+            "streak": 3,
+            "ret10": -11.1,
+            "endDate": "2026-06-29"
+          },
+          {
+            "date": "2026-03-26",
+            "signal": "建仓",
+            "rps20": 92.1,
+            "streak": 6,
+            "ret10": -2.5,
+            "endDate": "2026-04-10"
+          },
+          {
+            "date": "2026-03-25",
+            "signal": "建仓",
+            "rps20": 90.4,
+            "streak": 5,
+            "ret10": -2.3,
+            "endDate": "2026-04-09"
+          },
+          {
+            "date": "2026-03-24",
+            "signal": "建仓",
+            "rps20": 92.7,
+            "streak": 4,
+            "ret10": -2.1,
+            "endDate": "2026-04-08"
+          },
+          {
+            "date": "2026-03-23",
+            "signal": "建仓",
+            "rps20": 93.3,
+            "streak": 3,
+            "ret10": -1.5,
+            "endDate": "2026-04-07"
+          }
+        ]
+      },
+      {
+        "code": "520500",
+        "name": "恒生创新药ETF",
+        "theme": "医药",
+        "currentSignal": "回避",
+        "currentRps20": 65.2,
+        "currentStreak": 0,
+        "stats": [
+          {
+            "count": 80,
+            "avgReturn": -0.5,
+            "winRate": 48.8,
+            "best": 10.3,
+            "worst": -17.3,
+            "holdDays": 5
+          },
+          {
+            "count": 80,
+            "avgReturn": 0.4,
+            "winRate": 56.2,
+            "best": 9.8,
+            "worst": -11.1,
+            "holdDays": 10
+          },
+          {
+            "count": 80,
+            "avgReturn": 1.7,
+            "winRate": 56.2,
+            "best": 24.4,
+            "worst": -20.4,
+            "holdDays": 20
+          }
+        ],
+        "recentSignals": [
+          {
+            "date": "2026-07-27",
+            "signal": "持有",
+            "rps20": 100.0,
+            "streak": 11,
+            "ret10": 3.0,
+            "endDate": "2026-08-10"
+          },
+          {
+            "date": "2026-07-24",
+            "signal": "持有",
+            "rps20": 99.4,
+            "streak": 10,
+            "ret10": 2.4,
+            "endDate": "2026-08-07"
+          },
+          {
+            "date": "2026-07-23",
+            "signal": "建仓",
+            "rps20": 99.4,
+            "streak": 9,
+            "ret10": -5.1,
+            "endDate": "2026-08-06"
+          },
+          {
+            "date": "2026-07-22",
+            "signal": "建仓",
+            "rps20": 100.0,
+            "streak": 8,
+            "ret10": -4.7,
+            "endDate": "2026-08-05"
+          },
+          {
+            "date": "2026-07-21",
+            "signal": "建仓",
+            "rps20": 99.4,
+            "streak": 7,
+            "ret10": -5.3,
+            "endDate": "2026-08-04"
           }
         ]
       },
@@ -54101,7 +53687,7 @@ window.COCKPIT_DATA = {
         "name": "德国ETF",
         "theme": "德国",
         "currentSignal": "回避",
-        "currentRps20": 57.9,
+        "currentRps20": 64.6,
         "currentStreak": 0,
         "stats": [
           {
@@ -54177,7 +53763,7 @@ window.COCKPIT_DATA = {
         "name": "恒生互联网ETF",
         "theme": "恒生互联网",
         "currentSignal": "回避",
-        "currentRps20": 57.3,
+        "currentRps20": 64.0,
         "currentStreak": 0,
         "stats": [
           {
@@ -54249,239 +53835,11 @@ window.COCKPIT_DATA = {
         ]
       },
       {
-        "code": "159852",
-        "name": "软件ETF",
-        "theme": "软件",
+        "code": "563760",
+        "name": "全指自由现金流ETF",
+        "theme": "全指自由现金流",
         "currentSignal": "回避",
-        "currentRps20": 56.7,
-        "currentStreak": 0,
-        "stats": [
-          {
-            "count": 15,
-            "avgReturn": -1.4,
-            "winRate": 53.3,
-            "best": 5.2,
-            "worst": -9.6,
-            "holdDays": 5
-          },
-          {
-            "count": 15,
-            "avgReturn": -2.2,
-            "winRate": 26.7,
-            "best": 7.1,
-            "worst": -8.4,
-            "holdDays": 10
-          },
-          {
-            "count": 15,
-            "avgReturn": -6.2,
-            "winRate": 13.3,
-            "best": 3.2,
-            "worst": -13.3,
-            "holdDays": 20
-          }
-        ],
-        "recentSignals": [
-          {
-            "date": "2026-01-15",
-            "signal": "建仓",
-            "rps20": 93.2,
-            "streak": 4,
-            "ret10": -6.0,
-            "endDate": "2026-01-29"
-          },
-          {
-            "date": "2026-01-14",
-            "signal": "建仓",
-            "rps20": 94.9,
-            "streak": 3,
-            "ret10": -8.4,
-            "endDate": "2026-01-28"
-          },
-          {
-            "date": "2025-02-27",
-            "signal": "持有",
-            "rps20": 93.0,
-            "streak": 15,
-            "ret10": -3.0,
-            "endDate": "2025-03-13"
-          },
-          {
-            "date": "2025-02-26",
-            "signal": "持有",
-            "rps20": 96.2,
-            "streak": 14,
-            "ret10": -3.7,
-            "endDate": "2025-03-12"
-          },
-          {
-            "date": "2025-02-25",
-            "signal": "持有",
-            "rps20": 96.8,
-            "streak": 13,
-            "ret10": -3.6,
-            "endDate": "2025-03-11"
-          }
-        ]
-      },
-      {
-        "code": "515220",
-        "name": "煤炭ETF",
-        "theme": "煤炭",
-        "currentSignal": "回避",
-        "currentRps20": 56.2,
-        "currentStreak": 0,
-        "stats": [
-          {
-            "count": 50,
-            "avgReturn": -0.9,
-            "winRate": 44.0,
-            "best": 8.5,
-            "worst": -11.7,
-            "holdDays": 5
-          },
-          {
-            "count": 50,
-            "avgReturn": -2.3,
-            "winRate": 34.0,
-            "best": 14.0,
-            "worst": -17.4,
-            "holdDays": 10
-          },
-          {
-            "count": 49,
-            "avgReturn": -4.0,
-            "winRate": 20.4,
-            "best": 12.7,
-            "worst": -19.0,
-            "holdDays": 20
-          }
-        ],
-        "recentSignals": [
-          {
-            "date": "2026-09-11",
-            "signal": "建仓",
-            "rps20": 92.7,
-            "streak": 3,
-            "ret10": -2.2,
-            "endDate": "2026-09-28"
-          },
-          {
-            "date": "2026-09-03",
-            "signal": "建仓",
-            "rps20": 95.5,
-            "streak": 8,
-            "ret10": -3.2,
-            "endDate": "2026-09-17"
-          },
-          {
-            "date": "2026-09-02",
-            "signal": "建仓",
-            "rps20": 97.2,
-            "streak": 7,
-            "ret10": -2.4,
-            "endDate": "2026-09-16"
-          },
-          {
-            "date": "2026-09-01",
-            "signal": "建仓",
-            "rps20": 96.1,
-            "streak": 6,
-            "ret10": -5.4,
-            "endDate": "2026-09-15"
-          },
-          {
-            "date": "2026-08-31",
-            "signal": "建仓",
-            "rps20": 94.4,
-            "streak": 5,
-            "ret10": -7.6,
-            "endDate": "2026-09-14"
-          }
-        ]
-      },
-      {
-        "code": "159869",
-        "name": "游戏ETF",
-        "theme": "游戏",
-        "currentSignal": "回避",
-        "currentRps20": 55.6,
-        "currentStreak": 0,
-        "stats": [
-          {
-            "count": 23,
-            "avgReturn": -1.3,
-            "winRate": 30.4,
-            "best": 5.8,
-            "worst": -9.5,
-            "holdDays": 5
-          },
-          {
-            "count": 23,
-            "avgReturn": -1.4,
-            "winRate": 39.1,
-            "best": 5.6,
-            "worst": -10.7,
-            "holdDays": 10
-          },
-          {
-            "count": 23,
-            "avgReturn": -0.5,
-            "winRate": 52.2,
-            "best": 10.0,
-            "worst": -10.1,
-            "holdDays": 20
-          }
-        ],
-        "recentSignals": [
-          {
-            "date": "2025-07-11",
-            "signal": "建仓",
-            "rps20": 95.2,
-            "streak": 6,
-            "ret10": -2.9,
-            "endDate": "2025-07-25"
-          },
-          {
-            "date": "2025-07-10",
-            "signal": "建仓",
-            "rps20": 94.0,
-            "streak": 5,
-            "ret10": -3.1,
-            "endDate": "2025-07-24"
-          },
-          {
-            "date": "2025-07-09",
-            "signal": "建仓",
-            "rps20": 97.0,
-            "streak": 4,
-            "ret10": -4.2,
-            "endDate": "2025-07-23"
-          },
-          {
-            "date": "2025-07-08",
-            "signal": "建仓",
-            "rps20": 97.6,
-            "streak": 3,
-            "ret10": -3.8,
-            "endDate": "2025-07-22"
-          },
-          {
-            "date": "2025-07-02",
-            "signal": "建仓",
-            "rps20": 95.8,
-            "streak": 3,
-            "ret10": 1.4,
-            "endDate": "2025-07-16"
-          }
-        ]
-      },
-      {
-        "code": "159758",
-        "name": "红利质量ETF",
-        "theme": "红利",
-        "currentSignal": "回避",
-        "currentRps20": 55.1,
+        "currentRps20": 63.5,
         "currentStreak": 0,
         "stats": [
           {
@@ -54512,78 +53870,522 @@ window.COCKPIT_DATA = {
         "recentSignals": []
       },
       {
-        "code": "513090",
-        "name": "香港证券ETF",
-        "theme": "非银金融",
+        "code": "513360",
+        "name": "教育ETF",
+        "theme": "教育",
         "currentSignal": "回避",
-        "currentRps20": 54.5,
+        "currentRps20": 62.9,
         "currentStreak": 0,
         "stats": [
           {
-            "count": 35,
-            "avgReturn": 3.4,
-            "winRate": 80.0,
-            "best": 14.3,
-            "worst": -6.5,
+            "count": 13,
+            "avgReturn": -0.2,
+            "winRate": 53.8,
+            "best": 4.6,
+            "worst": -9.9,
             "holdDays": 5
           },
           {
-            "count": 35,
-            "avgReturn": 7.4,
-            "winRate": 80.0,
-            "best": 15.8,
-            "worst": -3.8,
+            "count": 13,
+            "avgReturn": -1.1,
+            "winRate": 38.5,
+            "best": 5.9,
+            "worst": -8.5,
             "holdDays": 10
           },
           {
-            "count": 35,
-            "avgReturn": 13.5,
-            "winRate": 100.0,
-            "best": 27.7,
-            "worst": 0.3,
+            "count": 13,
+            "avgReturn": 0.2,
+            "winRate": 84.6,
+            "best": 3.4,
+            "worst": -5.6,
             "holdDays": 20
           }
         ],
         "recentSignals": [
           {
-            "date": "2025-08-05",
-            "signal": "持有",
-            "rps20": 90.0,
-            "streak": 31,
-            "ret10": 9.3,
-            "endDate": "2025-08-19"
+            "date": "2026-08-26",
+            "signal": "建仓",
+            "rps20": 92.1,
+            "streak": 6,
+            "ret10": 1.7,
+            "endDate": "2026-09-09"
           },
           {
-            "date": "2025-08-04",
-            "signal": "持有",
-            "rps20": 90.6,
-            "streak": 30,
-            "ret10": 13.9,
-            "endDate": "2025-08-18"
+            "date": "2026-08-25",
+            "signal": "建仓",
+            "rps20": 94.4,
+            "streak": 5,
+            "ret10": 4.1,
+            "endDate": "2026-09-08"
           },
           {
-            "date": "2025-08-01",
-            "signal": "持有",
-            "rps20": 92.9,
-            "streak": 29,
-            "ret10": 14.2,
-            "endDate": "2025-08-15"
+            "date": "2026-08-24",
+            "signal": "建仓",
+            "rps20": 93.3,
+            "streak": 4,
+            "ret10": 5.9,
+            "endDate": "2026-09-07"
           },
           {
-            "date": "2025-07-31",
-            "signal": "持有",
-            "rps20": 95.9,
-            "streak": 28,
-            "ret10": 5.0,
-            "endDate": "2025-08-14"
+            "date": "2026-08-21",
+            "signal": "建仓",
+            "rps20": 90.4,
+            "streak": 3,
+            "ret10": 3.5,
+            "endDate": "2026-09-04"
           },
           {
-            "date": "2025-07-30",
+            "date": "2025-02-24",
             "signal": "持有",
-            "rps20": 97.1,
-            "streak": 27,
+            "rps20": 90.5,
+            "streak": 11,
+            "ret10": -1.7,
+            "endDate": "2025-03-10"
+          }
+        ]
+      },
+      {
+        "code": "159859",
+        "name": "生物医药ETF",
+        "theme": "医药",
+        "currentSignal": "回避",
+        "currentRps20": 62.4,
+        "currentStreak": 0,
+        "stats": [
+          {
+            "count": 19,
+            "avgReturn": -1.6,
+            "winRate": 31.6,
+            "best": 3.1,
+            "worst": -7.3,
+            "holdDays": 5
+          },
+          {
+            "count": 16,
+            "avgReturn": -2.0,
+            "winRate": 18.8,
+            "best": 1.3,
+            "worst": -5.4,
+            "holdDays": 10
+          },
+          {
+            "count": 16,
+            "avgReturn": 1.0,
+            "winRate": 50.0,
+            "best": 12.1,
+            "worst": -9.6,
+            "holdDays": 20
+          }
+        ],
+        "recentSignals": [
+          {
+            "date": "2026-10-09",
+            "signal": "建仓",
+            "rps20": 94.4,
+            "streak": 4,
+            "ret10": null,
+            "endDate": null
+          },
+          {
+            "date": "2026-10-08",
+            "signal": "建仓",
+            "rps20": 95.5,
+            "streak": 3,
+            "ret10": null,
+            "endDate": null
+          },
+          {
+            "date": "2026-08-13",
+            "signal": "建仓",
+            "rps20": 97.2,
+            "streak": 5,
+            "ret10": -4.2,
+            "endDate": "2026-08-27"
+          },
+          {
+            "date": "2026-08-12",
+            "signal": "建仓",
+            "rps20": 96.1,
+            "streak": 4,
+            "ret10": -3.6,
+            "endDate": "2026-08-26"
+          },
+          {
+            "date": "2026-08-11",
+            "signal": "建仓",
+            "rps20": 98.3,
+            "streak": 3,
+            "ret10": -3.8,
+            "endDate": "2026-08-25"
+          }
+        ]
+      },
+      {
+        "code": "159996",
+        "name": "家电ETF",
+        "theme": "家电",
+        "currentSignal": "回避",
+        "currentRps20": 61.8,
+        "currentStreak": 0,
+        "stats": [
+          {
+            "count": 0,
+            "avgReturn": null,
+            "winRate": null,
+            "best": null,
+            "worst": null,
+            "holdDays": 5
+          },
+          {
+            "count": 0,
+            "avgReturn": null,
+            "winRate": null,
+            "best": null,
+            "worst": null,
+            "holdDays": 10
+          },
+          {
+            "count": 0,
+            "avgReturn": null,
+            "winRate": null,
+            "best": null,
+            "worst": null,
+            "holdDays": 20
+          }
+        ],
+        "recentSignals": []
+      },
+      {
+        "code": "159985",
+        "name": "豆粕ETF",
+        "theme": "豆粕",
+        "currentSignal": "回避",
+        "currentRps20": 61.2,
+        "currentStreak": 0,
+        "stats": [
+          {
+            "count": 36,
+            "avgReturn": -2.4,
+            "winRate": 11.1,
+            "best": 3.0,
+            "worst": -6.9,
+            "holdDays": 5
+          },
+          {
+            "count": 37,
+            "avgReturn": -3.4,
+            "winRate": 2.7,
+            "best": 0.7,
+            "worst": -7.2,
+            "holdDays": 10
+          },
+          {
+            "count": 31,
+            "avgReturn": -4.3,
+            "winRate": 3.2,
+            "best": 0.1,
+            "worst": -7.6,
+            "holdDays": 20
+          }
+        ],
+        "recentSignals": [
+          {
+            "date": "2026-09-18",
+            "signal": "持有",
+            "rps20": 99.4,
+            "streak": 14,
+            "ret10": -0.4,
+            "endDate": "2026-10-12"
+          },
+          {
+            "date": "2026-09-17",
+            "signal": "持有",
+            "rps20": 99.4,
+            "streak": 13,
+            "ret10": -2.9,
+            "endDate": "2026-10-09"
+          },
+          {
+            "date": "2026-09-16",
+            "signal": "持有",
+            "rps20": 98.9,
+            "streak": 12,
+            "ret10": -4.7,
+            "endDate": "2026-10-08"
+          },
+          {
+            "date": "2026-09-15",
+            "signal": "持有",
+            "rps20": 97.2,
+            "streak": 11,
+            "ret10": -1.7,
+            "endDate": "2026-09-30"
+          },
+          {
+            "date": "2026-09-14",
+            "signal": "持有",
+            "rps20": 96.6,
+            "streak": 10,
+            "ret10": -1.3,
+            "endDate": "2026-09-29"
+          }
+        ]
+      },
+      {
+        "code": "510810",
+        "name": "上海国企ETF",
+        "theme": "上海国企",
+        "currentSignal": "回避",
+        "currentRps20": 60.7,
+        "currentStreak": 0,
+        "stats": [
+          {
+            "count": 0,
+            "avgReturn": null,
+            "winRate": null,
+            "best": null,
+            "worst": null,
+            "holdDays": 5
+          },
+          {
+            "count": 0,
+            "avgReturn": null,
+            "winRate": null,
+            "best": null,
+            "worst": null,
+            "holdDays": 10
+          },
+          {
+            "count": 0,
+            "avgReturn": null,
+            "winRate": null,
+            "best": null,
+            "worst": null,
+            "holdDays": 20
+          }
+        ],
+        "recentSignals": []
+      },
+      {
+        "code": "159588",
+        "name": "石油ETF",
+        "theme": "石油",
+        "currentSignal": "回避",
+        "currentRps20": 60.1,
+        "currentStreak": 0,
+        "stats": [
+          {
+            "count": 37,
+            "avgReturn": 1.6,
+            "winRate": 45.9,
+            "best": 23.5,
+            "worst": -13.4,
+            "holdDays": 5
+          },
+          {
+            "count": 37,
+            "avgReturn": 2.6,
+            "winRate": 54.1,
+            "best": 31.4,
+            "worst": -14.9,
+            "holdDays": 10
+          },
+          {
+            "count": 37,
+            "avgReturn": -0.1,
+            "winRate": 43.2,
+            "best": 15.6,
+            "worst": -18.9,
+            "holdDays": 20
+          }
+        ],
+        "recentSignals": [
+          {
+            "date": "2026-09-10",
+            "signal": "建仓",
+            "rps20": 94.4,
+            "streak": 3,
+            "ret10": -3.7,
+            "endDate": "2026-09-24"
+          },
+          {
+            "date": "2026-03-26",
+            "signal": "持有",
+            "rps20": 91.0,
+            "streak": 33,
             "ret10": 0.4,
-            "endDate": "2025-08-13"
+            "endDate": "2026-04-10"
+          },
+          {
+            "date": "2026-03-25",
+            "signal": "持有",
+            "rps20": 93.8,
+            "streak": 32,
+            "ret10": 0.4,
+            "endDate": "2026-04-09"
+          },
+          {
+            "date": "2026-03-24",
+            "signal": "持有",
+            "rps20": 96.1,
+            "streak": 31,
+            "ret10": -1.7,
+            "endDate": "2026-04-08"
+          },
+          {
+            "date": "2026-03-23",
+            "signal": "持有",
+            "rps20": 97.8,
+            "streak": 30,
+            "ret10": 0.9,
+            "endDate": "2026-04-07"
+          }
+        ]
+      },
+      {
+        "code": "510050",
+        "name": "50ETF",
+        "theme": "50",
+        "currentSignal": "回避",
+        "currentRps20": 59.6,
+        "currentStreak": 0,
+        "stats": [
+          {
+            "count": 0,
+            "avgReturn": null,
+            "winRate": null,
+            "best": null,
+            "worst": null,
+            "holdDays": 5
+          },
+          {
+            "count": 0,
+            "avgReturn": null,
+            "winRate": null,
+            "best": null,
+            "worst": null,
+            "holdDays": 10
+          },
+          {
+            "count": 0,
+            "avgReturn": null,
+            "winRate": null,
+            "best": null,
+            "worst": null,
+            "holdDays": 20
+          }
+        ],
+        "recentSignals": []
+      },
+      {
+        "code": "510210",
+        "name": "指数ETF",
+        "theme": "指数",
+        "currentSignal": "回避",
+        "currentRps20": 59.0,
+        "currentStreak": 0,
+        "stats": [
+          {
+            "count": 0,
+            "avgReturn": null,
+            "winRate": null,
+            "best": null,
+            "worst": null,
+            "holdDays": 5
+          },
+          {
+            "count": 0,
+            "avgReturn": null,
+            "winRate": null,
+            "best": null,
+            "worst": null,
+            "holdDays": 10
+          },
+          {
+            "count": 0,
+            "avgReturn": null,
+            "winRate": null,
+            "best": null,
+            "worst": null,
+            "holdDays": 20
+          }
+        ],
+        "recentSignals": []
+      },
+      {
+        "code": "159980",
+        "name": "有色ETF",
+        "theme": "有色金属",
+        "currentSignal": "回避",
+        "currentRps20": 58.4,
+        "currentStreak": 0,
+        "stats": [
+          {
+            "count": 7,
+            "avgReturn": 1.5,
+            "winRate": 71.4,
+            "best": 3.5,
+            "worst": -0.3,
+            "holdDays": 5
+          },
+          {
+            "count": 7,
+            "avgReturn": 4.1,
+            "winRate": 100.0,
+            "best": 7.4,
+            "worst": 0.7,
+            "holdDays": 10
+          },
+          {
+            "count": 7,
+            "avgReturn": 12.0,
+            "winRate": 100.0,
+            "best": 15.0,
+            "worst": 10.2,
+            "holdDays": 20
+          }
+        ],
+        "recentSignals": [
+          {
+            "date": "2025-12-18",
+            "signal": "建仓",
+            "rps20": 90.9,
+            "streak": 6,
+            "ret10": 7.4,
+            "endDate": "2026-01-05"
+          },
+          {
+            "date": "2025-12-17",
+            "signal": "建仓",
+            "rps20": 92.0,
+            "streak": 5,
+            "ret10": 6.0,
+            "endDate": "2025-12-31"
+          },
+          {
+            "date": "2025-12-16",
+            "signal": "建仓",
+            "rps20": 93.2,
+            "streak": 4,
+            "ret10": 4.9,
+            "endDate": "2025-12-30"
+          },
+          {
+            "date": "2025-12-15",
+            "signal": "建仓",
+            "rps20": 93.2,
+            "streak": 3,
+            "ret10": 6.5,
+            "endDate": "2025-12-29"
+          },
+          {
+            "date": "2025-12-09",
+            "signal": "建仓",
+            "rps20": 92.6,
+            "streak": 5,
+            "ret10": 2.0,
+            "endDate": "2025-12-23"
           }
         ]
       },
@@ -54592,7 +54394,7 @@ window.COCKPIT_DATA = {
         "name": "标普生物科技ETF",
         "theme": "医药",
         "currentSignal": "回避",
-        "currentRps20": 53.9,
+        "currentRps20": 57.9,
         "currentStreak": 0,
         "stats": [
           {
@@ -54664,300 +54466,411 @@ window.COCKPIT_DATA = {
         ]
       },
       {
-        "code": "159851",
-        "name": "金融科技ETF",
+        "code": "512980",
+        "name": "传媒ETF",
+        "theme": "传媒",
+        "currentSignal": "回避",
+        "currentRps20": 57.3,
+        "currentStreak": 0,
+        "stats": [
+          {
+            "count": 21,
+            "avgReturn": -1.1,
+            "winRate": 52.4,
+            "best": 4.9,
+            "worst": -10.0,
+            "holdDays": 5
+          },
+          {
+            "count": 21,
+            "avgReturn": -2.1,
+            "winRate": 33.3,
+            "best": 4.7,
+            "worst": -10.8,
+            "holdDays": 10
+          },
+          {
+            "count": 21,
+            "avgReturn": -6.2,
+            "winRate": 4.8,
+            "best": 0.3,
+            "worst": -11.8,
+            "holdDays": 20
+          }
+        ],
+        "recentSignals": [
+          {
+            "date": "2026-02-05",
+            "signal": "持有",
+            "rps20": 94.4,
+            "streak": 20,
+            "ret10": -0.7,
+            "endDate": "2026-02-27"
+          },
+          {
+            "date": "2026-02-04",
+            "signal": "持有",
+            "rps20": 94.4,
+            "streak": 19,
+            "ret10": -2.3,
+            "endDate": "2026-02-26"
+          },
+          {
+            "date": "2026-02-03",
+            "signal": "持有",
+            "rps20": 98.3,
+            "streak": 18,
+            "ret10": -4.5,
+            "endDate": "2026-02-25"
+          },
+          {
+            "date": "2026-02-02",
+            "signal": "持有",
+            "rps20": 98.9,
+            "streak": 17,
+            "ret10": -1.0,
+            "endDate": "2026-02-24"
+          },
+          {
+            "date": "2026-01-30",
+            "signal": "持有",
+            "rps20": 96.1,
+            "streak": 16,
+            "ret10": -0.1,
+            "endDate": "2026-02-13"
+          }
+        ]
+      },
+      {
+        "code": "159638",
+        "name": "高端装备ETF",
+        "theme": "高端装备",
+        "currentSignal": "回避",
+        "currentRps20": 56.7,
+        "currentStreak": 0,
+        "stats": [
+          {
+            "count": 22,
+            "avgReturn": 3.3,
+            "winRate": 63.6,
+            "best": 19.6,
+            "worst": -9.2,
+            "holdDays": 5
+          },
+          {
+            "count": 22,
+            "avgReturn": 3.6,
+            "winRate": 59.1,
+            "best": 20.8,
+            "worst": -11.4,
+            "holdDays": 10
+          },
+          {
+            "count": 22,
+            "avgReturn": 3.3,
+            "winRate": 54.5,
+            "best": 26.8,
+            "worst": -13.0,
+            "holdDays": 20
+          }
+        ],
+        "recentSignals": [
+          {
+            "date": "2026-01-23",
+            "signal": "持有",
+            "rps20": 98.3,
+            "streak": 21,
+            "ret10": -9.1,
+            "endDate": "2026-02-06"
+          },
+          {
+            "date": "2026-01-22",
+            "signal": "持有",
+            "rps20": 97.7,
+            "streak": 20,
+            "ret10": -4.4,
+            "endDate": "2026-02-05"
+          },
+          {
+            "date": "2026-01-21",
+            "signal": "持有",
+            "rps20": 90.9,
+            "streak": 19,
+            "ret10": 0.2,
+            "endDate": "2026-02-04"
+          },
+          {
+            "date": "2026-01-20",
+            "signal": "持有",
+            "rps20": 91.5,
+            "streak": 18,
+            "ret10": 0.0,
+            "endDate": "2026-02-03"
+          },
+          {
+            "date": "2026-01-19",
+            "signal": "持有",
+            "rps20": 97.2,
+            "streak": 17,
+            "ret10": -7.1,
+            "endDate": "2026-02-02"
+          }
+        ]
+      },
+      {
+        "code": "512880",
+        "name": "证券ETF",
         "theme": "非银金融",
         "currentSignal": "回避",
-        "currentRps20": 53.4,
+        "currentRps20": 56.2,
         "currentStreak": 0,
         "stats": [
           {
-            "count": 24,
-            "avgReturn": 1.7,
-            "winRate": 58.3,
-            "best": 13.6,
-            "worst": -4.2,
+            "count": 0,
+            "avgReturn": null,
+            "winRate": null,
+            "best": null,
+            "worst": null,
             "holdDays": 5
           },
           {
-            "count": 24,
-            "avgReturn": 1.7,
-            "winRate": 70.8,
-            "best": 9.3,
-            "worst": -6.4,
+            "count": 0,
+            "avgReturn": null,
+            "winRate": null,
+            "best": null,
+            "worst": null,
             "holdDays": 10
           },
           {
-            "count": 24,
-            "avgReturn": 2.9,
-            "winRate": 79.2,
-            "best": 15.9,
-            "worst": -4.3,
+            "count": 0,
+            "avgReturn": null,
+            "winRate": null,
+            "best": null,
+            "worst": null,
             "holdDays": 20
           }
         ],
-        "recentSignals": [
-          {
-            "date": "2025-07-18",
-            "signal": "持有",
-            "rps20": 91.1,
-            "streak": 20,
-            "ret10": -1.5,
-            "endDate": "2025-08-01"
-          },
-          {
-            "date": "2025-07-17",
-            "signal": "持有",
-            "rps20": 92.3,
-            "streak": 19,
-            "ret10": -1.7,
-            "endDate": "2025-07-31"
-          },
-          {
-            "date": "2025-07-16",
-            "signal": "持有",
-            "rps20": 93.5,
-            "streak": 18,
-            "ret10": 0.7,
-            "endDate": "2025-07-30"
-          },
-          {
-            "date": "2025-07-15",
-            "signal": "持有",
-            "rps20": 92.3,
-            "streak": 17,
-            "ret10": 3.5,
-            "endDate": "2025-07-29"
-          },
-          {
-            "date": "2025-07-14",
-            "signal": "持有",
-            "rps20": 98.8,
-            "streak": 16,
-            "ret10": 2.4,
-            "endDate": "2025-07-28"
-          }
-        ]
+        "recentSignals": []
       },
       {
-        "code": "520830",
-        "name": "沙特ETF",
-        "theme": "沙特",
+        "code": "159758",
+        "name": "红利质量ETF",
+        "theme": "红利",
         "currentSignal": "回避",
-        "currentRps20": 52.8,
+        "currentRps20": 55.6,
         "currentStreak": 0,
         "stats": [
           {
-            "count": 9,
-            "avgReturn": 0.7,
-            "winRate": 100.0,
-            "best": 1.9,
-            "worst": 0.2,
+            "count": 0,
+            "avgReturn": null,
+            "winRate": null,
+            "best": null,
+            "worst": null,
             "holdDays": 5
           },
           {
-            "count": 9,
-            "avgReturn": -0.6,
-            "winRate": 44.4,
-            "best": 2.6,
-            "worst": -3.2,
+            "count": 0,
+            "avgReturn": null,
+            "winRate": null,
+            "best": null,
+            "worst": null,
             "holdDays": 10
           },
           {
-            "count": 9,
-            "avgReturn": -2.9,
-            "winRate": 11.1,
-            "best": 0.1,
-            "worst": -5.4,
+            "count": 0,
+            "avgReturn": null,
+            "winRate": null,
+            "best": null,
+            "worst": null,
+            "holdDays": 20
+          }
+        ],
+        "recentSignals": []
+      },
+      {
+        "code": "510180",
+        "name": "180ETF",
+        "theme": "180",
+        "currentSignal": "回避",
+        "currentRps20": 55.1,
+        "currentStreak": 0,
+        "stats": [
+          {
+            "count": 0,
+            "avgReturn": null,
+            "winRate": null,
+            "best": null,
+            "worst": null,
+            "holdDays": 5
+          },
+          {
+            "count": 0,
+            "avgReturn": null,
+            "winRate": null,
+            "best": null,
+            "worst": null,
+            "holdDays": 10
+          },
+          {
+            "count": 0,
+            "avgReturn": null,
+            "winRate": null,
+            "best": null,
+            "worst": null,
+            "holdDays": 20
+          }
+        ],
+        "recentSignals": []
+      },
+      {
+        "code": "563380",
+        "name": "航空航天ETF",
+        "theme": "军工",
+        "currentSignal": "回避",
+        "currentRps20": 54.5,
+        "currentStreak": 0,
+        "stats": [
+          {
+            "count": 14,
+            "avgReturn": 2.1,
+            "winRate": 42.9,
+            "best": 20.5,
+            "worst": -8.3,
+            "holdDays": 5
+          },
+          {
+            "count": 14,
+            "avgReturn": 1.5,
+            "winRate": 64.3,
+            "best": 13.4,
+            "worst": -10.9,
+            "holdDays": 10
+          },
+          {
+            "count": 11,
+            "avgReturn": 1.4,
+            "winRate": 54.5,
+            "best": 11.7,
+            "worst": -11.1,
             "holdDays": 20
           }
         ],
         "recentSignals": [
           {
-            "date": "2026-04-07",
+            "date": "2026-09-22",
             "signal": "建仓",
-            "rps20": 90.4,
-            "streak": 3,
-            "ret10": 0.5,
-            "endDate": "2026-04-21"
-          },
-          {
-            "date": "2026-03-31",
-            "signal": "建仓",
-            "rps20": 96.6,
+            "rps20": 91.0,
             "streak": 5,
-            "ret10": 2.6,
-            "endDate": "2026-04-15"
+            "ret10": -5.4,
+            "endDate": "2026-10-14"
           },
           {
-            "date": "2026-03-30",
+            "date": "2026-09-21",
             "signal": "建仓",
-            "rps20": 98.9,
+            "rps20": 93.3,
             "streak": 4,
-            "ret10": 2.4,
-            "endDate": "2026-04-14"
+            "ret10": -5.9,
+            "endDate": "2026-10-13"
           },
           {
-            "date": "2026-03-27",
+            "date": "2026-09-18",
             "signal": "建仓",
             "rps20": 96.1,
             "streak": 3,
-            "ret10": 2.6,
-            "endDate": "2026-04-13"
+            "ret10": -7.4,
+            "endDate": "2026-10-12"
           },
           {
-            "date": "2025-10-24",
-            "signal": "建仓",
-            "rps20": 90.2,
-            "streak": 6,
-            "ret10": -3.2,
-            "endDate": "2025-11-07"
+            "date": "2026-01-14",
+            "signal": "持有",
+            "rps20": 93.8,
+            "streak": 13,
+            "ret10": -1.5,
+            "endDate": "2026-01-28"
+          },
+          {
+            "date": "2026-01-13",
+            "signal": "持有",
+            "rps20": 96.6,
+            "streak": 12,
+            "ret10": 1.0,
+            "endDate": "2026-01-27"
           }
         ]
       },
       {
-        "code": "159595",
-        "name": "A50ETF",
-        "theme": "A50",
+        "code": "159852",
+        "name": "软件ETF",
+        "theme": "软件",
         "currentSignal": "回避",
-        "currentRps20": 52.2,
+        "currentRps20": 53.9,
         "currentStreak": 0,
         "stats": [
           {
-            "count": 0,
-            "avgReturn": null,
-            "winRate": null,
-            "best": null,
-            "worst": null,
+            "count": 15,
+            "avgReturn": -1.4,
+            "winRate": 53.3,
+            "best": 5.2,
+            "worst": -9.6,
             "holdDays": 5
           },
           {
-            "count": 0,
-            "avgReturn": null,
-            "winRate": null,
-            "best": null,
-            "worst": null,
+            "count": 15,
+            "avgReturn": -2.2,
+            "winRate": 26.7,
+            "best": 7.1,
+            "worst": -8.4,
             "holdDays": 10
           },
           {
-            "count": 0,
-            "avgReturn": null,
-            "winRate": null,
-            "best": null,
-            "worst": null,
-            "holdDays": 20
-          }
-        ],
-        "recentSignals": []
-      },
-      {
-        "code": "516970",
-        "name": "基建ETF",
-        "theme": "基建",
-        "currentSignal": "回避",
-        "currentRps20": 51.7,
-        "currentStreak": 0,
-        "stats": [
-          {
-            "count": 0,
-            "avgReturn": null,
-            "winRate": null,
-            "best": null,
-            "worst": null,
-            "holdDays": 5
-          },
-          {
-            "count": 0,
-            "avgReturn": null,
-            "winRate": null,
-            "best": null,
-            "worst": null,
-            "holdDays": 10
-          },
-          {
-            "count": 0,
-            "avgReturn": null,
-            "winRate": null,
-            "best": null,
-            "worst": null,
-            "holdDays": 20
-          }
-        ],
-        "recentSignals": []
-      },
-      {
-        "code": "520690",
-        "name": "港股创新药精选ETF",
-        "theme": "医药",
-        "currentSignal": "回避",
-        "currentRps20": 51.1,
-        "currentStreak": 0,
-        "stats": [
-          {
-            "count": 22,
-            "avgReturn": -1.6,
-            "winRate": 27.3,
-            "best": 5.3,
-            "worst": -8.0,
-            "holdDays": 5
-          },
-          {
-            "count": 22,
-            "avgReturn": -3.3,
-            "winRate": 22.7,
-            "best": 3.4,
-            "worst": -10.0,
-            "holdDays": 10
-          },
-          {
-            "count": 22,
-            "avgReturn": -7.6,
-            "winRate": 22.7,
-            "best": 4.4,
-            "worst": -19.5,
+            "count": 15,
+            "avgReturn": -6.2,
+            "winRate": 13.3,
+            "best": 3.2,
+            "worst": -13.3,
             "holdDays": 20
           }
         ],
         "recentSignals": [
           {
-            "date": "2026-07-27",
+            "date": "2026-01-15",
             "signal": "建仓",
-            "rps20": 99.4,
-            "streak": 9,
-            "ret10": 3.4,
-            "endDate": "2026-08-10"
+            "rps20": 93.2,
+            "streak": 4,
+            "ret10": -6.0,
+            "endDate": "2026-01-29"
           },
           {
-            "date": "2026-07-24",
+            "date": "2026-01-14",
             "signal": "建仓",
-            "rps20": 97.8,
-            "streak": 8,
-            "ret10": 3.0,
-            "endDate": "2026-08-07"
+            "rps20": 94.9,
+            "streak": 3,
+            "ret10": -8.4,
+            "endDate": "2026-01-28"
           },
           {
-            "date": "2026-07-23",
-            "signal": "建仓",
-            "rps20": 97.8,
-            "streak": 7,
-            "ret10": -3.9,
-            "endDate": "2026-08-06"
+            "date": "2025-02-27",
+            "signal": "持有",
+            "rps20": 93.0,
+            "streak": 15,
+            "ret10": -3.0,
+            "endDate": "2025-03-13"
           },
           {
-            "date": "2026-07-22",
-            "signal": "建仓",
-            "rps20": 96.1,
-            "streak": 6,
-            "ret10": -3.3,
-            "endDate": "2026-08-05"
+            "date": "2025-02-26",
+            "signal": "持有",
+            "rps20": 96.2,
+            "streak": 14,
+            "ret10": -3.7,
+            "endDate": "2025-03-12"
           },
           {
-            "date": "2026-07-21",
-            "signal": "建仓",
-            "rps20": 95.5,
-            "streak": 5,
+            "date": "2025-02-25",
+            "signal": "持有",
+            "rps20": 96.8,
+            "streak": 13,
             "ret10": -3.6,
-            "endDate": "2026-08-04"
+            "endDate": "2025-03-11"
           }
         ]
       },
@@ -54966,7 +54879,7 @@ window.COCKPIT_DATA = {
         "name": "钢铁ETF",
         "theme": "钢铁",
         "currentSignal": "回避",
-        "currentRps20": 50.6,
+        "currentRps20": 53.4,
         "currentStreak": 0,
         "stats": [
           {
@@ -55038,341 +54951,230 @@ window.COCKPIT_DATA = {
         ]
       },
       {
-        "code": "561360",
-        "name": "石油ETF",
-        "theme": "石油",
+        "code": "159227",
+        "name": "航空航天ETF",
+        "theme": "军工",
         "currentSignal": "回避",
-        "currentRps20": 50.0,
+        "currentRps20": 52.8,
         "currentStreak": 0,
         "stats": [
           {
-            "count": 44,
-            "avgReturn": 0.7,
-            "winRate": 47.7,
-            "best": 18.9,
+            "count": 26,
+            "avgReturn": 2.7,
+            "winRate": 61.5,
+            "best": 19.7,
             "worst": -9.1,
             "holdDays": 5
           },
           {
-            "count": 44,
-            "avgReturn": 2.1,
-            "winRate": 47.7,
-            "best": 25.6,
-            "worst": -11.9,
-            "holdDays": 10
-          },
-          {
-            "count": 42,
-            "avgReturn": 0.6,
-            "winRate": 38.1,
-            "best": 18.8,
-            "worst": -16.3,
-            "holdDays": 20
-          }
-        ],
-        "recentSignals": [
-          {
-            "date": "2026-09-11",
-            "signal": "建仓",
-            "rps20": 94.4,
-            "streak": 4,
-            "ret10": -1.6,
-            "endDate": "2026-09-28"
-          },
-          {
-            "date": "2026-09-10",
-            "signal": "建仓",
-            "rps20": 96.1,
-            "streak": 3,
-            "ret10": -3.9,
-            "endDate": "2026-09-24"
-          },
-          {
-            "date": "2026-08-21",
-            "signal": "建仓",
-            "rps20": 91.6,
-            "streak": 5,
-            "ret10": -0.3,
-            "endDate": "2026-09-04"
-          },
-          {
-            "date": "2026-08-20",
-            "signal": "建仓",
-            "rps20": 92.1,
-            "streak": 4,
-            "ret10": 1.6,
-            "endDate": "2026-09-03"
-          },
-          {
-            "date": "2026-08-19",
-            "signal": "建仓",
-            "rps20": 93.3,
-            "streak": 3,
-            "ret10": -0.5,
-            "endDate": "2026-09-02"
-          }
-        ]
-      },
-      {
-        "code": "588170",
-        "name": "科创半导体ETF",
-        "theme": "半导体",
-        "currentSignal": "回避",
-        "currentRps20": 49.4,
-        "currentStreak": 0,
-        "stats": [
-          {
-            "count": 80,
-            "avgReturn": 2.7,
-            "winRate": 56.2,
-            "best": 28.1,
-            "worst": -25.9,
-            "holdDays": 5
-          },
-          {
-            "count": 80,
-            "avgReturn": 5.3,
-            "winRate": 57.5,
-            "best": 48.6,
-            "worst": -29.8,
-            "holdDays": 10
-          },
-          {
-            "count": 79,
-            "avgReturn": 7.9,
-            "winRate": 58.2,
-            "best": 78.9,
-            "worst": -30.5,
-            "holdDays": 20
-          }
-        ],
-        "recentSignals": [
-          {
-            "date": "2026-07-15",
-            "signal": "持有",
-            "rps20": 93.3,
-            "streak": 47,
-            "ret10": -12.7,
-            "endDate": "2026-07-29"
-          },
-          {
-            "date": "2026-07-14",
-            "signal": "持有",
-            "rps20": 100.0,
-            "streak": 46,
-            "ret10": -19.2,
-            "endDate": "2026-07-28"
-          },
-          {
-            "date": "2026-07-13",
-            "signal": "持有",
-            "rps20": 100.0,
-            "streak": 45,
-            "ret10": -13.3,
-            "endDate": "2026-07-27"
-          },
-          {
-            "date": "2026-07-10",
-            "signal": "持有",
-            "rps20": 100.0,
-            "streak": 44,
-            "ret10": -21.6,
-            "endDate": "2026-07-24"
-          },
-          {
-            "date": "2026-07-09",
-            "signal": "持有",
-            "rps20": 100.0,
-            "streak": 43,
-            "ret10": -29.8,
-            "endDate": "2026-07-23"
-          }
-        ]
-      },
-      {
-        "code": "510300",
-        "name": "沪深300ETF",
-        "theme": "沪深300",
-        "currentSignal": "回避",
-        "currentRps20": 48.9,
-        "currentStreak": 0,
-        "stats": [
-          {
-            "count": 0,
-            "avgReturn": null,
-            "winRate": null,
-            "best": null,
-            "worst": null,
-            "holdDays": 5
-          },
-          {
-            "count": 0,
-            "avgReturn": null,
-            "winRate": null,
-            "best": null,
-            "worst": null,
-            "holdDays": 10
-          },
-          {
-            "count": 0,
-            "avgReturn": null,
-            "winRate": null,
-            "best": null,
-            "worst": null,
-            "holdDays": 20
-          }
-        ],
-        "recentSignals": []
-      },
-      {
-        "code": "513130",
-        "name": "恒生科技ETF",
-        "theme": "恒生科技",
-        "currentSignal": "回避",
-        "currentRps20": 48.3,
-        "currentStreak": 0,
-        "stats": [
-          {
-            "count": 20,
-            "avgReturn": 1.8,
-            "winRate": 65.0,
-            "best": 8.7,
-            "worst": -5.4,
-            "holdDays": 5
-          },
-          {
-            "count": 20,
-            "avgReturn": 0.8,
-            "winRate": 55.0,
-            "best": 10.4,
-            "worst": -7.6,
-            "holdDays": 10
-          },
-          {
-            "count": 20,
-            "avgReturn": -5.6,
-            "winRate": 25.0,
-            "best": 8.3,
-            "worst": -27.0,
-            "holdDays": 20
-          }
-        ],
-        "recentSignals": [
-          {
-            "date": "2025-03-13",
-            "signal": "持有",
-            "rps20": 91.1,
-            "streak": 22,
-            "ret10": -2.9,
-            "endDate": "2025-03-27"
-          },
-          {
-            "date": "2025-03-12",
-            "signal": "持有",
-            "rps20": 91.1,
-            "streak": 21,
-            "ret10": -4.9,
-            "endDate": "2025-03-26"
-          },
-          {
-            "date": "2025-03-11",
-            "signal": "持有",
-            "rps20": 97.5,
-            "streak": 20,
-            "ret10": -7.6,
-            "endDate": "2025-03-25"
-          },
-          {
-            "date": "2025-03-10",
-            "signal": "持有",
-            "rps20": 94.3,
-            "streak": 19,
-            "ret10": -2.8,
-            "endDate": "2025-03-24"
-          },
-          {
-            "date": "2025-03-07",
-            "signal": "持有",
-            "rps20": 96.8,
-            "streak": 18,
-            "ret10": -6.6,
-            "endDate": "2025-03-21"
-          }
-        ]
-      },
-      {
-        "code": "512710",
-        "name": "军工龙头ETF",
-        "theme": "军工",
-        "currentSignal": "回避",
-        "currentRps20": 47.8,
-        "currentStreak": 0,
-        "stats": [
-          {
-            "count": 23,
-            "avgReturn": 1.4,
-            "winRate": 47.8,
-            "best": 19.4,
-            "worst": -9.3,
-            "holdDays": 5
-          },
-          {
-            "count": 22,
-            "avgReturn": 0.1,
-            "winRate": 36.4,
-            "best": 20.1,
-            "worst": -9.0,
-            "holdDays": 10
-          },
-          {
-            "count": 18,
-            "avgReturn": 0.0,
-            "winRate": 50.0,
-            "best": 13.8,
+            "count": 26,
+            "avgReturn": 5.0,
+            "winRate": 73.1,
+            "best": 18.3,
             "worst": -11.1,
+            "holdDays": 10
+          },
+          {
+            "count": 24,
+            "avgReturn": 11.1,
+            "winRate": 79.2,
+            "best": 39.5,
+            "worst": -11.5,
             "holdDays": 20
           }
         ],
         "recentSignals": [
-          {
-            "date": "2026-09-24",
-            "signal": "建仓",
-            "rps20": 91.0,
-            "streak": 7,
-            "ret10": null,
-            "endDate": null
-          },
-          {
-            "date": "2026-09-23",
-            "signal": "建仓",
-            "rps20": 90.4,
-            "streak": 6,
-            "ret10": -5.7,
-            "endDate": "2026-10-15"
-          },
-          {
-            "date": "2026-09-22",
-            "signal": "建仓",
-            "rps20": 92.7,
-            "streak": 5,
-            "ret10": -4.2,
-            "endDate": "2026-10-14"
-          },
           {
             "date": "2026-09-21",
             "signal": "建仓",
-            "rps20": 95.5,
+            "rps20": 94.4,
             "streak": 4,
-            "ret10": -4.6,
+            "ret10": -6.7,
             "endDate": "2026-10-13"
           },
           {
             "date": "2026-09-18",
             "signal": "建仓",
+            "rps20": 95.5,
+            "streak": 3,
+            "ret10": -8.8,
+            "endDate": "2026-10-12"
+          },
+          {
+            "date": "2026-01-14",
+            "signal": "持有",
+            "rps20": 96.0,
+            "streak": 14,
+            "ret10": -4.4,
+            "endDate": "2026-01-28"
+          },
+          {
+            "date": "2026-01-13",
+            "signal": "持有",
+            "rps20": 97.2,
+            "streak": 13,
+            "ret10": -3.0,
+            "endDate": "2026-01-27"
+          },
+          {
+            "date": "2026-01-12",
+            "signal": "持有",
+            "rps20": 97.2,
+            "streak": 12,
+            "ret10": -11.1,
+            "endDate": "2026-01-26"
+          }
+        ]
+      },
+      {
+        "code": "518880",
+        "name": "黄金ETF",
+        "theme": "黄金",
+        "currentSignal": "回避",
+        "currentRps20": 52.2,
+        "currentStreak": 0,
+        "stats": [
+          {
+            "count": 53,
+            "avgReturn": 0.0,
+            "winRate": 52.8,
+            "best": 8.2,
+            "worst": -9.2,
+            "holdDays": 5
+          },
+          {
+            "count": 53,
+            "avgReturn": 0.6,
+            "winRate": 56.6,
+            "best": 15.0,
+            "worst": -7.6,
+            "holdDays": 10
+          },
+          {
+            "count": 53,
+            "avgReturn": -0.9,
+            "winRate": 35.8,
+            "best": 10.0,
+            "worst": -16.7,
+            "holdDays": 20
+          }
+        ],
+        "recentSignals": [
+          {
+            "date": "2026-08-28",
+            "signal": "建仓",
+            "rps20": 96.1,
+            "streak": 6,
+            "ret10": -5.6,
+            "endDate": "2026-09-11"
+          },
+          {
+            "date": "2026-08-27",
+            "signal": "建仓",
+            "rps20": 91.0,
+            "streak": 5,
+            "ret10": -3.8,
+            "endDate": "2026-09-10"
+          },
+          {
+            "date": "2026-08-26",
+            "signal": "建仓",
+            "rps20": 96.1,
+            "streak": 4,
+            "ret10": -5.0,
+            "endDate": "2026-09-09"
+          },
+          {
+            "date": "2026-08-25",
+            "signal": "建仓",
+            "rps20": 97.2,
+            "streak": 3,
+            "ret10": -5.1,
+            "endDate": "2026-09-08"
+          },
+          {
+            "date": "2026-02-25",
+            "signal": "持有",
+            "rps20": 91.6,
+            "streak": 11,
+            "ret10": 0.4,
+            "endDate": "2026-03-11"
+          }
+        ]
+      },
+      {
+        "code": "518680",
+        "name": "金ETF",
+        "theme": "金",
+        "currentSignal": "回避",
+        "currentRps20": 51.7,
+        "currentStreak": 0,
+        "stats": [
+          {
+            "count": 53,
+            "avgReturn": 0.4,
+            "winRate": 49.1,
+            "best": 13.6,
+            "worst": -9.4,
+            "holdDays": 5
+          },
+          {
+            "count": 53,
+            "avgReturn": 1.3,
+            "winRate": 58.5,
+            "best": 20.7,
+            "worst": -7.9,
+            "holdDays": 10
+          },
+          {
+            "count": 53,
+            "avgReturn": 0.2,
+            "winRate": 41.5,
+            "best": 14.7,
+            "worst": -15.1,
+            "holdDays": 20
+          }
+        ],
+        "recentSignals": [
+          {
+            "date": "2026-08-28",
+            "signal": "建仓",
+            "rps20": 95.5,
+            "streak": 7,
+            "ret10": -5.5,
+            "endDate": "2026-09-11"
+          },
+          {
+            "date": "2026-08-27",
+            "signal": "建仓",
+            "rps20": 91.6,
+            "streak": 6,
+            "ret10": -3.8,
+            "endDate": "2026-09-10"
+          },
+          {
+            "date": "2026-08-26",
+            "signal": "建仓",
+            "rps20": 95.5,
+            "streak": 5,
+            "ret10": -4.9,
+            "endDate": "2026-09-09"
+          },
+          {
+            "date": "2026-08-25",
+            "signal": "建仓",
+            "rps20": 97.8,
+            "streak": 4,
+            "ret10": -5.1,
+            "endDate": "2026-09-08"
+          },
+          {
+            "date": "2026-08-24",
+            "signal": "建仓",
             "rps20": 98.3,
             "streak": 3,
-            "ret10": -6.6,
-            "endDate": "2026-10-12"
+            "ret10": -5.6,
+            "endDate": "2026-09-07"
           }
         ]
       },
@@ -55381,7 +55183,7 @@ window.COCKPIT_DATA = {
         "name": "港股科技30ETF",
         "theme": "港股科技30",
         "currentSignal": "回避",
-        "currentRps20": 47.2,
+        "currentRps20": 51.1,
         "currentStreak": 0,
         "stats": [
           {
@@ -55453,78 +55255,487 @@ window.COCKPIT_DATA = {
         ]
       },
       {
-        "code": "520500",
-        "name": "恒生创新药ETF",
-        "theme": "医药",
+        "code": "513130",
+        "name": "恒生科技ETF",
+        "theme": "恒生科技",
         "currentSignal": "回避",
-        "currentRps20": 46.6,
+        "currentRps20": 50.6,
         "currentStreak": 0,
         "stats": [
           {
-            "count": 80,
-            "avgReturn": -0.5,
-            "winRate": 48.8,
-            "best": 10.3,
-            "worst": -17.3,
+            "count": 20,
+            "avgReturn": 1.8,
+            "winRate": 65.0,
+            "best": 8.7,
+            "worst": -5.4,
             "holdDays": 5
           },
           {
-            "count": 80,
-            "avgReturn": 0.4,
-            "winRate": 56.2,
-            "best": 9.8,
-            "worst": -11.1,
+            "count": 20,
+            "avgReturn": 0.8,
+            "winRate": 55.0,
+            "best": 10.4,
+            "worst": -7.6,
             "holdDays": 10
           },
           {
-            "count": 80,
-            "avgReturn": 1.7,
-            "winRate": 56.2,
-            "best": 24.4,
-            "worst": -20.4,
+            "count": 20,
+            "avgReturn": -5.6,
+            "winRate": 25.0,
+            "best": 8.3,
+            "worst": -27.0,
             "holdDays": 20
           }
         ],
         "recentSignals": [
           {
-            "date": "2026-07-27",
+            "date": "2025-03-13",
             "signal": "持有",
-            "rps20": 100.0,
-            "streak": 11,
-            "ret10": 3.0,
-            "endDate": "2026-08-10"
+            "rps20": 91.1,
+            "streak": 22,
+            "ret10": -2.9,
+            "endDate": "2025-03-27"
           },
           {
-            "date": "2026-07-24",
+            "date": "2025-03-12",
             "signal": "持有",
-            "rps20": 99.4,
-            "streak": 10,
+            "rps20": 91.1,
+            "streak": 21,
+            "ret10": -4.9,
+            "endDate": "2025-03-26"
+          },
+          {
+            "date": "2025-03-11",
+            "signal": "持有",
+            "rps20": 97.5,
+            "streak": 20,
+            "ret10": -7.6,
+            "endDate": "2025-03-25"
+          },
+          {
+            "date": "2025-03-10",
+            "signal": "持有",
+            "rps20": 94.3,
+            "streak": 19,
+            "ret10": -2.8,
+            "endDate": "2025-03-24"
+          },
+          {
+            "date": "2025-03-07",
+            "signal": "持有",
+            "rps20": 96.8,
+            "streak": 18,
+            "ret10": -6.6,
+            "endDate": "2025-03-21"
+          }
+        ]
+      },
+      {
+        "code": "515630",
+        "name": "保险证券ETF",
+        "theme": "非银金融",
+        "currentSignal": "回避",
+        "currentRps20": 50.0,
+        "currentStreak": 0,
+        "stats": [
+          {
+            "count": 0,
+            "avgReturn": null,
+            "winRate": null,
+            "best": null,
+            "worst": null,
+            "holdDays": 5
+          },
+          {
+            "count": 0,
+            "avgReturn": null,
+            "winRate": null,
+            "best": null,
+            "worst": null,
+            "holdDays": 10
+          },
+          {
+            "count": 0,
+            "avgReturn": null,
+            "winRate": null,
+            "best": null,
+            "worst": null,
+            "holdDays": 20
+          }
+        ],
+        "recentSignals": []
+      },
+      {
+        "code": "513980",
+        "name": "港股科技50ETF",
+        "theme": "港股科技50",
+        "currentSignal": "回避",
+        "currentRps20": 49.4,
+        "currentStreak": 0,
+        "stats": [
+          {
+            "count": 32,
+            "avgReturn": 1.3,
+            "winRate": 53.1,
+            "best": 11.5,
+            "worst": -8.5,
+            "holdDays": 5
+          },
+          {
+            "count": 32,
+            "avgReturn": 1.4,
+            "winRate": 53.1,
+            "best": 16.9,
+            "worst": -9.1,
+            "holdDays": 10
+          },
+          {
+            "count": 32,
+            "avgReturn": -3.4,
+            "winRate": 37.5,
+            "best": 18.0,
+            "worst": -24.4,
+            "holdDays": 20
+          }
+        ],
+        "recentSignals": [
+          {
+            "date": "2025-05-23",
+            "signal": "建仓",
+            "rps20": 95.2,
+            "streak": 5,
+            "ret10": 1.8,
+            "endDate": "2025-06-09"
+          },
+          {
+            "date": "2025-05-22",
+            "signal": "建仓",
+            "rps20": 91.5,
+            "streak": 4,
+            "ret10": -0.5,
+            "endDate": "2025-06-06"
+          },
+          {
+            "date": "2025-05-21",
+            "signal": "建仓",
+            "rps20": 93.9,
+            "streak": 3,
+            "ret10": -1.4,
+            "endDate": "2025-06-05"
+          },
+          {
+            "date": "2025-05-12",
+            "signal": "建仓",
+            "rps20": 96.4,
+            "streak": 3,
+            "ret10": -3.8,
+            "endDate": "2025-05-26"
+          },
+          {
+            "date": "2025-03-20",
+            "signal": "持有",
+            "rps20": 94.3,
+            "streak": 30,
+            "ret10": -8.8,
+            "endDate": "2025-04-03"
+          }
+        ]
+      },
+      {
+        "code": "520830",
+        "name": "沙特ETF",
+        "theme": "沙特",
+        "currentSignal": "回避",
+        "currentRps20": 48.9,
+        "currentStreak": 0,
+        "stats": [
+          {
+            "count": 9,
+            "avgReturn": 0.7,
+            "winRate": 100.0,
+            "best": 1.9,
+            "worst": 0.2,
+            "holdDays": 5
+          },
+          {
+            "count": 9,
+            "avgReturn": -0.6,
+            "winRate": 44.4,
+            "best": 2.6,
+            "worst": -3.2,
+            "holdDays": 10
+          },
+          {
+            "count": 9,
+            "avgReturn": -2.9,
+            "winRate": 11.1,
+            "best": 0.1,
+            "worst": -5.4,
+            "holdDays": 20
+          }
+        ],
+        "recentSignals": [
+          {
+            "date": "2026-04-07",
+            "signal": "建仓",
+            "rps20": 90.4,
+            "streak": 3,
+            "ret10": 0.5,
+            "endDate": "2026-04-21"
+          },
+          {
+            "date": "2026-03-31",
+            "signal": "建仓",
+            "rps20": 96.6,
+            "streak": 5,
+            "ret10": 2.6,
+            "endDate": "2026-04-15"
+          },
+          {
+            "date": "2026-03-30",
+            "signal": "建仓",
+            "rps20": 98.9,
+            "streak": 4,
             "ret10": 2.4,
-            "endDate": "2026-08-07"
+            "endDate": "2026-04-14"
           },
           {
-            "date": "2026-07-23",
+            "date": "2026-03-27",
             "signal": "建仓",
-            "rps20": 99.4,
-            "streak": 9,
-            "ret10": -5.1,
-            "endDate": "2026-08-06"
+            "rps20": 96.1,
+            "streak": 3,
+            "ret10": 2.6,
+            "endDate": "2026-04-13"
           },
           {
-            "date": "2026-07-22",
+            "date": "2025-10-24",
             "signal": "建仓",
-            "rps20": 100.0,
-            "streak": 8,
-            "ret10": -4.7,
-            "endDate": "2026-08-05"
+            "rps20": 90.2,
+            "streak": 6,
+            "ret10": -3.2,
+            "endDate": "2025-11-07"
+          }
+        ]
+      },
+      {
+        "code": "512070",
+        "name": "证券保险ETF",
+        "theme": "非银金融",
+        "currentSignal": "回避",
+        "currentRps20": 48.3,
+        "currentStreak": 0,
+        "stats": [
+          {
+            "count": 0,
+            "avgReturn": null,
+            "winRate": null,
+            "best": null,
+            "worst": null,
+            "holdDays": 5
           },
           {
-            "date": "2026-07-21",
+            "count": 0,
+            "avgReturn": null,
+            "winRate": null,
+            "best": null,
+            "worst": null,
+            "holdDays": 10
+          },
+          {
+            "count": 0,
+            "avgReturn": null,
+            "winRate": null,
+            "best": null,
+            "worst": null,
+            "holdDays": 20
+          }
+        ],
+        "recentSignals": []
+      },
+      {
+        "code": "159262",
+        "name": "港股通科技ETF",
+        "theme": "港股通科技",
+        "currentSignal": "回避",
+        "currentRps20": 47.8,
+        "currentStreak": 0,
+        "stats": [
+          {
+            "count": 0,
+            "avgReturn": null,
+            "winRate": null,
+            "best": null,
+            "worst": null,
+            "holdDays": 5
+          },
+          {
+            "count": 0,
+            "avgReturn": null,
+            "winRate": null,
+            "best": null,
+            "worst": null,
+            "holdDays": 10
+          },
+          {
+            "count": 0,
+            "avgReturn": null,
+            "winRate": null,
+            "best": null,
+            "worst": null,
+            "holdDays": 20
+          }
+        ],
+        "recentSignals": []
+      },
+      {
+        "code": "561360",
+        "name": "石油ETF",
+        "theme": "石油",
+        "currentSignal": "回避",
+        "currentRps20": 47.2,
+        "currentStreak": 0,
+        "stats": [
+          {
+            "count": 44,
+            "avgReturn": 0.7,
+            "winRate": 47.7,
+            "best": 18.9,
+            "worst": -9.1,
+            "holdDays": 5
+          },
+          {
+            "count": 44,
+            "avgReturn": 2.1,
+            "winRate": 47.7,
+            "best": 25.6,
+            "worst": -11.9,
+            "holdDays": 10
+          },
+          {
+            "count": 43,
+            "avgReturn": 0.4,
+            "winRate": 37.2,
+            "best": 18.8,
+            "worst": -16.3,
+            "holdDays": 20
+          }
+        ],
+        "recentSignals": [
+          {
+            "date": "2026-09-11",
             "signal": "建仓",
-            "rps20": 99.4,
-            "streak": 7,
-            "ret10": -5.3,
-            "endDate": "2026-08-04"
+            "rps20": 94.4,
+            "streak": 4,
+            "ret10": -1.6,
+            "endDate": "2026-09-28"
+          },
+          {
+            "date": "2026-09-10",
+            "signal": "建仓",
+            "rps20": 96.1,
+            "streak": 3,
+            "ret10": -3.9,
+            "endDate": "2026-09-24"
+          },
+          {
+            "date": "2026-08-21",
+            "signal": "建仓",
+            "rps20": 91.6,
+            "streak": 5,
+            "ret10": -0.3,
+            "endDate": "2026-09-04"
+          },
+          {
+            "date": "2026-08-20",
+            "signal": "建仓",
+            "rps20": 92.1,
+            "streak": 4,
+            "ret10": 1.6,
+            "endDate": "2026-09-03"
+          },
+          {
+            "date": "2026-08-19",
+            "signal": "建仓",
+            "rps20": 93.3,
+            "streak": 3,
+            "ret10": -0.5,
+            "endDate": "2026-09-02"
+          }
+        ]
+      },
+      {
+        "code": "159851",
+        "name": "金融科技ETF",
+        "theme": "非银金融",
+        "currentSignal": "回避",
+        "currentRps20": 46.6,
+        "currentStreak": 0,
+        "stats": [
+          {
+            "count": 24,
+            "avgReturn": 1.7,
+            "winRate": 58.3,
+            "best": 13.6,
+            "worst": -4.2,
+            "holdDays": 5
+          },
+          {
+            "count": 24,
+            "avgReturn": 1.7,
+            "winRate": 70.8,
+            "best": 9.3,
+            "worst": -6.4,
+            "holdDays": 10
+          },
+          {
+            "count": 24,
+            "avgReturn": 2.9,
+            "winRate": 79.2,
+            "best": 15.9,
+            "worst": -4.3,
+            "holdDays": 20
+          }
+        ],
+        "recentSignals": [
+          {
+            "date": "2025-07-18",
+            "signal": "持有",
+            "rps20": 91.1,
+            "streak": 20,
+            "ret10": -1.5,
+            "endDate": "2025-08-01"
+          },
+          {
+            "date": "2025-07-17",
+            "signal": "持有",
+            "rps20": 92.3,
+            "streak": 19,
+            "ret10": -1.7,
+            "endDate": "2025-07-31"
+          },
+          {
+            "date": "2025-07-16",
+            "signal": "持有",
+            "rps20": 93.5,
+            "streak": 18,
+            "ret10": 0.7,
+            "endDate": "2025-07-30"
+          },
+          {
+            "date": "2025-07-15",
+            "signal": "持有",
+            "rps20": 92.3,
+            "streak": 17,
+            "ret10": 3.5,
+            "endDate": "2025-07-29"
+          },
+          {
+            "date": "2025-07-14",
+            "signal": "持有",
+            "rps20": 98.8,
+            "streak": 16,
+            "ret10": 2.4,
+            "endDate": "2025-07-28"
           }
         ]
       },
@@ -55605,829 +55816,11 @@ window.COCKPIT_DATA = {
         ]
       },
       {
-        "code": "513980",
-        "name": "港股科技50ETF",
-        "theme": "港股科技50",
-        "currentSignal": "回避",
-        "currentRps20": 45.5,
-        "currentStreak": 0,
-        "stats": [
-          {
-            "count": 32,
-            "avgReturn": 1.3,
-            "winRate": 53.1,
-            "best": 11.5,
-            "worst": -8.5,
-            "holdDays": 5
-          },
-          {
-            "count": 32,
-            "avgReturn": 1.4,
-            "winRate": 53.1,
-            "best": 16.9,
-            "worst": -9.1,
-            "holdDays": 10
-          },
-          {
-            "count": 32,
-            "avgReturn": -3.4,
-            "winRate": 37.5,
-            "best": 18.0,
-            "worst": -24.4,
-            "holdDays": 20
-          }
-        ],
-        "recentSignals": [
-          {
-            "date": "2025-05-23",
-            "signal": "建仓",
-            "rps20": 95.2,
-            "streak": 5,
-            "ret10": 1.8,
-            "endDate": "2025-06-09"
-          },
-          {
-            "date": "2025-05-22",
-            "signal": "建仓",
-            "rps20": 91.5,
-            "streak": 4,
-            "ret10": -0.5,
-            "endDate": "2025-06-06"
-          },
-          {
-            "date": "2025-05-21",
-            "signal": "建仓",
-            "rps20": 93.9,
-            "streak": 3,
-            "ret10": -1.4,
-            "endDate": "2025-06-05"
-          },
-          {
-            "date": "2025-05-12",
-            "signal": "建仓",
-            "rps20": 96.4,
-            "streak": 3,
-            "ret10": -3.8,
-            "endDate": "2025-05-26"
-          },
-          {
-            "date": "2025-03-20",
-            "signal": "持有",
-            "rps20": 94.3,
-            "streak": 30,
-            "ret10": -8.8,
-            "endDate": "2025-04-03"
-          }
-        ]
-      },
-      {
-        "code": "159766",
-        "name": "旅游ETF",
-        "theme": "旅游",
-        "currentSignal": "回避",
-        "currentRps20": 44.9,
-        "currentStreak": 0,
-        "stats": [
-          {
-            "count": 26,
-            "avgReturn": -1.9,
-            "winRate": 23.1,
-            "best": 2.6,
-            "worst": -5.7,
-            "holdDays": 5
-          },
-          {
-            "count": 26,
-            "avgReturn": -2.7,
-            "winRate": 15.4,
-            "best": 1.4,
-            "worst": -7.5,
-            "holdDays": 10
-          },
-          {
-            "count": 26,
-            "avgReturn": -1.4,
-            "winRate": 34.6,
-            "best": 6.9,
-            "worst": -7.9,
-            "holdDays": 20
-          }
-        ],
-        "recentSignals": [
-          {
-            "date": "2025-12-02",
-            "signal": "持有",
-            "rps20": 90.8,
-            "streak": 19,
-            "ret10": -2.2,
-            "endDate": "2025-12-16"
-          },
-          {
-            "date": "2025-12-01",
-            "signal": "持有",
-            "rps20": 95.4,
-            "streak": 18,
-            "ret10": -3.1,
-            "endDate": "2025-12-15"
-          },
-          {
-            "date": "2025-11-28",
-            "signal": "持有",
-            "rps20": 90.8,
-            "streak": 17,
-            "ret10": -0.8,
-            "endDate": "2025-12-12"
-          },
-          {
-            "date": "2025-11-27",
-            "signal": "持有",
-            "rps20": 91.4,
-            "streak": 16,
-            "ret10": -0.5,
-            "endDate": "2025-12-11"
-          },
-          {
-            "date": "2025-11-26",
-            "signal": "持有",
-            "rps20": 96.0,
-            "streak": 15,
-            "ret10": 0.8,
-            "endDate": "2025-12-10"
-          }
-        ]
-      },
-      {
-        "code": "563000",
-        "name": "中国A50ETF",
-        "theme": "中国A50",
-        "currentSignal": "回避",
-        "currentRps20": 44.4,
-        "currentStreak": 0,
-        "stats": [
-          {
-            "count": 0,
-            "avgReturn": null,
-            "winRate": null,
-            "best": null,
-            "worst": null,
-            "holdDays": 5
-          },
-          {
-            "count": 0,
-            "avgReturn": null,
-            "winRate": null,
-            "best": null,
-            "worst": null,
-            "holdDays": 10
-          },
-          {
-            "count": 0,
-            "avgReturn": null,
-            "winRate": null,
-            "best": null,
-            "worst": null,
-            "holdDays": 20
-          }
-        ],
-        "recentSignals": []
-      },
-      {
-        "code": "159262",
-        "name": "港股通科技ETF",
-        "theme": "港股通科技",
-        "currentSignal": "回避",
-        "currentRps20": 43.8,
-        "currentStreak": 0,
-        "stats": [
-          {
-            "count": 0,
-            "avgReturn": null,
-            "winRate": null,
-            "best": null,
-            "worst": null,
-            "holdDays": 5
-          },
-          {
-            "count": 0,
-            "avgReturn": null,
-            "winRate": null,
-            "best": null,
-            "worst": null,
-            "holdDays": 10
-          },
-          {
-            "count": 0,
-            "avgReturn": null,
-            "winRate": null,
-            "best": null,
-            "worst": null,
-            "holdDays": 20
-          }
-        ],
-        "recentSignals": []
-      },
-      {
-        "code": "513750",
-        "name": "港股通非银ETF",
-        "theme": "非银金融",
-        "currentSignal": "回避",
-        "currentRps20": 43.3,
-        "currentStreak": 0,
-        "stats": [
-          {
-            "count": 32,
-            "avgReturn": 1.4,
-            "winRate": 68.8,
-            "best": 8.7,
-            "worst": -3.6,
-            "holdDays": 5
-          },
-          {
-            "count": 32,
-            "avgReturn": 4.1,
-            "winRate": 90.6,
-            "best": 8.3,
-            "worst": -3.2,
-            "holdDays": 10
-          },
-          {
-            "count": 32,
-            "avgReturn": 9.5,
-            "winRate": 100.0,
-            "best": 15.8,
-            "worst": 3.5,
-            "holdDays": 20
-          }
-        ],
-        "recentSignals": [
-          {
-            "date": "2025-07-02",
-            "signal": "建仓",
-            "rps20": 95.2,
-            "streak": 9,
-            "ret10": 3.2,
-            "endDate": "2025-07-16"
-          },
-          {
-            "date": "2025-07-01",
-            "signal": "建仓",
-            "rps20": 91.7,
-            "streak": 8,
-            "ret10": 4.6,
-            "endDate": "2025-07-15"
-          },
-          {
-            "date": "2025-06-30",
-            "signal": "建仓",
-            "rps20": 94.6,
-            "streak": 7,
-            "ret10": 5.1,
-            "endDate": "2025-07-14"
-          },
-          {
-            "date": "2025-06-27",
-            "signal": "建仓",
-            "rps20": 96.4,
-            "streak": 6,
-            "ret10": 4.0,
-            "endDate": "2025-07-11"
-          },
-          {
-            "date": "2025-06-26",
-            "signal": "建仓",
-            "rps20": 95.8,
-            "streak": 5,
-            "ret10": 0.2,
-            "endDate": "2025-07-10"
-          }
-        ]
-      },
-      {
-        "code": "512090",
-        "name": "MSCIA股ETF",
-        "theme": "MSCIA股",
-        "currentSignal": "回避",
-        "currentRps20": 42.7,
-        "currentStreak": 0,
-        "stats": [
-          {
-            "count": 0,
-            "avgReturn": null,
-            "winRate": null,
-            "best": null,
-            "worst": null,
-            "holdDays": 5
-          },
-          {
-            "count": 0,
-            "avgReturn": null,
-            "winRate": null,
-            "best": null,
-            "worst": null,
-            "holdDays": 10
-          },
-          {
-            "count": 0,
-            "avgReturn": null,
-            "winRate": null,
-            "best": null,
-            "worst": null,
-            "holdDays": 20
-          }
-        ],
-        "recentSignals": []
-      },
-      {
-        "code": "515800",
-        "name": "800ETF",
-        "theme": "800",
-        "currentSignal": "回避",
-        "currentRps20": 42.1,
-        "currentStreak": 0,
-        "stats": [
-          {
-            "count": 0,
-            "avgReturn": null,
-            "winRate": null,
-            "best": null,
-            "worst": null,
-            "holdDays": 5
-          },
-          {
-            "count": 0,
-            "avgReturn": null,
-            "winRate": null,
-            "best": null,
-            "worst": null,
-            "holdDays": 10
-          },
-          {
-            "count": 0,
-            "avgReturn": null,
-            "winRate": null,
-            "best": null,
-            "worst": null,
-            "holdDays": 20
-          }
-        ],
-        "recentSignals": []
-      },
-      {
-        "code": "159516",
-        "name": "半导体设备ETF",
-        "theme": "半导体",
-        "currentSignal": "回避",
-        "currentRps20": 41.6,
-        "currentStreak": 0,
-        "stats": [
-          {
-            "count": 79,
-            "avgReturn": 2.1,
-            "winRate": 53.2,
-            "best": 26.0,
-            "worst": -23.6,
-            "holdDays": 5
-          },
-          {
-            "count": 79,
-            "avgReturn": 3.8,
-            "winRate": 54.4,
-            "best": 45.0,
-            "worst": -26.0,
-            "holdDays": 10
-          },
-          {
-            "count": 78,
-            "avgReturn": 4.4,
-            "winRate": 50.0,
-            "best": 72.4,
-            "worst": -57.1,
-            "holdDays": 20
-          }
-        ],
-        "recentSignals": [
-          {
-            "date": "2026-07-15",
-            "signal": "持有",
-            "rps20": 90.4,
-            "streak": 51,
-            "ret10": -12.1,
-            "endDate": "2026-07-29"
-          },
-          {
-            "date": "2026-07-14",
-            "signal": "持有",
-            "rps20": 99.4,
-            "streak": 50,
-            "ret10": -16.5,
-            "endDate": "2026-07-28"
-          },
-          {
-            "date": "2026-07-13",
-            "signal": "持有",
-            "rps20": 99.4,
-            "streak": 49,
-            "ret10": -11.2,
-            "endDate": "2026-07-27"
-          },
-          {
-            "date": "2026-07-10",
-            "signal": "持有",
-            "rps20": 99.4,
-            "streak": 48,
-            "ret10": -18.0,
-            "endDate": "2026-07-24"
-          },
-          {
-            "date": "2026-07-09",
-            "signal": "持有",
-            "rps20": 99.4,
-            "streak": 47,
-            "ret10": -26.0,
-            "endDate": "2026-07-23"
-          }
-        ]
-      },
-      {
-        "code": "563300",
-        "name": "2000ETF",
-        "theme": "2000",
-        "currentSignal": "回避",
-        "currentRps20": 41.0,
-        "currentStreak": 0,
-        "stats": [
-          {
-            "count": 6,
-            "avgReturn": -0.5,
-            "winRate": 50.0,
-            "best": 2.7,
-            "worst": -3.6,
-            "holdDays": 5
-          },
-          {
-            "count": 6,
-            "avgReturn": -2.5,
-            "winRate": 16.7,
-            "best": 3.3,
-            "worst": -6.9,
-            "holdDays": 10
-          },
-          {
-            "count": 4,
-            "avgReturn": -0.6,
-            "winRate": 25.0,
-            "best": 5.1,
-            "worst": -2.9,
-            "holdDays": 20
-          }
-        ],
-        "recentSignals": [
-          {
-            "date": "2026-09-21",
-            "signal": "建仓",
-            "rps20": 91.0,
-            "streak": 4,
-            "ret10": -6.9,
-            "endDate": "2026-10-13"
-          },
-          {
-            "date": "2026-09-18",
-            "signal": "建仓",
-            "rps20": 94.4,
-            "streak": 3,
-            "ret10": -6.0,
-            "endDate": "2026-10-12"
-          },
-          {
-            "date": "2026-09-03",
-            "signal": "建仓",
-            "rps20": 90.4,
-            "streak": 5,
-            "ret10": -1.0,
-            "endDate": "2026-09-17"
-          },
-          {
-            "date": "2026-09-02",
-            "signal": "建仓",
-            "rps20": 92.1,
-            "streak": 4,
-            "ret10": -0.7,
-            "endDate": "2026-09-16"
-          },
-          {
-            "date": "2026-09-01",
-            "signal": "建仓",
-            "rps20": 92.7,
-            "streak": 3,
-            "ret10": -3.5,
-            "endDate": "2026-09-15"
-          }
-        ]
-      },
-      {
-        "code": "563360",
-        "name": "A500ETF",
-        "theme": "A500",
-        "currentSignal": "回避",
-        "currentRps20": 40.4,
-        "currentStreak": 0,
-        "stats": [
-          {
-            "count": 0,
-            "avgReturn": null,
-            "winRate": null,
-            "best": null,
-            "worst": null,
-            "holdDays": 5
-          },
-          {
-            "count": 0,
-            "avgReturn": null,
-            "winRate": null,
-            "best": null,
-            "worst": null,
-            "holdDays": 10
-          },
-          {
-            "count": 0,
-            "avgReturn": null,
-            "winRate": null,
-            "best": null,
-            "worst": null,
-            "holdDays": 20
-          }
-        ],
-        "recentSignals": []
-      },
-      {
-        "code": "159572",
-        "name": "创业板200ETF",
-        "theme": "创业板200",
-        "currentSignal": "回避",
-        "currentRps20": 39.9,
-        "currentStreak": 0,
-        "stats": [
-          {
-            "count": 0,
-            "avgReturn": null,
-            "winRate": null,
-            "best": null,
-            "worst": null,
-            "holdDays": 5
-          },
-          {
-            "count": 0,
-            "avgReturn": null,
-            "winRate": null,
-            "best": null,
-            "worst": null,
-            "holdDays": 10
-          },
-          {
-            "count": 0,
-            "avgReturn": null,
-            "winRate": null,
-            "best": null,
-            "worst": null,
-            "holdDays": 20
-          }
-        ],
-        "recentSignals": []
-      },
-      {
-        "code": "563380",
-        "name": "航空航天ETF",
-        "theme": "军工",
-        "currentSignal": "回避",
-        "currentRps20": 39.3,
-        "currentStreak": 0,
-        "stats": [
-          {
-            "count": 14,
-            "avgReturn": 2.1,
-            "winRate": 42.9,
-            "best": 20.5,
-            "worst": -8.3,
-            "holdDays": 5
-          },
-          {
-            "count": 14,
-            "avgReturn": 1.5,
-            "winRate": 64.3,
-            "best": 13.4,
-            "worst": -10.9,
-            "holdDays": 10
-          },
-          {
-            "count": 11,
-            "avgReturn": 1.4,
-            "winRate": 54.5,
-            "best": 11.7,
-            "worst": -11.1,
-            "holdDays": 20
-          }
-        ],
-        "recentSignals": [
-          {
-            "date": "2026-09-22",
-            "signal": "建仓",
-            "rps20": 91.0,
-            "streak": 5,
-            "ret10": -5.4,
-            "endDate": "2026-10-14"
-          },
-          {
-            "date": "2026-09-21",
-            "signal": "建仓",
-            "rps20": 93.3,
-            "streak": 4,
-            "ret10": -5.9,
-            "endDate": "2026-10-13"
-          },
-          {
-            "date": "2026-09-18",
-            "signal": "建仓",
-            "rps20": 96.1,
-            "streak": 3,
-            "ret10": -7.4,
-            "endDate": "2026-10-12"
-          },
-          {
-            "date": "2026-01-14",
-            "signal": "持有",
-            "rps20": 93.8,
-            "streak": 13,
-            "ret10": -1.5,
-            "endDate": "2026-01-28"
-          },
-          {
-            "date": "2026-01-13",
-            "signal": "持有",
-            "rps20": 96.6,
-            "streak": 12,
-            "ret10": 1.0,
-            "endDate": "2026-01-27"
-          }
-        ]
-      },
-      {
-        "code": "159638",
-        "name": "高端装备ETF",
-        "theme": "高端装备",
-        "currentSignal": "回避",
-        "currentRps20": 38.8,
-        "currentStreak": 0,
-        "stats": [
-          {
-            "count": 22,
-            "avgReturn": 3.3,
-            "winRate": 63.6,
-            "best": 19.6,
-            "worst": -9.2,
-            "holdDays": 5
-          },
-          {
-            "count": 22,
-            "avgReturn": 3.6,
-            "winRate": 59.1,
-            "best": 20.8,
-            "worst": -11.4,
-            "holdDays": 10
-          },
-          {
-            "count": 22,
-            "avgReturn": 3.3,
-            "winRate": 54.5,
-            "best": 26.8,
-            "worst": -13.0,
-            "holdDays": 20
-          }
-        ],
-        "recentSignals": [
-          {
-            "date": "2026-01-23",
-            "signal": "持有",
-            "rps20": 98.3,
-            "streak": 21,
-            "ret10": -9.1,
-            "endDate": "2026-02-06"
-          },
-          {
-            "date": "2026-01-22",
-            "signal": "持有",
-            "rps20": 97.7,
-            "streak": 20,
-            "ret10": -4.4,
-            "endDate": "2026-02-05"
-          },
-          {
-            "date": "2026-01-21",
-            "signal": "持有",
-            "rps20": 90.9,
-            "streak": 19,
-            "ret10": 0.2,
-            "endDate": "2026-02-04"
-          },
-          {
-            "date": "2026-01-20",
-            "signal": "持有",
-            "rps20": 91.5,
-            "streak": 18,
-            "ret10": 0.0,
-            "endDate": "2026-02-03"
-          },
-          {
-            "date": "2026-01-19",
-            "signal": "持有",
-            "rps20": 97.2,
-            "streak": 17,
-            "ret10": -7.1,
-            "endDate": "2026-02-02"
-          }
-        ]
-      },
-      {
-        "code": "159378",
-        "name": "通用航空ETF",
-        "theme": "军工",
-        "currentSignal": "回避",
-        "currentRps20": 38.2,
-        "currentStreak": 0,
-        "stats": [
-          {
-            "count": 13,
-            "avgReturn": 2.4,
-            "winRate": 46.2,
-            "best": 17.8,
-            "worst": -6.8,
-            "holdDays": 5
-          },
-          {
-            "count": 13,
-            "avgReturn": -0.2,
-            "winRate": 53.8,
-            "best": 9.8,
-            "worst": -8.9,
-            "holdDays": 10
-          },
-          {
-            "count": 13,
-            "avgReturn": -3.0,
-            "winRate": 38.5,
-            "best": 5.5,
-            "worst": -11.9,
-            "holdDays": 20
-          }
-        ],
-        "recentSignals": [
-          {
-            "date": "2026-01-19",
-            "signal": "持有",
-            "rps20": 93.2,
-            "streak": 14,
-            "ret10": -8.2,
-            "endDate": "2026-02-02"
-          },
-          {
-            "date": "2026-01-16",
-            "signal": "持有",
-            "rps20": 95.5,
-            "streak": 13,
-            "ret10": -4.7,
-            "endDate": "2026-01-30"
-          },
-          {
-            "date": "2026-01-15",
-            "signal": "持有",
-            "rps20": 91.5,
-            "streak": 12,
-            "ret10": -3.6,
-            "endDate": "2026-01-29"
-          },
-          {
-            "date": "2026-01-14",
-            "signal": "持有",
-            "rps20": 96.6,
-            "streak": 11,
-            "ret10": -5.3,
-            "endDate": "2026-01-28"
-          },
-          {
-            "date": "2026-01-13",
-            "signal": "持有",
-            "rps20": 94.9,
-            "streak": 10,
-            "ret10": -2.7,
-            "endDate": "2026-01-27"
-          }
-        ]
-      },
-      {
         "code": "512670",
         "name": "国防ETF",
         "theme": "国防",
         "currentSignal": "回避",
-        "currentRps20": 37.6,
+        "currentRps20": 45.5,
         "currentStreak": 0,
         "stats": [
           {
@@ -56439,9 +55832,9 @@ window.COCKPIT_DATA = {
             "holdDays": 5
           },
           {
-            "count": 25,
-            "avgReturn": 0.6,
-            "winRate": 44.0,
+            "count": 26,
+            "avgReturn": 0.4,
+            "winRate": 42.3,
             "best": 16.7,
             "worst": -12.3,
             "holdDays": 10
@@ -56461,8 +55854,8 @@ window.COCKPIT_DATA = {
             "signal": "建仓",
             "rps20": 93.8,
             "streak": 7,
-            "ret10": null,
-            "endDate": null
+            "ret10": -3.1,
+            "endDate": "2026-10-19"
           },
           {
             "date": "2026-09-23",
@@ -56503,7 +55896,7 @@ window.COCKPIT_DATA = {
         "name": "养殖ETF",
         "theme": "养殖",
         "currentSignal": "回避",
-        "currentRps20": 37.1,
+        "currentRps20": 44.9,
         "currentStreak": 0,
         "stats": [
           {
@@ -56575,11 +55968,11 @@ window.COCKPIT_DATA = {
         ]
       },
       {
-        "code": "159628",
-        "name": "2000ETF",
-        "theme": "2000",
+        "code": "516970",
+        "name": "基建ETF",
+        "theme": "基建",
         "currentSignal": "回避",
-        "currentRps20": 36.5,
+        "currentRps20": 44.4,
         "currentStreak": 0,
         "stats": [
           {
@@ -56610,87 +56003,233 @@ window.COCKPIT_DATA = {
         "recentSignals": []
       },
       {
-        "code": "159998",
-        "name": "计算机ETF",
-        "theme": "计算机",
+        "code": "513090",
+        "name": "香港证券ETF",
+        "theme": "非银金融",
         "currentSignal": "回避",
-        "currentRps20": 36.0,
+        "currentRps20": 43.8,
         "currentStreak": 0,
         "stats": [
           {
-            "count": 12,
-            "avgReturn": -0.2,
-            "winRate": 66.7,
-            "best": 5.8,
-            "worst": -8.8,
+            "count": 35,
+            "avgReturn": 3.4,
+            "winRate": 80.0,
+            "best": 14.3,
+            "worst": -6.5,
             "holdDays": 5
           },
           {
-            "count": 12,
-            "avgReturn": -0.4,
-            "winRate": 33.3,
-            "best": 7.0,
-            "worst": -5.0,
+            "count": 35,
+            "avgReturn": 7.4,
+            "winRate": 80.0,
+            "best": 15.8,
+            "worst": -3.8,
             "holdDays": 10
           },
           {
-            "count": 12,
-            "avgReturn": -3.5,
-            "winRate": 33.3,
-            "best": 3.6,
-            "worst": -12.1,
+            "count": 35,
+            "avgReturn": 13.5,
+            "winRate": 100.0,
+            "best": 27.7,
+            "worst": 0.3,
             "holdDays": 20
           }
         ],
         "recentSignals": [
           {
-            "date": "2025-02-26",
+            "date": "2025-08-05",
             "signal": "持有",
-            "rps20": 94.3,
-            "streak": 14,
-            "ret10": -3.2,
-            "endDate": "2025-03-12"
+            "rps20": 90.0,
+            "streak": 31,
+            "ret10": 9.3,
+            "endDate": "2025-08-19"
           },
           {
-            "date": "2025-02-25",
+            "date": "2025-08-04",
             "signal": "持有",
-            "rps20": 95.6,
-            "streak": 13,
-            "ret10": -3.2,
-            "endDate": "2025-03-11"
+            "rps20": 90.6,
+            "streak": 30,
+            "ret10": 13.9,
+            "endDate": "2025-08-18"
           },
           {
-            "date": "2025-02-24",
+            "date": "2025-08-01",
             "signal": "持有",
-            "rps20": 93.7,
-            "streak": 12,
-            "ret10": -5.0,
-            "endDate": "2025-03-10"
+            "rps20": 92.9,
+            "streak": 29,
+            "ret10": 14.2,
+            "endDate": "2025-08-15"
           },
           {
-            "date": "2025-02-21",
+            "date": "2025-07-31",
             "signal": "持有",
-            "rps20": 93.7,
-            "streak": 11,
-            "ret10": -2.8,
-            "endDate": "2025-03-07"
+            "rps20": 95.9,
+            "streak": 28,
+            "ret10": 5.0,
+            "endDate": "2025-08-14"
           },
           {
-            "date": "2025-02-20",
+            "date": "2025-07-30",
             "signal": "持有",
-            "rps20": 93.0,
-            "streak": 10,
-            "ret10": 3.8,
-            "endDate": "2025-03-06"
+            "rps20": 97.1,
+            "streak": 27,
+            "ret10": 0.4,
+            "endDate": "2025-08-13"
           }
         ]
+      },
+      {
+        "code": "159595",
+        "name": "A50ETF",
+        "theme": "A50",
+        "currentSignal": "回避",
+        "currentRps20": 43.3,
+        "currentStreak": 0,
+        "stats": [
+          {
+            "count": 0,
+            "avgReturn": null,
+            "winRate": null,
+            "best": null,
+            "worst": null,
+            "holdDays": 5
+          },
+          {
+            "count": 0,
+            "avgReturn": null,
+            "winRate": null,
+            "best": null,
+            "worst": null,
+            "holdDays": 10
+          },
+          {
+            "count": 0,
+            "avgReturn": null,
+            "winRate": null,
+            "best": null,
+            "worst": null,
+            "holdDays": 20
+          }
+        ],
+        "recentSignals": []
+      },
+      {
+        "code": "159825",
+        "name": "农业ETF",
+        "theme": "农业",
+        "currentSignal": "回避",
+        "currentRps20": 42.7,
+        "currentStreak": 0,
+        "stats": [
+          {
+            "count": 20,
+            "avgReturn": -2.9,
+            "winRate": 15.0,
+            "best": 0.3,
+            "worst": -10.3,
+            "holdDays": 5
+          },
+          {
+            "count": 20,
+            "avgReturn": -2.9,
+            "winRate": 15.0,
+            "best": 0.8,
+            "worst": -7.7,
+            "holdDays": 10
+          },
+          {
+            "count": 20,
+            "avgReturn": -2.5,
+            "winRate": 25.0,
+            "best": 4.2,
+            "worst": -12.5,
+            "holdDays": 20
+          }
+        ],
+        "recentSignals": [
+          {
+            "date": "2026-09-10",
+            "signal": "建仓",
+            "rps20": 92.1,
+            "streak": 5,
+            "ret10": -7.0,
+            "endDate": "2026-09-24"
+          },
+          {
+            "date": "2026-09-09",
+            "signal": "建仓",
+            "rps20": 97.2,
+            "streak": 4,
+            "ret10": -7.6,
+            "endDate": "2026-09-23"
+          },
+          {
+            "date": "2026-09-08",
+            "signal": "建仓",
+            "rps20": 97.2,
+            "streak": 3,
+            "ret10": -6.6,
+            "endDate": "2026-09-22"
+          },
+          {
+            "date": "2026-03-18",
+            "signal": "建仓",
+            "rps20": 92.1,
+            "streak": 5,
+            "ret10": -6.3,
+            "endDate": "2026-04-01"
+          },
+          {
+            "date": "2026-03-17",
+            "signal": "建仓",
+            "rps20": 93.8,
+            "streak": 4,
+            "ret10": -7.7,
+            "endDate": "2026-03-31"
+          }
+        ]
+      },
+      {
+        "code": "510300",
+        "name": "沪深300ETF",
+        "theme": "沪深300",
+        "currentSignal": "回避",
+        "currentRps20": 42.1,
+        "currentStreak": 0,
+        "stats": [
+          {
+            "count": 0,
+            "avgReturn": null,
+            "winRate": null,
+            "best": null,
+            "worst": null,
+            "holdDays": 5
+          },
+          {
+            "count": 0,
+            "avgReturn": null,
+            "winRate": null,
+            "best": null,
+            "worst": null,
+            "holdDays": 10
+          },
+          {
+            "count": 0,
+            "avgReturn": null,
+            "winRate": null,
+            "best": null,
+            "worst": null,
+            "holdDays": 20
+          }
+        ],
+        "recentSignals": []
       },
       {
         "code": "516520",
         "name": "智能驾驶ETF",
         "theme": "智能驾驶",
         "currentSignal": "回避",
-        "currentRps20": 35.4,
+        "currentRps20": 41.6,
         "currentStreak": 0,
         "stats": [
           {
@@ -56762,35 +56301,187 @@ window.COCKPIT_DATA = {
         ]
       },
       {
-        "code": "159227",
-        "name": "航空航天ETF",
-        "theme": "军工",
+        "code": "159869",
+        "name": "游戏ETF",
+        "theme": "游戏",
         "currentSignal": "回避",
-        "currentRps20": 34.8,
+        "currentRps20": 41.0,
+        "currentStreak": 0,
+        "stats": [
+          {
+            "count": 23,
+            "avgReturn": -1.3,
+            "winRate": 30.4,
+            "best": 5.8,
+            "worst": -9.5,
+            "holdDays": 5
+          },
+          {
+            "count": 23,
+            "avgReturn": -1.4,
+            "winRate": 39.1,
+            "best": 5.6,
+            "worst": -10.7,
+            "holdDays": 10
+          },
+          {
+            "count": 23,
+            "avgReturn": -0.5,
+            "winRate": 52.2,
+            "best": 10.0,
+            "worst": -10.1,
+            "holdDays": 20
+          }
+        ],
+        "recentSignals": [
+          {
+            "date": "2025-07-11",
+            "signal": "建仓",
+            "rps20": 95.2,
+            "streak": 6,
+            "ret10": -2.9,
+            "endDate": "2025-07-25"
+          },
+          {
+            "date": "2025-07-10",
+            "signal": "建仓",
+            "rps20": 94.0,
+            "streak": 5,
+            "ret10": -3.1,
+            "endDate": "2025-07-24"
+          },
+          {
+            "date": "2025-07-09",
+            "signal": "建仓",
+            "rps20": 97.0,
+            "streak": 4,
+            "ret10": -4.2,
+            "endDate": "2025-07-23"
+          },
+          {
+            "date": "2025-07-08",
+            "signal": "建仓",
+            "rps20": 97.6,
+            "streak": 3,
+            "ret10": -3.8,
+            "endDate": "2025-07-22"
+          },
+          {
+            "date": "2025-07-02",
+            "signal": "建仓",
+            "rps20": 95.8,
+            "streak": 3,
+            "ret10": 1.4,
+            "endDate": "2025-07-16"
+          }
+        ]
+      },
+      {
+        "code": "159766",
+        "name": "旅游ETF",
+        "theme": "旅游",
+        "currentSignal": "回避",
+        "currentRps20": 40.4,
         "currentStreak": 0,
         "stats": [
           {
             "count": 26,
-            "avgReturn": 2.7,
-            "winRate": 61.5,
-            "best": 19.7,
-            "worst": -9.1,
+            "avgReturn": -1.9,
+            "winRate": 23.1,
+            "best": 2.6,
+            "worst": -5.7,
             "holdDays": 5
           },
           {
             "count": 26,
-            "avgReturn": 5.0,
-            "winRate": 73.1,
-            "best": 18.3,
-            "worst": -11.1,
+            "avgReturn": -2.7,
+            "winRate": 15.4,
+            "best": 1.4,
+            "worst": -7.5,
             "holdDays": 10
           },
           {
-            "count": 24,
-            "avgReturn": 11.1,
-            "winRate": 79.2,
-            "best": 39.5,
-            "worst": -11.5,
+            "count": 26,
+            "avgReturn": -1.4,
+            "winRate": 34.6,
+            "best": 6.9,
+            "worst": -7.9,
+            "holdDays": 20
+          }
+        ],
+        "recentSignals": [
+          {
+            "date": "2025-12-02",
+            "signal": "持有",
+            "rps20": 90.8,
+            "streak": 19,
+            "ret10": -2.2,
+            "endDate": "2025-12-16"
+          },
+          {
+            "date": "2025-12-01",
+            "signal": "持有",
+            "rps20": 95.4,
+            "streak": 18,
+            "ret10": -3.1,
+            "endDate": "2025-12-15"
+          },
+          {
+            "date": "2025-11-28",
+            "signal": "持有",
+            "rps20": 90.8,
+            "streak": 17,
+            "ret10": -0.8,
+            "endDate": "2025-12-12"
+          },
+          {
+            "date": "2025-11-27",
+            "signal": "持有",
+            "rps20": 91.4,
+            "streak": 16,
+            "ret10": -0.5,
+            "endDate": "2025-12-11"
+          },
+          {
+            "date": "2025-11-26",
+            "signal": "持有",
+            "rps20": 96.0,
+            "streak": 15,
+            "ret10": 0.8,
+            "endDate": "2025-12-10"
+          }
+        ]
+      },
+      {
+        "code": "563300",
+        "name": "2000ETF",
+        "theme": "2000",
+        "currentSignal": "回避",
+        "currentRps20": 39.9,
+        "currentStreak": 0,
+        "stats": [
+          {
+            "count": 6,
+            "avgReturn": -0.5,
+            "winRate": 50.0,
+            "best": 2.7,
+            "worst": -3.6,
+            "holdDays": 5
+          },
+          {
+            "count": 6,
+            "avgReturn": -2.5,
+            "winRate": 16.7,
+            "best": 3.3,
+            "worst": -6.9,
+            "holdDays": 10
+          },
+          {
+            "count": 4,
+            "avgReturn": -0.6,
+            "winRate": 25.0,
+            "best": 5.1,
+            "worst": -2.9,
             "holdDays": 20
           }
         ],
@@ -56798,15 +56489,169 @@ window.COCKPIT_DATA = {
           {
             "date": "2026-09-21",
             "signal": "建仓",
-            "rps20": 94.4,
+            "rps20": 91.0,
             "streak": 4,
-            "ret10": -6.7,
+            "ret10": -6.9,
             "endDate": "2026-10-13"
           },
           {
             "date": "2026-09-18",
             "signal": "建仓",
-            "rps20": 95.5,
+            "rps20": 94.4,
+            "streak": 3,
+            "ret10": -6.0,
+            "endDate": "2026-10-12"
+          },
+          {
+            "date": "2026-09-03",
+            "signal": "建仓",
+            "rps20": 90.4,
+            "streak": 5,
+            "ret10": -1.0,
+            "endDate": "2026-09-17"
+          },
+          {
+            "date": "2026-09-02",
+            "signal": "建仓",
+            "rps20": 92.1,
+            "streak": 4,
+            "ret10": -0.7,
+            "endDate": "2026-09-16"
+          },
+          {
+            "date": "2026-09-01",
+            "signal": "建仓",
+            "rps20": 92.7,
+            "streak": 3,
+            "ret10": -3.5,
+            "endDate": "2026-09-15"
+          }
+        ]
+      },
+      {
+        "code": "515800",
+        "name": "800ETF",
+        "theme": "800",
+        "currentSignal": "回避",
+        "currentRps20": 39.3,
+        "currentStreak": 0,
+        "stats": [
+          {
+            "count": 0,
+            "avgReturn": null,
+            "winRate": null,
+            "best": null,
+            "worst": null,
+            "holdDays": 5
+          },
+          {
+            "count": 0,
+            "avgReturn": null,
+            "winRate": null,
+            "best": null,
+            "worst": null,
+            "holdDays": 10
+          },
+          {
+            "count": 0,
+            "avgReturn": null,
+            "winRate": null,
+            "best": null,
+            "worst": null,
+            "holdDays": 20
+          }
+        ],
+        "recentSignals": []
+      },
+      {
+        "code": "512090",
+        "name": "MSCIA股ETF",
+        "theme": "MSCIA股",
+        "currentSignal": "回避",
+        "currentRps20": 38.8,
+        "currentStreak": 0,
+        "stats": [
+          {
+            "count": 0,
+            "avgReturn": null,
+            "winRate": null,
+            "best": null,
+            "worst": null,
+            "holdDays": 5
+          },
+          {
+            "count": 0,
+            "avgReturn": null,
+            "winRate": null,
+            "best": null,
+            "worst": null,
+            "holdDays": 10
+          },
+          {
+            "count": 0,
+            "avgReturn": null,
+            "winRate": null,
+            "best": null,
+            "worst": null,
+            "holdDays": 20
+          }
+        ],
+        "recentSignals": []
+      },
+      {
+        "code": "512660",
+        "name": "军工ETF",
+        "theme": "军工",
+        "currentSignal": "回避",
+        "currentRps20": 38.2,
+        "currentStreak": 0,
+        "stats": [
+          {
+            "count": 18,
+            "avgReturn": 1.9,
+            "winRate": 61.1,
+            "best": 17.4,
+            "worst": -7.6,
+            "holdDays": 5
+          },
+          {
+            "count": 18,
+            "avgReturn": 2.6,
+            "winRate": 66.7,
+            "best": 15.6,
+            "worst": -9.0,
+            "holdDays": 10
+          },
+          {
+            "count": 15,
+            "avgReturn": 7.3,
+            "winRate": 66.7,
+            "best": 35.1,
+            "worst": -11.2,
+            "holdDays": 20
+          }
+        ],
+        "recentSignals": [
+          {
+            "date": "2026-09-22",
+            "signal": "建仓",
+            "rps20": 93.3,
+            "streak": 5,
+            "ret10": -8.0,
+            "endDate": "2026-10-14"
+          },
+          {
+            "date": "2026-09-21",
+            "signal": "建仓",
+            "rps20": 96.1,
+            "streak": 4,
+            "ret10": -8.0,
+            "endDate": "2026-10-13"
+          },
+          {
+            "date": "2026-09-18",
+            "signal": "建仓",
+            "rps20": 96.6,
             "streak": 3,
             "ret10": -8.8,
             "endDate": "2026-10-12"
@@ -56814,102 +56659,427 @@ window.COCKPIT_DATA = {
           {
             "date": "2026-01-14",
             "signal": "持有",
-            "rps20": 96.0,
-            "streak": 14,
-            "ret10": -4.4,
+            "rps20": 94.3,
+            "streak": 13,
+            "ret10": -4.0,
             "endDate": "2026-01-28"
           },
           {
             "date": "2026-01-13",
             "signal": "持有",
-            "rps20": 97.2,
-            "streak": 13,
-            "ret10": -3.0,
-            "endDate": "2026-01-27"
-          },
-          {
-            "date": "2026-01-12",
-            "signal": "持有",
-            "rps20": 97.2,
+            "rps20": 95.5,
             "streak": 12,
-            "ret10": -11.1,
-            "endDate": "2026-01-26"
+            "ret10": -2.7,
+            "endDate": "2026-01-27"
           }
         ]
       },
       {
-        "code": "159755",
-        "name": "电池ETF",
-        "theme": "电池",
+        "code": "563000",
+        "name": "中国A50ETF",
+        "theme": "中国A50",
         "currentSignal": "回避",
-        "currentRps20": 34.3,
+        "currentRps20": 37.6,
         "currentStreak": 0,
         "stats": [
           {
-            "count": 25,
-            "avgReturn": 0.6,
-            "winRate": 60.0,
-            "best": 11.5,
-            "worst": -11.7,
+            "count": 0,
+            "avgReturn": null,
+            "winRate": null,
+            "best": null,
+            "worst": null,
             "holdDays": 5
           },
           {
-            "count": 25,
-            "avgReturn": 2.2,
-            "winRate": 56.0,
-            "best": 14.6,
-            "worst": -9.4,
+            "count": 0,
+            "avgReturn": null,
+            "winRate": null,
+            "best": null,
+            "worst": null,
             "holdDays": 10
           },
           {
-            "count": 25,
-            "avgReturn": 3.0,
-            "winRate": 68.0,
-            "best": 12.0,
-            "worst": -10.8,
+            "count": 0,
+            "avgReturn": null,
+            "winRate": null,
+            "best": null,
+            "worst": null,
+            "holdDays": 20
+          }
+        ],
+        "recentSignals": []
+      },
+      {
+        "code": "563360",
+        "name": "A500ETF",
+        "theme": "A500",
+        "currentSignal": "回避",
+        "currentRps20": 37.1,
+        "currentStreak": 0,
+        "stats": [
+          {
+            "count": 0,
+            "avgReturn": null,
+            "winRate": null,
+            "best": null,
+            "worst": null,
+            "holdDays": 5
+          },
+          {
+            "count": 0,
+            "avgReturn": null,
+            "winRate": null,
+            "best": null,
+            "worst": null,
+            "holdDays": 10
+          },
+          {
+            "count": 0,
+            "avgReturn": null,
+            "winRate": null,
+            "best": null,
+            "worst": null,
+            "holdDays": 20
+          }
+        ],
+        "recentSignals": []
+      },
+      {
+        "code": "513750",
+        "name": "港股通非银ETF",
+        "theme": "非银金融",
+        "currentSignal": "回避",
+        "currentRps20": 36.5,
+        "currentStreak": 0,
+        "stats": [
+          {
+            "count": 32,
+            "avgReturn": 1.4,
+            "winRate": 68.8,
+            "best": 8.7,
+            "worst": -3.6,
+            "holdDays": 5
+          },
+          {
+            "count": 32,
+            "avgReturn": 4.1,
+            "winRate": 90.6,
+            "best": 8.3,
+            "worst": -3.2,
+            "holdDays": 10
+          },
+          {
+            "count": 32,
+            "avgReturn": 9.5,
+            "winRate": 100.0,
+            "best": 15.8,
+            "worst": 3.5,
             "holdDays": 20
           }
         ],
         "recentSignals": [
           {
-            "date": "2025-11-20",
+            "date": "2025-07-02",
             "signal": "建仓",
-            "rps20": 92.0,
+            "rps20": 95.2,
+            "streak": 9,
+            "ret10": 3.2,
+            "endDate": "2025-07-16"
+          },
+          {
+            "date": "2025-07-01",
+            "signal": "建仓",
+            "rps20": 91.7,
+            "streak": 8,
+            "ret10": 4.6,
+            "endDate": "2025-07-15"
+          },
+          {
+            "date": "2025-06-30",
+            "signal": "建仓",
+            "rps20": 94.6,
+            "streak": 7,
+            "ret10": 5.1,
+            "endDate": "2025-07-14"
+          },
+          {
+            "date": "2025-06-27",
+            "signal": "建仓",
+            "rps20": 96.4,
             "streak": 6,
-            "ret10": -4.5,
-            "endDate": "2025-12-04"
+            "ret10": 4.0,
+            "endDate": "2025-07-11"
           },
           {
-            "date": "2025-11-19",
+            "date": "2025-06-26",
             "signal": "建仓",
-            "rps20": 95.4,
+            "rps20": 95.8,
             "streak": 5,
-            "ret10": -7.3,
-            "endDate": "2025-12-03"
+            "ret10": 0.2,
+            "endDate": "2025-07-10"
+          }
+        ]
+      },
+      {
+        "code": "159559",
+        "name": "机器人50ETF",
+        "theme": "机器人50",
+        "currentSignal": "回避",
+        "currentRps20": 36.0,
+        "currentStreak": 0,
+        "stats": [
+          {
+            "count": 8,
+            "avgReturn": -0.8,
+            "winRate": 25.0,
+            "best": 3.9,
+            "worst": -3.3,
+            "holdDays": 5
           },
           {
-            "date": "2025-11-18",
+            "count": 8,
+            "avgReturn": 0.0,
+            "winRate": 37.5,
+            "best": 11.2,
+            "worst": -6.7,
+            "holdDays": 10
+          },
+          {
+            "count": 8,
+            "avgReturn": -1.0,
+            "winRate": 37.5,
+            "best": 10.2,
+            "worst": -6.6,
+            "holdDays": 20
+          }
+        ],
+        "recentSignals": [
+          {
+            "date": "2025-08-08",
             "signal": "建仓",
-            "rps20": 92.5,
+            "rps20": 90.6,
+            "streak": 3,
+            "ret10": 7.4,
+            "endDate": "2025-08-22"
+          },
+          {
+            "date": "2025-05-19",
+            "signal": "建仓",
+            "rps20": 90.9,
+            "streak": 7,
+            "ret10": -5.4,
+            "endDate": "2025-06-03"
+          },
+          {
+            "date": "2025-05-16",
+            "signal": "建仓",
+            "rps20": 93.9,
+            "streak": 6,
+            "ret10": -6.3,
+            "endDate": "2025-05-30"
+          },
+          {
+            "date": "2025-05-15",
+            "signal": "建仓",
+            "rps20": 91.5,
+            "streak": 5,
+            "ret10": -3.7,
+            "endDate": "2025-05-29"
+          },
+          {
+            "date": "2025-05-14",
+            "signal": "建仓",
+            "rps20": 92.7,
             "streak": 4,
-            "ret10": -5.2,
-            "endDate": "2025-12-02"
+            "ret10": -6.7,
+            "endDate": "2025-05-28"
+          }
+        ]
+      },
+      {
+        "code": "159572",
+        "name": "创业板200ETF",
+        "theme": "创业板200",
+        "currentSignal": "回避",
+        "currentRps20": 35.4,
+        "currentStreak": 0,
+        "stats": [
+          {
+            "count": 0,
+            "avgReturn": null,
+            "winRate": null,
+            "best": null,
+            "worst": null,
+            "holdDays": 5
           },
           {
-            "date": "2025-11-17",
-            "signal": "建仓",
-            "rps20": 96.6,
-            "streak": 3,
-            "ret10": -7.7,
-            "endDate": "2025-12-01"
+            "count": 0,
+            "avgReturn": null,
+            "winRate": null,
+            "best": null,
+            "worst": null,
+            "holdDays": 10
           },
           {
-            "date": "2025-10-30",
-            "signal": "建仓",
-            "rps20": 91.4,
-            "streak": 3,
-            "ret10": 3.1,
-            "endDate": "2025-11-13"
+            "count": 0,
+            "avgReturn": null,
+            "winRate": null,
+            "best": null,
+            "worst": null,
+            "holdDays": 20
+          }
+        ],
+        "recentSignals": []
+      },
+      {
+        "code": "159326",
+        "name": "电网设备ETF",
+        "theme": "电网设备",
+        "currentSignal": "回避",
+        "currentRps20": 34.8,
+        "currentStreak": 0,
+        "stats": [
+          {
+            "count": 38,
+            "avgReturn": 0.4,
+            "winRate": 47.4,
+            "best": 11.4,
+            "worst": -9.9,
+            "holdDays": 5
+          },
+          {
+            "count": 38,
+            "avgReturn": -0.6,
+            "winRate": 36.8,
+            "best": 15.3,
+            "worst": -14.0,
+            "holdDays": 10
+          },
+          {
+            "count": 38,
+            "avgReturn": -2.4,
+            "winRate": 26.3,
+            "best": 16.8,
+            "worst": -13.5,
+            "holdDays": 20
+          }
+        ],
+        "recentSignals": [
+          {
+            "date": "2026-03-19",
+            "signal": "持有",
+            "rps20": 92.7,
+            "streak": 16,
+            "ret10": -2.7,
+            "endDate": "2026-04-02"
+          },
+          {
+            "date": "2026-03-18",
+            "signal": "持有",
+            "rps20": 94.4,
+            "streak": 15,
+            "ret10": -4.1,
+            "endDate": "2026-04-01"
+          },
+          {
+            "date": "2026-03-17",
+            "signal": "持有",
+            "rps20": 94.4,
+            "streak": 14,
+            "ret10": -3.6,
+            "endDate": "2026-03-31"
+          },
+          {
+            "date": "2026-03-16",
+            "signal": "持有",
+            "rps20": 97.2,
+            "streak": 13,
+            "ret10": -4.6,
+            "endDate": "2026-03-30"
+          },
+          {
+            "date": "2026-03-13",
+            "signal": "持有",
+            "rps20": 98.9,
+            "streak": 12,
+            "ret10": -7.2,
+            "endDate": "2026-03-27"
+          }
+        ]
+      },
+      {
+        "code": "159998",
+        "name": "计算机ETF",
+        "theme": "计算机",
+        "currentSignal": "回避",
+        "currentRps20": 34.3,
+        "currentStreak": 0,
+        "stats": [
+          {
+            "count": 12,
+            "avgReturn": -0.2,
+            "winRate": 66.7,
+            "best": 5.8,
+            "worst": -8.8,
+            "holdDays": 5
+          },
+          {
+            "count": 12,
+            "avgReturn": -0.4,
+            "winRate": 33.3,
+            "best": 7.0,
+            "worst": -5.0,
+            "holdDays": 10
+          },
+          {
+            "count": 12,
+            "avgReturn": -3.5,
+            "winRate": 33.3,
+            "best": 3.6,
+            "worst": -12.1,
+            "holdDays": 20
+          }
+        ],
+        "recentSignals": [
+          {
+            "date": "2025-02-26",
+            "signal": "持有",
+            "rps20": 94.3,
+            "streak": 14,
+            "ret10": -3.2,
+            "endDate": "2025-03-12"
+          },
+          {
+            "date": "2025-02-25",
+            "signal": "持有",
+            "rps20": 95.6,
+            "streak": 13,
+            "ret10": -3.2,
+            "endDate": "2025-03-11"
+          },
+          {
+            "date": "2025-02-24",
+            "signal": "持有",
+            "rps20": 93.7,
+            "streak": 12,
+            "ret10": -5.0,
+            "endDate": "2025-03-10"
+          },
+          {
+            "date": "2025-02-21",
+            "signal": "持有",
+            "rps20": 93.7,
+            "streak": 11,
+            "ret10": -2.8,
+            "endDate": "2025-03-07"
+          },
+          {
+            "date": "2025-02-20",
+            "signal": "持有",
+            "rps20": 93.0,
+            "streak": 10,
+            "ret10": 3.8,
+            "endDate": "2025-03-06"
           }
         ]
       },
@@ -56990,470 +57160,14 @@ window.COCKPIT_DATA = {
         ]
       },
       {
-        "code": "159796",
-        "name": "电池50ETF",
-        "theme": "电池",
+        "code": "159628",
+        "name": "2000ETF",
+        "theme": "2000",
         "currentSignal": "回避",
         "currentRps20": 33.1,
         "currentStreak": 0,
         "stats": [
           {
-            "count": 31,
-            "avgReturn": -0.6,
-            "winRate": 45.2,
-            "best": 10.8,
-            "worst": -11.6,
-            "holdDays": 5
-          },
-          {
-            "count": 31,
-            "avgReturn": 0.8,
-            "winRate": 51.6,
-            "best": 14.5,
-            "worst": -10.6,
-            "holdDays": 10
-          },
-          {
-            "count": 31,
-            "avgReturn": 2.9,
-            "winRate": 74.2,
-            "best": 16.3,
-            "worst": -11.5,
-            "holdDays": 20
-          }
-        ],
-        "recentSignals": [
-          {
-            "date": "2026-03-31",
-            "signal": "建仓",
-            "rps20": 91.0,
-            "streak": 4,
-            "ret10": 6.2,
-            "endDate": "2026-04-15"
-          },
-          {
-            "date": "2026-03-30",
-            "signal": "建仓",
-            "rps20": 97.2,
-            "streak": 3,
-            "ret10": 4.2,
-            "endDate": "2026-04-14"
-          },
-          {
-            "date": "2026-03-16",
-            "signal": "建仓",
-            "rps20": 90.4,
-            "streak": 3,
-            "ret10": -2.0,
-            "endDate": "2026-03-30"
-          },
-          {
-            "date": "2025-11-20",
-            "signal": "持有",
-            "rps20": 97.1,
-            "streak": 10,
-            "ret10": -3.9,
-            "endDate": "2025-12-04"
-          },
-          {
-            "date": "2025-11-19",
-            "signal": "建仓",
-            "rps20": 97.7,
-            "streak": 9,
-            "ret10": -6.3,
-            "endDate": "2025-12-03"
-          }
-        ]
-      },
-      {
-        "code": "516160",
-        "name": "新能源ETF",
-        "theme": "新能源",
-        "currentSignal": "回避",
-        "currentRps20": 32.6,
-        "currentStreak": 0,
-        "stats": [
-          {
-            "count": 26,
-            "avgReturn": -0.3,
-            "winRate": 53.8,
-            "best": 10.5,
-            "worst": -10.8,
-            "holdDays": 5
-          },
-          {
-            "count": 26,
-            "avgReturn": -0.7,
-            "winRate": 46.2,
-            "best": 8.1,
-            "worst": -10.1,
-            "holdDays": 10
-          },
-          {
-            "count": 26,
-            "avgReturn": 1.0,
-            "winRate": 57.7,
-            "best": 14.5,
-            "worst": -9.7,
-            "holdDays": 20
-          }
-        ],
-        "recentSignals": [
-          {
-            "date": "2025-11-20",
-            "signal": "持有",
-            "rps20": 98.9,
-            "streak": 10,
-            "ret10": -6.0,
-            "endDate": "2025-12-04"
-          },
-          {
-            "date": "2025-11-19",
-            "signal": "建仓",
-            "rps20": 99.4,
-            "streak": 9,
-            "ret10": -7.6,
-            "endDate": "2025-12-03"
-          },
-          {
-            "date": "2025-11-18",
-            "signal": "建仓",
-            "rps20": 98.9,
-            "streak": 8,
-            "ret10": -5.7,
-            "endDate": "2025-12-02"
-          },
-          {
-            "date": "2025-11-17",
-            "signal": "建仓",
-            "rps20": 98.3,
-            "streak": 7,
-            "ret10": -7.6,
-            "endDate": "2025-12-01"
-          },
-          {
-            "date": "2025-11-14",
-            "signal": "建仓",
-            "rps20": 98.3,
-            "streak": 6,
-            "ret10": -7.2,
-            "endDate": "2025-11-28"
-          }
-        ]
-      },
-      {
-        "code": "159825",
-        "name": "农业ETF",
-        "theme": "农业",
-        "currentSignal": "回避",
-        "currentRps20": 32.0,
-        "currentStreak": 0,
-        "stats": [
-          {
-            "count": 20,
-            "avgReturn": -2.9,
-            "winRate": 15.0,
-            "best": 0.3,
-            "worst": -10.3,
-            "holdDays": 5
-          },
-          {
-            "count": 20,
-            "avgReturn": -2.9,
-            "winRate": 15.0,
-            "best": 0.8,
-            "worst": -7.7,
-            "holdDays": 10
-          },
-          {
-            "count": 19,
-            "avgReturn": -2.2,
-            "winRate": 26.3,
-            "best": 4.2,
-            "worst": -12.5,
-            "holdDays": 20
-          }
-        ],
-        "recentSignals": [
-          {
-            "date": "2026-09-10",
-            "signal": "建仓",
-            "rps20": 92.1,
-            "streak": 5,
-            "ret10": -7.0,
-            "endDate": "2026-09-24"
-          },
-          {
-            "date": "2026-09-09",
-            "signal": "建仓",
-            "rps20": 97.2,
-            "streak": 4,
-            "ret10": -7.6,
-            "endDate": "2026-09-23"
-          },
-          {
-            "date": "2026-09-08",
-            "signal": "建仓",
-            "rps20": 97.2,
-            "streak": 3,
-            "ret10": -6.6,
-            "endDate": "2026-09-22"
-          },
-          {
-            "date": "2026-03-18",
-            "signal": "建仓",
-            "rps20": 92.1,
-            "streak": 5,
-            "ret10": -6.3,
-            "endDate": "2026-04-01"
-          },
-          {
-            "date": "2026-03-17",
-            "signal": "建仓",
-            "rps20": 93.8,
-            "streak": 4,
-            "ret10": -7.7,
-            "endDate": "2026-03-31"
-          }
-        ]
-      },
-      {
-        "code": "516510",
-        "name": "云计算ETF",
-        "theme": "云计算",
-        "currentSignal": "回避",
-        "currentRps20": 31.5,
-        "currentStreak": 0,
-        "stats": [
-          {
-            "count": 23,
-            "avgReturn": 0.8,
-            "winRate": 65.2,
-            "best": 13.5,
-            "worst": -10.3,
-            "holdDays": 5
-          },
-          {
-            "count": 23,
-            "avgReturn": -0.0,
-            "winRate": 47.8,
-            "best": 10.4,
-            "worst": -6.8,
-            "holdDays": 10
-          },
-          {
-            "count": 23,
-            "avgReturn": 2.6,
-            "winRate": 65.2,
-            "best": 27.6,
-            "worst": -14.2,
-            "holdDays": 20
-          }
-        ],
-        "recentSignals": [
-          {
-            "date": "2025-12-12",
-            "signal": "建仓",
-            "rps20": 94.3,
-            "streak": 4,
-            "ret10": 0.6,
-            "endDate": "2025-12-26"
-          },
-          {
-            "date": "2025-12-11",
-            "signal": "建仓",
-            "rps20": 90.3,
-            "streak": 3,
-            "ret10": 1.7,
-            "endDate": "2025-12-25"
-          },
-          {
-            "date": "2025-08-28",
-            "signal": "建仓",
-            "rps20": 91.3,
-            "streak": 8,
-            "ret10": -1.6,
-            "endDate": "2025-09-11"
-          },
-          {
-            "date": "2025-08-27",
-            "signal": "建仓",
-            "rps20": 93.0,
-            "streak": 7,
-            "ret10": -3.8,
-            "endDate": "2025-09-10"
-          },
-          {
-            "date": "2025-08-26",
-            "signal": "建仓",
-            "rps20": 92.4,
-            "streak": 6,
-            "ret10": -5.5,
-            "endDate": "2025-09-09"
-          }
-        ]
-      },
-      {
-        "code": "515030",
-        "name": "新能源车ETF",
-        "theme": "新能源车",
-        "currentSignal": "回避",
-        "currentRps20": 30.9,
-        "currentStreak": 0,
-        "stats": [
-          {
-            "count": 19,
-            "avgReturn": -0.3,
-            "winRate": 52.6,
-            "best": 10.0,
-            "worst": -11.2,
-            "holdDays": 5
-          },
-          {
-            "count": 19,
-            "avgReturn": -0.1,
-            "winRate": 42.1,
-            "best": 12.4,
-            "worst": -8.7,
-            "holdDays": 10
-          },
-          {
-            "count": 19,
-            "avgReturn": 1.4,
-            "winRate": 63.2,
-            "best": 10.5,
-            "worst": -11.1,
-            "holdDays": 20
-          }
-        ],
-        "recentSignals": [
-          {
-            "date": "2025-11-20",
-            "signal": "建仓",
-            "rps20": 94.3,
-            "streak": 6,
-            "ret10": -5.5,
-            "endDate": "2025-12-04"
-          },
-          {
-            "date": "2025-11-19",
-            "signal": "建仓",
-            "rps20": 96.6,
-            "streak": 5,
-            "ret10": -8.0,
-            "endDate": "2025-12-03"
-          },
-          {
-            "date": "2025-11-18",
-            "signal": "建仓",
-            "rps20": 93.7,
-            "streak": 4,
-            "ret10": -5.7,
-            "endDate": "2025-12-02"
-          },
-          {
-            "date": "2025-11-17",
-            "signal": "建仓",
-            "rps20": 95.4,
-            "streak": 3,
-            "ret10": -7.5,
-            "endDate": "2025-12-01"
-          },
-          {
-            "date": "2025-10-13",
-            "signal": "持有",
-            "rps20": 90.2,
-            "streak": 15,
-            "ret10": -1.1,
-            "endDate": "2025-10-27"
-          }
-        ]
-      },
-      {
-        "code": "515790",
-        "name": "光伏ETF",
-        "theme": "光伏",
-        "currentSignal": "回避",
-        "currentRps20": 30.3,
-        "currentStreak": 0,
-        "stats": [
-          {
-            "count": 27,
-            "avgReturn": -2.4,
-            "winRate": 29.6,
-            "best": 4.4,
-            "worst": -11.2,
-            "holdDays": 5
-          },
-          {
-            "count": 27,
-            "avgReturn": -3.9,
-            "winRate": 29.6,
-            "best": 4.5,
-            "worst": -14.2,
-            "holdDays": 10
-          },
-          {
-            "count": 27,
-            "avgReturn": -2.8,
-            "winRate": 37.0,
-            "best": 9.6,
-            "worst": -12.2,
-            "holdDays": 20
-          }
-        ],
-        "recentSignals": [
-          {
-            "date": "2026-03-25",
-            "signal": "建仓",
-            "rps20": 91.0,
-            "streak": 3,
-            "ret10": -10.6,
-            "endDate": "2026-04-09"
-          },
-          {
-            "date": "2026-02-12",
-            "signal": "建仓",
-            "rps20": 91.6,
-            "streak": 9,
-            "ret10": -0.1,
-            "endDate": "2026-03-06"
-          },
-          {
-            "date": "2026-02-11",
-            "signal": "建仓",
-            "rps20": 91.6,
-            "streak": 8,
-            "ret10": 0.9,
-            "endDate": "2026-03-05"
-          },
-          {
-            "date": "2026-02-10",
-            "signal": "建仓",
-            "rps20": 93.8,
-            "streak": 7,
-            "ret10": -1.4,
-            "endDate": "2026-03-04"
-          },
-          {
-            "date": "2026-02-09",
-            "signal": "建仓",
-            "rps20": 97.2,
-            "streak": 6,
-            "ret10": -2.8,
-            "endDate": "2026-03-03"
-          }
-        ]
-      },
-      {
-        "code": "510500",
-        "name": "500ETF",
-        "theme": "500",
-        "currentSignal": "回避",
-        "currentRps20": 29.8,
-        "currentStreak": 0,
-        "stats": [
-          {
             "count": 0,
             "avgReturn": null,
             "winRate": null,
@@ -57479,311 +57193,13 @@ window.COCKPIT_DATA = {
           }
         ],
         "recentSignals": []
-      },
-      {
-        "code": "512660",
-        "name": "军工ETF",
-        "theme": "军工",
-        "currentSignal": "回避",
-        "currentRps20": 29.2,
-        "currentStreak": 0,
-        "stats": [
-          {
-            "count": 18,
-            "avgReturn": 1.9,
-            "winRate": 61.1,
-            "best": 17.4,
-            "worst": -7.6,
-            "holdDays": 5
-          },
-          {
-            "count": 18,
-            "avgReturn": 2.6,
-            "winRate": 66.7,
-            "best": 15.6,
-            "worst": -9.0,
-            "holdDays": 10
-          },
-          {
-            "count": 15,
-            "avgReturn": 7.3,
-            "winRate": 66.7,
-            "best": 35.1,
-            "worst": -11.2,
-            "holdDays": 20
-          }
-        ],
-        "recentSignals": [
-          {
-            "date": "2026-09-22",
-            "signal": "建仓",
-            "rps20": 93.3,
-            "streak": 5,
-            "ret10": -8.0,
-            "endDate": "2026-10-14"
-          },
-          {
-            "date": "2026-09-21",
-            "signal": "建仓",
-            "rps20": 96.1,
-            "streak": 4,
-            "ret10": -8.0,
-            "endDate": "2026-10-13"
-          },
-          {
-            "date": "2026-09-18",
-            "signal": "建仓",
-            "rps20": 96.6,
-            "streak": 3,
-            "ret10": -8.8,
-            "endDate": "2026-10-12"
-          },
-          {
-            "date": "2026-01-14",
-            "signal": "持有",
-            "rps20": 94.3,
-            "streak": 13,
-            "ret10": -4.0,
-            "endDate": "2026-01-28"
-          },
-          {
-            "date": "2026-01-13",
-            "signal": "持有",
-            "rps20": 95.5,
-            "streak": 12,
-            "ret10": -2.7,
-            "endDate": "2026-01-27"
-          }
-        ]
-      },
-      {
-        "code": "515700",
-        "name": "新能源车ETF",
-        "theme": "新能源车",
-        "currentSignal": "回避",
-        "currentRps20": 28.7,
-        "currentStreak": 0,
-        "stats": [
-          {
-            "count": 17,
-            "avgReturn": -0.7,
-            "winRate": 47.1,
-            "best": 10.1,
-            "worst": -11.2,
-            "holdDays": 5
-          },
-          {
-            "count": 17,
-            "avgReturn": -1.3,
-            "winRate": 35.3,
-            "best": 9.2,
-            "worst": -8.7,
-            "holdDays": 10
-          },
-          {
-            "count": 17,
-            "avgReturn": 1.1,
-            "winRate": 58.8,
-            "best": 10.4,
-            "worst": -10.9,
-            "holdDays": 20
-          }
-        ],
-        "recentSignals": [
-          {
-            "date": "2025-11-20",
-            "signal": "建仓",
-            "rps20": 93.7,
-            "streak": 6,
-            "ret10": -5.5,
-            "endDate": "2025-12-04"
-          },
-          {
-            "date": "2025-11-19",
-            "signal": "建仓",
-            "rps20": 96.0,
-            "streak": 5,
-            "ret10": -8.0,
-            "endDate": "2025-12-03"
-          },
-          {
-            "date": "2025-11-18",
-            "signal": "建仓",
-            "rps20": 94.3,
-            "streak": 4,
-            "ret10": -5.6,
-            "endDate": "2025-12-02"
-          },
-          {
-            "date": "2025-11-17",
-            "signal": "建仓",
-            "rps20": 96.0,
-            "streak": 3,
-            "ret10": -7.4,
-            "endDate": "2025-12-01"
-          },
-          {
-            "date": "2025-10-13",
-            "signal": "持有",
-            "rps20": 90.8,
-            "streak": 13,
-            "ret10": -1.1,
-            "endDate": "2025-10-27"
-          }
-        ]
-      },
-      {
-        "code": "512100",
-        "name": "1000ETF",
-        "theme": "1000",
-        "currentSignal": "回避",
-        "currentRps20": 28.1,
-        "currentStreak": 0,
-        "stats": [
-          {
-            "count": 0,
-            "avgReturn": null,
-            "winRate": null,
-            "best": null,
-            "worst": null,
-            "holdDays": 5
-          },
-          {
-            "count": 0,
-            "avgReturn": null,
-            "winRate": null,
-            "best": null,
-            "worst": null,
-            "holdDays": 10
-          },
-          {
-            "count": 0,
-            "avgReturn": null,
-            "winRate": null,
-            "best": null,
-            "worst": null,
-            "holdDays": 20
-          }
-        ],
-        "recentSignals": []
-      },
-      {
-        "code": "159287",
-        "name": "创业板综ETF",
-        "theme": "创业板综",
-        "currentSignal": "回避",
-        "currentRps20": 27.5,
-        "currentStreak": 0,
-        "stats": [
-          {
-            "count": 0,
-            "avgReturn": null,
-            "winRate": null,
-            "best": null,
-            "worst": null,
-            "holdDays": 5
-          },
-          {
-            "count": 0,
-            "avgReturn": null,
-            "winRate": null,
-            "best": null,
-            "worst": null,
-            "holdDays": 10
-          },
-          {
-            "count": 0,
-            "avgReturn": null,
-            "winRate": null,
-            "best": null,
-            "worst": null,
-            "holdDays": 20
-          }
-        ],
-        "recentSignals": []
-      },
-      {
-        "code": "588830",
-        "name": "科创新能源ETF",
-        "theme": "科创新能源",
-        "currentSignal": "回避",
-        "currentRps20": 27.0,
-        "currentStreak": 0,
-        "stats": [
-          {
-            "count": 16,
-            "avgReturn": -1.7,
-            "winRate": 43.8,
-            "best": 4.2,
-            "worst": -12.6,
-            "holdDays": 5
-          },
-          {
-            "count": 16,
-            "avgReturn": -0.7,
-            "winRate": 62.5,
-            "best": 7.0,
-            "worst": -10.6,
-            "holdDays": 10
-          },
-          {
-            "count": 16,
-            "avgReturn": 0.6,
-            "winRate": 62.5,
-            "best": 12.1,
-            "worst": -13.7,
-            "holdDays": 20
-          }
-        ],
-        "recentSignals": [
-          {
-            "date": "2025-11-20",
-            "signal": "建仓",
-            "rps20": 97.7,
-            "streak": 6,
-            "ret10": -7.1,
-            "endDate": "2025-12-04"
-          },
-          {
-            "date": "2025-11-19",
-            "signal": "建仓",
-            "rps20": 97.1,
-            "streak": 5,
-            "ret10": -9.0,
-            "endDate": "2025-12-03"
-          },
-          {
-            "date": "2025-11-18",
-            "signal": "建仓",
-            "rps20": 100.0,
-            "streak": 4,
-            "ret10": -9.2,
-            "endDate": "2025-12-02"
-          },
-          {
-            "date": "2025-11-17",
-            "signal": "建仓",
-            "rps20": 100.0,
-            "streak": 3,
-            "ret10": -10.6,
-            "endDate": "2025-12-01"
-          },
-          {
-            "date": "2025-11-11",
-            "signal": "建仓",
-            "rps20": 97.1,
-            "streak": 3,
-            "ret10": -10.5,
-            "endDate": "2025-11-25"
-          }
-        ]
       },
       {
         "code": "520600",
         "name": "港股汽车ETF",
         "theme": "汽车",
         "currentSignal": "回避",
-        "currentRps20": 26.4,
+        "currentRps20": 32.6,
         "currentStreak": 0,
         "stats": [
           {
@@ -57855,1245 +57271,78 @@ window.COCKPIT_DATA = {
         ]
       },
       {
-        "code": "159368",
-        "name": "创业板新能源ETF",
-        "theme": "创业板新能源",
+        "code": "515790",
+        "name": "光伏ETF",
+        "theme": "光伏",
         "currentSignal": "回避",
-        "currentRps20": 25.8,
+        "currentRps20": 32.0,
         "currentStreak": 0,
         "stats": [
           {
             "count": 27,
-            "avgReturn": 0.4,
-            "winRate": 63.0,
-            "best": 9.2,
-            "worst": -10.0,
+            "avgReturn": -2.4,
+            "winRate": 29.6,
+            "best": 4.4,
+            "worst": -11.2,
             "holdDays": 5
           },
           {
             "count": 27,
-            "avgReturn": 2.0,
-            "winRate": 66.7,
-            "best": 11.7,
-            "worst": -9.2,
+            "avgReturn": -3.9,
+            "winRate": 29.6,
+            "best": 4.5,
+            "worst": -14.2,
             "holdDays": 10
           },
           {
             "count": 27,
-            "avgReturn": 3.3,
-            "winRate": 85.2,
-            "best": 11.4,
-            "worst": -8.3,
+            "avgReturn": -2.8,
+            "winRate": 37.0,
+            "best": 9.6,
+            "worst": -12.2,
             "holdDays": 20
           }
         ],
         "recentSignals": [
-          {
-            "date": "2026-03-30",
-            "signal": "建仓",
-            "rps20": 91.6,
-            "streak": 3,
-            "ret10": 3.5,
-            "endDate": "2026-04-14"
-          },
-          {
-            "date": "2025-11-19",
-            "signal": "建仓",
-            "rps20": 90.2,
-            "streak": 5,
-            "ret10": -4.7,
-            "endDate": "2025-12-03"
-          },
-          {
-            "date": "2025-11-18",
-            "signal": "建仓",
-            "rps20": 90.8,
-            "streak": 4,
-            "ret10": -3.5,
-            "endDate": "2025-12-02"
-          },
-          {
-            "date": "2025-11-17",
-            "signal": "建仓",
-            "rps20": 94.8,
-            "streak": 3,
-            "ret10": -6.0,
-            "endDate": "2025-12-01"
-          },
-          {
-            "date": "2025-10-10",
-            "signal": "持有",
-            "rps20": 91.4,
-            "streak": 22,
-            "ret10": 0.3,
-            "endDate": "2025-10-24"
-          }
-        ]
-      },
-      {
-        "code": "159901",
-        "name": "深证100ETF",
-        "theme": "深证100",
-        "currentSignal": "回避",
-        "currentRps20": 25.3,
-        "currentStreak": 0,
-        "stats": [
-          {
-            "count": 0,
-            "avgReturn": null,
-            "winRate": null,
-            "best": null,
-            "worst": null,
-            "holdDays": 5
-          },
-          {
-            "count": 0,
-            "avgReturn": null,
-            "winRate": null,
-            "best": null,
-            "worst": null,
-            "holdDays": 10
-          },
-          {
-            "count": 0,
-            "avgReturn": null,
-            "winRate": null,
-            "best": null,
-            "worst": null,
-            "holdDays": 20
-          }
-        ],
-        "recentSignals": []
-      },
-      {
-        "code": "588230",
-        "name": "科创200ETF",
-        "theme": "科创200",
-        "currentSignal": "回避",
-        "currentRps20": 24.7,
-        "currentStreak": 0,
-        "stats": [
-          {
-            "count": 20,
-            "avgReturn": 1.9,
-            "winRate": 75.0,
-            "best": 6.5,
-            "worst": -10.3,
-            "holdDays": 5
-          },
-          {
-            "count": 18,
-            "avgReturn": 4.4,
-            "winRate": 83.3,
-            "best": 10.3,
-            "worst": -5.0,
-            "holdDays": 10
-          },
-          {
-            "count": 19,
-            "avgReturn": 2.1,
-            "winRate": 78.9,
-            "best": 19.4,
-            "worst": -33.5,
-            "holdDays": 20
-          }
-        ],
-        "recentSignals": [
-          {
-            "date": "2026-09-24",
-            "signal": "建仓",
-            "rps20": 94.4,
-            "streak": 3,
-            "ret10": null,
-            "endDate": null
-          },
-          {
-            "date": "2026-09-02",
-            "signal": "建仓",
-            "rps20": 92.7,
-            "streak": 5,
-            "ret10": 2.2,
-            "endDate": "2026-09-16"
-          },
-          {
-            "date": "2026-09-01",
-            "signal": "建仓",
-            "rps20": 99.4,
-            "streak": 4,
-            "ret10": -2.3,
-            "endDate": "2026-09-15"
-          },
-          {
-            "date": "2026-08-31",
-            "signal": "建仓",
-            "rps20": 100.0,
-            "streak": 3,
-            "ret10": -5.0,
-            "endDate": "2026-09-14"
-          },
-          {
-            "date": "2026-07-02",
-            "signal": "建仓",
-            "rps20": 91.0,
-            "streak": 3,
-            "ret10": null,
-            "endDate": null
-          }
-        ]
-      },
-      {
-        "code": "588790",
-        "name": "科创AIETF",
-        "theme": "信息技术",
-        "currentSignal": "回避",
-        "currentRps20": 24.2,
-        "currentStreak": 0,
-        "stats": [
-          {
-            "count": 23,
-            "avgReturn": -0.1,
-            "winRate": 39.1,
-            "best": 19.8,
-            "worst": -13.3,
-            "holdDays": 5
-          },
-          {
-            "count": 23,
-            "avgReturn": -1.1,
-            "winRate": 34.8,
-            "best": 22.7,
-            "worst": -14.9,
-            "holdDays": 10
-          },
-          {
-            "count": 23,
-            "avgReturn": 2.4,
-            "winRate": 56.5,
-            "best": 19.1,
-            "worst": -10.7,
-            "holdDays": 20
-          }
-        ],
-        "recentSignals": [
-          {
-            "date": "2026-05-26",
-            "signal": "建仓",
-            "rps20": 91.6,
-            "streak": 6,
-            "ret10": -10.4,
-            "endDate": "2026-06-09"
-          },
-          {
-            "date": "2026-05-25",
-            "signal": "建仓",
-            "rps20": 92.1,
-            "streak": 5,
-            "ret10": -14.9,
-            "endDate": "2026-06-08"
-          },
-          {
-            "date": "2026-05-22",
-            "signal": "建仓",
-            "rps20": 93.8,
-            "streak": 4,
-            "ret10": -10.4,
-            "endDate": "2026-06-05"
-          },
-          {
-            "date": "2026-05-21",
-            "signal": "建仓",
-            "rps20": 93.3,
-            "streak": 3,
-            "ret10": -6.0,
-            "endDate": "2026-06-04"
-          },
-          {
-            "date": "2026-05-08",
-            "signal": "建仓",
-            "rps20": 91.0,
-            "streak": 3,
-            "ret10": 5.1,
-            "endDate": "2026-05-22"
-          }
-        ]
-      },
-      {
-        "code": "159566",
-        "name": "储能电池ETF",
-        "theme": "电池",
-        "currentSignal": "回避",
-        "currentRps20": 23.6,
-        "currentStreak": 0,
-        "stats": [
-          {
-            "count": 36,
-            "avgReturn": -0.2,
-            "winRate": 50.0,
-            "best": 8.1,
-            "worst": -10.2,
-            "holdDays": 5
-          },
-          {
-            "count": 36,
-            "avgReturn": -0.3,
-            "winRate": 47.2,
-            "best": 11.0,
-            "worst": -12.4,
-            "holdDays": 10
-          },
-          {
-            "count": 36,
-            "avgReturn": 4.4,
-            "winRate": 77.8,
-            "best": 25.0,
-            "worst": -5.8,
-            "holdDays": 20
-          }
-        ],
-        "recentSignals": [
-          {
-            "date": "2026-03-27",
-            "signal": "持有",
-            "rps20": 91.6,
-            "streak": 13,
-            "ret10": 0.6,
-            "endDate": "2026-04-13"
-          },
-          {
-            "date": "2026-03-26",
-            "signal": "持有",
-            "rps20": 91.6,
-            "streak": 12,
-            "ret10": -0.6,
-            "endDate": "2026-04-10"
-          },
           {
             "date": "2026-03-25",
-            "signal": "持有",
-            "rps20": 95.5,
-            "streak": 11,
-            "ret10": -6.0,
+            "signal": "建仓",
+            "rps20": 91.0,
+            "streak": 3,
+            "ret10": -10.6,
             "endDate": "2026-04-09"
           },
           {
-            "date": "2026-03-24",
-            "signal": "持有",
-            "rps20": 95.5,
-            "streak": 10,
-            "ret10": -5.5,
-            "endDate": "2026-04-08"
-          },
-          {
-            "date": "2026-03-23",
+            "date": "2026-02-12",
             "signal": "建仓",
-            "rps20": 94.9,
-            "streak": 9,
-            "ret10": -9.3,
-            "endDate": "2026-04-07"
-          }
-        ]
-      },
-      {
-        "code": "588000",
-        "name": "科创50ETF",
-        "theme": "科创50",
-        "currentSignal": "回避",
-        "currentRps20": 23.0,
-        "currentStreak": 0,
-        "stats": [
-          {
-            "count": 33,
-            "avgReturn": -1.9,
-            "winRate": 39.4,
-            "best": 10.9,
-            "worst": -18.2,
-            "holdDays": 5
-          },
-          {
-            "count": 33,
-            "avgReturn": -4.6,
-            "winRate": 24.2,
-            "best": 10.4,
-            "worst": -18.9,
-            "holdDays": 10
-          },
-          {
-            "count": 33,
-            "avgReturn": -2.3,
-            "winRate": 51.5,
-            "best": 21.8,
-            "worst": -23.8,
-            "holdDays": 20
-          }
-        ],
-        "recentSignals": [
-          {
-            "date": "2026-07-14",
-            "signal": "持有",
-            "rps20": 93.3,
-            "streak": 13,
-            "ret10": -16.0,
-            "endDate": "2026-07-28"
-          },
-          {
-            "date": "2026-07-13",
-            "signal": "持有",
-            "rps20": 96.6,
-            "streak": 12,
-            "ret10": -9.0,
-            "endDate": "2026-07-27"
-          },
-          {
-            "date": "2026-07-10",
-            "signal": "持有",
-            "rps20": 95.5,
-            "streak": 11,
-            "ret10": -14.7,
-            "endDate": "2026-07-24"
-          },
-          {
-            "date": "2026-07-09",
-            "signal": "持有",
-            "rps20": 96.6,
-            "streak": 10,
-            "ret10": -18.9,
-            "endDate": "2026-07-23"
-          },
-          {
-            "date": "2026-07-08",
-            "signal": "建仓",
-            "rps20": 95.5,
-            "streak": 9,
-            "ret10": -8.9,
-            "endDate": "2026-07-22"
-          }
-        ]
-      },
-      {
-        "code": "560280",
-        "name": "工程机械ETF",
-        "theme": "工程机械",
-        "currentSignal": "回避",
-        "currentRps20": 22.5,
-        "currentStreak": 0,
-        "stats": [
-          {
-            "count": 21,
-            "avgReturn": -0.8,
-            "winRate": 33.3,
-            "best": 4.1,
-            "worst": -6.3,
-            "holdDays": 5
-          },
-          {
-            "count": 21,
-            "avgReturn": -3.0,
-            "winRate": 4.8,
-            "best": 5.6,
-            "worst": -13.3,
-            "holdDays": 10
-          },
-          {
-            "count": 21,
-            "avgReturn": -9.8,
-            "winRate": 9.5,
-            "best": 4.2,
-            "worst": -16.3,
-            "holdDays": 20
-          }
-        ],
-        "recentSignals": [
-          {
-            "date": "2026-02-27",
-            "signal": "持有",
             "rps20": 91.6,
-            "streak": 12,
-            "ret10": -7.3,
-            "endDate": "2026-03-13"
-          },
-          {
-            "date": "2026-02-26",
-            "signal": "持有",
-            "rps20": 94.9,
-            "streak": 11,
-            "ret10": -7.3,
-            "endDate": "2026-03-12"
-          },
-          {
-            "date": "2026-02-25",
-            "signal": "持有",
-            "rps20": 95.5,
-            "streak": 10,
-            "ret10": -3.9,
-            "endDate": "2026-03-11"
-          },
-          {
-            "date": "2026-02-24",
-            "signal": "建仓",
-            "rps20": 96.1,
             "streak": 9,
-            "ret10": -3.1,
-            "endDate": "2026-03-10"
+            "ret10": -0.1,
+            "endDate": "2026-03-06"
           },
           {
-            "date": "2026-02-13",
+            "date": "2026-02-11",
             "signal": "建仓",
-            "rps20": 95.5,
+            "rps20": 91.6,
             "streak": 8,
-            "ret10": -2.9,
-            "endDate": "2026-03-09"
-          }
-        ]
-      },
-      {
-        "code": "516640",
-        "name": "芯片龙头ETF",
-        "theme": "半导体",
-        "currentSignal": "回避",
-        "currentRps20": 21.9,
-        "currentStreak": 0,
-        "stats": [
-          {
-            "count": 48,
-            "avgReturn": -1.4,
-            "winRate": 43.8,
-            "best": 16.8,
-            "worst": -20.8,
-            "holdDays": 5
+            "ret10": 0.9,
+            "endDate": "2026-03-05"
           },
           {
-            "count": 48,
-            "avgReturn": -1.8,
-            "winRate": 41.7,
-            "best": 18.6,
-            "worst": -23.4,
-            "holdDays": 10
-          },
-          {
-            "count": 48,
-            "avgReturn": 1.7,
-            "winRate": 58.3,
-            "best": 44.2,
-            "worst": -30.2,
-            "holdDays": 20
-          }
-        ],
-        "recentSignals": [
-          {
-            "date": "2026-07-14",
-            "signal": "持有",
-            "rps20": 97.2,
-            "streak": 15,
-            "ret10": -19.5,
-            "endDate": "2026-07-28"
-          },
-          {
-            "date": "2026-07-13",
-            "signal": "持有",
-            "rps20": 98.3,
-            "streak": 14,
-            "ret10": -12.4,
-            "endDate": "2026-07-27"
-          },
-          {
-            "date": "2026-07-10",
-            "signal": "持有",
-            "rps20": 97.8,
-            "streak": 13,
-            "ret10": -17.1,
-            "endDate": "2026-07-24"
-          },
-          {
-            "date": "2026-07-09",
-            "signal": "持有",
-            "rps20": 97.8,
-            "streak": 12,
-            "ret10": -23.4,
-            "endDate": "2026-07-23"
-          },
-          {
-            "date": "2026-07-08",
-            "signal": "持有",
-            "rps20": 97.2,
-            "streak": 11,
-            "ret10": -12.0,
-            "endDate": "2026-07-22"
-          }
-        ]
-      },
-      {
-        "code": "512480",
-        "name": "半导体ETF",
-        "theme": "半导体",
-        "currentSignal": "回避",
-        "currentRps20": 21.3,
-        "currentStreak": 0,
-        "stats": [
-          {
-            "count": 54,
-            "avgReturn": -0.6,
-            "winRate": 48.1,
-            "best": 16.4,
-            "worst": -21.8,
-            "holdDays": 5
-          },
-          {
-            "count": 54,
-            "avgReturn": 0.1,
-            "winRate": 46.3,
-            "best": 34.7,
-            "worst": -24.8,
-            "holdDays": 10
-          },
-          {
-            "count": 54,
-            "avgReturn": 3.8,
-            "winRate": 63.0,
-            "best": 46.8,
-            "worst": -31.0,
-            "holdDays": 20
-          }
-        ],
-        "recentSignals": [
-          {
-            "date": "2026-07-14",
-            "signal": "持有",
-            "rps20": 96.1,
-            "streak": 15,
-            "ret10": -20.4,
-            "endDate": "2026-07-28"
-          },
-          {
-            "date": "2026-07-13",
-            "signal": "持有",
-            "rps20": 97.8,
-            "streak": 14,
-            "ret10": -13.0,
-            "endDate": "2026-07-27"
-          },
-          {
-            "date": "2026-07-10",
-            "signal": "持有",
-            "rps20": 97.2,
-            "streak": 13,
-            "ret10": -18.7,
-            "endDate": "2026-07-24"
-          },
-          {
-            "date": "2026-07-09",
-            "signal": "持有",
-            "rps20": 98.3,
-            "streak": 12,
-            "ret10": -24.8,
-            "endDate": "2026-07-23"
-          },
-          {
-            "date": "2026-07-08",
-            "signal": "持有",
-            "rps20": 97.8,
-            "streak": 11,
-            "ret10": -14.0,
-            "endDate": "2026-07-22"
-          }
-        ]
-      },
-      {
-        "code": "159326",
-        "name": "电网设备ETF",
-        "theme": "电网设备",
-        "currentSignal": "回避",
-        "currentRps20": 20.8,
-        "currentStreak": 0,
-        "stats": [
-          {
-            "count": 38,
-            "avgReturn": 0.4,
-            "winRate": 47.4,
-            "best": 11.4,
-            "worst": -9.9,
-            "holdDays": 5
-          },
-          {
-            "count": 38,
-            "avgReturn": -0.6,
-            "winRate": 36.8,
-            "best": 15.3,
-            "worst": -14.0,
-            "holdDays": 10
-          },
-          {
-            "count": 38,
-            "avgReturn": -2.4,
-            "winRate": 26.3,
-            "best": 16.8,
-            "worst": -13.5,
-            "holdDays": 20
-          }
-        ],
-        "recentSignals": [
-          {
-            "date": "2026-03-19",
-            "signal": "持有",
-            "rps20": 92.7,
-            "streak": 16,
-            "ret10": -2.7,
-            "endDate": "2026-04-02"
-          },
-          {
-            "date": "2026-03-18",
-            "signal": "持有",
-            "rps20": 94.4,
-            "streak": 15,
-            "ret10": -4.1,
-            "endDate": "2026-04-01"
-          },
-          {
-            "date": "2026-03-17",
-            "signal": "持有",
-            "rps20": 94.4,
-            "streak": 14,
-            "ret10": -3.6,
-            "endDate": "2026-03-31"
-          },
-          {
-            "date": "2026-03-16",
-            "signal": "持有",
-            "rps20": 97.2,
-            "streak": 13,
-            "ret10": -4.6,
-            "endDate": "2026-03-30"
-          },
-          {
-            "date": "2026-03-13",
-            "signal": "持有",
-            "rps20": 98.9,
-            "streak": 12,
-            "ret10": -7.2,
-            "endDate": "2026-03-27"
-          }
-        ]
-      },
-      {
-        "code": "159206",
-        "name": "卫星ETF",
-        "theme": "卫星",
-        "currentSignal": "回避",
-        "currentRps20": 20.2,
-        "currentStreak": 0,
-        "stats": [
-          {
-            "count": 44,
-            "avgReturn": 5.0,
-            "winRate": 70.5,
-            "best": 27.5,
-            "worst": -11.9,
-            "holdDays": 5
-          },
-          {
-            "count": 44,
-            "avgReturn": 9.7,
-            "winRate": 72.7,
-            "best": 43.2,
-            "worst": -13.7,
-            "holdDays": 10
-          },
-          {
-            "count": 44,
-            "avgReturn": 16.4,
-            "winRate": 59.1,
-            "best": 65.0,
-            "worst": -14.4,
-            "holdDays": 20
-          }
-        ],
-        "recentSignals": [
-          {
-            "date": "2026-04-23",
-            "signal": "建仓",
-            "rps20": 94.9,
-            "streak": 4,
-            "ret10": 5.7,
-            "endDate": "2026-05-12"
-          },
-          {
-            "date": "2026-04-22",
-            "signal": "建仓",
-            "rps20": 94.4,
-            "streak": 3,
-            "ret10": 7.4,
-            "endDate": "2026-05-11"
-          },
-          {
-            "date": "2026-01-29",
-            "signal": "持有",
-            "rps20": 93.8,
-            "streak": 42,
-            "ret10": -5.9,
-            "endDate": "2026-02-12"
-          },
-          {
-            "date": "2026-01-28",
-            "signal": "持有",
-            "rps20": 94.4,
-            "streak": 41,
-            "ret10": -7.6,
-            "endDate": "2026-02-11"
-          },
-          {
-            "date": "2026-01-27",
-            "signal": "持有",
-            "rps20": 97.8,
-            "streak": 40,
-            "ret10": -7.6,
-            "endDate": "2026-02-10"
-          }
-        ]
-      },
-      {
-        "code": "515000",
-        "name": "科技ETF",
-        "theme": "科技",
-        "currentSignal": "回避",
-        "currentRps20": 19.7,
-        "currentStreak": 0,
-        "stats": [
-          {
-            "count": 31,
-            "avgReturn": 2.5,
-            "winRate": 61.3,
-            "best": 19.3,
-            "worst": -11.0,
-            "holdDays": 5
-          },
-          {
-            "count": 31,
-            "avgReturn": 5.2,
-            "winRate": 58.1,
-            "best": 24.7,
-            "worst": -12.2,
-            "holdDays": 10
-          },
-          {
-            "count": 30,
-            "avgReturn": 4.6,
-            "winRate": 70.0,
-            "best": 27.7,
-            "worst": -27.3,
-            "holdDays": 20
-          }
-        ],
-        "recentSignals": [
-          {
-            "date": "2026-07-01",
-            "signal": "持有",
-            "rps20": 92.7,
-            "streak": 28,
-            "ret10": -12.2,
-            "endDate": "2026-07-15"
-          },
-          {
-            "date": "2026-06-30",
-            "signal": "持有",
-            "rps20": 93.8,
-            "streak": 27,
-            "ret10": -11.1,
-            "endDate": "2026-07-14"
-          },
-          {
-            "date": "2026-06-29",
-            "signal": "持有",
-            "rps20": 94.4,
-            "streak": 26,
-            "ret10": -12.2,
-            "endDate": "2026-07-13"
-          },
-          {
-            "date": "2026-06-26",
-            "signal": "持有",
-            "rps20": 93.8,
-            "streak": 25,
-            "ret10": -5.4,
-            "endDate": "2026-07-10"
-          },
-          {
-            "date": "2026-06-25",
-            "signal": "持有",
-            "rps20": 93.3,
-            "streak": 24,
-            "ret10": -3.0,
-            "endDate": "2026-07-09"
-          }
-        ]
-      },
-      {
-        "code": "589000",
-        "name": "科创综指ETF",
-        "theme": "科创综指",
-        "currentSignal": "回避",
-        "currentRps20": 19.1,
-        "currentStreak": 0,
-        "stats": [
-          {
-            "count": 4,
-            "avgReturn": 1.2,
-            "winRate": 75.0,
-            "best": 5.1,
-            "worst": -7.4,
-            "holdDays": 5
-          },
-          {
-            "count": 3,
-            "avgReturn": -4.5,
-            "winRate": 33.3,
-            "best": 0.3,
-            "worst": -12.3,
-            "holdDays": 10
-          },
-          {
-            "count": 4,
-            "avgReturn": -9.8,
-            "winRate": 50.0,
-            "best": 5.4,
-            "worst": -24.7,
-            "holdDays": 20
-          }
-        ],
-        "recentSignals": [
-          {
-            "date": "2026-07-02",
-            "signal": "建仓",
-            "rps20": 91.6,
-            "streak": 4,
-            "ret10": null,
-            "endDate": null
-          },
-          {
-            "date": "2026-07-01",
+            "date": "2026-02-10",
             "signal": "建仓",
             "rps20": 93.8,
-            "streak": 3,
-            "ret10": -12.3,
-            "endDate": "2026-07-15"
-          },
-          {
-            "date": "2025-08-25",
-            "signal": "建仓",
-            "rps20": 90.6,
-            "streak": 4,
-            "ret10": -1.5,
-            "endDate": "2025-09-08"
-          },
-          {
-            "date": "2025-08-22",
-            "signal": "建仓",
-            "rps20": 90.0,
-            "streak": 3,
-            "ret10": 0.3,
-            "endDate": "2025-09-05"
-          }
-        ]
-      },
-      {
-        "code": "516150",
-        "name": "稀土ETF",
-        "theme": "稀土",
-        "currentSignal": "回避",
-        "currentRps20": 18.5,
-        "currentStreak": 0,
-        "stats": [
-          {
-            "count": 33,
-            "avgReturn": 1.1,
-            "winRate": 51.5,
-            "best": 11.9,
-            "worst": -8.7,
-            "holdDays": 5
-          },
-          {
-            "count": 33,
-            "avgReturn": 4.7,
-            "winRate": 60.6,
-            "best": 22.6,
-            "worst": -11.7,
-            "holdDays": 10
-          },
-          {
-            "count": 33,
-            "avgReturn": 9.1,
-            "winRate": 69.7,
-            "best": 31.5,
-            "worst": -18.2,
-            "holdDays": 20
-          }
-        ],
-        "recentSignals": [
-          {
-            "date": "2026-08-19",
-            "signal": "建仓",
-            "rps20": 97.2,
-            "streak": 3,
-            "ret10": -4.0,
-            "endDate": "2026-09-02"
-          },
-          {
-            "date": "2026-03-02",
-            "signal": "建仓",
-            "rps20": 92.1,
-            "streak": 4,
-            "ret10": -11.7,
-            "endDate": "2026-03-16"
-          },
-          {
-            "date": "2026-02-27",
-            "signal": "建仓",
-            "rps20": 96.6,
-            "streak": 3,
-            "ret10": -10.1,
-            "endDate": "2026-03-13"
-          },
-          {
-            "date": "2025-11-03",
-            "signal": "建仓",
-            "rps20": 90.2,
-            "streak": 6,
-            "ret10": -2.9,
-            "endDate": "2025-11-17"
-          },
-          {
-            "date": "2025-10-31",
-            "signal": "建仓",
-            "rps20": 95.4,
-            "streak": 5,
-            "ret10": -4.8,
-            "endDate": "2025-11-14"
-          }
-        ]
-      },
-      {
-        "code": "159218",
-        "name": "卫星产业ETF",
-        "theme": "卫星产业",
-        "currentSignal": "回避",
-        "currentRps20": 18.0,
-        "currentStreak": 0,
-        "stats": [
-          {
-            "count": 37,
-            "avgReturn": 6.0,
-            "winRate": 67.6,
-            "best": 30.5,
-            "worst": -12.6,
-            "holdDays": 5
-          },
-          {
-            "count": 37,
-            "avgReturn": 11.3,
-            "winRate": 67.6,
-            "best": 51.3,
-            "worst": -14.1,
-            "holdDays": 10
-          },
-          {
-            "count": 37,
-            "avgReturn": 18.2,
-            "winRate": 56.8,
-            "best": 77.0,
-            "worst": -17.5,
-            "holdDays": 20
-          }
-        ],
-        "recentSignals": [
-          {
-            "date": "2026-01-29",
-            "signal": "持有",
-            "rps20": 94.4,
-            "streak": 39,
-            "ret10": -5.2,
-            "endDate": "2026-02-12"
-          },
-          {
-            "date": "2026-01-28",
-            "signal": "持有",
-            "rps20": 93.8,
-            "streak": 38,
-            "ret10": -6.4,
-            "endDate": "2026-02-11"
-          },
-          {
-            "date": "2026-01-27",
-            "signal": "持有",
-            "rps20": 98.9,
-            "streak": 37,
-            "ret10": -7.2,
-            "endDate": "2026-02-10"
-          },
-          {
-            "date": "2026-01-26",
-            "signal": "持有",
-            "rps20": 98.3,
-            "streak": 36,
-            "ret10": -4.9,
-            "endDate": "2026-02-09"
-          },
-          {
-            "date": "2026-01-23",
-            "signal": "持有",
-            "rps20": 100.0,
-            "streak": 35,
-            "ret10": -14.1,
-            "endDate": "2026-02-06"
-          }
-        ]
-      },
-      {
-        "code": "159559",
-        "name": "机器人50ETF",
-        "theme": "机器人50",
-        "currentSignal": "回避",
-        "currentRps20": 17.4,
-        "currentStreak": 0,
-        "stats": [
-          {
-            "count": 8,
-            "avgReturn": -0.8,
-            "winRate": 25.0,
-            "best": 3.9,
-            "worst": -3.3,
-            "holdDays": 5
-          },
-          {
-            "count": 8,
-            "avgReturn": 0.0,
-            "winRate": 37.5,
-            "best": 11.2,
-            "worst": -6.7,
-            "holdDays": 10
-          },
-          {
-            "count": 8,
-            "avgReturn": -1.0,
-            "winRate": 37.5,
-            "best": 10.2,
-            "worst": -6.6,
-            "holdDays": 20
-          }
-        ],
-        "recentSignals": [
-          {
-            "date": "2025-08-08",
-            "signal": "建仓",
-            "rps20": 90.6,
-            "streak": 3,
-            "ret10": 7.4,
-            "endDate": "2025-08-22"
-          },
-          {
-            "date": "2025-05-19",
-            "signal": "建仓",
-            "rps20": 90.9,
             "streak": 7,
-            "ret10": -5.4,
-            "endDate": "2025-06-03"
+            "ret10": -1.4,
+            "endDate": "2026-03-04"
           },
           {
-            "date": "2025-05-16",
+            "date": "2026-02-09",
             "signal": "建仓",
-            "rps20": 93.9,
+            "rps20": 97.2,
             "streak": 6,
-            "ret10": -6.3,
-            "endDate": "2025-05-30"
-          },
-          {
-            "date": "2025-05-15",
-            "signal": "建仓",
-            "rps20": 91.5,
-            "streak": 5,
-            "ret10": -3.7,
-            "endDate": "2025-05-29"
-          },
-          {
-            "date": "2025-05-14",
-            "signal": "建仓",
-            "rps20": 92.7,
-            "streak": 4,
-            "ret10": -6.7,
-            "endDate": "2025-05-28"
-          }
-        ]
-      },
-      {
-        "code": "588410",
-        "name": "科创创业人工智能ETF",
-        "theme": "信息技术",
-        "currentSignal": "回避",
-        "currentRps20": 16.9,
-        "currentStreak": 0,
-        "stats": [
-          {
-            "count": 23,
-            "avgReturn": 2.5,
-            "winRate": 65.2,
-            "best": 14.8,
-            "worst": -12.1,
-            "holdDays": 5
-          },
-          {
-            "count": 22,
-            "avgReturn": 4.5,
-            "winRate": 63.6,
-            "best": 20.7,
-            "worst": -20.5,
-            "holdDays": 10
-          },
-          {
-            "count": 21,
-            "avgReturn": 5.1,
-            "winRate": 57.1,
-            "best": 18.9,
-            "worst": -8.9,
-            "holdDays": 20
-          }
-        ],
-        "recentSignals": [
-          {
-            "date": "2026-09-24",
-            "signal": "建仓",
-            "rps20": 93.3,
-            "streak": 4,
-            "ret10": null,
-            "endDate": null
-          },
-          {
-            "date": "2026-09-23",
-            "signal": "建仓",
-            "rps20": 98.3,
-            "streak": 3,
-            "ret10": -20.5,
-            "endDate": "2026-10-15"
-          },
-          {
-            "date": "2026-05-25",
-            "signal": "持有",
-            "rps20": 90.4,
-            "streak": 23,
-            "ret10": -10.3,
-            "endDate": "2026-06-08"
-          },
-          {
-            "date": "2026-05-22",
-            "signal": "持有",
-            "rps20": 92.7,
-            "streak": 22,
-            "ret10": -3.9,
-            "endDate": "2026-06-05"
-          },
-          {
-            "date": "2026-05-21",
-            "signal": "持有",
-            "rps20": 91.6,
-            "streak": 21,
-            "ret10": 3.5,
-            "endDate": "2026-06-04"
+            "ret10": -2.8,
+            "endDate": "2026-03-03"
           }
         ]
       },
@@ -59102,7 +57351,7 @@ window.COCKPIT_DATA = {
         "name": "恒生A股电网设备ETF",
         "theme": "电网设备",
         "currentSignal": "回避",
-        "currentRps20": 16.3,
+        "currentRps20": 31.5,
         "currentStreak": 0,
         "stats": [
           {
@@ -59174,458 +57423,452 @@ window.COCKPIT_DATA = {
         ]
       },
       {
-        "code": "588200",
-        "name": "科创芯片ETF",
-        "theme": "半导体",
+        "code": "516510",
+        "name": "云计算ETF",
+        "theme": "云计算",
         "currentSignal": "回避",
-        "currentRps20": 15.7,
+        "currentRps20": 30.9,
         "currentStreak": 0,
         "stats": [
           {
-            "count": 69,
-            "avgReturn": 1.8,
-            "winRate": 53.6,
-            "best": 22.2,
-            "worst": -20.9,
+            "count": 23,
+            "avgReturn": 0.8,
+            "winRate": 65.2,
+            "best": 13.5,
+            "worst": -10.3,
             "holdDays": 5
           },
           {
-            "count": 69,
-            "avgReturn": 2.3,
-            "winRate": 53.6,
-            "best": 27.0,
-            "worst": -23.3,
+            "count": 23,
+            "avgReturn": -0.0,
+            "winRate": 47.8,
+            "best": 10.4,
+            "worst": -6.8,
             "holdDays": 10
           },
           {
-            "count": 69,
-            "avgReturn": 4.4,
+            "count": 23,
+            "avgReturn": 2.6,
             "winRate": 65.2,
-            "best": 46.6,
-            "worst": -72.8,
+            "best": 27.6,
+            "worst": -14.2,
             "holdDays": 20
           }
         ],
         "recentSignals": [
           {
-            "date": "2026-07-14",
-            "signal": "持有",
-            "rps20": 97.8,
-            "streak": 15,
-            "ret10": -19.9,
-            "endDate": "2026-07-28"
+            "date": "2025-12-12",
+            "signal": "建仓",
+            "rps20": 94.3,
+            "streak": 4,
+            "ret10": 0.6,
+            "endDate": "2025-12-26"
           },
           {
-            "date": "2026-07-13",
-            "signal": "持有",
-            "rps20": 98.9,
-            "streak": 14,
-            "ret10": -11.6,
-            "endDate": "2026-07-27"
+            "date": "2025-12-11",
+            "signal": "建仓",
+            "rps20": 90.3,
+            "streak": 3,
+            "ret10": 1.7,
+            "endDate": "2025-12-25"
           },
           {
-            "date": "2026-07-10",
-            "signal": "持有",
-            "rps20": 98.3,
-            "streak": 13,
-            "ret10": -17.3,
-            "endDate": "2026-07-24"
+            "date": "2025-08-28",
+            "signal": "建仓",
+            "rps20": 91.3,
+            "streak": 8,
+            "ret10": -1.6,
+            "endDate": "2025-09-11"
           },
           {
-            "date": "2026-07-09",
-            "signal": "持有",
-            "rps20": 98.9,
-            "streak": 12,
-            "ret10": -23.3,
-            "endDate": "2026-07-23"
+            "date": "2025-08-27",
+            "signal": "建仓",
+            "rps20": 93.0,
+            "streak": 7,
+            "ret10": -3.8,
+            "endDate": "2025-09-10"
           },
           {
-            "date": "2026-07-08",
-            "signal": "持有",
-            "rps20": 98.3,
-            "streak": 11,
-            "ret10": -12.8,
-            "endDate": "2026-07-22"
+            "date": "2025-08-26",
+            "signal": "建仓",
+            "rps20": 92.4,
+            "streak": 6,
+            "ret10": -5.5,
+            "endDate": "2025-09-09"
           }
         ]
       },
       {
-        "code": "159363",
-        "name": "创业板人工智能ETF",
-        "theme": "信息技术",
+        "code": "159218",
+        "name": "卫星产业ETF",
+        "theme": "卫星产业",
         "currentSignal": "回避",
-        "currentRps20": 15.2,
+        "currentRps20": 30.3,
         "currentStreak": 0,
         "stats": [
           {
-            "count": 91,
-            "avgReturn": 2.9,
-            "winRate": 64.8,
-            "best": 20.0,
-            "worst": -12.7,
+            "count": 37,
+            "avgReturn": 6.0,
+            "winRate": 67.6,
+            "best": 30.5,
+            "worst": -12.6,
             "holdDays": 5
           },
           {
-            "count": 90,
-            "avgReturn": 6.5,
-            "winRate": 83.3,
-            "best": 29.5,
-            "worst": -19.2,
+            "count": 37,
+            "avgReturn": 11.3,
+            "winRate": 67.6,
+            "best": 51.3,
+            "worst": -14.1,
             "holdDays": 10
           },
           {
-            "count": 89,
-            "avgReturn": 12.0,
-            "winRate": 85.4,
-            "best": 46.7,
-            "worst": -23.4,
+            "count": 37,
+            "avgReturn": 18.2,
+            "winRate": 56.8,
+            "best": 77.0,
+            "worst": -17.5,
             "holdDays": 20
           }
         ],
         "recentSignals": [
           {
-            "date": "2026-09-24",
+            "date": "2026-01-29",
+            "signal": "持有",
+            "rps20": 94.4,
+            "streak": 39,
+            "ret10": -5.2,
+            "endDate": "2026-02-12"
+          },
+          {
+            "date": "2026-01-28",
+            "signal": "持有",
+            "rps20": 93.8,
+            "streak": 38,
+            "ret10": -6.4,
+            "endDate": "2026-02-11"
+          },
+          {
+            "date": "2026-01-27",
+            "signal": "持有",
+            "rps20": 98.9,
+            "streak": 37,
+            "ret10": -7.2,
+            "endDate": "2026-02-10"
+          },
+          {
+            "date": "2026-01-26",
+            "signal": "持有",
+            "rps20": 98.3,
+            "streak": 36,
+            "ret10": -4.9,
+            "endDate": "2026-02-09"
+          },
+          {
+            "date": "2026-01-23",
+            "signal": "持有",
+            "rps20": 100.0,
+            "streak": 35,
+            "ret10": -14.1,
+            "endDate": "2026-02-06"
+          }
+        ]
+      },
+      {
+        "code": "588790",
+        "name": "科创AIETF",
+        "theme": "信息技术",
+        "currentSignal": "回避",
+        "currentRps20": 29.8,
+        "currentStreak": 0,
+        "stats": [
+          {
+            "count": 23,
+            "avgReturn": -0.1,
+            "winRate": 39.1,
+            "best": 19.8,
+            "worst": -13.3,
+            "holdDays": 5
+          },
+          {
+            "count": 23,
+            "avgReturn": -1.1,
+            "winRate": 34.8,
+            "best": 22.7,
+            "worst": -14.9,
+            "holdDays": 10
+          },
+          {
+            "count": 23,
+            "avgReturn": 2.4,
+            "winRate": 56.5,
+            "best": 19.1,
+            "worst": -10.7,
+            "holdDays": 20
+          }
+        ],
+        "recentSignals": [
+          {
+            "date": "2026-05-26",
+            "signal": "建仓",
+            "rps20": 91.6,
+            "streak": 6,
+            "ret10": -10.4,
+            "endDate": "2026-06-09"
+          },
+          {
+            "date": "2026-05-25",
             "signal": "建仓",
             "rps20": 92.1,
+            "streak": 5,
+            "ret10": -14.9,
+            "endDate": "2026-06-08"
+          },
+          {
+            "date": "2026-05-22",
+            "signal": "建仓",
+            "rps20": 93.8,
             "streak": 4,
-            "ret10": null,
-            "endDate": null
+            "ret10": -10.4,
+            "endDate": "2026-06-05"
           },
           {
-            "date": "2026-09-23",
+            "date": "2026-05-21",
             "signal": "建仓",
-            "rps20": 96.6,
+            "rps20": 93.3,
             "streak": 3,
-            "ret10": -19.2,
-            "endDate": "2026-10-15"
+            "ret10": -6.0,
+            "endDate": "2026-06-04"
           },
           {
-            "date": "2026-06-23",
-            "signal": "建仓",
-            "rps20": 91.6,
-            "streak": 4,
-            "ret10": -9.5,
-            "endDate": "2026-07-07"
-          },
-          {
-            "date": "2026-06-22",
-            "signal": "建仓",
-            "rps20": 92.7,
-            "streak": 3,
-            "ret10": -11.7,
-            "endDate": "2026-07-06"
-          },
-          {
-            "date": "2026-06-04",
+            "date": "2026-05-08",
             "signal": "建仓",
             "rps20": 91.0,
             "streak": 3,
-            "ret10": 4.9,
-            "endDate": "2026-06-18"
+            "ret10": 5.1,
+            "endDate": "2026-05-22"
           }
         ]
       },
       {
-        "code": "159131",
-        "name": "港股信息技术ETF",
-        "theme": "信息技术",
+        "code": "512100",
+        "name": "1000ETF",
+        "theme": "1000",
         "currentSignal": "回避",
-        "currentRps20": 14.6,
+        "currentRps20": 29.2,
         "currentStreak": 0,
         "stats": [
           {
-            "count": 13,
-            "avgReturn": 0.7,
-            "winRate": 53.8,
-            "best": 10.3,
-            "worst": -7.6,
+            "count": 0,
+            "avgReturn": null,
+            "winRate": null,
+            "best": null,
+            "worst": null,
             "holdDays": 5
           },
           {
-            "count": 13,
-            "avgReturn": 1.8,
-            "winRate": 69.2,
-            "best": 9.2,
-            "worst": -6.4,
+            "count": 0,
+            "avgReturn": null,
+            "winRate": null,
+            "best": null,
+            "worst": null,
             "holdDays": 10
           },
           {
-            "count": 12,
-            "avgReturn": -5.3,
-            "winRate": 16.7,
-            "best": 3.0,
-            "worst": -17.4,
+            "count": 0,
+            "avgReturn": null,
+            "winRate": null,
+            "best": null,
+            "worst": null,
+            "holdDays": 20
+          }
+        ],
+        "recentSignals": []
+      },
+      {
+        "code": "510500",
+        "name": "500ETF",
+        "theme": "500",
+        "currentSignal": "回避",
+        "currentRps20": 28.7,
+        "currentStreak": 0,
+        "stats": [
+          {
+            "count": 0,
+            "avgReturn": null,
+            "winRate": null,
+            "best": null,
+            "worst": null,
+            "holdDays": 5
+          },
+          {
+            "count": 0,
+            "avgReturn": null,
+            "winRate": null,
+            "best": null,
+            "worst": null,
+            "holdDays": 10
+          },
+          {
+            "count": 0,
+            "avgReturn": null,
+            "winRate": null,
+            "best": null,
+            "worst": null,
+            "holdDays": 20
+          }
+        ],
+        "recentSignals": []
+      },
+      {
+        "code": "560280",
+        "name": "工程机械ETF",
+        "theme": "工程机械",
+        "currentSignal": "回避",
+        "currentRps20": 28.1,
+        "currentStreak": 0,
+        "stats": [
+          {
+            "count": 21,
+            "avgReturn": -0.8,
+            "winRate": 33.3,
+            "best": 4.1,
+            "worst": -6.3,
+            "holdDays": 5
+          },
+          {
+            "count": 21,
+            "avgReturn": -3.0,
+            "winRate": 4.8,
+            "best": 5.6,
+            "worst": -13.3,
+            "holdDays": 10
+          },
+          {
+            "count": 21,
+            "avgReturn": -9.8,
+            "winRate": 9.5,
+            "best": 4.2,
+            "worst": -16.3,
             "holdDays": 20
           }
         ],
         "recentSignals": [
           {
-            "date": "2026-06-18",
+            "date": "2026-02-27",
             "signal": "持有",
-            "rps20": 91.0,
-            "streak": 15,
-            "ret10": -5.5,
-            "endDate": "2026-07-03"
+            "rps20": 91.6,
+            "streak": 12,
+            "ret10": -7.3,
+            "endDate": "2026-03-13"
           },
           {
-            "date": "2026-06-17",
+            "date": "2026-02-26",
+            "signal": "持有",
+            "rps20": 94.9,
+            "streak": 11,
+            "ret10": -7.3,
+            "endDate": "2026-03-12"
+          },
+          {
+            "date": "2026-02-25",
             "signal": "持有",
             "rps20": 95.5,
-            "streak": 14,
-            "ret10": -6.4,
-            "endDate": "2026-07-02"
+            "streak": 10,
+            "ret10": -3.9,
+            "endDate": "2026-03-11"
           },
           {
-            "date": "2026-06-16",
-            "signal": "持有",
-            "rps20": 97.8,
-            "streak": 13,
-            "ret10": 3.4,
-            "endDate": "2026-07-01"
-          },
-          {
-            "date": "2026-06-15",
-            "signal": "持有",
-            "rps20": 97.8,
-            "streak": 12,
-            "ret10": 3.4,
-            "endDate": "2026-06-30"
-          },
-          {
-            "date": "2026-06-12",
-            "signal": "持有",
-            "rps20": 97.6,
-            "streak": 11,
-            "ret10": 6.4,
-            "endDate": "2026-06-29"
-          }
-        ]
-      },
-      {
-        "code": "159870",
-        "name": "化工ETF",
-        "theme": "能源化工",
-        "currentSignal": "回避",
-        "currentRps20": 14.0,
-        "currentStreak": 0,
-        "stats": [
-          {
-            "count": 19,
-            "avgReturn": -1.3,
-            "winRate": 42.1,
-            "best": 8.0,
-            "worst": -11.3,
-            "holdDays": 5
-          },
-          {
-            "count": 19,
-            "avgReturn": -0.6,
-            "winRate": 52.6,
-            "best": 7.9,
-            "worst": -10.5,
-            "holdDays": 10
-          },
-          {
-            "count": 19,
-            "avgReturn": -0.2,
-            "winRate": 36.8,
-            "best": 12.1,
-            "worst": -8.1,
-            "holdDays": 20
-          }
-        ],
-        "recentSignals": [
-          {
-            "date": "2026-03-13",
+            "date": "2026-02-24",
             "signal": "建仓",
-            "rps20": 91.6,
-            "streak": 4,
-            "ret10": -8.0,
-            "endDate": "2026-03-27"
-          },
-          {
-            "date": "2026-03-12",
-            "signal": "建仓",
-            "rps20": 91.6,
-            "streak": 3,
-            "ret10": -10.5,
-            "endDate": "2026-03-26"
+            "rps20": 96.1,
+            "streak": 9,
+            "ret10": -3.1,
+            "endDate": "2026-03-10"
           },
           {
             "date": "2026-02-13",
             "signal": "建仓",
-            "rps20": 92.1,
-            "streak": 6,
-            "ret10": 4.3,
+            "rps20": 95.5,
+            "streak": 8,
+            "ret10": -2.9,
             "endDate": "2026-03-09"
-          },
-          {
-            "date": "2026-02-12",
-            "signal": "建仓",
-            "rps20": 91.0,
-            "streak": 5,
-            "ret10": 3.7,
-            "endDate": "2026-03-06"
-          },
-          {
-            "date": "2026-02-11",
-            "signal": "建仓",
-            "rps20": 93.3,
-            "streak": 4,
-            "ret10": 1.9,
-            "endDate": "2026-03-05"
           }
         ]
       },
       {
-        "code": "159819",
-        "name": "人工智能ETF",
-        "theme": "信息技术",
+        "code": "159755",
+        "name": "电池ETF",
+        "theme": "电池",
         "currentSignal": "回避",
-        "currentRps20": 13.5,
+        "currentRps20": 27.5,
         "currentStreak": 0,
         "stats": [
           {
-            "count": 43,
-            "avgReturn": 3.5,
-            "winRate": 74.4,
-            "best": 20.1,
-            "worst": -10.7,
-            "holdDays": 5
-          },
-          {
-            "count": 43,
-            "avgReturn": 5.2,
-            "winRate": 76.7,
-            "best": 17.1,
-            "worst": -2.6,
-            "holdDays": 10
-          },
-          {
-            "count": 43,
-            "avgReturn": 6.4,
-            "winRate": 74.4,
-            "best": 20.8,
-            "worst": -6.9,
-            "holdDays": 20
-          }
-        ],
-        "recentSignals": [
-          {
-            "date": "2026-05-19",
-            "signal": "持有",
-            "rps20": 91.0,
-            "streak": 19,
-            "ret10": -1.0,
-            "endDate": "2026-06-02"
-          },
-          {
-            "date": "2026-05-18",
-            "signal": "持有",
-            "rps20": 90.4,
-            "streak": 18,
-            "ret10": -2.3,
-            "endDate": "2026-06-01"
-          },
-          {
-            "date": "2026-05-15",
-            "signal": "持有",
-            "rps20": 91.0,
-            "streak": 17,
-            "ret10": 0.8,
-            "endDate": "2026-05-29"
-          },
-          {
-            "date": "2026-05-14",
-            "signal": "持有",
-            "rps20": 93.3,
-            "streak": 16,
-            "ret10": 2.4,
-            "endDate": "2026-05-28"
-          },
-          {
-            "date": "2026-05-13",
-            "signal": "持有",
-            "rps20": 93.3,
-            "streak": 15,
-            "ret10": -1.4,
-            "endDate": "2026-05-27"
-          }
-        ]
-      },
-      {
-        "code": "159995",
-        "name": "芯片ETF",
-        "theme": "半导体",
-        "currentSignal": "回避",
-        "currentRps20": 12.9,
-        "currentStreak": 0,
-        "stats": [
-          {
-            "count": 55,
-            "avgReturn": -1.2,
-            "winRate": 41.8,
-            "best": 17.2,
-            "worst": -20.5,
-            "holdDays": 5
-          },
-          {
-            "count": 55,
-            "avgReturn": -0.2,
-            "winRate": 49.1,
-            "best": 21.7,
-            "worst": -23.1,
-            "holdDays": 10
-          },
-          {
-            "count": 55,
-            "avgReturn": 2.6,
+            "count": 25,
+            "avgReturn": 0.6,
             "winRate": 60.0,
-            "best": 43.8,
-            "worst": -30.9,
+            "best": 11.5,
+            "worst": -11.7,
+            "holdDays": 5
+          },
+          {
+            "count": 25,
+            "avgReturn": 2.2,
+            "winRate": 56.0,
+            "best": 14.6,
+            "worst": -9.4,
+            "holdDays": 10
+          },
+          {
+            "count": 25,
+            "avgReturn": 3.0,
+            "winRate": 68.0,
+            "best": 12.0,
+            "worst": -10.8,
             "holdDays": 20
           }
         ],
         "recentSignals": [
           {
-            "date": "2026-07-14",
-            "signal": "持有",
+            "date": "2025-11-20",
+            "signal": "建仓",
+            "rps20": 92.0,
+            "streak": 6,
+            "ret10": -4.5,
+            "endDate": "2025-12-04"
+          },
+          {
+            "date": "2025-11-19",
+            "signal": "建仓",
+            "rps20": 95.4,
+            "streak": 5,
+            "ret10": -7.3,
+            "endDate": "2025-12-03"
+          },
+          {
+            "date": "2025-11-18",
+            "signal": "建仓",
+            "rps20": 92.5,
+            "streak": 4,
+            "ret10": -5.2,
+            "endDate": "2025-12-02"
+          },
+          {
+            "date": "2025-11-17",
+            "signal": "建仓",
             "rps20": 96.6,
-            "streak": 15,
-            "ret10": -20.6,
-            "endDate": "2026-07-28"
+            "streak": 3,
+            "ret10": -7.7,
+            "endDate": "2025-12-01"
           },
           {
-            "date": "2026-07-13",
-            "signal": "持有",
-            "rps20": 97.2,
-            "streak": 14,
-            "ret10": -12.3,
-            "endDate": "2026-07-27"
-          },
-          {
-            "date": "2026-07-10",
-            "signal": "持有",
-            "rps20": 96.6,
-            "streak": 13,
-            "ret10": -17.3,
-            "endDate": "2026-07-24"
-          },
-          {
-            "date": "2026-07-09",
-            "signal": "持有",
-            "rps20": 97.2,
-            "streak": 12,
-            "ret10": -23.1,
-            "endDate": "2026-07-23"
-          },
-          {
-            "date": "2026-07-08",
-            "signal": "持有",
-            "rps20": 96.6,
-            "streak": 11,
-            "ret10": -12.1,
-            "endDate": "2026-07-22"
+            "date": "2025-10-30",
+            "signal": "建仓",
+            "rps20": 91.4,
+            "streak": 3,
+            "ret10": 3.1,
+            "endDate": "2025-11-13"
           }
         ]
       },
@@ -59634,7 +57877,7 @@ window.COCKPIT_DATA = {
         "name": "机器人ETF",
         "theme": "机器人",
         "currentSignal": "回避",
-        "currentRps20": 12.4,
+        "currentRps20": 27.0,
         "currentStreak": 0,
         "stats": [
           {
@@ -59706,923 +57949,841 @@ window.COCKPIT_DATA = {
         ]
       },
       {
-        "code": "159915",
-        "name": "创业板ETF",
-        "theme": "创业板",
+        "code": "515700",
+        "name": "新能源车ETF",
+        "theme": "新能源车",
         "currentSignal": "回避",
-        "currentRps20": 11.8,
+        "currentRps20": 26.4,
         "currentStreak": 0,
         "stats": [
           {
-            "count": 5,
-            "avgReturn": 3.0,
-            "winRate": 80.0,
-            "best": 7.6,
-            "worst": -3.8,
-            "holdDays": 5
-          },
-          {
-            "count": 5,
-            "avgReturn": -0.4,
-            "winRate": 40.0,
-            "best": 8.7,
-            "worst": -9.2,
-            "holdDays": 10
-          },
-          {
-            "count": 5,
-            "avgReturn": 2.9,
-            "winRate": 80.0,
-            "best": 6.8,
-            "worst": -1.4,
-            "holdDays": 20
-          }
-        ],
-        "recentSignals": [
-          {
-            "date": "2025-09-25",
-            "signal": "建仓",
-            "rps20": 92.0,
-            "streak": 5,
-            "ret10": -9.2,
-            "endDate": "2025-10-17"
-          },
-          {
-            "date": "2025-09-24",
-            "signal": "建仓",
-            "rps20": 90.8,
-            "streak": 4,
-            "ret10": -4.6,
-            "endDate": "2025-10-16"
-          },
-          {
-            "date": "2025-09-23",
-            "signal": "建仓",
-            "rps20": 90.2,
-            "streak": 3,
-            "ret10": -2.8,
-            "endDate": "2025-10-15"
-          },
-          {
-            "date": "2025-09-09",
-            "signal": "建仓",
-            "rps20": 90.1,
-            "streak": 4,
-            "ret10": 8.7,
-            "endDate": "2025-09-23"
-          },
-          {
-            "date": "2025-09-08",
-            "signal": "建仓",
-            "rps20": 92.4,
-            "streak": 3,
-            "ret10": 6.0,
-            "endDate": "2025-09-22"
-          }
-        ]
-      },
-      {
-        "code": "588220",
-        "name": "科创100ETF",
-        "theme": "科创100",
-        "currentSignal": "回避",
-        "currentRps20": 11.2,
-        "currentStreak": 0,
-        "stats": [
-          {
-            "count": 13,
+            "count": 17,
             "avgReturn": -0.7,
-            "winRate": 38.5,
-            "best": 8.0,
-            "worst": -7.4,
+            "winRate": 47.1,
+            "best": 10.1,
+            "worst": -11.2,
             "holdDays": 5
           },
           {
-            "count": 12,
-            "avgReturn": -6.3,
-            "winRate": 41.7,
-            "best": 7.2,
-            "worst": -22.5,
+            "count": 17,
+            "avgReturn": -1.3,
+            "winRate": 35.3,
+            "best": 9.2,
+            "worst": -8.7,
             "holdDays": 10
           },
           {
-            "count": 12,
-            "avgReturn": -14.1,
-            "winRate": 25.0,
-            "best": 11.6,
-            "worst": -27.9,
+            "count": 17,
+            "avgReturn": 1.1,
+            "winRate": 58.8,
+            "best": 10.4,
+            "worst": -10.9,
             "holdDays": 20
           }
         ],
         "recentSignals": [
           {
-            "date": "2026-09-02",
+            "date": "2025-11-20",
             "signal": "建仓",
-            "rps20": 91.6,
+            "rps20": 93.7,
+            "streak": 6,
+            "ret10": -5.5,
+            "endDate": "2025-12-04"
+          },
+          {
+            "date": "2025-11-19",
+            "signal": "建仓",
+            "rps20": 96.0,
+            "streak": 5,
+            "ret10": -8.0,
+            "endDate": "2025-12-03"
+          },
+          {
+            "date": "2025-11-18",
+            "signal": "建仓",
+            "rps20": 94.3,
+            "streak": 4,
+            "ret10": -5.6,
+            "endDate": "2025-12-02"
+          },
+          {
+            "date": "2025-11-17",
+            "signal": "建仓",
+            "rps20": 96.0,
             "streak": 3,
-            "ret10": 0.6,
-            "endDate": "2026-09-16"
+            "ret10": -7.4,
+            "endDate": "2025-12-01"
           },
           {
-            "date": "2026-07-07",
+            "date": "2025-10-13",
             "signal": "持有",
-            "rps20": 93.8,
-            "streak": 11,
-            "ret10": -15.2,
-            "endDate": "2026-07-21"
-          },
-          {
-            "date": "2026-07-06",
-            "signal": "持有",
-            "rps20": 92.1,
-            "streak": 10,
-            "ret10": -22.5,
-            "endDate": "2026-07-20"
-          },
-          {
-            "date": "2026-07-03",
-            "signal": "建仓",
-            "rps20": 93.3,
-            "streak": 9,
-            "ret10": -20.8,
-            "endDate": "2026-07-17"
-          },
-          {
-            "date": "2026-07-02",
-            "signal": "建仓",
-            "rps20": 93.8,
-            "streak": 8,
-            "ret10": null,
-            "endDate": null
+            "rps20": 90.8,
+            "streak": 13,
+            "ret10": -1.1,
+            "endDate": "2025-10-27"
           }
         ]
       },
       {
-        "code": "562800",
-        "name": "稀有金属ETF",
-        "theme": "有色金属",
+        "code": "515030",
+        "name": "新能源车ETF",
+        "theme": "新能源车",
         "currentSignal": "回避",
-        "currentRps20": 10.7,
+        "currentRps20": 25.8,
         "currentStreak": 0,
         "stats": [
           {
-            "count": 41,
-            "avgReturn": 0.0,
-            "winRate": 56.1,
-            "best": 7.5,
-            "worst": -12.2,
+            "count": 19,
+            "avgReturn": -0.3,
+            "winRate": 52.6,
+            "best": 10.0,
+            "worst": -11.2,
             "holdDays": 5
           },
           {
-            "count": 41,
-            "avgReturn": 3.1,
-            "winRate": 68.3,
-            "best": 13.6,
-            "worst": -13.9,
+            "count": 19,
+            "avgReturn": -0.1,
+            "winRate": 42.1,
+            "best": 12.4,
+            "worst": -8.7,
             "holdDays": 10
           },
           {
-            "count": 41,
-            "avgReturn": 6.2,
-            "winRate": 63.4,
-            "best": 25.2,
-            "worst": -15.7,
-            "holdDays": 20
-          }
-        ],
-        "recentSignals": [
-          {
-            "date": "2026-08-19",
-            "signal": "建仓",
-            "rps20": 96.6,
-            "streak": 3,
-            "ret10": -3.1,
-            "endDate": "2026-09-02"
-          },
-          {
-            "date": "2026-04-22",
-            "signal": "建仓",
-            "rps20": 94.9,
-            "streak": 4,
-            "ret10": 5.7,
-            "endDate": "2026-05-11"
-          },
-          {
-            "date": "2026-04-21",
-            "signal": "建仓",
-            "rps20": 96.6,
-            "streak": 3,
-            "ret10": 4.7,
-            "endDate": "2026-05-08"
-          },
-          {
-            "date": "2026-03-02",
-            "signal": "建仓",
-            "rps20": 94.4,
-            "streak": 4,
-            "ret10": -13.9,
-            "endDate": "2026-03-16"
-          },
-          {
-            "date": "2026-02-27",
-            "signal": "建仓",
-            "rps20": 98.3,
-            "streak": 3,
-            "ret10": -11.3,
-            "endDate": "2026-03-13"
-          }
-        ]
-      },
-      {
-        "code": "560860",
-        "name": "工业有色ETF",
-        "theme": "有色金属",
-        "currentSignal": "回避",
-        "currentRps20": 10.1,
-        "currentStreak": 0,
-        "stats": [
-          {
-            "count": 49,
-            "avgReturn": 0.6,
-            "winRate": 57.1,
-            "best": 17.1,
-            "worst": -16.7,
-            "holdDays": 5
-          },
-          {
-            "count": 49,
-            "avgReturn": 3.0,
-            "winRate": 65.3,
-            "best": 17.8,
+            "count": 19,
+            "avgReturn": 1.4,
+            "winRate": 63.2,
+            "best": 10.5,
             "worst": -11.1,
+            "holdDays": 20
+          }
+        ],
+        "recentSignals": [
+          {
+            "date": "2025-11-20",
+            "signal": "建仓",
+            "rps20": 94.3,
+            "streak": 6,
+            "ret10": -5.5,
+            "endDate": "2025-12-04"
+          },
+          {
+            "date": "2025-11-19",
+            "signal": "建仓",
+            "rps20": 96.6,
+            "streak": 5,
+            "ret10": -8.0,
+            "endDate": "2025-12-03"
+          },
+          {
+            "date": "2025-11-18",
+            "signal": "建仓",
+            "rps20": 93.7,
+            "streak": 4,
+            "ret10": -5.7,
+            "endDate": "2025-12-02"
+          },
+          {
+            "date": "2025-11-17",
+            "signal": "建仓",
+            "rps20": 95.4,
+            "streak": 3,
+            "ret10": -7.5,
+            "endDate": "2025-12-01"
+          },
+          {
+            "date": "2025-10-13",
+            "signal": "持有",
+            "rps20": 90.2,
+            "streak": 15,
+            "ret10": -1.1,
+            "endDate": "2025-10-27"
+          }
+        ]
+      },
+      {
+        "code": "516160",
+        "name": "新能源ETF",
+        "theme": "新能源",
+        "currentSignal": "回避",
+        "currentRps20": 25.3,
+        "currentStreak": 0,
+        "stats": [
+          {
+            "count": 26,
+            "avgReturn": -0.3,
+            "winRate": 53.8,
+            "best": 10.5,
+            "worst": -10.8,
+            "holdDays": 5
+          },
+          {
+            "count": 26,
+            "avgReturn": -0.7,
+            "winRate": 46.2,
+            "best": 8.1,
+            "worst": -10.1,
             "holdDays": 10
           },
           {
-            "count": 49,
-            "avgReturn": 4.1,
-            "winRate": 69.4,
-            "best": 25.0,
+            "count": 26,
+            "avgReturn": 1.0,
+            "winRate": 57.7,
+            "best": 14.5,
             "worst": -9.7,
             "holdDays": 20
           }
         ],
         "recentSignals": [
           {
-            "date": "2026-08-19",
-            "signal": "建仓",
-            "rps20": 95.5,
-            "streak": 3,
-            "ret10": 0.3,
-            "endDate": "2026-09-02"
-          },
-          {
-            "date": "2026-02-05",
+            "date": "2025-11-20",
             "signal": "持有",
-            "rps20": 92.7,
-            "streak": 22,
-            "ret10": 13.8,
-            "endDate": "2026-02-27"
-          },
-          {
-            "date": "2026-02-04",
-            "signal": "持有",
-            "rps20": 92.7,
-            "streak": 21,
-            "ret10": 4.1,
-            "endDate": "2026-02-26"
-          },
-          {
-            "date": "2026-02-03",
-            "signal": "持有",
-            "rps20": 93.8,
-            "streak": 20,
-            "ret10": 6.0,
-            "endDate": "2026-02-25"
-          },
-          {
-            "date": "2026-02-02",
-            "signal": "持有",
-            "rps20": 96.6,
-            "streak": 19,
-            "ret10": 4.4,
-            "endDate": "2026-02-24"
-          }
-        ]
-      },
-      {
-        "code": "588780",
-        "name": "科创芯片设计ETF",
-        "theme": "半导体",
-        "currentSignal": "回避",
-        "currentRps20": 9.6,
-        "currentStreak": 0,
-        "stats": [
-          {
-            "count": 67,
-            "avgReturn": -0.2,
-            "winRate": 44.8,
-            "best": 20.1,
-            "worst": -23.2,
-            "holdDays": 5
-          },
-          {
-            "count": 67,
-            "avgReturn": -1.2,
-            "winRate": 41.8,
-            "best": 30.0,
-            "worst": -25.3,
-            "holdDays": 10
-          },
-          {
-            "count": 66,
-            "avgReturn": -0.1,
-            "winRate": 50.0,
-            "best": 24.7,
-            "worst": -34.1,
-            "holdDays": 20
-          }
-        ],
-        "recentSignals": [
-          {
-            "date": "2026-09-23",
-            "signal": "建仓",
-            "rps20": 96.1,
-            "streak": 3,
-            "ret10": -23.7,
-            "endDate": "2026-10-15"
-          },
-          {
-            "date": "2026-07-13",
-            "signal": "持有",
-            "rps20": 94.4,
-            "streak": 12,
-            "ret10": -14.7,
-            "endDate": "2026-07-27"
-          },
-          {
-            "date": "2026-07-10",
-            "signal": "持有",
-            "rps20": 93.8,
-            "streak": 11,
-            "ret10": -20.5,
-            "endDate": "2026-07-24"
-          },
-          {
-            "date": "2026-07-09",
-            "signal": "持有",
-            "rps20": 95.5,
+            "rps20": 98.9,
             "streak": 10,
-            "ret10": -25.0,
-            "endDate": "2026-07-23"
+            "ret10": -6.0,
+            "endDate": "2025-12-04"
           },
           {
-            "date": "2026-07-08",
+            "date": "2025-11-19",
             "signal": "建仓",
-            "rps20": 96.1,
+            "rps20": 99.4,
             "streak": 9,
-            "ret10": -17.0,
-            "endDate": "2026-07-22"
-          }
-        ]
-      },
-      {
-        "code": "159652",
-        "name": "有色50ETF",
-        "theme": "有色金属",
-        "currentSignal": "回避",
-        "currentRps20": 9.0,
-        "currentStreak": 0,
-        "stats": [
-          {
-            "count": 44,
-            "avgReturn": -1.6,
-            "winRate": 40.9,
-            "best": 7.8,
-            "worst": -16.9,
-            "holdDays": 5
-          },
-          {
-            "count": 44,
-            "avgReturn": -0.2,
-            "winRate": 54.5,
-            "best": 17.7,
-            "worst": -12.4,
-            "holdDays": 10
-          },
-          {
-            "count": 44,
-            "avgReturn": -1.8,
-            "winRate": 34.1,
-            "best": 22.4,
-            "worst": -15.8,
-            "holdDays": 20
-          }
-        ],
-        "recentSignals": [
-          {
-            "date": "2026-08-28",
-            "signal": "持有",
-            "rps20": 92.7,
-            "streak": 10,
             "ret10": -7.6,
-            "endDate": "2026-09-11"
+            "endDate": "2025-12-03"
           },
           {
-            "date": "2026-08-27",
+            "date": "2025-11-18",
+            "signal": "建仓",
+            "rps20": 98.9,
+            "streak": 8,
+            "ret10": -5.7,
+            "endDate": "2025-12-02"
+          },
+          {
+            "date": "2025-11-17",
+            "signal": "建仓",
+            "rps20": 98.3,
+            "streak": 7,
+            "ret10": -7.6,
+            "endDate": "2025-12-01"
+          },
+          {
+            "date": "2025-11-14",
+            "signal": "建仓",
+            "rps20": 98.3,
+            "streak": 6,
+            "ret10": -7.2,
+            "endDate": "2025-11-28"
+          }
+        ]
+      },
+      {
+        "code": "159206",
+        "name": "卫星ETF",
+        "theme": "卫星",
+        "currentSignal": "回避",
+        "currentRps20": 24.7,
+        "currentStreak": 0,
+        "stats": [
+          {
+            "count": 44,
+            "avgReturn": 5.0,
+            "winRate": 70.5,
+            "best": 27.5,
+            "worst": -11.9,
+            "holdDays": 5
+          },
+          {
+            "count": 44,
+            "avgReturn": 9.7,
+            "winRate": 72.7,
+            "best": 43.2,
+            "worst": -13.7,
+            "holdDays": 10
+          },
+          {
+            "count": 44,
+            "avgReturn": 16.4,
+            "winRate": 59.1,
+            "best": 65.0,
+            "worst": -14.4,
+            "holdDays": 20
+          }
+        ],
+        "recentSignals": [
+          {
+            "date": "2026-04-23",
+            "signal": "建仓",
+            "rps20": 94.9,
+            "streak": 4,
+            "ret10": 5.7,
+            "endDate": "2026-05-12"
+          },
+          {
+            "date": "2026-04-22",
             "signal": "建仓",
             "rps20": 94.4,
-            "streak": 9,
-            "ret10": -2.9,
-            "endDate": "2026-09-10"
+            "streak": 3,
+            "ret10": 7.4,
+            "endDate": "2026-05-11"
           },
           {
-            "date": "2026-08-26",
-            "signal": "建仓",
-            "rps20": 91.6,
-            "streak": 8,
-            "ret10": -0.7,
-            "endDate": "2026-09-09"
+            "date": "2026-01-29",
+            "signal": "持有",
+            "rps20": 93.8,
+            "streak": 42,
+            "ret10": -5.9,
+            "endDate": "2026-02-12"
           },
           {
-            "date": "2026-08-25",
-            "signal": "建仓",
-            "rps20": 90.4,
-            "streak": 7,
-            "ret10": 0.1,
-            "endDate": "2026-09-08"
+            "date": "2026-01-28",
+            "signal": "持有",
+            "rps20": 94.4,
+            "streak": 41,
+            "ret10": -7.6,
+            "endDate": "2026-02-11"
           },
           {
-            "date": "2026-08-24",
-            "signal": "建仓",
-            "rps20": 91.6,
-            "streak": 6,
-            "ret10": -4.3,
-            "endDate": "2026-09-07"
+            "date": "2026-01-27",
+            "signal": "持有",
+            "rps20": 97.8,
+            "streak": 40,
+            "ret10": -7.6,
+            "endDate": "2026-02-10"
           }
         ]
       },
       {
-        "code": "561330",
-        "name": "矿业ETF",
-        "theme": "矿业",
+        "code": "159870",
+        "name": "化工ETF",
+        "theme": "能源化工",
         "currentSignal": "回避",
-        "currentRps20": 8.4,
+        "currentRps20": 24.2,
         "currentStreak": 0,
         "stats": [
           {
-            "count": 58,
-            "avgReturn": 0.1,
-            "winRate": 51.7,
-            "best": 17.6,
-            "worst": -18.0,
+            "count": 19,
+            "avgReturn": -1.3,
+            "winRate": 42.1,
+            "best": 8.0,
+            "worst": -11.3,
             "holdDays": 5
           },
           {
-            "count": 58,
-            "avgReturn": 1.2,
-            "winRate": 58.6,
-            "best": 20.0,
-            "worst": -13.3,
-            "holdDays": 10
-          },
-          {
-            "count": 58,
-            "avgReturn": 0.4,
-            "winRate": 46.6,
-            "best": 24.7,
-            "worst": -16.7,
-            "holdDays": 20
-          }
-        ],
-        "recentSignals": [
-          {
-            "date": "2026-08-31",
-            "signal": "持有",
-            "rps20": 91.6,
-            "streak": 11,
-            "ret10": -7.4,
-            "endDate": "2026-09-14"
-          },
-          {
-            "date": "2026-08-28",
-            "signal": "持有",
-            "rps20": 97.2,
-            "streak": 10,
-            "ret10": -8.2,
-            "endDate": "2026-09-11"
-          },
-          {
-            "date": "2026-08-27",
-            "signal": "建仓",
-            "rps20": 96.1,
-            "streak": 9,
-            "ret10": -3.6,
-            "endDate": "2026-09-10"
-          },
-          {
-            "date": "2026-08-26",
-            "signal": "建仓",
-            "rps20": 92.7,
-            "streak": 8,
-            "ret10": -1.0,
-            "endDate": "2026-09-09"
-          },
-          {
-            "date": "2026-08-25",
-            "signal": "建仓",
-            "rps20": 92.1,
-            "streak": 7,
-            "ret10": 0.0,
-            "endDate": "2026-09-08"
-          }
-        ]
-      },
-      {
-        "code": "159949",
-        "name": "创业板50ETF",
-        "theme": "创业板50",
-        "currentSignal": "回避",
-        "currentRps20": 7.9,
-        "currentStreak": 0,
-        "stats": [
-          {
-            "count": 29,
-            "avgReturn": 2.4,
-            "winRate": 75.9,
-            "best": 10.8,
-            "worst": -10.0,
-            "holdDays": 5
-          },
-          {
-            "count": 29,
-            "avgReturn": 3.7,
-            "winRate": 69.0,
-            "best": 13.8,
-            "worst": -10.0,
-            "holdDays": 10
-          },
-          {
-            "count": 29,
-            "avgReturn": 5.4,
-            "winRate": 75.9,
-            "best": 24.2,
-            "worst": -3.7,
-            "holdDays": 20
-          }
-        ],
-        "recentSignals": [
-          {
-            "date": "2025-09-29",
-            "signal": "持有",
-            "rps20": 92.0,
-            "streak": 23,
-            "ret10": -4.9,
-            "endDate": "2025-10-21"
-          },
-          {
-            "date": "2025-09-26",
-            "signal": "持有",
-            "rps20": 90.8,
-            "streak": 22,
-            "ret10": -5.2,
-            "endDate": "2025-10-20"
-          },
-          {
-            "date": "2025-09-25",
-            "signal": "持有",
-            "rps20": 94.8,
-            "streak": 21,
-            "ret10": -10.0,
-            "endDate": "2025-10-17"
-          },
-          {
-            "date": "2025-09-24",
-            "signal": "持有",
-            "rps20": 93.7,
-            "streak": 20,
-            "ret10": -5.0,
-            "endDate": "2025-10-16"
-          },
-          {
-            "date": "2025-09-23",
-            "signal": "持有",
-            "rps20": 94.3,
-            "streak": 19,
-            "ret10": -3.6,
-            "endDate": "2025-10-15"
-          }
-        ]
-      },
-      {
-        "code": "159781",
-        "name": "科创创业ETF",
-        "theme": "科创成长",
-        "currentSignal": "回避",
-        "currentRps20": 7.3,
-        "currentStreak": 0,
-        "stats": [
-          {
-            "count": 52,
-            "avgReturn": 3.0,
-            "winRate": 67.3,
-            "best": 18.0,
-            "worst": -7.1,
-            "holdDays": 5
-          },
-          {
-            "count": 52,
-            "avgReturn": 4.4,
-            "winRate": 80.8,
-            "best": 13.2,
-            "worst": -9.8,
-            "holdDays": 10
-          },
-          {
-            "count": 52,
-            "avgReturn": 9.0,
-            "winRate": 94.2,
-            "best": 27.1,
-            "worst": -2.6,
-            "holdDays": 20
-          }
-        ],
-        "recentSignals": [
-          {
-            "date": "2026-06-09",
-            "signal": "持有",
-            "rps20": 92.7,
-            "streak": 22,
-            "ret10": 9.5,
-            "endDate": "2026-06-24"
-          },
-          {
-            "date": "2026-06-08",
-            "signal": "持有",
-            "rps20": 91.6,
-            "streak": 21,
-            "ret10": 12.0,
-            "endDate": "2026-06-23"
-          },
-          {
-            "date": "2026-06-05",
-            "signal": "持有",
-            "rps20": 95.5,
-            "streak": 20,
-            "ret10": 11.7,
-            "endDate": "2026-06-22"
-          },
-          {
-            "date": "2026-06-04",
-            "signal": "持有",
-            "rps20": 94.9,
-            "streak": 19,
-            "ret10": 5.1,
-            "endDate": "2026-06-18"
-          },
-          {
-            "date": "2026-06-03",
-            "signal": "持有",
-            "rps20": 96.1,
-            "streak": 18,
-            "ret10": 1.2,
-            "endDate": "2026-06-17"
-          }
-        ]
-      },
-      {
-        "code": "159698",
-        "name": "粮食ETF",
-        "theme": "粮食",
-        "currentSignal": "回避",
-        "currentRps20": 6.7,
-        "currentStreak": 0,
-        "stats": [
-          {
-            "count": 38,
-            "avgReturn": -3.0,
-            "winRate": 26.3,
-            "best": 6.0,
-            "worst": -13.0,
-            "holdDays": 5
-          },
-          {
-            "count": 38,
-            "avgReturn": -3.2,
-            "winRate": 21.1,
-            "best": 2.8,
+            "count": 19,
+            "avgReturn": -0.6,
+            "winRate": 52.6,
+            "best": 7.9,
             "worst": -10.5,
             "holdDays": 10
           },
           {
-            "count": 35,
-            "avgReturn": -3.2,
-            "winRate": 31.4,
-            "best": 3.5,
+            "count": 19,
+            "avgReturn": -0.2,
+            "winRate": 36.8,
+            "best": 12.1,
+            "worst": -8.1,
+            "holdDays": 20
+          }
+        ],
+        "recentSignals": [
+          {
+            "date": "2026-03-13",
+            "signal": "建仓",
+            "rps20": 91.6,
+            "streak": 4,
+            "ret10": -8.0,
+            "endDate": "2026-03-27"
+          },
+          {
+            "date": "2026-03-12",
+            "signal": "建仓",
+            "rps20": 91.6,
+            "streak": 3,
+            "ret10": -10.5,
+            "endDate": "2026-03-26"
+          },
+          {
+            "date": "2026-02-13",
+            "signal": "建仓",
+            "rps20": 92.1,
+            "streak": 6,
+            "ret10": 4.3,
+            "endDate": "2026-03-09"
+          },
+          {
+            "date": "2026-02-12",
+            "signal": "建仓",
+            "rps20": 91.0,
+            "streak": 5,
+            "ret10": 3.7,
+            "endDate": "2026-03-06"
+          },
+          {
+            "date": "2026-02-11",
+            "signal": "建仓",
+            "rps20": 93.3,
+            "streak": 4,
+            "ret10": 1.9,
+            "endDate": "2026-03-05"
+          }
+        ]
+      },
+      {
+        "code": "159796",
+        "name": "电池50ETF",
+        "theme": "电池",
+        "currentSignal": "回避",
+        "currentRps20": 23.6,
+        "currentStreak": 0,
+        "stats": [
+          {
+            "count": 31,
+            "avgReturn": -0.6,
+            "winRate": 45.2,
+            "best": 10.8,
+            "worst": -11.6,
+            "holdDays": 5
+          },
+          {
+            "count": 31,
+            "avgReturn": 0.8,
+            "winRate": 51.6,
+            "best": 14.5,
+            "worst": -10.6,
+            "holdDays": 10
+          },
+          {
+            "count": 31,
+            "avgReturn": 2.9,
+            "winRate": 74.2,
+            "best": 16.3,
+            "worst": -11.5,
+            "holdDays": 20
+          }
+        ],
+        "recentSignals": [
+          {
+            "date": "2026-03-31",
+            "signal": "建仓",
+            "rps20": 91.0,
+            "streak": 4,
+            "ret10": 6.2,
+            "endDate": "2026-04-15"
+          },
+          {
+            "date": "2026-03-30",
+            "signal": "建仓",
+            "rps20": 97.2,
+            "streak": 3,
+            "ret10": 4.2,
+            "endDate": "2026-04-14"
+          },
+          {
+            "date": "2026-03-16",
+            "signal": "建仓",
+            "rps20": 90.4,
+            "streak": 3,
+            "ret10": -2.0,
+            "endDate": "2026-03-30"
+          },
+          {
+            "date": "2025-11-20",
+            "signal": "持有",
+            "rps20": 97.1,
+            "streak": 10,
+            "ret10": -3.9,
+            "endDate": "2025-12-04"
+          },
+          {
+            "date": "2025-11-19",
+            "signal": "建仓",
+            "rps20": 97.7,
+            "streak": 9,
+            "ret10": -6.3,
+            "endDate": "2025-12-03"
+          }
+        ]
+      },
+      {
+        "code": "159131",
+        "name": "港股信息技术ETF",
+        "theme": "信息技术",
+        "currentSignal": "回避",
+        "currentRps20": 23.0,
+        "currentStreak": 0,
+        "stats": [
+          {
+            "count": 13,
+            "avgReturn": 0.7,
+            "winRate": 53.8,
+            "best": 10.3,
+            "worst": -7.6,
+            "holdDays": 5
+          },
+          {
+            "count": 13,
+            "avgReturn": 1.8,
+            "winRate": 69.2,
+            "best": 9.2,
+            "worst": -6.4,
+            "holdDays": 10
+          },
+          {
+            "count": 12,
+            "avgReturn": -5.3,
+            "winRate": 16.7,
+            "best": 3.0,
+            "worst": -17.4,
+            "holdDays": 20
+          }
+        ],
+        "recentSignals": [
+          {
+            "date": "2026-06-18",
+            "signal": "持有",
+            "rps20": 91.0,
+            "streak": 15,
+            "ret10": -5.5,
+            "endDate": "2026-07-03"
+          },
+          {
+            "date": "2026-06-17",
+            "signal": "持有",
+            "rps20": 95.5,
+            "streak": 14,
+            "ret10": -6.4,
+            "endDate": "2026-07-02"
+          },
+          {
+            "date": "2026-06-16",
+            "signal": "持有",
+            "rps20": 97.8,
+            "streak": 13,
+            "ret10": 3.4,
+            "endDate": "2026-07-01"
+          },
+          {
+            "date": "2026-06-15",
+            "signal": "持有",
+            "rps20": 97.8,
+            "streak": 12,
+            "ret10": 3.4,
+            "endDate": "2026-06-30"
+          },
+          {
+            "date": "2026-06-12",
+            "signal": "持有",
+            "rps20": 97.6,
+            "streak": 11,
+            "ret10": 6.4,
+            "endDate": "2026-06-29"
+          }
+        ]
+      },
+      {
+        "code": "588830",
+        "name": "科创新能源ETF",
+        "theme": "科创新能源",
+        "currentSignal": "回避",
+        "currentRps20": 22.5,
+        "currentStreak": 0,
+        "stats": [
+          {
+            "count": 16,
+            "avgReturn": -1.7,
+            "winRate": 43.8,
+            "best": 4.2,
+            "worst": -12.6,
+            "holdDays": 5
+          },
+          {
+            "count": 16,
+            "avgReturn": -0.7,
+            "winRate": 62.5,
+            "best": 7.0,
+            "worst": -10.6,
+            "holdDays": 10
+          },
+          {
+            "count": 16,
+            "avgReturn": 0.6,
+            "winRate": 62.5,
+            "best": 12.1,
+            "worst": -13.7,
+            "holdDays": 20
+          }
+        ],
+        "recentSignals": [
+          {
+            "date": "2025-11-20",
+            "signal": "建仓",
+            "rps20": 97.7,
+            "streak": 6,
+            "ret10": -7.1,
+            "endDate": "2025-12-04"
+          },
+          {
+            "date": "2025-11-19",
+            "signal": "建仓",
+            "rps20": 97.1,
+            "streak": 5,
+            "ret10": -9.0,
+            "endDate": "2025-12-03"
+          },
+          {
+            "date": "2025-11-18",
+            "signal": "建仓",
+            "rps20": 100.0,
+            "streak": 4,
+            "ret10": -9.2,
+            "endDate": "2025-12-02"
+          },
+          {
+            "date": "2025-11-17",
+            "signal": "建仓",
+            "rps20": 100.0,
+            "streak": 3,
+            "ret10": -10.6,
+            "endDate": "2025-12-01"
+          },
+          {
+            "date": "2025-11-11",
+            "signal": "建仓",
+            "rps20": 97.1,
+            "streak": 3,
+            "ret10": -10.5,
+            "endDate": "2025-11-25"
+          }
+        ]
+      },
+      {
+        "code": "516150",
+        "name": "稀土ETF",
+        "theme": "稀土",
+        "currentSignal": "回避",
+        "currentRps20": 21.9,
+        "currentStreak": 0,
+        "stats": [
+          {
+            "count": 33,
+            "avgReturn": 1.1,
+            "winRate": 51.5,
+            "best": 11.9,
+            "worst": -8.7,
+            "holdDays": 5
+          },
+          {
+            "count": 33,
+            "avgReturn": 4.7,
+            "winRate": 60.6,
+            "best": 22.6,
+            "worst": -11.7,
+            "holdDays": 10
+          },
+          {
+            "count": 33,
+            "avgReturn": 9.1,
+            "winRate": 69.7,
+            "best": 31.5,
             "worst": -18.2,
             "holdDays": 20
           }
         ],
         "recentSignals": [
           {
-            "date": "2026-09-14",
-            "signal": "持有",
-            "rps20": 97.2,
-            "streak": 10,
-            "ret10": -6.8,
-            "endDate": "2026-09-29"
-          },
-          {
-            "date": "2026-09-11",
-            "signal": "建仓",
-            "rps20": 99.4,
-            "streak": 9,
-            "ret10": -9.4,
-            "endDate": "2026-09-28"
-          },
-          {
-            "date": "2026-09-10",
-            "signal": "建仓",
-            "rps20": 99.4,
-            "streak": 8,
-            "ret10": -9.8,
-            "endDate": "2026-09-24"
-          },
-          {
-            "date": "2026-09-09",
-            "signal": "建仓",
-            "rps20": 100.0,
-            "streak": 7,
-            "ret10": -10.5,
-            "endDate": "2026-09-23"
-          },
-          {
-            "date": "2026-09-08",
-            "signal": "建仓",
-            "rps20": 100.0,
-            "streak": 6,
-            "ret10": -8.7,
-            "endDate": "2026-09-22"
-          }
-        ]
-      },
-      {
-        "code": "512400",
-        "name": "有色金属ETF",
-        "theme": "有色金属",
-        "currentSignal": "回避",
-        "currentRps20": 6.2,
-        "currentStreak": 0,
-        "stats": [
-          {
-            "count": 45,
-            "avgReturn": -0.5,
-            "winRate": 51.1,
-            "best": 12.9,
-            "worst": -17.1,
-            "holdDays": 5
-          },
-          {
-            "count": 45,
-            "avgReturn": 0.9,
-            "winRate": 64.4,
-            "best": 18.1,
-            "worst": -12.3,
-            "holdDays": 10
-          },
-          {
-            "count": 45,
-            "avgReturn": 0.0,
-            "winRate": 42.2,
-            "best": 22.7,
-            "worst": -19.6,
-            "holdDays": 20
-          }
-        ],
-        "recentSignals": [
-          {
-            "date": "2026-08-28",
-            "signal": "建仓",
-            "rps20": 93.3,
-            "streak": 3,
-            "ret10": -11.5,
-            "endDate": "2026-09-11"
-          },
-          {
-            "date": "2026-08-24",
-            "signal": "建仓",
-            "rps20": 91.0,
-            "streak": 6,
-            "ret10": -4.0,
-            "endDate": "2026-09-07"
-          },
-          {
-            "date": "2026-08-21",
-            "signal": "建仓",
-            "rps20": 94.4,
-            "streak": 5,
-            "ret10": -3.2,
-            "endDate": "2026-09-04"
-          },
-          {
-            "date": "2026-08-20",
-            "signal": "建仓",
-            "rps20": 92.7,
-            "streak": 4,
-            "ret10": 1.5,
-            "endDate": "2026-09-03"
-          },
-          {
             "date": "2026-08-19",
             "signal": "建仓",
-            "rps20": 98.3,
+            "rps20": 97.2,
             "streak": 3,
-            "ret10": 1.2,
+            "ret10": -4.0,
             "endDate": "2026-09-02"
+          },
+          {
+            "date": "2026-03-02",
+            "signal": "建仓",
+            "rps20": 92.1,
+            "streak": 4,
+            "ret10": -11.7,
+            "endDate": "2026-03-16"
+          },
+          {
+            "date": "2026-02-27",
+            "signal": "建仓",
+            "rps20": 96.6,
+            "streak": 3,
+            "ret10": -10.1,
+            "endDate": "2026-03-13"
+          },
+          {
+            "date": "2025-11-03",
+            "signal": "建仓",
+            "rps20": 90.2,
+            "streak": 6,
+            "ret10": -2.9,
+            "endDate": "2025-11-17"
+          },
+          {
+            "date": "2025-10-31",
+            "signal": "建仓",
+            "rps20": 95.4,
+            "streak": 5,
+            "ret10": -4.8,
+            "endDate": "2025-11-14"
           }
         ]
       },
       {
-        "code": "159732",
-        "name": "消费电子ETF",
-        "theme": "消费",
+        "code": "159901",
+        "name": "深证100ETF",
+        "theme": "深证100",
         "currentSignal": "回避",
-        "currentRps20": 5.6,
+        "currentRps20": 21.3,
         "currentStreak": 0,
         "stats": [
           {
-            "count": 43,
-            "avgReturn": 3.2,
-            "winRate": 74.4,
-            "best": 19.0,
-            "worst": -12.2,
+            "count": 0,
+            "avgReturn": null,
+            "winRate": null,
+            "best": null,
+            "worst": null,
             "holdDays": 5
           },
           {
-            "count": 43,
-            "avgReturn": 6.0,
-            "winRate": 74.4,
-            "best": 24.7,
-            "worst": -16.2,
+            "count": 0,
+            "avgReturn": null,
+            "winRate": null,
+            "best": null,
+            "worst": null,
             "holdDays": 10
           },
           {
-            "count": 42,
+            "count": 0,
+            "avgReturn": null,
+            "winRate": null,
+            "best": null,
+            "worst": null,
+            "holdDays": 20
+          }
+        ],
+        "recentSignals": []
+      },
+      {
+        "code": "588170",
+        "name": "科创半导体ETF",
+        "theme": "半导体",
+        "currentSignal": "回避",
+        "currentRps20": 20.8,
+        "currentStreak": 0,
+        "stats": [
+          {
+            "count": 80,
+            "avgReturn": 2.7,
+            "winRate": 56.2,
+            "best": 28.1,
+            "worst": -25.9,
+            "holdDays": 5
+          },
+          {
+            "count": 80,
+            "avgReturn": 5.3,
+            "winRate": 57.5,
+            "best": 48.6,
+            "worst": -29.8,
+            "holdDays": 10
+          },
+          {
+            "count": 79,
             "avgReturn": 7.9,
-            "winRate": 85.7,
-            "best": 27.6,
-            "worst": -31.3,
+            "winRate": 58.2,
+            "best": 78.9,
+            "worst": -30.5,
             "holdDays": 20
           }
         ],
         "recentSignals": [
           {
-            "date": "2026-07-01",
-            "signal": "建仓",
-            "rps20": 93.3,
-            "streak": 5,
-            "ret10": -16.2,
-            "endDate": "2026-07-15"
-          },
-          {
-            "date": "2026-06-30",
-            "signal": "建仓",
-            "rps20": 93.3,
-            "streak": 4,
-            "ret10": -14.9,
-            "endDate": "2026-07-14"
-          },
-          {
-            "date": "2026-06-29",
-            "signal": "建仓",
-            "rps20": 92.7,
-            "streak": 3,
-            "ret10": -14.9,
-            "endDate": "2026-07-13"
-          },
-          {
-            "date": "2026-06-18",
+            "date": "2026-07-15",
             "signal": "持有",
-            "rps20": 92.7,
-            "streak": 40,
-            "ret10": 1.4,
-            "endDate": "2026-07-03"
+            "rps20": 93.3,
+            "streak": 47,
+            "ret10": -12.7,
+            "endDate": "2026-07-29"
           },
           {
-            "date": "2026-06-17",
+            "date": "2026-07-14",
             "signal": "持有",
-            "rps20": 94.4,
-            "streak": 39,
-            "ret10": 1.9,
-            "endDate": "2026-07-02"
+            "rps20": 100.0,
+            "streak": 46,
+            "ret10": -19.2,
+            "endDate": "2026-07-28"
+          },
+          {
+            "date": "2026-07-13",
+            "signal": "持有",
+            "rps20": 100.0,
+            "streak": 45,
+            "ret10": -13.3,
+            "endDate": "2026-07-27"
+          },
+          {
+            "date": "2026-07-10",
+            "signal": "持有",
+            "rps20": 100.0,
+            "streak": 44,
+            "ret10": -21.6,
+            "endDate": "2026-07-24"
+          },
+          {
+            "date": "2026-07-09",
+            "signal": "持有",
+            "rps20": 100.0,
+            "streak": 43,
+            "ret10": -29.8,
+            "endDate": "2026-07-23"
           }
         ]
+      },
+      {
+        "code": "159287",
+        "name": "创业板综ETF",
+        "theme": "创业板综",
+        "currentSignal": "回避",
+        "currentRps20": 20.2,
+        "currentStreak": 0,
+        "stats": [
+          {
+            "count": 0,
+            "avgReturn": null,
+            "winRate": null,
+            "best": null,
+            "worst": null,
+            "holdDays": 5
+          },
+          {
+            "count": 0,
+            "avgReturn": null,
+            "winRate": null,
+            "best": null,
+            "worst": null,
+            "holdDays": 10
+          },
+          {
+            "count": 0,
+            "avgReturn": null,
+            "winRate": null,
+            "best": null,
+            "worst": null,
+            "holdDays": 20
+          }
+        ],
+        "recentSignals": []
       },
       {
         "code": "517520",
         "name": "黄金股ETF",
         "theme": "黄金",
         "currentSignal": "回避",
-        "currentRps20": 5.1,
+        "currentRps20": 19.7,
         "currentStreak": 0,
         "stats": [
           {
@@ -60694,154 +58855,2122 @@ window.COCKPIT_DATA = {
         ]
       },
       {
-        "code": "159967",
-        "name": "创业板成长ETF",
-        "theme": "科创成长",
+        "code": "159566",
+        "name": "储能电池ETF",
+        "theme": "电池",
         "currentSignal": "回避",
-        "currentRps20": 4.5,
+        "currentRps20": 19.1,
         "currentStreak": 0,
         "stats": [
           {
-            "count": 63,
-            "avgReturn": 2.2,
-            "winRate": 55.6,
-            "best": 14.9,
-            "worst": -11.5,
+            "count": 36,
+            "avgReturn": -0.2,
+            "winRate": 50.0,
+            "best": 8.1,
+            "worst": -10.2,
             "holdDays": 5
           },
           {
-            "count": 63,
-            "avgReturn": 5.0,
-            "winRate": 77.8,
-            "best": 20.0,
-            "worst": -12.3,
+            "count": 36,
+            "avgReturn": -0.3,
+            "winRate": 47.2,
+            "best": 11.0,
+            "worst": -12.4,
             "holdDays": 10
           },
           {
-            "count": 62,
-            "avgReturn": 7.6,
-            "winRate": 72.6,
-            "best": 27.4,
-            "worst": -26.7,
+            "count": 36,
+            "avgReturn": 4.4,
+            "winRate": 77.8,
+            "best": 25.0,
+            "worst": -5.8,
             "holdDays": 20
           }
         ],
         "recentSignals": [
           {
-            "date": "2026-06-25",
-            "signal": "建仓",
-            "rps20": 92.1,
-            "streak": 8,
-            "ret10": -10.7,
-            "endDate": "2026-07-09"
-          },
-          {
-            "date": "2026-06-24",
-            "signal": "建仓",
+            "date": "2026-03-27",
+            "signal": "持有",
             "rps20": 91.6,
-            "streak": 7,
-            "ret10": -12.3,
-            "endDate": "2026-07-08"
+            "streak": 13,
+            "ret10": 0.6,
+            "endDate": "2026-04-13"
           },
           {
-            "date": "2026-06-23",
+            "date": "2026-03-26",
+            "signal": "持有",
+            "rps20": 91.6,
+            "streak": 12,
+            "ret10": -0.6,
+            "endDate": "2026-04-10"
+          },
+          {
+            "date": "2026-03-25",
+            "signal": "持有",
+            "rps20": 95.5,
+            "streak": 11,
+            "ret10": -6.0,
+            "endDate": "2026-04-09"
+          },
+          {
+            "date": "2026-03-24",
+            "signal": "持有",
+            "rps20": 95.5,
+            "streak": 10,
+            "ret10": -5.5,
+            "endDate": "2026-04-08"
+          },
+          {
+            "date": "2026-03-23",
             "signal": "建仓",
             "rps20": 94.9,
-            "streak": 6,
-            "ret10": -8.0,
-            "endDate": "2026-07-07"
-          },
-          {
-            "date": "2026-06-22",
-            "signal": "建仓",
-            "rps20": 94.9,
-            "streak": 5,
-            "ret10": -11.2,
-            "endDate": "2026-07-06"
-          },
-          {
-            "date": "2026-06-18",
-            "signal": "建仓",
-            "rps20": 96.1,
-            "streak": 4,
-            "ret10": -6.4,
-            "endDate": "2026-07-03"
+            "streak": 9,
+            "ret10": -9.3,
+            "endDate": "2026-04-07"
           }
         ]
       },
       {
-        "code": "588020",
-        "name": "科创成长ETF",
-        "theme": "科创成长",
+        "code": "159368",
+        "name": "创业板新能源ETF",
+        "theme": "创业板新能源",
         "currentSignal": "回避",
-        "currentRps20": 3.9,
+        "currentRps20": 18.5,
         "currentStreak": 0,
         "stats": [
           {
-            "count": 55,
-            "avgReturn": 2.5,
-            "winRate": 63.6,
-            "best": 21.1,
-            "worst": -11.6,
+            "count": 27,
+            "avgReturn": 0.4,
+            "winRate": 63.0,
+            "best": 9.2,
+            "worst": -10.0,
             "holdDays": 5
           },
           {
-            "count": 54,
-            "avgReturn": 3.0,
-            "winRate": 59.3,
-            "best": 27.7,
-            "worst": -26.9,
+            "count": 27,
+            "avgReturn": 2.0,
+            "winRate": 66.7,
+            "best": 11.7,
+            "worst": -9.2,
             "holdDays": 10
           },
           {
-            "count": 53,
+            "count": 27,
             "avgReturn": 3.3,
-            "winRate": 73.6,
-            "best": 25.9,
-            "worst": -36.9,
+            "winRate": 85.2,
+            "best": 11.4,
+            "worst": -8.3,
             "holdDays": 20
           }
         ],
         "recentSignals": [
           {
-            "date": "2026-07-07",
-            "signal": "持有",
-            "rps20": 93.3,
-            "streak": 20,
-            "ret10": -17.8,
-            "endDate": "2026-07-21"
+            "date": "2026-03-30",
+            "signal": "建仓",
+            "rps20": 91.6,
+            "streak": 3,
+            "ret10": 3.5,
+            "endDate": "2026-04-14"
           },
           {
-            "date": "2026-07-06",
-            "signal": "持有",
-            "rps20": 93.3,
-            "streak": 19,
-            "ret10": -26.9,
-            "endDate": "2026-07-20"
+            "date": "2025-11-19",
+            "signal": "建仓",
+            "rps20": 90.2,
+            "streak": 5,
+            "ret10": -4.7,
+            "endDate": "2025-12-03"
           },
           {
-            "date": "2026-07-03",
+            "date": "2025-11-18",
+            "signal": "建仓",
+            "rps20": 90.8,
+            "streak": 4,
+            "ret10": -3.5,
+            "endDate": "2025-12-02"
+          },
+          {
+            "date": "2025-11-17",
+            "signal": "建仓",
+            "rps20": 94.8,
+            "streak": 3,
+            "ret10": -6.0,
+            "endDate": "2025-12-01"
+          },
+          {
+            "date": "2025-10-10",
             "signal": "持有",
-            "rps20": 94.9,
-            "streak": 18,
-            "ret10": -23.2,
-            "endDate": "2026-07-17"
+            "rps20": 91.4,
+            "streak": 22,
+            "ret10": 0.3,
+            "endDate": "2025-10-24"
+          }
+        ]
+      },
+      {
+        "code": "588230",
+        "name": "科创200ETF",
+        "theme": "科创200",
+        "currentSignal": "回避",
+        "currentRps20": 18.0,
+        "currentStreak": 0,
+        "stats": [
+          {
+            "count": 20,
+            "avgReturn": 1.9,
+            "winRate": 75.0,
+            "best": 6.5,
+            "worst": -10.3,
+            "holdDays": 5
+          },
+          {
+            "count": 19,
+            "avgReturn": 3.1,
+            "winRate": 78.9,
+            "best": 10.3,
+            "worst": -19.1,
+            "holdDays": 10
+          },
+          {
+            "count": 19,
+            "avgReturn": 2.1,
+            "winRate": 78.9,
+            "best": 19.4,
+            "worst": -33.5,
+            "holdDays": 20
+          }
+        ],
+        "recentSignals": [
+          {
+            "date": "2026-09-24",
+            "signal": "建仓",
+            "rps20": 94.4,
+            "streak": 3,
+            "ret10": -19.1,
+            "endDate": "2026-10-19"
+          },
+          {
+            "date": "2026-09-02",
+            "signal": "建仓",
+            "rps20": 92.7,
+            "streak": 5,
+            "ret10": 2.2,
+            "endDate": "2026-09-16"
+          },
+          {
+            "date": "2026-09-01",
+            "signal": "建仓",
+            "rps20": 99.4,
+            "streak": 4,
+            "ret10": -2.3,
+            "endDate": "2026-09-15"
+          },
+          {
+            "date": "2026-08-31",
+            "signal": "建仓",
+            "rps20": 100.0,
+            "streak": 3,
+            "ret10": -5.0,
+            "endDate": "2026-09-14"
           },
           {
             "date": "2026-07-02",
+            "signal": "建仓",
+            "rps20": 91.0,
+            "streak": 3,
+            "ret10": null,
+            "endDate": null
+          }
+        ]
+      },
+      {
+        "code": "588410",
+        "name": "科创创业人工智能ETF",
+        "theme": "信息技术",
+        "currentSignal": "回避",
+        "currentRps20": 17.4,
+        "currentStreak": 0,
+        "stats": [
+          {
+            "count": 23,
+            "avgReturn": 2.5,
+            "winRate": 65.2,
+            "best": 14.8,
+            "worst": -12.1,
+            "holdDays": 5
+          },
+          {
+            "count": 23,
+            "avgReturn": 3.5,
+            "winRate": 60.9,
+            "best": 20.7,
+            "worst": -20.5,
+            "holdDays": 10
+          },
+          {
+            "count": 21,
+            "avgReturn": 5.1,
+            "winRate": 57.1,
+            "best": 18.9,
+            "worst": -8.9,
+            "holdDays": 20
+          }
+        ],
+        "recentSignals": [
+          {
+            "date": "2026-09-24",
+            "signal": "建仓",
+            "rps20": 93.3,
+            "streak": 4,
+            "ret10": -17.9,
+            "endDate": "2026-10-19"
+          },
+          {
+            "date": "2026-09-23",
+            "signal": "建仓",
+            "rps20": 98.3,
+            "streak": 3,
+            "ret10": -20.5,
+            "endDate": "2026-10-15"
+          },
+          {
+            "date": "2026-05-25",
+            "signal": "持有",
+            "rps20": 90.4,
+            "streak": 23,
+            "ret10": -10.3,
+            "endDate": "2026-06-08"
+          },
+          {
+            "date": "2026-05-22",
+            "signal": "持有",
+            "rps20": 92.7,
+            "streak": 22,
+            "ret10": -3.9,
+            "endDate": "2026-06-05"
+          },
+          {
+            "date": "2026-05-21",
+            "signal": "持有",
+            "rps20": 91.6,
+            "streak": 21,
+            "ret10": 3.5,
+            "endDate": "2026-06-04"
+          }
+        ]
+      },
+      {
+        "code": "159819",
+        "name": "人工智能ETF",
+        "theme": "信息技术",
+        "currentSignal": "回避",
+        "currentRps20": 16.9,
+        "currentStreak": 0,
+        "stats": [
+          {
+            "count": 43,
+            "avgReturn": 3.5,
+            "winRate": 74.4,
+            "best": 20.1,
+            "worst": -10.7,
+            "holdDays": 5
+          },
+          {
+            "count": 43,
+            "avgReturn": 5.2,
+            "winRate": 76.7,
+            "best": 17.1,
+            "worst": -2.6,
+            "holdDays": 10
+          },
+          {
+            "count": 43,
+            "avgReturn": 6.4,
+            "winRate": 74.4,
+            "best": 20.8,
+            "worst": -6.9,
+            "holdDays": 20
+          }
+        ],
+        "recentSignals": [
+          {
+            "date": "2026-05-19",
+            "signal": "持有",
+            "rps20": 91.0,
+            "streak": 19,
+            "ret10": -1.0,
+            "endDate": "2026-06-02"
+          },
+          {
+            "date": "2026-05-18",
+            "signal": "持有",
+            "rps20": 90.4,
+            "streak": 18,
+            "ret10": -2.3,
+            "endDate": "2026-06-01"
+          },
+          {
+            "date": "2026-05-15",
+            "signal": "持有",
+            "rps20": 91.0,
+            "streak": 17,
+            "ret10": 0.8,
+            "endDate": "2026-05-29"
+          },
+          {
+            "date": "2026-05-14",
             "signal": "持有",
             "rps20": 93.3,
-            "streak": 17,
+            "streak": 16,
+            "ret10": 2.4,
+            "endDate": "2026-05-28"
+          },
+          {
+            "date": "2026-05-13",
+            "signal": "持有",
+            "rps20": 93.3,
+            "streak": 15,
+            "ret10": -1.4,
+            "endDate": "2026-05-27"
+          }
+        ]
+      },
+      {
+        "code": "589000",
+        "name": "科创综指ETF",
+        "theme": "科创综指",
+        "currentSignal": "回避",
+        "currentRps20": 16.3,
+        "currentStreak": 0,
+        "stats": [
+          {
+            "count": 4,
+            "avgReturn": 1.2,
+            "winRate": 75.0,
+            "best": 5.1,
+            "worst": -7.4,
+            "holdDays": 5
+          },
+          {
+            "count": 3,
+            "avgReturn": -4.5,
+            "winRate": 33.3,
+            "best": 0.3,
+            "worst": -12.3,
+            "holdDays": 10
+          },
+          {
+            "count": 4,
+            "avgReturn": -9.8,
+            "winRate": 50.0,
+            "best": 5.4,
+            "worst": -24.7,
+            "holdDays": 20
+          }
+        ],
+        "recentSignals": [
+          {
+            "date": "2026-07-02",
+            "signal": "建仓",
+            "rps20": 91.6,
+            "streak": 4,
             "ret10": null,
             "endDate": null
           },
           {
             "date": "2026-07-01",
+            "signal": "建仓",
+            "rps20": 93.8,
+            "streak": 3,
+            "ret10": -12.3,
+            "endDate": "2026-07-15"
+          },
+          {
+            "date": "2025-08-25",
+            "signal": "建仓",
+            "rps20": 90.6,
+            "streak": 4,
+            "ret10": -1.5,
+            "endDate": "2025-09-08"
+          },
+          {
+            "date": "2025-08-22",
+            "signal": "建仓",
+            "rps20": 90.0,
+            "streak": 3,
+            "ret10": 0.3,
+            "endDate": "2025-09-05"
+          }
+        ]
+      },
+      {
+        "code": "159698",
+        "name": "粮食ETF",
+        "theme": "粮食",
+        "currentSignal": "回避",
+        "currentRps20": 15.7,
+        "currentStreak": 0,
+        "stats": [
+          {
+            "count": 38,
+            "avgReturn": -3.0,
+            "winRate": 26.3,
+            "best": 6.0,
+            "worst": -13.0,
+            "holdDays": 5
+          },
+          {
+            "count": 38,
+            "avgReturn": -3.2,
+            "winRate": 21.1,
+            "best": 2.8,
+            "worst": -10.5,
+            "holdDays": 10
+          },
+          {
+            "count": 36,
+            "avgReturn": -3.5,
+            "winRate": 30.6,
+            "best": 3.5,
+            "worst": -18.2,
+            "holdDays": 20
+          }
+        ],
+        "recentSignals": [
+          {
+            "date": "2026-09-14",
+            "signal": "持有",
+            "rps20": 97.2,
+            "streak": 10,
+            "ret10": -6.8,
+            "endDate": "2026-09-29"
+          },
+          {
+            "date": "2026-09-11",
+            "signal": "建仓",
+            "rps20": 99.4,
+            "streak": 9,
+            "ret10": -9.4,
+            "endDate": "2026-09-28"
+          },
+          {
+            "date": "2026-09-10",
+            "signal": "建仓",
+            "rps20": 99.4,
+            "streak": 8,
+            "ret10": -9.8,
+            "endDate": "2026-09-24"
+          },
+          {
+            "date": "2026-09-09",
+            "signal": "建仓",
+            "rps20": 100.0,
+            "streak": 7,
+            "ret10": -10.5,
+            "endDate": "2026-09-23"
+          },
+          {
+            "date": "2026-09-08",
+            "signal": "建仓",
+            "rps20": 100.0,
+            "streak": 6,
+            "ret10": -8.7,
+            "endDate": "2026-09-22"
+          }
+        ]
+      },
+      {
+        "code": "159516",
+        "name": "半导体设备ETF",
+        "theme": "半导体",
+        "currentSignal": "回避",
+        "currentRps20": 15.2,
+        "currentStreak": 0,
+        "stats": [
+          {
+            "count": 79,
+            "avgReturn": 2.1,
+            "winRate": 53.2,
+            "best": 26.0,
+            "worst": -23.6,
+            "holdDays": 5
+          },
+          {
+            "count": 79,
+            "avgReturn": 3.8,
+            "winRate": 54.4,
+            "best": 45.0,
+            "worst": -26.0,
+            "holdDays": 10
+          },
+          {
+            "count": 78,
+            "avgReturn": 4.4,
+            "winRate": 50.0,
+            "best": 72.4,
+            "worst": -57.1,
+            "holdDays": 20
+          }
+        ],
+        "recentSignals": [
+          {
+            "date": "2026-07-15",
+            "signal": "持有",
+            "rps20": 90.4,
+            "streak": 51,
+            "ret10": -12.1,
+            "endDate": "2026-07-29"
+          },
+          {
+            "date": "2026-07-14",
+            "signal": "持有",
+            "rps20": 99.4,
+            "streak": 50,
+            "ret10": -16.5,
+            "endDate": "2026-07-28"
+          },
+          {
+            "date": "2026-07-13",
+            "signal": "持有",
+            "rps20": 99.4,
+            "streak": 49,
+            "ret10": -11.2,
+            "endDate": "2026-07-27"
+          },
+          {
+            "date": "2026-07-10",
+            "signal": "持有",
+            "rps20": 99.4,
+            "streak": 48,
+            "ret10": -18.0,
+            "endDate": "2026-07-24"
+          },
+          {
+            "date": "2026-07-09",
+            "signal": "持有",
+            "rps20": 99.4,
+            "streak": 47,
+            "ret10": -26.0,
+            "endDate": "2026-07-23"
+          }
+        ]
+      },
+      {
+        "code": "588000",
+        "name": "科创50ETF",
+        "theme": "科创50",
+        "currentSignal": "回避",
+        "currentRps20": 14.6,
+        "currentStreak": 0,
+        "stats": [
+          {
+            "count": 33,
+            "avgReturn": -1.9,
+            "winRate": 39.4,
+            "best": 10.9,
+            "worst": -18.2,
+            "holdDays": 5
+          },
+          {
+            "count": 33,
+            "avgReturn": -4.6,
+            "winRate": 24.2,
+            "best": 10.4,
+            "worst": -18.9,
+            "holdDays": 10
+          },
+          {
+            "count": 33,
+            "avgReturn": -2.3,
+            "winRate": 51.5,
+            "best": 21.8,
+            "worst": -23.8,
+            "holdDays": 20
+          }
+        ],
+        "recentSignals": [
+          {
+            "date": "2026-07-14",
+            "signal": "持有",
+            "rps20": 93.3,
+            "streak": 13,
+            "ret10": -16.0,
+            "endDate": "2026-07-28"
+          },
+          {
+            "date": "2026-07-13",
+            "signal": "持有",
+            "rps20": 96.6,
+            "streak": 12,
+            "ret10": -9.0,
+            "endDate": "2026-07-27"
+          },
+          {
+            "date": "2026-07-10",
+            "signal": "持有",
+            "rps20": 95.5,
+            "streak": 11,
+            "ret10": -14.7,
+            "endDate": "2026-07-24"
+          },
+          {
+            "date": "2026-07-09",
+            "signal": "持有",
+            "rps20": 96.6,
+            "streak": 10,
+            "ret10": -18.9,
+            "endDate": "2026-07-23"
+          },
+          {
+            "date": "2026-07-08",
+            "signal": "建仓",
+            "rps20": 95.5,
+            "streak": 9,
+            "ret10": -8.9,
+            "endDate": "2026-07-22"
+          }
+        ]
+      },
+      {
+        "code": "515000",
+        "name": "科技ETF",
+        "theme": "科技",
+        "currentSignal": "回避",
+        "currentRps20": 14.0,
+        "currentStreak": 0,
+        "stats": [
+          {
+            "count": 31,
+            "avgReturn": 2.5,
+            "winRate": 61.3,
+            "best": 19.3,
+            "worst": -11.0,
+            "holdDays": 5
+          },
+          {
+            "count": 31,
+            "avgReturn": 5.2,
+            "winRate": 58.1,
+            "best": 24.7,
+            "worst": -12.2,
+            "holdDays": 10
+          },
+          {
+            "count": 30,
+            "avgReturn": 4.6,
+            "winRate": 70.0,
+            "best": 27.7,
+            "worst": -27.3,
+            "holdDays": 20
+          }
+        ],
+        "recentSignals": [
+          {
+            "date": "2026-07-01",
+            "signal": "持有",
+            "rps20": 92.7,
+            "streak": 28,
+            "ret10": -12.2,
+            "endDate": "2026-07-15"
+          },
+          {
+            "date": "2026-06-30",
+            "signal": "持有",
+            "rps20": 93.8,
+            "streak": 27,
+            "ret10": -11.1,
+            "endDate": "2026-07-14"
+          },
+          {
+            "date": "2026-06-29",
+            "signal": "持有",
+            "rps20": 94.4,
+            "streak": 26,
+            "ret10": -12.2,
+            "endDate": "2026-07-13"
+          },
+          {
+            "date": "2026-06-26",
+            "signal": "持有",
+            "rps20": 93.8,
+            "streak": 25,
+            "ret10": -5.4,
+            "endDate": "2026-07-10"
+          },
+          {
+            "date": "2026-06-25",
+            "signal": "持有",
+            "rps20": 93.3,
+            "streak": 24,
+            "ret10": -3.0,
+            "endDate": "2026-07-09"
+          }
+        ]
+      },
+      {
+        "code": "159652",
+        "name": "有色50ETF",
+        "theme": "有色金属",
+        "currentSignal": "回避",
+        "currentRps20": 13.5,
+        "currentStreak": 0,
+        "stats": [
+          {
+            "count": 44,
+            "avgReturn": -1.6,
+            "winRate": 40.9,
+            "best": 7.8,
+            "worst": -16.9,
+            "holdDays": 5
+          },
+          {
+            "count": 44,
+            "avgReturn": -0.2,
+            "winRate": 54.5,
+            "best": 17.7,
+            "worst": -12.4,
+            "holdDays": 10
+          },
+          {
+            "count": 44,
+            "avgReturn": -1.8,
+            "winRate": 34.1,
+            "best": 22.4,
+            "worst": -15.8,
+            "holdDays": 20
+          }
+        ],
+        "recentSignals": [
+          {
+            "date": "2026-08-28",
+            "signal": "持有",
+            "rps20": 92.7,
+            "streak": 10,
+            "ret10": -7.6,
+            "endDate": "2026-09-11"
+          },
+          {
+            "date": "2026-08-27",
+            "signal": "建仓",
+            "rps20": 94.4,
+            "streak": 9,
+            "ret10": -2.9,
+            "endDate": "2026-09-10"
+          },
+          {
+            "date": "2026-08-26",
+            "signal": "建仓",
+            "rps20": 91.6,
+            "streak": 8,
+            "ret10": -0.7,
+            "endDate": "2026-09-09"
+          },
+          {
+            "date": "2026-08-25",
+            "signal": "建仓",
+            "rps20": 90.4,
+            "streak": 7,
+            "ret10": 0.1,
+            "endDate": "2026-09-08"
+          },
+          {
+            "date": "2026-08-24",
+            "signal": "建仓",
+            "rps20": 91.6,
+            "streak": 6,
+            "ret10": -4.3,
+            "endDate": "2026-09-07"
+          }
+        ]
+      },
+      {
+        "code": "512480",
+        "name": "半导体ETF",
+        "theme": "半导体",
+        "currentSignal": "回避",
+        "currentRps20": 12.9,
+        "currentStreak": 0,
+        "stats": [
+          {
+            "count": 54,
+            "avgReturn": -0.6,
+            "winRate": 48.1,
+            "best": 16.4,
+            "worst": -21.8,
+            "holdDays": 5
+          },
+          {
+            "count": 54,
+            "avgReturn": 0.1,
+            "winRate": 46.3,
+            "best": 34.7,
+            "worst": -24.8,
+            "holdDays": 10
+          },
+          {
+            "count": 54,
+            "avgReturn": 3.8,
+            "winRate": 63.0,
+            "best": 46.8,
+            "worst": -31.0,
+            "holdDays": 20
+          }
+        ],
+        "recentSignals": [
+          {
+            "date": "2026-07-14",
             "signal": "持有",
             "rps20": 96.1,
-            "streak": 16,
-            "ret10": -15.0,
+            "streak": 15,
+            "ret10": -20.4,
+            "endDate": "2026-07-28"
+          },
+          {
+            "date": "2026-07-13",
+            "signal": "持有",
+            "rps20": 97.8,
+            "streak": 14,
+            "ret10": -13.0,
+            "endDate": "2026-07-27"
+          },
+          {
+            "date": "2026-07-10",
+            "signal": "持有",
+            "rps20": 97.2,
+            "streak": 13,
+            "ret10": -18.7,
+            "endDate": "2026-07-24"
+          },
+          {
+            "date": "2026-07-09",
+            "signal": "持有",
+            "rps20": 98.3,
+            "streak": 12,
+            "ret10": -24.8,
+            "endDate": "2026-07-23"
+          },
+          {
+            "date": "2026-07-08",
+            "signal": "持有",
+            "rps20": 97.8,
+            "streak": 11,
+            "ret10": -14.0,
+            "endDate": "2026-07-22"
+          }
+        ]
+      },
+      {
+        "code": "588220",
+        "name": "科创100ETF",
+        "theme": "科创100",
+        "currentSignal": "回避",
+        "currentRps20": 12.4,
+        "currentStreak": 0,
+        "stats": [
+          {
+            "count": 13,
+            "avgReturn": -0.7,
+            "winRate": 38.5,
+            "best": 8.0,
+            "worst": -7.4,
+            "holdDays": 5
+          },
+          {
+            "count": 12,
+            "avgReturn": -6.3,
+            "winRate": 41.7,
+            "best": 7.2,
+            "worst": -22.5,
+            "holdDays": 10
+          },
+          {
+            "count": 12,
+            "avgReturn": -14.1,
+            "winRate": 25.0,
+            "best": 11.6,
+            "worst": -27.9,
+            "holdDays": 20
+          }
+        ],
+        "recentSignals": [
+          {
+            "date": "2026-09-02",
+            "signal": "建仓",
+            "rps20": 91.6,
+            "streak": 3,
+            "ret10": 0.6,
+            "endDate": "2026-09-16"
+          },
+          {
+            "date": "2026-07-07",
+            "signal": "持有",
+            "rps20": 93.8,
+            "streak": 11,
+            "ret10": -15.2,
+            "endDate": "2026-07-21"
+          },
+          {
+            "date": "2026-07-06",
+            "signal": "持有",
+            "rps20": 92.1,
+            "streak": 10,
+            "ret10": -22.5,
+            "endDate": "2026-07-20"
+          },
+          {
+            "date": "2026-07-03",
+            "signal": "建仓",
+            "rps20": 93.3,
+            "streak": 9,
+            "ret10": -20.8,
+            "endDate": "2026-07-17"
+          },
+          {
+            "date": "2026-07-02",
+            "signal": "建仓",
+            "rps20": 93.8,
+            "streak": 8,
+            "ret10": null,
+            "endDate": null
+          }
+        ]
+      },
+      {
+        "code": "560860",
+        "name": "工业有色ETF",
+        "theme": "有色金属",
+        "currentSignal": "回避",
+        "currentRps20": 11.8,
+        "currentStreak": 0,
+        "stats": [
+          {
+            "count": 49,
+            "avgReturn": 0.6,
+            "winRate": 57.1,
+            "best": 17.1,
+            "worst": -16.7,
+            "holdDays": 5
+          },
+          {
+            "count": 49,
+            "avgReturn": 3.0,
+            "winRate": 65.3,
+            "best": 17.8,
+            "worst": -11.1,
+            "holdDays": 10
+          },
+          {
+            "count": 49,
+            "avgReturn": 4.1,
+            "winRate": 69.4,
+            "best": 25.0,
+            "worst": -9.7,
+            "holdDays": 20
+          }
+        ],
+        "recentSignals": [
+          {
+            "date": "2026-08-19",
+            "signal": "建仓",
+            "rps20": 95.5,
+            "streak": 3,
+            "ret10": 0.3,
+            "endDate": "2026-09-02"
+          },
+          {
+            "date": "2026-02-05",
+            "signal": "持有",
+            "rps20": 92.7,
+            "streak": 22,
+            "ret10": 13.8,
+            "endDate": "2026-02-27"
+          },
+          {
+            "date": "2026-02-04",
+            "signal": "持有",
+            "rps20": 92.7,
+            "streak": 21,
+            "ret10": 4.1,
+            "endDate": "2026-02-26"
+          },
+          {
+            "date": "2026-02-03",
+            "signal": "持有",
+            "rps20": 93.8,
+            "streak": 20,
+            "ret10": 6.0,
+            "endDate": "2026-02-25"
+          },
+          {
+            "date": "2026-02-02",
+            "signal": "持有",
+            "rps20": 96.6,
+            "streak": 19,
+            "ret10": 4.4,
+            "endDate": "2026-02-24"
+          }
+        ]
+      },
+      {
+        "code": "516640",
+        "name": "芯片龙头ETF",
+        "theme": "半导体",
+        "currentSignal": "回避",
+        "currentRps20": 11.2,
+        "currentStreak": 0,
+        "stats": [
+          {
+            "count": 48,
+            "avgReturn": -1.4,
+            "winRate": 43.8,
+            "best": 16.8,
+            "worst": -20.8,
+            "holdDays": 5
+          },
+          {
+            "count": 48,
+            "avgReturn": -1.8,
+            "winRate": 41.7,
+            "best": 18.6,
+            "worst": -23.4,
+            "holdDays": 10
+          },
+          {
+            "count": 48,
+            "avgReturn": 1.7,
+            "winRate": 58.3,
+            "best": 44.2,
+            "worst": -30.2,
+            "holdDays": 20
+          }
+        ],
+        "recentSignals": [
+          {
+            "date": "2026-07-14",
+            "signal": "持有",
+            "rps20": 97.2,
+            "streak": 15,
+            "ret10": -19.5,
+            "endDate": "2026-07-28"
+          },
+          {
+            "date": "2026-07-13",
+            "signal": "持有",
+            "rps20": 98.3,
+            "streak": 14,
+            "ret10": -12.4,
+            "endDate": "2026-07-27"
+          },
+          {
+            "date": "2026-07-10",
+            "signal": "持有",
+            "rps20": 97.8,
+            "streak": 13,
+            "ret10": -17.1,
+            "endDate": "2026-07-24"
+          },
+          {
+            "date": "2026-07-09",
+            "signal": "持有",
+            "rps20": 97.8,
+            "streak": 12,
+            "ret10": -23.4,
+            "endDate": "2026-07-23"
+          },
+          {
+            "date": "2026-07-08",
+            "signal": "持有",
+            "rps20": 97.2,
+            "streak": 11,
+            "ret10": -12.0,
+            "endDate": "2026-07-22"
+          }
+        ]
+      },
+      {
+        "code": "588780",
+        "name": "科创芯片设计ETF",
+        "theme": "半导体",
+        "currentSignal": "回避",
+        "currentRps20": 10.7,
+        "currentStreak": 0,
+        "stats": [
+          {
+            "count": 67,
+            "avgReturn": -0.2,
+            "winRate": 44.8,
+            "best": 20.1,
+            "worst": -23.2,
+            "holdDays": 5
+          },
+          {
+            "count": 67,
+            "avgReturn": -1.2,
+            "winRate": 41.8,
+            "best": 30.0,
+            "worst": -25.3,
+            "holdDays": 10
+          },
+          {
+            "count": 66,
+            "avgReturn": -0.1,
+            "winRate": 50.0,
+            "best": 24.7,
+            "worst": -34.1,
+            "holdDays": 20
+          }
+        ],
+        "recentSignals": [
+          {
+            "date": "2026-09-23",
+            "signal": "建仓",
+            "rps20": 96.1,
+            "streak": 3,
+            "ret10": -23.7,
+            "endDate": "2026-10-15"
+          },
+          {
+            "date": "2026-07-13",
+            "signal": "持有",
+            "rps20": 94.4,
+            "streak": 12,
+            "ret10": -14.7,
+            "endDate": "2026-07-27"
+          },
+          {
+            "date": "2026-07-10",
+            "signal": "持有",
+            "rps20": 93.8,
+            "streak": 11,
+            "ret10": -20.5,
+            "endDate": "2026-07-24"
+          },
+          {
+            "date": "2026-07-09",
+            "signal": "持有",
+            "rps20": 95.5,
+            "streak": 10,
+            "ret10": -25.0,
+            "endDate": "2026-07-23"
+          },
+          {
+            "date": "2026-07-08",
+            "signal": "建仓",
+            "rps20": 96.1,
+            "streak": 9,
+            "ret10": -17.0,
+            "endDate": "2026-07-22"
+          }
+        ]
+      },
+      {
+        "code": "512400",
+        "name": "有色金属ETF",
+        "theme": "有色金属",
+        "currentSignal": "回避",
+        "currentRps20": 10.1,
+        "currentStreak": 0,
+        "stats": [
+          {
+            "count": 45,
+            "avgReturn": -0.5,
+            "winRate": 51.1,
+            "best": 12.9,
+            "worst": -17.1,
+            "holdDays": 5
+          },
+          {
+            "count": 45,
+            "avgReturn": 0.9,
+            "winRate": 64.4,
+            "best": 18.1,
+            "worst": -12.3,
+            "holdDays": 10
+          },
+          {
+            "count": 45,
+            "avgReturn": 0.0,
+            "winRate": 42.2,
+            "best": 22.7,
+            "worst": -19.6,
+            "holdDays": 20
+          }
+        ],
+        "recentSignals": [
+          {
+            "date": "2026-08-28",
+            "signal": "建仓",
+            "rps20": 93.3,
+            "streak": 3,
+            "ret10": -11.5,
+            "endDate": "2026-09-11"
+          },
+          {
+            "date": "2026-08-24",
+            "signal": "建仓",
+            "rps20": 91.0,
+            "streak": 6,
+            "ret10": -4.0,
+            "endDate": "2026-09-07"
+          },
+          {
+            "date": "2026-08-21",
+            "signal": "建仓",
+            "rps20": 94.4,
+            "streak": 5,
+            "ret10": -3.2,
+            "endDate": "2026-09-04"
+          },
+          {
+            "date": "2026-08-20",
+            "signal": "建仓",
+            "rps20": 92.7,
+            "streak": 4,
+            "ret10": 1.5,
+            "endDate": "2026-09-03"
+          },
+          {
+            "date": "2026-08-19",
+            "signal": "建仓",
+            "rps20": 98.3,
+            "streak": 3,
+            "ret10": 1.2,
+            "endDate": "2026-09-02"
+          }
+        ]
+      },
+      {
+        "code": "561330",
+        "name": "矿业ETF",
+        "theme": "矿业",
+        "currentSignal": "回避",
+        "currentRps20": 9.6,
+        "currentStreak": 0,
+        "stats": [
+          {
+            "count": 58,
+            "avgReturn": 0.1,
+            "winRate": 51.7,
+            "best": 17.6,
+            "worst": -18.0,
+            "holdDays": 5
+          },
+          {
+            "count": 58,
+            "avgReturn": 1.2,
+            "winRate": 58.6,
+            "best": 20.0,
+            "worst": -13.3,
+            "holdDays": 10
+          },
+          {
+            "count": 58,
+            "avgReturn": 0.4,
+            "winRate": 46.6,
+            "best": 24.7,
+            "worst": -16.7,
+            "holdDays": 20
+          }
+        ],
+        "recentSignals": [
+          {
+            "date": "2026-08-31",
+            "signal": "持有",
+            "rps20": 91.6,
+            "streak": 11,
+            "ret10": -7.4,
+            "endDate": "2026-09-14"
+          },
+          {
+            "date": "2026-08-28",
+            "signal": "持有",
+            "rps20": 97.2,
+            "streak": 10,
+            "ret10": -8.2,
+            "endDate": "2026-09-11"
+          },
+          {
+            "date": "2026-08-27",
+            "signal": "建仓",
+            "rps20": 96.1,
+            "streak": 9,
+            "ret10": -3.6,
+            "endDate": "2026-09-10"
+          },
+          {
+            "date": "2026-08-26",
+            "signal": "建仓",
+            "rps20": 92.7,
+            "streak": 8,
+            "ret10": -1.0,
+            "endDate": "2026-09-09"
+          },
+          {
+            "date": "2026-08-25",
+            "signal": "建仓",
+            "rps20": 92.1,
+            "streak": 7,
+            "ret10": 0.0,
+            "endDate": "2026-09-08"
+          }
+        ]
+      },
+      {
+        "code": "562800",
+        "name": "稀有金属ETF",
+        "theme": "有色金属",
+        "currentSignal": "回避",
+        "currentRps20": 9.0,
+        "currentStreak": 0,
+        "stats": [
+          {
+            "count": 41,
+            "avgReturn": 0.0,
+            "winRate": 56.1,
+            "best": 7.5,
+            "worst": -12.2,
+            "holdDays": 5
+          },
+          {
+            "count": 41,
+            "avgReturn": 3.1,
+            "winRate": 68.3,
+            "best": 13.6,
+            "worst": -13.9,
+            "holdDays": 10
+          },
+          {
+            "count": 41,
+            "avgReturn": 6.2,
+            "winRate": 63.4,
+            "best": 25.2,
+            "worst": -15.7,
+            "holdDays": 20
+          }
+        ],
+        "recentSignals": [
+          {
+            "date": "2026-08-19",
+            "signal": "建仓",
+            "rps20": 96.6,
+            "streak": 3,
+            "ret10": -3.1,
+            "endDate": "2026-09-02"
+          },
+          {
+            "date": "2026-04-22",
+            "signal": "建仓",
+            "rps20": 94.9,
+            "streak": 4,
+            "ret10": 5.7,
+            "endDate": "2026-05-11"
+          },
+          {
+            "date": "2026-04-21",
+            "signal": "建仓",
+            "rps20": 96.6,
+            "streak": 3,
+            "ret10": 4.7,
+            "endDate": "2026-05-08"
+          },
+          {
+            "date": "2026-03-02",
+            "signal": "建仓",
+            "rps20": 94.4,
+            "streak": 4,
+            "ret10": -13.9,
+            "endDate": "2026-03-16"
+          },
+          {
+            "date": "2026-02-27",
+            "signal": "建仓",
+            "rps20": 98.3,
+            "streak": 3,
+            "ret10": -11.3,
+            "endDate": "2026-03-13"
+          }
+        ]
+      },
+      {
+        "code": "159363",
+        "name": "创业板人工智能ETF",
+        "theme": "信息技术",
+        "currentSignal": "回避",
+        "currentRps20": 8.4,
+        "currentStreak": 0,
+        "stats": [
+          {
+            "count": 91,
+            "avgReturn": 2.9,
+            "winRate": 64.8,
+            "best": 20.0,
+            "worst": -12.7,
+            "holdDays": 5
+          },
+          {
+            "count": 91,
+            "avgReturn": 6.2,
+            "winRate": 82.4,
+            "best": 29.5,
+            "worst": -19.2,
+            "holdDays": 10
+          },
+          {
+            "count": 89,
+            "avgReturn": 12.0,
+            "winRate": 85.4,
+            "best": 46.7,
+            "worst": -23.4,
+            "holdDays": 20
+          }
+        ],
+        "recentSignals": [
+          {
+            "date": "2026-09-24",
+            "signal": "建仓",
+            "rps20": 92.1,
+            "streak": 4,
+            "ret10": -19.0,
+            "endDate": "2026-10-19"
+          },
+          {
+            "date": "2026-09-23",
+            "signal": "建仓",
+            "rps20": 96.6,
+            "streak": 3,
+            "ret10": -19.2,
+            "endDate": "2026-10-15"
+          },
+          {
+            "date": "2026-06-23",
+            "signal": "建仓",
+            "rps20": 91.6,
+            "streak": 4,
+            "ret10": -9.5,
+            "endDate": "2026-07-07"
+          },
+          {
+            "date": "2026-06-22",
+            "signal": "建仓",
+            "rps20": 92.7,
+            "streak": 3,
+            "ret10": -11.7,
+            "endDate": "2026-07-06"
+          },
+          {
+            "date": "2026-06-04",
+            "signal": "建仓",
+            "rps20": 91.0,
+            "streak": 3,
+            "ret10": 4.9,
+            "endDate": "2026-06-18"
+          }
+        ]
+      },
+      {
+        "code": "588200",
+        "name": "科创芯片ETF",
+        "theme": "半导体",
+        "currentSignal": "回避",
+        "currentRps20": 7.9,
+        "currentStreak": 0,
+        "stats": [
+          {
+            "count": 69,
+            "avgReturn": 1.8,
+            "winRate": 53.6,
+            "best": 22.2,
+            "worst": -20.9,
+            "holdDays": 5
+          },
+          {
+            "count": 69,
+            "avgReturn": 2.3,
+            "winRate": 53.6,
+            "best": 27.0,
+            "worst": -23.3,
+            "holdDays": 10
+          },
+          {
+            "count": 69,
+            "avgReturn": 4.4,
+            "winRate": 65.2,
+            "best": 46.6,
+            "worst": -72.8,
+            "holdDays": 20
+          }
+        ],
+        "recentSignals": [
+          {
+            "date": "2026-07-14",
+            "signal": "持有",
+            "rps20": 97.8,
+            "streak": 15,
+            "ret10": -19.9,
+            "endDate": "2026-07-28"
+          },
+          {
+            "date": "2026-07-13",
+            "signal": "持有",
+            "rps20": 98.9,
+            "streak": 14,
+            "ret10": -11.6,
+            "endDate": "2026-07-27"
+          },
+          {
+            "date": "2026-07-10",
+            "signal": "持有",
+            "rps20": 98.3,
+            "streak": 13,
+            "ret10": -17.3,
+            "endDate": "2026-07-24"
+          },
+          {
+            "date": "2026-07-09",
+            "signal": "持有",
+            "rps20": 98.9,
+            "streak": 12,
+            "ret10": -23.3,
+            "endDate": "2026-07-23"
+          },
+          {
+            "date": "2026-07-08",
+            "signal": "持有",
+            "rps20": 98.3,
+            "streak": 11,
+            "ret10": -12.8,
+            "endDate": "2026-07-22"
+          }
+        ]
+      },
+      {
+        "code": "159915",
+        "name": "创业板ETF",
+        "theme": "创业板",
+        "currentSignal": "回避",
+        "currentRps20": 7.3,
+        "currentStreak": 0,
+        "stats": [
+          {
+            "count": 5,
+            "avgReturn": 3.0,
+            "winRate": 80.0,
+            "best": 7.6,
+            "worst": -3.8,
+            "holdDays": 5
+          },
+          {
+            "count": 5,
+            "avgReturn": -0.4,
+            "winRate": 40.0,
+            "best": 8.7,
+            "worst": -9.2,
+            "holdDays": 10
+          },
+          {
+            "count": 5,
+            "avgReturn": 2.9,
+            "winRate": 80.0,
+            "best": 6.8,
+            "worst": -1.4,
+            "holdDays": 20
+          }
+        ],
+        "recentSignals": [
+          {
+            "date": "2025-09-25",
+            "signal": "建仓",
+            "rps20": 92.0,
+            "streak": 5,
+            "ret10": -9.2,
+            "endDate": "2025-10-17"
+          },
+          {
+            "date": "2025-09-24",
+            "signal": "建仓",
+            "rps20": 90.8,
+            "streak": 4,
+            "ret10": -4.6,
+            "endDate": "2025-10-16"
+          },
+          {
+            "date": "2025-09-23",
+            "signal": "建仓",
+            "rps20": 90.2,
+            "streak": 3,
+            "ret10": -2.8,
+            "endDate": "2025-10-15"
+          },
+          {
+            "date": "2025-09-09",
+            "signal": "建仓",
+            "rps20": 90.1,
+            "streak": 4,
+            "ret10": 8.7,
+            "endDate": "2025-09-23"
+          },
+          {
+            "date": "2025-09-08",
+            "signal": "建仓",
+            "rps20": 92.4,
+            "streak": 3,
+            "ret10": 6.0,
+            "endDate": "2025-09-22"
+          }
+        ]
+      },
+      {
+        "code": "159995",
+        "name": "芯片ETF",
+        "theme": "半导体",
+        "currentSignal": "回避",
+        "currentRps20": 6.7,
+        "currentStreak": 0,
+        "stats": [
+          {
+            "count": 55,
+            "avgReturn": -1.2,
+            "winRate": 41.8,
+            "best": 17.2,
+            "worst": -20.5,
+            "holdDays": 5
+          },
+          {
+            "count": 55,
+            "avgReturn": -0.2,
+            "winRate": 49.1,
+            "best": 21.7,
+            "worst": -23.1,
+            "holdDays": 10
+          },
+          {
+            "count": 55,
+            "avgReturn": 2.6,
+            "winRate": 60.0,
+            "best": 43.8,
+            "worst": -30.9,
+            "holdDays": 20
+          }
+        ],
+        "recentSignals": [
+          {
+            "date": "2026-07-14",
+            "signal": "持有",
+            "rps20": 96.6,
+            "streak": 15,
+            "ret10": -20.6,
+            "endDate": "2026-07-28"
+          },
+          {
+            "date": "2026-07-13",
+            "signal": "持有",
+            "rps20": 97.2,
+            "streak": 14,
+            "ret10": -12.3,
+            "endDate": "2026-07-27"
+          },
+          {
+            "date": "2026-07-10",
+            "signal": "持有",
+            "rps20": 96.6,
+            "streak": 13,
+            "ret10": -17.3,
+            "endDate": "2026-07-24"
+          },
+          {
+            "date": "2026-07-09",
+            "signal": "持有",
+            "rps20": 97.2,
+            "streak": 12,
+            "ret10": -23.1,
+            "endDate": "2026-07-23"
+          },
+          {
+            "date": "2026-07-08",
+            "signal": "持有",
+            "rps20": 96.6,
+            "streak": 11,
+            "ret10": -12.1,
+            "endDate": "2026-07-22"
+          }
+        ]
+      },
+      {
+        "code": "159732",
+        "name": "消费电子ETF",
+        "theme": "消费",
+        "currentSignal": "回避",
+        "currentRps20": 6.2,
+        "currentStreak": 0,
+        "stats": [
+          {
+            "count": 43,
+            "avgReturn": 3.2,
+            "winRate": 74.4,
+            "best": 19.0,
+            "worst": -12.2,
+            "holdDays": 5
+          },
+          {
+            "count": 43,
+            "avgReturn": 6.0,
+            "winRate": 74.4,
+            "best": 24.7,
+            "worst": -16.2,
+            "holdDays": 10
+          },
+          {
+            "count": 42,
+            "avgReturn": 7.9,
+            "winRate": 85.7,
+            "best": 27.6,
+            "worst": -31.3,
+            "holdDays": 20
+          }
+        ],
+        "recentSignals": [
+          {
+            "date": "2026-07-01",
+            "signal": "建仓",
+            "rps20": 93.3,
+            "streak": 5,
+            "ret10": -16.2,
             "endDate": "2026-07-15"
+          },
+          {
+            "date": "2026-06-30",
+            "signal": "建仓",
+            "rps20": 93.3,
+            "streak": 4,
+            "ret10": -14.9,
+            "endDate": "2026-07-14"
+          },
+          {
+            "date": "2026-06-29",
+            "signal": "建仓",
+            "rps20": 92.7,
+            "streak": 3,
+            "ret10": -14.9,
+            "endDate": "2026-07-13"
+          },
+          {
+            "date": "2026-06-18",
+            "signal": "持有",
+            "rps20": 92.7,
+            "streak": 40,
+            "ret10": 1.4,
+            "endDate": "2026-07-03"
+          },
+          {
+            "date": "2026-06-17",
+            "signal": "持有",
+            "rps20": 94.4,
+            "streak": 39,
+            "ret10": 1.9,
+            "endDate": "2026-07-02"
+          }
+        ]
+      },
+      {
+        "code": "159781",
+        "name": "科创创业ETF",
+        "theme": "科创成长",
+        "currentSignal": "回避",
+        "currentRps20": 5.6,
+        "currentStreak": 0,
+        "stats": [
+          {
+            "count": 52,
+            "avgReturn": 3.0,
+            "winRate": 67.3,
+            "best": 18.0,
+            "worst": -7.1,
+            "holdDays": 5
+          },
+          {
+            "count": 52,
+            "avgReturn": 4.4,
+            "winRate": 80.8,
+            "best": 13.2,
+            "worst": -9.8,
+            "holdDays": 10
+          },
+          {
+            "count": 52,
+            "avgReturn": 9.0,
+            "winRate": 94.2,
+            "best": 27.1,
+            "worst": -2.6,
+            "holdDays": 20
+          }
+        ],
+        "recentSignals": [
+          {
+            "date": "2026-06-09",
+            "signal": "持有",
+            "rps20": 92.7,
+            "streak": 22,
+            "ret10": 9.5,
+            "endDate": "2026-06-24"
+          },
+          {
+            "date": "2026-06-08",
+            "signal": "持有",
+            "rps20": 91.6,
+            "streak": 21,
+            "ret10": 12.0,
+            "endDate": "2026-06-23"
+          },
+          {
+            "date": "2026-06-05",
+            "signal": "持有",
+            "rps20": 95.5,
+            "streak": 20,
+            "ret10": 11.7,
+            "endDate": "2026-06-22"
+          },
+          {
+            "date": "2026-06-04",
+            "signal": "持有",
+            "rps20": 94.9,
+            "streak": 19,
+            "ret10": 5.1,
+            "endDate": "2026-06-18"
+          },
+          {
+            "date": "2026-06-03",
+            "signal": "持有",
+            "rps20": 96.1,
+            "streak": 18,
+            "ret10": 1.2,
+            "endDate": "2026-06-17"
+          }
+        ]
+      },
+      {
+        "code": "159949",
+        "name": "创业板50ETF",
+        "theme": "创业板50",
+        "currentSignal": "回避",
+        "currentRps20": 5.1,
+        "currentStreak": 0,
+        "stats": [
+          {
+            "count": 29,
+            "avgReturn": 2.4,
+            "winRate": 75.9,
+            "best": 10.8,
+            "worst": -10.0,
+            "holdDays": 5
+          },
+          {
+            "count": 29,
+            "avgReturn": 3.7,
+            "winRate": 69.0,
+            "best": 13.8,
+            "worst": -10.0,
+            "holdDays": 10
+          },
+          {
+            "count": 29,
+            "avgReturn": 5.4,
+            "winRate": 75.9,
+            "best": 24.2,
+            "worst": -3.7,
+            "holdDays": 20
+          }
+        ],
+        "recentSignals": [
+          {
+            "date": "2025-09-29",
+            "signal": "持有",
+            "rps20": 92.0,
+            "streak": 23,
+            "ret10": -4.9,
+            "endDate": "2025-10-21"
+          },
+          {
+            "date": "2025-09-26",
+            "signal": "持有",
+            "rps20": 90.8,
+            "streak": 22,
+            "ret10": -5.2,
+            "endDate": "2025-10-20"
+          },
+          {
+            "date": "2025-09-25",
+            "signal": "持有",
+            "rps20": 94.8,
+            "streak": 21,
+            "ret10": -10.0,
+            "endDate": "2025-10-17"
+          },
+          {
+            "date": "2025-09-24",
+            "signal": "持有",
+            "rps20": 93.7,
+            "streak": 20,
+            "ret10": -5.0,
+            "endDate": "2025-10-16"
+          },
+          {
+            "date": "2025-09-23",
+            "signal": "持有",
+            "rps20": 94.3,
+            "streak": 19,
+            "ret10": -3.6,
+            "endDate": "2025-10-15"
+          }
+        ]
+      },
+      {
+        "code": "159667",
+        "name": "工业母机ETF",
+        "theme": "工业母机",
+        "currentSignal": "回避",
+        "currentRps20": 4.5,
+        "currentStreak": 0,
+        "stats": [
+          {
+            "count": 46,
+            "avgReturn": -0.7,
+            "winRate": 43.5,
+            "best": 15.3,
+            "worst": -12.3,
+            "holdDays": 5
+          },
+          {
+            "count": 45,
+            "avgReturn": -2.0,
+            "winRate": 31.1,
+            "best": 15.3,
+            "worst": -17.3,
+            "holdDays": 10
+          },
+          {
+            "count": 45,
+            "avgReturn": -2.7,
+            "winRate": 48.9,
+            "best": 17.1,
+            "worst": -33.8,
+            "holdDays": 20
+          }
+        ],
+        "recentSignals": [
+          {
+            "date": "2026-07-02",
+            "signal": "建仓",
+            "rps20": 90.4,
+            "streak": 4,
+            "ret10": null,
+            "endDate": null
+          },
+          {
+            "date": "2026-07-01",
+            "signal": "建仓",
+            "rps20": 90.4,
+            "streak": 3,
+            "ret10": -17.3,
+            "endDate": "2026-07-15"
+          },
+          {
+            "date": "2026-06-23",
+            "signal": "建仓",
+            "rps20": 93.3,
+            "streak": 6,
+            "ret10": -5.6,
+            "endDate": "2026-07-07"
+          },
+          {
+            "date": "2026-06-22",
+            "signal": "建仓",
+            "rps20": 90.4,
+            "streak": 5,
+            "ret10": -7.2,
+            "endDate": "2026-07-06"
+          },
+          {
+            "date": "2026-06-18",
+            "signal": "建仓",
+            "rps20": 91.6,
+            "streak": 4,
+            "ret10": -1.9,
+            "endDate": "2026-07-03"
+          }
+        ]
+      },
+      {
+        "code": "513310",
+        "name": "中韩半导体ETF",
+        "theme": "半导体",
+        "currentSignal": "回避",
+        "currentRps20": 3.9,
+        "currentStreak": 0,
+        "stats": [
+          {
+            "count": 102,
+            "avgReturn": 1.0,
+            "winRate": 53.9,
+            "best": 22.6,
+            "worst": -22.3,
+            "holdDays": 5
+          },
+          {
+            "count": 102,
+            "avgReturn": 2.0,
+            "winRate": 54.9,
+            "best": 36.5,
+            "worst": -25.2,
+            "holdDays": 10
+          },
+          {
+            "count": 101,
+            "avgReturn": 3.7,
+            "winRate": 62.4,
+            "best": 36.8,
+            "worst": -30.2,
+            "holdDays": 20
+          }
+        ],
+        "recentSignals": [
+          {
+            "date": "2026-07-13",
+            "signal": "持有",
+            "rps20": 92.1,
+            "streak": 21,
+            "ret10": -7.2,
+            "endDate": "2026-07-27"
+          },
+          {
+            "date": "2026-07-10",
+            "signal": "持有",
+            "rps20": 94.9,
+            "streak": 20,
+            "ret10": -15.1,
+            "endDate": "2026-07-24"
+          },
+          {
+            "date": "2026-07-09",
+            "signal": "持有",
+            "rps20": 96.1,
+            "streak": 19,
+            "ret10": -15.5,
+            "endDate": "2026-07-23"
+          },
+          {
+            "date": "2026-07-08",
+            "signal": "持有",
+            "rps20": 94.4,
+            "streak": 18,
+            "ret10": -13.5,
+            "endDate": "2026-07-22"
+          },
+          {
+            "date": "2026-07-07",
+            "signal": "持有",
+            "rps20": 98.9,
+            "streak": 17,
+            "ret10": -15.7,
+            "endDate": "2026-07-21"
           }
         ]
       },
@@ -60862,9 +60991,9 @@ window.COCKPIT_DATA = {
             "holdDays": 5
           },
           {
-            "count": 114,
-            "avgReturn": 6.3,
-            "winRate": 86.0,
+            "count": 115,
+            "avgReturn": 6.0,
+            "winRate": 85.2,
             "best": 33.8,
             "worst": -23.9,
             "holdDays": 10
@@ -60884,8 +61013,8 @@ window.COCKPIT_DATA = {
             "signal": "建仓",
             "rps20": 90.4,
             "streak": 7,
-            "ret10": null,
-            "endDate": null
+            "ret10": -22.1,
+            "endDate": "2026-10-19"
           },
           {
             "date": "2026-09-23",
@@ -60998,230 +61127,78 @@ window.COCKPIT_DATA = {
         ]
       },
       {
-        "code": "513310",
-        "name": "中韩半导体ETF",
-        "theme": "半导体",
+        "code": "588020",
+        "name": "科创成长ETF",
+        "theme": "科创成长",
         "currentSignal": "回避",
         "currentRps20": 2.2,
         "currentStreak": 0,
         "stats": [
           {
-            "count": 102,
-            "avgReturn": 1.0,
-            "winRate": 53.9,
-            "best": 22.6,
-            "worst": -22.3,
+            "count": 55,
+            "avgReturn": 2.5,
+            "winRate": 63.6,
+            "best": 21.1,
+            "worst": -11.6,
             "holdDays": 5
           },
           {
-            "count": 102,
-            "avgReturn": 2.0,
-            "winRate": 54.9,
-            "best": 36.5,
-            "worst": -25.2,
+            "count": 54,
+            "avgReturn": 3.0,
+            "winRate": 59.3,
+            "best": 27.7,
+            "worst": -26.9,
             "holdDays": 10
           },
           {
-            "count": 101,
-            "avgReturn": 3.7,
-            "winRate": 62.4,
-            "best": 36.8,
-            "worst": -30.2,
+            "count": 53,
+            "avgReturn": 3.3,
+            "winRate": 73.6,
+            "best": 25.9,
+            "worst": -36.9,
             "holdDays": 20
           }
         ],
         "recentSignals": [
-          {
-            "date": "2026-07-13",
-            "signal": "持有",
-            "rps20": 92.1,
-            "streak": 21,
-            "ret10": -7.2,
-            "endDate": "2026-07-27"
-          },
-          {
-            "date": "2026-07-10",
-            "signal": "持有",
-            "rps20": 94.9,
-            "streak": 20,
-            "ret10": -15.1,
-            "endDate": "2026-07-24"
-          },
-          {
-            "date": "2026-07-09",
-            "signal": "持有",
-            "rps20": 96.1,
-            "streak": 19,
-            "ret10": -15.5,
-            "endDate": "2026-07-23"
-          },
-          {
-            "date": "2026-07-08",
-            "signal": "持有",
-            "rps20": 94.4,
-            "streak": 18,
-            "ret10": -13.5,
-            "endDate": "2026-07-22"
-          },
           {
             "date": "2026-07-07",
             "signal": "持有",
-            "rps20": 98.9,
-            "streak": 17,
-            "ret10": -15.7,
+            "rps20": 93.3,
+            "streak": 20,
+            "ret10": -17.8,
             "endDate": "2026-07-21"
-          }
-        ]
-      },
-      {
-        "code": "159667",
-        "name": "工业母机ETF",
-        "theme": "工业母机",
-        "currentSignal": "回避",
-        "currentRps20": 1.7,
-        "currentStreak": 0,
-        "stats": [
-          {
-            "count": 46,
-            "avgReturn": -0.7,
-            "winRate": 43.5,
-            "best": 15.3,
-            "worst": -12.3,
-            "holdDays": 5
           },
           {
-            "count": 45,
-            "avgReturn": -2.0,
-            "winRate": 31.1,
-            "best": 15.3,
-            "worst": -17.3,
-            "holdDays": 10
+            "date": "2026-07-06",
+            "signal": "持有",
+            "rps20": 93.3,
+            "streak": 19,
+            "ret10": -26.9,
+            "endDate": "2026-07-20"
           },
           {
-            "count": 45,
-            "avgReturn": -2.7,
-            "winRate": 48.9,
-            "best": 17.1,
-            "worst": -33.8,
-            "holdDays": 20
-          }
-        ],
-        "recentSignals": [
+            "date": "2026-07-03",
+            "signal": "持有",
+            "rps20": 94.9,
+            "streak": 18,
+            "ret10": -23.2,
+            "endDate": "2026-07-17"
+          },
           {
             "date": "2026-07-02",
-            "signal": "建仓",
-            "rps20": 90.4,
-            "streak": 4,
+            "signal": "持有",
+            "rps20": 93.3,
+            "streak": 17,
             "ret10": null,
             "endDate": null
           },
           {
             "date": "2026-07-01",
-            "signal": "建仓",
-            "rps20": 90.4,
-            "streak": 3,
-            "ret10": -17.3,
-            "endDate": "2026-07-15"
-          },
-          {
-            "date": "2026-06-23",
-            "signal": "建仓",
-            "rps20": 93.3,
-            "streak": 6,
-            "ret10": -5.6,
-            "endDate": "2026-07-07"
-          },
-          {
-            "date": "2026-06-22",
-            "signal": "建仓",
-            "rps20": 90.4,
-            "streak": 5,
-            "ret10": -7.2,
-            "endDate": "2026-07-06"
-          },
-          {
-            "date": "2026-06-18",
-            "signal": "建仓",
-            "rps20": 91.6,
-            "streak": 4,
-            "ret10": -1.9,
-            "endDate": "2026-07-03"
-          }
-        ]
-      },
-      {
-        "code": "515050",
-        "name": "5G通信ETF",
-        "theme": "通信",
-        "currentSignal": "回避",
-        "currentRps20": 1.1,
-        "currentStreak": 0,
-        "stats": [
-          {
-            "count": 126,
-            "avgReturn": 3.9,
-            "winRate": 77.0,
-            "best": 19.4,
-            "worst": -15.1,
-            "holdDays": 5
-          },
-          {
-            "count": 126,
-            "avgReturn": 6.8,
-            "winRate": 88.1,
-            "best": 29.1,
-            "worst": -24.2,
-            "holdDays": 10
-          },
-          {
-            "count": 124,
-            "avgReturn": 12.4,
-            "winRate": 87.1,
-            "best": 47.5,
-            "worst": -27.6,
-            "holdDays": 20
-          }
-        ],
-        "recentSignals": [
-          {
-            "date": "2026-09-23",
-            "signal": "建仓",
-            "rps20": 93.3,
-            "streak": 3,
-            "ret10": -24.2,
-            "endDate": "2026-10-15"
-          },
-          {
-            "date": "2026-06-26",
-            "signal": "持有",
-            "rps20": 91.0,
-            "streak": 22,
-            "ret10": -10.0,
-            "endDate": "2026-07-10"
-          },
-          {
-            "date": "2026-06-25",
-            "signal": "持有",
-            "rps20": 94.4,
-            "streak": 21,
-            "ret10": -10.9,
-            "endDate": "2026-07-09"
-          },
-          {
-            "date": "2026-06-24",
             "signal": "持有",
             "rps20": 96.1,
-            "streak": 20,
-            "ret10": -14.2,
-            "endDate": "2026-07-08"
-          },
-          {
-            "date": "2026-06-23",
-            "signal": "持有",
-            "rps20": 95.5,
-            "streak": 19,
-            "ret10": -10.7,
-            "endDate": "2026-07-07"
+            "streak": 16,
+            "ret10": -15.0,
+            "endDate": "2026-07-15"
           }
         ]
       },
@@ -61230,7 +61207,7 @@ window.COCKPIT_DATA = {
         "name": "通信ETF",
         "theme": "通信",
         "currentSignal": "回避",
-        "currentRps20": 0.6,
+        "currentRps20": 1.7,
         "currentStreak": 0,
         "stats": [
           {
@@ -61300,6 +61277,158 @@ window.COCKPIT_DATA = {
             "endDate": "2026-07-09"
           }
         ]
+      },
+      {
+        "code": "159967",
+        "name": "创业板成长ETF",
+        "theme": "科创成长",
+        "currentSignal": "回避",
+        "currentRps20": 1.1,
+        "currentStreak": 0,
+        "stats": [
+          {
+            "count": 63,
+            "avgReturn": 2.2,
+            "winRate": 55.6,
+            "best": 14.9,
+            "worst": -11.5,
+            "holdDays": 5
+          },
+          {
+            "count": 63,
+            "avgReturn": 5.0,
+            "winRate": 77.8,
+            "best": 20.0,
+            "worst": -12.3,
+            "holdDays": 10
+          },
+          {
+            "count": 62,
+            "avgReturn": 7.6,
+            "winRate": 72.6,
+            "best": 27.4,
+            "worst": -26.7,
+            "holdDays": 20
+          }
+        ],
+        "recentSignals": [
+          {
+            "date": "2026-06-25",
+            "signal": "建仓",
+            "rps20": 92.1,
+            "streak": 8,
+            "ret10": -10.7,
+            "endDate": "2026-07-09"
+          },
+          {
+            "date": "2026-06-24",
+            "signal": "建仓",
+            "rps20": 91.6,
+            "streak": 7,
+            "ret10": -12.3,
+            "endDate": "2026-07-08"
+          },
+          {
+            "date": "2026-06-23",
+            "signal": "建仓",
+            "rps20": 94.9,
+            "streak": 6,
+            "ret10": -8.0,
+            "endDate": "2026-07-07"
+          },
+          {
+            "date": "2026-06-22",
+            "signal": "建仓",
+            "rps20": 94.9,
+            "streak": 5,
+            "ret10": -11.2,
+            "endDate": "2026-07-06"
+          },
+          {
+            "date": "2026-06-18",
+            "signal": "建仓",
+            "rps20": 96.1,
+            "streak": 4,
+            "ret10": -6.4,
+            "endDate": "2026-07-03"
+          }
+        ]
+      },
+      {
+        "code": "515050",
+        "name": "5G通信ETF",
+        "theme": "通信",
+        "currentSignal": "回避",
+        "currentRps20": 0.6,
+        "currentStreak": 0,
+        "stats": [
+          {
+            "count": 126,
+            "avgReturn": 3.9,
+            "winRate": 77.0,
+            "best": 19.4,
+            "worst": -15.1,
+            "holdDays": 5
+          },
+          {
+            "count": 126,
+            "avgReturn": 6.8,
+            "winRate": 88.1,
+            "best": 29.1,
+            "worst": -24.2,
+            "holdDays": 10
+          },
+          {
+            "count": 124,
+            "avgReturn": 12.4,
+            "winRate": 87.1,
+            "best": 47.5,
+            "worst": -27.6,
+            "holdDays": 20
+          }
+        ],
+        "recentSignals": [
+          {
+            "date": "2026-09-23",
+            "signal": "建仓",
+            "rps20": 93.3,
+            "streak": 3,
+            "ret10": -24.2,
+            "endDate": "2026-10-15"
+          },
+          {
+            "date": "2026-06-26",
+            "signal": "持有",
+            "rps20": 91.0,
+            "streak": 22,
+            "ret10": -10.0,
+            "endDate": "2026-07-10"
+          },
+          {
+            "date": "2026-06-25",
+            "signal": "持有",
+            "rps20": 94.4,
+            "streak": 21,
+            "ret10": -10.9,
+            "endDate": "2026-07-09"
+          },
+          {
+            "date": "2026-06-24",
+            "signal": "持有",
+            "rps20": 96.1,
+            "streak": 20,
+            "ret10": -14.2,
+            "endDate": "2026-07-08"
+          },
+          {
+            "date": "2026-06-23",
+            "signal": "持有",
+            "rps20": 95.5,
+            "streak": 19,
+            "ret10": -10.7,
+            "endDate": "2026-07-07"
+          }
+        ]
       }
     ],
     "insights": {
@@ -61316,8 +61445,8 @@ window.COCKPIT_DATA = {
           "name": "纳指ETF",
           "theme": "纳指",
           "currentSignal": "持有",
-          "rps20": 97.2,
-          "streak": 11,
+          "rps20": 97.8,
+          "streak": 12,
           "avg20": 3.9,
           "win20": 100.0,
           "count20": 18,
@@ -61329,7 +61458,7 @@ window.COCKPIT_DATA = {
           "theme": "纳指科技",
           "currentSignal": "持有",
           "rps20": 100.0,
-          "streak": 14,
+          "streak": 15,
           "avg20": 4.8,
           "win20": 76.5,
           "count20": 34,
@@ -61339,9 +61468,9 @@ window.COCKPIT_DATA = {
           "code": "513850",
           "name": "美国50ETF",
           "theme": "美国50",
-          "currentSignal": "建仓",
-          "rps20": 96.6,
-          "streak": 9,
+          "currentSignal": "持有",
+          "rps20": 98.9,
+          "streak": 10,
           "avg20": 3.4,
           "win20": 100.0,
           "count20": 9,
@@ -61352,20 +61481,20 @@ window.COCKPIT_DATA = {
           "name": "能源化工ETF",
           "theme": "能源化工",
           "currentSignal": "持有",
-          "rps20": 99.4,
-          "streak": 27,
+          "rps20": 94.4,
+          "streak": 28,
           "avg20": 2.8,
-          "win20": 51.7,
-          "count20": 29,
-          "score": 7.1
+          "win20": 53.3,
+          "count20": 30,
+          "score": 7.3
         },
         {
           "code": "515300",
           "name": "300红利低波ETF",
           "theme": "红利",
           "currentSignal": "建仓",
-          "rps20": 98.3,
-          "streak": 6,
+          "rps20": 96.6,
+          "streak": 7,
           "avg20": 0.4,
           "win20": 50.0,
           "count20": 12,
@@ -61377,11 +61506,11 @@ window.COCKPIT_DATA = {
           "theme": "银行",
           "currentSignal": "建仓",
           "rps20": 96.1,
-          "streak": 6,
-          "avg20": -0.6,
-          "win20": 38.9,
-          "count20": 18,
-          "score": 3.4
+          "streak": 7,
+          "avg20": -0.4,
+          "win20": 42.1,
+          "count20": 19,
+          "score": 3.9
         }
       ],
       "notes": [
@@ -61397,17 +61526,32 @@ window.COCKPIT_DATA = {
     "watch": [
       {
         "label": "潜伏观察",
-        "code": "159869",
-        "name": "游戏ETF",
-        "theme": "游戏",
-        "rps3": 75.3,
-        "rps5": 97.8,
+        "code": "159227",
+        "name": "航空航天ETF",
+        "theme": "军工",
+        "rps3": 97.8,
+        "rps5": 98.3,
+        "rps10": 73.6,
+        "rps20": 52.8,
+        "ret3": 2.2,
+        "ret5": 3.5,
+        "ret10": -0.9,
+        "score": 80.4,
+        "reason": "短中周期先转强，RPS 20 还没跟上"
+      },
+      {
+        "label": "潜伏观察",
+        "code": "563380",
+        "name": "航空航天ETF",
+        "theme": "军工",
+        "rps3": 92.7,
+        "rps5": 95.5,
         "rps10": 72.5,
-        "rps20": 55.6,
-        "ret3": -1.3,
+        "rps20": 54.5,
+        "ret3": 1.4,
         "ret5": 2.5,
-        "ret10": -3.1,
-        "score": 75.1,
+        "ret10": -1.2,
+        "score": 77.9,
         "reason": "短中周期先转强，RPS 20 还没跟上"
       }
     ],
@@ -61417,59 +61561,14 @@ window.COCKPIT_DATA = {
         "code": "159529",
         "name": "标普消费ETF",
         "theme": "消费",
-        "rps3": 99.4,
-        "rps5": 99.4,
-        "rps10": 97.2,
-        "rps20": 98.9,
-        "ret3": 1.1,
-        "ret5": 4.8,
-        "ret10": 3.3,
-        "score": 98.8,
-        "reason": "RPS 3/5/10 多周期共振，短线强度已确认"
-      },
-      {
-        "label": "确认介入",
-        "code": "515300",
-        "name": "300红利低波ETF",
-        "theme": "红利",
-        "rps3": 97.2,
-        "rps5": 95.5,
-        "rps10": 98.9,
-        "rps20": 98.3,
-        "ret3": 0.3,
-        "ret5": 1.6,
-        "ret10": 4.5,
-        "score": 97.3,
-        "reason": "RPS 3/5/10 多周期共振，短线强度已确认"
-      },
-      {
-        "label": "确认介入",
-        "code": "515450",
-        "name": "红利低波50ETF",
-        "theme": "红利",
-        "rps3": 97.8,
-        "rps5": 94.9,
-        "rps10": 98.3,
-        "rps20": 97.8,
-        "ret3": 0.4,
-        "ret5": 1.5,
-        "ret10": 4.3,
-        "score": 97.1,
-        "reason": "RPS 3/5/10 多周期共振，短线强度已确认"
-      },
-      {
-        "label": "确认介入",
-        "code": "159518",
-        "name": "标普油气ETF",
-        "theme": "能源化工",
         "rps3": 100.0,
-        "rps5": 88.2,
+        "rps5": 100.0,
         "rps10": 100.0,
-        "rps20": 93.8,
-        "ret3": 3.0,
-        "ret5": 0.8,
-        "ret10": 9.3,
-        "score": 95.5,
+        "rps20": 99.4,
+        "ret3": 7.7,
+        "ret5": 7.5,
+        "ret10": 10.5,
+        "score": 99.9,
         "reason": "RPS 3/5/10 多周期共振，短线强度已确认"
       },
       {
@@ -61477,29 +61576,74 @@ window.COCKPIT_DATA = {
         "code": "560080",
         "name": "中药ETF",
         "theme": "医药",
-        "rps3": 96.1,
-        "rps5": 96.6,
-        "rps10": 93.3,
-        "rps20": 92.4,
-        "ret3": 0.2,
-        "ret5": 2.1,
-        "ret10": 1.7,
-        "score": 95.0,
+        "rps3": 98.9,
+        "rps5": 94.9,
+        "rps10": 98.9,
+        "rps20": 98.3,
+        "ret3": 3.2,
+        "ret5": 2.4,
+        "ret10": 6.3,
+        "score": 97.6,
         "reason": "RPS 3/5/10 多周期共振，短线强度已确认"
       },
       {
         "label": "确认介入",
-        "code": "515100",
-        "name": "红利低波100ETF",
+        "code": "159518",
+        "name": "标普油气ETF",
+        "theme": "能源化工",
+        "rps3": 97.2,
+        "rps5": 97.8,
+        "rps10": 99.4,
+        "rps20": 89.9,
+        "ret3": 2.1,
+        "ret5": 3.2,
+        "ret10": 8.3,
+        "score": 96.8,
+        "reason": "RPS 3/5/10 多周期共振，短线强度已确认"
+      },
+      {
+        "label": "确认介入",
+        "code": "515450",
+        "name": "红利低波50ETF",
         "theme": "红利",
-        "rps3": 92.7,
-        "rps5": 92.7,
+        "rps3": 94.9,
+        "rps5": 96.6,
+        "rps10": 97.8,
+        "rps20": 97.2,
+        "ret3": 1.8,
+        "ret5": 3.0,
+        "ret10": 5.2,
+        "score": 96.5,
+        "reason": "RPS 3/5/10 多周期共振，短线强度已确认"
+      },
+      {
+        "label": "确认介入",
+        "code": "515300",
+        "name": "300红利低波ETF",
+        "theme": "红利",
+        "rps3": 94.4,
+        "rps5": 96.1,
+        "rps10": 98.3,
+        "rps20": 96.6,
+        "ret3": 1.8,
+        "ret5": 2.6,
+        "ret10": 5.2,
+        "score": 96.2,
+        "reason": "RPS 3/5/10 多周期共振，短线强度已确认"
+      },
+      {
+        "label": "确认介入",
+        "code": "512800",
+        "name": "银行ETF",
+        "theme": "银行",
+        "rps3": 93.8,
+        "rps5": 97.2,
         "rps10": 96.1,
-        "rps20": 94.9,
-        "ret3": -0.2,
-        "ret5": 1.2,
-        "ret10": 3.0,
-        "score": 93.9,
+        "rps20": 96.1,
+        "ret3": 1.5,
+        "ret5": 3.2,
+        "ret10": 4.5,
+        "score": 95.7,
         "reason": "RPS 3/5/10 多周期共振，短线强度已确认"
       }
     ]
@@ -61510,16 +61654,16 @@ window.COCKPIT_DATA = {
       "name": "能源化工ETF",
       "code": "159981",
       "theme": "能源化工",
-      "rank": 2,
-      "rps20": 99.4,
-      "streak": 27,
-      "top10Streak": 26,
-      "trendScore": 3978.0,
+      "rank": 11,
+      "rps20": 94.4,
+      "streak": 28,
+      "top10Streak": 0,
+      "trendScore": 2643.0,
       "phase": "主升浪",
-      "phaseNote": "连续强势：27 天",
+      "phaseNote": "连续强势：28 天",
       "signal": "持有",
       "signalNote": "连续强势超过 10 天，趋势质量高",
-      "ret20": 4.3
+      "ret20": 2.3
     },
     {
       "name": "纳指科技ETF",
@@ -61527,59 +61671,59 @@ window.COCKPIT_DATA = {
       "theme": "纳指科技",
       "rank": 1,
       "rps20": 100.0,
-      "streak": 14,
-      "top10Streak": 14,
-      "trendScore": 2100.0,
+      "streak": 15,
+      "top10Streak": 15,
+      "trendScore": 2250.0,
       "phase": "主升浪",
-      "phaseNote": "连续强势：14 天",
+      "phaseNote": "连续强势：15 天",
       "signal": "持有",
       "signalNote": "连续强势超过 10 天，趋势质量高",
-      "ret20": 11.0
+      "ret20": 13.2
     },
     {
       "name": "纳指ETF",
       "code": "159941",
       "theme": "纳指",
-      "rank": 6,
-      "rps20": 97.2,
-      "streak": 11,
-      "top10Streak": 6,
-      "trendScore": 1361.0,
+      "rank": 5,
+      "rps20": 97.8,
+      "streak": 12,
+      "top10Streak": 7,
+      "trendScore": 1515.0,
       "phase": "主升浪",
-      "phaseNote": "连续强势：11 天",
+      "phaseNote": "连续强势：12 天",
       "signal": "持有",
       "signalNote": "连续强势超过 10 天，趋势质量高",
-      "ret20": 2.9
+      "ret20": 4.4
     },
     {
       "name": "美国50ETF",
       "code": "513850",
       "theme": "美国50",
-      "rank": 7,
-      "rps20": 96.6,
-      "streak": 9,
-      "top10Streak": 6,
-      "trendScore": 1160.0,
-      "phase": "启动期",
-      "phaseNote": "连续强势：9 天",
-      "signal": "建仓",
-      "signalNote": "连续强势超过 3 天，进入启动观察",
-      "ret20": 2.5
+      "rank": 3,
+      "rps20": 98.9,
+      "streak": 10,
+      "top10Streak": 7,
+      "trendScore": 1335.0,
+      "phase": "主升浪",
+      "phaseNote": "连续强势：10 天",
+      "signal": "持有",
+      "signalNote": "连续强势超过 10 天，趋势质量高",
+      "ret20": 4.6
     },
     {
       "name": "300红利低波ETF",
       "code": "515300",
       "theme": "红利",
-      "rank": 4,
-      "rps20": 98.3,
-      "streak": 6,
-      "top10Streak": 4,
-      "trendScore": 787.0,
+      "rank": 7,
+      "rps20": 96.6,
+      "streak": 7,
+      "top10Streak": 5,
+      "trendScore": 918.0,
       "phase": "启动期",
-      "phaseNote": "连续强势：6 天",
+      "phaseNote": "连续强势：7 天",
       "signal": "建仓",
       "signalNote": "连续强势超过 3 天，进入启动观察",
-      "ret20": 3.1
+      "ret20": 3.7
     },
     {
       "name": "银行ETF",
@@ -61587,56 +61731,56 @@ window.COCKPIT_DATA = {
       "theme": "银行",
       "rank": 8,
       "rps20": 96.1,
-      "streak": 6,
-      "top10Streak": 4,
-      "trendScore": 769.0,
+      "streak": 7,
+      "top10Streak": 5,
+      "trendScore": 913.0,
       "phase": "启动期",
-      "phaseNote": "连续强势：6 天",
+      "phaseNote": "连续强势：7 天",
       "signal": "建仓",
       "signalNote": "连续强势超过 3 天，进入启动观察",
-      "ret20": 2.5
+      "ret20": 2.8
     },
     {
       "name": "银行AH优选ETF",
       "code": "517900",
       "theme": "银行",
-      "rank": 9,
-      "rps20": 95.5,
-      "streak": 6,
-      "top10Streak": 1,
-      "trendScore": 621.0,
-      "phase": "启动期",
-      "phaseNote": "连续强势：6 天",
-      "signal": "建仓",
-      "signalNote": "连续强势超过 3 天，进入启动观察",
-      "ret20": 2.0
-    },
-    {
-      "name": "标普500ETF",
-      "code": "513500",
-      "theme": "标普500",
       "rank": 17,
       "rps20": 91.0,
-      "streak": 6,
+      "streak": 7,
       "top10Streak": 0,
-      "trendScore": 546.0,
+      "trendScore": 637.0,
       "phase": "启动期",
-      "phaseNote": "连续强势：6 天",
+      "phaseNote": "连续强势：7 天",
       "signal": "建仓",
       "signalNote": "连续强势超过 3 天，进入启动观察",
-      "ret20": -0.9
+      "ret20": 1.0
+    },
+    {
+      "name": "红利低波50ETF",
+      "code": "515450",
+      "theme": "红利",
+      "rank": 6,
+      "rps20": 97.2,
+      "streak": 5,
+      "top10Streak": 3,
+      "trendScore": 632.0,
+      "phase": "启动期",
+      "phaseNote": "连续强势：5 天",
+      "signal": "建仓",
+      "signalNote": "连续强势超过 3 天，进入启动观察",
+      "ret20": 4.1
     }
   ],
   "lifecycle": [
     {
       "name": "能源化工ETF",
       "theme": "能源化工",
-      "rank": 2,
-      "streak": 27,
-      "top10Streak": 26,
-      "rps20": 99.4,
+      "rank": 11,
+      "streak": 28,
+      "top10Streak": 0,
+      "rps20": 94.4,
       "phase": "主升浪",
-      "phaseNote": "连续强势：27 天",
+      "phaseNote": "连续强势：28 天",
       "signal": "持有",
       "signalNote": "连续强势超过 10 天，趋势质量高"
     },
@@ -61644,47 +61788,47 @@ window.COCKPIT_DATA = {
       "name": "纳指科技ETF",
       "theme": "纳指科技",
       "rank": 1,
-      "streak": 14,
-      "top10Streak": 14,
+      "streak": 15,
+      "top10Streak": 15,
       "rps20": 100.0,
       "phase": "主升浪",
-      "phaseNote": "连续强势：14 天",
+      "phaseNote": "连续强势：15 天",
       "signal": "持有",
       "signalNote": "连续强势超过 10 天，趋势质量高"
     },
     {
       "name": "纳指ETF",
       "theme": "纳指",
-      "rank": 6,
-      "streak": 11,
-      "top10Streak": 6,
-      "rps20": 97.2,
+      "rank": 5,
+      "streak": 12,
+      "top10Streak": 7,
+      "rps20": 97.8,
       "phase": "主升浪",
-      "phaseNote": "连续强势：11 天",
+      "phaseNote": "连续强势：12 天",
       "signal": "持有",
       "signalNote": "连续强势超过 10 天，趋势质量高"
     },
     {
       "name": "美国50ETF",
       "theme": "美国50",
-      "rank": 7,
-      "streak": 9,
-      "top10Streak": 6,
-      "rps20": 96.6,
-      "phase": "启动期",
-      "phaseNote": "连续强势：9 天",
-      "signal": "建仓",
-      "signalNote": "连续强势超过 3 天，进入启动观察"
+      "rank": 3,
+      "streak": 10,
+      "top10Streak": 7,
+      "rps20": 98.9,
+      "phase": "主升浪",
+      "phaseNote": "连续强势：10 天",
+      "signal": "持有",
+      "signalNote": "连续强势超过 10 天，趋势质量高"
     },
     {
       "name": "300红利低波ETF",
       "theme": "红利",
-      "rank": 4,
-      "streak": 6,
-      "top10Streak": 4,
-      "rps20": 98.3,
+      "rank": 7,
+      "streak": 7,
+      "top10Streak": 5,
+      "rps20": 96.6,
       "phase": "启动期",
-      "phaseNote": "连续强势：6 天",
+      "phaseNote": "连续强势：7 天",
       "signal": "建仓",
       "signalNote": "连续强势超过 3 天，进入启动观察"
     },
@@ -61692,40 +61836,40 @@ window.COCKPIT_DATA = {
       "name": "银行ETF",
       "theme": "银行",
       "rank": 8,
-      "streak": 6,
-      "top10Streak": 4,
+      "streak": 7,
+      "top10Streak": 5,
       "rps20": 96.1,
       "phase": "启动期",
-      "phaseNote": "连续强势：6 天",
+      "phaseNote": "连续强势：7 天",
       "signal": "建仓",
       "signalNote": "连续强势超过 3 天，进入启动观察"
     },
     {
       "name": "银行AH优选ETF",
       "theme": "银行",
-      "rank": 9,
-      "streak": 6,
-      "top10Streak": 1,
-      "rps20": 95.5,
-      "phase": "启动期",
-      "phaseNote": "连续强势：6 天",
-      "signal": "建仓",
-      "signalNote": "连续强势超过 3 天，进入启动观察"
-    },
-    {
-      "name": "标普500ETF",
-      "theme": "标普500",
       "rank": 17,
-      "streak": 6,
+      "streak": 7,
       "top10Streak": 0,
       "rps20": 91.0,
       "phase": "启动期",
-      "phaseNote": "连续强势：6 天",
+      "phaseNote": "连续强势：7 天",
       "signal": "建仓",
       "signalNote": "连续强势超过 3 天，进入启动观察"
     },
     {
-      "name": "通信ETF",
+      "name": "红利低波50ETF",
+      "theme": "红利",
+      "rank": 6,
+      "streak": 5,
+      "top10Streak": 3,
+      "rps20": 97.2,
+      "phase": "启动期",
+      "phaseNote": "连续强势：5 天",
+      "signal": "建仓",
+      "signalNote": "连续强势超过 3 天，进入启动观察"
+    },
+    {
+      "name": "5G通信ETF",
       "theme": "通信",
       "rank": 178,
       "streak": 0,
@@ -61737,8 +61881,8 @@ window.COCKPIT_DATA = {
       "signalNote": "RPS 20=0.6，强势天数=0 天"
     },
     {
-      "name": "5G通信ETF",
-      "theme": "通信",
+      "name": "创业板成长ETF",
+      "theme": "科创成长",
       "rank": 177,
       "streak": 0,
       "top10Streak": 0,
@@ -61757,58 +61901,58 @@ window.COCKPIT_DATA = {
       "width": 100
     },
     {
-      "theme": "能源化工",
-      "count": 3,
-      "avgRps20": 69.1,
-      "width": 99
-    },
-    {
       "theme": "消费",
       "count": 5,
-      "avgRps20": 69.9,
+      "avgRps20": 74.8,
       "width": 99
     },
     {
-      "theme": "红利",
-      "count": 12,
-      "avgRps20": 85.5,
+      "theme": "美国50",
+      "count": 1,
+      "avgRps20": 98.9,
+      "width": 99
+    },
+    {
+      "theme": "医药",
+      "count": 20,
+      "avgRps20": 75.6,
       "width": 98
     },
     {
       "theme": "纳指",
       "count": 1,
-      "avgRps20": 97.2,
-      "width": 97
+      "avgRps20": 97.8,
+      "width": 98
     },
     {
-      "theme": "美国50",
-      "count": 1,
-      "avgRps20": 96.6,
+      "theme": "红利",
+      "count": 12,
+      "avgRps20": 84.2,
       "width": 97
     },
     {
       "theme": "银行",
       "count": 2,
-      "avgRps20": 95.8,
+      "avgRps20": 93.5,
       "width": 96
     },
     {
-      "theme": "医药",
-      "count": 20,
-      "avgRps20": 70.3,
+      "theme": "能源化工",
+      "count": 3,
+      "avgRps20": 69.5,
       "width": 94
     },
     {
-      "theme": "非银金融",
-      "count": 8,
-      "avgRps20": 66.3,
-      "width": 92
+      "theme": "能源",
+      "count": 1,
+      "avgRps20": 93.3,
+      "width": 93
     },
     {
-      "theme": "标普500",
+      "theme": "酒",
       "count": 1,
-      "avgRps20": 91.0,
-      "width": 91
+      "avgRps20": 92.7,
+      "width": 93
     }
   ],
   "rankings": [
@@ -61817,148 +61961,148 @@ window.COCKPIT_DATA = {
       "code": "159509",
       "name": "纳指科技ETF",
       "theme": "纳指科技",
-      "streak": 14,
-      "top10Streak": 14,
-      "trendScore": 2100.0,
+      "streak": 15,
+      "top10Streak": 15,
+      "trendScore": 2250.0,
       "phase": "主升浪",
-      "phaseNote": "连续强势：14 天",
+      "phaseNote": "连续强势：15 天",
       "signal": "持有",
       "signalNote": "连续强势超过 10 天，趋势质量高",
-      "rps3": 87.1,
-      "rps5": 57.3,
-      "rps10": 94.4,
+      "rps3": 91.0,
+      "rps5": 45.5,
+      "rps10": 97.2,
       "rps20": 100.0,
-      "rps50": 99.4,
+      "rps50": 100.0,
       "rps120": 100.0,
-      "rps250": 99.4,
+      "rps250": 100.0,
+      "streaks": {
+        "rps3": 1,
+        "rps5": 0,
+        "rps10": 14,
+        "rps20": 15,
+        "rps50": 16,
+        "rps120": 61,
+        "rps250": 37
+      },
+      "top10Streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 1,
+        "rps20": 15,
+        "rps50": 15,
+        "rps120": 58,
+        "rps250": 28
+      }
+    },
+    {
+      "rank": 2,
+      "code": "159529",
+      "name": "标普消费ETF",
+      "theme": "消费",
+      "streak": 2,
+      "top10Streak": 2,
+      "trendScore": 298.0,
+      "phase": "观察期",
+      "phaseNote": "连续强势：2 天",
+      "signal": "观察",
+      "signalNote": "强度尚可，但连续性不足",
+      "rps3": 100.0,
+      "rps5": 100.0,
+      "rps10": 100.0,
+      "rps20": 99.4,
+      "rps50": 98.3,
+      "rps120": 91.6,
+      "rps250": 78.7,
+      "streaks": {
+        "rps3": 2,
+        "rps5": 2,
+        "rps10": 2,
+        "rps20": 2,
+        "rps50": 2,
+        "rps120": 1,
+        "rps250": 0
+      },
+      "top10Streaks": {
+        "rps3": 2,
+        "rps5": 2,
+        "rps10": 2,
+        "rps20": 2,
+        "rps50": 2,
+        "rps120": 0,
+        "rps250": 0
+      }
+    },
+    {
+      "rank": 3,
+      "code": "513850",
+      "name": "美国50ETF",
+      "theme": "美国50",
+      "streak": 10,
+      "top10Streak": 7,
+      "trendScore": 1335.0,
+      "phase": "主升浪",
+      "phaseNote": "连续强势：10 天",
+      "signal": "持有",
+      "signalNote": "连续强势超过 10 天，趋势质量高",
+      "rps3": 70.2,
+      "rps5": 66.3,
+      "rps10": 90.4,
+      "rps20": 98.9,
+      "rps50": 97.2,
+      "rps120": 98.3,
+      "rps250": 92.5,
       "streaks": {
         "rps3": 0,
         "rps5": 0,
-        "rps10": 13,
-        "rps20": 14,
-        "rps50": 15,
-        "rps120": 60,
-        "rps250": 36
+        "rps10": 1,
+        "rps20": 10,
+        "rps50": 8,
+        "rps120": 28,
+        "rps250": 7
       },
       "top10Streaks": {
         "rps3": 0,
         "rps5": 0,
         "rps10": 0,
-        "rps20": 14,
-        "rps50": 14,
-        "rps120": 57,
-        "rps250": 27
-      }
-    },
-    {
-      "rank": 2,
-      "code": "159981",
-      "name": "能源化工ETF",
-      "theme": "能源化工",
-      "streak": 27,
-      "top10Streak": 26,
-      "trendScore": 3978.0,
-      "phase": "主升浪",
-      "phaseNote": "连续强势：27 天",
-      "signal": "持有",
-      "signalNote": "连续强势超过 10 天，趋势质量高",
-      "rps3": 64.6,
-      "rps5": 39.9,
-      "rps10": 99.4,
-      "rps20": 99.4,
-      "rps50": 100.0,
-      "rps120": 93.8,
-      "rps250": 97.1,
-      "streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 6,
-        "rps20": 27,
-        "rps50": 23,
-        "rps120": 4,
-        "rps250": 9
-      },
-      "top10Streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 6,
-        "rps20": 26,
-        "rps50": 22,
-        "rps120": 0,
-        "rps250": 8
-      }
-    },
-    {
-      "rank": 3,
-      "code": "159529",
-      "name": "标普消费ETF",
-      "theme": "消费",
-      "streak": 1,
-      "top10Streak": 1,
-      "trendScore": 148.0,
-      "phase": "观察期",
-      "phaseNote": "连续强势：1 天",
-      "signal": "观察",
-      "signalNote": "强度尚可，但连续性不足",
-      "rps3": 99.4,
-      "rps5": 99.4,
-      "rps10": 97.2,
-      "rps20": 98.9,
-      "rps50": 95.5,
-      "rps120": 89.3,
-      "rps250": 66.7,
-      "streaks": {
-        "rps3": 1,
-        "rps5": 1,
-        "rps10": 1,
-        "rps20": 1,
-        "rps50": 1,
-        "rps120": 0,
-        "rps250": 0
-      },
-      "top10Streaks": {
-        "rps3": 1,
-        "rps5": 1,
-        "rps10": 1,
-        "rps20": 1,
-        "rps50": 1,
-        "rps120": 0,
+        "rps20": 7,
+        "rps50": 5,
+        "rps120": 12,
         "rps250": 0
       }
     },
     {
       "rank": 4,
-      "code": "515300",
-      "name": "300红利低波ETF",
-      "theme": "红利",
-      "streak": 6,
-      "top10Streak": 4,
-      "trendScore": 787.0,
-      "phase": "启动期",
-      "phaseNote": "连续强势：6 天",
-      "signal": "建仓",
-      "signalNote": "连续强势超过 3 天，进入启动观察",
-      "rps3": 97.2,
-      "rps5": 95.5,
+      "code": "560080",
+      "name": "中药ETF",
+      "theme": "医药",
+      "streak": 2,
+      "top10Streak": 1,
+      "trendScore": 246.0,
+      "phase": "观察期",
+      "phaseNote": "连续强势：2 天",
+      "signal": "观察",
+      "signalNote": "强度尚可，但连续性不足",
+      "rps3": 98.9,
+      "rps5": 94.9,
       "rps10": 98.9,
       "rps20": 98.3,
-      "rps50": 92.1,
-      "rps120": 87.6,
-      "rps250": 78.2,
+      "rps50": 65.2,
+      "rps120": 80.3,
+      "rps250": 50.6,
       "streaks": {
         "rps3": 2,
-        "rps5": 8,
-        "rps10": 4,
-        "rps20": 6,
-        "rps50": 1,
+        "rps5": 6,
+        "rps10": 2,
+        "rps20": 2,
+        "rps50": 0,
         "rps120": 0,
         "rps250": 0
       },
       "top10Streaks": {
         "rps3": 2,
         "rps5": 2,
-        "rps10": 4,
-        "rps20": 4,
+        "rps10": 1,
+        "rps20": 1,
         "rps50": 0,
         "rps120": 0,
         "rps250": 0
@@ -61966,58 +62110,20 @@ window.COCKPIT_DATA = {
     },
     {
       "rank": 5,
-      "code": "515450",
-      "name": "红利低波50ETF",
-      "theme": "红利",
-      "streak": 4,
-      "top10Streak": 2,
-      "trendScore": 489.0,
-      "phase": "启动期",
-      "phaseNote": "连续强势：4 天",
-      "signal": "建仓",
-      "signalNote": "连续强势超过 3 天，进入启动观察",
-      "rps3": 97.8,
-      "rps5": 94.9,
-      "rps10": 98.3,
-      "rps20": 97.8,
-      "rps50": 82.6,
-      "rps120": 84.8,
-      "rps250": 77.6,
-      "streaks": {
-        "rps3": 2,
-        "rps5": 4,
-        "rps10": 4,
-        "rps20": 4,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      },
-      "top10Streaks": {
-        "rps3": 2,
-        "rps5": 1,
-        "rps10": 3,
-        "rps20": 2,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      }
-    },
-    {
-      "rank": 6,
       "code": "159941",
       "name": "纳指ETF",
       "theme": "纳指",
-      "streak": 11,
-      "top10Streak": 6,
-      "trendScore": 1361.0,
+      "streak": 12,
+      "top10Streak": 7,
+      "trendScore": 1515.0,
       "phase": "主升浪",
-      "phaseNote": "连续强势：11 天",
+      "phaseNote": "连续强势：12 天",
       "signal": "持有",
       "signalNote": "连续强势超过 10 天，趋势质量高",
       "rps3": 49.4,
-      "rps5": 64.6,
-      "rps10": 79.8,
-      "rps20": 97.2,
+      "rps5": 55.6,
+      "rps10": 81.5,
+      "rps20": 97.8,
       "rps50": 97.8,
       "rps120": 98.9,
       "rps250": 94.3,
@@ -62025,56 +62131,94 @@ window.COCKPIT_DATA = {
         "rps3": 0,
         "rps5": 0,
         "rps10": 0,
-        "rps20": 11,
-        "rps50": 7,
-        "rps120": 51,
-        "rps250": 9
+        "rps20": 12,
+        "rps50": 8,
+        "rps120": 52,
+        "rps250": 10
       },
       "top10Streaks": {
         "rps3": 0,
         "rps5": 0,
         "rps10": 0,
-        "rps20": 6,
-        "rps50": 6,
-        "rps120": 36,
+        "rps20": 7,
+        "rps50": 7,
+        "rps120": 37,
+        "rps250": 0
+      }
+    },
+    {
+      "rank": 6,
+      "code": "515450",
+      "name": "红利低波50ETF",
+      "theme": "红利",
+      "streak": 5,
+      "top10Streak": 3,
+      "trendScore": 632.0,
+      "phase": "启动期",
+      "phaseNote": "连续强势：5 天",
+      "signal": "建仓",
+      "signalNote": "连续强势超过 3 天，进入启动观察",
+      "rps3": 94.9,
+      "rps5": 96.6,
+      "rps10": 97.8,
+      "rps20": 97.2,
+      "rps50": 80.3,
+      "rps120": 86.5,
+      "rps250": 79.3,
+      "streaks": {
+        "rps3": 3,
+        "rps5": 5,
+        "rps10": 5,
+        "rps20": 5,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      },
+      "top10Streaks": {
+        "rps3": 3,
+        "rps5": 2,
+        "rps10": 4,
+        "rps20": 3,
+        "rps50": 0,
+        "rps120": 0,
         "rps250": 0
       }
     },
     {
       "rank": 7,
-      "code": "513850",
-      "name": "美国50ETF",
-      "theme": "美国50",
-      "streak": 9,
-      "top10Streak": 6,
-      "trendScore": 1160.0,
+      "code": "515300",
+      "name": "300红利低波ETF",
+      "theme": "红利",
+      "streak": 7,
+      "top10Streak": 5,
+      "trendScore": 918.0,
       "phase": "启动期",
-      "phaseNote": "连续强势：9 天",
+      "phaseNote": "连续强势：7 天",
       "signal": "建仓",
       "signalNote": "连续强势超过 3 天，进入启动观察",
-      "rps3": 46.6,
-      "rps5": 56.2,
-      "rps10": 80.9,
+      "rps3": 94.4,
+      "rps5": 96.1,
+      "rps10": 98.3,
       "rps20": 96.6,
-      "rps50": 97.2,
-      "rps120": 98.3,
-      "rps250": 92.0,
+      "rps50": 86.5,
+      "rps120": 87.6,
+      "rps250": 76.4,
       "streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 9,
-        "rps50": 7,
-        "rps120": 27,
-        "rps250": 6
+        "rps3": 3,
+        "rps5": 9,
+        "rps10": 5,
+        "rps20": 7,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
       },
       "top10Streaks": {
         "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 6,
-        "rps50": 4,
-        "rps120": 11,
+        "rps5": 3,
+        "rps10": 5,
+        "rps20": 5,
+        "rps50": 0,
+        "rps120": 0,
         "rps250": 0
       }
     },
@@ -62083,81 +62227,81 @@ window.COCKPIT_DATA = {
       "code": "512800",
       "name": "银行ETF",
       "theme": "银行",
-      "streak": 6,
-      "top10Streak": 4,
-      "trendScore": 769.0,
+      "streak": 7,
+      "top10Streak": 5,
+      "trendScore": 913.0,
       "phase": "启动期",
-      "phaseNote": "连续强势：6 天",
+      "phaseNote": "连续强势：7 天",
       "signal": "建仓",
       "signalNote": "连续强势超过 3 天，进入启动观察",
-      "rps3": 87.6,
-      "rps5": 85.4,
-      "rps10": 97.8,
+      "rps3": 93.8,
+      "rps5": 97.2,
+      "rps10": 96.1,
       "rps20": 96.1,
-      "rps50": 96.6,
+      "rps50": 92.7,
       "rps120": 92.7,
-      "rps250": 85.1,
+      "rps250": 84.5,
       "streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 4,
-        "rps20": 6,
-        "rps50": 1,
-        "rps120": 4,
+        "rps3": 1,
+        "rps5": 1,
+        "rps10": 5,
+        "rps20": 7,
+        "rps50": 2,
+        "rps120": 5,
         "rps250": 0
       },
       "top10Streaks": {
         "rps3": 0,
-        "rps5": 0,
-        "rps10": 1,
-        "rps20": 4,
-        "rps50": 1,
+        "rps5": 1,
+        "rps10": 2,
+        "rps20": 5,
+        "rps50": 0,
         "rps120": 0,
         "rps250": 0
       }
     },
     {
       "rank": 9,
-      "code": "517900",
-      "name": "银行AH优选ETF",
-      "theme": "银行",
-      "streak": 6,
-      "top10Streak": 1,
-      "trendScore": 621.0,
+      "code": "515100",
+      "name": "红利低波100ETF",
+      "theme": "红利",
+      "streak": 3,
+      "top10Streak": 2,
+      "trendScore": 382.0,
       "phase": "启动期",
-      "phaseNote": "连续强势：6 天",
+      "phaseNote": "连续强势：3 天",
       "signal": "建仓",
       "signalNote": "连续强势超过 3 天，进入启动观察",
-      "rps3": 86.0,
-      "rps5": 84.3,
-      "rps10": 95.5,
+      "rps3": 92.1,
+      "rps5": 92.1,
+      "rps10": 96.6,
       "rps20": 95.5,
-      "rps50": 96.1,
-      "rps120": 92.1,
-      "rps250": 86.8,
+      "rps50": 76.4,
+      "rps120": 83.7,
+      "rps250": 60.3,
       "streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 4,
-        "rps20": 6,
-        "rps50": 4,
-        "rps120": 2,
+        "rps3": 3,
+        "rps5": 7,
+        "rps10": 5,
+        "rps20": 3,
+        "rps50": 0,
+        "rps120": 0,
         "rps250": 0
       },
       "top10Streaks": {
         "rps3": 0,
         "rps5": 0,
-        "rps10": 1,
-        "rps20": 1,
-        "rps50": 1,
+        "rps10": 3,
+        "rps20": 2,
+        "rps50": 0,
         "rps120": 0,
         "rps250": 0
       }
     },
     {
       "rank": 10,
-      "code": "515100",
-      "name": "红利低波100ETF",
+      "code": "562060",
+      "name": "标普A股红利ETF",
       "theme": "红利",
       "streak": 2,
       "top10Streak": 1,
@@ -62166,17 +62310,17 @@ window.COCKPIT_DATA = {
       "phaseNote": "连续强势：2 天",
       "signal": "观察",
       "signalNote": "强度尚可，但连续性不足",
-      "rps3": 92.7,
-      "rps5": 92.7,
-      "rps10": 96.1,
+      "rps3": 93.3,
+      "rps5": 87.6,
+      "rps10": 92.1,
       "rps20": 94.9,
       "rps50": 80.9,
-      "rps120": 82.0,
-      "rps250": 59.8,
+      "rps120": 78.1,
+      "rps250": 77.6,
       "streaks": {
-        "rps3": 2,
-        "rps5": 6,
-        "rps10": 4,
+        "rps3": 1,
+        "rps5": 0,
+        "rps10": 3,
         "rps20": 2,
         "rps50": 0,
         "rps120": 0,
@@ -62185,7 +62329,7 @@ window.COCKPIT_DATA = {
       "top10Streaks": {
         "rps3": 0,
         "rps5": 0,
-        "rps10": 2,
+        "rps10": 0,
         "rps20": 1,
         "rps50": 0,
         "rps120": 0,
@@ -62194,178 +62338,140 @@ window.COCKPIT_DATA = {
     },
     {
       "rank": 11,
-      "code": "512010",
-      "name": "医药ETF",
-      "theme": "医药",
-      "streak": 1,
+      "code": "159981",
+      "name": "能源化工ETF",
+      "theme": "能源化工",
+      "streak": 28,
       "top10Streak": 0,
-      "trendScore": 94.0,
-      "phase": "分歧期",
-      "phaseNote": "排名下降但仍在前 20",
-      "signal": "观察",
-      "signalNote": "强度尚可，但连续性不足",
-      "rps3": 88.8,
-      "rps5": 73.0,
-      "rps10": 78.7,
+      "trendScore": 2643.0,
+      "phase": "主升浪",
+      "phaseNote": "连续强势：28 天",
+      "signal": "持有",
+      "signalNote": "连续强势超过 10 天，趋势质量高",
+      "rps3": 34.3,
+      "rps5": 32.0,
+      "rps10": 92.7,
       "rps20": 94.4,
-      "rps50": 85.4,
-      "rps120": 83.1,
-      "rps250": 36.8,
+      "rps50": 99.4,
+      "rps120": 93.8,
+      "rps250": 97.1,
       "streaks": {
         "rps3": 0,
         "rps5": 0,
-        "rps10": 0,
-        "rps20": 1,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
+        "rps10": 7,
+        "rps20": 28,
+        "rps50": 24,
+        "rps120": 5,
+        "rps250": 10
       },
       "top10Streaks": {
         "rps3": 0,
         "rps5": 0,
         "rps10": 0,
         "rps20": 0,
-        "rps50": 0,
+        "rps50": 23,
         "rps120": 0,
-        "rps250": 0
+        "rps250": 9
       }
     },
     {
       "rank": 12,
-      "code": "159518",
-      "name": "标普油气ETF",
-      "theme": "能源化工",
-      "streak": 2,
+      "code": "512890",
+      "name": "红利低波ETF",
+      "theme": "红利",
+      "streak": 6,
       "top10Streak": 0,
-      "trendScore": 188.0,
-      "phase": "分歧期",
-      "phaseNote": "排名下降但仍在前 20",
-      "signal": "观察",
-      "signalNote": "强度尚可，但连续性不足",
-      "rps3": 100.0,
-      "rps5": 88.2,
-      "rps10": 100.0,
+      "trendScore": 563.0,
+      "phase": "启动期",
+      "phaseNote": "连续强势：6 天",
+      "signal": "建仓",
+      "signalNote": "连续强势超过 3 天，进入启动观察",
+      "rps3": 88.8,
+      "rps5": 94.4,
+      "rps10": 94.9,
       "rps20": 93.8,
-      "rps50": 98.9,
-      "rps120": 94.9,
-      "rps250": 97.7,
+      "rps50": 87.6,
+      "rps120": 88.8,
+      "rps250": 81.6,
       "streaks": {
-        "rps3": 2,
-        "rps5": 0,
-        "rps10": 3,
-        "rps20": 2,
-        "rps50": 6,
-        "rps120": 3,
-        "rps250": 10
+        "rps3": 0,
+        "rps5": 1,
+        "rps10": 5,
+        "rps20": 6,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
       },
       "top10Streaks": {
-        "rps3": 2,
+        "rps3": 0,
         "rps5": 0,
-        "rps10": 3,
+        "rps10": 5,
         "rps20": 0,
-        "rps50": 2,
-        "rps120": 2,
-        "rps250": 6
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
       }
     },
     {
       "rank": 13,
-      "code": "512890",
-      "name": "红利低波ETF",
-      "theme": "红利",
-      "streak": 5,
-      "top10Streak": 0,
-      "trendScore": 466.0,
-      "phase": "启动期",
-      "phaseNote": "连续强势：5 天",
-      "signal": "建仓",
-      "signalNote": "连续强势超过 3 天，进入启动观察",
-      "rps3": 74.2,
-      "rps5": 80.6,
-      "rps10": 94.9,
-      "rps20": 93.3,
-      "rps50": 88.8,
-      "rps120": 85.4,
-      "rps250": 79.9,
-      "streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 4,
-        "rps20": 5,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      },
-      "top10Streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 4,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      }
-    },
-    {
-      "rank": 15,
-      "code": "562060",
-      "name": "标普A股红利ETF",
-      "theme": "红利",
+      "code": "159930",
+      "name": "能源ETF",
+      "theme": "能源",
       "streak": 1,
       "top10Streak": 0,
-      "trendScore": 92.0,
+      "trendScore": 93.0,
       "phase": "分歧期",
       "phaseNote": "排名下降但仍在前 20",
       "signal": "观察",
       "signalNote": "强度尚可，但连续性不足",
-      "rps3": 79.8,
-      "rps5": 83.7,
-      "rps10": 92.1,
-      "rps20": 92.4,
-      "rps50": 83.1,
-      "rps120": 71.9,
-      "rps250": 74.7,
+      "rps3": 89.3,
+      "rps5": 93.8,
+      "rps10": 95.5,
+      "rps20": 93.3,
+      "rps50": 94.4,
+      "rps120": 88.2,
+      "rps250": 95.4,
       "streaks": {
         "rps3": 0,
-        "rps5": 0,
-        "rps10": 2,
+        "rps5": 1,
+        "rps10": 6,
         "rps20": 1,
-        "rps50": 0,
+        "rps50": 1,
         "rps120": 0,
-        "rps250": 0
+        "rps250": 8
       },
       "top10Streaks": {
         "rps3": 0,
         "rps5": 0,
-        "rps10": 0,
+        "rps10": 3,
         "rps20": 0,
         "rps50": 0,
         "rps120": 0,
-        "rps250": 0
+        "rps250": 2
       }
     },
     {
       "rank": 14,
-      "code": "560080",
-      "name": "中药ETF",
-      "theme": "医药",
+      "code": "512690",
+      "name": "酒ETF",
+      "theme": "酒",
       "streak": 1,
       "top10Streak": 0,
-      "trendScore": 92.0,
+      "trendScore": 93.0,
       "phase": "分歧期",
       "phaseNote": "排名下降但仍在前 20",
       "signal": "观察",
       "signalNote": "强度尚可，但连续性不足",
       "rps3": 96.1,
-      "rps5": 96.6,
-      "rps10": 93.3,
-      "rps20": 92.4,
-      "rps50": 58.4,
-      "rps120": 75.3,
-      "rps250": 46.0,
+      "rps5": 88.8,
+      "rps10": 94.4,
+      "rps20": 92.7,
+      "rps50": 59.0,
+      "rps120": 46.1,
+      "rps250": 13.2,
       "streaks": {
         "rps3": 1,
-        "rps5": 5,
+        "rps5": 0,
         "rps10": 1,
         "rps20": 1,
         "rps50": 0,
@@ -62374,7 +62480,45 @@ window.COCKPIT_DATA = {
       },
       "top10Streaks": {
         "rps3": 1,
-        "rps5": 1,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      }
+    },
+    {
+      "rank": 15,
+      "code": "513970",
+      "name": "恒生消费ETF",
+      "theme": "消费",
+      "streak": 1,
+      "top10Streak": 0,
+      "trendScore": 92.0,
+      "phase": "分歧期",
+      "phaseNote": "排名下降但仍在前 20",
+      "signal": "观察",
+      "signalNote": "强度尚可，但连续性不足",
+      "rps3": 98.3,
+      "rps5": 93.3,
+      "rps10": 93.8,
+      "rps20": 92.1,
+      "rps50": 48.3,
+      "rps120": 50.6,
+      "rps250": 21.8,
+      "streaks": {
+        "rps3": 2,
+        "rps5": 2,
+        "rps10": 1,
+        "rps20": 1,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      },
+      "top10Streaks": {
+        "rps3": 2,
+        "rps5": 0,
         "rps10": 0,
         "rps20": 0,
         "rps50": 0,
@@ -62384,28 +62528,28 @@ window.COCKPIT_DATA = {
     },
     {
       "rank": 16,
-      "code": "510230",
-      "name": "金融ETF",
-      "theme": "非银金融",
-      "streak": 1,
+      "code": "512010",
+      "name": "医药ETF",
+      "theme": "医药",
+      "streak": 2,
       "top10Streak": 0,
-      "trendScore": 92.0,
+      "trendScore": 183.0,
       "phase": "分歧期",
       "phaseNote": "排名下降但仍在前 20",
       "signal": "观察",
       "signalNote": "强度尚可，但连续性不足",
-      "rps3": 85.4,
-      "rps5": 86.5,
-      "rps10": 88.8,
+      "rps3": 69.7,
+      "rps5": 64.6,
+      "rps10": 76.4,
       "rps20": 91.6,
-      "rps50": 83.7,
-      "rps120": 88.8,
-      "rps250": 73.0,
+      "rps50": 77.0,
+      "rps120": 82.6,
+      "rps250": 36.2,
       "streaks": {
         "rps3": 0,
         "rps5": 0,
         "rps10": 0,
-        "rps20": 1,
+        "rps20": 2,
         "rps50": 0,
         "rps120": 0,
         "rps250": 0
@@ -62422,31 +62566,31 @@ window.COCKPIT_DATA = {
     },
     {
       "rank": 17,
-      "code": "513500",
-      "name": "标普500ETF",
-      "theme": "标普500",
-      "streak": 6,
+      "code": "517900",
+      "name": "银行AH优选ETF",
+      "theme": "银行",
+      "streak": 7,
       "top10Streak": 0,
-      "trendScore": 546.0,
+      "trendScore": 637.0,
       "phase": "启动期",
-      "phaseNote": "连续强势：6 天",
+      "phaseNote": "连续强势：7 天",
       "signal": "建仓",
       "signalNote": "连续强势超过 3 天，进入启动观察",
-      "rps3": 56.2,
-      "rps5": 69.1,
-      "rps10": 77.5,
+      "rps3": 82.0,
+      "rps5": 89.9,
+      "rps10": 89.9,
       "rps20": 91.0,
-      "rps50": 94.4,
-      "rps120": 97.8,
-      "rps250": 91.4,
+      "rps50": 90.4,
+      "rps120": 91.0,
+      "rps250": 85.1,
       "streaks": {
         "rps3": 0,
         "rps5": 0,
         "rps10": 0,
-        "rps20": 6,
-        "rps50": 4,
-        "rps120": 36,
-        "rps250": 4
+        "rps20": 7,
+        "rps50": 5,
+        "rps120": 3,
+        "rps250": 0
       },
       "top10Streaks": {
         "rps3": 0,
@@ -62454,34 +62598,34 @@ window.COCKPIT_DATA = {
         "rps10": 0,
         "rps20": 0,
         "rps50": 0,
-        "rps120": 6,
+        "rps120": 0,
         "rps250": 0
       }
     },
     {
       "rank": 18,
-      "code": "159625",
-      "name": "绿色电力ETF",
-      "theme": "绿色电力",
-      "streak": 5,
+      "code": "515170",
+      "name": "食品饮料ETF",
+      "theme": "食品饮料",
+      "streak": 1,
       "top10Streak": 0,
-      "trendScore": 452.0,
-      "phase": "启动期",
-      "phaseNote": "连续强势：5 天",
-      "signal": "建仓",
-      "signalNote": "连续强势超过 3 天，进入启动观察",
-      "rps3": 70.8,
-      "rps5": 71.9,
-      "rps10": 89.3,
+      "trendScore": 90.0,
+      "phase": "分歧期",
+      "phaseNote": "排名下降但仍在前 20",
+      "signal": "观察",
+      "signalNote": "强度尚可，但连续性不足",
+      "rps3": 91.6,
+      "rps5": 83.1,
+      "rps10": 87.6,
       "rps20": 90.4,
-      "rps50": 68.5,
-      "rps120": 69.1,
-      "rps250": 74.1,
+      "rps50": 60.1,
+      "rps120": 57.3,
+      "rps250": 25.9,
       "streaks": {
-        "rps3": 0,
+        "rps3": 2,
         "rps5": 0,
         "rps10": 0,
-        "rps20": 5,
+        "rps20": 1,
         "rps50": 0,
         "rps120": 0,
         "rps250": 0
@@ -62498,9 +62642,9 @@ window.COCKPIT_DATA = {
     },
     {
       "rank": 19,
-      "code": "515170",
-      "name": "食品饮料ETF",
-      "theme": "食品饮料",
+      "code": "159518",
+      "name": "标普油气ETF",
+      "theme": "能源化工",
       "streak": 0,
       "top10Streak": 0,
       "trendScore": 0.0,
@@ -62508,24 +62652,62 @@ window.COCKPIT_DATA = {
       "phaseNote": "排名下降但仍在前 20",
       "signal": "观察",
       "signalNote": "强度尚可，但连续性不足",
-      "rps3": 94.4,
-      "rps5": 87.6,
-      "rps10": 85.4,
+      "rps3": 97.2,
+      "rps5": 97.8,
+      "rps10": 99.4,
       "rps20": 89.9,
-      "rps50": 78.1,
-      "rps120": 55.1,
-      "rps250": 28.2,
+      "rps50": 98.9,
+      "rps120": 96.1,
+      "rps250": 97.7,
       "streaks": {
-        "rps3": 1,
-        "rps5": 0,
-        "rps10": 0,
+        "rps3": 3,
+        "rps5": 1,
+        "rps10": 4,
+        "rps20": 0,
+        "rps50": 7,
+        "rps120": 4,
+        "rps250": 11
+      },
+      "top10Streaks": {
+        "rps3": 3,
+        "rps5": 1,
+        "rps10": 4,
+        "rps20": 0,
+        "rps50": 3,
+        "rps120": 3,
+        "rps250": 7
+      }
+    },
+    {
+      "rank": 20,
+      "code": "515650",
+      "name": "消费50ETF",
+      "theme": "消费",
+      "streak": 0,
+      "top10Streak": 0,
+      "trendScore": 0.0,
+      "phase": "分歧期",
+      "phaseNote": "排名下降但仍在前 20",
+      "signal": "观察",
+      "signalNote": "强度尚可，但连续性不足",
+      "rps3": 95.5,
+      "rps5": 92.7,
+      "rps10": 93.3,
+      "rps20": 89.3,
+      "rps50": 61.8,
+      "rps120": 77.0,
+      "rps250": 43.7,
+      "streaks": {
+        "rps3": 2,
+        "rps5": 2,
+        "rps10": 2,
         "rps20": 0,
         "rps50": 0,
         "rps120": 0,
         "rps250": 0
       },
       "top10Streaks": {
-        "rps3": 0,
+        "rps3": 1,
         "rps5": 0,
         "rps10": 0,
         "rps20": 0,
@@ -62535,21 +62717,97 @@ window.COCKPIT_DATA = {
       }
     },
     {
-      "rank": 20,
+      "rank": 21,
+      "code": "513780",
+      "name": "港股创新药50ETF",
+      "theme": "医药",
+      "streak": 0,
+      "top10Streak": 0,
+      "trendScore": 0.0,
+      "phase": "退潮期",
+      "phaseNote": "跌出前 20",
+      "signal": "回避",
+      "signalNote": "跌出前 20，趋势退潮",
+      "rps3": 55.1,
+      "rps5": 40.4,
+      "rps10": 48.9,
+      "rps20": 88.8,
+      "rps50": 94.9,
+      "rps120": 80.9,
+      "rps250": 33.3,
+      "streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 2,
+        "rps120": 0,
+        "rps250": 0
+      },
+      "top10Streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 1,
+        "rps120": 0,
+        "rps250": 0
+      }
+    },
+    {
+      "rank": 22,
+      "code": "513500",
+      "name": "标普500ETF",
+      "theme": "标普500",
+      "streak": 0,
+      "top10Streak": 0,
+      "trendScore": 0.0,
+      "phase": "退潮期",
+      "phaseNote": "跌出前 20",
+      "signal": "回避",
+      "signalNote": "跌出前 20，趋势退潮",
+      "rps3": 38.8,
+      "rps5": 65.2,
+      "rps10": 78.1,
+      "rps20": 88.2,
+      "rps50": 93.8,
+      "rps120": 97.8,
+      "rps250": 91.4,
+      "streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 5,
+        "rps120": 37,
+        "rps250": 5
+      },
+      "top10Streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 7,
+        "rps250": 0
+      }
+    },
+    {
+      "rank": 23,
       "code": "159655",
       "name": "标普ETF",
       "theme": "标普",
       "streak": 0,
       "top10Streak": 0,
       "trendScore": 0.0,
-      "phase": "分歧期",
-      "phaseNote": "排名下降但仍在前 20",
-      "signal": "观察",
-      "signalNote": "强度尚可，但连续性不足",
-      "rps3": 61.8,
-      "rps5": 72.5,
-      "rps10": 77.0,
-      "rps20": 89.3,
+      "phase": "退潮期",
+      "phaseNote": "跌出前 20",
+      "signal": "回避",
+      "signalNote": "跌出前 20，趋势退潮",
+      "rps3": 60.7,
+      "rps5": 74.7,
+      "rps10": 78.7,
+      "rps20": 87.6,
       "rps50": 91.0,
       "rps120": 97.2,
       "rps250": 90.2,
@@ -62558,9 +62816,9 @@ window.COCKPIT_DATA = {
         "rps5": 0,
         "rps10": 0,
         "rps20": 0,
-        "rps50": 3,
-        "rps120": 10,
-        "rps250": 1
+        "rps50": 4,
+        "rps120": 11,
+        "rps250": 2
       },
       "top10Streaks": {
         "rps3": 0,
@@ -62568,128 +62826,14 @@ window.COCKPIT_DATA = {
         "rps10": 0,
         "rps20": 0,
         "rps50": 0,
-        "rps120": 5,
-        "rps250": 0
-      }
-    },
-    {
-      "rank": 21,
-      "code": "513920",
-      "name": "港股通央企红利ETF",
-      "theme": "红利",
-      "streak": 0,
-      "top10Streak": 0,
-      "trendScore": 0.0,
-      "phase": "退潮期",
-      "phaseNote": "跌出前 20",
-      "signal": "回避",
-      "signalNote": "跌出前 20，趋势退潮",
-      "rps3": 82.6,
-      "rps5": 82.6,
-      "rps10": 88.2,
-      "rps20": 88.8,
-      "rps50": 79.2,
-      "rps120": 65.7,
-      "rps250": 68.4,
-      "streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      },
-      "top10Streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      }
-    },
-    {
-      "rank": 22,
-      "code": "159611",
-      "name": "电力ETF",
-      "theme": "电力",
-      "streak": 0,
-      "top10Streak": 0,
-      "trendScore": 0.0,
-      "phase": "退潮期",
-      "phaseNote": "跌出前 20",
-      "signal": "回避",
-      "signalNote": "跌出前 20，趋势退潮",
-      "rps3": 81.5,
-      "rps5": 73.6,
-      "rps10": 91.6,
-      "rps20": 88.2,
-      "rps50": 64.0,
-      "rps120": 74.7,
-      "rps250": 76.4,
-      "streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 2,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      },
-      "top10Streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      }
-    },
-    {
-      "rank": 23,
-      "code": "513910",
-      "name": "港股央企红利ETF",
-      "theme": "红利",
-      "streak": 0,
-      "top10Streak": 0,
-      "trendScore": 0.0,
-      "phase": "退潮期",
-      "phaseNote": "跌出前 20",
-      "signal": "回避",
-      "signalNote": "跌出前 20，趋势退潮",
-      "rps3": 83.7,
-      "rps5": 82.0,
-      "rps10": 89.9,
-      "rps20": 87.6,
-      "rps50": 86.5,
-      "rps120": 78.7,
-      "rps250": 71.3,
-      "streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      },
-      "top10Streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
+        "rps120": 6,
         "rps250": 0
       }
     },
     {
       "rank": 24,
-      "code": "515650",
-      "name": "消费50ETF",
+      "code": "159928",
+      "name": "消费ETF",
       "theme": "消费",
       "streak": 0,
       "top10Streak": 0,
@@ -62699,15 +62843,15 @@ window.COCKPIT_DATA = {
       "signal": "回避",
       "signalNote": "跌出前 20，趋势退潮",
       "rps3": 90.4,
-      "rps5": 94.4,
+      "rps5": 87.1,
       "rps10": 91.0,
       "rps20": 87.1,
-      "rps50": 75.3,
-      "rps120": 75.8,
-      "rps250": 44.3,
+      "rps50": 61.2,
+      "rps120": 54.5,
+      "rps250": 23.0,
       "streaks": {
         "rps3": 1,
-        "rps5": 1,
+        "rps5": 0,
         "rps10": 1,
         "rps20": 0,
         "rps50": 0,
@@ -62726,9 +62870,9 @@ window.COCKPIT_DATA = {
     },
     {
       "rank": 25,
-      "code": "159930",
-      "name": "能源ETF",
-      "theme": "能源",
+      "code": "513700",
+      "name": "香港医药ETF",
+      "theme": "医药",
       "streak": 0,
       "top10Streak": 0,
       "trendScore": 0.0,
@@ -62736,55 +62880,17 @@ window.COCKPIT_DATA = {
       "phaseNote": "跌出前 20",
       "signal": "回避",
       "signalNote": "跌出前 20，趋势退潮",
-      "rps3": 98.3,
-      "rps5": 83.1,
-      "rps10": 96.6,
+      "rps3": 61.2,
+      "rps5": 47.8,
+      "rps10": 52.2,
       "rps20": 86.5,
       "rps50": 89.9,
-      "rps120": 82.6,
-      "rps250": 94.8,
+      "rps120": 73.0,
+      "rps250": 28.2,
       "streaks": {
-        "rps3": 2,
+        "rps3": 0,
         "rps5": 0,
-        "rps10": 5,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 7
-      },
-      "top10Streaks": {
-        "rps3": 2,
-        "rps5": 0,
-        "rps10": 2,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 1
-      }
-    },
-    {
-      "rank": 26,
-      "code": "159545",
-      "name": "恒生红利低波ETF",
-      "theme": "红利",
-      "streak": 0,
-      "top10Streak": 0,
-      "trendScore": 0.0,
-      "phase": "退潮期",
-      "phaseNote": "跌出前 20",
-      "signal": "回避",
-      "signalNote": "跌出前 20，趋势退潮",
-      "rps3": 93.8,
-      "rps5": 89.9,
-      "rps10": 93.8,
-      "rps20": 86.0,
-      "rps50": 65.2,
-      "rps120": 57.3,
-      "rps250": 54.0,
-      "streaks": {
-        "rps3": 3,
-        "rps5": 0,
-        "rps10": 2,
+        "rps10": 0,
         "rps20": 0,
         "rps50": 0,
         "rps120": 0,
@@ -62801,10 +62907,10 @@ window.COCKPIT_DATA = {
       }
     },
     {
-      "rank": 27,
-      "code": "563960",
-      "name": "兴全沪深300质量ETF",
-      "theme": "兴全沪深300质量",
+      "rank": 26,
+      "code": "513290",
+      "name": "纳指生物科技ETF",
+      "theme": "医药",
       "streak": 0,
       "top10Streak": 0,
       "trendScore": 0.0,
@@ -62812,20 +62918,58 @@ window.COCKPIT_DATA = {
       "phaseNote": "跌出前 20",
       "signal": "回避",
       "signalNote": "跌出前 20，趋势退潮",
-      "rps3": 92.1,
-      "rps5": 91.0,
-      "rps10": 83.7,
-      "rps20": 85.4,
-      "rps50": 60.1,
-      "rps120": 69.7,
-      "rps250": null,
+      "rps3": 47.8,
+      "rps5": 62.4,
+      "rps10": 75.3,
+      "rps20": 86.0,
+      "rps50": 96.6,
+      "rps120": 96.6,
+      "rps250": 96.6,
       "streaks": {
-        "rps3": 1,
-        "rps5": 1,
+        "rps3": 0,
+        "rps5": 0,
         "rps10": 0,
         "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
+        "rps50": 10,
+        "rps120": 12,
+        "rps250": 27
+      },
+      "top10Streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 10,
+        "rps120": 5,
+        "rps250": 10
+      }
+    },
+    {
+      "rank": 27,
+      "code": "510880",
+      "name": "红利ETF",
+      "theme": "红利",
+      "streak": 0,
+      "top10Streak": 0,
+      "trendScore": 0.0,
+      "phase": "退潮期",
+      "phaseNote": "跌出前 20",
+      "signal": "回避",
+      "signalNote": "跌出前 20，趋势退潮",
+      "rps3": 78.1,
+      "rps5": 88.2,
+      "rps10": 91.6,
+      "rps20": 85.4,
+      "rps50": 92.1,
+      "rps120": 90.4,
+      "rps250": 86.2,
+      "streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 6,
+        "rps20": 0,
+        "rps50": 3,
+        "rps120": 2,
         "rps250": 0
       },
       "top10Streaks": {
@@ -62840,9 +62984,9 @@ window.COCKPIT_DATA = {
     },
     {
       "rank": 28,
-      "code": "513190",
-      "name": "港股通金融ETF",
-      "theme": "非银金融",
+      "code": "159366",
+      "name": "港股医疗ETF",
+      "theme": "医药",
       "streak": 0,
       "top10Streak": 0,
       "trendScore": 0.0,
@@ -62850,19 +62994,19 @@ window.COCKPIT_DATA = {
       "phaseNote": "跌出前 20",
       "signal": "回避",
       "signalNote": "跌出前 20，趋势退潮",
-      "rps3": 72.5,
-      "rps5": 79.2,
-      "rps10": 79.2,
+      "rps3": 35.4,
+      "rps5": 28.1,
+      "rps10": 41.6,
       "rps20": 84.8,
-      "rps50": 81.5,
-      "rps120": 86.5,
-      "rps250": 84.5,
+      "rps50": 96.1,
+      "rps120": 83.1,
+      "rps250": 31.0,
       "streaks": {
         "rps3": 0,
         "rps5": 0,
         "rps10": 0,
         "rps20": 0,
-        "rps50": 0,
+        "rps50": 47,
         "rps120": 0,
         "rps250": 0
       },
@@ -62871,16 +63015,16 @@ window.COCKPIT_DATA = {
         "rps5": 0,
         "rps10": 0,
         "rps20": 0,
-        "rps50": 0,
+        "rps50": 44,
         "rps120": 0,
         "rps250": 0
       }
     },
     {
       "rank": 29,
-      "code": "512690",
-      "name": "酒ETF",
-      "theme": "酒",
+      "code": "513050",
+      "name": "中概互联网ETF",
+      "theme": "中概互联网",
       "streak": 0,
       "top10Streak": 0,
       "trendScore": 0.0,
@@ -62888,13 +63032,13 @@ window.COCKPIT_DATA = {
       "phaseNote": "跌出前 20",
       "signal": "回避",
       "signalNote": "跌出前 20，趋势退潮",
-      "rps3": 89.3,
-      "rps5": 80.6,
-      "rps10": 86.0,
+      "rps3": 83.7,
+      "rps5": 82.6,
+      "rps10": 67.4,
       "rps20": 84.3,
-      "rps50": 70.8,
-      "rps120": 41.6,
-      "rps250": 13.2,
+      "rps50": 36.5,
+      "rps120": 41.0,
+      "rps250": 4.6,
       "streaks": {
         "rps3": 0,
         "rps5": 0,
@@ -62916,46 +63060,8 @@ window.COCKPIT_DATA = {
     },
     {
       "rank": 30,
-      "code": "159366",
-      "name": "港股医疗ETF",
-      "theme": "医药",
-      "streak": 0,
-      "top10Streak": 0,
-      "trendScore": 0.0,
-      "phase": "退潮期",
-      "phaseNote": "跌出前 20",
-      "signal": "回避",
-      "signalNote": "跌出前 20，趋势退潮",
-      "rps3": 13.5,
-      "rps5": 24.7,
-      "rps10": 48.9,
-      "rps20": 83.7,
-      "rps50": 98.3,
-      "rps120": 84.3,
-      "rps250": 32.2,
-      "streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 46,
-        "rps120": 0,
-        "rps250": 0
-      },
-      "top10Streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 43,
-        "rps120": 0,
-        "rps250": 0
-      }
-    },
-    {
-      "rank": 31,
-      "code": "513630",
-      "name": "港股红利指数ETF",
+      "code": "513920",
+      "name": "港股通央企红利ETF",
       "theme": "红利",
       "streak": 0,
       "top10Streak": 0,
@@ -62964,19 +63070,57 @@ window.COCKPIT_DATA = {
       "phaseNote": "跌出前 20",
       "signal": "回避",
       "signalNote": "跌出前 20，趋势退潮",
-      "rps3": 93.3,
-      "rps5": 87.1,
-      "rps10": 90.4,
-      "rps20": 83.1,
-      "rps50": 69.1,
-      "rps120": 64.0,
-      "rps250": 70.1,
+      "rps3": 64.6,
+      "rps5": 80.9,
+      "rps10": 83.1,
+      "rps20": 83.7,
+      "rps50": 71.9,
+      "rps120": 66.9,
+      "rps250": 66.7,
       "streaks": {
-        "rps3": 1,
+        "rps3": 0,
         "rps5": 0,
-        "rps10": 2,
+        "rps10": 0,
         "rps20": 0,
         "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      },
+      "top10Streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      }
+    },
+    {
+      "rank": 31,
+      "code": "513120",
+      "name": "港股创新药ETF",
+      "theme": "医药",
+      "streak": 0,
+      "top10Streak": 0,
+      "trendScore": 0.0,
+      "phase": "退潮期",
+      "phaseNote": "跌出前 20",
+      "signal": "回避",
+      "signalNote": "跌出前 20，趋势退潮",
+      "rps3": 46.6,
+      "rps5": 36.5,
+      "rps10": 46.1,
+      "rps20": 83.1,
+      "rps50": 91.6,
+      "rps120": 76.4,
+      "rps250": 32.2,
+      "streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 1,
         "rps120": 0,
         "rps250": 0
       },
@@ -62992,9 +63136,9 @@ window.COCKPIT_DATA = {
     },
     {
       "rank": 32,
-      "code": "512170",
-      "name": "医疗ETF",
-      "theme": "医药",
+      "code": "510230",
+      "name": "金融ETF",
+      "theme": "非银金融",
       "streak": 0,
       "top10Streak": 0,
       "trendScore": 0.0,
@@ -63002,16 +63146,16 @@ window.COCKPIT_DATA = {
       "phaseNote": "跌出前 20",
       "signal": "回避",
       "signalNote": "跌出前 20，趋势退潮",
-      "rps3": 48.9,
-      "rps5": 56.7,
-      "rps10": 56.2,
+      "rps3": 88.2,
+      "rps5": 91.0,
+      "rps10": 86.5,
       "rps20": 82.6,
-      "rps50": 82.0,
-      "rps120": 79.8,
-      "rps250": 36.2,
+      "rps50": 75.8,
+      "rps120": 87.1,
+      "rps250": 71.8,
       "streaks": {
         "rps3": 0,
-        "rps5": 0,
+        "rps5": 1,
         "rps10": 0,
         "rps20": 0,
         "rps50": 0,
@@ -63030,9 +63174,9 @@ window.COCKPIT_DATA = {
     },
     {
       "rank": 33,
-      "code": "516820",
-      "name": "医疗创新ETF",
-      "theme": "医药",
+      "code": "513400",
+      "name": "道琼斯ETF",
+      "theme": "道琼斯",
       "streak": 0,
       "top10Streak": 0,
       "trendScore": 0.0,
@@ -63040,20 +63184,20 @@ window.COCKPIT_DATA = {
       "phaseNote": "跌出前 20",
       "signal": "回避",
       "signalNote": "跌出前 20，趋势退潮",
-      "rps3": 68.0,
-      "rps5": 68.0,
-      "rps10": 65.7,
+      "rps3": 66.9,
+      "rps5": 90.4,
+      "rps10": 85.4,
       "rps20": 82.0,
-      "rps50": 66.3,
-      "rps120": 65.2,
-      "rps250": 32.8,
+      "rps50": 78.7,
+      "rps120": 92.1,
+      "rps250": 85.6,
       "streaks": {
         "rps3": 0,
-        "rps5": 0,
+        "rps5": 1,
         "rps10": 0,
         "rps20": 0,
         "rps50": 0,
-        "rps120": 0,
+        "rps120": 6,
         "rps250": 0
       },
       "top10Streaks": {
@@ -63068,8 +63212,8 @@ window.COCKPIT_DATA = {
     },
     {
       "rank": 34,
-      "code": "510880",
-      "name": "红利ETF",
+      "code": "159545",
+      "name": "恒生红利低波ETF",
       "theme": "红利",
       "streak": 0,
       "top10Streak": 0,
@@ -63078,20 +63222,20 @@ window.COCKPIT_DATA = {
       "phaseNote": "跌出前 20",
       "signal": "回避",
       "signalNote": "跌出前 20，趋势退潮",
-      "rps3": 77.5,
-      "rps5": 78.1,
-      "rps10": 92.7,
+      "rps3": 72.5,
+      "rps5": 86.0,
+      "rps10": 86.0,
       "rps20": 81.5,
-      "rps50": 93.3,
-      "rps120": 90.4,
-      "rps250": 85.6,
+      "rps50": 53.9,
+      "rps120": 59.0,
+      "rps250": 54.0,
       "streaks": {
         "rps3": 0,
         "rps5": 0,
-        "rps10": 5,
+        "rps10": 0,
         "rps20": 0,
-        "rps50": 2,
-        "rps120": 1,
+        "rps50": 0,
+        "rps120": 0,
         "rps250": 0
       },
       "top10Streaks": {
@@ -63106,9 +63250,9 @@ window.COCKPIT_DATA = {
     },
     {
       "rank": 35,
-      "code": "513520",
-      "name": "日经ETF",
-      "theme": "日经",
+      "code": "159625",
+      "name": "绿色电力ETF",
+      "theme": "绿色电力",
       "streak": 0,
       "top10Streak": 0,
       "trendScore": 0.0,
@@ -63116,54 +63260,16 @@ window.COCKPIT_DATA = {
       "phaseNote": "跌出前 20",
       "signal": "回避",
       "signalNote": "跌出前 20，趋势退潮",
-      "rps3": 14.0,
-      "rps5": 29.2,
-      "rps10": 66.3,
+      "rps3": 79.8,
+      "rps5": 72.5,
+      "rps10": 84.3,
       "rps20": 80.9,
-      "rps50": 84.8,
-      "rps120": 96.6,
-      "rps250": 96.0,
+      "rps50": 67.4,
+      "rps120": 71.9,
+      "rps250": 73.0,
       "streaks": {
         "rps3": 0,
         "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 25,
-        "rps250": 23
-      },
-      "top10Streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 7,
-        "rps250": 8
-      }
-    },
-    {
-      "rank": 36,
-      "code": "513050",
-      "name": "中概互联网ETF",
-      "theme": "中概互联网",
-      "streak": 0,
-      "top10Streak": 0,
-      "trendScore": 0.0,
-      "phase": "退潮期",
-      "phaseNote": "跌出前 20",
-      "signal": "回避",
-      "signalNote": "跌出前 20，趋势退潮",
-      "rps3": 86.5,
-      "rps5": 96.1,
-      "rps10": 74.7,
-      "rps20": 80.3,
-      "rps50": 42.7,
-      "rps120": 34.3,
-      "rps250": 4.6,
-      "streaks": {
-        "rps3": 0,
-        "rps5": 1,
         "rps10": 0,
         "rps20": 0,
         "rps50": 0,
@@ -63172,7 +63278,45 @@ window.COCKPIT_DATA = {
       },
       "top10Streaks": {
         "rps3": 0,
-        "rps5": 1,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      }
+    },
+    {
+      "rank": 36,
+      "code": "513630",
+      "name": "港股红利指数ETF",
+      "theme": "红利",
+      "streak": 0,
+      "top10Streak": 0,
+      "trendScore": 0.0,
+      "phase": "退潮期",
+      "phaseNote": "跌出前 20",
+      "signal": "回避",
+      "signalNote": "跌出前 20，趋势退潮",
+      "rps3": 76.4,
+      "rps5": 79.8,
+      "rps10": 83.7,
+      "rps20": 80.3,
+      "rps50": 57.9,
+      "rps120": 68.0,
+      "rps250": 70.1,
+      "streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      },
+      "top10Streaks": {
+        "rps3": 0,
+        "rps5": 0,
         "rps10": 0,
         "rps20": 0,
         "rps50": 0,
@@ -63182,9 +63326,9 @@ window.COCKPIT_DATA = {
     },
     {
       "rank": 37,
-      "code": "159883",
-      "name": "医疗器械ETF",
-      "theme": "医药",
+      "code": "513910",
+      "name": "港股央企红利ETF",
+      "theme": "红利",
       "streak": 0,
       "top10Streak": 0,
       "trendScore": 0.0,
@@ -63192,13 +63336,13 @@ window.COCKPIT_DATA = {
       "phaseNote": "跌出前 20",
       "signal": "回避",
       "signalNote": "跌出前 20，趋势退潮",
-      "rps3": 53.9,
-      "rps5": 69.7,
-      "rps10": 65.2,
+      "rps3": 50.6,
+      "rps5": 79.8,
+      "rps10": 80.3,
       "rps20": 79.8,
-      "rps50": 73.6,
-      "rps120": 52.2,
-      "rps250": 24.1,
+      "rps50": 78.1,
+      "rps120": 78.7,
+      "rps250": 69.5,
       "streaks": {
         "rps3": 0,
         "rps5": 0,
@@ -63220,9 +63364,9 @@ window.COCKPIT_DATA = {
     },
     {
       "rank": 38,
-      "code": "159928",
-      "name": "消费ETF",
-      "theme": "消费",
+      "code": "159611",
+      "name": "电力ETF",
+      "theme": "电力",
       "streak": 0,
       "top10Streak": 0,
       "trendScore": 0.0,
@@ -63230,16 +63374,16 @@ window.COCKPIT_DATA = {
       "phaseNote": "跌出前 20",
       "signal": "回避",
       "signalNote": "跌出前 20，趋势退潮",
-      "rps3": 83.1,
-      "rps5": 92.1,
-      "rps10": 86.5,
+      "rps3": 85.4,
+      "rps5": 77.5,
+      "rps10": 88.2,
       "rps20": 79.2,
-      "rps50": 71.9,
-      "rps120": 51.7,
-      "rps250": 21.8,
+      "rps50": 66.3,
+      "rps120": 75.8,
+      "rps250": 75.9,
       "streaks": {
         "rps3": 0,
-        "rps5": 1,
+        "rps5": 0,
         "rps10": 0,
         "rps20": 0,
         "rps50": 0,
@@ -63258,9 +63402,9 @@ window.COCKPIT_DATA = {
     },
     {
       "rank": 39,
-      "code": "513970",
-      "name": "恒生消费ETF",
-      "theme": "消费",
+      "code": "516820",
+      "name": "医疗创新ETF",
+      "theme": "医药",
       "streak": 0,
       "top10Streak": 0,
       "trendScore": 0.0,
@@ -63268,16 +63412,16 @@ window.COCKPIT_DATA = {
       "phaseNote": "跌出前 20",
       "signal": "回避",
       "signalNote": "跌出前 20，趋势退潮",
-      "rps3": 95.5,
-      "rps5": 91.6,
-      "rps10": 87.6,
+      "rps3": 73.0,
+      "rps5": 65.7,
+      "rps10": 66.3,
       "rps20": 78.7,
-      "rps50": 44.9,
-      "rps120": 44.9,
-      "rps250": 17.2,
+      "rps50": 62.4,
+      "rps120": 64.6,
+      "rps250": 32.8,
       "streaks": {
-        "rps3": 1,
-        "rps5": 1,
+        "rps3": 0,
+        "rps5": 0,
         "rps10": 0,
         "rps20": 0,
         "rps50": 0,
@@ -63285,7 +63429,7 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "top10Streaks": {
-        "rps3": 1,
+        "rps3": 0,
         "rps5": 0,
         "rps10": 0,
         "rps20": 0,
@@ -63296,9 +63440,9 @@ window.COCKPIT_DATA = {
     },
     {
       "rank": 40,
-      "code": "510900",
-      "name": "恒生中国企业ETF",
-      "theme": "恒生中国企业",
+      "code": "159201",
+      "name": "自由现金流ETF",
+      "theme": "自由现金流",
       "streak": 0,
       "top10Streak": 0,
       "trendScore": 0.0,
@@ -63306,13 +63450,13 @@ window.COCKPIT_DATA = {
       "phaseNote": "跌出前 20",
       "signal": "回避",
       "signalNote": "跌出前 20，趋势退潮",
-      "rps3": 80.9,
+      "rps3": 84.3,
       "rps5": 84.8,
-      "rps10": 75.3,
+      "rps10": 89.3,
       "rps20": 78.1,
-      "rps50": 56.2,
-      "rps120": 61.2,
-      "rps250": 31.6,
+      "rps50": 77.5,
+      "rps120": 56.2,
+      "rps250": 81.0,
       "streaks": {
         "rps3": 0,
         "rps5": 0,
@@ -63334,9 +63478,9 @@ window.COCKPIT_DATA = {
     },
     {
       "rank": 41,
-      "code": "513400",
-      "name": "道琼斯ETF",
-      "theme": "道琼斯",
+      "code": "159792",
+      "name": "港股通互联网ETF",
+      "theme": "港股通互联网",
       "streak": 0,
       "top10Streak": 0,
       "trendScore": 0.0,
@@ -63344,20 +63488,20 @@ window.COCKPIT_DATA = {
       "phaseNote": "跌出前 20",
       "signal": "回避",
       "signalNote": "RPS 20=77.5，强势天数=0 天",
-      "rps3": 60.7,
-      "rps5": 88.8,
-      "rps10": 78.1,
+      "rps3": 84.8,
+      "rps5": 81.5,
+      "rps10": 69.7,
       "rps20": 77.5,
-      "rps50": 76.4,
-      "rps120": 91.6,
-      "rps250": 83.3,
+      "rps50": 29.2,
+      "rps120": 16.9,
+      "rps250": 2.9,
       "streaks": {
         "rps3": 0,
         "rps5": 0,
         "rps10": 0,
         "rps20": 0,
         "rps50": 0,
-        "rps120": 5,
+        "rps120": 0,
         "rps250": 0
       },
       "top10Streaks": {
@@ -63372,82 +63516,6 @@ window.COCKPIT_DATA = {
     },
     {
       "rank": 42,
-      "code": "159992",
-      "name": "创新药ETF",
-      "theme": "医药",
-      "streak": 0,
-      "top10Streak": 0,
-      "trendScore": 0.0,
-      "phase": "退潮期",
-      "phaseNote": "跌出前 20",
-      "signal": "回避",
-      "signalNote": "RPS 20=77.0，强势天数=0 天",
-      "rps3": 62.4,
-      "rps5": 51.7,
-      "rps10": 54.5,
-      "rps20": 77.0,
-      "rps50": 50.0,
-      "rps120": 73.6,
-      "rps250": 33.9,
-      "streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      },
-      "top10Streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      }
-    },
-    {
-      "rank": 43,
-      "code": "159201",
-      "name": "自由现金流ETF",
-      "theme": "自由现金流",
-      "streak": 0,
-      "top10Streak": 0,
-      "trendScore": 0.0,
-      "phase": "退潮期",
-      "phaseNote": "跌出前 20",
-      "signal": "回避",
-      "signalNote": "RPS 20=76.4，强势天数=0 天",
-      "rps3": 80.3,
-      "rps5": 77.5,
-      "rps10": 84.8,
-      "rps20": 76.4,
-      "rps50": 78.7,
-      "rps120": 48.9,
-      "rps250": 77.0,
-      "streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      },
-      "top10Streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      }
-    },
-    {
-      "rank": 44,
       "code": "159263",
       "name": "价值ETF",
       "theme": "价值",
@@ -63457,13 +63525,13 @@ window.COCKPIT_DATA = {
       "phase": "退潮期",
       "phaseNote": "跌出前 20",
       "signal": "回避",
-      "signalNote": "RPS 20=75.8，强势天数=0 天",
-      "rps3": 70.2,
-      "rps5": 75.8,
-      "rps10": 87.1,
-      "rps20": 75.8,
-      "rps50": 74.2,
-      "rps120": 76.4,
+      "signalNote": "RPS 20=77.0，强势天数=0 天",
+      "rps3": 87.1,
+      "rps5": 85.4,
+      "rps10": 88.8,
+      "rps20": 77.0,
+      "rps50": 70.8,
+      "rps120": 79.8,
       "rps250": 87.9,
       "streaks": {
         "rps3": 0,
@@ -63485,9 +63553,85 @@ window.COCKPIT_DATA = {
       }
     },
     {
+      "rank": 43,
+      "code": "159883",
+      "name": "医疗器械ETF",
+      "theme": "医药",
+      "streak": 0,
+      "top10Streak": 0,
+      "trendScore": 0.0,
+      "phase": "退潮期",
+      "phaseNote": "跌出前 20",
+      "signal": "回避",
+      "signalNote": "RPS 20=76.4，强势天数=0 天",
+      "rps3": 48.3,
+      "rps5": 50.0,
+      "rps10": 59.0,
+      "rps20": 76.4,
+      "rps50": 68.0,
+      "rps120": 51.7,
+      "rps250": 24.7,
+      "streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      },
+      "top10Streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      }
+    },
+    {
+      "rank": 44,
+      "code": "563960",
+      "name": "兴全沪深300质量ETF",
+      "theme": "兴全沪深300质量",
+      "streak": 0,
+      "top10Streak": 0,
+      "trendScore": 0.0,
+      "phase": "退潮期",
+      "phaseNote": "跌出前 20",
+      "signal": "回避",
+      "signalNote": "RPS 20=75.8，强势天数=0 天",
+      "rps3": 82.6,
+      "rps5": 86.5,
+      "rps10": 79.8,
+      "rps20": 75.8,
+      "rps50": 55.1,
+      "rps120": 68.5,
+      "rps250": null,
+      "streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      },
+      "top10Streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      }
+    },
+    {
       "rank": 45,
-      "code": "513290",
-      "name": "纳指生物科技ETF",
+      "code": "159570",
+      "name": "港股通创新药ETF",
       "theme": "医药",
       "streak": 0,
       "top10Streak": 0,
@@ -63496,37 +63640,37 @@ window.COCKPIT_DATA = {
       "phaseNote": "跌出前 20",
       "signal": "回避",
       "signalNote": "RPS 20=75.3，强势天数=0 天",
-      "rps3": 1.7,
-      "rps5": 39.3,
-      "rps10": 55.6,
+      "rps3": 67.4,
+      "rps5": 60.1,
+      "rps10": 55.1,
       "rps20": 75.3,
-      "rps50": 94.9,
-      "rps120": 95.5,
-      "rps250": 96.6,
+      "rps50": 57.3,
+      "rps120": 39.9,
+      "rps250": 12.1,
       "streaks": {
         "rps3": 0,
         "rps5": 0,
         "rps10": 0,
         "rps20": 0,
-        "rps50": 9,
-        "rps120": 11,
-        "rps250": 26
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
       },
       "top10Streaks": {
         "rps3": 0,
         "rps5": 0,
         "rps10": 0,
         "rps20": 0,
-        "rps50": 9,
-        "rps120": 4,
-        "rps250": 9
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
       }
     },
     {
       "rank": 46,
-      "code": "159399",
-      "name": "现金流ETF",
-      "theme": "现金流",
+      "code": "510900",
+      "name": "恒生中国企业ETF",
+      "theme": "恒生中国企业",
       "streak": 0,
       "top10Streak": 0,
       "trendScore": 0.0,
@@ -63534,13 +63678,13 @@ window.COCKPIT_DATA = {
       "phaseNote": "跌出前 20",
       "signal": "回避",
       "signalNote": "RPS 20=74.7，强势天数=0 天",
-      "rps3": 73.0,
-      "rps5": 76.4,
-      "rps10": 84.3,
+      "rps3": 77.5,
+      "rps5": 79.8,
+      "rps10": 70.8,
       "rps20": 74.7,
-      "rps50": 69.7,
-      "rps120": 47.2,
-      "rps250": 44.8,
+      "rps50": 51.7,
+      "rps120": 62.4,
+      "rps250": 31.6,
       "streaks": {
         "rps3": 0,
         "rps5": 0,
@@ -63562,8 +63706,8 @@ window.COCKPIT_DATA = {
     },
     {
       "rank": 47,
-      "code": "513700",
-      "name": "香港医药ETF",
+      "code": "159892",
+      "name": "恒生医药ETF",
       "theme": "医药",
       "streak": 0,
       "top10Streak": 0,
@@ -63572,13 +63716,13 @@ window.COCKPIT_DATA = {
       "phaseNote": "跌出前 20",
       "signal": "回避",
       "signalNote": "RPS 20=74.2，强势天数=0 天",
-      "rps3": 33.7,
-      "rps5": 40.4,
-      "rps10": 49.4,
+      "rps3": 47.2,
+      "rps5": 37.1,
+      "rps10": 41.0,
       "rps20": 74.2,
-      "rps50": 87.6,
-      "rps120": 68.5,
-      "rps250": 25.3,
+      "rps50": 88.8,
+      "rps120": 70.8,
+      "rps250": 28.7,
       "streaks": {
         "rps3": 0,
         "rps5": 0,
@@ -63600,9 +63744,9 @@ window.COCKPIT_DATA = {
     },
     {
       "rank": 48,
-      "code": "159859",
-      "name": "生物医药ETF",
-      "theme": "医药",
+      "code": "159399",
+      "name": "现金流ETF",
+      "theme": "现金流",
       "streak": 0,
       "top10Streak": 0,
       "trendScore": 0.0,
@@ -63610,13 +63754,13 @@ window.COCKPIT_DATA = {
       "phaseNote": "跌出前 20",
       "signal": "回避",
       "signalNote": "RPS 20=73.6，强势天数=0 天",
-      "rps3": 43.8,
-      "rps5": 38.8,
-      "rps10": 51.1,
+      "rps3": 80.3,
+      "rps5": 82.0,
+      "rps10": 87.1,
       "rps20": 73.6,
-      "rps50": 62.4,
-      "rps120": 72.5,
-      "rps250": 34.5,
+      "rps50": 65.7,
+      "rps120": 50.0,
+      "rps250": 46.0,
       "streaks": {
         "rps3": 0,
         "rps5": 0,
@@ -63638,9 +63782,9 @@ window.COCKPIT_DATA = {
     },
     {
       "rank": 49,
-      "code": "159792",
-      "name": "港股通互联网ETF",
-      "theme": "港股通互联网",
+      "code": "159992",
+      "name": "创新药ETF",
+      "theme": "医药",
       "streak": 0,
       "top10Streak": 0,
       "trendScore": 0.0,
@@ -63648,16 +63792,16 @@ window.COCKPIT_DATA = {
       "phaseNote": "跌出前 20",
       "signal": "回避",
       "signalNote": "RPS 20=73.0，强势天数=0 天",
-      "rps3": 88.2,
-      "rps5": 97.2,
-      "rps10": 75.8,
+      "rps3": 51.7,
+      "rps5": 39.3,
+      "rps10": 51.1,
       "rps20": 73.0,
-      "rps50": 37.6,
-      "rps120": 18.5,
-      "rps250": 2.9,
+      "rps50": 50.6,
+      "rps120": 70.2,
+      "rps250": 34.5,
       "streaks": {
         "rps3": 0,
-        "rps5": 1,
+        "rps5": 0,
         "rps10": 0,
         "rps20": 0,
         "rps50": 0,
@@ -63666,7 +63810,7 @@ window.COCKPIT_DATA = {
       },
       "top10Streaks": {
         "rps3": 0,
-        "rps5": 1,
+        "rps5": 0,
         "rps10": 0,
         "rps20": 0,
         "rps50": 0,
@@ -63676,9 +63820,9 @@ window.COCKPIT_DATA = {
     },
     {
       "rank": 50,
-      "code": "510810",
-      "name": "上海国企ETF",
-      "theme": "上海国企",
+      "code": "512170",
+      "name": "医疗ETF",
+      "theme": "医药",
       "streak": 0,
       "top10Streak": 0,
       "trendScore": 0.0,
@@ -63686,13 +63830,13 @@ window.COCKPIT_DATA = {
       "phaseNote": "跌出前 20",
       "signal": "回避",
       "signalNote": "RPS 20=72.5，强势天数=0 天",
-      "rps3": 57.9,
-      "rps5": 66.3,
-      "rps10": 71.3,
+      "rps3": 39.9,
+      "rps5": 39.9,
+      "rps10": 51.7,
       "rps20": 72.5,
-      "rps50": 65.7,
-      "rps120": 61.8,
-      "rps250": 42.5,
+      "rps50": 74.7,
+      "rps120": 77.5,
+      "rps250": 35.6,
       "streaks": {
         "rps3": 0,
         "rps5": 0,
@@ -63714,576 +63858,6 @@ window.COCKPIT_DATA = {
     },
     {
       "rank": 51,
-      "code": "512880",
-      "name": "证券ETF",
-      "theme": "非银金融",
-      "streak": 0,
-      "top10Streak": 0,
-      "trendScore": 0.0,
-      "phase": "退潮期",
-      "phaseNote": "跌出前 20",
-      "signal": "回避",
-      "signalNote": "RPS 20=71.9，强势天数=0 天",
-      "rps3": 96.6,
-      "rps5": 98.9,
-      "rps10": 76.4,
-      "rps20": 71.9,
-      "rps50": 48.3,
-      "rps120": 77.5,
-      "rps250": 35.1,
-      "streaks": {
-        "rps3": 1,
-        "rps5": 1,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      },
-      "top10Streaks": {
-        "rps3": 1,
-        "rps5": 1,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      }
-    },
-    {
-      "rank": 52,
-      "code": "512980",
-      "name": "传媒ETF",
-      "theme": "传媒",
-      "streak": 0,
-      "top10Streak": 0,
-      "trendScore": 0.0,
-      "phase": "退潮期",
-      "phaseNote": "跌出前 20",
-      "signal": "回避",
-      "signalNote": "RPS 20=71.3，强势天数=0 天",
-      "rps3": 73.6,
-      "rps5": 100.0,
-      "rps10": 82.0,
-      "rps20": 71.3,
-      "rps50": 93.8,
-      "rps120": 28.1,
-      "rps250": 21.3,
-      "streaks": {
-        "rps3": 0,
-        "rps5": 4,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 3,
-        "rps120": 0,
-        "rps250": 0
-      },
-      "top10Streaks": {
-        "rps3": 0,
-        "rps5": 2,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      }
-    },
-    {
-      "rank": 53,
-      "code": "513780",
-      "name": "港股创新药50ETF",
-      "theme": "医药",
-      "streak": 0,
-      "top10Streak": 0,
-      "trendScore": 0.0,
-      "phase": "退潮期",
-      "phaseNote": "跌出前 20",
-      "signal": "回避",
-      "signalNote": "RPS 20=70.8，强势天数=0 天",
-      "rps3": 15.2,
-      "rps5": 21.9,
-      "rps10": 40.4,
-      "rps20": 70.8,
-      "rps50": 90.4,
-      "rps120": 77.0,
-      "rps250": 31.0,
-      "streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 1,
-        "rps120": 0,
-        "rps250": 0
-      },
-      "top10Streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      }
-    },
-    {
-      "rank": 54,
-      "code": "513550",
-      "name": "港股通50ETF",
-      "theme": "港股通50",
-      "streak": 0,
-      "top10Streak": 0,
-      "trendScore": 0.0,
-      "phase": "退潮期",
-      "phaseNote": "跌出前 20",
-      "signal": "回避",
-      "signalNote": "RPS 20=70.2，强势天数=0 天",
-      "rps3": 91.0,
-      "rps5": 93.8,
-      "rps10": 74.2,
-      "rps20": 70.2,
-      "rps50": 53.4,
-      "rps120": 66.3,
-      "rps250": 50.6,
-      "streaks": {
-        "rps3": 3,
-        "rps5": 1,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      },
-      "top10Streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      }
-    },
-    {
-      "rank": 55,
-      "code": "513120",
-      "name": "港股创新药ETF",
-      "theme": "医药",
-      "streak": 0,
-      "top10Streak": 0,
-      "trendScore": 0.0,
-      "phase": "退潮期",
-      "phaseNote": "跌出前 20",
-      "signal": "回避",
-      "signalNote": "RPS 20=69.7，强势天数=0 天",
-      "rps3": 15.7,
-      "rps5": 25.3,
-      "rps10": 39.3,
-      "rps20": 69.7,
-      "rps50": 89.3,
-      "rps120": 74.2,
-      "rps250": 29.3,
-      "streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      },
-      "top10Streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      }
-    },
-    {
-      "rank": 56,
-      "code": "512200",
-      "name": "房地产ETF",
-      "theme": "房地产",
-      "streak": 0,
-      "top10Streak": 0,
-      "trendScore": 0.0,
-      "phase": "退潮期",
-      "phaseNote": "跌出前 20",
-      "signal": "回避",
-      "signalNote": "RPS 20=69.1，强势天数=0 天",
-      "rps3": 25.8,
-      "rps5": 13.5,
-      "rps10": 47.8,
-      "rps20": 69.1,
-      "rps50": 87.1,
-      "rps120": 46.1,
-      "rps250": 16.7,
-      "streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      },
-      "top10Streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      }
-    },
-    {
-      "rank": 57,
-      "code": "159920",
-      "name": "恒生ETF",
-      "theme": "恒生",
-      "streak": 0,
-      "top10Streak": 0,
-      "trendScore": 0.0,
-      "phase": "退潮期",
-      "phaseNote": "跌出前 20",
-      "signal": "回避",
-      "signalNote": "RPS 20=68.5，强势天数=0 天",
-      "rps3": 79.2,
-      "rps5": 86.0,
-      "rps10": 69.7,
-      "rps20": 68.5,
-      "rps50": 51.1,
-      "rps120": 60.7,
-      "rps250": 38.5,
-      "streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      },
-      "top10Streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      }
-    },
-    {
-      "rank": 58,
-      "code": "510050",
-      "name": "50ETF",
-      "theme": "50",
-      "streak": 0,
-      "top10Streak": 0,
-      "trendScore": 0.0,
-      "phase": "退潮期",
-      "phaseNote": "跌出前 20",
-      "signal": "回避",
-      "signalNote": "RPS 20=68.0，强势天数=0 天",
-      "rps3": 66.3,
-      "rps5": 71.3,
-      "rps10": 67.4,
-      "rps20": 68.0,
-      "rps50": 48.9,
-      "rps120": 78.1,
-      "rps250": 56.3,
-      "streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      },
-      "top10Streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      }
-    },
-    {
-      "rank": 59,
-      "code": "159980",
-      "name": "有色ETF",
-      "theme": "有色金属",
-      "streak": 0,
-      "top10Streak": 0,
-      "trendScore": 0.0,
-      "phase": "退潮期",
-      "phaseNote": "跌出前 20",
-      "signal": "回避",
-      "signalNote": "RPS 20=67.4，强势天数=0 天",
-      "rps3": 60.1,
-      "rps5": 63.5,
-      "rps10": 71.9,
-      "rps20": 67.4,
-      "rps50": 71.3,
-      "rps120": 83.7,
-      "rps250": 93.1,
-      "streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 4
-      },
-      "top10Streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      }
-    },
-    {
-      "rank": 60,
-      "code": "510720",
-      "name": "红利国企ETF",
-      "theme": "红利",
-      "streak": 0,
-      "top10Streak": 0,
-      "trendScore": 0.0,
-      "phase": "退潮期",
-      "phaseNote": "跌出前 20",
-      "signal": "回避",
-      "signalNote": "RPS 20=66.9，强势天数=0 天",
-      "rps3": 63.5,
-      "rps5": 65.2,
-      "rps10": 83.1,
-      "rps20": 66.9,
-      "rps50": 86.0,
-      "rps120": 88.2,
-      "rps250": 83.9,
-      "streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      },
-      "top10Streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      }
-    },
-    {
-      "rank": 61,
-      "code": "159892",
-      "name": "恒生医药ETF",
-      "theme": "医药",
-      "streak": 0,
-      "top10Streak": 0,
-      "trendScore": 0.0,
-      "phase": "退潮期",
-      "phaseNote": "跌出前 20",
-      "signal": "回避",
-      "signalNote": "RPS 20=66.3，强势天数=0 天",
-      "rps3": 20.2,
-      "rps5": 27.0,
-      "rps10": 38.8,
-      "rps20": 66.3,
-      "rps50": 88.2,
-      "rps120": 66.9,
-      "rps250": 26.4,
-      "streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      },
-      "top10Streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      }
-    },
-    {
-      "rank": 62,
-      "code": "515630",
-      "name": "保险证券ETF",
-      "theme": "非银金融",
-      "streak": 0,
-      "top10Streak": 0,
-      "trendScore": 0.0,
-      "phase": "退潮期",
-      "phaseNote": "跌出前 20",
-      "signal": "回避",
-      "signalNote": "RPS 20=65.7，强势天数=0 天",
-      "rps3": 84.3,
-      "rps5": 93.3,
-      "rps10": 70.8,
-      "rps20": 65.7,
-      "rps50": 47.2,
-      "rps120": 70.2,
-      "rps250": 40.2,
-      "streaks": {
-        "rps3": 0,
-        "rps5": 1,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      },
-      "top10Streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      }
-    },
-    {
-      "rank": 63,
-      "code": "512070",
-      "name": "证券保险ETF",
-      "theme": "非银金融",
-      "streak": 0,
-      "top10Streak": 0,
-      "trendScore": 0.0,
-      "phase": "退潮期",
-      "phaseNote": "跌出前 20",
-      "signal": "回避",
-      "signalNote": "RPS 20=65.2，强势天数=0 天",
-      "rps3": 78.7,
-      "rps5": 89.3,
-      "rps10": 69.1,
-      "rps20": 65.2,
-      "rps50": 46.6,
-      "rps120": 68.0,
-      "rps250": 46.6,
-      "streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      },
-      "top10Streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      }
-    },
-    {
-      "rank": 64,
-      "code": "510210",
-      "name": "指数ETF",
-      "theme": "指数",
-      "streak": 0,
-      "top10Streak": 0,
-      "trendScore": 0.0,
-      "phase": "退潮期",
-      "phaseNote": "跌出前 20",
-      "signal": "回避",
-      "signalNote": "RPS 20=64.6，强势天数=0 天",
-      "rps3": 65.7,
-      "rps5": 60.1,
-      "rps10": 61.2,
-      "rps20": 64.6,
-      "rps50": 64.6,
-      "rps120": 70.8,
-      "rps250": 69.0,
-      "streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      },
-      "top10Streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      }
-    },
-    {
-      "rank": 65,
-      "code": "159588",
-      "name": "石油ETF",
-      "theme": "石油",
-      "streak": 0,
-      "top10Streak": 0,
-      "trendScore": 0.0,
-      "phase": "退潮期",
-      "phaseNote": "跌出前 20",
-      "signal": "回避",
-      "signalNote": "RPS 20=64.0，强势天数=0 天",
-      "rps3": 84.8,
-      "rps5": 53.4,
-      "rps10": 82.6,
-      "rps20": 64.0,
-      "rps50": 84.3,
-      "rps120": 59.0,
-      "rps250": 93.7,
-      "streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 6
-      },
-      "top10Streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      }
-    },
-    {
-      "rank": 66,
       "code": "513060",
       "name": "恒生医疗ETF",
       "theme": "医药",
@@ -64293,13 +63867,13 @@ window.COCKPIT_DATA = {
       "phase": "退潮期",
       "phaseNote": "跌出前 20",
       "signal": "回避",
-      "signalNote": "RPS 20=63.5，强势天数=0 天",
-      "rps3": 29.8,
-      "rps5": 34.8,
-      "rps10": 41.6,
-      "rps20": 63.5,
-      "rps50": 77.5,
-      "rps120": 56.7,
+      "signalNote": "RPS 20=71.9，强势天数=0 天",
+      "rps3": 53.9,
+      "rps5": 41.0,
+      "rps10": 44.4,
+      "rps20": 71.9,
+      "rps50": 82.0,
+      "rps120": 58.4,
       "rps250": 16.1,
       "streaks": {
         "rps3": 0,
@@ -64321,7 +63895,45 @@ window.COCKPIT_DATA = {
       }
     },
     {
-      "rank": 67,
+      "rank": 52,
+      "code": "513520",
+      "name": "日经ETF",
+      "theme": "日经",
+      "streak": 0,
+      "top10Streak": 0,
+      "trendScore": 0.0,
+      "phase": "退潮期",
+      "phaseNote": "跌出前 20",
+      "signal": "回避",
+      "signalNote": "RPS 20=71.3，强势天数=0 天",
+      "rps3": 31.5,
+      "rps5": 33.1,
+      "rps10": 74.7,
+      "rps20": 71.3,
+      "rps50": 93.3,
+      "rps120": 95.5,
+      "rps250": 96.0,
+      "streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 1,
+        "rps120": 26,
+        "rps250": 24
+      },
+      "top10Streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 8,
+        "rps250": 9
+      }
+    },
+    {
+      "rank": 53,
       "code": "159506",
       "name": "港股通医疗ETF",
       "theme": "医药",
@@ -64331,13 +63943,13 @@ window.COCKPIT_DATA = {
       "phase": "退潮期",
       "phaseNote": "跌出前 20",
       "signal": "回避",
-      "signalNote": "RPS 20=62.9，强势天数=0 天",
-      "rps3": 21.3,
-      "rps5": 26.4,
-      "rps10": 29.5,
-      "rps20": 62.9,
-      "rps50": 57.3,
-      "rps120": 37.6,
+      "signalNote": "RPS 20=70.8，强势天数=0 天",
+      "rps3": 71.3,
+      "rps5": 48.3,
+      "rps10": 43.8,
+      "rps20": 70.8,
+      "rps50": 69.7,
+      "rps120": 48.3,
       "rps250": 14.9,
       "streaks": {
         "rps3": 0,
@@ -64359,7 +63971,501 @@ window.COCKPIT_DATA = {
       }
     },
     {
-      "rank": 68,
+      "rank": 54,
+      "code": "512200",
+      "name": "房地产ETF",
+      "theme": "房地产",
+      "streak": 0,
+      "top10Streak": 0,
+      "trendScore": 0.0,
+      "phase": "退潮期",
+      "phaseNote": "跌出前 20",
+      "signal": "回避",
+      "signalNote": "RPS 20=70.2，强势天数=0 天",
+      "rps3": 29.2,
+      "rps5": 23.6,
+      "rps10": 45.5,
+      "rps20": 70.2,
+      "rps50": 79.2,
+      "rps120": 42.1,
+      "rps250": 17.2,
+      "streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      },
+      "top10Streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      }
+    },
+    {
+      "rank": 55,
+      "code": "515220",
+      "name": "煤炭ETF",
+      "theme": "煤炭",
+      "streak": 0,
+      "top10Streak": 0,
+      "trendScore": 0.0,
+      "phase": "退潮期",
+      "phaseNote": "跌出前 20",
+      "signal": "回避",
+      "signalNote": "RPS 20=69.7，强势天数=0 天",
+      "rps3": 65.2,
+      "rps5": 68.5,
+      "rps10": 82.0,
+      "rps20": 69.7,
+      "rps50": 95.5,
+      "rps120": 89.9,
+      "rps250": 90.8,
+      "streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 3,
+        "rps120": 0,
+        "rps250": 1
+      },
+      "top10Streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 1,
+        "rps120": 0,
+        "rps250": 0
+      }
+    },
+    {
+      "rank": 56,
+      "code": "159378",
+      "name": "通用航空ETF",
+      "theme": "军工",
+      "streak": 0,
+      "top10Streak": 0,
+      "trendScore": 0.0,
+      "phase": "退潮期",
+      "phaseNote": "跌出前 20",
+      "signal": "回避",
+      "signalNote": "RPS 20=69.1，强势天数=0 天",
+      "rps3": 99.4,
+      "rps5": 99.4,
+      "rps10": 79.2,
+      "rps20": 69.1,
+      "rps50": 85.4,
+      "rps120": 15.2,
+      "rps250": 30.5,
+      "streaks": {
+        "rps3": 1,
+        "rps5": 1,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      },
+      "top10Streaks": {
+        "rps3": 1,
+        "rps5": 1,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      }
+    },
+    {
+      "rank": 57,
+      "code": "520690",
+      "name": "港股创新药精选ETF",
+      "theme": "医药",
+      "streak": 0,
+      "top10Streak": 0,
+      "trendScore": 0.0,
+      "phase": "退潮期",
+      "phaseNote": "跌出前 20",
+      "signal": "回避",
+      "signalNote": "RPS 20=68.5，强势天数=0 天",
+      "rps3": 62.9,
+      "rps5": 52.8,
+      "rps10": 47.2,
+      "rps20": 68.5,
+      "rps50": 52.2,
+      "rps120": 29.8,
+      "rps250": 10.9,
+      "streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      },
+      "top10Streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      }
+    },
+    {
+      "rank": 58,
+      "code": "512710",
+      "name": "军工龙头ETF",
+      "theme": "军工",
+      "streak": 0,
+      "top10Streak": 0,
+      "trendScore": 0.0,
+      "phase": "退潮期",
+      "phaseNote": "跌出前 20",
+      "signal": "回避",
+      "signalNote": "RPS 20=68.0，强势天数=0 天",
+      "rps3": 96.6,
+      "rps5": 98.9,
+      "rps10": 82.6,
+      "rps20": 68.0,
+      "rps50": 89.3,
+      "rps120": 28.1,
+      "rps250": 51.7,
+      "streaks": {
+        "rps3": 3,
+        "rps5": 1,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      },
+      "top10Streaks": {
+        "rps3": 2,
+        "rps5": 1,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      }
+    },
+    {
+      "rank": 59,
+      "code": "513190",
+      "name": "港股通金融ETF",
+      "theme": "非银金融",
+      "streak": 0,
+      "top10Streak": 0,
+      "trendScore": 0.0,
+      "phase": "退潮期",
+      "phaseNote": "跌出前 20",
+      "signal": "回避",
+      "signalNote": "RPS 20=67.4，强势天数=0 天",
+      "rps3": 59.0,
+      "rps5": 78.7,
+      "rps10": 69.1,
+      "rps20": 67.4,
+      "rps50": 70.2,
+      "rps120": 86.0,
+      "rps250": 83.3,
+      "streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      },
+      "top10Streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      }
+    },
+    {
+      "rank": 60,
+      "code": "513550",
+      "name": "港股通50ETF",
+      "theme": "港股通50",
+      "streak": 0,
+      "top10Streak": 0,
+      "trendScore": 0.0,
+      "phase": "退潮期",
+      "phaseNote": "跌出前 20",
+      "signal": "回避",
+      "signalNote": "RPS 20=66.9，强势天数=0 天",
+      "rps3": 80.9,
+      "rps5": 84.3,
+      "rps10": 66.9,
+      "rps20": 66.9,
+      "rps50": 46.1,
+      "rps120": 67.4,
+      "rps250": 48.9,
+      "streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      },
+      "top10Streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      }
+    },
+    {
+      "rank": 61,
+      "code": "159920",
+      "name": "恒生ETF",
+      "theme": "恒生",
+      "streak": 0,
+      "top10Streak": 0,
+      "trendScore": 0.0,
+      "phase": "退潮期",
+      "phaseNote": "跌出前 20",
+      "signal": "回避",
+      "signalNote": "RPS 20=66.3，强势天数=0 天",
+      "rps3": 73.9,
+      "rps5": 76.4,
+      "rps10": 64.6,
+      "rps20": 66.3,
+      "rps50": 45.5,
+      "rps120": 61.8,
+      "rps250": 39.1,
+      "streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      },
+      "top10Streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      }
+    },
+    {
+      "rank": 62,
+      "code": "510720",
+      "name": "红利国企ETF",
+      "theme": "红利",
+      "streak": 0,
+      "top10Streak": 0,
+      "trendScore": 0.0,
+      "phase": "退潮期",
+      "phaseNote": "跌出前 20",
+      "signal": "回避",
+      "signalNote": "RPS 20=65.7，强势天数=0 天",
+      "rps3": 63.5,
+      "rps5": 69.7,
+      "rps10": 80.9,
+      "rps20": 65.7,
+      "rps50": 84.3,
+      "rps120": 89.3,
+      "rps250": 82.8,
+      "streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      },
+      "top10Streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      }
+    },
+    {
+      "rank": 63,
+      "code": "520500",
+      "name": "恒生创新药ETF",
+      "theme": "医药",
+      "streak": 0,
+      "top10Streak": 0,
+      "trendScore": 0.0,
+      "phase": "退潮期",
+      "phaseNote": "跌出前 20",
+      "signal": "回避",
+      "signalNote": "RPS 20=65.2，强势天数=0 天",
+      "rps3": 59.6,
+      "rps5": 52.2,
+      "rps10": 49.4,
+      "rps20": 65.2,
+      "rps50": 44.4,
+      "rps120": 26.4,
+      "rps250": 9.2,
+      "streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      },
+      "top10Streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      }
+    },
+    {
+      "rank": 64,
+      "code": "513030",
+      "name": "德国ETF",
+      "theme": "德国",
+      "streak": 0,
+      "top10Streak": 0,
+      "trendScore": 0.0,
+      "phase": "退潮期",
+      "phaseNote": "跌出前 20",
+      "signal": "回避",
+      "signalNote": "RPS 20=64.6，强势天数=0 天",
+      "rps3": 86.5,
+      "rps5": 83.7,
+      "rps10": 71.9,
+      "rps20": 64.6,
+      "rps50": 63.5,
+      "rps120": 84.3,
+      "rps250": 63.2,
+      "streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      },
+      "top10Streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      }
+    },
+    {
+      "rank": 65,
+      "code": "513330",
+      "name": "恒生互联网ETF",
+      "theme": "恒生互联网",
+      "streak": 0,
+      "top10Streak": 0,
+      "trendScore": 0.0,
+      "phase": "退潮期",
+      "phaseNote": "跌出前 20",
+      "signal": "回避",
+      "signalNote": "RPS 20=64.0，强势天数=0 天",
+      "rps3": 83.1,
+      "rps5": 75.8,
+      "rps10": 59.6,
+      "rps20": 64.0,
+      "rps50": 20.2,
+      "rps120": 23.0,
+      "rps250": 4.0,
+      "streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      },
+      "top10Streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      }
+    },
+    {
+      "rank": 66,
+      "code": "563760",
+      "name": "全指自由现金流ETF",
+      "theme": "全指自由现金流",
+      "streak": 0,
+      "top10Streak": 0,
+      "trendScore": 0.0,
+      "phase": "退潮期",
+      "phaseNote": "跌出前 20",
+      "signal": "回避",
+      "signalNote": "RPS 20=63.5，强势天数=0 天",
+      "rps3": 81.5,
+      "rps5": 78.1,
+      "rps10": 84.8,
+      "rps20": 63.5,
+      "rps50": 58.4,
+      "rps120": 45.5,
+      "rps250": 71.3,
+      "streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      },
+      "top10Streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      }
+    },
+    {
+      "rank": 67,
       "code": "513360",
       "name": "教育ETF",
       "theme": "教育",
@@ -64369,20 +64475,58 @@ window.COCKPIT_DATA = {
       "phase": "退潮期",
       "phaseNote": "跌出前 20",
       "signal": "回避",
-      "signalNote": "RPS 20=62.4，强势天数=0 天",
-      "rps3": 43.3,
-      "rps5": 50.6,
-      "rps10": 63.5,
-      "rps20": 62.4,
-      "rps50": 91.6,
-      "rps120": 48.3,
-      "rps250": 22.4,
+      "signalNote": "RPS 20=62.9，强势天数=0 天",
+      "rps3": 41.0,
+      "rps5": 42.7,
+      "rps10": 47.8,
+      "rps20": 62.9,
+      "rps50": 88.2,
+      "rps120": 55.1,
+      "rps250": 23.6,
       "streaks": {
         "rps3": 0,
         "rps5": 0,
         "rps10": 0,
         "rps20": 0,
-        "rps50": 6,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      },
+      "top10Streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      }
+    },
+    {
+      "rank": 68,
+      "code": "159859",
+      "name": "生物医药ETF",
+      "theme": "医药",
+      "streak": 0,
+      "top10Streak": 0,
+      "trendScore": 0.0,
+      "phase": "退潮期",
+      "phaseNote": "跌出前 20",
+      "signal": "回避",
+      "signalNote": "RPS 20=62.4，强势天数=0 天",
+      "rps3": 28.7,
+      "rps5": 24.2,
+      "rps10": 40.4,
+      "rps20": 62.4,
+      "rps50": 56.2,
+      "rps120": 64.0,
+      "rps250": 33.9,
+      "streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
         "rps120": 0,
         "rps250": 0
       },
@@ -64398,9 +64542,9 @@ window.COCKPIT_DATA = {
     },
     {
       "rank": 69,
-      "code": "518680",
-      "name": "金ETF",
-      "theme": "金",
+      "code": "159996",
+      "name": "家电ETF",
+      "theme": "家电",
       "streak": 0,
       "top10Streak": 0,
       "trendScore": 0.0,
@@ -64408,13 +64552,13 @@ window.COCKPIT_DATA = {
       "phaseNote": "跌出前 20",
       "signal": "回避",
       "signalNote": "RPS 20=61.8，强势天数=0 天",
-      "rps3": 77.0,
-      "rps5": 81.5,
-      "rps10": 64.6,
+      "rps3": 75.8,
+      "rps5": 69.1,
+      "rps10": 58.4,
       "rps20": 61.8,
-      "rps50": 73.0,
-      "rps120": 42.1,
-      "rps250": 80.5,
+      "rps50": 59.6,
+      "rps120": 69.7,
+      "rps250": 43.1,
       "streaks": {
         "rps3": 0,
         "rps5": 0,
@@ -64436,9 +64580,9 @@ window.COCKPIT_DATA = {
     },
     {
       "rank": 70,
-      "code": "510180",
-      "name": "180ETF",
-      "theme": "180",
+      "code": "159985",
+      "name": "豆粕ETF",
+      "theme": "豆粕",
       "streak": 0,
       "top10Streak": 0,
       "trendScore": 0.0,
@@ -64446,11 +64590,429 @@ window.COCKPIT_DATA = {
       "phaseNote": "跌出前 20",
       "signal": "回避",
       "signalNote": "RPS 20=61.2，强势天数=0 天",
-      "rps3": 64.0,
-      "rps5": 61.2,
-      "rps10": 60.7,
+      "rps3": 36.5,
+      "rps5": 43.3,
+      "rps10": 50.0,
       "rps20": 61.2,
-      "rps50": 46.1,
+      "rps50": 84.8,
+      "rps120": 93.3,
+      "rps250": 89.7,
+      "streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 7,
+        "rps250": 0
+      },
+      "top10Streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      }
+    },
+    {
+      "rank": 71,
+      "code": "510810",
+      "name": "上海国企ETF",
+      "theme": "上海国企",
+      "streak": 0,
+      "top10Streak": 0,
+      "trendScore": 0.0,
+      "phase": "退潮期",
+      "phaseNote": "跌出前 20",
+      "signal": "回避",
+      "signalNote": "RPS 20=60.7，强势天数=0 天",
+      "rps3": 52.8,
+      "rps5": 57.3,
+      "rps10": 68.5,
+      "rps20": 60.7,
+      "rps50": 53.4,
+      "rps120": 60.7,
+      "rps250": 37.4,
+      "streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      },
+      "top10Streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      }
+    },
+    {
+      "rank": 72,
+      "code": "159588",
+      "name": "石油ETF",
+      "theme": "石油",
+      "streak": 0,
+      "top10Streak": 0,
+      "trendScore": 0.0,
+      "phase": "退潮期",
+      "phaseNote": "跌出前 20",
+      "signal": "回避",
+      "signalNote": "RPS 20=60.1，强势天数=0 天",
+      "rps3": 57.9,
+      "rps5": 55.1,
+      "rps10": 75.8,
+      "rps20": 60.1,
+      "rps50": 81.5,
+      "rps120": 61.2,
+      "rps250": 93.7,
+      "streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 7
+      },
+      "top10Streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      }
+    },
+    {
+      "rank": 73,
+      "code": "510050",
+      "name": "50ETF",
+      "theme": "50",
+      "streak": 0,
+      "top10Streak": 0,
+      "trendScore": 0.0,
+      "phase": "下跌趋势",
+      "phaseNote": "RPS 20=59.6",
+      "signal": "回避",
+      "signalNote": "RPS 20=59.6，强势天数=0 天",
+      "rps3": 64.0,
+      "rps5": 70.2,
+      "rps10": 64.0,
+      "rps20": 59.6,
+      "rps50": 48.9,
+      "rps120": 74.7,
+      "rps250": 56.3,
+      "streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      },
+      "top10Streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      }
+    },
+    {
+      "rank": 74,
+      "code": "510210",
+      "name": "指数ETF",
+      "theme": "指数",
+      "streak": 0,
+      "top10Streak": 0,
+      "trendScore": 0.0,
+      "phase": "下跌趋势",
+      "phaseNote": "RPS 20=59.0",
+      "signal": "回避",
+      "signalNote": "RPS 20=59.0，强势天数=0 天",
+      "rps3": 55.6,
+      "rps5": 61.2,
+      "rps10": 54.5,
+      "rps20": 59.0,
+      "rps50": 64.6,
+      "rps120": 72.5,
+      "rps250": 67.8,
+      "streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      },
+      "top10Streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      }
+    },
+    {
+      "rank": 75,
+      "code": "159980",
+      "name": "有色ETF",
+      "theme": "有色金属",
+      "streak": 0,
+      "top10Streak": 0,
+      "trendScore": 0.0,
+      "phase": "下跌趋势",
+      "phaseNote": "RPS 20=58.4",
+      "signal": "回避",
+      "signalNote": "RPS 20=58.4，强势天数=0 天",
+      "rps3": 60.1,
+      "rps5": 71.9,
+      "rps10": 62.9,
+      "rps20": 58.4,
+      "rps50": 71.3,
+      "rps120": 84.8,
+      "rps250": 93.1,
+      "streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 5
+      },
+      "top10Streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      }
+    },
+    {
+      "rank": 76,
+      "code": "159502",
+      "name": "标普生物科技ETF",
+      "theme": "医药",
+      "streak": 0,
+      "top10Streak": 0,
+      "trendScore": 0.0,
+      "phase": "下跌趋势",
+      "phaseNote": "RPS 20=57.9",
+      "signal": "回避",
+      "signalNote": "RPS 20=57.9，强势天数=0 天",
+      "rps3": 33.7,
+      "rps5": 44.9,
+      "rps10": 52.8,
+      "rps20": 57.9,
+      "rps50": 72.5,
+      "rps120": 94.4,
+      "rps250": 98.3,
+      "streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 43,
+        "rps250": 43
+      },
+      "top10Streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 37
+      }
+    },
+    {
+      "rank": 77,
+      "code": "512980",
+      "name": "传媒ETF",
+      "theme": "传媒",
+      "streak": 0,
+      "top10Streak": 0,
+      "trendScore": 0.0,
+      "phase": "下跌趋势",
+      "phaseNote": "RPS 20=57.3",
+      "signal": "回避",
+      "signalNote": "RPS 20=57.3，强势天数=0 天",
+      "rps3": 32.6,
+      "rps5": 56.2,
+      "rps10": 70.2,
+      "rps20": 57.3,
+      "rps50": 79.8,
+      "rps120": 19.7,
+      "rps250": 19.0,
+      "streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      },
+      "top10Streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      }
+    },
+    {
+      "rank": 78,
+      "code": "159638",
+      "name": "高端装备ETF",
+      "theme": "高端装备",
+      "streak": 0,
+      "top10Streak": 0,
+      "trendScore": 0.0,
+      "phase": "下跌趋势",
+      "phaseNote": "RPS 20=56.7",
+      "signal": "回避",
+      "signalNote": "RPS 20=56.7，强势天数=0 天",
+      "rps3": 89.9,
+      "rps5": 91.6,
+      "rps10": 68.0,
+      "rps20": 56.7,
+      "rps50": 73.0,
+      "rps120": 19.1,
+      "rps250": 52.9,
+      "streaks": {
+        "rps3": 0,
+        "rps5": 1,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      },
+      "top10Streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      }
+    },
+    {
+      "rank": 79,
+      "code": "512880",
+      "name": "证券ETF",
+      "theme": "非银金融",
+      "streak": 0,
+      "top10Streak": 0,
+      "trendScore": 0.0,
+      "phase": "下跌趋势",
+      "phaseNote": "RPS 20=56.2",
+      "signal": "回避",
+      "signalNote": "RPS 20=56.2，强势天数=0 天",
+      "rps3": 79.2,
+      "rps5": 77.0,
+      "rps10": 71.3,
+      "rps20": 56.2,
+      "rps50": 47.2,
+      "rps120": 74.2,
+      "rps250": 35.1,
+      "streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      },
+      "top10Streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      }
+    },
+    {
+      "rank": 80,
+      "code": "159758",
+      "name": "红利质量ETF",
+      "theme": "红利",
+      "streak": 0,
+      "top10Streak": 0,
+      "trendScore": 0.0,
+      "phase": "下跌趋势",
+      "phaseNote": "RPS 20=55.6",
+      "signal": "回避",
+      "signalNote": "RPS 20=55.6，强势天数=0 天",
+      "rps3": 68.0,
+      "rps5": 57.9,
+      "rps10": 61.2,
+      "rps20": 55.6,
+      "rps50": 55.6,
+      "rps120": 75.3,
+      "rps250": 59.2,
+      "streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      },
+      "top10Streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      }
+    },
+    {
+      "rank": 81,
+      "code": "510180",
+      "name": "180ETF",
+      "theme": "180",
+      "streak": 0,
+      "top10Streak": 0,
+      "trendScore": 0.0,
+      "phase": "下跌趋势",
+      "phaseNote": "RPS 20=55.1",
+      "signal": "回避",
+      "signalNote": "RPS 20=55.1，强势天数=0 天",
+      "rps3": 56.2,
+      "rps5": 63.5,
+      "rps10": 57.9,
+      "rps20": 55.1,
+      "rps50": 47.8,
       "rps120": 62.9,
       "rps250": 52.3,
       "streaks": {
@@ -64473,254 +65035,26 @@ window.COCKPIT_DATA = {
       }
     },
     {
-      "rank": 71,
-      "code": "518880",
-      "name": "黄金ETF",
-      "theme": "黄金",
-      "streak": 0,
-      "top10Streak": 0,
-      "trendScore": 0.0,
-      "phase": "退潮期",
-      "phaseNote": "跌出前 20",
-      "signal": "回避",
-      "signalNote": "RPS 20=60.7，强势天数=0 天",
-      "rps3": 75.8,
-      "rps5": 79.8,
-      "rps10": 64.0,
-      "rps20": 60.7,
-      "rps50": 72.5,
-      "rps120": 39.3,
-      "rps250": 79.3,
-      "streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      },
-      "top10Streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      }
-    },
-    {
-      "rank": 72,
-      "code": "159570",
-      "name": "港股通创新药ETF",
-      "theme": "医药",
-      "streak": 0,
-      "top10Streak": 0,
-      "trendScore": 0.0,
-      "phase": "退潮期",
-      "phaseNote": "跌出前 20",
-      "signal": "回避",
-      "signalNote": "RPS 20=60.1，强势天数=0 天",
-      "rps3": 39.9,
-      "rps5": 38.2,
-      "rps10": 41.0,
-      "rps20": 60.1,
-      "rps50": 49.4,
-      "rps120": 32.6,
-      "rps250": 12.1,
-      "streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      },
-      "top10Streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      }
-    },
-    {
-      "rank": 73,
-      "code": "159996",
-      "name": "家电ETF",
-      "theme": "家电",
+      "rank": 82,
+      "code": "563380",
+      "name": "航空航天ETF",
+      "theme": "军工",
       "streak": 0,
       "top10Streak": 0,
       "trendScore": 0.0,
       "phase": "下跌趋势",
-      "phaseNote": "RPS 20=59.6",
+      "phaseNote": "RPS 20=54.5",
       "signal": "回避",
-      "signalNote": "RPS 20=59.6，强势天数=0 天",
-      "rps3": 55.1,
-      "rps5": 60.7,
-      "rps10": 60.1,
-      "rps20": 59.6,
-      "rps50": 59.6,
-      "rps120": 63.5,
-      "rps250": 42.0,
+      "signalNote": "RPS 20=54.5，强势天数=0 天",
+      "rps3": 92.7,
+      "rps5": 95.5,
+      "rps10": 72.5,
+      "rps20": 54.5,
+      "rps50": 87.1,
+      "rps120": 23.6,
+      "rps250": null,
       "streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      },
-      "top10Streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      }
-    },
-    {
-      "rank": 74,
-      "code": "563760",
-      "name": "全指自由现金流ETF",
-      "theme": "全指自由现金流",
-      "streak": 0,
-      "top10Streak": 0,
-      "trendScore": 0.0,
-      "phase": "下跌趋势",
-      "phaseNote": "RPS 20=59.0",
-      "signal": "回避",
-      "signalNote": "RPS 20=59.0，强势天数=0 天",
-      "rps3": 68.5,
-      "rps5": 75.3,
-      "rps10": 81.5,
-      "rps20": 59.0,
-      "rps50": 59.0,
-      "rps120": 38.8,
-      "rps250": 69.5,
-      "streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      },
-      "top10Streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      }
-    },
-    {
-      "rank": 75,
-      "code": "159985",
-      "name": "豆粕ETF",
-      "theme": "豆粕",
-      "streak": 0,
-      "top10Streak": 0,
-      "trendScore": 0.0,
-      "phase": "下跌趋势",
-      "phaseNote": "RPS 20=58.4",
-      "signal": "回避",
-      "signalNote": "RPS 20=58.4，强势天数=0 天",
-      "rps3": 61.2,
-      "rps5": 70.2,
-      "rps10": 73.0,
-      "rps20": 58.4,
-      "rps50": 70.2,
-      "rps120": 93.3,
-      "rps250": 89.1,
-      "streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 6,
-        "rps250": 0
-      },
-      "top10Streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      }
-    },
-    {
-      "rank": 76,
-      "code": "513030",
-      "name": "德国ETF",
-      "theme": "德国",
-      "streak": 0,
-      "top10Streak": 0,
-      "trendScore": 0.0,
-      "phase": "下跌趋势",
-      "phaseNote": "RPS 20=57.9",
-      "signal": "回避",
-      "signalNote": "RPS 20=57.9，强势天数=0 天",
-      "rps3": 76.4,
-      "rps5": 74.7,
-      "rps10": 62.4,
-      "rps20": 57.9,
-      "rps50": 61.8,
-      "rps120": 81.5,
-      "rps250": 58.6,
-      "streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      },
-      "top10Streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      }
-    },
-    {
-      "rank": 77,
-      "code": "513330",
-      "name": "恒生互联网ETF",
-      "theme": "恒生互联网",
-      "streak": 0,
-      "top10Streak": 0,
-      "trendScore": 0.0,
-      "phase": "下跌趋势",
-      "phaseNote": "RPS 20=57.3",
-      "signal": "回避",
-      "signalNote": "RPS 20=57.3，强势天数=0 天",
-      "rps3": 78.1,
-      "rps5": 90.4,
-      "rps10": 68.0,
-      "rps20": 57.3,
-      "rps50": 30.3,
-      "rps120": 24.7,
-      "rps250": 3.4,
-      "streaks": {
-        "rps3": 0,
+        "rps3": 2,
         "rps5": 1,
         "rps10": 0,
         "rps20": 0,
@@ -64730,7 +65064,7 @@ window.COCKPIT_DATA = {
       },
       "top10Streaks": {
         "rps3": 0,
-        "rps5": 0,
+        "rps5": 1,
         "rps10": 0,
         "rps20": 0,
         "rps50": 0,
@@ -64739,7 +65073,7 @@ window.COCKPIT_DATA = {
       }
     },
     {
-      "rank": 78,
+      "rank": 83,
       "code": "159852",
       "name": "软件ETF",
       "theme": "软件",
@@ -64747,15 +65081,15 @@ window.COCKPIT_DATA = {
       "top10Streak": 0,
       "trendScore": 0.0,
       "phase": "下跌趋势",
-      "phaseNote": "RPS 20=56.7",
+      "phaseNote": "RPS 20=53.9",
       "signal": "回避",
-      "signalNote": "RPS 20=56.7，强势天数=0 天",
-      "rps3": 53.4,
-      "rps5": 78.7,
-      "rps10": 55.1,
-      "rps20": 56.7,
-      "rps50": 47.8,
-      "rps120": 20.8,
+      "signalNote": "RPS 20=53.9，强势天数=0 天",
+      "rps3": 40.4,
+      "rps5": 51.1,
+      "rps10": 50.6,
+      "rps20": 53.9,
+      "rps50": 44.9,
+      "rps120": 16.3,
       "rps250": 10.3,
       "streaks": {
         "rps3": 0,
@@ -64777,200 +65111,10 @@ window.COCKPIT_DATA = {
       }
     },
     {
-      "rank": 79,
-      "code": "515220",
-      "name": "煤炭ETF",
-      "theme": "煤炭",
-      "streak": 0,
-      "top10Streak": 0,
-      "trendScore": 0.0,
-      "phase": "下跌趋势",
-      "phaseNote": "RPS 20=56.2",
-      "signal": "回避",
-      "signalNote": "RPS 20=56.2，强势天数=0 天",
-      "rps3": 66.9,
-      "rps5": 62.9,
-      "rps10": 80.3,
-      "rps20": 56.2,
-      "rps50": 92.7,
-      "rps120": 87.1,
-      "rps250": 88.5,
-      "streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 2,
-        "rps120": 0,
-        "rps250": 0
-      },
-      "top10Streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      }
-    },
-    {
-      "rank": 80,
-      "code": "159869",
-      "name": "游戏ETF",
-      "theme": "游戏",
-      "streak": 0,
-      "top10Streak": 0,
-      "trendScore": 0.0,
-      "phase": "下跌趋势",
-      "phaseNote": "RPS 20=55.6",
-      "signal": "回避",
-      "signalNote": "RPS 20=55.6，强势天数=0 天",
-      "rps3": 75.3,
-      "rps5": 97.8,
-      "rps10": 72.5,
-      "rps20": 55.6,
-      "rps50": 79.8,
-      "rps120": 27.5,
-      "rps250": 9.2,
-      "streaks": {
-        "rps3": 0,
-        "rps5": 1,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      },
-      "top10Streaks": {
-        "rps3": 0,
-        "rps5": 1,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      }
-    },
-    {
-      "rank": 81,
-      "code": "159758",
-      "name": "红利质量ETF",
-      "theme": "红利",
-      "streak": 0,
-      "top10Streak": 0,
-      "trendScore": 0.0,
-      "phase": "下跌趋势",
-      "phaseNote": "RPS 20=55.1",
-      "signal": "回避",
-      "signalNote": "RPS 20=55.1，强势天数=0 天",
-      "rps3": 65.2,
-      "rps5": 61.8,
-      "rps10": 59.0,
-      "rps20": 55.1,
-      "rps50": 56.7,
-      "rps120": 73.0,
-      "rps250": 57.5,
-      "streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      },
-      "top10Streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      }
-    },
-    {
-      "rank": 82,
-      "code": "513090",
-      "name": "香港证券ETF",
-      "theme": "非银金融",
-      "streak": 0,
-      "top10Streak": 0,
-      "trendScore": 0.0,
-      "phase": "下跌趋势",
-      "phaseNote": "RPS 20=54.5",
-      "signal": "回避",
-      "signalNote": "RPS 20=54.5，强势天数=0 天",
-      "rps3": 71.9,
-      "rps5": 77.0,
-      "rps10": 57.9,
-      "rps20": 54.5,
-      "rps50": 43.3,
-      "rps120": 64.6,
-      "rps250": 19.5,
-      "streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      },
-      "top10Streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      }
-    },
-    {
-      "rank": 83,
-      "code": "159502",
-      "name": "标普生物科技ETF",
-      "theme": "医药",
-      "streak": 0,
-      "top10Streak": 0,
-      "trendScore": 0.0,
-      "phase": "下跌趋势",
-      "phaseNote": "RPS 20=53.9",
-      "signal": "回避",
-      "signalNote": "RPS 20=53.9，强势天数=0 天",
-      "rps3": 16.3,
-      "rps5": 45.5,
-      "rps10": 37.6,
-      "rps20": 53.9,
-      "rps50": 66.9,
-      "rps120": 94.4,
-      "rps250": 98.3,
-      "streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 42,
-        "rps250": 42
-      },
-      "top10Streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 36
-      }
-    },
-    {
       "rank": 84,
-      "code": "159851",
-      "name": "金融科技ETF",
-      "theme": "非银金融",
+      "code": "515210",
+      "name": "钢铁ETF",
+      "theme": "钢铁",
       "streak": 0,
       "top10Streak": 0,
       "trendScore": 0.0,
@@ -64978,16 +65122,16 @@ window.COCKPIT_DATA = {
       "phaseNote": "RPS 20=53.4",
       "signal": "回避",
       "signalNote": "RPS 20=53.4，强势天数=0 天",
-      "rps3": 82.0,
-      "rps5": 98.3,
-      "rps10": 66.9,
+      "rps3": 71.9,
+      "rps5": 68.0,
+      "rps10": 74.2,
       "rps20": 53.4,
-      "rps50": 74.7,
-      "rps120": 25.3,
-      "rps250": 6.9,
+      "rps50": 52.8,
+      "rps120": 15.7,
+      "rps250": 29.9,
       "streaks": {
         "rps3": 0,
-        "rps5": 1,
+        "rps5": 0,
         "rps10": 0,
         "rps20": 0,
         "rps50": 0,
@@ -64996,7 +65140,7 @@ window.COCKPIT_DATA = {
       },
       "top10Streaks": {
         "rps3": 0,
-        "rps5": 1,
+        "rps5": 0,
         "rps10": 0,
         "rps20": 0,
         "rps50": 0,
@@ -65006,9 +65150,9 @@ window.COCKPIT_DATA = {
     },
     {
       "rank": 85,
-      "code": "520830",
-      "name": "沙特ETF",
-      "theme": "沙特",
+      "code": "159227",
+      "name": "航空航天ETF",
+      "theme": "军工",
       "streak": 0,
       "top10Streak": 0,
       "trendScore": 0.0,
@@ -65016,16 +65160,16 @@ window.COCKPIT_DATA = {
       "phaseNote": "RPS 20=52.8",
       "signal": "回避",
       "signalNote": "RPS 20=52.8，强势天数=0 天",
-      "rps3": 54.5,
-      "rps5": 49.4,
-      "rps10": 58.4,
+      "rps3": 97.8,
+      "rps5": 98.3,
+      "rps10": 73.6,
       "rps20": 52.8,
-      "rps50": 51.7,
-      "rps120": 50.6,
-      "rps250": 51.1,
+      "rps50": 83.7,
+      "rps120": 14.6,
+      "rps250": 42.0,
       "streaks": {
-        "rps3": 0,
-        "rps5": 0,
+        "rps3": 3,
+        "rps5": 1,
         "rps10": 0,
         "rps20": 0,
         "rps50": 0,
@@ -65033,8 +65177,8 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "top10Streaks": {
-        "rps3": 0,
-        "rps5": 0,
+        "rps3": 2,
+        "rps5": 1,
         "rps10": 0,
         "rps20": 0,
         "rps50": 0,
@@ -65044,9 +65188,9 @@ window.COCKPIT_DATA = {
     },
     {
       "rank": 86,
-      "code": "159595",
-      "name": "A50ETF",
-      "theme": "A50",
+      "code": "518880",
+      "name": "黄金ETF",
+      "theme": "黄金",
       "streak": 0,
       "top10Streak": 0,
       "trendScore": 0.0,
@@ -65054,13 +65198,13 @@ window.COCKPIT_DATA = {
       "phaseNote": "RPS 20=52.2",
       "signal": "回避",
       "signalNote": "RPS 20=52.2，强势天数=0 天",
-      "rps3": 67.4,
-      "rps5": 66.9,
-      "rps10": 59.6,
+      "rps3": 74.7,
+      "rps5": 74.2,
+      "rps10": 62.4,
       "rps20": 52.2,
-      "rps50": 40.4,
-      "rps120": 62.4,
-      "rps250": 60.9,
+      "rps50": 74.2,
+      "rps120": 43.8,
+      "rps250": 77.0,
       "streaks": {
         "rps3": 0,
         "rps5": 0,
@@ -65082,9 +65226,9 @@ window.COCKPIT_DATA = {
     },
     {
       "rank": 87,
-      "code": "516970",
-      "name": "基建ETF",
-      "theme": "基建",
+      "code": "518680",
+      "name": "金ETF",
+      "theme": "金",
       "streak": 0,
       "top10Streak": 0,
       "trendScore": 0.0,
@@ -65092,13 +65236,13 @@ window.COCKPIT_DATA = {
       "phaseNote": "RPS 20=51.7",
       "signal": "回避",
       "signalNote": "RPS 20=51.7，强势天数=0 天",
-      "rps3": 52.8,
-      "rps5": 55.6,
-      "rps10": 57.3,
+      "rps3": 75.3,
+      "rps5": 75.3,
+      "rps10": 61.8,
       "rps20": 51.7,
-      "rps50": 53.9,
-      "rps120": 42.7,
-      "rps250": 48.9,
+      "rps50": 75.3,
+      "rps120": 43.3,
+      "rps250": 78.2,
       "streaks": {
         "rps3": 0,
         "rps5": 0,
@@ -65120,272 +65264,6 @@ window.COCKPIT_DATA = {
     },
     {
       "rank": 88,
-      "code": "520690",
-      "name": "港股创新药精选ETF",
-      "theme": "医药",
-      "streak": 0,
-      "top10Streak": 0,
-      "trendScore": 0.0,
-      "phase": "下跌趋势",
-      "phaseNote": "RPS 20=51.1",
-      "signal": "回避",
-      "signalNote": "RPS 20=51.1，强势天数=0 天",
-      "rps3": 37.1,
-      "rps5": 33.7,
-      "rps10": 34.3,
-      "rps20": 51.1,
-      "rps50": 44.4,
-      "rps120": 27.0,
-      "rps250": 9.8,
-      "streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      },
-      "top10Streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      }
-    },
-    {
-      "rank": 89,
-      "code": "515210",
-      "name": "钢铁ETF",
-      "theme": "钢铁",
-      "streak": 0,
-      "top10Streak": 0,
-      "trendScore": 0.0,
-      "phase": "下跌趋势",
-      "phaseNote": "RPS 20=50.6",
-      "signal": "回避",
-      "signalNote": "RPS 20=50.6，强势天数=0 天",
-      "rps3": 62.9,
-      "rps5": 55.1,
-      "rps10": 70.2,
-      "rps20": 50.6,
-      "rps50": 55.6,
-      "rps120": 13.5,
-      "rps250": 27.6,
-      "streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      },
-      "top10Streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      }
-    },
-    {
-      "rank": 90,
-      "code": "561360",
-      "name": "石油ETF",
-      "theme": "石油",
-      "streak": 0,
-      "top10Streak": 0,
-      "trendScore": 0.0,
-      "phase": "下跌趋势",
-      "phaseNote": "RPS 20=50.0",
-      "signal": "回避",
-      "signalNote": "RPS 20=50.0，强势天数=0 天",
-      "rps3": 69.7,
-      "rps5": 42.1,
-      "rps10": 73.6,
-      "rps20": 50.0,
-      "rps50": 80.3,
-      "rps120": 53.9,
-      "rps250": 95.4,
-      "streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 9
-      },
-      "top10Streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 3
-      }
-    },
-    {
-      "rank": 91,
-      "code": "588170",
-      "name": "科创半导体ETF",
-      "theme": "半导体",
-      "streak": 0,
-      "top10Streak": 0,
-      "trendScore": 0.0,
-      "phase": "下跌趋势",
-      "phaseNote": "RPS 20=49.4",
-      "signal": "回避",
-      "signalNote": "RPS 20=49.4，强势天数=0 天",
-      "rps3": 52.2,
-      "rps5": 47.2,
-      "rps10": 15.7,
-      "rps20": 49.4,
-      "rps50": 12.9,
-      "rps120": 99.4,
-      "rps250": 100.0,
-      "streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 110,
-        "rps250": 104
-      },
-      "top10Streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 103,
-        "rps250": 102
-      }
-    },
-    {
-      "rank": 92,
-      "code": "510300",
-      "name": "沪深300ETF",
-      "theme": "沪深300",
-      "streak": 0,
-      "top10Streak": 0,
-      "trendScore": 0.0,
-      "phase": "下跌趋势",
-      "phaseNote": "RPS 20=48.9",
-      "signal": "回避",
-      "signalNote": "RPS 20=48.9，强势天数=0 天",
-      "rps3": 57.3,
-      "rps5": 52.8,
-      "rps10": 52.8,
-      "rps20": 48.9,
-      "rps50": 38.2,
-      "rps120": 58.4,
-      "rps250": 53.4,
-      "streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      },
-      "top10Streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      }
-    },
-    {
-      "rank": 93,
-      "code": "513130",
-      "name": "恒生科技ETF",
-      "theme": "恒生科技",
-      "streak": 0,
-      "top10Streak": 0,
-      "trendScore": 0.0,
-      "phase": "下跌趋势",
-      "phaseNote": "RPS 20=48.3",
-      "signal": "回避",
-      "signalNote": "RPS 20=48.3，强势天数=0 天",
-      "rps3": 59.6,
-      "rps5": 74.2,
-      "rps10": 53.4,
-      "rps20": 48.3,
-      "rps50": 25.3,
-      "rps120": 31.5,
-      "rps250": 5.7,
-      "streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      },
-      "top10Streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      }
-    },
-    {
-      "rank": 94,
-      "code": "512710",
-      "name": "军工龙头ETF",
-      "theme": "军工",
-      "streak": 0,
-      "top10Streak": 0,
-      "trendScore": 0.0,
-      "phase": "下跌趋势",
-      "phaseNote": "RPS 20=47.8",
-      "signal": "回避",
-      "signalNote": "RPS 20=47.8，强势天数=0 天",
-      "rps3": 98.9,
-      "rps5": 64.0,
-      "rps10": 56.7,
-      "rps20": 47.8,
-      "rps50": 67.4,
-      "rps120": 20.2,
-      "rps250": 41.4,
-      "streaks": {
-        "rps3": 2,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      },
-      "top10Streaks": {
-        "rps3": 1,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      }
-    },
-    {
-      "rank": 95,
       "code": "513160",
       "name": "港股科技30ETF",
       "theme": "港股科技30",
@@ -65393,15 +65271,15 @@ window.COCKPIT_DATA = {
       "top10Streak": 0,
       "trendScore": 0.0,
       "phase": "下跌趋势",
-      "phaseNote": "RPS 20=47.2",
+      "phaseNote": "RPS 20=51.1",
       "signal": "回避",
-      "signalNote": "RPS 20=47.2，强势天数=0 天",
-      "rps3": 50.6,
-      "rps5": 68.5,
-      "rps10": 47.2,
-      "rps20": 47.2,
-      "rps50": 29.2,
-      "rps120": 44.4,
+      "signalNote": "RPS 20=51.1，强势天数=0 天",
+      "rps3": 61.8,
+      "rps5": 53.4,
+      "rps10": 38.8,
+      "rps20": 51.1,
+      "rps50": 21.9,
+      "rps120": 46.6,
       "rps250": 6.3,
       "streaks": {
         "rps3": 0,
@@ -65423,10 +65301,276 @@ window.COCKPIT_DATA = {
       }
     },
     {
+      "rank": 89,
+      "code": "513130",
+      "name": "恒生科技ETF",
+      "theme": "恒生科技",
+      "streak": 0,
+      "top10Streak": 0,
+      "trendScore": 0.0,
+      "phase": "下跌趋势",
+      "phaseNote": "RPS 20=50.6",
+      "signal": "回避",
+      "signalNote": "RPS 20=50.6，强势天数=0 天",
+      "rps3": 66.0,
+      "rps5": 61.8,
+      "rps10": 42.7,
+      "rps20": 50.6,
+      "rps50": 19.7,
+      "rps120": 33.1,
+      "rps250": 5.7,
+      "streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      },
+      "top10Streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      }
+    },
+    {
+      "rank": 90,
+      "code": "515630",
+      "name": "保险证券ETF",
+      "theme": "非银金融",
+      "streak": 0,
+      "top10Streak": 0,
+      "trendScore": 0.0,
+      "phase": "下跌趋势",
+      "phaseNote": "RPS 20=50.0",
+      "signal": "回避",
+      "signalNote": "RPS 20=50.0，强势天数=0 天",
+      "rps3": 77.0,
+      "rps5": 71.3,
+      "rps10": 65.2,
+      "rps20": 50.0,
+      "rps50": 46.6,
+      "rps120": 69.1,
+      "rps250": 39.7,
+      "streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      },
+      "top10Streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      }
+    },
+    {
+      "rank": 91,
+      "code": "513980",
+      "name": "港股科技50ETF",
+      "theme": "港股科技50",
+      "streak": 0,
+      "top10Streak": 0,
+      "trendScore": 0.0,
+      "phase": "下跌趋势",
+      "phaseNote": "RPS 20=49.4",
+      "signal": "回避",
+      "signalNote": "RPS 20=49.4，强势天数=0 天",
+      "rps3": 57.3,
+      "rps5": 43.8,
+      "rps10": 37.1,
+      "rps20": 49.4,
+      "rps50": 30.3,
+      "rps120": 34.8,
+      "rps250": 8.0,
+      "streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      },
+      "top10Streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      }
+    },
+    {
+      "rank": 92,
+      "code": "520830",
+      "name": "沙特ETF",
+      "theme": "沙特",
+      "streak": 0,
+      "top10Streak": 0,
+      "trendScore": 0.0,
+      "phase": "下跌趋势",
+      "phaseNote": "RPS 20=48.9",
+      "signal": "回避",
+      "signalNote": "RPS 20=48.9，强势天数=0 天",
+      "rps3": 69.1,
+      "rps5": 62.9,
+      "rps10": 53.9,
+      "rps20": 48.9,
+      "rps50": 50.0,
+      "rps120": 53.4,
+      "rps250": 48.3,
+      "streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      },
+      "top10Streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      }
+    },
+    {
+      "rank": 93,
+      "code": "512070",
+      "name": "证券保险ETF",
+      "theme": "非银金融",
+      "streak": 0,
+      "top10Streak": 0,
+      "trendScore": 0.0,
+      "phase": "下跌趋势",
+      "phaseNote": "RPS 20=48.3",
+      "signal": "回避",
+      "signalNote": "RPS 20=48.3，强势天数=0 天",
+      "rps3": 78.7,
+      "rps5": 70.8,
+      "rps10": 65.7,
+      "rps20": 48.3,
+      "rps50": 43.3,
+      "rps120": 66.3,
+      "rps250": 44.8,
+      "streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      },
+      "top10Streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      }
+    },
+    {
+      "rank": 94,
+      "code": "159262",
+      "name": "港股通科技ETF",
+      "theme": "港股通科技",
+      "streak": 0,
+      "top10Streak": 0,
+      "trendScore": 0.0,
+      "phase": "下跌趋势",
+      "phaseNote": "RPS 20=47.8",
+      "signal": "回避",
+      "signalNote": "RPS 20=47.8，强势天数=0 天",
+      "rps3": 62.4,
+      "rps5": 51.7,
+      "rps10": 36.5,
+      "rps20": 47.8,
+      "rps50": 24.2,
+      "rps120": 40.4,
+      "rps250": 5.2,
+      "streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      },
+      "top10Streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      }
+    },
+    {
+      "rank": 95,
+      "code": "561360",
+      "name": "石油ETF",
+      "theme": "石油",
+      "streak": 0,
+      "top10Streak": 0,
+      "trendScore": 0.0,
+      "phase": "下跌趋势",
+      "phaseNote": "RPS 20=47.2",
+      "signal": "回避",
+      "signalNote": "RPS 20=47.2，强势天数=0 天",
+      "rps3": 36.0,
+      "rps5": 38.8,
+      "rps10": 60.7,
+      "rps20": 47.2,
+      "rps50": 82.6,
+      "rps120": 57.9,
+      "rps250": 94.8,
+      "streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 10
+      },
+      "top10Streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 4
+      }
+    },
+    {
       "rank": 96,
-      "code": "520500",
-      "name": "恒生创新药ETF",
-      "theme": "医药",
+      "code": "159851",
+      "name": "金融科技ETF",
+      "theme": "非银金融",
       "streak": 0,
       "top10Streak": 0,
       "trendScore": 0.0,
@@ -65434,13 +65578,13 @@ window.COCKPIT_DATA = {
       "phaseNote": "RPS 20=46.6",
       "signal": "回避",
       "signalNote": "RPS 20=46.6，强势天数=0 天",
-      "rps3": 30.9,
-      "rps5": 33.1,
-      "rps10": 33.1,
+      "rps3": 46.1,
+      "rps5": 67.4,
+      "rps10": 63.5,
       "rps20": 46.6,
-      "rps50": 41.6,
-      "rps120": 21.9,
-      "rps250": 8.6,
+      "rps50": 60.7,
+      "rps120": 21.3,
+      "rps250": 6.9,
       "streaks": {
         "rps3": 0,
         "rps5": 0,
@@ -65472,13 +65616,13 @@ window.COCKPIT_DATA = {
       "phaseNote": "RPS 20=46.1",
       "signal": "回避",
       "signalNote": "RPS 20=46.1，强势天数=0 天",
-      "rps3": 42.7,
-      "rps5": 19.7,
-      "rps10": 16.3,
+      "rps3": 51.1,
+      "rps5": 27.5,
+      "rps10": 19.7,
       "rps20": 46.1,
-      "rps50": 27.0,
-      "rps120": 39.9,
-      "rps250": 17.8,
+      "rps50": 28.7,
+      "rps120": 41.6,
+      "rps250": 21.3,
       "streaks": {
         "rps3": 0,
         "rps5": 0,
@@ -65500,9 +65644,9 @@ window.COCKPIT_DATA = {
     },
     {
       "rank": 98,
-      "code": "513980",
-      "name": "港股科技50ETF",
-      "theme": "港股科技50",
+      "code": "512670",
+      "name": "国防ETF",
+      "theme": "国防",
       "streak": 0,
       "top10Streak": 0,
       "trendScore": 0.0,
@@ -65510,13 +65654,13 @@ window.COCKPIT_DATA = {
       "phaseNote": "RPS 20=45.5",
       "signal": "回避",
       "signalNote": "RPS 20=45.5，强势天数=0 天",
-      "rps3": 46.1,
-      "rps5": 59.6,
-      "rps10": 43.8,
+      "rps3": 87.6,
+      "rps5": 89.3,
+      "rps10": 60.1,
       "rps20": 45.5,
-      "rps50": 36.0,
-      "rps120": 33.1,
-      "rps250": 8.0,
+      "rps50": 83.1,
+      "rps120": 25.3,
+      "rps250": 54.6,
       "streaks": {
         "rps3": 0,
         "rps5": 0,
@@ -65538,9 +65682,9 @@ window.COCKPIT_DATA = {
     },
     {
       "rank": 99,
-      "code": "159766",
-      "name": "旅游ETF",
-      "theme": "旅游",
+      "code": "159865",
+      "name": "养殖ETF",
+      "theme": "养殖",
       "streak": 0,
       "top10Streak": 0,
       "trendScore": 0.0,
@@ -65548,13 +65692,13 @@ window.COCKPIT_DATA = {
       "phaseNote": "RPS 20=44.9",
       "signal": "回避",
       "signalNote": "RPS 20=44.9，强势天数=0 天",
-      "rps3": 69.1,
-      "rps5": 70.8,
-      "rps10": 62.9,
+      "rps3": 70.8,
+      "rps5": 64.0,
+      "rps10": 77.5,
       "rps20": 44.9,
-      "rps50": 52.2,
-      "rps120": 19.1,
-      "rps250": 14.4,
+      "rps50": 68.5,
+      "rps120": 33.7,
+      "rps250": 26.4,
       "streaks": {
         "rps3": 0,
         "rps5": 0,
@@ -65576,9 +65720,9 @@ window.COCKPIT_DATA = {
     },
     {
       "rank": 100,
-      "code": "563000",
-      "name": "中国A50ETF",
-      "theme": "中国A50",
+      "code": "516970",
+      "name": "基建ETF",
+      "theme": "基建",
       "streak": 0,
       "top10Streak": 0,
       "trendScore": 0.0,
@@ -65586,13 +65730,13 @@ window.COCKPIT_DATA = {
       "phaseNote": "RPS 20=44.4",
       "signal": "回避",
       "signalNote": "RPS 20=44.4，强势天数=0 天",
-      "rps3": 56.7,
-      "rps5": 58.4,
-      "rps10": 52.2,
+      "rps3": 38.2,
+      "rps5": 53.9,
+      "rps10": 56.7,
       "rps20": 44.4,
-      "rps50": 32.0,
-      "rps120": 67.4,
-      "rps250": 64.9,
+      "rps50": 51.1,
+      "rps120": 42.7,
+      "rps250": 44.3,
       "streaks": {
         "rps3": 0,
         "rps5": 0,
@@ -65614,9 +65758,9 @@ window.COCKPIT_DATA = {
     },
     {
       "rank": 101,
-      "code": "159262",
-      "name": "港股通科技ETF",
-      "theme": "港股通科技",
+      "code": "513090",
+      "name": "香港证券ETF",
+      "theme": "非银金融",
       "streak": 0,
       "top10Streak": 0,
       "trendScore": 0.0,
@@ -65624,13 +65768,13 @@ window.COCKPIT_DATA = {
       "phaseNote": "RPS 20=43.8",
       "signal": "回避",
       "signalNote": "RPS 20=43.8，强势天数=0 天",
-      "rps3": 47.8,
-      "rps5": 67.4,
-      "rps10": 44.4,
+      "rps3": 66.0,
+      "rps5": 73.0,
+      "rps10": 56.2,
       "rps20": 43.8,
-      "rps50": 28.7,
-      "rps120": 36.0,
-      "rps250": 5.2,
+      "rps50": 42.1,
+      "rps120": 65.7,
+      "rps250": 24.1,
       "streaks": {
         "rps3": 0,
         "rps5": 0,
@@ -65652,9 +65796,9 @@ window.COCKPIT_DATA = {
     },
     {
       "rank": 102,
-      "code": "513750",
-      "name": "港股通非银ETF",
-      "theme": "非银金融",
+      "code": "159595",
+      "name": "A50ETF",
+      "theme": "A50",
       "streak": 0,
       "top10Streak": 0,
       "trendScore": 0.0,
@@ -65662,13 +65806,13 @@ window.COCKPIT_DATA = {
       "phaseNote": "RPS 20=43.3",
       "signal": "回避",
       "signalNote": "RPS 20=43.3，强势天数=0 天",
-      "rps3": 55.6,
-      "rps5": 62.4,
-      "rps10": 50.6,
+      "rps3": 53.4,
+      "rps5": 60.7,
+      "rps10": 53.4,
       "rps20": 43.3,
-      "rps50": 41.0,
-      "rps120": 47.8,
-      "rps250": 39.7,
+      "rps50": 33.7,
+      "rps120": 60.1,
+      "rps250": 58.6,
       "streaks": {
         "rps3": 0,
         "rps5": 0,
@@ -65690,9 +65834,9 @@ window.COCKPIT_DATA = {
     },
     {
       "rank": 103,
-      "code": "512090",
-      "name": "MSCIA股ETF",
-      "theme": "MSCIA股",
+      "code": "159825",
+      "name": "农业ETF",
+      "theme": "农业",
       "streak": 0,
       "top10Streak": 0,
       "trendScore": 0.0,
@@ -65700,13 +65844,13 @@ window.COCKPIT_DATA = {
       "phaseNote": "RPS 20=42.7",
       "signal": "回避",
       "signalNote": "RPS 20=42.7，强势天数=0 天",
-      "rps3": 51.7,
-      "rps5": 46.1,
-      "rps10": 43.3,
+      "rps3": 73.9,
+      "rps5": 59.6,
+      "rps10": 77.0,
       "rps20": 42.7,
-      "rps50": 39.3,
-      "rps120": 60.1,
-      "rps250": 62.1,
+      "rps50": 64.0,
+      "rps120": 36.0,
+      "rps250": 42.5,
       "streaks": {
         "rps3": 0,
         "rps5": 0,
@@ -65728,9 +65872,9 @@ window.COCKPIT_DATA = {
     },
     {
       "rank": 104,
-      "code": "515800",
-      "name": "800ETF",
-      "theme": "800",
+      "code": "510300",
+      "name": "沪深300ETF",
+      "theme": "沪深300",
       "streak": 0,
       "top10Streak": 0,
       "trendScore": 0.0,
@@ -65738,13 +65882,13 @@ window.COCKPIT_DATA = {
       "phaseNote": "RPS 20=42.1",
       "signal": "回避",
       "signalNote": "RPS 20=42.1，强势天数=0 天",
-      "rps3": 51.1,
-      "rps5": 48.9,
-      "rps10": 42.7,
+      "rps3": 44.9,
+      "rps5": 50.6,
+      "rps10": 43.3,
       "rps20": 42.1,
-      "rps50": 36.5,
-      "rps120": 55.6,
-      "rps250": 59.2,
+      "rps50": 37.1,
+      "rps120": 56.7,
+      "rps250": 51.1,
       "streaks": {
         "rps3": 0,
         "rps5": 0,
@@ -65766,9 +65910,9 @@ window.COCKPIT_DATA = {
     },
     {
       "rank": 105,
-      "code": "159516",
-      "name": "半导体设备ETF",
-      "theme": "半导体",
+      "code": "516520",
+      "name": "智能驾驶ETF",
+      "theme": "智能驾驶",
       "streak": 0,
       "top10Streak": 0,
       "trendScore": 0.0,
@@ -65776,13 +65920,13 @@ window.COCKPIT_DATA = {
       "phaseNote": "RPS 20=41.6",
       "signal": "回避",
       "signalNote": "RPS 20=41.6，强势天数=0 天",
-      "rps3": 58.4,
-      "rps5": 46.6,
-      "rps10": 16.9,
+      "rps3": 37.6,
+      "rps5": 37.6,
+      "rps10": 28.7,
       "rps20": 41.6,
-      "rps50": 2.8,
-      "rps120": 8.4,
-      "rps250": 50.0,
+      "rps50": 32.0,
+      "rps120": 17.4,
+      "rps250": 9.8,
       "streaks": {
         "rps3": 0,
         "rps5": 0,
@@ -65804,9 +65948,9 @@ window.COCKPIT_DATA = {
     },
     {
       "rank": 106,
-      "code": "563300",
-      "name": "2000ETF",
-      "theme": "2000",
+      "code": "159869",
+      "name": "游戏ETF",
+      "theme": "游戏",
       "streak": 0,
       "top10Streak": 0,
       "trendScore": 0.0,
@@ -65814,13 +65958,13 @@ window.COCKPIT_DATA = {
       "phaseNote": "RPS 20=41.0",
       "signal": "回避",
       "signalNote": "RPS 20=41.0，强势天数=0 天",
-      "rps3": 41.6,
-      "rps5": 30.9,
-      "rps10": 30.9,
+      "rps3": 42.7,
+      "rps5": 59.0,
+      "rps10": 55.6,
       "rps20": 41.0,
-      "rps50": 75.8,
-      "rps120": 51.1,
-      "rps250": 67.8,
+      "rps50": 69.1,
+      "rps120": 20.8,
+      "rps250": 8.6,
       "streaks": {
         "rps3": 0,
         "rps5": 0,
@@ -65842,9 +65986,9 @@ window.COCKPIT_DATA = {
     },
     {
       "rank": 107,
-      "code": "563360",
-      "name": "A500ETF",
-      "theme": "A500",
+      "code": "159766",
+      "name": "旅游ETF",
+      "theme": "旅游",
       "streak": 0,
       "top10Streak": 0,
       "trendScore": 0.0,
@@ -65852,13 +65996,13 @@ window.COCKPIT_DATA = {
       "phaseNote": "RPS 20=40.4",
       "signal": "回避",
       "signalNote": "RPS 20=40.4，强势天数=0 天",
-      "rps3": 50.0,
-      "rps5": 47.8,
-      "rps10": 42.1,
+      "rps3": 44.4,
+      "rps5": 54.5,
+      "rps10": 57.3,
       "rps20": 40.4,
-      "rps50": 34.3,
-      "rps120": 50.0,
-      "rps250": 56.9,
+      "rps50": 41.0,
+      "rps120": 18.5,
+      "rps250": 14.4,
       "streaks": {
         "rps3": 0,
         "rps5": 0,
@@ -65880,9 +66024,9 @@ window.COCKPIT_DATA = {
     },
     {
       "rank": 108,
-      "code": "159572",
-      "name": "创业板200ETF",
-      "theme": "创业板200",
+      "code": "563300",
+      "name": "2000ETF",
+      "theme": "2000",
       "streak": 0,
       "top10Streak": 0,
       "trendScore": 0.0,
@@ -65890,13 +66034,13 @@ window.COCKPIT_DATA = {
       "phaseNote": "RPS 20=39.9",
       "signal": "回避",
       "signalNote": "RPS 20=39.9，强势天数=0 天",
-      "rps3": 33.1,
-      "rps5": 42.7,
-      "rps10": 27.0,
+      "rps3": 19.7,
+      "rps5": 26.4,
+      "rps10": 24.2,
       "rps20": 39.9,
-      "rps50": 50.6,
-      "rps120": 40.4,
-      "rps250": 47.7,
+      "rps50": 73.6,
+      "rps120": 48.9,
+      "rps250": 66.1,
       "streaks": {
         "rps3": 0,
         "rps5": 0,
@@ -65918,9 +66062,9 @@ window.COCKPIT_DATA = {
     },
     {
       "rank": 109,
-      "code": "563380",
-      "name": "航空航天ETF",
-      "theme": "军工",
+      "code": "515800",
+      "name": "800ETF",
+      "theme": "800",
       "streak": 0,
       "top10Streak": 0,
       "trendScore": 0.0,
@@ -65928,202 +66072,12 @@ window.COCKPIT_DATA = {
       "phaseNote": "RPS 20=39.3",
       "signal": "回避",
       "signalNote": "RPS 20=39.3，强势天数=0 天",
-      "rps3": 91.6,
-      "rps5": 52.2,
-      "rps10": 53.9,
+      "rps3": 43.8,
+      "rps5": 44.4,
+      "rps10": 37.6,
       "rps20": 39.3,
-      "rps50": 68.0,
-      "rps120": 15.7,
-      "rps250": null,
-      "streaks": {
-        "rps3": 1,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      },
-      "top10Streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      }
-    },
-    {
-      "rank": 110,
-      "code": "159638",
-      "name": "高端装备ETF",
-      "theme": "高端装备",
-      "streak": 0,
-      "top10Streak": 0,
-      "trendScore": 0.0,
-      "phase": "下跌趋势",
-      "phaseNote": "RPS 20=38.8",
-      "signal": "回避",
-      "signalNote": "RPS 20=38.8，强势天数=0 天",
-      "rps3": 74.7,
-      "rps5": 48.3,
-      "rps10": 46.6,
-      "rps20": 38.8,
-      "rps50": 52.8,
-      "rps120": 14.6,
-      "rps250": 40.8,
-      "streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      },
-      "top10Streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      }
-    },
-    {
-      "rank": 111,
-      "code": "159378",
-      "name": "通用航空ETF",
-      "theme": "军工",
-      "streak": 0,
-      "top10Streak": 0,
-      "trendScore": 0.0,
-      "phase": "下跌趋势",
-      "phaseNote": "RPS 20=38.2",
-      "signal": "回避",
-      "signalNote": "RPS 20=38.2，强势天数=0 天",
-      "rps3": 71.3,
-      "rps5": 53.9,
-      "rps10": 48.3,
-      "rps20": 38.2,
-      "rps50": 55.1,
-      "rps120": 11.2,
-      "rps250": 19.0,
-      "streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      },
-      "top10Streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      }
-    },
-    {
-      "rank": 112,
-      "code": "512670",
-      "name": "国防ETF",
-      "theme": "国防",
-      "streak": 0,
-      "top10Streak": 0,
-      "trendScore": 0.0,
-      "phase": "下跌趋势",
-      "phaseNote": "RPS 20=37.6",
-      "signal": "回避",
-      "signalNote": "RPS 20=37.6，强势天数=0 天",
-      "rps3": 89.9,
-      "rps5": 50.0,
-      "rps10": 46.1,
-      "rps20": 37.6,
-      "rps50": 60.7,
-      "rps120": 22.5,
-      "rps250": 48.3,
-      "streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      },
-      "top10Streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      }
-    },
-    {
-      "rank": 113,
-      "code": "159865",
-      "name": "养殖ETF",
-      "theme": "养殖",
-      "streak": 0,
-      "top10Streak": 0,
-      "trendScore": 0.0,
-      "phase": "下跌趋势",
-      "phaseNote": "RPS 20=37.1",
-      "signal": "回避",
-      "signalNote": "RPS 20=37.1，强势天数=0 天",
-      "rps3": 45.5,
-      "rps5": 57.9,
-      "rps10": 68.5,
-      "rps20": 37.1,
-      "rps50": 63.5,
-      "rps120": 35.4,
-      "rps250": 23.0,
-      "streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      },
-      "top10Streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      }
-    },
-    {
-      "rank": 114,
-      "code": "159628",
-      "name": "2000ETF",
-      "theme": "2000",
-      "streak": 0,
-      "top10Streak": 0,
-      "trendScore": 0.0,
-      "phase": "下跌趋势",
-      "phaseNote": "RPS 20=36.5",
-      "signal": "回避",
-      "signalNote": "RPS 20=36.5，强势天数=0 天",
-      "rps3": 34.8,
-      "rps5": 29.8,
-      "rps10": 24.7,
-      "rps20": 36.5,
-      "rps50": 54.5,
-      "rps120": 46.6,
+      "rps50": 38.8,
+      "rps120": 55.6,
       "rps250": 58.0,
       "streaks": {
         "rps3": 0,
@@ -66145,10 +66099,200 @@ window.COCKPIT_DATA = {
       }
     },
     {
+      "rank": 110,
+      "code": "512090",
+      "name": "MSCIA股ETF",
+      "theme": "MSCIA股",
+      "streak": 0,
+      "top10Streak": 0,
+      "trendScore": 0.0,
+      "phase": "下跌趋势",
+      "phaseNote": "RPS 20=38.8",
+      "signal": "回避",
+      "signalNote": "RPS 20=38.8，强势天数=0 天",
+      "rps3": 41.6,
+      "rps5": 46.6,
+      "rps10": 38.2,
+      "rps20": 38.8,
+      "rps50": 39.3,
+      "rps120": 59.6,
+      "rps250": 60.9,
+      "streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      },
+      "top10Streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      }
+    },
+    {
+      "rank": 111,
+      "code": "512660",
+      "name": "军工ETF",
+      "theme": "军工",
+      "streak": 0,
+      "top10Streak": 0,
+      "trendScore": 0.0,
+      "phase": "下跌趋势",
+      "phaseNote": "RPS 20=38.2",
+      "signal": "回避",
+      "signalNote": "RPS 20=38.2，强势天数=0 天",
+      "rps3": 68.5,
+      "rps5": 73.6,
+      "rps10": 48.3,
+      "rps20": 38.2,
+      "rps50": 66.9,
+      "rps120": 21.9,
+      "rps250": 47.1,
+      "streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      },
+      "top10Streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      }
+    },
+    {
+      "rank": 112,
+      "code": "563000",
+      "name": "中国A50ETF",
+      "theme": "中国A50",
+      "streak": 0,
+      "top10Streak": 0,
+      "trendScore": 0.0,
+      "phase": "下跌趋势",
+      "phaseNote": "RPS 20=37.6",
+      "signal": "回避",
+      "signalNote": "RPS 20=37.6，强势天数=0 天",
+      "rps3": 42.1,
+      "rps5": 47.2,
+      "rps10": 42.1,
+      "rps20": 37.6,
+      "rps50": 28.1,
+      "rps120": 63.5,
+      "rps250": 63.8,
+      "streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      },
+      "top10Streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      }
+    },
+    {
+      "rank": 113,
+      "code": "563360",
+      "name": "A500ETF",
+      "theme": "A500",
+      "streak": 0,
+      "top10Streak": 0,
+      "trendScore": 0.0,
+      "phase": "下跌趋势",
+      "phaseNote": "RPS 20=37.1",
+      "signal": "回避",
+      "signalNote": "RPS 20=37.1，强势天数=0 天",
+      "rps3": 39.3,
+      "rps5": 42.1,
+      "rps10": 36.0,
+      "rps20": 37.1,
+      "rps50": 32.6,
+      "rps120": 49.4,
+      "rps250": 56.9,
+      "streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      },
+      "top10Streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      }
+    },
+    {
+      "rank": 114,
+      "code": "513750",
+      "name": "港股通非银ETF",
+      "theme": "非银金融",
+      "streak": 0,
+      "top10Streak": 0,
+      "trendScore": 0.0,
+      "phase": "下跌趋势",
+      "phaseNote": "RPS 20=36.5",
+      "signal": "回避",
+      "signalNote": "RPS 20=36.5，强势天数=0 天",
+      "rps3": 50.0,
+      "rps5": 56.7,
+      "rps10": 39.9,
+      "rps20": 36.5,
+      "rps50": 33.1,
+      "rps120": 47.2,
+      "rps250": 40.2,
+      "streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      },
+      "top10Streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      }
+    },
+    {
       "rank": 115,
-      "code": "159998",
-      "name": "计算机ETF",
-      "theme": "计算机",
+      "code": "159559",
+      "name": "机器人50ETF",
+      "theme": "机器人50",
       "streak": 0,
       "top10Streak": 0,
       "trendScore": 0.0,
@@ -66156,13 +66300,13 @@ window.COCKPIT_DATA = {
       "phaseNote": "RPS 20=36.0",
       "signal": "回避",
       "signalNote": "RPS 20=36.0，强势天数=0 天",
-      "rps3": 41.0,
-      "rps5": 43.8,
-      "rps10": 29.5,
+      "rps3": 54.5,
+      "rps5": 38.2,
+      "rps10": 27.5,
       "rps20": 36.0,
-      "rps50": 23.6,
-      "rps120": 32.0,
-      "rps250": 20.1,
+      "rps50": 37.6,
+      "rps120": 30.3,
+      "rps250": 12.6,
       "streaks": {
         "rps3": 0,
         "rps5": 0,
@@ -66184,9 +66328,9 @@ window.COCKPIT_DATA = {
     },
     {
       "rank": 116,
-      "code": "516520",
-      "name": "智能驾驶ETF",
-      "theme": "智能驾驶",
+      "code": "159572",
+      "name": "创业板200ETF",
+      "theme": "创业板200",
       "streak": 0,
       "top10Streak": 0,
       "trendScore": 0.0,
@@ -66194,13 +66338,13 @@ window.COCKPIT_DATA = {
       "phaseNote": "RPS 20=35.4",
       "signal": "回避",
       "signalNote": "RPS 20=35.4，强势天数=0 天",
-      "rps3": 24.7,
-      "rps5": 36.0,
-      "rps10": 26.4,
+      "rps3": 22.5,
+      "rps5": 30.9,
+      "rps10": 24.7,
       "rps20": 35.4,
-      "rps50": 30.9,
-      "rps120": 16.3,
-      "rps250": 10.9,
+      "rps50": 56.7,
+      "rps120": 38.2,
+      "rps250": 47.7,
       "streaks": {
         "rps3": 0,
         "rps5": 0,
@@ -66222,9 +66366,9 @@ window.COCKPIT_DATA = {
     },
     {
       "rank": 117,
-      "code": "159227",
-      "name": "航空航天ETF",
-      "theme": "军工",
+      "code": "159326",
+      "name": "电网设备ETF",
+      "theme": "电网设备",
       "streak": 0,
       "top10Streak": 0,
       "trendScore": 0.0,
@@ -66232,15 +66376,15 @@ window.COCKPIT_DATA = {
       "phaseNote": "RPS 20=34.8",
       "signal": "回避",
       "signalNote": "RPS 20=34.8，强势天数=0 天",
-      "rps3": 94.9,
-      "rps5": 54.5,
-      "rps10": 50.0,
+      "rps3": 56.7,
+      "rps5": 48.9,
+      "rps10": 31.5,
       "rps20": 34.8,
-      "rps50": 57.9,
-      "rps120": 12.4,
-      "rps250": 33.3,
+      "rps50": 42.7,
+      "rps120": 24.7,
+      "rps250": 88.5,
       "streaks": {
-        "rps3": 2,
+        "rps3": 0,
         "rps5": 0,
         "rps10": 0,
         "rps20": 0,
@@ -66249,7 +66393,7 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "top10Streaks": {
-        "rps3": 1,
+        "rps3": 0,
         "rps5": 0,
         "rps10": 0,
         "rps20": 0,
@@ -66260,9 +66404,9 @@ window.COCKPIT_DATA = {
     },
     {
       "rank": 118,
-      "code": "159755",
-      "name": "电池ETF",
-      "theme": "电池",
+      "code": "159998",
+      "name": "计算机ETF",
+      "theme": "计算机",
       "streak": 0,
       "top10Streak": 0,
       "trendScore": 0.0,
@@ -66270,13 +66414,13 @@ window.COCKPIT_DATA = {
       "phaseNote": "RPS 20=34.3",
       "signal": "回避",
       "signalNote": "RPS 20=34.3，强势天数=0 天",
-      "rps3": 8.4,
-      "rps5": 23.0,
-      "rps10": 39.9,
+      "rps3": 33.1,
+      "rps5": 36.0,
+      "rps10": 29.2,
       "rps20": 34.3,
-      "rps50": 17.4,
-      "rps120": 6.7,
-      "rps250": 28.7,
+      "rps50": 26.4,
+      "rps120": 29.2,
+      "rps250": 25.3,
       "streaks": {
         "rps3": 0,
         "rps5": 0,
@@ -66308,12 +66452,12 @@ window.COCKPIT_DATA = {
       "phaseNote": "RPS 20=33.7",
       "signal": "回避",
       "signalNote": "RPS 20=33.7，强势天数=0 天",
-      "rps3": 27.5,
-      "rps5": 36.5,
-      "rps10": 25.8,
+      "rps3": 32.0,
+      "rps5": 32.6,
+      "rps10": 26.4,
       "rps20": 33.7,
-      "rps50": 24.2,
-      "rps120": 14.0,
+      "rps50": 21.3,
+      "rps120": 12.4,
       "rps250": 13.8,
       "streaks": {
         "rps3": 0,
@@ -66336,9 +66480,9 @@ window.COCKPIT_DATA = {
     },
     {
       "rank": 120,
-      "code": "159796",
-      "name": "电池50ETF",
-      "theme": "电池",
+      "code": "159628",
+      "name": "2000ETF",
+      "theme": "2000",
       "streak": 0,
       "top10Streak": 0,
       "trendScore": 0.0,
@@ -66346,13 +66490,13 @@ window.COCKPIT_DATA = {
       "phaseNote": "RPS 20=33.1",
       "signal": "回避",
       "signalNote": "RPS 20=33.1，强势天数=0 天",
-      "rps3": 2.2,
-      "rps5": 11.8,
-      "rps10": 34.8,
+      "rps3": 23.0,
+      "rps5": 28.7,
+      "rps10": 23.0,
       "rps20": 33.1,
-      "rps50": 16.3,
-      "rps120": 7.3,
-      "rps250": 24.7,
+      "rps50": 54.5,
+      "rps120": 44.9,
+      "rps250": 59.8,
       "streaks": {
         "rps3": 0,
         "rps5": 0,
@@ -66374,424 +66518,6 @@ window.COCKPIT_DATA = {
     },
     {
       "rank": 121,
-      "code": "516160",
-      "name": "新能源ETF",
-      "theme": "新能源",
-      "streak": 0,
-      "top10Streak": 0,
-      "trendScore": 0.0,
-      "phase": "下跌趋势",
-      "phaseNote": "RPS 20=32.6",
-      "signal": "回避",
-      "signalNote": "RPS 20=32.6，强势天数=0 天",
-      "rps3": 10.7,
-      "rps5": 23.6,
-      "rps10": 35.4,
-      "rps20": 32.6,
-      "rps50": 18.5,
-      "rps120": 5.1,
-      "rps250": 29.9,
-      "streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      },
-      "top10Streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      }
-    },
-    {
-      "rank": 122,
-      "code": "159825",
-      "name": "农业ETF",
-      "theme": "农业",
-      "streak": 0,
-      "top10Streak": 0,
-      "trendScore": 0.0,
-      "phase": "下跌趋势",
-      "phaseNote": "RPS 20=32.0",
-      "signal": "回避",
-      "signalNote": "RPS 20=32.0，强势天数=0 天",
-      "rps3": 42.1,
-      "rps5": 51.1,
-      "rps10": 61.8,
-      "rps20": 32.0,
-      "rps50": 61.2,
-      "rps120": 30.9,
-      "rps250": 37.9,
-      "streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      },
-      "top10Streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      }
-    },
-    {
-      "rank": 123,
-      "code": "516510",
-      "name": "云计算ETF",
-      "theme": "云计算",
-      "streak": 0,
-      "top10Streak": 0,
-      "trendScore": 0.0,
-      "phase": "下跌趋势",
-      "phaseNote": "RPS 20=31.5",
-      "signal": "回避",
-      "signalNote": "RPS 20=31.5，强势天数=0 天",
-      "rps3": 29.2,
-      "rps5": 35.4,
-      "rps10": 23.0,
-      "rps20": 31.5,
-      "rps50": 21.3,
-      "rps120": 29.8,
-      "rps250": 39.1,
-      "streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      },
-      "top10Streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      }
-    },
-    {
-      "rank": 124,
-      "code": "515030",
-      "name": "新能源车ETF",
-      "theme": "新能源车",
-      "streak": 0,
-      "top10Streak": 0,
-      "trendScore": 0.0,
-      "phase": "下跌趋势",
-      "phaseNote": "RPS 20=30.9",
-      "signal": "回避",
-      "signalNote": "RPS 20=30.9，强势天数=0 天",
-      "rps3": 11.2,
-      "rps5": 27.5,
-      "rps10": 36.0,
-      "rps20": 30.9,
-      "rps50": 20.2,
-      "rps120": 9.0,
-      "rps250": 25.9,
-      "streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      },
-      "top10Streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      }
-    },
-    {
-      "rank": 125,
-      "code": "515790",
-      "name": "光伏ETF",
-      "theme": "光伏",
-      "streak": 0,
-      "top10Streak": 0,
-      "trendScore": 0.0,
-      "phase": "下跌趋势",
-      "phaseNote": "RPS 20=30.3",
-      "signal": "回避",
-      "signalNote": "RPS 20=30.3，强势天数=0 天",
-      "rps3": 16.9,
-      "rps5": 32.6,
-      "rps10": 28.7,
-      "rps20": 30.3,
-      "rps50": 28.1,
-      "rps120": 6.2,
-      "rps250": 30.5,
-      "streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      },
-      "top10Streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      }
-    },
-    {
-      "rank": 126,
-      "code": "510500",
-      "name": "500ETF",
-      "theme": "500",
-      "streak": 0,
-      "top10Streak": 0,
-      "trendScore": 0.0,
-      "phase": "下跌趋势",
-      "phaseNote": "RPS 20=29.8",
-      "signal": "回避",
-      "signalNote": "RPS 20=29.8，强势天数=0 天",
-      "rps3": 38.8,
-      "rps5": 31.5,
-      "rps10": 25.3,
-      "rps20": 29.8,
-      "rps50": 34.8,
-      "rps120": 38.2,
-      "rps250": 55.2,
-      "streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      },
-      "top10Streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      }
-    },
-    {
-      "rank": 127,
-      "code": "512660",
-      "name": "军工ETF",
-      "theme": "军工",
-      "streak": 0,
-      "top10Streak": 0,
-      "trendScore": 0.0,
-      "phase": "下跌趋势",
-      "phaseNote": "RPS 20=29.2",
-      "signal": "回避",
-      "signalNote": "RPS 20=29.2，强势天数=0 天",
-      "rps3": 59.0,
-      "rps5": 37.1,
-      "rps10": 36.5,
-      "rps20": 29.2,
-      "rps50": 45.5,
-      "rps120": 18.0,
-      "rps250": 37.4,
-      "streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      },
-      "top10Streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      }
-    },
-    {
-      "rank": 128,
-      "code": "515700",
-      "name": "新能源车ETF",
-      "theme": "新能源车",
-      "streak": 0,
-      "top10Streak": 0,
-      "trendScore": 0.0,
-      "phase": "下跌趋势",
-      "phaseNote": "RPS 20=28.7",
-      "signal": "回避",
-      "signalNote": "RPS 20=28.7，强势天数=0 天",
-      "rps3": 10.1,
-      "rps5": 25.8,
-      "rps10": 37.1,
-      "rps20": 28.7,
-      "rps50": 19.7,
-      "rps120": 9.6,
-      "rps250": 27.0,
-      "streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      },
-      "top10Streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      }
-    },
-    {
-      "rank": 129,
-      "code": "512100",
-      "name": "1000ETF",
-      "theme": "1000",
-      "streak": 0,
-      "top10Streak": 0,
-      "trendScore": 0.0,
-      "phase": "下跌趋势",
-      "phaseNote": "RPS 20=28.1",
-      "signal": "回避",
-      "signalNote": "RPS 20=28.1，强势天数=0 天",
-      "rps3": 30.3,
-      "rps5": 28.1,
-      "rps10": 21.9,
-      "rps20": 28.1,
-      "rps50": 43.8,
-      "rps120": 37.1,
-      "rps250": 49.4,
-      "streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      },
-      "top10Streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      }
-    },
-    {
-      "rank": 130,
-      "code": "159287",
-      "name": "创业板综ETF",
-      "theme": "创业板综",
-      "streak": 0,
-      "top10Streak": 0,
-      "trendScore": 0.0,
-      "phase": "下跌趋势",
-      "phaseNote": "RPS 20=27.5",
-      "signal": "回避",
-      "signalNote": "RPS 20=27.5，强势天数=0 天",
-      "rps3": 34.3,
-      "rps5": 30.3,
-      "rps10": 20.8,
-      "rps20": 27.5,
-      "rps50": 32.6,
-      "rps120": 34.8,
-      "rps250": 47.1,
-      "streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      },
-      "top10Streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      }
-    },
-    {
-      "rank": 131,
-      "code": "588830",
-      "name": "科创新能源ETF",
-      "theme": "科创新能源",
-      "streak": 0,
-      "top10Streak": 0,
-      "trendScore": 0.0,
-      "phase": "下跌趋势",
-      "phaseNote": "RPS 20=27.0",
-      "signal": "回避",
-      "signalNote": "RPS 20=27.0，强势天数=0 天",
-      "rps3": 1.1,
-      "rps5": 6.7,
-      "rps10": 19.7,
-      "rps20": 27.0,
-      "rps50": 27.5,
-      "rps120": 3.9,
-      "rps250": 12.6,
-      "streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      },
-      "top10Streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      }
-    },
-    {
-      "rank": 132,
       "code": "520600",
       "name": "港股汽车ETF",
       "theme": "汽车",
@@ -66799,15 +66525,15 @@ window.COCKPIT_DATA = {
       "top10Streak": 0,
       "trendScore": 0.0,
       "phase": "下跌趋势",
-      "phaseNote": "RPS 20=26.4",
+      "phaseNote": "RPS 20=32.6",
       "signal": "回避",
-      "signalNote": "RPS 20=26.4，强势天数=0 天",
-      "rps3": 47.2,
-      "rps5": 59.0,
-      "rps10": 44.9,
-      "rps20": 26.4,
-      "rps50": 15.7,
-      "rps120": 3.4,
+      "signalNote": "RPS 20=32.6，强势天数=0 天",
+      "rps3": 52.2,
+      "rps5": 46.1,
+      "rps10": 34.8,
+      "rps20": 32.6,
+      "rps50": 11.2,
+      "rps120": 4.5,
       "rps250": 7.5,
       "streaks": {
         "rps3": 0,
@@ -66829,24 +66555,24 @@ window.COCKPIT_DATA = {
       }
     },
     {
-      "rank": 133,
-      "code": "159368",
-      "name": "创业板新能源ETF",
-      "theme": "创业板新能源",
+      "rank": 122,
+      "code": "515790",
+      "name": "光伏ETF",
+      "theme": "光伏",
       "streak": 0,
       "top10Streak": 0,
       "trendScore": 0.0,
       "phase": "下跌趋势",
-      "phaseNote": "RPS 20=25.8",
+      "phaseNote": "RPS 20=32.0",
       "signal": "回避",
-      "signalNote": "RPS 20=25.8，强势天数=0 天",
-      "rps3": 9.0,
-      "rps5": 21.3,
-      "rps10": 23.6,
-      "rps20": 25.8,
-      "rps50": 16.9,
+      "signalNote": "RPS 20=32.0，强势天数=0 天",
+      "rps3": 30.9,
+      "rps5": 34.8,
+      "rps10": 32.6,
+      "rps20": 32.0,
+      "rps50": 27.5,
       "rps120": 10.1,
-      "rps250": 23.6,
+      "rps250": 29.3,
       "streaks": {
         "rps3": 0,
         "rps5": 0,
@@ -66867,615 +66593,7 @@ window.COCKPIT_DATA = {
       }
     },
     {
-      "rank": 134,
-      "code": "159901",
-      "name": "深证100ETF",
-      "theme": "深证100",
-      "streak": 0,
-      "top10Streak": 0,
-      "trendScore": 0.0,
-      "phase": "下跌趋势",
-      "phaseNote": "RPS 20=25.3",
-      "signal": "回避",
-      "signalNote": "RPS 20=25.3，强势天数=0 天",
-      "rps3": 44.9,
-      "rps5": 41.6,
-      "rps10": 28.1,
-      "rps20": 25.3,
-      "rps50": 15.2,
-      "rps120": 36.5,
-      "rps250": 43.7,
-      "streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      },
-      "top10Streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      }
-    },
-    {
-      "rank": 135,
-      "code": "588230",
-      "name": "科创200ETF",
-      "theme": "科创200",
-      "streak": 0,
-      "top10Streak": 0,
-      "trendScore": 0.0,
-      "phase": "下跌趋势",
-      "phaseNote": "RPS 20=24.7",
-      "signal": "回避",
-      "signalNote": "RPS 20=24.7，强势天数=0 天",
-      "rps3": 19.7,
-      "rps5": 10.1,
-      "rps10": 8.4,
-      "rps20": 24.7,
-      "rps50": 42.1,
-      "rps120": 43.8,
-      "rps250": 73.6,
-      "streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      },
-      "top10Streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      }
-    },
-    {
-      "rank": 136,
-      "code": "588790",
-      "name": "科创AIETF",
-      "theme": "信息技术",
-      "streak": 0,
-      "top10Streak": 0,
-      "trendScore": 0.0,
-      "phase": "下跌趋势",
-      "phaseNote": "RPS 20=24.2",
-      "signal": "回避",
-      "signalNote": "RPS 20=24.2，强势天数=0 天",
-      "rps3": 7.9,
-      "rps5": 11.2,
-      "rps10": 12.4,
-      "rps20": 24.2,
-      "rps50": 10.7,
-      "rps120": 30.3,
-      "rps250": 20.7,
-      "streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      },
-      "top10Streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      }
-    },
-    {
-      "rank": 137,
-      "code": "159566",
-      "name": "储能电池ETF",
-      "theme": "电池",
-      "streak": 0,
-      "top10Streak": 0,
-      "trendScore": 0.0,
-      "phase": "下跌趋势",
-      "phaseNote": "RPS 20=23.6",
-      "signal": "回避",
-      "signalNote": "RPS 20=23.6，强势天数=0 天",
-      "rps3": 3.4,
-      "rps5": 16.3,
-      "rps10": 27.5,
-      "rps20": 23.6,
-      "rps50": 14.6,
-      "rps120": 5.6,
-      "rps250": 18.4,
-      "streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      },
-      "top10Streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      }
-    },
-    {
-      "rank": 138,
-      "code": "588000",
-      "name": "科创50ETF",
-      "theme": "科创50",
-      "streak": 0,
-      "top10Streak": 0,
-      "trendScore": 0.0,
-      "phase": "下跌趋势",
-      "phaseNote": "RPS 20=23.0",
-      "signal": "回避",
-      "signalNote": "RPS 20=23.0，强势天数=0 天",
-      "rps3": 39.3,
-      "rps5": 32.0,
-      "rps10": 13.5,
-      "rps20": 23.0,
-      "rps50": 6.7,
-      "rps120": 80.9,
-      "rps250": 64.4,
-      "streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      },
-      "top10Streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      }
-    },
-    {
-      "rank": 139,
-      "code": "560280",
-      "name": "工程机械ETF",
-      "theme": "工程机械",
-      "streak": 0,
-      "top10Streak": 0,
-      "trendScore": 0.0,
-      "phase": "下跌趋势",
-      "phaseNote": "RPS 20=22.5",
-      "signal": "回避",
-      "signalNote": "RPS 20=22.5，强势天数=0 天",
-      "rps3": 44.4,
-      "rps5": 44.9,
-      "rps10": 51.7,
-      "rps20": 22.5,
-      "rps50": 25.8,
-      "rps120": 23.6,
-      "rps250": 43.1,
-      "streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      },
-      "top10Streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      }
-    },
-    {
-      "rank": 140,
-      "code": "516640",
-      "name": "芯片龙头ETF",
-      "theme": "半导体",
-      "streak": 0,
-      "top10Streak": 0,
-      "trendScore": 0.0,
-      "phase": "下跌趋势",
-      "phaseNote": "RPS 20=21.9",
-      "signal": "回避",
-      "signalNote": "RPS 20=21.9，强势天数=0 天",
-      "rps3": 31.5,
-      "rps5": 20.2,
-      "rps10": 10.1,
-      "rps20": 21.9,
-      "rps50": 4.5,
-      "rps120": 89.9,
-      "rps250": 82.8,
-      "streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      },
-      "top10Streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      }
-    },
-    {
-      "rank": 141,
-      "code": "512480",
-      "name": "半导体ETF",
-      "theme": "半导体",
-      "streak": 0,
-      "top10Streak": 0,
-      "trendScore": 0.0,
-      "phase": "下跌趋势",
-      "phaseNote": "RPS 20=21.3",
-      "signal": "回避",
-      "signalNote": "RPS 20=21.3，强势天数=0 天",
-      "rps3": 26.4,
-      "rps5": 17.4,
-      "rps10": 9.6,
-      "rps20": 21.3,
-      "rps50": 5.6,
-      "rps120": 91.0,
-      "rps250": 89.7,
-      "streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 46,
-        "rps250": 0
-      },
-      "top10Streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      }
-    },
-    {
-      "rank": 142,
-      "code": "159326",
-      "name": "电网设备ETF",
-      "theme": "电网设备",
-      "streak": 0,
-      "top10Streak": 0,
-      "trendScore": 0.0,
-      "phase": "下跌趋势",
-      "phaseNote": "RPS 20=20.8",
-      "signal": "回避",
-      "signalNote": "RPS 20=20.8，强势天数=0 天",
-      "rps3": 25.3,
-      "rps5": 24.2,
-      "rps10": 22.5,
-      "rps20": 20.8,
-      "rps50": 29.8,
-      "rps120": 19.7,
-      "rps250": 86.2,
-      "streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      },
-      "top10Streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      }
-    },
-    {
-      "rank": 143,
-      "code": "159206",
-      "name": "卫星ETF",
-      "theme": "卫星",
-      "streak": 0,
-      "top10Streak": 0,
-      "trendScore": 0.0,
-      "phase": "下跌趋势",
-      "phaseNote": "RPS 20=20.2",
-      "signal": "回避",
-      "signalNote": "RPS 20=20.2，强势天数=0 天",
-      "rps3": 37.6,
-      "rps5": 6.2,
-      "rps10": 17.4,
-      "rps20": 20.2,
-      "rps50": 35.4,
-      "rps120": 7.9,
-      "rps250": 65.5,
-      "streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      },
-      "top10Streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      }
-    },
-    {
-      "rank": 144,
-      "code": "515000",
-      "name": "科技ETF",
-      "theme": "科技",
-      "streak": 0,
-      "top10Streak": 0,
-      "trendScore": 0.0,
-      "phase": "下跌趋势",
-      "phaseNote": "RPS 20=19.7",
-      "signal": "回避",
-      "signalNote": "RPS 20=19.7，强势天数=0 天",
-      "rps3": 40.4,
-      "rps5": 19.1,
-      "rps10": 14.0,
-      "rps20": 19.7,
-      "rps50": 11.8,
-      "rps120": 80.3,
-      "rps250": 81.0,
-      "streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      },
-      "top10Streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      }
-    },
-    {
-      "rank": 145,
-      "code": "589000",
-      "name": "科创综指ETF",
-      "theme": "科创综指",
-      "streak": 0,
-      "top10Streak": 0,
-      "trendScore": 0.0,
-      "phase": "下跌趋势",
-      "phaseNote": "RPS 20=19.1",
-      "signal": "回避",
-      "signalNote": "RPS 20=19.1，强势天数=0 天",
-      "rps3": 23.0,
-      "rps5": 15.2,
-      "rps10": 11.2,
-      "rps20": 19.1,
-      "rps50": 14.0,
-      "rps120": 59.6,
-      "rps250": 63.8,
-      "streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      },
-      "top10Streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      }
-    },
-    {
-      "rank": 146,
-      "code": "516150",
-      "name": "稀土ETF",
-      "theme": "稀土",
-      "streak": 0,
-      "top10Streak": 0,
-      "trendScore": 0.0,
-      "phase": "下跌趋势",
-      "phaseNote": "RPS 20=18.5",
-      "signal": "回避",
-      "signalNote": "RPS 20=18.5，强势天数=0 天",
-      "rps3": 24.2,
-      "rps5": 28.7,
-      "rps10": 24.2,
-      "rps20": 18.5,
-      "rps50": 33.1,
-      "rps120": 12.9,
-      "rps250": 35.6,
-      "streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      },
-      "top10Streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      }
-    },
-    {
-      "rank": 147,
-      "code": "159218",
-      "name": "卫星产业ETF",
-      "theme": "卫星产业",
-      "streak": 0,
-      "top10Streak": 0,
-      "trendScore": 0.0,
-      "phase": "下跌趋势",
-      "phaseNote": "RPS 20=18.0",
-      "signal": "回避",
-      "signalNote": "RPS 20=18.0，强势天数=0 天",
-      "rps3": 28.7,
-      "rps5": 7.9,
-      "rps10": 18.0,
-      "rps20": 18.0,
-      "rps50": 31.5,
-      "rps120": 4.5,
-      "rps250": 55.7,
-      "streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      },
-      "top10Streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      }
-    },
-    {
-      "rank": 148,
-      "code": "159559",
-      "name": "机器人50ETF",
-      "theme": "机器人50",
-      "streak": 0,
-      "top10Streak": 0,
-      "trendScore": 0.0,
-      "phase": "下跌趋势",
-      "phaseNote": "RPS 20=17.4",
-      "signal": "回避",
-      "signalNote": "RPS 20=17.4，强势天数=0 天",
-      "rps3": 7.3,
-      "rps5": 12.4,
-      "rps10": 18.5,
-      "rps20": 17.4,
-      "rps50": 26.4,
-      "rps120": 24.2,
-      "rps250": 11.5,
-      "streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      },
-      "top10Streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      }
-    },
-    {
-      "rank": 149,
-      "code": "588410",
-      "name": "科创创业人工智能ETF",
-      "theme": "信息技术",
-      "streak": 0,
-      "top10Streak": 0,
-      "trendScore": 0.0,
-      "phase": "下跌趋势",
-      "phaseNote": "RPS 20=16.9",
-      "signal": "回避",
-      "signalNote": "RPS 20=16.9，强势天数=0 天",
-      "rps3": 5.6,
-      "rps5": 8.4,
-      "rps10": 7.3,
-      "rps20": 16.9,
-      "rps50": 9.6,
-      "rps120": 56.2,
-      "rps250": null,
-      "streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      },
-      "top10Streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      }
-    },
-    {
-      "rank": 150,
+      "rank": 123,
       "code": "561380",
       "name": "恒生A股电网设备ETF",
       "theme": "电网设备",
@@ -67483,14 +66601,14 @@ window.COCKPIT_DATA = {
       "top10Streak": 0,
       "trendScore": 0.0,
       "phase": "下跌趋势",
-      "phaseNote": "RPS 20=16.3",
+      "phaseNote": "RPS 20=31.5",
       "signal": "回避",
-      "signalNote": "RPS 20=16.3，强势天数=0 天",
-      "rps3": 28.1,
-      "rps5": 20.8,
-      "rps10": 20.2,
-      "rps20": 16.3,
-      "rps50": 23.0,
+      "signalNote": "RPS 20=31.5，强势天数=0 天",
+      "rps3": 58.4,
+      "rps5": 49.4,
+      "rps10": 28.1,
+      "rps20": 31.5,
+      "rps50": 34.8,
       "rps120": 1.7,
       "rps250": 2.3,
       "streaks": {
@@ -67513,10 +66631,1036 @@ window.COCKPIT_DATA = {
       }
     },
     {
-      "rank": 151,
-      "code": "588200",
-      "name": "科创芯片ETF",
+      "rank": 124,
+      "code": "516510",
+      "name": "云计算ETF",
+      "theme": "云计算",
+      "streak": 0,
+      "top10Streak": 0,
+      "trendScore": 0.0,
+      "phase": "下跌趋势",
+      "phaseNote": "RPS 20=30.9",
+      "signal": "回避",
+      "signalNote": "RPS 20=30.9，强势天数=0 天",
+      "rps3": 27.5,
+      "rps5": 29.2,
+      "rps10": 20.8,
+      "rps20": 30.9,
+      "rps50": 22.5,
+      "rps120": 27.5,
+      "rps250": 40.8,
+      "streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      },
+      "top10Streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      }
+    },
+    {
+      "rank": 125,
+      "code": "159218",
+      "name": "卫星产业ETF",
+      "theme": "卫星产业",
+      "streak": 0,
+      "top10Streak": 0,
+      "trendScore": 0.0,
+      "phase": "下跌趋势",
+      "phaseNote": "RPS 20=30.3",
+      "signal": "回避",
+      "signalNote": "RPS 20=30.3，强势天数=0 天",
+      "rps3": 48.9,
+      "rps5": 41.6,
+      "rps10": 22.5,
+      "rps20": 30.3,
+      "rps50": 40.4,
+      "rps120": 7.3,
+      "rps250": 64.4,
+      "streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      },
+      "top10Streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      }
+    },
+    {
+      "rank": 126,
+      "code": "588790",
+      "name": "科创AIETF",
+      "theme": "信息技术",
+      "streak": 0,
+      "top10Streak": 0,
+      "trendScore": 0.0,
+      "phase": "下跌趋势",
+      "phaseNote": "RPS 20=29.8",
+      "signal": "回避",
+      "signalNote": "RPS 20=29.8，强势天数=0 天",
+      "rps3": 21.9,
+      "rps5": 20.2,
+      "rps10": 15.7,
+      "rps20": 29.8,
+      "rps50": 11.8,
+      "rps120": 28.7,
+      "rps250": 22.4,
+      "streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      },
+      "top10Streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      }
+    },
+    {
+      "rank": 127,
+      "code": "512100",
+      "name": "1000ETF",
+      "theme": "1000",
+      "streak": 0,
+      "top10Streak": 0,
+      "trendScore": 0.0,
+      "phase": "下跌趋势",
+      "phaseNote": "RPS 20=29.2",
+      "signal": "回避",
+      "signalNote": "RPS 20=29.2，强势天数=0 天",
+      "rps3": 26.4,
+      "rps5": 30.3,
+      "rps10": 20.2,
+      "rps20": 29.2,
+      "rps50": 49.4,
+      "rps120": 37.1,
+      "rps250": 49.4,
+      "streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      },
+      "top10Streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      }
+    },
+    {
+      "rank": 128,
+      "code": "510500",
+      "name": "500ETF",
+      "theme": "500",
+      "streak": 0,
+      "top10Streak": 0,
+      "trendScore": 0.0,
+      "phase": "下跌趋势",
+      "phaseNote": "RPS 20=28.7",
+      "signal": "回避",
+      "signalNote": "RPS 20=28.7，强势天数=0 天",
+      "rps3": 30.3,
+      "rps5": 31.5,
+      "rps10": 25.8,
+      "rps20": 28.7,
+      "rps50": 36.0,
+      "rps120": 38.8,
+      "rps250": 55.2,
+      "streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      },
+      "top10Streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      }
+    },
+    {
+      "rank": 129,
+      "code": "560280",
+      "name": "工程机械ETF",
+      "theme": "工程机械",
+      "streak": 0,
+      "top10Streak": 0,
+      "trendScore": 0.0,
+      "phase": "下跌趋势",
+      "phaseNote": "RPS 20=28.1",
+      "signal": "回避",
+      "signalNote": "RPS 20=28.1，强势天数=0 天",
+      "rps3": 37.1,
+      "rps5": 58.4,
+      "rps10": 46.6,
+      "rps20": 28.1,
+      "rps50": 23.0,
+      "rps120": 24.2,
+      "rps250": 46.6,
+      "streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      },
+      "top10Streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      }
+    },
+    {
+      "rank": 130,
+      "code": "159755",
+      "name": "电池ETF",
+      "theme": "电池",
+      "streak": 0,
+      "top10Streak": 0,
+      "trendScore": 0.0,
+      "phase": "下跌趋势",
+      "phaseNote": "RPS 20=27.5",
+      "signal": "回避",
+      "signalNote": "RPS 20=27.5，强势天数=0 天",
+      "rps3": 20.8,
+      "rps5": 6.2,
+      "rps10": 29.8,
+      "rps20": 27.5,
+      "rps50": 12.4,
+      "rps120": 6.7,
+      "rps250": 20.1,
+      "streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      },
+      "top10Streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      }
+    },
+    {
+      "rank": 131,
+      "code": "562500",
+      "name": "机器人ETF",
+      "theme": "机器人",
+      "streak": 0,
+      "top10Streak": 0,
+      "trendScore": 0.0,
+      "phase": "下跌趋势",
+      "phaseNote": "RPS 20=27.0",
+      "signal": "回避",
+      "signalNote": "RPS 20=27.0，强势天数=0 天",
+      "rps3": 43.3,
+      "rps5": 35.4,
+      "rps10": 21.9,
+      "rps20": 27.0,
+      "rps50": 25.3,
+      "rps120": 32.6,
+      "rps250": 18.4,
+      "streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      },
+      "top10Streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      }
+    },
+    {
+      "rank": 132,
+      "code": "515700",
+      "name": "新能源车ETF",
+      "theme": "新能源车",
+      "streak": 0,
+      "top10Streak": 0,
+      "trendScore": 0.0,
+      "phase": "下跌趋势",
+      "phaseNote": "RPS 20=26.4",
+      "signal": "回避",
+      "signalNote": "RPS 20=26.4，强势天数=0 天",
+      "rps3": 25.3,
+      "rps5": 14.6,
+      "rps10": 32.0,
+      "rps20": 26.4,
+      "rps50": 16.9,
+      "rps120": 8.4,
+      "rps250": 20.7,
+      "streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      },
+      "top10Streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      }
+    },
+    {
+      "rank": 133,
+      "code": "515030",
+      "name": "新能源车ETF",
+      "theme": "新能源车",
+      "streak": 0,
+      "top10Streak": 0,
+      "trendScore": 0.0,
+      "phase": "下跌趋势",
+      "phaseNote": "RPS 20=25.8",
+      "signal": "回避",
+      "signalNote": "RPS 20=25.8，强势天数=0 天",
+      "rps3": 23.6,
+      "rps5": 15.2,
+      "rps10": 30.9,
+      "rps20": 25.8,
+      "rps50": 16.3,
+      "rps120": 7.9,
+      "rps250": 19.5,
+      "streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      },
+      "top10Streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      }
+    },
+    {
+      "rank": 134,
+      "code": "516160",
+      "name": "新能源ETF",
+      "theme": "新能源",
+      "streak": 0,
+      "top10Streak": 0,
+      "trendScore": 0.0,
+      "phase": "下跌趋势",
+      "phaseNote": "RPS 20=25.3",
+      "signal": "回避",
+      "signalNote": "RPS 20=25.3，强势天数=0 天",
+      "rps3": 21.3,
+      "rps5": 21.3,
+      "rps10": 30.3,
+      "rps20": 25.3,
+      "rps50": 18.0,
+      "rps120": 5.6,
+      "rps250": 27.0,
+      "streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      },
+      "top10Streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      }
+    },
+    {
+      "rank": 135,
+      "code": "159206",
+      "name": "卫星ETF",
+      "theme": "卫星",
+      "streak": 0,
+      "top10Streak": 0,
+      "trendScore": 0.0,
+      "phase": "下跌趋势",
+      "phaseNote": "RPS 20=24.7",
+      "signal": "回避",
+      "signalNote": "RPS 20=24.7，强势天数=0 天",
+      "rps3": 34.8,
+      "rps5": 34.3,
+      "rps10": 18.0,
+      "rps20": 24.7,
+      "rps50": 41.6,
+      "rps120": 9.6,
+      "rps250": 68.4,
+      "streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      },
+      "top10Streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      }
+    },
+    {
+      "rank": 136,
+      "code": "159870",
+      "name": "化工ETF",
+      "theme": "能源化工",
+      "streak": 0,
+      "top10Streak": 0,
+      "trendScore": 0.0,
+      "phase": "下跌趋势",
+      "phaseNote": "RPS 20=24.2",
+      "signal": "回避",
+      "signalNote": "RPS 20=24.2，强势天数=0 天",
+      "rps3": 45.5,
+      "rps5": 24.7,
+      "rps10": 35.4,
+      "rps20": 24.2,
+      "rps50": 31.5,
+      "rps120": 18.0,
+      "rps250": 70.7,
+      "streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      },
+      "top10Streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      }
+    },
+    {
+      "rank": 137,
+      "code": "159796",
+      "name": "电池50ETF",
+      "theme": "电池",
+      "streak": 0,
+      "top10Streak": 0,
+      "trendScore": 0.0,
+      "phase": "下跌趋势",
+      "phaseNote": "RPS 20=23.6",
+      "signal": "回避",
+      "signalNote": "RPS 20=23.6，强势天数=0 天",
+      "rps3": 14.6,
+      "rps5": 10.7,
+      "rps10": 27.0,
+      "rps20": 23.6,
+      "rps50": 10.1,
+      "rps120": 6.2,
+      "rps250": 16.7,
+      "streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      },
+      "top10Streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      }
+    },
+    {
+      "rank": 138,
+      "code": "159131",
+      "name": "港股信息技术ETF",
+      "theme": "信息技术",
+      "streak": 0,
+      "top10Streak": 0,
+      "trendScore": 0.0,
+      "phase": "下跌趋势",
+      "phaseNote": "RPS 20=23.0",
+      "signal": "回避",
+      "signalNote": "RPS 20=23.0，强势天数=0 天",
+      "rps3": 25.8,
+      "rps5": 21.9,
+      "rps10": 16.3,
+      "rps20": 23.0,
+      "rps50": 29.8,
+      "rps120": 79.2,
+      "rps250": null,
+      "streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      },
+      "top10Streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      }
+    },
+    {
+      "rank": 139,
+      "code": "588830",
+      "name": "科创新能源ETF",
+      "theme": "科创新能源",
+      "streak": 0,
+      "top10Streak": 0,
+      "trendScore": 0.0,
+      "phase": "下跌趋势",
+      "phaseNote": "RPS 20=22.5",
+      "signal": "回避",
+      "signalNote": "RPS 20=22.5，强势天数=0 天",
+      "rps3": 10.7,
+      "rps5": 8.4,
+      "rps10": 16.9,
+      "rps20": 22.5,
+      "rps50": 20.8,
+      "rps120": 3.4,
+      "rps250": 11.5,
+      "streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      },
+      "top10Streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      }
+    },
+    {
+      "rank": 140,
+      "code": "516150",
+      "name": "稀土ETF",
+      "theme": "稀土",
+      "streak": 0,
+      "top10Streak": 0,
+      "trendScore": 0.0,
+      "phase": "下跌趋势",
+      "phaseNote": "RPS 20=21.9",
+      "signal": "回避",
+      "signalNote": "RPS 20=21.9，强势天数=0 天",
+      "rps3": 27.0,
+      "rps5": 29.8,
+      "rps10": 23.6,
+      "rps20": 21.9,
+      "rps50": 30.9,
+      "rps120": 11.8,
+      "rps250": 37.9,
+      "streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      },
+      "top10Streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      }
+    },
+    {
+      "rank": 141,
+      "code": "159901",
+      "name": "深证100ETF",
+      "theme": "深证100",
+      "streak": 0,
+      "top10Streak": 0,
+      "trendScore": 0.0,
+      "phase": "下跌趋势",
+      "phaseNote": "RPS 20=21.3",
+      "signal": "回避",
+      "signalNote": "RPS 20=21.3，强势天数=0 天",
+      "rps3": 29.8,
+      "rps5": 33.7,
+      "rps10": 25.3,
+      "rps20": 21.3,
+      "rps50": 17.4,
+      "rps120": 34.3,
+      "rps250": 38.5,
+      "streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      },
+      "top10Streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      }
+    },
+    {
+      "rank": 142,
+      "code": "588170",
+      "name": "科创半导体ETF",
       "theme": "半导体",
+      "streak": 0,
+      "top10Streak": 0,
+      "trendScore": 0.0,
+      "phase": "下跌趋势",
+      "phaseNote": "RPS 20=20.8",
+      "signal": "回避",
+      "signalNote": "RPS 20=20.8，强势天数=0 天",
+      "rps3": 1.1,
+      "rps5": 19.7,
+      "rps10": 8.4,
+      "rps20": 20.8,
+      "rps50": 6.2,
+      "rps120": 99.4,
+      "rps250": 99.4,
+      "streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 111,
+        "rps250": 105
+      },
+      "top10Streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 104,
+        "rps250": 103
+      }
+    },
+    {
+      "rank": 143,
+      "code": "159287",
+      "name": "创业板综ETF",
+      "theme": "创业板综",
+      "streak": 0,
+      "top10Streak": 0,
+      "trendScore": 0.0,
+      "phase": "下跌趋势",
+      "phaseNote": "RPS 20=20.2",
+      "signal": "回避",
+      "signalNote": "RPS 20=20.2，强势天数=0 天",
+      "rps3": 17.4,
+      "rps5": 22.5,
+      "rps10": 17.4,
+      "rps20": 20.2,
+      "rps50": 27.0,
+      "rps120": 27.0,
+      "rps250": 41.4,
+      "streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      },
+      "top10Streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      }
+    },
+    {
+      "rank": 144,
+      "code": "517520",
+      "name": "黄金股ETF",
+      "theme": "黄金",
+      "streak": 0,
+      "top10Streak": 0,
+      "trendScore": 0.0,
+      "phase": "下跌趋势",
+      "phaseNote": "RPS 20=19.7",
+      "signal": "回避",
+      "signalNote": "RPS 20=19.7，强势天数=0 天",
+      "rps3": 86.0,
+      "rps5": 66.9,
+      "rps10": 73.0,
+      "rps20": 19.7,
+      "rps50": 86.0,
+      "rps120": 30.9,
+      "rps250": 64.9,
+      "streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      },
+      "top10Streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      }
+    },
+    {
+      "rank": 145,
+      "code": "159566",
+      "name": "储能电池ETF",
+      "theme": "电池",
+      "streak": 0,
+      "top10Streak": 0,
+      "trendScore": 0.0,
+      "phase": "下跌趋势",
+      "phaseNote": "RPS 20=19.1",
+      "signal": "回避",
+      "signalNote": "RPS 20=19.1，强势天数=0 天",
+      "rps3": 18.5,
+      "rps5": 20.8,
+      "rps10": 21.3,
+      "rps20": 19.1,
+      "rps50": 15.7,
+      "rps120": 5.1,
+      "rps250": 15.5,
+      "streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      },
+      "top10Streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      }
+    },
+    {
+      "rank": 146,
+      "code": "159368",
+      "name": "创业板新能源ETF",
+      "theme": "创业板新能源",
+      "streak": 0,
+      "top10Streak": 0,
+      "trendScore": 0.0,
+      "phase": "下跌趋势",
+      "phaseNote": "RPS 20=18.5",
+      "signal": "回避",
+      "signalNote": "RPS 20=18.5，强势天数=0 天",
+      "rps3": 16.9,
+      "rps5": 18.5,
+      "rps10": 19.1,
+      "rps20": 18.5,
+      "rps50": 14.6,
+      "rps120": 9.0,
+      "rps250": 17.8,
+      "streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      },
+      "top10Streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      }
+    },
+    {
+      "rank": 147,
+      "code": "588230",
+      "name": "科创200ETF",
+      "theme": "科创200",
+      "streak": 0,
+      "top10Streak": 0,
+      "trendScore": 0.0,
+      "phase": "下跌趋势",
+      "phaseNote": "RPS 20=18.0",
+      "signal": "回避",
+      "signalNote": "RPS 20=18.0，强势天数=0 天",
+      "rps3": 9.0,
+      "rps5": 12.4,
+      "rps10": 9.6,
+      "rps20": 18.0,
+      "rps50": 43.8,
+      "rps120": 35.4,
+      "rps250": 69.0,
+      "streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      },
+      "top10Streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      }
+    },
+    {
+      "rank": 148,
+      "code": "588410",
+      "name": "科创创业人工智能ETF",
+      "theme": "信息技术",
+      "streak": 0,
+      "top10Streak": 0,
+      "trendScore": 0.0,
+      "phase": "下跌趋势",
+      "phaseNote": "RPS 20=17.4",
+      "signal": "回避",
+      "signalNote": "RPS 20=17.4，强势天数=0 天",
+      "rps3": 18.0,
+      "rps5": 12.9,
+      "rps10": 12.9,
+      "rps20": 17.4,
+      "rps50": 12.9,
+      "rps120": 51.1,
+      "rps250": null,
+      "streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      },
+      "top10Streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      }
+    },
+    {
+      "rank": 149,
+      "code": "159819",
+      "name": "人工智能ETF",
+      "theme": "信息技术",
+      "streak": 0,
+      "top10Streak": 0,
+      "trendScore": 0.0,
+      "phase": "下跌趋势",
+      "phaseNote": "RPS 20=16.9",
+      "signal": "回避",
+      "signalNote": "RPS 20=16.9，强势天数=0 天",
+      "rps3": 16.3,
+      "rps5": 14.0,
+      "rps10": 13.5,
+      "rps20": 16.9,
+      "rps50": 8.4,
+      "rps120": 52.2,
+      "rps250": 62.6,
+      "streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      },
+      "top10Streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      }
+    },
+    {
+      "rank": 150,
+      "code": "589000",
+      "name": "科创综指ETF",
+      "theme": "科创综指",
+      "streak": 0,
+      "top10Streak": 0,
+      "trendScore": 0.0,
+      "phase": "下跌趋势",
+      "phaseNote": "RPS 20=16.3",
+      "signal": "回避",
+      "signalNote": "RPS 20=16.3，强势天数=0 天",
+      "rps3": 13.5,
+      "rps5": 15.7,
+      "rps10": 11.8,
+      "rps20": 16.3,
+      "rps50": 15.2,
+      "rps120": 52.8,
+      "rps250": 62.1,
+      "streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      },
+      "top10Streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      }
+    },
+    {
+      "rank": 151,
+      "code": "159698",
+      "name": "粮食ETF",
+      "theme": "粮食",
       "streak": 0,
       "top10Streak": 0,
       "trendScore": 0.0,
@@ -67524,10 +67668,542 @@ window.COCKPIT_DATA = {
       "phaseNote": "RPS 20=15.7",
       "signal": "回避",
       "signalNote": "RPS 20=15.7，强势天数=0 天",
-      "rps3": 20.8,
-      "rps5": 15.7,
-      "rps10": 6.2,
+      "rps3": 20.2,
+      "rps5": 19.1,
+      "rps10": 44.9,
       "rps20": 15.7,
+      "rps50": 62.9,
+      "rps120": 25.8,
+      "rps250": 50.0,
+      "streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      },
+      "top10Streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      }
+    },
+    {
+      "rank": 152,
+      "code": "159516",
+      "name": "半导体设备ETF",
+      "theme": "半导体",
+      "streak": 0,
+      "top10Streak": 0,
+      "trendScore": 0.0,
+      "phase": "下跌趋势",
+      "phaseNote": "RPS 20=15.2",
+      "signal": "回避",
+      "signalNote": "RPS 20=15.2，强势天数=0 天",
+      "rps3": 3.4,
+      "rps5": 16.3,
+      "rps10": 9.0,
+      "rps20": 15.2,
+      "rps50": 2.2,
+      "rps120": 3.9,
+      "rps250": 27.6,
+      "streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      },
+      "top10Streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      }
+    },
+    {
+      "rank": 153,
+      "code": "588000",
+      "name": "科创50ETF",
+      "theme": "科创50",
+      "streak": 0,
+      "top10Streak": 0,
+      "trendScore": 0.0,
+      "phase": "下跌趋势",
+      "phaseNote": "RPS 20=14.6",
+      "signal": "回避",
+      "signalNote": "RPS 20=14.6，强势天数=0 天",
+      "rps3": 11.8,
+      "rps5": 17.4,
+      "rps10": 12.4,
+      "rps20": 14.6,
+      "rps50": 5.1,
+      "rps120": 71.3,
+      "rps250": 57.5,
+      "streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      },
+      "top10Streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      }
+    },
+    {
+      "rank": 154,
+      "code": "515000",
+      "name": "科技ETF",
+      "theme": "科技",
+      "streak": 0,
+      "top10Streak": 0,
+      "trendScore": 0.0,
+      "phase": "下跌趋势",
+      "phaseNote": "RPS 20=14.0",
+      "signal": "回避",
+      "signalNote": "RPS 20=14.0，强势天数=0 天",
+      "rps3": 12.9,
+      "rps5": 18.0,
+      "rps10": 14.6,
+      "rps20": 14.0,
+      "rps50": 13.5,
+      "rps120": 73.6,
+      "rps250": 75.3,
+      "streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      },
+      "top10Streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      }
+    },
+    {
+      "rank": 155,
+      "code": "159652",
+      "name": "有色50ETF",
+      "theme": "有色金属",
+      "streak": 0,
+      "top10Streak": 0,
+      "trendScore": 0.0,
+      "phase": "下跌趋势",
+      "phaseNote": "RPS 20=13.5",
+      "signal": "回避",
+      "signalNote": "RPS 20=13.5，强势天数=0 天",
+      "rps3": 28.1,
+      "rps5": 27.0,
+      "rps10": 39.3,
+      "rps20": 13.5,
+      "rps50": 39.9,
+      "rps120": 14.0,
+      "rps250": 82.2,
+      "streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      },
+      "top10Streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      }
+    },
+    {
+      "rank": 156,
+      "code": "512480",
+      "name": "半导体ETF",
+      "theme": "半导体",
+      "streak": 0,
+      "top10Streak": 0,
+      "trendScore": 0.0,
+      "phase": "下跌趋势",
+      "phaseNote": "RPS 20=12.9",
+      "signal": "回避",
+      "signalNote": "RPS 20=12.9，强势天数=0 天",
+      "rps3": 9.6,
+      "rps5": 9.0,
+      "rps10": 6.2,
+      "rps20": 12.9,
+      "rps50": 5.6,
+      "rps120": 85.4,
+      "rps250": 86.8,
+      "streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      },
+      "top10Streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      }
+    },
+    {
+      "rank": 157,
+      "code": "588220",
+      "name": "科创100ETF",
+      "theme": "科创100",
+      "streak": 0,
+      "top10Streak": 0,
+      "trendScore": 0.0,
+      "phase": "下跌趋势",
+      "phaseNote": "RPS 20=12.4",
+      "signal": "回避",
+      "signalNote": "RPS 20=12.4，强势天数=0 天",
+      "rps3": 15.7,
+      "rps5": 16.9,
+      "rps10": 11.2,
+      "rps20": 12.4,
+      "rps50": 25.8,
+      "rps120": 65.2,
+      "rps250": 80.5,
+      "streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      },
+      "top10Streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      }
+    },
+    {
+      "rank": 158,
+      "code": "560860",
+      "name": "工业有色ETF",
+      "theme": "有色金属",
+      "streak": 0,
+      "top10Streak": 0,
+      "trendScore": 0.0,
+      "phase": "下跌趋势",
+      "phaseNote": "RPS 20=11.8",
+      "signal": "回避",
+      "signalNote": "RPS 20=11.8，强势天数=0 天",
+      "rps3": 19.1,
+      "rps5": 23.0,
+      "rps10": 33.1,
+      "rps20": 11.8,
+      "rps50": 35.4,
+      "rps120": 22.5,
+      "rps250": 87.4,
+      "streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      },
+      "top10Streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      }
+    },
+    {
+      "rank": 159,
+      "code": "516640",
+      "name": "芯片龙头ETF",
+      "theme": "半导体",
+      "streak": 0,
+      "top10Streak": 0,
+      "trendScore": 0.0,
+      "phase": "下跌趋势",
+      "phaseNote": "RPS 20=11.2",
+      "signal": "回避",
+      "signalNote": "RPS 20=11.2，强势天数=0 天",
+      "rps3": 7.9,
+      "rps5": 10.1,
+      "rps10": 6.7,
+      "rps20": 11.2,
+      "rps50": 4.5,
+      "rps120": 82.0,
+      "rps250": 79.9,
+      "streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      },
+      "top10Streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      }
+    },
+    {
+      "rank": 160,
+      "code": "588780",
+      "name": "科创芯片设计ETF",
+      "theme": "半导体",
+      "streak": 0,
+      "top10Streak": 0,
+      "trendScore": 0.0,
+      "phase": "下跌趋势",
+      "phaseNote": "RPS 20=10.7",
+      "signal": "回避",
+      "signalNote": "RPS 20=10.7，强势天数=0 天",
+      "rps3": 11.2,
+      "rps5": 3.9,
+      "rps10": 3.9,
+      "rps20": 10.7,
+      "rps50": 9.6,
+      "rps120": 47.8,
+      "rps250": 61.5,
+      "streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      },
+      "top10Streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      }
+    },
+    {
+      "rank": 161,
+      "code": "512400",
+      "name": "有色金属ETF",
+      "theme": "有色金属",
+      "streak": 0,
+      "top10Streak": 0,
+      "trendScore": 0.0,
+      "phase": "下跌趋势",
+      "phaseNote": "RPS 20=10.1",
+      "signal": "回避",
+      "signalNote": "RPS 20=10.1，强势天数=0 天",
+      "rps3": 24.7,
+      "rps5": 25.8,
+      "rps10": 33.7,
+      "rps20": 10.1,
+      "rps50": 23.6,
+      "rps120": 11.2,
+      "rps250": 72.4,
+      "streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      },
+      "top10Streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      }
+    },
+    {
+      "rank": 162,
+      "code": "561330",
+      "name": "矿业ETF",
+      "theme": "矿业",
+      "streak": 0,
+      "top10Streak": 0,
+      "trendScore": 0.0,
+      "phase": "下跌趋势",
+      "phaseNote": "RPS 20=9.6",
+      "signal": "回避",
+      "signalNote": "RPS 20=9.6，强势天数=0 天",
+      "rps3": 24.2,
+      "rps5": 25.3,
+      "rps10": 34.3,
+      "rps20": 9.6,
+      "rps50": 38.2,
+      "rps120": 12.9,
+      "rps250": 83.9,
+      "streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      },
+      "top10Streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      }
+    },
+    {
+      "rank": 163,
+      "code": "562800",
+      "name": "稀有金属ETF",
+      "theme": "有色金属",
+      "streak": 0,
+      "top10Streak": 0,
+      "trendScore": 0.0,
+      "phase": "下跌趋势",
+      "phaseNote": "RPS 20=9.0",
+      "signal": "回避",
+      "signalNote": "RPS 20=9.0，强势天数=0 天",
+      "rps3": 12.4,
+      "rps5": 9.6,
+      "rps10": 18.5,
+      "rps20": 9.0,
+      "rps50": 19.1,
+      "rps120": 10.7,
+      "rps250": 74.1,
+      "streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      },
+      "top10Streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      }
+    },
+    {
+      "rank": 164,
+      "code": "159363",
+      "name": "创业板人工智能ETF",
+      "theme": "信息技术",
+      "streak": 0,
+      "top10Streak": 0,
+      "trendScore": 0.0,
+      "phase": "下跌趋势",
+      "phaseNote": "RPS 20=8.4",
+      "signal": "回避",
+      "signalNote": "RPS 20=8.4，强势天数=0 天",
+      "rps3": 2.2,
+      "rps5": 5.6,
+      "rps10": 10.1,
+      "rps20": 8.4,
+      "rps50": 34.3,
+      "rps120": 39.3,
+      "rps250": 89.1,
+      "streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      },
+      "top10Streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      }
+    },
+    {
+      "rank": 165,
+      "code": "588200",
+      "name": "科创芯片ETF",
+      "theme": "半导体",
+      "streak": 0,
+      "top10Streak": 0,
+      "trendScore": 0.0,
+      "phase": "下跌趋势",
+      "phaseNote": "RPS 20=7.9",
+      "signal": "回避",
+      "signalNote": "RPS 20=7.9，强势天数=0 天",
+      "rps3": 5.1,
+      "rps5": 5.1,
+      "rps10": 4.5,
+      "rps20": 7.9,
       "rps50": 0.6,
       "rps120": 2.2,
       "rps250": 1.7,
@@ -67551,235 +68227,7 @@ window.COCKPIT_DATA = {
       }
     },
     {
-      "rank": 152,
-      "code": "159363",
-      "name": "创业板人工智能ETF",
-      "theme": "信息技术",
-      "streak": 0,
-      "top10Streak": 0,
-      "trendScore": 0.0,
-      "phase": "下跌趋势",
-      "phaseNote": "RPS 20=15.2",
-      "signal": "回避",
-      "signalNote": "RPS 20=15.2，强势天数=0 天",
-      "rps3": 27.0,
-      "rps5": 22.5,
-      "rps10": 11.8,
-      "rps20": 15.2,
-      "rps50": 22.5,
-      "rps120": 49.4,
-      "rps250": 90.8,
-      "streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 177
-      },
-      "top10Streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      }
-    },
-    {
-      "rank": 153,
-      "code": "159131",
-      "name": "港股信息技术ETF",
-      "theme": "信息技术",
-      "streak": 0,
-      "top10Streak": 0,
-      "trendScore": 0.0,
-      "phase": "下跌趋势",
-      "phaseNote": "RPS 20=14.6",
-      "signal": "回避",
-      "signalNote": "RPS 20=14.6，强势天数=0 天",
-      "rps3": 3.9,
-      "rps5": 10.7,
-      "rps10": 15.2,
-      "rps20": 14.6,
-      "rps50": 21.9,
-      "rps120": 79.2,
-      "rps250": null,
-      "streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      },
-      "top10Streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      }
-    },
-    {
-      "rank": 154,
-      "code": "159870",
-      "name": "化工ETF",
-      "theme": "能源化工",
-      "streak": 0,
-      "top10Streak": 0,
-      "trendScore": 0.0,
-      "phase": "下跌趋势",
-      "phaseNote": "RPS 20=14.0",
-      "signal": "回避",
-      "signalNote": "RPS 20=14.0，强势天数=0 天",
-      "rps3": 21.9,
-      "rps5": 14.0,
-      "rps10": 32.6,
-      "rps20": 14.0,
-      "rps50": 33.7,
-      "rps120": 15.2,
-      "rps250": 66.1,
-      "streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      },
-      "top10Streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      }
-    },
-    {
-      "rank": 155,
-      "code": "159819",
-      "name": "人工智能ETF",
-      "theme": "信息技术",
-      "streak": 0,
-      "top10Streak": 0,
-      "trendScore": 0.0,
-      "phase": "下跌趋势",
-      "phaseNote": "RPS 20=13.5",
-      "signal": "回避",
-      "signalNote": "RPS 20=13.5，强势天数=0 天",
-      "rps3": 6.7,
-      "rps5": 7.3,
-      "rps10": 10.7,
-      "rps20": 13.5,
-      "rps50": 7.9,
-      "rps120": 54.5,
-      "rps250": 62.6,
-      "streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      },
-      "top10Streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      }
-    },
-    {
-      "rank": 156,
-      "code": "159995",
-      "name": "芯片ETF",
-      "theme": "半导体",
-      "streak": 0,
-      "top10Streak": 0,
-      "trendScore": 0.0,
-      "phase": "下跌趋势",
-      "phaseNote": "RPS 20=12.9",
-      "signal": "回避",
-      "signalNote": "RPS 20=12.9，强势天数=0 天",
-      "rps3": 32.6,
-      "rps5": 16.9,
-      "rps10": 7.9,
-      "rps20": 12.9,
-      "rps50": 3.9,
-      "rps120": 86.0,
-      "rps250": 75.3,
-      "streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      },
-      "top10Streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      }
-    },
-    {
-      "rank": 157,
-      "code": "562500",
-      "name": "机器人ETF",
-      "theme": "机器人",
-      "streak": 0,
-      "top10Streak": 0,
-      "trendScore": 0.0,
-      "phase": "下跌趋势",
-      "phaseNote": "RPS 20=12.4",
-      "signal": "回避",
-      "signalNote": "RPS 20=12.4，强势天数=0 天",
-      "rps3": 12.9,
-      "rps5": 12.9,
-      "rps10": 19.1,
-      "rps20": 12.4,
-      "rps50": 18.0,
-      "rps120": 29.2,
-      "rps250": 15.5,
-      "streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      },
-      "top10Streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      }
-    },
-    {
-      "rank": 158,
+      "rank": 166,
       "code": "159915",
       "name": "创业板ETF",
       "theme": "创业板",
@@ -67787,281 +68235,15 @@ window.COCKPIT_DATA = {
       "top10Streak": 0,
       "trendScore": 0.0,
       "phase": "下跌趋势",
-      "phaseNote": "RPS 20=11.8",
+      "phaseNote": "RPS 20=7.3",
       "signal": "回避",
-      "signalNote": "RPS 20=11.8，强势天数=0 天",
-      "rps3": 19.1,
-      "rps5": 18.0,
-      "rps10": 14.6,
-      "rps20": 11.8,
-      "rps50": 10.1,
-      "rps120": 28.7,
-      "rps250": 51.7,
-      "streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      },
-      "top10Streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      }
-    },
-    {
-      "rank": 159,
-      "code": "588220",
-      "name": "科创100ETF",
-      "theme": "科创100",
-      "streak": 0,
-      "top10Streak": 0,
-      "trendScore": 0.0,
-      "phase": "下跌趋势",
-      "phaseNote": "RPS 20=11.2",
-      "signal": "回避",
-      "signalNote": "RPS 20=11.2，强势天数=0 天",
-      "rps3": 11.8,
-      "rps5": 9.0,
-      "rps10": 6.7,
-      "rps20": 11.2,
-      "rps50": 19.1,
-      "rps120": 71.3,
-      "rps250": 78.7,
-      "streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      },
-      "top10Streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      }
-    },
-    {
-      "rank": 160,
-      "code": "562800",
-      "name": "稀有金属ETF",
-      "theme": "有色金属",
-      "streak": 0,
-      "top10Streak": 0,
-      "trendScore": 0.0,
-      "phase": "下跌趋势",
-      "phaseNote": "RPS 20=10.7",
-      "signal": "回避",
-      "signalNote": "RPS 20=10.7，强势天数=0 天",
-      "rps3": 18.5,
-      "rps5": 18.5,
-      "rps10": 21.3,
-      "rps20": 10.7,
-      "rps50": 20.8,
-      "rps120": 10.7,
-      "rps250": 71.8,
-      "streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      },
-      "top10Streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      }
-    },
-    {
-      "rank": 161,
-      "code": "560860",
-      "name": "工业有色ETF",
-      "theme": "有色金属",
-      "streak": 0,
-      "top10Streak": 0,
-      "trendScore": 0.0,
-      "phase": "下跌趋势",
-      "phaseNote": "RPS 20=10.1",
-      "signal": "回避",
-      "signalNote": "RPS 20=10.1，强势天数=0 天",
-      "rps3": 32.0,
-      "rps5": 34.3,
-      "rps10": 32.0,
-      "rps20": 10.1,
-      "rps50": 37.1,
-      "rps120": 26.4,
-      "rps250": 87.4,
-      "streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      },
-      "top10Streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      }
-    },
-    {
-      "rank": 162,
-      "code": "588780",
-      "name": "科创芯片设计ETF",
-      "theme": "半导体",
-      "streak": 0,
-      "top10Streak": 0,
-      "trendScore": 0.0,
-      "phase": "下跌趋势",
-      "phaseNote": "RPS 20=9.6",
-      "signal": "回避",
-      "signalNote": "RPS 20=9.6，强势天数=0 天",
-      "rps3": 2.8,
-      "rps5": 3.4,
-      "rps10": 2.8,
-      "rps20": 9.6,
+      "signalNote": "RPS 20=7.3，强势天数=0 天",
+      "rps3": 10.1,
+      "rps5": 11.2,
+      "rps10": 15.2,
+      "rps20": 7.3,
       "rps50": 9.0,
-      "rps120": 52.8,
-      "rps250": 61.5,
-      "streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      },
-      "top10Streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      }
-    },
-    {
-      "rank": 163,
-      "code": "159652",
-      "name": "有色50ETF",
-      "theme": "有色金属",
-      "streak": 0,
-      "top10Streak": 0,
-      "trendScore": 0.0,
-      "phase": "下跌趋势",
-      "phaseNote": "RPS 20=9.0",
-      "signal": "回避",
-      "signalNote": "RPS 20=9.0，强势天数=0 天",
-      "rps3": 36.5,
-      "rps5": 43.3,
-      "rps10": 33.7,
-      "rps20": 9.0,
-      "rps50": 39.9,
-      "rps120": 16.9,
-      "rps250": 81.6,
-      "streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      },
-      "top10Streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      }
-    },
-    {
-      "rank": 164,
-      "code": "561330",
-      "name": "矿业ETF",
-      "theme": "矿业",
-      "streak": 0,
-      "top10Streak": 0,
-      "trendScore": 0.0,
-      "phase": "下跌趋势",
-      "phaseNote": "RPS 20=8.4",
-      "signal": "回避",
-      "signalNote": "RPS 20=8.4，强势天数=0 天",
-      "rps3": 38.2,
-      "rps5": 41.0,
-      "rps10": 31.5,
-      "rps20": 8.4,
-      "rps50": 38.8,
-      "rps120": 17.4,
-      "rps250": 82.2,
-      "streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      },
-      "top10Streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      }
-    },
-    {
-      "rank": 165,
-      "code": "159949",
-      "name": "创业板50ETF",
-      "theme": "创业板50",
-      "streak": 0,
-      "top10Streak": 0,
-      "trendScore": 0.0,
-      "phase": "下跌趋势",
-      "phaseNote": "RPS 20=7.9",
-      "signal": "回避",
-      "signalNote": "RPS 20=7.9，强势天数=0 天",
-      "rps3": 17.4,
-      "rps5": 14.6,
-      "rps10": 12.9,
-      "rps20": 7.9,
-      "rps50": 7.3,
-      "rps120": 23.0,
+      "rps120": 20.2,
       "rps250": 45.4,
       "streaks": {
         "rps3": 0,
@@ -68083,48 +68265,10 @@ window.COCKPIT_DATA = {
       }
     },
     {
-      "rank": 166,
-      "code": "159781",
-      "name": "科创创业ETF",
-      "theme": "科创成长",
-      "streak": 0,
-      "top10Streak": 0,
-      "trendScore": 0.0,
-      "phase": "下跌趋势",
-      "phaseNote": "RPS 20=7.3",
-      "signal": "回避",
-      "signalNote": "RPS 20=7.3，强势天数=0 天",
-      "rps3": 12.4,
-      "rps5": 9.6,
-      "rps10": 9.0,
-      "rps20": 7.3,
-      "rps50": 3.4,
-      "rps120": 45.5,
-      "rps250": 63.2,
-      "streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      },
-      "top10Streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      }
-    },
-    {
       "rank": 167,
-      "code": "159698",
-      "name": "粮食ETF",
-      "theme": "粮食",
+      "code": "159995",
+      "name": "芯片ETF",
+      "theme": "半导体",
       "streak": 0,
       "top10Streak": 0,
       "trendScore": 0.0,
@@ -68132,13 +68276,13 @@ window.COCKPIT_DATA = {
       "phaseNote": "RPS 20=6.7",
       "signal": "回避",
       "signalNote": "RPS 20=6.7，强势天数=0 天",
-      "rps3": 23.6,
-      "rps5": 44.4,
-      "rps10": 45.5,
+      "rps3": 7.3,
+      "rps5": 7.3,
+      "rps10": 5.1,
       "rps20": 6.7,
-      "rps50": 77.0,
-      "rps120": 25.8,
-      "rps250": 52.9,
+      "rps50": 3.4,
+      "rps120": 81.5,
+      "rps250": 67.2,
       "streaks": {
         "rps3": 0,
         "rps5": 0,
@@ -68160,9 +68304,9 @@ window.COCKPIT_DATA = {
     },
     {
       "rank": 168,
-      "code": "512400",
-      "name": "有色金属ETF",
-      "theme": "有色金属",
+      "code": "159732",
+      "name": "消费电子ETF",
+      "theme": "消费",
       "streak": 0,
       "top10Streak": 0,
       "trendScore": 0.0,
@@ -68170,13 +68314,13 @@ window.COCKPIT_DATA = {
       "phaseNote": "RPS 20=6.2",
       "signal": "回避",
       "signalNote": "RPS 20=6.2，强势天数=0 天",
-      "rps3": 35.4,
-      "rps5": 37.6,
-      "rps10": 30.3,
+      "rps3": 15.2,
+      "rps5": 11.8,
+      "rps10": 7.3,
       "rps20": 6.2,
-      "rps50": 24.7,
-      "rps120": 11.8,
-      "rps250": 70.7,
+      "rps50": 7.9,
+      "rps120": 53.9,
+      "rps250": 53.4,
       "streaks": {
         "rps3": 0,
         "rps5": 0,
@@ -68198,9 +68342,9 @@ window.COCKPIT_DATA = {
     },
     {
       "rank": 169,
-      "code": "159732",
-      "name": "消费电子ETF",
-      "theme": "消费",
+      "code": "159781",
+      "name": "科创创业ETF",
+      "theme": "科创成长",
       "streak": 0,
       "top10Streak": 0,
       "trendScore": 0.0,
@@ -68208,13 +68352,13 @@ window.COCKPIT_DATA = {
       "phaseNote": "RPS 20=5.6",
       "signal": "回避",
       "signalNote": "RPS 20=5.6，强势天数=0 天",
-      "rps3": 14.6,
-      "rps5": 5.1,
-      "rps10": 5.1,
+      "rps3": 6.2,
+      "rps5": 3.4,
+      "rps10": 7.9,
       "rps20": 5.6,
-      "rps50": 8.4,
-      "rps120": 57.9,
-      "rps250": 54.6,
+      "rps50": 3.9,
+      "rps120": 36.5,
+      "rps250": 55.7,
       "streaks": {
         "rps3": 0,
         "rps5": 0,
@@ -68236,9 +68380,9 @@ window.COCKPIT_DATA = {
     },
     {
       "rank": 170,
-      "code": "517520",
-      "name": "黄金股ETF",
-      "theme": "黄金",
+      "code": "159949",
+      "name": "创业板50ETF",
+      "theme": "创业板50",
       "streak": 0,
       "top10Streak": 0,
       "trendScore": 0.0,
@@ -68246,13 +68390,13 @@ window.COCKPIT_DATA = {
       "phaseNote": "RPS 20=5.1",
       "signal": "回避",
       "signalNote": "RPS 20=5.1，强势天数=0 天",
-      "rps3": 48.3,
-      "rps5": 65.7,
-      "rps10": 38.2,
+      "rps3": 8.4,
+      "rps5": 6.7,
+      "rps10": 14.0,
       "rps20": 5.1,
-      "rps50": 62.9,
-      "rps120": 21.3,
-      "rps250": 60.3,
+      "rps50": 6.7,
+      "rps120": 13.5,
+      "rps250": 36.8,
       "streaks": {
         "rps3": 0,
         "rps5": 0,
@@ -68274,9 +68418,9 @@ window.COCKPIT_DATA = {
     },
     {
       "rank": 171,
-      "code": "159967",
-      "name": "创业板成长ETF",
-      "theme": "科创成长",
+      "code": "159667",
+      "name": "工业母机ETF",
+      "theme": "工业母机",
       "streak": 0,
       "top10Streak": 0,
       "trendScore": 0.0,
@@ -68284,13 +68428,13 @@ window.COCKPIT_DATA = {
       "phaseNote": "RPS 20=4.5",
       "signal": "回避",
       "signalNote": "RPS 20=4.5，强势天数=0 天",
-      "rps3": 6.2,
-      "rps5": 3.9,
-      "rps10": 4.5,
+      "rps3": 14.0,
+      "rps5": 13.5,
+      "rps10": 10.7,
       "rps20": 4.5,
-      "rps50": 6.2,
-      "rps120": 43.3,
-      "rps250": 72.4,
+      "rps50": 14.0,
+      "rps120": 32.0,
+      "rps250": 73.6,
       "streaks": {
         "rps3": 0,
         "rps5": 0,
@@ -68312,9 +68456,9 @@ window.COCKPIT_DATA = {
     },
     {
       "rank": 172,
-      "code": "588020",
-      "name": "科创成长ETF",
-      "theme": "科创成长",
+      "code": "513310",
+      "name": "中韩半导体ETF",
+      "theme": "半导体",
       "streak": 0,
       "top10Streak": 0,
       "trendScore": 0.0,
@@ -68322,21 +68466,21 @@ window.COCKPIT_DATA = {
       "phaseNote": "RPS 20=3.9",
       "signal": "回避",
       "signalNote": "RPS 20=3.9，强势天数=0 天",
-      "rps3": 22.5,
-      "rps5": 4.5,
-      "rps10": 1.1,
+      "rps3": 0.6,
+      "rps5": 0.6,
+      "rps10": 5.6,
       "rps20": 3.9,
-      "rps50": 1.7,
-      "rps120": 1.1,
-      "rps250": 0.6,
+      "rps50": 10.7,
+      "rps120": 94.9,
+      "rps250": 98.9,
       "streaks": {
         "rps3": 0,
         "rps5": 0,
         "rps10": 0,
         "rps20": 0,
         "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
+        "rps120": 186,
+        "rps250": 170
       },
       "top10Streaks": {
         "rps3": 0,
@@ -68344,8 +68488,8 @@ window.COCKPIT_DATA = {
         "rps10": 0,
         "rps20": 0,
         "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
+        "rps120": 127,
+        "rps250": 127
       }
     },
     {
@@ -68360,13 +68504,13 @@ window.COCKPIT_DATA = {
       "phaseNote": "RPS 20=3.4",
       "signal": "回避",
       "signalNote": "RPS 20=3.4，强势天数=0 天",
-      "rps3": 9.6,
-      "rps5": 1.7,
+      "rps3": 2.8,
+      "rps5": 2.2,
       "rps10": 2.2,
       "rps20": 3.4,
-      "rps50": 13.5,
-      "rps120": 41.0,
-      "rps250": 92.5,
+      "rps50": 24.7,
+      "rps120": 37.6,
+      "rps250": 92.0,
       "streaks": {
         "rps3": 0,
         "rps5": 0,
@@ -68374,7 +68518,7 @@ window.COCKPIT_DATA = {
         "rps20": 0,
         "rps50": 0,
         "rps120": 0,
-        "rps250": 177
+        "rps250": 178
       },
       "top10Streaks": {
         "rps3": 0,
@@ -68398,13 +68542,13 @@ window.COCKPIT_DATA = {
       "phaseNote": "RPS 20=2.8",
       "signal": "回避",
       "signalNote": "RPS 20=2.8，强势天数=0 天",
-      "rps3": 36.0,
-      "rps5": 5.6,
-      "rps10": 3.4,
+      "rps3": 6.7,
+      "rps5": 7.9,
+      "rps10": 2.8,
       "rps20": 2.8,
-      "rps50": 12.4,
-      "rps120": 53.4,
-      "rps250": 75.9,
+      "rps50": 18.5,
+      "rps120": 44.4,
+      "rps250": 74.7,
       "streaks": {
         "rps3": 0,
         "rps5": 0,
@@ -68426,9 +68570,9 @@ window.COCKPIT_DATA = {
     },
     {
       "rank": 175,
-      "code": "513310",
-      "name": "中韩半导体ETF",
-      "theme": "半导体",
+      "code": "588020",
+      "name": "科创成长ETF",
+      "theme": "科创成长",
       "streak": 0,
       "top10Streak": 0,
       "trendScore": 0.0,
@@ -68436,21 +68580,21 @@ window.COCKPIT_DATA = {
       "phaseNote": "RPS 20=2.2",
       "signal": "回避",
       "signalNote": "RPS 20=2.2，强势天数=0 天",
-      "rps3": 0.6,
-      "rps5": 0.6,
-      "rps10": 3.9,
+      "rps3": 4.5,
+      "rps5": 2.8,
+      "rps10": 0.6,
       "rps20": 2.2,
-      "rps50": 5.1,
-      "rps120": 96.1,
-      "rps250": 98.9,
+      "rps50": 1.7,
+      "rps120": 0.6,
+      "rps250": 0.6,
       "streaks": {
         "rps3": 0,
         "rps5": 0,
         "rps10": 0,
         "rps20": 0,
         "rps50": 0,
-        "rps120": 185,
-        "rps250": 169
+        "rps120": 0,
+        "rps250": 0
       },
       "top10Streaks": {
         "rps3": 0,
@@ -68458,15 +68602,15 @@ window.COCKPIT_DATA = {
         "rps10": 0,
         "rps20": 0,
         "rps50": 0,
-        "rps120": 126,
-        "rps250": 126
+        "rps120": 0,
+        "rps250": 0
       }
     },
     {
       "rank": 176,
-      "code": "159667",
-      "name": "工业母机ETF",
-      "theme": "工业母机",
+      "code": "515880",
+      "name": "通信ETF",
+      "theme": "通信",
       "streak": 0,
       "top10Streak": 0,
       "trendScore": 0.0,
@@ -68474,13 +68618,13 @@ window.COCKPIT_DATA = {
       "phaseNote": "RPS 20=1.7",
       "signal": "回避",
       "signalNote": "RPS 20=1.7，强势天数=0 天",
-      "rps3": 4.5,
-      "rps5": 2.8,
-      "rps10": 5.6,
+      "rps3": 3.9,
+      "rps5": 1.7,
+      "rps10": 1.1,
       "rps20": 1.7,
-      "rps50": 11.2,
-      "rps120": 33.7,
-      "rps250": 67.2,
+      "rps50": 2.8,
+      "rps120": 2.8,
+      "rps250": 3.4,
       "streaks": {
         "rps3": 0,
         "rps5": 0,
@@ -68502,9 +68646,9 @@ window.COCKPIT_DATA = {
     },
     {
       "rank": 177,
-      "code": "515050",
-      "name": "5G通信ETF",
-      "theme": "通信",
+      "code": "159967",
+      "name": "创业板成长ETF",
+      "theme": "科创成长",
       "streak": 0,
       "top10Streak": 0,
       "trendScore": 0.0,
@@ -68512,13 +68656,13 @@ window.COCKPIT_DATA = {
       "phaseNote": "RPS 20=1.1",
       "signal": "回避",
       "signalNote": "RPS 20=1.1，强势天数=0 天",
-      "rps3": 18.0,
-      "rps5": 2.2,
-      "rps10": 1.7,
+      "rps3": 1.7,
+      "rps5": 1.1,
+      "rps10": 3.4,
       "rps20": 1.1,
-      "rps50": 1.1,
-      "rps120": 0.6,
-      "rps250": 1.1,
+      "rps50": 7.3,
+      "rps120": 31.5,
+      "rps250": 65.5,
       "streaks": {
         "rps3": 0,
         "rps5": 0,
@@ -68540,8 +68684,8 @@ window.COCKPIT_DATA = {
     },
     {
       "rank": 178,
-      "code": "515880",
-      "name": "通信ETF",
+      "code": "515050",
+      "name": "5G通信ETF",
       "theme": "通信",
       "streak": 0,
       "top10Streak": 0,
@@ -68550,13 +68694,13 @@ window.COCKPIT_DATA = {
       "phaseNote": "RPS 20=0.6",
       "signal": "回避",
       "signalNote": "RPS 20=0.6，强势天数=0 天",
-      "rps3": 5.1,
-      "rps5": 1.1,
-      "rps10": 0.6,
+      "rps3": 5.6,
+      "rps5": 4.5,
+      "rps10": 1.7,
       "rps20": 0.6,
-      "rps50": 2.2,
-      "rps120": 2.8,
-      "rps250": 4.0,
+      "rps50": 1.1,
+      "rps120": 1.1,
+      "rps250": 1.1,
       "streaks": {
         "rps3": 0,
         "rps5": 0,
@@ -68578,6 +68722,11 @@ window.COCKPIT_DATA = {
     }
   ],
   "history": [
+    {
+      "date": "2026-10-19",
+      "title": "2026-10-19 ETF RPS 日报",
+      "url": "reports/2026-10-19.html?v=trend-decision"
+    },
     {
       "date": "2026-10-15",
       "title": "2026-10-15 ETF RPS 日报",
@@ -68647,26 +68796,6 @@ window.COCKPIT_DATA = {
       "date": "2026-09-18",
       "title": "2026-09-18 ETF RPS 日报",
       "url": "reports/2026-09-18.html?v=trend-decision"
-    },
-    {
-      "date": "2026-09-17",
-      "title": "2026-09-17 ETF RPS 日报",
-      "url": "reports/2026-09-17.html?v=trend-decision"
-    },
-    {
-      "date": "2026-09-16",
-      "title": "2026-09-16 ETF RPS 日报",
-      "url": "reports/2026-09-16.html?v=trend-decision"
-    },
-    {
-      "date": "2026-09-15",
-      "title": "2026-09-15 ETF RPS 日报",
-      "url": "reports/2026-09-15.html?v=trend-decision"
-    },
-    {
-      "date": "2026-09-14",
-      "title": "2026-09-14 ETF RPS 日报",
-      "url": "reports/2026-09-14.html?v=trend-decision"
     }
   ],
   "navPrefix": "./"
