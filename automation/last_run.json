@@ -1,6 +1,6 @@
 {
-  "status": "updated",
+  "status": "skipped",
   "date": "2026-10-28",
-  "detail": "missing trading days backfilled; site and strategy rebuilt",
-  "updatedAt": "2026-10-28T10:00:00+00:00"
+  "detail": "history already includes 2026-10-28",
+  "updatedAt": "2026-10-28T16:32:03.939464+00:00"
 }
