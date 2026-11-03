@@ -1,24 +1,24 @@
 {
-  "date": "2026-11-02",
+  "date": "2026-11-03",
   "latestReport": {
-    "date": "2026-11-02",
-    "title": "2026-11-02 ETF RPS 日报",
-    "url": "reports/2026-11-02.html?v=trend-decision",
+    "date": "2026-11-03",
+    "title": "2026-11-03 ETF RPS 日报",
+    "url": "reports/2026-11-03.html?v=trend-decision",
     "summary": {
       "mainlines": [
         "消费",
-        "能源化工",
-        "红利"
+        "红利",
+        "能源化工"
       ],
       "action": "持有为主",
       "position": 90,
       "risk": "低",
       "topName": "能源化工ETF",
-      "topStreak": 38,
+      "topStreak": 39,
       "shortTermMainlines": [
         "酒",
-        "食品饮料",
-        "消费"
+        "消费",
+        "食品饮料"
       ],
       "shortTermMainlineDetails": [
         {
@@ -26,29 +26,28 @@
           "name": "酒ETF",
           "code": "512690",
           "rps3": 100.0,
+          "rps5": 99.4,
+          "rps10": 100.0
+        },
+        {
+          "theme": "消费",
+          "name": "恒生消费ETF",
+          "code": "513970",
+          "rps3": 99.4,
           "rps5": 98.9,
-          "rps10": 97.8
+          "rps10": 94.9
         },
         {
           "theme": "食品饮料",
           "name": "食品饮料ETF",
           "code": "515170",
-          "rps3": 99.4,
-          "rps5": 97.2,
-          "rps10": 96.6
-        },
-        {
-          "theme": "消费",
-          "name": "消费ETF",
-          "code": "159928",
           "rps3": 98.9,
-          "rps5": 94.9,
-          "rps10": 94.4
+          "rps5": 97.8,
+          "rps10": 98.3
         }
       ],
       "weeklyChanges": [
-        "↑ 消费",
-        "↓ 银行"
+        "主线延续"
       ],
       "weeklyRule": "对比上一个交易日的主线前三方向",
       "mainlineRule": "中期主线按 RPS 20 前 12 的主题聚合",
@@ -57,6 +56,11 @@
     }
   },
   "history": [
+    {
+      "date": "2026-11-03",
+      "title": "2026-11-03 ETF RPS 日报",
+      "url": "reports/2026-11-03.html?v=trend-decision"
+    },
     {
       "date": "2026-11-02",
       "title": "2026-11-02 ETF RPS 日报",
