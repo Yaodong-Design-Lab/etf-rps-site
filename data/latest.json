@@ -1,9 +1,9 @@
 {
-  "date": "2026-11-03",
+  "date": "2026-11-04",
   "latestReport": {
-    "date": "2026-11-03",
-    "title": "2026-11-03 ETF RPS 日报",
-    "url": "reports/2026-11-03.html?v=trend-decision",
+    "date": "2026-11-04",
+    "title": "2026-11-04 ETF RPS 日报",
+    "url": "reports/2026-11-04.html?v=trend-decision",
     "summary": {
       "mainlines": [
         "消费",
@@ -14,36 +14,36 @@
       "position": 90,
       "risk": "低",
       "topName": "能源化工ETF",
-      "topStreak": 39,
+      "topStreak": 40,
       "shortTermMainlines": [
-        "酒",
-        "消费",
-        "食品饮料"
+        "游戏",
+        "电池",
+        "创业板新能源"
       ],
       "shortTermMainlineDetails": [
         {
-          "theme": "酒",
-          "name": "酒ETF",
-          "code": "512690",
-          "rps3": 100.0,
-          "rps5": 99.4,
-          "rps10": 100.0
-        },
-        {
-          "theme": "消费",
-          "name": "恒生消费ETF",
-          "code": "513970",
-          "rps3": 99.4,
-          "rps5": 98.9,
-          "rps10": 94.9
-        },
-        {
-          "theme": "食品饮料",
-          "name": "食品饮料ETF",
-          "code": "515170",
+          "theme": "游戏",
+          "name": "游戏ETF",
+          "code": "159869",
           "rps3": 98.9,
-          "rps5": 97.8,
-          "rps10": 98.3
+          "rps5": 96.1,
+          "rps10": 94.4
+        },
+        {
+          "theme": "电池",
+          "name": "储能电池ETF",
+          "code": "159566",
+          "rps3": 96.6,
+          "rps5": 87.6,
+          "rps10": 83.1
+        },
+        {
+          "theme": "创业板新能源",
+          "name": "创业板新能源ETF",
+          "code": "159368",
+          "rps3": 94.9,
+          "rps5": 92.1,
+          "rps10": 90.4
         }
       ],
       "weeklyChanges": [
@@ -56,6 +56,11 @@
     }
   },
   "history": [
+    {
+      "date": "2026-11-04",
+      "title": "2026-11-04 ETF RPS 日报",
+      "url": "reports/2026-11-04.html?v=trend-decision"
+    },
     {
       "date": "2026-11-03",
       "title": "2026-11-03 ETF RPS 日报",
