@@ -1,20 +1,20 @@
 {
-  "date": "2026-11-05",
+  "date": "2026-11-06",
   "latestReport": {
-    "date": "2026-11-05",
-    "title": "2026-11-05 ETF RPS 日报",
-    "url": "reports/2026-11-05.html?v=trend-decision",
+    "date": "2026-11-06",
+    "title": "2026-11-06 ETF RPS 日报",
+    "url": "reports/2026-11-06.html?v=trend-decision",
     "summary": {
       "mainlines": [
         "消费",
-        "酒",
-        "传媒"
+        "传媒",
+        "机器人50"
       ],
       "action": "持有为主",
       "position": 90,
       "risk": "低",
       "topName": "标普消费ETF",
-      "topStreak": 15,
+      "topStreak": 16,
       "shortTermMainlines": [
         "半导体",
         "科创新能源",
@@ -33,22 +33,22 @@
           "theme": "科创新能源",
           "name": "科创新能源ETF",
           "code": "588830",
-          "rps3": 98.3,
+          "rps3": 92.1,
           "rps5": 98.3,
-          "rps10": 91.0
+          "rps10": 83.7
         },
         {
           "theme": "创业板新能源",
           "name": "创业板新能源ETF",
           "code": "159368",
-          "rps3": 97.8,
-          "rps5": 96.6,
-          "rps10": 95.5
+          "rps3": 84.8,
+          "rps5": 95.5,
+          "rps10": 79.8
         }
       ],
       "weeklyChanges": [
-        "↑ 酒 / 传媒",
-        "↓ 红利 / 能源化工"
+        "↑ 机器人50",
+        "↓ 酒"
       ],
       "weeklyRule": "对比上一个交易日的主线前三方向",
       "mainlineRule": "中期主线按 RPS 20 前 12 的主题聚合",
@@ -57,6 +57,11 @@
     }
   },
   "history": [
+    {
+      "date": "2026-11-06",
+      "title": "2026-11-06 ETF RPS 日报",
+      "url": "reports/2026-11-06.html?v=trend-decision"
+    },
     {
       "date": "2026-11-05",
       "title": "2026-11-05 ETF RPS 日报",
