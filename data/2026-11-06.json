@@ -1,5 +1,5 @@
 {
-  "today": "2026-11-06",
+  "today": "2026-11-09",
   "date": "2026-11-06",
   "market": {
     "status": "强趋势",
@@ -70503,6 +70503,11 @@
   ],
   "history": [
     {
+      "date": "2026-11-09",
+      "title": "2026-11-09 ETF RPS 日报",
+      "url": "2026-11-09.html?v=trend-decision"
+    },
+    {
       "date": "2026-11-06",
       "title": "2026-11-06 ETF RPS 日报",
       "url": "2026-11-06.html?v=trend-decision"
@@ -70601,11 +70606,6 @@
       "date": "2026-10-09",
       "title": "2026-10-09 ETF RPS 日报",
       "url": "2026-10-09.html?v=trend-decision"
-    },
-    {
-      "date": "2026-10-08",
-      "title": "2026-10-08 ETF RPS 日报",
-      "url": "2026-10-08.html?v=trend-decision"
     }
   ],
   "navPrefix": "../"
