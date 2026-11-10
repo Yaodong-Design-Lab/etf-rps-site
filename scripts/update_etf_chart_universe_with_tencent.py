@@ -115,6 +115,10 @@ def main() -> None:
 
     history = pd.read_csv(args.history_csv, parse_dates=["date"])
     history["code"] = history["code"].astype(str).str.zfill(6)
+    if (history["date"] > target).any():
+        raise SystemExit(
+            f"History CSV already contains sessions after {args.date}; refusing to overwrite it with an older table."
+        )
     history = history[history["code"].isin(codes)].copy()
     history = history[history["date"] < target].copy()
 
