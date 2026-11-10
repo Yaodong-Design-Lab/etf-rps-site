@@ -25,9 +25,13 @@ def main() -> None:
     parser.add_argument("--latest-date", default="")
     parser.add_argument("--today", default=str(date_cls.today()))
     parser.add_argument("--dates", nargs="*", default=[])
+    parser.add_argument("--out", default="", help="Directory to write. Defaults to the repository root.")
     args = parser.parse_args()
 
     root = Path(__file__).resolve().parents[1]
+    out = Path(args.out) if args.out else root
+    if not out.is_absolute():
+        out = root / out
     history_csv = Path(args.history_csv)
     if not history_csv.is_absolute():
         history_csv = root / history_csv
@@ -43,11 +47,12 @@ def main() -> None:
     report_history = set_history_prefix(latest_payload, "")["history"]
     dates = args.dates or [item["date"] for item in latest_payload["history"]]
 
-    (root / "index.html").write_text(render(index_payload), encoding="utf-8")
-    (root / "payload.json").write_text(json.dumps(latest_payload, ensure_ascii=False, indent=2), encoding="utf-8")
-    write_json_pair(root / "data", latest_date, index_payload)
-    shutil.copyfile(root / "data" / f"{latest_date}.js", root / "data" / "latest.js")
-    (root / "data" / "latest.json").write_text(
+    out.mkdir(parents=True, exist_ok=True)
+    (out / "index.html").write_text(render(index_payload), encoding="utf-8")
+    (out / "payload.json").write_text(json.dumps(latest_payload, ensure_ascii=False, indent=2), encoding="utf-8")
+    write_json_pair(out / "data", latest_date, index_payload)
+    shutil.copyfile(out / "data" / f"{latest_date}.js", out / "data" / "latest.js")
+    (out / "data" / "latest.json").write_text(
         json.dumps(
             {
                 "date": latest_date,
@@ -65,14 +70,14 @@ def main() -> None:
         encoding="utf-8",
     )
 
-    reports = root / "reports"
+    reports = out / "reports"
     reports.mkdir(parents=True, exist_ok=True)
     for date_text in dates:
         payload = build_payload(history_csv, date_text, args.today)
         payload["history"] = report_history
         payload["navPrefix"] = "../"
         (reports / f"{date_text}.html").write_text(render(payload), encoding="utf-8")
-        write_json_pair(root / "data", date_text, payload)
+        write_json_pair(out / "data", date_text, payload)
         print(reports / f"{date_text}.html")
 
 

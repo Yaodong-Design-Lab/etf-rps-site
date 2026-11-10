@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
     inputs:
       date:
-        description: "Target trade date, for example 2026-07-06. Leave empty to use Beijing today."
+        description: "Target trade date, YYYY-MM-DD. Leave empty to use the latest Beijing session (previous weekday before 15:00)."
         required: false
         type: string
 
@@ -30,7 +30,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install pandas
 
-      - name: Rebuild ETF RPS data
+      - name: Rebuild ETF RPS report and rotation strategy
         run: |
           if [ -n "${{ github.event.inputs.date }}" ]; then
             python scripts/daily_update.py --date "${{ github.event.inputs.date }}"
@@ -42,10 +42,10 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add index.html payload.json reports data automation/etf_nav_daily_chart_universe_latest.csv automation/last_run.json
+          git add index.html payload.json reports data strategy_backtest.html automation/etf_nav_daily_chart_universe_latest.csv automation/last_run.json
           if git diff --cached --quiet; then
-            echo "No data changes to commit."
-          else
-            git commit -m "chore: update ETF RPS daily data"
-            git push
+            echo "Daily update finished without publishing any files."
+            exit 1
           fi
+          git commit -m "chore: update ETF RPS daily data and rotation strategy"
+          git push
