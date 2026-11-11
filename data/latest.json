@@ -1,9 +1,9 @@
 {
-  "date": "2026-11-10",
+  "date": "2026-11-11",
   "latestReport": {
-    "date": "2026-11-10",
-    "title": "2026-11-10 ETF RPS 日报",
-    "url": "reports/2026-11-10.html?v=trend-decision",
+    "date": "2026-11-11",
+    "title": "2026-11-11 ETF RPS 日报",
+    "url": "reports/2026-11-11.html?v=trend-decision",
     "summary": {
       "mainlines": [
         "消费",
@@ -14,41 +14,31 @@
       "position": 90,
       "risk": "低",
       "topName": "标普消费ETF",
-      "topStreak": 18,
+      "topStreak": 19,
       "shortTermMainlines": [
-        "卫星",
-        "机器人50",
-        "卫星产业"
+        "医药",
+        "半导体"
       ],
       "shortTermMainlineDetails": [
         {
-          "theme": "卫星",
-          "name": "卫星ETF",
-          "code": "159206",
-          "rps3": 100.0,
-          "rps5": 86.0,
-          "rps10": 93.3
+          "theme": "医药",
+          "name": "纳指生物科技ETF",
+          "code": "513290",
+          "rps3": 94.4,
+          "rps5": 92.1,
+          "rps10": 90.4
         },
         {
-          "theme": "机器人50",
-          "name": "机器人50ETF",
-          "code": "159559",
-          "rps3": 98.3,
-          "rps5": 88.8,
-          "rps10": 92.7
-        },
-        {
-          "theme": "卫星产业",
-          "name": "卫星产业ETF",
-          "code": "159218",
-          "rps3": 97.8,
-          "rps5": 86.5,
-          "rps10": 86.0
+          "theme": "半导体",
+          "name": "半导体设备ETF",
+          "code": "159516",
+          "rps3": 64.6,
+          "rps5": 100.0,
+          "rps10": 94.9
         }
       ],
       "weeklyChanges": [
-        "↑ 半导体",
-        "↓ 红利"
+        "主线延续"
       ],
       "weeklyRule": "对比上一个交易日的主线前三方向",
       "mainlineRule": "中期主线按 RPS 20 前 12 的主题聚合",
@@ -57,6 +47,11 @@
     }
   },
   "history": [
+    {
+      "date": "2026-11-11",
+      "title": "2026-11-11 ETF RPS 日报",
+      "url": "reports/2026-11-11.html?v=trend-decision"
+    },
     {
       "date": "2026-11-10",
       "title": "2026-11-10 ETF RPS 日报",
