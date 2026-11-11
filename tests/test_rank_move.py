@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Rank-change arrows use the same board and sort as the dashboard table."""
+"""Rank-change arrows use the full-universe rank for the selected RPS period."""
 from __future__ import annotations
 
 import sys
@@ -28,8 +28,8 @@ def row(code, rps3, rps20, streak3=0, streak20=0, top3=0, top20=0):
     }
 
 
-def test_strength_board_rank_change():
-    # RPS 20 order is the tie break. Strength board keeps only RPS >= 90.
+def test_full_universe_rank_change_is_shared_by_every_board():
+    # RPS 20 order is the tie break. Every board uses this full-list rank.
     current = [
         row("AAA", rps3=90.0, rps20=99),
         row("BBB", rps3=95.0, rps20=80),
@@ -42,14 +42,13 @@ def test_strength_board_rank_change():
         row("BBB", rps3=91.0, rps20=70),
     ]
     moves = rank_moves(current, previous)
-    # Strength board, RPS 3: yesterday DDD, AAA, BBB; today EEE, BBB, AAA.
-    assert moves["AAA"]["strong"]["rps3"] == -1
-    assert moves["BBB"]["strong"]["rps3"] == 1
-    assert moves["EEE"]["strong"]["rps3"] is None
-    assert moves["CCC"]["strong"]["rps3"] is None
-    assert moves["BBB"]["all"]["rps3"] == 1
-    assert moves["AAA"]["all"]["rps20"] == 1
-    assert moves["AAA"]["strong"]["rps20"] is None
+    # RPS 3: yesterday DDD, AAA, BBB; today EEE, BBB, AAA, CCC.
+    assert moves["AAA"]["rps3"] == -1
+    assert moves["BBB"]["rps3"] == 1
+    assert moves["EEE"]["rps3"] is None
+    assert moves["CCC"]["rps3"] is None
+    assert moves["AAA"]["rps20"] == 1
+    assert "strong" not in moves["AAA"]
 
 
 def test_previous_session_is_the_prior_trading_day_in_the_file():
@@ -62,6 +61,6 @@ def test_previous_session_is_the_prior_trading_day_in_the_file():
 
 
 if __name__ == "__main__":
-    test_strength_board_rank_change()
+    test_full_universe_rank_change_is_shared_by_every_board()
     test_previous_session_is_the_prior_trading_day_in_the_file()
     print("rank move checks passed")

@@ -64074,33 +64074,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": -14,
-          "rps5": null,
-          "rps10": null,
-          "rps20": 0,
-          "rps50": 15,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": 7,
-          "rps5": null,
-          "rps10": null,
-          "rps20": 2,
-          "rps50": 2,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": -14,
-          "rps5": 18,
-          "rps10": -29,
-          "rps20": 0,
-          "rps50": 15,
-          "rps120": 11,
-          "rps250": -1
-        }
+        "rps3": -14,
+        "rps5": 18,
+        "rps10": -29,
+        "rps20": 0,
+        "rps50": 15,
+        "rps120": 11,
+        "rps250": -1
       }
     },
     {
@@ -64141,33 +64121,13 @@ window.COCKPIT_DATA = {
         "rps250": 120
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": -17,
-          "rps10": -2,
-          "rps20": 0,
-          "rps50": null,
-          "rps120": -2,
-          "rps250": 0
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": -1,
-          "rps10": -1,
-          "rps20": 0,
-          "rps50": null,
-          "rps120": 0,
-          "rps250": 0
-        },
-        "all": {
-          "rps3": 121,
-          "rps5": -17,
-          "rps10": -2,
-          "rps20": 0,
-          "rps50": 16,
-          "rps120": -2,
-          "rps250": 0
-        }
+        "rps3": 121,
+        "rps5": -17,
+        "rps10": -2,
+        "rps20": 0,
+        "rps50": 16,
+        "rps120": -2,
+        "rps250": 0
       }
     },
     {
@@ -64208,33 +64168,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": 4,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": 1,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": 13,
-          "rps5": 14,
-          "rps10": -22,
-          "rps20": 4,
-          "rps50": 22,
-          "rps120": 2,
-          "rps250": 2
-        }
+        "rps3": 13,
+        "rps5": 14,
+        "rps10": -22,
+        "rps20": 4,
+        "rps50": 22,
+        "rps120": 2,
+        "rps250": 2
       }
     },
     {
@@ -64275,33 +64215,13 @@ window.COCKPIT_DATA = {
         "rps250": 27
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": -2,
-          "rps20": 11,
-          "rps50": 1,
-          "rps120": 1,
-          "rps250": 0
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": 6,
-          "rps20": 1,
-          "rps50": 1,
-          "rps120": 0,
-          "rps250": 0
-        },
-        "all": {
-          "rps3": 37,
-          "rps5": 38,
-          "rps10": -2,
-          "rps20": 11,
-          "rps50": 1,
-          "rps120": 1,
-          "rps250": 0
-        }
+        "rps3": 37,
+        "rps5": 38,
+        "rps10": -2,
+        "rps20": 11,
+        "rps50": 1,
+        "rps120": 1,
+        "rps250": 0
       }
     },
     {
@@ -64342,33 +64262,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": -1,
-          "rps50": -1,
-          "rps120": 3,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": 0,
-          "rps50": 1,
-          "rps120": 2,
-          "rps250": null
-        },
-        "all": {
-          "rps3": 86,
-          "rps5": 103,
-          "rps10": 36,
-          "rps20": -1,
-          "rps50": -1,
-          "rps120": 3,
-          "rps250": 0
-        }
+        "rps3": 86,
+        "rps5": 103,
+        "rps10": 36,
+        "rps20": -1,
+        "rps50": -1,
+        "rps120": 3,
+        "rps250": 0
       }
     },
     {
@@ -64409,33 +64309,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": 1,
-          "rps20": -3,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": 1,
-          "rps20": 2,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": -85,
-          "rps5": 56,
-          "rps10": 1,
-          "rps20": -3,
-          "rps50": -4,
-          "rps120": 0,
-          "rps250": -1
-        }
+        "rps3": -85,
+        "rps5": 56,
+        "rps10": 1,
+        "rps20": -3,
+        "rps50": -4,
+        "rps120": 0,
+        "rps250": -1
       }
     },
     {
@@ -64476,33 +64356,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": -1,
-          "rps50": -6,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": 0,
-          "rps50": 1,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": -123,
-          "rps5": 16,
-          "rps10": -1,
-          "rps20": -1,
-          "rps50": -6,
-          "rps120": 0,
-          "rps250": -2
-        }
+        "rps3": -123,
+        "rps5": 16,
+        "rps10": -1,
+        "rps20": -1,
+        "rps50": -6,
+        "rps120": 0,
+        "rps250": -2
       }
     },
     {
@@ -64543,33 +64403,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": 3,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": 2,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": -13,
-          "rps5": 43,
-          "rps10": 11,
-          "rps20": 3,
-          "rps50": -1,
-          "rps120": 1,
-          "rps250": 0
-        }
+        "rps3": -13,
+        "rps5": 43,
+        "rps10": 11,
+        "rps20": 3,
+        "rps50": -1,
+        "rps120": 1,
+        "rps250": 0
       }
     },
     {
@@ -64610,33 +64450,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": 5,
-          "rps20": 3,
-          "rps50": 6,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": 5,
-          "rps20": 2,
-          "rps50": 3,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": -38,
-          "rps5": 19,
-          "rps10": 5,
-          "rps20": 3,
-          "rps50": 6,
-          "rps120": 3,
-          "rps250": 1
-        }
+        "rps3": -38,
+        "rps5": 19,
+        "rps10": 5,
+        "rps20": 3,
+        "rps50": 6,
+        "rps120": 3,
+        "rps250": 1
       }
     },
     {
@@ -64677,33 +64497,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": -1,
-          "rps5": 12,
-          "rps10": -7,
-          "rps20": 20,
-          "rps50": 20,
-          "rps120": 0,
-          "rps250": 0
-        }
+        "rps3": -1,
+        "rps5": 12,
+        "rps10": -7,
+        "rps20": 20,
+        "rps50": 20,
+        "rps120": 0,
+        "rps250": 0
       }
     },
     {
@@ -64744,33 +64544,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": -6,
-          "rps50": -9,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": -2,
-          "rps50": 2,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": -68,
-          "rps5": -3,
-          "rps10": 14,
-          "rps20": -6,
-          "rps50": -9,
-          "rps120": -4,
-          "rps250": 3
-        }
+        "rps3": -68,
+        "rps5": -3,
+        "rps10": 14,
+        "rps20": -6,
+        "rps50": -9,
+        "rps120": -4,
+        "rps250": 3
       }
     },
     {
@@ -64811,33 +64591,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": -4,
-          "rps50": -4,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": 0,
-          "rps50": 2,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": -103,
-          "rps5": 1,
-          "rps10": 10,
-          "rps20": -4,
-          "rps50": -4,
-          "rps120": 0,
-          "rps250": 0
-        }
+        "rps3": -103,
+        "rps5": 1,
+        "rps10": 10,
+        "rps20": -4,
+        "rps50": -4,
+        "rps120": 0,
+        "rps250": 0
       }
     },
     {
@@ -64878,33 +64638,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": 60,
-          "rps5": 38,
-          "rps10": 17,
-          "rps20": 15,
-          "rps50": 16,
-          "rps120": 3,
-          "rps250": 4
-        }
+        "rps3": 60,
+        "rps5": 38,
+        "rps10": 17,
+        "rps20": 15,
+        "rps50": 16,
+        "rps120": 3,
+        "rps250": 4
       }
     },
     {
@@ -64945,33 +64685,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": -5,
-          "rps50": -6,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": -2,
-          "rps50": 2,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": -76,
-          "rps5": -3,
-          "rps10": 0,
-          "rps20": -5,
-          "rps50": -6,
-          "rps120": -3,
-          "rps250": 2
-        }
+        "rps3": -76,
+        "rps5": -3,
+        "rps10": 0,
+        "rps20": -5,
+        "rps50": -6,
+        "rps120": -3,
+        "rps250": 2
       }
     },
     {
@@ -65012,33 +64732,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": 1,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": 0,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": -19,
-          "rps5": -40,
-          "rps10": 0,
-          "rps20": 1,
-          "rps50": 12,
-          "rps120": -1,
-          "rps250": 2
-        }
+        "rps3": -19,
+        "rps5": -40,
+        "rps10": 0,
+        "rps20": 1,
+        "rps50": 12,
+        "rps120": -1,
+        "rps250": 2
       }
     },
     {
@@ -65079,33 +64779,13 @@ window.COCKPIT_DATA = {
         "rps250": 54
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": 0,
-          "rps250": 0
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": 0,
-          "rps250": 0
-        },
-        "all": {
-          "rps3": 108,
-          "rps5": 13,
-          "rps10": -13,
-          "rps20": 26,
-          "rps50": -8,
-          "rps120": 0,
-          "rps250": 0
-        }
+        "rps3": 108,
+        "rps5": 13,
+        "rps10": -13,
+        "rps20": 26,
+        "rps50": -8,
+        "rps120": 0,
+        "rps250": 0
       }
     },
     {
@@ -65146,33 +64826,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": -5,
-          "rps5": 21,
-          "rps10": -8,
-          "rps20": 10,
-          "rps50": 6,
-          "rps120": 5,
-          "rps250": 2
-        }
+        "rps3": -5,
+        "rps5": 21,
+        "rps10": -8,
+        "rps20": 10,
+        "rps50": 6,
+        "rps120": 5,
+        "rps250": 2
       }
     },
     {
@@ -65213,33 +64873,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": 1,
-          "rps5": -51,
-          "rps10": -12,
-          "rps20": 5,
-          "rps50": 8,
-          "rps120": 1,
-          "rps250": -7
-        }
+        "rps3": 1,
+        "rps5": -51,
+        "rps10": -12,
+        "rps20": 5,
+        "rps50": 8,
+        "rps120": 1,
+        "rps250": -7
       }
     },
     {
@@ -65280,33 +64920,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": 6,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": 8,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": 36,
-          "rps5": 6,
-          "rps10": 13,
-          "rps20": 34,
-          "rps50": 40,
-          "rps120": 1,
-          "rps250": -3
-        }
+        "rps3": 36,
+        "rps5": 6,
+        "rps10": 13,
+        "rps20": 34,
+        "rps50": 40,
+        "rps120": 1,
+        "rps250": -3
       }
     },
     {
@@ -65347,33 +64967,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": -116,
-          "rps5": 20,
-          "rps10": 15,
-          "rps20": 0,
-          "rps50": -8,
-          "rps120": 3,
-          "rps250": 1
-        }
+        "rps3": -116,
+        "rps5": 20,
+        "rps10": 15,
+        "rps20": 0,
+        "rps50": -8,
+        "rps120": 3,
+        "rps250": 1
       }
     },
     {
@@ -65414,33 +65014,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": -58,
-          "rps5": 12,
-          "rps10": 12,
-          "rps20": -11,
-          "rps50": -13,
-          "rps120": 0,
-          "rps250": 1
-        }
+        "rps3": -58,
+        "rps5": 12,
+        "rps10": 12,
+        "rps20": -11,
+        "rps50": -13,
+        "rps120": 0,
+        "rps250": 1
       }
     },
     {
@@ -65481,33 +65061,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": -19,
-          "rps5": -38,
-          "rps10": -7,
-          "rps20": 0,
-          "rps50": 13,
-          "rps120": -5,
-          "rps250": -3
-        }
+        "rps3": -19,
+        "rps5": -38,
+        "rps10": -7,
+        "rps20": 0,
+        "rps50": 13,
+        "rps120": -5,
+        "rps250": -3
       }
     },
     {
@@ -65548,33 +65108,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": -5,
-          "rps120": 0,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": 0,
-          "rps120": 0,
-          "rps250": null
-        },
-        "all": {
-          "rps3": -87,
-          "rps5": 44,
-          "rps10": 8,
-          "rps20": -2,
-          "rps50": -5,
-          "rps120": 0,
-          "rps250": 3
-        }
+        "rps3": -87,
+        "rps5": 44,
+        "rps10": 8,
+        "rps20": -2,
+        "rps50": -5,
+        "rps120": 0,
+        "rps250": 3
       }
     },
     {
@@ -65615,33 +65155,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": -4,
-          "rps120": 0,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": -1,
-          "rps120": 1,
-          "rps250": null
-        },
-        "all": {
-          "rps3": -98,
-          "rps5": 35,
-          "rps10": 15,
-          "rps20": 0,
-          "rps50": -4,
-          "rps120": 0,
-          "rps250": 1
-        }
+        "rps3": -98,
+        "rps5": 35,
+        "rps10": 15,
+        "rps20": 0,
+        "rps50": -4,
+        "rps120": 0,
+        "rps250": 1
       }
     },
     {
@@ -65682,33 +65202,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": -88,
-          "rps5": 47,
-          "rps10": 33,
-          "rps20": -8,
-          "rps50": -4,
-          "rps120": 0,
-          "rps250": -3
-        }
+        "rps3": -88,
+        "rps5": 47,
+        "rps10": 33,
+        "rps20": -8,
+        "rps50": -4,
+        "rps120": 0,
+        "rps250": -3
       }
     },
     {
@@ -65749,33 +65249,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": -8,
-          "rps5": null,
-          "rps10": 1,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": 5,
-          "rps5": null,
-          "rps10": 5,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": -8,
-          "rps5": -3,
-          "rps10": 1,
-          "rps20": 6,
-          "rps50": 20,
-          "rps120": 2,
-          "rps250": -3
-        }
+        "rps3": -8,
+        "rps5": -3,
+        "rps10": 1,
+        "rps20": 6,
+        "rps50": 20,
+        "rps120": 2,
+        "rps250": -3
       }
     },
     {
@@ -65816,33 +65296,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": -1,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": 2,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": -108,
-          "rps5": 19,
-          "rps10": 8,
-          "rps20": 2,
-          "rps50": -1,
-          "rps120": 0,
-          "rps250": 5
-        }
+        "rps3": -108,
+        "rps5": 19,
+        "rps10": 8,
+        "rps20": 2,
+        "rps50": -1,
+        "rps120": 0,
+        "rps250": 5
       }
     },
     {
@@ -65883,33 +65343,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": -4,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": 0,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": -131,
-          "rps5": 26,
-          "rps10": 7,
-          "rps20": 5,
-          "rps50": -4,
-          "rps120": -3,
-          "rps250": 1
-        }
+        "rps3": -131,
+        "rps5": 26,
+        "rps10": 7,
+        "rps20": 5,
+        "rps50": -4,
+        "rps120": -3,
+        "rps250": 1
       }
     },
     {
@@ -65950,33 +65390,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": -79,
-          "rps5": -10,
-          "rps10": -6,
-          "rps20": -3,
-          "rps50": -2,
-          "rps120": 1,
-          "rps250": 6
-        }
+        "rps3": -79,
+        "rps5": -10,
+        "rps10": -6,
+        "rps20": -3,
+        "rps50": -2,
+        "rps120": 1,
+        "rps250": 6
       }
     },
     {
@@ -66017,33 +65437,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": 6,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": 0,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": -14,
-          "rps5": -9,
-          "rps10": 6,
-          "rps20": -11,
-          "rps50": 2,
-          "rps120": -6,
-          "rps250": 0
-        }
+        "rps3": -14,
+        "rps5": -9,
+        "rps10": 6,
+        "rps20": -11,
+        "rps50": 2,
+        "rps120": -6,
+        "rps250": 0
       }
     },
     {
@@ -66084,33 +65484,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": -94,
-          "rps5": 9,
-          "rps10": 16,
-          "rps20": 8,
-          "rps50": -4,
-          "rps120": 3,
-          "rps250": 2
-        }
+        "rps3": -94,
+        "rps5": 9,
+        "rps10": 16,
+        "rps20": 8,
+        "rps50": -4,
+        "rps120": 3,
+        "rps250": 2
       }
     },
     {
@@ -66151,33 +65531,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": -3,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": 0,
-          "rps250": null
-        },
-        "all": {
-          "rps3": -102,
-          "rps5": 42,
-          "rps10": 16,
-          "rps20": 4,
-          "rps50": -6,
-          "rps120": -3,
-          "rps250": -3
-        }
+        "rps3": -102,
+        "rps5": 42,
+        "rps10": 16,
+        "rps20": 4,
+        "rps50": -6,
+        "rps120": -3,
+        "rps250": -3
       }
     },
     {
@@ -66218,33 +65578,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": 2,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": 3,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": -90,
-          "rps5": 20,
-          "rps10": 16,
-          "rps20": 1,
-          "rps50": 2,
-          "rps120": -1,
-          "rps250": -2
-        }
+        "rps3": -90,
+        "rps5": 20,
+        "rps10": 16,
+        "rps20": 1,
+        "rps50": 2,
+        "rps120": -1,
+        "rps250": -2
       }
     },
     {
@@ -66285,33 +65625,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": -52,
-          "rps5": 11,
-          "rps10": 3,
-          "rps20": -3,
-          "rps50": -3,
-          "rps120": 1,
-          "rps250": -2
-        }
+        "rps3": -52,
+        "rps5": 11,
+        "rps10": 3,
+        "rps20": -3,
+        "rps50": -3,
+        "rps120": 1,
+        "rps250": -2
       }
     },
     {
@@ -66352,33 +65672,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": -46,
-          "rps5": -7,
-          "rps10": 0,
-          "rps20": -22,
-          "rps50": 2,
-          "rps120": 1,
-          "rps250": null
-        }
+        "rps3": -46,
+        "rps5": -7,
+        "rps10": 0,
+        "rps20": -22,
+        "rps50": 2,
+        "rps120": 1,
+        "rps250": null
       }
     },
     {
@@ -66419,33 +65719,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": -1,
-          "rps120": -2,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": 0,
-          "rps120": 1,
-          "rps250": null
-        },
-        "all": {
-          "rps3": -117,
-          "rps5": 33,
-          "rps10": 8,
-          "rps20": 5,
-          "rps50": -1,
-          "rps120": -2,
-          "rps250": 1
-        }
+        "rps3": -117,
+        "rps5": 33,
+        "rps10": 8,
+        "rps20": 5,
+        "rps50": -1,
+        "rps120": -2,
+        "rps250": 1
       }
     },
     {
@@ -66486,33 +65766,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": -11,
-          "rps5": -80,
-          "rps10": -13,
-          "rps20": 9,
-          "rps50": 21,
-          "rps120": 0,
-          "rps250": -4
-        }
+        "rps3": -11,
+        "rps5": -80,
+        "rps10": -13,
+        "rps20": 9,
+        "rps50": 21,
+        "rps120": 0,
+        "rps250": -4
       }
     },
     {
@@ -66553,33 +65813,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": -63,
-          "rps5": 6,
-          "rps10": 11,
-          "rps20": -3,
-          "rps50": -2,
-          "rps120": -1,
-          "rps250": 1
-        }
+        "rps3": -63,
+        "rps5": 6,
+        "rps10": 11,
+        "rps20": -3,
+        "rps50": -2,
+        "rps120": -1,
+        "rps250": 1
       }
     },
     {
@@ -66620,33 +65860,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": -59,
-          "rps5": 27,
-          "rps10": -8,
-          "rps20": 10,
-          "rps50": 4,
-          "rps120": 1,
-          "rps250": 4
-        }
+        "rps3": -59,
+        "rps5": 27,
+        "rps10": -8,
+        "rps20": 10,
+        "rps50": 4,
+        "rps120": 1,
+        "rps250": 4
       }
     },
     {
@@ -66687,33 +65907,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": -116,
-          "rps5": 4,
-          "rps10": -4,
-          "rps20": -2,
-          "rps50": -5,
-          "rps120": 0,
-          "rps250": -3
-        }
+        "rps3": -116,
+        "rps5": 4,
+        "rps10": -4,
+        "rps20": -2,
+        "rps50": -5,
+        "rps120": 0,
+        "rps250": -3
       }
     },
     {
@@ -66754,33 +65954,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": -53,
-          "rps5": 8,
-          "rps10": 1,
-          "rps20": -4,
-          "rps50": 1,
-          "rps120": -3,
-          "rps250": -2
-        }
+        "rps3": -53,
+        "rps5": 8,
+        "rps10": 1,
+        "rps20": -4,
+        "rps50": 1,
+        "rps120": -3,
+        "rps250": -2
       }
     },
     {
@@ -66821,33 +66001,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": -14,
-          "rps5": -1,
-          "rps10": -12,
-          "rps20": 3,
-          "rps50": 13,
-          "rps120": -1,
-          "rps250": -8
-        }
+        "rps3": -14,
+        "rps5": -1,
+        "rps10": -12,
+        "rps20": 3,
+        "rps50": 13,
+        "rps120": -1,
+        "rps250": -8
       }
     },
     {
@@ -66888,33 +66048,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": -48,
-          "rps5": -33,
-          "rps10": -12,
-          "rps20": 13,
-          "rps50": 5,
-          "rps120": 0,
-          "rps250": -7
-        }
+        "rps3": -48,
+        "rps5": -33,
+        "rps10": -12,
+        "rps20": 13,
+        "rps50": 5,
+        "rps120": 0,
+        "rps250": -7
       }
     },
     {
@@ -66955,33 +66095,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": 0,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": -1,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": -52,
-          "rps5": 14,
-          "rps10": 0,
-          "rps20": -4,
-          "rps50": 1,
-          "rps120": -8,
-          "rps250": 0
-        }
+        "rps3": -52,
+        "rps5": 14,
+        "rps10": 0,
+        "rps20": -4,
+        "rps50": 1,
+        "rps120": -8,
+        "rps250": 0
       }
     },
     {
@@ -67022,33 +66142,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": -10,
-          "rps5": -3,
-          "rps10": 27,
-          "rps20": 12,
-          "rps50": -17,
-          "rps120": 2,
-          "rps250": 0
-        }
+        "rps3": -10,
+        "rps5": -3,
+        "rps10": 27,
+        "rps20": 12,
+        "rps50": -17,
+        "rps120": 2,
+        "rps250": 0
       }
     },
     {
@@ -67089,33 +66189,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": -47,
-          "rps5": -18,
-          "rps10": -7,
-          "rps20": 19,
-          "rps50": 7,
-          "rps120": -1,
-          "rps250": -4
-        }
+        "rps3": -47,
+        "rps5": -18,
+        "rps10": -7,
+        "rps20": 19,
+        "rps50": 7,
+        "rps120": -1,
+        "rps250": -4
       }
     },
     {
@@ -67156,33 +66236,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": -1,
-          "rps250": 0
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": -2,
-          "rps250": 0
-        },
-        "all": {
-          "rps3": 34,
-          "rps5": 40,
-          "rps10": 13,
-          "rps20": -3,
-          "rps50": -5,
-          "rps120": -1,
-          "rps250": 0
-        }
+        "rps3": 34,
+        "rps5": 40,
+        "rps10": 13,
+        "rps20": -3,
+        "rps50": -5,
+        "rps120": -1,
+        "rps250": 0
       }
     },
     {
@@ -67223,33 +66283,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": -6,
-          "rps10": -2,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": 1,
-          "rps10": 1,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": -71,
-          "rps5": -6,
-          "rps10": -2,
-          "rps20": 3,
-          "rps50": -2,
-          "rps120": -3,
-          "rps250": -1
-        }
+        "rps3": -71,
+        "rps5": -6,
+        "rps10": -2,
+        "rps20": 3,
+        "rps50": -2,
+        "rps120": -3,
+        "rps250": -1
       }
     },
     {
@@ -67290,33 +66330,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": -7,
-          "rps10": -9,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": 3,
-          "rps10": -1,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": -49,
-          "rps5": -7,
-          "rps10": -9,
-          "rps20": 15,
-          "rps50": 4,
-          "rps120": 0,
-          "rps250": -2
-        }
+        "rps3": -49,
+        "rps5": -7,
+        "rps10": -9,
+        "rps20": 15,
+        "rps50": 4,
+        "rps120": 0,
+        "rps250": -2
       }
     },
     {
@@ -67357,33 +66377,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": 8,
-          "rps5": -59,
-          "rps10": -6,
-          "rps20": 35,
-          "rps50": 14,
-          "rps120": -1,
-          "rps250": 1
-        }
+        "rps3": 8,
+        "rps5": -59,
+        "rps10": -6,
+        "rps20": 35,
+        "rps50": 14,
+        "rps120": -1,
+        "rps250": 1
       }
     },
     {
@@ -67424,33 +66424,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": -87,
-          "rps5": 47,
-          "rps10": 1,
-          "rps20": 9,
-          "rps50": -7,
-          "rps120": 0,
-          "rps250": 0
-        }
+        "rps3": -87,
+        "rps5": 47,
+        "rps10": 1,
+        "rps20": 9,
+        "rps50": -7,
+        "rps120": 0,
+        "rps250": 0
       }
     },
     {
@@ -67491,33 +66471,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": -64,
-          "rps5": -3,
-          "rps10": 15,
-          "rps20": 3,
-          "rps50": -27,
-          "rps120": -2,
-          "rps250": -5
-        }
+        "rps3": -64,
+        "rps5": -3,
+        "rps10": 15,
+        "rps20": 3,
+        "rps50": -27,
+        "rps120": -2,
+        "rps250": -5
       }
     },
     {
@@ -67558,33 +66518,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": 5,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": 1,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": -9,
-          "rps5": 4,
-          "rps10": 5,
-          "rps20": -6,
-          "rps50": 7,
-          "rps120": -1,
-          "rps250": 0
-        }
+        "rps3": -9,
+        "rps5": 4,
+        "rps10": 5,
+        "rps20": -6,
+        "rps50": 7,
+        "rps120": -1,
+        "rps250": 0
       }
     },
     {
@@ -67625,33 +66565,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": -55,
-          "rps5": 21,
-          "rps10": 20,
-          "rps20": -2,
-          "rps50": -3,
-          "rps120": 1,
-          "rps250": 0
-        }
+        "rps3": -55,
+        "rps5": 21,
+        "rps10": 20,
+        "rps20": -2,
+        "rps50": -3,
+        "rps120": 1,
+        "rps250": 0
       }
     },
     {
@@ -67692,33 +66612,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": -1,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": 2,
-          "rps250": null
-        },
-        "all": {
-          "rps3": -17,
-          "rps5": -55,
-          "rps10": -20,
-          "rps20": 42,
-          "rps50": 17,
-          "rps120": -1,
-          "rps250": -6
-        }
+        "rps3": -17,
+        "rps5": -55,
+        "rps10": -20,
+        "rps20": 42,
+        "rps50": 17,
+        "rps120": -1,
+        "rps250": -6
       }
     },
     {
@@ -67759,33 +66659,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": -57,
-          "rps5": -12,
-          "rps10": 0,
-          "rps20": -42,
-          "rps50": -1,
-          "rps120": -1,
-          "rps250": -10
-        }
+        "rps3": -57,
+        "rps5": -12,
+        "rps10": 0,
+        "rps20": -42,
+        "rps50": -1,
+        "rps120": -1,
+        "rps250": -10
       }
     },
     {
@@ -67826,33 +66706,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": -61,
-          "rps5": -23,
-          "rps10": -6,
-          "rps20": -32,
-          "rps50": 8,
-          "rps120": -4,
-          "rps250": -14
-        }
+        "rps3": -61,
+        "rps5": -23,
+        "rps10": -6,
+        "rps20": -32,
+        "rps50": 8,
+        "rps120": -4,
+        "rps250": -14
       }
     },
     {
@@ -67893,33 +66753,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": -85,
-          "rps5": 27,
-          "rps10": 17,
-          "rps20": -15,
-          "rps50": -8,
-          "rps120": 0,
-          "rps250": 4
-        }
+        "rps3": -85,
+        "rps5": 27,
+        "rps10": 17,
+        "rps20": -15,
+        "rps50": -8,
+        "rps120": 0,
+        "rps250": 4
       }
     },
     {
@@ -67960,33 +66800,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": -7,
-          "rps10": 1,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": 4,
-          "rps10": 4,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": -53,
-          "rps5": -7,
-          "rps10": 1,
-          "rps20": 2,
-          "rps50": -3,
-          "rps120": -2,
-          "rps250": 1
-        }
+        "rps3": -53,
+        "rps5": -7,
+        "rps10": 1,
+        "rps20": 2,
+        "rps50": -3,
+        "rps120": -2,
+        "rps250": 1
       }
     },
     {
@@ -68027,33 +66847,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": -116,
-          "rps5": 27,
-          "rps10": -22,
-          "rps20": -1,
-          "rps50": -13,
-          "rps120": -5,
-          "rps250": 1
-        }
+        "rps3": -116,
+        "rps5": 27,
+        "rps10": -22,
+        "rps20": -1,
+        "rps50": -13,
+        "rps120": -5,
+        "rps250": 1
       }
     },
     {
@@ -68094,33 +66894,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": 51,
-          "rps5": -11,
-          "rps10": -24,
-          "rps20": 12,
-          "rps50": 7,
-          "rps120": 0,
-          "rps250": -2
-        }
+        "rps3": 51,
+        "rps5": -11,
+        "rps10": -24,
+        "rps20": 12,
+        "rps50": 7,
+        "rps120": 0,
+        "rps250": -2
       }
     },
     {
@@ -68161,33 +66941,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": -69,
-          "rps5": 8,
-          "rps10": 14,
-          "rps20": -8,
-          "rps50": -15,
-          "rps120": 2,
-          "rps250": null
-        }
+        "rps3": -69,
+        "rps5": 8,
+        "rps10": 14,
+        "rps20": -8,
+        "rps50": -15,
+        "rps120": 2,
+        "rps250": null
       }
     },
     {
@@ -68228,33 +66988,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": -33,
-          "rps5": -3,
-          "rps10": 1,
-          "rps20": 0,
-          "rps50": -6,
-          "rps120": 2,
-          "rps250": -1
-        }
+        "rps3": -33,
+        "rps5": -3,
+        "rps10": 1,
+        "rps20": 0,
+        "rps50": -6,
+        "rps120": 2,
+        "rps250": -1
       }
     },
     {
@@ -68295,33 +67035,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": -82,
-          "rps5": 3,
-          "rps10": -7,
-          "rps20": -2,
-          "rps50": -10,
-          "rps120": -1,
-          "rps250": 2
-        }
+        "rps3": -82,
+        "rps5": 3,
+        "rps10": -7,
+        "rps20": -2,
+        "rps50": -10,
+        "rps120": -1,
+        "rps250": 2
       }
     },
     {
@@ -68362,33 +67082,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": -51,
-          "rps5": -27,
-          "rps10": -19,
-          "rps20": 13,
-          "rps50": 5,
-          "rps120": -2,
-          "rps250": -2
-        }
+        "rps3": -51,
+        "rps5": -27,
+        "rps10": -19,
+        "rps20": 13,
+        "rps50": 5,
+        "rps120": -2,
+        "rps250": -2
       }
     },
     {
@@ -68429,33 +67129,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": -41,
-          "rps5": -32,
-          "rps10": -14,
-          "rps20": 14,
-          "rps50": 6,
-          "rps120": -2,
-          "rps250": -4
-        }
+        "rps3": -41,
+        "rps5": -32,
+        "rps10": -14,
+        "rps20": 14,
+        "rps50": 6,
+        "rps120": -2,
+        "rps250": -4
       }
     },
     {
@@ -68496,33 +67176,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": -43,
-          "rps5": -35,
-          "rps10": -13,
-          "rps20": 16,
-          "rps50": 2,
-          "rps120": -2,
-          "rps250": -7
-        }
+        "rps3": -43,
+        "rps5": -35,
+        "rps10": -13,
+        "rps20": 16,
+        "rps50": 2,
+        "rps120": -2,
+        "rps250": -7
       }
     },
     {
@@ -68563,33 +67223,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": -31,
-          "rps5": -18,
-          "rps10": -21,
-          "rps20": -50,
-          "rps50": 4,
-          "rps120": -2,
-          "rps250": -10
-        }
+        "rps3": -31,
+        "rps5": -18,
+        "rps10": -21,
+        "rps20": -50,
+        "rps50": 4,
+        "rps120": -2,
+        "rps250": -10
       }
     },
     {
@@ -68630,33 +67270,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": 44,
-          "rps5": 17,
-          "rps10": -23,
-          "rps20": -3,
-          "rps50": 5,
-          "rps120": 6,
-          "rps250": 2
-        }
+        "rps3": 44,
+        "rps5": 17,
+        "rps10": -23,
+        "rps20": -3,
+        "rps50": 5,
+        "rps120": 6,
+        "rps250": 2
       }
     },
     {
@@ -68697,33 +67317,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": -48,
-          "rps5": 48,
-          "rps10": -25,
-          "rps20": 20,
-          "rps50": -13,
-          "rps120": -4,
-          "rps250": 7
-        }
+        "rps3": -48,
+        "rps5": 48,
+        "rps10": -25,
+        "rps20": 20,
+        "rps50": -13,
+        "rps120": -4,
+        "rps250": 7
       }
     },
     {
@@ -68764,33 +67364,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": -56,
-          "rps5": 27,
-          "rps10": 10,
-          "rps20": 8,
-          "rps50": -3,
-          "rps120": 6,
-          "rps250": 12
-        }
+        "rps3": -56,
+        "rps5": 27,
+        "rps10": 10,
+        "rps20": 8,
+        "rps50": -3,
+        "rps120": 6,
+        "rps250": 12
       }
     },
     {
@@ -68831,33 +67411,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": -117,
-          "rps5": 25,
-          "rps10": -20,
-          "rps20": -5,
-          "rps50": -12,
-          "rps120": -9,
-          "rps250": 0
-        }
+        "rps3": -117,
+        "rps5": 25,
+        "rps10": -20,
+        "rps20": -5,
+        "rps50": -12,
+        "rps120": -9,
+        "rps250": 0
       }
     },
     {
@@ -68898,33 +67458,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": -24,
-          "rps5": -13,
-          "rps10": 3,
-          "rps20": -5,
-          "rps50": -10,
-          "rps120": 1,
-          "rps250": -1
-        }
+        "rps3": -24,
+        "rps5": -13,
+        "rps10": 3,
+        "rps20": -5,
+        "rps50": -10,
+        "rps120": 1,
+        "rps250": -1
       }
     },
     {
@@ -68965,33 +67505,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": 1,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": 4,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": -49,
-          "rps5": -13,
-          "rps10": 1,
-          "rps20": 2,
-          "rps50": -1,
-          "rps120": 1,
-          "rps250": 2
-        }
+        "rps3": -49,
+        "rps5": -13,
+        "rps10": 1,
+        "rps20": 2,
+        "rps50": -1,
+        "rps120": 1,
+        "rps250": 2
       }
     },
     {
@@ -69032,33 +67552,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": -59,
-          "rps5": 27,
-          "rps10": 19,
-          "rps20": -17,
-          "rps50": -1,
-          "rps120": 0,
-          "rps250": 3
-        }
+        "rps3": -59,
+        "rps5": 27,
+        "rps10": 19,
+        "rps20": -17,
+        "rps50": -1,
+        "rps120": 0,
+        "rps250": 3
       }
     },
     {
@@ -69099,33 +67599,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": -49,
-          "rps5": -3,
-          "rps10": 17,
-          "rps20": -4,
-          "rps50": -21,
-          "rps120": -3,
-          "rps250": -3
-        }
+        "rps3": -49,
+        "rps5": -3,
+        "rps10": 17,
+        "rps20": -4,
+        "rps50": -21,
+        "rps120": -3,
+        "rps250": -3
       }
     },
     {
@@ -69166,33 +67646,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": -2,
-          "rps250": -2
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": 0,
-          "rps250": 0
-        },
-        "all": {
-          "rps3": 4,
-          "rps5": 26,
-          "rps10": -6,
-          "rps20": 10,
-          "rps50": -1,
-          "rps120": -2,
-          "rps250": -2
-        }
+        "rps3": 4,
+        "rps5": 26,
+        "rps10": -6,
+        "rps20": 10,
+        "rps50": -1,
+        "rps120": -2,
+        "rps250": -2
       }
     },
     {
@@ -69233,33 +67693,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": 13,
-          "rps5": 9,
-          "rps10": 6,
-          "rps20": 15,
-          "rps50": -7,
-          "rps120": 6,
-          "rps250": -2
-        }
+        "rps3": 13,
+        "rps5": 9,
+        "rps10": 6,
+        "rps20": 15,
+        "rps50": -7,
+        "rps120": 6,
+        "rps250": -2
       }
     },
     {
@@ -69300,33 +67740,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": -18,
-          "rps5": 7,
-          "rps10": 1,
-          "rps20": 2,
-          "rps50": 1,
-          "rps120": 3,
-          "rps250": 0
-        }
+        "rps3": -18,
+        "rps5": 7,
+        "rps10": 1,
+        "rps20": 2,
+        "rps50": 1,
+        "rps120": 3,
+        "rps250": 0
       }
     },
     {
@@ -69367,33 +67787,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": -37,
-          "rps5": 6,
-          "rps10": -25,
-          "rps20": -9,
-          "rps50": -7,
-          "rps120": -3,
-          "rps250": 0
-        }
+        "rps3": -37,
+        "rps5": 6,
+        "rps10": -25,
+        "rps20": -9,
+        "rps50": -7,
+        "rps120": -3,
+        "rps250": 0
       }
     },
     {
@@ -69434,33 +67834,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": -43,
-          "rps5": -9,
-          "rps10": -20,
-          "rps20": -31,
-          "rps50": 1,
-          "rps120": -1,
-          "rps250": -3
-        }
+        "rps3": -43,
+        "rps5": -9,
+        "rps10": -20,
+        "rps20": -31,
+        "rps50": 1,
+        "rps120": -1,
+        "rps250": -3
       }
     },
     {
@@ -69501,33 +67881,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": -46,
-          "rps5": -4,
-          "rps10": -12,
-          "rps20": -8,
-          "rps50": -2,
-          "rps120": -10,
-          "rps250": 0
-        }
+        "rps3": -46,
+        "rps5": -4,
+        "rps10": -12,
+        "rps20": -8,
+        "rps50": -2,
+        "rps120": -10,
+        "rps250": 0
       }
     },
     {
@@ -69568,33 +67928,13 @@ window.COCKPIT_DATA = {
         "rps250": 1
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": 2,
-          "rps250": 1
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": 0,
-          "rps250": 0
-        },
-        "all": {
-          "rps3": 37,
-          "rps5": 46,
-          "rps10": -11,
-          "rps20": 29,
-          "rps50": 11,
-          "rps120": 2,
-          "rps250": 1
-        }
+        "rps3": 37,
+        "rps5": 46,
+        "rps10": -11,
+        "rps20": 29,
+        "rps50": 11,
+        "rps120": 2,
+        "rps250": 1
       }
     },
     {
@@ -69635,33 +67975,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": 10,
-          "rps5": -9,
-          "rps10": -3,
-          "rps20": 2,
-          "rps50": -5,
-          "rps120": -4,
-          "rps250": 1
-        }
+        "rps3": 10,
+        "rps5": -9,
+        "rps10": -3,
+        "rps20": 2,
+        "rps50": -5,
+        "rps120": -4,
+        "rps250": 1
       }
     },
     {
@@ -69702,33 +68022,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": 27,
-          "rps5": -10,
-          "rps10": -7,
-          "rps20": 17,
-          "rps50": 13,
-          "rps120": 5,
-          "rps250": 0
-        }
+        "rps3": 27,
+        "rps5": -10,
+        "rps10": -7,
+        "rps20": 17,
+        "rps50": 13,
+        "rps120": 5,
+        "rps250": 0
       }
     },
     {
@@ -69769,33 +68069,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": 21,
-          "rps5": -46,
-          "rps10": -3,
-          "rps20": -16,
-          "rps50": 4,
-          "rps120": -1,
-          "rps250": -1
-        }
+        "rps3": 21,
+        "rps5": -46,
+        "rps10": -3,
+        "rps20": -16,
+        "rps50": 4,
+        "rps120": -1,
+        "rps250": -1
       }
     },
     {
@@ -69836,33 +68116,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": -43,
-          "rps5": -30,
-          "rps10": -6,
-          "rps20": -39,
-          "rps50": 4,
-          "rps120": -5,
-          "rps250": -7
-        }
+        "rps3": -43,
+        "rps5": -30,
+        "rps10": -6,
+        "rps20": -39,
+        "rps50": 4,
+        "rps120": -5,
+        "rps250": -7
       }
     },
     {
@@ -69903,33 +68163,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": 8,
-          "rps5": -88,
-          "rps10": -11,
-          "rps20": 8,
-          "rps50": 26,
-          "rps120": 1,
-          "rps250": -4
-        }
+        "rps3": 8,
+        "rps5": -88,
+        "rps10": -11,
+        "rps20": 8,
+        "rps50": 26,
+        "rps120": 1,
+        "rps250": -4
       }
     },
     {
@@ -69970,33 +68210,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": -94,
-          "rps5": 13,
-          "rps10": 10,
-          "rps20": -20,
-          "rps50": -9,
-          "rps120": 3,
-          "rps250": 0
-        }
+        "rps3": -94,
+        "rps5": 13,
+        "rps10": 10,
+        "rps20": -20,
+        "rps50": -9,
+        "rps120": 3,
+        "rps250": 0
       }
     },
     {
@@ -70037,33 +68257,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": -33,
-          "rps5": -53,
-          "rps10": -12,
-          "rps20": -8,
-          "rps50": -11,
-          "rps120": -3,
-          "rps250": -2
-        }
+        "rps3": -33,
+        "rps5": -53,
+        "rps10": -12,
+        "rps20": -8,
+        "rps50": -11,
+        "rps120": -3,
+        "rps250": -2
       }
     },
     {
@@ -70104,33 +68304,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": -33,
-          "rps5": -2,
-          "rps10": 5,
-          "rps20": 3,
-          "rps50": -8,
-          "rps120": 0,
-          "rps250": 4
-        }
+        "rps3": -33,
+        "rps5": -2,
+        "rps10": 5,
+        "rps20": 3,
+        "rps50": -8,
+        "rps120": 0,
+        "rps250": 4
       }
     },
     {
@@ -70171,33 +68351,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": 0,
-          "rps250": -3
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": 0,
-          "rps250": 0
-        },
-        "all": {
-          "rps3": -12,
-          "rps5": 35,
-          "rps10": -8,
-          "rps20": 0,
-          "rps50": 2,
-          "rps120": 0,
-          "rps250": -3
-        }
+        "rps3": -12,
+        "rps5": 35,
+        "rps10": -8,
+        "rps20": 0,
+        "rps50": 2,
+        "rps120": 0,
+        "rps250": -3
       }
     },
     {
@@ -70238,33 +68398,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": -39,
-          "rps5": 2,
-          "rps10": -3,
-          "rps20": -5,
-          "rps50": -11,
-          "rps120": 2,
-          "rps250": -1
-        }
+        "rps3": -39,
+        "rps5": 2,
+        "rps10": -3,
+        "rps20": -5,
+        "rps50": -11,
+        "rps120": 2,
+        "rps250": -1
       }
     },
     {
@@ -70305,33 +68445,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": -42,
-          "rps5": -25,
-          "rps10": -33,
-          "rps20": -19,
-          "rps50": -21,
-          "rps120": -9,
-          "rps250": 0
-        }
+        "rps3": -42,
+        "rps5": -25,
+        "rps10": -33,
+        "rps20": -19,
+        "rps50": -21,
+        "rps120": -9,
+        "rps250": 0
       }
     },
     {
@@ -70372,33 +68492,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": -47,
-          "rps5": -28,
-          "rps10": -34,
-          "rps20": -18,
-          "rps50": -23,
-          "rps120": -8,
-          "rps250": 1
-        }
+        "rps3": -47,
+        "rps5": -28,
+        "rps10": -34,
+        "rps20": -18,
+        "rps50": -23,
+        "rps120": -8,
+        "rps250": 1
       }
     },
     {
@@ -70439,33 +68539,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": -46,
-          "rps5": 2,
-          "rps10": -4,
-          "rps20": -7,
-          "rps50": -17,
-          "rps120": 0,
-          "rps250": 1
-        }
+        "rps3": -46,
+        "rps5": 2,
+        "rps10": -4,
+        "rps20": -7,
+        "rps50": -17,
+        "rps120": 0,
+        "rps250": 1
       }
     },
     {
@@ -70506,33 +68586,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": -22,
-          "rps5": -1,
-          "rps10": 0,
-          "rps20": -2,
-          "rps50": -18,
-          "rps120": -1,
-          "rps250": 1
-        }
+        "rps3": -22,
+        "rps5": -1,
+        "rps10": 0,
+        "rps20": -2,
+        "rps50": -18,
+        "rps120": -1,
+        "rps250": 1
       }
     },
     {
@@ -70573,33 +68633,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": -25,
-          "rps5": -9,
-          "rps10": 11,
-          "rps20": -7,
-          "rps50": -20,
-          "rps120": -2,
-          "rps250": 1
-        }
+        "rps3": -25,
+        "rps5": -9,
+        "rps10": 11,
+        "rps20": -7,
+        "rps50": -20,
+        "rps120": -2,
+        "rps250": 1
       }
     },
     {
@@ -70640,33 +68680,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": 27,
-          "rps5": -31,
-          "rps10": -5,
-          "rps20": 20,
-          "rps50": -5,
-          "rps120": -1,
-          "rps250": -2
-        }
+        "rps3": 27,
+        "rps5": -31,
+        "rps10": -5,
+        "rps20": 20,
+        "rps50": -5,
+        "rps120": -1,
+        "rps250": -2
       }
     },
     {
@@ -70707,33 +68727,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": 40,
-          "rps5": -32,
-          "rps10": -3,
-          "rps20": 25,
-          "rps50": -6,
-          "rps120": -2,
-          "rps250": -1
-        }
+        "rps3": 40,
+        "rps5": -32,
+        "rps10": -3,
+        "rps20": 25,
+        "rps50": -6,
+        "rps120": -2,
+        "rps250": -1
       }
     },
     {
@@ -70774,33 +68774,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": 77,
-          "rps5": -2,
-          "rps10": 0,
-          "rps20": 9,
-          "rps50": 7,
-          "rps120": 1,
-          "rps250": -7
-        }
+        "rps3": 77,
+        "rps5": -2,
+        "rps10": 0,
+        "rps20": 9,
+        "rps50": 7,
+        "rps120": 1,
+        "rps250": -7
       }
     },
     {
@@ -70841,33 +68821,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": 27,
-          "rps5": 7,
-          "rps10": -3,
-          "rps20": 2,
-          "rps50": 7,
-          "rps120": -5,
-          "rps250": 0
-        }
+        "rps3": 27,
+        "rps5": 7,
+        "rps10": -3,
+        "rps20": 2,
+        "rps50": 7,
+        "rps120": -5,
+        "rps250": 0
       }
     },
     {
@@ -70908,33 +68868,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": 9,
-          "rps5": -26,
-          "rps10": -16,
-          "rps20": 3,
-          "rps50": -8,
-          "rps120": -8,
-          "rps250": -1
-        }
+        "rps3": 9,
+        "rps5": -26,
+        "rps10": -16,
+        "rps20": 3,
+        "rps50": -8,
+        "rps120": -8,
+        "rps250": -1
       }
     },
     {
@@ -70975,33 +68915,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": 17,
-          "rps5": -30,
-          "rps10": -11,
-          "rps20": 16,
-          "rps50": -8,
-          "rps120": -3,
-          "rps250": -2
-        }
+        "rps3": 17,
+        "rps5": -30,
+        "rps10": -11,
+        "rps20": 16,
+        "rps50": -8,
+        "rps120": -3,
+        "rps250": -2
       }
     },
     {
@@ -71042,33 +68962,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": -1
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": 0
-        },
-        "all": {
-          "rps3": 49,
-          "rps5": 32,
-          "rps10": -3,
-          "rps20": 0,
-          "rps50": -6,
-          "rps120": -2,
-          "rps250": -1
-        }
+        "rps3": 49,
+        "rps5": 32,
+        "rps10": -3,
+        "rps20": 0,
+        "rps50": -6,
+        "rps120": -2,
+        "rps250": -1
       }
     },
     {
@@ -71109,33 +69009,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": 72,
-          "rps5": -16,
-          "rps10": -2,
-          "rps20": -5,
-          "rps50": 6,
-          "rps120": 4,
-          "rps250": 1
-        }
+        "rps3": 72,
+        "rps5": -16,
+        "rps10": -2,
+        "rps20": -5,
+        "rps50": 6,
+        "rps120": 4,
+        "rps250": 1
       }
     },
     {
@@ -71176,33 +69056,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": 2,
-          "rps250": 2
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": 1,
-          "rps250": 0
-        },
-        "all": {
-          "rps3": -2,
-          "rps5": 131,
-          "rps10": 37,
-          "rps20": 24,
-          "rps50": 10,
-          "rps120": 2,
-          "rps250": 2
-        }
+        "rps3": -2,
+        "rps5": 131,
+        "rps10": 37,
+        "rps20": 24,
+        "rps50": 10,
+        "rps120": 2,
+        "rps250": 2
       }
     },
     {
@@ -71243,33 +69103,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": 13,
-          "rps5": -10,
-          "rps10": -4,
-          "rps20": 6,
-          "rps50": 0,
-          "rps120": -1,
-          "rps250": 2
-        }
+        "rps3": 13,
+        "rps5": -10,
+        "rps10": -4,
+        "rps20": 6,
+        "rps50": 0,
+        "rps120": -1,
+        "rps250": 2
       }
     },
     {
@@ -71310,33 +69150,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": 14,
-          "rps5": 4,
-          "rps10": 0,
-          "rps20": 2,
-          "rps50": 0,
-          "rps120": 0,
-          "rps250": 0
-        }
+        "rps3": 14,
+        "rps5": 4,
+        "rps10": 0,
+        "rps20": 2,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
       }
     },
     {
@@ -71377,33 +69197,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": -69,
-          "rps5": 16,
-          "rps10": 10,
-          "rps20": -10,
-          "rps50": -20,
-          "rps120": 2,
-          "rps250": 4
-        }
+        "rps3": -69,
+        "rps5": 16,
+        "rps10": 10,
+        "rps20": -10,
+        "rps50": -20,
+        "rps120": 2,
+        "rps250": 4
       }
     },
     {
@@ -71444,33 +69244,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": 6,
-          "rps5": -29,
-          "rps10": -22,
-          "rps20": -4,
-          "rps50": -3,
-          "rps120": -9,
-          "rps250": 0
-        }
+        "rps3": 6,
+        "rps5": -29,
+        "rps10": -22,
+        "rps20": -4,
+        "rps50": -3,
+        "rps120": -9,
+        "rps250": 0
       }
     },
     {
@@ -71511,33 +69291,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": 31,
-          "rps5": -26,
-          "rps10": 1,
-          "rps20": -14,
-          "rps50": -6,
-          "rps120": -3,
-          "rps250": 0
-        }
+        "rps3": 31,
+        "rps5": -26,
+        "rps10": 1,
+        "rps20": -14,
+        "rps50": -6,
+        "rps120": -3,
+        "rps250": 0
       }
     },
     {
@@ -71578,33 +69338,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": 15,
-          "rps5": -1,
-          "rps10": -15,
-          "rps20": -4,
-          "rps50": 4,
-          "rps120": -2,
-          "rps250": 0
-        }
+        "rps3": 15,
+        "rps5": -1,
+        "rps10": -15,
+        "rps20": -4,
+        "rps50": 4,
+        "rps120": -2,
+        "rps250": 0
       }
     },
     {
@@ -71645,33 +69385,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": 11,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": 8,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": 20,
-          "rps5": 11,
-          "rps10": -15,
-          "rps20": 10,
-          "rps50": 12,
-          "rps120": -1,
-          "rps250": -2
-        }
+        "rps3": 20,
+        "rps5": 11,
+        "rps10": -15,
+        "rps20": 10,
+        "rps50": 12,
+        "rps120": -1,
+        "rps250": -2
       }
     },
     {
@@ -71712,33 +69432,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": 26,
-          "rps5": 2,
-          "rps10": -1,
-          "rps20": 2,
-          "rps50": -4,
-          "rps120": -3,
-          "rps250": 0
-        }
+        "rps3": 26,
+        "rps5": 2,
+        "rps10": -1,
+        "rps20": 2,
+        "rps50": -4,
+        "rps120": -3,
+        "rps250": 0
       }
     },
     {
@@ -71779,33 +69479,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": 44,
-          "rps5": -6,
-          "rps10": -43,
-          "rps20": 11,
-          "rps50": 6,
-          "rps120": 3,
-          "rps250": 7
-        }
+        "rps3": 44,
+        "rps5": -6,
+        "rps10": -43,
+        "rps20": 11,
+        "rps50": 6,
+        "rps120": 3,
+        "rps250": 7
       }
     },
     {
@@ -71846,33 +69526,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": 40,
-          "rps5": -22,
-          "rps10": 4,
-          "rps20": 21,
-          "rps50": -5,
-          "rps120": -1,
-          "rps250": -3
-        }
+        "rps3": 40,
+        "rps5": -22,
+        "rps10": 4,
+        "rps20": 21,
+        "rps50": -5,
+        "rps120": -1,
+        "rps250": -3
       }
     },
     {
@@ -71913,33 +69573,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": -5,
-          "rps5": -32,
-          "rps10": -10,
-          "rps20": -34,
-          "rps50": 1,
-          "rps120": -4,
-          "rps250": -5
-        }
+        "rps3": -5,
+        "rps5": -32,
+        "rps10": -10,
+        "rps20": -34,
+        "rps50": 1,
+        "rps120": -4,
+        "rps250": -5
       }
     },
     {
@@ -71980,33 +69620,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": 50,
-          "rps5": -1,
-          "rps10": -2,
-          "rps20": 4,
-          "rps50": 6,
-          "rps120": 1,
-          "rps250": 10
-        }
+        "rps3": 50,
+        "rps5": -1,
+        "rps10": -2,
+        "rps20": 4,
+        "rps50": 6,
+        "rps120": 1,
+        "rps250": 10
       }
     },
     {
@@ -72047,33 +69667,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": 35,
-          "rps5": -9,
-          "rps10": -2,
-          "rps20": -4,
-          "rps50": 2,
-          "rps120": -1,
-          "rps250": 3
-        }
+        "rps3": 35,
+        "rps5": -9,
+        "rps10": -2,
+        "rps20": -4,
+        "rps50": 2,
+        "rps120": -1,
+        "rps250": 3
       }
     },
     {
@@ -72114,33 +69714,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": 75,
-          "rps5": -20,
-          "rps10": -12,
-          "rps20": 30,
-          "rps50": 15,
-          "rps120": 2,
-          "rps250": -3
-        }
+        "rps3": 75,
+        "rps5": -20,
+        "rps10": -12,
+        "rps20": 30,
+        "rps50": 15,
+        "rps120": 2,
+        "rps250": -3
       }
     },
     {
@@ -72181,33 +69761,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": 62,
-          "rps5": -5,
-          "rps10": -8,
-          "rps20": 0,
-          "rps50": 3,
-          "rps120": 2,
-          "rps250": 5
-        }
+        "rps3": 62,
+        "rps5": -5,
+        "rps10": -8,
+        "rps20": 0,
+        "rps50": 3,
+        "rps120": 2,
+        "rps250": 5
       }
     },
     {
@@ -72248,33 +69808,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": 0,
-          "rps5": 8,
-          "rps10": 0,
-          "rps20": -8,
-          "rps50": -3,
-          "rps120": 1,
-          "rps250": 2
-        }
+        "rps3": 0,
+        "rps5": 8,
+        "rps10": 0,
+        "rps20": -8,
+        "rps50": -3,
+        "rps120": 1,
+        "rps250": 2
       }
     },
     {
@@ -72315,33 +69855,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": -34,
-          "rps5": 3,
-          "rps10": 2,
-          "rps20": -16,
-          "rps50": -11,
-          "rps120": -6,
-          "rps250": 3
-        }
+        "rps3": -34,
+        "rps5": 3,
+        "rps10": 2,
+        "rps20": -16,
+        "rps50": -11,
+        "rps120": -6,
+        "rps250": 3
       }
     },
     {
@@ -72382,33 +69902,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": 63,
-          "rps5": -16,
-          "rps10": 8,
-          "rps20": 18,
-          "rps50": -5,
-          "rps120": 0,
-          "rps250": -1
-        }
+        "rps3": 63,
+        "rps5": -16,
+        "rps10": 8,
+        "rps20": 18,
+        "rps50": -5,
+        "rps120": 0,
+        "rps250": -1
       }
     },
     {
@@ -72449,33 +69949,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": 1
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": 0
-        },
-        "all": {
-          "rps3": -45,
-          "rps5": 1,
-          "rps10": 2,
-          "rps20": -27,
-          "rps50": -2,
-          "rps120": 0,
-          "rps250": 1
-        }
+        "rps3": -45,
+        "rps5": 1,
+        "rps10": 2,
+        "rps20": -27,
+        "rps50": -2,
+        "rps120": 0,
+        "rps250": 1
       }
     },
     {
@@ -72516,33 +69996,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": 1,
-          "rps5": 34,
-          "rps10": 0,
-          "rps20": -6,
-          "rps50": 10,
-          "rps120": 4,
-          "rps250": 3
-        }
+        "rps3": 1,
+        "rps5": 34,
+        "rps10": 0,
+        "rps20": -6,
+        "rps50": 10,
+        "rps120": 4,
+        "rps250": 3
       }
     },
     {
@@ -72583,33 +70043,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": 64,
-          "rps5": 9,
-          "rps10": 0,
-          "rps20": -2,
-          "rps50": 2,
-          "rps120": 0,
-          "rps250": 0
-        }
+        "rps3": 64,
+        "rps5": 9,
+        "rps10": 0,
+        "rps20": -2,
+        "rps50": 2,
+        "rps120": 0,
+        "rps250": 0
       }
     },
     {
@@ -72650,33 +70090,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": 65,
-          "rps5": 13,
-          "rps10": -11,
-          "rps20": 0,
-          "rps50": 6,
-          "rps120": 2,
-          "rps250": 5
-        }
+        "rps3": 65,
+        "rps5": 13,
+        "rps10": -11,
+        "rps20": 0,
+        "rps50": 6,
+        "rps120": 2,
+        "rps250": 5
       }
     },
     {
@@ -72717,33 +70137,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": 9,
-          "rps5": -32,
-          "rps10": -3,
-          "rps20": 2,
-          "rps50": -7,
-          "rps120": -3,
-          "rps250": -2
-        }
+        "rps3": 9,
+        "rps5": -32,
+        "rps10": -3,
+        "rps20": 2,
+        "rps50": -7,
+        "rps120": -3,
+        "rps250": -2
       }
     },
     {
@@ -72784,33 +70184,13 @@ window.COCKPIT_DATA = {
         "rps250": 26
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": 1,
-          "rps120": null,
-          "rps250": 0
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": 0,
-          "rps120": null,
-          "rps250": 1
-        },
-        "all": {
-          "rps3": -40,
-          "rps5": 3,
-          "rps10": -3,
-          "rps20": 6,
-          "rps50": 1,
-          "rps120": 7,
-          "rps250": 0
-        }
+        "rps3": -40,
+        "rps5": 3,
+        "rps10": -3,
+        "rps20": 6,
+        "rps50": 1,
+        "rps120": 7,
+        "rps250": 0
       }
     },
     {
@@ -72851,33 +70231,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": -24,
-          "rps5": -13,
-          "rps10": 5,
-          "rps20": -19,
-          "rps50": -6,
-          "rps120": -3,
-          "rps250": 4
-        }
+        "rps3": -24,
+        "rps5": -13,
+        "rps10": 5,
+        "rps20": -19,
+        "rps50": -6,
+        "rps120": -3,
+        "rps250": 4
       }
     },
     {
@@ -72918,33 +70278,13 @@ window.COCKPIT_DATA = {
         "rps250": 8
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": 1,
-          "rps250": 0
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": 0,
-          "rps250": 0
-        },
-        "all": {
-          "rps3": 24,
-          "rps5": 36,
-          "rps10": -4,
-          "rps20": 3,
-          "rps50": 19,
-          "rps120": 1,
-          "rps250": 0
-        }
+        "rps3": 24,
+        "rps5": 36,
+        "rps10": -4,
+        "rps20": 3,
+        "rps50": 19,
+        "rps120": 1,
+        "rps250": 0
       }
     },
     {
@@ -72985,33 +70325,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": -13,
-          "rps5": -35,
-          "rps10": 7,
-          "rps20": -31,
-          "rps50": -13,
-          "rps120": -8,
-          "rps250": 4
-        }
+        "rps3": -13,
+        "rps5": -35,
+        "rps10": 7,
+        "rps20": -31,
+        "rps50": -13,
+        "rps120": -8,
+        "rps250": 4
       }
     },
     {
@@ -73052,33 +70372,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": 14,
-          "rps5": -32,
-          "rps10": 2,
-          "rps20": 9,
-          "rps50": -12,
-          "rps120": -2,
-          "rps250": -2
-        }
+        "rps3": 14,
+        "rps5": -32,
+        "rps10": 2,
+        "rps20": 9,
+        "rps50": -12,
+        "rps120": -2,
+        "rps250": -2
       }
     },
     {
@@ -73119,33 +70419,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": 35,
-          "rps5": -48,
-          "rps10": -3,
-          "rps20": -1,
-          "rps50": -11,
-          "rps120": 0,
-          "rps250": -6
-        }
+        "rps3": 35,
+        "rps5": -48,
+        "rps10": -3,
+        "rps20": -1,
+        "rps50": -11,
+        "rps120": 0,
+        "rps250": -6
       }
     },
     {
@@ -73186,33 +70466,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": 49,
-          "rps5": 0,
-          "rps10": -1,
-          "rps20": -3,
-          "rps50": 1,
-          "rps120": -1,
-          "rps250": 0
-        }
+        "rps3": 49,
+        "rps5": 0,
+        "rps10": -1,
+        "rps20": -3,
+        "rps50": 1,
+        "rps120": -1,
+        "rps250": 0
       }
     },
     {
@@ -73253,33 +70513,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": 41,
-          "rps5": -24,
-          "rps10": -13,
-          "rps20": 8,
-          "rps50": 4,
-          "rps120": 2,
-          "rps250": -3
-        }
+        "rps3": 41,
+        "rps5": -24,
+        "rps10": -13,
+        "rps20": 8,
+        "rps50": 4,
+        "rps120": 2,
+        "rps250": -3
       }
     },
     {
@@ -73320,33 +70560,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": 0
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": 0
-        },
-        "all": {
-          "rps3": 3,
-          "rps5": -1,
-          "rps10": -1,
-          "rps20": -21,
-          "rps50": 0,
-          "rps120": 3,
-          "rps250": 0
-        }
+        "rps3": 3,
+        "rps5": -1,
+        "rps10": -1,
+        "rps20": -21,
+        "rps50": 0,
+        "rps120": 3,
+        "rps250": 0
       }
     },
     {
@@ -73387,33 +70607,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": 109,
-          "rps5": 7,
-          "rps10": 3,
-          "rps20": 18,
-          "rps50": 19,
-          "rps120": 6,
-          "rps250": null
-        }
+        "rps3": 109,
+        "rps5": 7,
+        "rps10": 3,
+        "rps20": 18,
+        "rps50": 19,
+        "rps120": 6,
+        "rps250": null
       }
     },
     {
@@ -73454,33 +70654,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": 59,
-          "rps5": -31,
-          "rps10": -5,
-          "rps20": 9,
-          "rps50": 9,
-          "rps120": 2,
-          "rps250": -1
-        }
+        "rps3": 59,
+        "rps5": -31,
+        "rps10": -5,
+        "rps20": 9,
+        "rps50": 9,
+        "rps120": 2,
+        "rps250": -1
       }
     },
     {
@@ -73521,33 +70701,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": -38,
-          "rps5": 42,
-          "rps10": 19,
-          "rps20": -3,
-          "rps50": 9,
-          "rps120": 4,
-          "rps250": 6
-        }
+        "rps3": -38,
+        "rps5": 42,
+        "rps10": 19,
+        "rps20": -3,
+        "rps50": 9,
+        "rps120": 4,
+        "rps250": 6
       }
     },
     {
@@ -73588,33 +70748,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": 95,
-          "rps5": -6,
-          "rps10": 3,
-          "rps20": 12,
-          "rps50": 10,
-          "rps120": 0,
-          "rps250": -1
-        }
+        "rps3": 95,
+        "rps5": -6,
+        "rps10": 3,
+        "rps20": 12,
+        "rps50": 10,
+        "rps120": 0,
+        "rps250": -1
       }
     },
     {
@@ -73655,33 +70795,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": 61,
-          "rps5": -9,
-          "rps10": -7,
-          "rps20": 8,
-          "rps50": 7,
-          "rps120": 3,
-          "rps250": 0
-        }
+        "rps3": 61,
+        "rps5": -9,
+        "rps10": -7,
+        "rps20": 8,
+        "rps50": 7,
+        "rps120": 3,
+        "rps250": 0
       }
     },
     {
@@ -73722,33 +70842,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": 24,
-          "rps5": -3,
-          "rps10": 15,
-          "rps20": -12,
-          "rps50": -6,
-          "rps120": 1,
-          "rps250": -1
-        }
+        "rps3": 24,
+        "rps5": -3,
+        "rps10": 15,
+        "rps20": -12,
+        "rps50": -6,
+        "rps120": 1,
+        "rps250": -1
       }
     },
     {
@@ -73789,33 +70889,13 @@ window.COCKPIT_DATA = {
         "rps250": 45
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": 13,
-          "rps120": 1,
-          "rps250": 0
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": 2,
-          "rps120": 0,
-          "rps250": 0
-        },
-        "all": {
-          "rps3": 42,
-          "rps5": 22,
-          "rps10": -12,
-          "rps20": 3,
-          "rps50": 13,
-          "rps120": 1,
-          "rps250": 0
-        }
+        "rps3": 42,
+        "rps5": 22,
+        "rps10": -12,
+        "rps20": 3,
+        "rps50": 13,
+        "rps120": 1,
+        "rps250": 0
       }
     },
     {
@@ -73856,33 +70936,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": 15,
-          "rps5": 41,
-          "rps10": 2,
-          "rps20": -7,
-          "rps50": 11,
-          "rps120": -3,
-          "rps250": 2
-        }
+        "rps3": 15,
+        "rps5": 41,
+        "rps10": 2,
+        "rps20": -7,
+        "rps50": 11,
+        "rps120": -3,
+        "rps250": 2
       }
     },
     {
@@ -73923,33 +70983,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": 87,
-          "rps5": -13,
-          "rps10": 20,
-          "rps20": 0,
-          "rps50": -6,
-          "rps120": 2,
-          "rps250": 4
-        }
+        "rps3": 87,
+        "rps5": -13,
+        "rps10": 20,
+        "rps20": 0,
+        "rps50": -6,
+        "rps120": 2,
+        "rps250": 4
       }
     },
     {
@@ -73990,33 +71030,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": -51,
-          "rps5": 10,
-          "rps10": 7,
-          "rps20": -21,
-          "rps50": -20,
-          "rps120": 5,
-          "rps250": 9
-        }
+        "rps3": -51,
+        "rps5": 10,
+        "rps10": 7,
+        "rps20": -21,
+        "rps50": -20,
+        "rps120": 5,
+        "rps250": 9
       }
     },
     {
@@ -74057,33 +71077,13 @@ window.COCKPIT_DATA = {
         "rps250": 1
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": 3
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": 0
-        },
-        "all": {
-          "rps3": 19,
-          "rps5": 1,
-          "rps10": -2,
-          "rps20": -20,
-          "rps50": 4,
-          "rps120": 6,
-          "rps250": 3
-        }
+        "rps3": 19,
+        "rps5": 1,
+        "rps10": -2,
+        "rps20": -20,
+        "rps50": 4,
+        "rps120": 6,
+        "rps250": 3
       }
     },
     {
@@ -74124,33 +71124,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": 6,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": 8,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": 89,
-          "rps5": 6,
-          "rps10": 0,
-          "rps20": 9,
-          "rps50": 8,
-          "rps120": 4,
-          "rps250": -3
-        }
+        "rps3": 89,
+        "rps5": 6,
+        "rps10": 0,
+        "rps20": 9,
+        "rps50": 8,
+        "rps120": 4,
+        "rps250": -3
       }
     },
     {
@@ -74191,33 +71171,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": 65,
-          "rps5": -4,
-          "rps10": 1,
-          "rps20": 5,
-          "rps50": 8,
-          "rps120": 2,
-          "rps250": 3
-        }
+        "rps3": 65,
+        "rps5": -4,
+        "rps10": 1,
+        "rps20": 5,
+        "rps50": 8,
+        "rps120": 2,
+        "rps250": 3
       }
     },
     {
@@ -74258,33 +71218,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": 7,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": 8,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": 88,
-          "rps5": 7,
-          "rps10": -3,
-          "rps20": 8,
-          "rps50": 4,
-          "rps120": 4,
-          "rps250": -6
-        }
+        "rps3": 88,
+        "rps5": 7,
+        "rps10": -3,
+        "rps20": 8,
+        "rps50": 4,
+        "rps120": 4,
+        "rps250": -6
       }
     },
     {
@@ -74325,33 +71265,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": 69,
-          "rps5": -28,
-          "rps10": 26,
-          "rps20": 5,
-          "rps50": 8,
-          "rps120": 1,
-          "rps250": -1
-        }
+        "rps3": 69,
+        "rps5": -28,
+        "rps10": 26,
+        "rps20": 5,
+        "rps50": 8,
+        "rps120": 1,
+        "rps250": -1
       }
     },
     {
@@ -74392,33 +71312,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": 83,
-          "rps5": -68,
-          "rps10": 28,
-          "rps20": -8,
-          "rps50": -9,
-          "rps120": -2,
-          "rps250": -2
-        }
+        "rps3": 83,
+        "rps5": -68,
+        "rps10": 28,
+        "rps20": -8,
+        "rps50": -9,
+        "rps120": -2,
+        "rps250": -2
       }
     },
     {
@@ -74459,33 +71359,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": 86,
-          "rps5": 1,
-          "rps10": 1,
-          "rps20": 0,
-          "rps50": 2,
-          "rps120": -1,
-          "rps250": 1
-        }
+        "rps3": 86,
+        "rps5": 1,
+        "rps10": 1,
+        "rps20": 0,
+        "rps50": 2,
+        "rps120": -1,
+        "rps250": 1
       }
     },
     {
@@ -74526,33 +71406,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": 67,
-          "rps5": -63,
-          "rps10": 8,
-          "rps20": -15,
-          "rps50": -11,
-          "rps120": -3,
-          "rps250": -4
-        }
+        "rps3": 67,
+        "rps5": -63,
+        "rps10": 8,
+        "rps20": -15,
+        "rps50": -11,
+        "rps120": -3,
+        "rps250": -4
       }
     },
     {
@@ -74593,33 +71453,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": 58,
-          "rps5": -72,
-          "rps10": -8,
-          "rps20": -17,
-          "rps50": -6,
-          "rps120": -1,
-          "rps250": -2
-        }
+        "rps3": 58,
+        "rps5": -72,
+        "rps10": -8,
+        "rps20": -17,
+        "rps50": -6,
+        "rps120": -1,
+        "rps250": -2
       }
     },
     {
@@ -74660,33 +71500,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": -94,
-          "rps5": -9,
-          "rps10": 14,
-          "rps20": -14,
-          "rps50": -22,
-          "rps120": 1,
-          "rps250": -3
-        }
+        "rps3": -94,
+        "rps5": -9,
+        "rps10": 14,
+        "rps20": -14,
+        "rps50": -22,
+        "rps120": 1,
+        "rps250": -3
       }
     },
     {
@@ -74727,33 +71547,13 @@ window.COCKPIT_DATA = {
         "rps250": 24
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": 0
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": 0
-        },
-        "all": {
-          "rps3": 60,
-          "rps5": 0,
-          "rps10": -1,
-          "rps20": -7,
-          "rps50": 7,
-          "rps120": 2,
-          "rps250": 0
-        }
+        "rps3": 60,
+        "rps5": 0,
+        "rps10": -1,
+        "rps20": -7,
+        "rps50": 7,
+        "rps120": 2,
+        "rps250": 0
       }
     },
     {
@@ -74794,33 +71594,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": 6,
-          "rps5": -19,
-          "rps10": -45,
-          "rps20": 1,
-          "rps50": 8,
-          "rps120": 7,
-          "rps250": null
-        }
+        "rps3": 6,
+        "rps5": -19,
+        "rps10": -45,
+        "rps20": 1,
+        "rps50": 8,
+        "rps120": 7,
+        "rps250": null
       }
     },
     {
@@ -74861,33 +71641,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": -1
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": -1
-        },
-        "all": {
-          "rps3": 71,
-          "rps5": 5,
-          "rps10": -2,
-          "rps20": 1,
-          "rps50": 7,
-          "rps120": 1,
-          "rps250": -1
-        }
+        "rps3": 71,
+        "rps5": 5,
+        "rps10": -2,
+        "rps20": 1,
+        "rps50": 7,
+        "rps120": 1,
+        "rps250": -1
       }
     },
     {
@@ -74928,33 +71688,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": 102,
-          "rps5": 8,
-          "rps10": -1,
-          "rps20": 1,
-          "rps50": 4,
-          "rps120": 5,
-          "rps250": -1
-        }
+        "rps3": 102,
+        "rps5": 8,
+        "rps10": -1,
+        "rps20": 1,
+        "rps50": 4,
+        "rps120": 5,
+        "rps250": -1
       }
     },
     {
@@ -74995,33 +71735,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": 78,
-          "rps5": -52,
-          "rps10": 4,
-          "rps20": -10,
-          "rps50": -11,
-          "rps120": 0,
-          "rps250": -6
-        }
+        "rps3": 78,
+        "rps5": -52,
+        "rps10": 4,
+        "rps20": -10,
+        "rps50": -11,
+        "rps120": 0,
+        "rps250": -6
       }
     },
     {
@@ -75062,33 +71782,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": 70,
-          "rps5": -17,
-          "rps10": 29,
-          "rps20": 0,
-          "rps50": 4,
-          "rps120": 0,
-          "rps250": 0
-        }
+        "rps3": 70,
+        "rps5": -17,
+        "rps10": 29,
+        "rps20": 0,
+        "rps50": 4,
+        "rps120": 0,
+        "rps250": 0
       }
     },
     {
@@ -75129,33 +71829,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": 128,
-          "rps5": -6,
-          "rps10": -1,
-          "rps20": 1,
-          "rps50": 0,
-          "rps120": 0,
-          "rps250": 1
-        }
+        "rps3": 128,
+        "rps5": -6,
+        "rps10": -1,
+        "rps20": 1,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 1
       }
     },
     {
@@ -75196,33 +71876,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": 137,
-          "rps5": -36,
-          "rps10": -2,
-          "rps20": -1,
-          "rps50": 5,
-          "rps120": 4,
-          "rps250": 3
-        }
+        "rps3": 137,
+        "rps5": -36,
+        "rps10": -2,
+        "rps20": -1,
+        "rps50": 5,
+        "rps120": 4,
+        "rps250": 3
       }
     },
     {
@@ -75263,33 +71923,13 @@ window.COCKPIT_DATA = {
         "rps250": 144
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": 0
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": 0
-        },
-        "all": {
-          "rps3": 140,
-          "rps5": -8,
-          "rps10": -22,
-          "rps20": 2,
-          "rps50": 6,
-          "rps120": 18,
-          "rps250": 0
-        }
+        "rps3": 140,
+        "rps5": -8,
+        "rps10": -22,
+        "rps20": 2,
+        "rps50": 6,
+        "rps120": 18,
+        "rps250": 0
       }
     },
     {
@@ -75330,33 +71970,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": 144,
-          "rps5": -20,
-          "rps10": 4,
-          "rps20": 0,
-          "rps50": 0,
-          "rps120": 2,
-          "rps250": 2
-        }
+        "rps3": 144,
+        "rps5": -20,
+        "rps10": 4,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 2,
+        "rps250": 2
       }
     },
     {
@@ -75397,33 +72017,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": 143,
-          "rps5": 2,
-          "rps10": 2,
-          "rps20": -2,
-          "rps50": -2,
-          "rps120": -1,
-          "rps250": 4
-        }
+        "rps3": 143,
+        "rps5": 2,
+        "rps10": 2,
+        "rps20": -2,
+        "rps50": -2,
+        "rps120": -1,
+        "rps250": 4
       }
     },
     {
@@ -75464,33 +72064,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": 140,
-          "rps5": 53,
-          "rps10": 8,
-          "rps20": 1,
-          "rps50": 2,
-          "rps120": 9,
-          "rps250": 34
-        }
+        "rps3": 140,
+        "rps5": 53,
+        "rps10": 8,
+        "rps20": 1,
+        "rps50": 2,
+        "rps120": 9,
+        "rps250": 34
       }
     },
     {
@@ -75531,33 +72111,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": 131,
-          "rps5": -2,
-          "rps10": 0,
-          "rps20": 1,
-          "rps50": -1,
-          "rps120": 0,
-          "rps250": 0
-        }
+        "rps3": 131,
+        "rps5": -2,
+        "rps10": 0,
+        "rps20": 1,
+        "rps50": -1,
+        "rps120": 0,
+        "rps250": 0
       }
     },
     {
@@ -75598,33 +72158,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": 69,
-          "rps5": 29,
-          "rps10": 0,
-          "rps20": -2,
-          "rps50": 2,
-          "rps120": 2,
-          "rps250": 0
-        }
+        "rps3": 69,
+        "rps5": 29,
+        "rps10": 0,
+        "rps20": -2,
+        "rps50": 2,
+        "rps120": 2,
+        "rps250": 0
       }
     },
     {
@@ -75665,33 +72205,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": 102,
-          "rps5": 40,
-          "rps10": -2,
-          "rps20": 0,
-          "rps50": -1,
-          "rps120": 0,
-          "rps250": 0
-        }
+        "rps3": 102,
+        "rps5": 40,
+        "rps10": -2,
+        "rps20": 0,
+        "rps50": -1,
+        "rps120": 0,
+        "rps250": 0
       }
     },
     {
@@ -75732,33 +72252,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": 75,
-          "rps5": 52,
-          "rps10": 0,
-          "rps20": 1,
-          "rps50": 0,
-          "rps120": 0,
-          "rps250": 0
-        }
+        "rps3": 75,
+        "rps5": 52,
+        "rps10": 0,
+        "rps20": 1,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
       }
     },
     {
@@ -75799,33 +72299,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": 61,
-          "rps5": 44,
-          "rps10": 1,
-          "rps20": -1,
-          "rps50": 2,
-          "rps120": 3,
-          "rps250": 3
-        }
+        "rps3": 61,
+        "rps5": 44,
+        "rps10": 1,
+        "rps20": -1,
+        "rps50": 2,
+        "rps120": 3,
+        "rps250": 3
       }
     },
     {
@@ -75866,33 +72346,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": null,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": 156,
-          "rps5": -1,
-          "rps10": 2,
-          "rps20": 0,
-          "rps50": 0,
-          "rps120": 1,
-          "rps250": 6
-        }
+        "rps3": 156,
+        "rps5": -1,
+        "rps10": 2,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 1,
+        "rps250": 6
       }
     },
     {
@@ -75933,33 +72393,13 @@ window.COCKPIT_DATA = {
         "rps250": 0
       },
       "rankMove": {
-        "strong": {
-          "rps3": null,
-          "rps5": 1,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "trend": {
-          "rps3": null,
-          "rps5": 1,
-          "rps10": null,
-          "rps20": null,
-          "rps50": null,
-          "rps120": null,
-          "rps250": null
-        },
-        "all": {
-          "rps3": 31,
-          "rps5": 1,
-          "rps10": 168,
-          "rps20": 0,
-          "rps50": 0,
-          "rps120": 0,
-          "rps250": 0
-        }
+        "rps3": 31,
+        "rps5": 1,
+        "rps10": 168,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
       }
     }
   ],
