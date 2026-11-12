@@ -1647,7 +1647,7 @@ window.COCKPIT_DATA = {
             "endDate": "2026-11-03",
             "label": "5个交易日前",
             "holdDays": 5,
-            "return": 0.8,
+            "return": 0.9,
             "items": [
               {
                 "theme": "红利",
@@ -1668,13 +1668,13 @@ window.COCKPIT_DATA = {
                 "streak": 34
               },
               {
-                "theme": "消费",
-                "name": "标普消费ETF",
-                "code": "159529",
+                "theme": "银行",
+                "name": "银行ETF",
+                "code": "512800",
                 "weight": 30,
-                "return": 0.0,
-                "rps20": 98.9,
-                "streak": 8
+                "return": 0.5,
+                "rps20": 98.3,
+                "streak": 13
               }
             ],
             "targetDays": 5,
@@ -1685,7 +1685,7 @@ window.COCKPIT_DATA = {
             "endDate": "2026-11-10",
             "label": "10个交易日前",
             "holdDays": 10,
-            "return": -2.3,
+            "return": -2.1,
             "items": [
               {
                 "theme": "红利",
@@ -1706,13 +1706,13 @@ window.COCKPIT_DATA = {
                 "streak": 34
               },
               {
-                "theme": "消费",
-                "name": "标普消费ETF",
-                "code": "159529",
+                "theme": "银行",
+                "name": "银行ETF",
+                "code": "512800",
                 "weight": 30,
-                "return": 1.0,
-                "rps20": 98.9,
-                "streak": 8
+                "return": 1.5,
+                "rps20": 98.3,
+                "streak": 13
               }
             ],
             "targetDays": 10,
@@ -1723,7 +1723,7 @@ window.COCKPIT_DATA = {
             "endDate": "2026-11-12",
             "label": "12个交易日前",
             "holdDays": 12,
-            "return": -1.6,
+            "return": -1.8,
             "items": [
               {
                 "theme": "红利",
@@ -1744,13 +1744,13 @@ window.COCKPIT_DATA = {
                 "streak": 34
               },
               {
-                "theme": "消费",
-                "name": "标普消费ETF",
-                "code": "159529",
+                "theme": "银行",
+                "name": "银行ETF",
+                "code": "512800",
                 "weight": 30,
-                "return": 1.5,
-                "rps20": 98.9,
-                "streak": 8
+                "return": 1.0,
+                "rps20": 98.3,
+                "streak": 13
               }
             ],
             "targetDays": 20,
@@ -34027,15 +34027,6 @@ window.COCKPIT_DATA = {
                 "streak": 28
               },
               {
-                "theme": "信息技术",
-                "name": "创业板人工智能ETF",
-                "code": "159363",
-                "weight": 30,
-                "return": 12.6,
-                "rps20": 98.3,
-                "streak": 28
-              },
-              {
                 "theme": "电池",
                 "name": "新能源电池ETF",
                 "code": "159566",
@@ -34043,6 +34034,15 @@ window.COCKPIT_DATA = {
                 "return": 9.9,
                 "rps20": 97.1,
                 "streak": 2
+              },
+              {
+                "theme": "信息技术",
+                "name": "创业板人工智能ETF",
+                "code": "159363",
+                "weight": 30,
+                "return": 12.6,
+                "rps20": 98.3,
+                "streak": 28
               }
             ],
             "targetDays": 5,
@@ -34065,15 +34065,6 @@ window.COCKPIT_DATA = {
                 "streak": 28
               },
               {
-                "theme": "信息技术",
-                "name": "创业板人工智能ETF",
-                "code": "159363",
-                "weight": 30,
-                "return": 9.3,
-                "rps20": 98.3,
-                "streak": 28
-              },
-              {
                 "theme": "电池",
                 "name": "新能源电池ETF",
                 "code": "159566",
@@ -34081,6 +34072,15 @@ window.COCKPIT_DATA = {
                 "return": 12.6,
                 "rps20": 97.1,
                 "streak": 2
+              },
+              {
+                "theme": "信息技术",
+                "name": "创业板人工智能ETF",
+                "code": "159363",
+                "weight": 30,
+                "return": 9.3,
+                "rps20": 98.3,
+                "streak": 28
               }
             ],
             "targetDays": 10,
@@ -34103,15 +34103,6 @@ window.COCKPIT_DATA = {
                 "streak": 28
               },
               {
-                "theme": "信息技术",
-                "name": "创业板人工智能ETF",
-                "code": "159363",
-                "weight": 30,
-                "return": 5.7,
-                "rps20": 98.3,
-                "streak": 28
-              },
-              {
                 "theme": "电池",
                 "name": "新能源电池ETF",
                 "code": "159566",
@@ -34119,6 +34110,15 @@ window.COCKPIT_DATA = {
                 "return": 16.4,
                 "rps20": 97.1,
                 "streak": 2
+              },
+              {
+                "theme": "信息技术",
+                "name": "创业板人工智能ETF",
+                "code": "159363",
+                "weight": 30,
+                "return": 5.7,
+                "rps20": 98.3,
+                "streak": 28
               }
             ],
             "targetDays": 20,
@@ -38656,25 +38656,25 @@ window.COCKPIT_DATA = {
             "endDate": "2025-07-18",
             "label": "5个交易日前",
             "holdDays": 5,
-            "return": 3.4,
+            "return": 4.2,
             "items": [
-              {
-                "theme": "非银金融",
-                "name": "香港证券投资(港股通)ETF",
-                "code": "513090",
-                "weight": 40,
-                "return": 1.8,
-                "rps20": 100.0,
-                "streak": 14
-              },
               {
                 "theme": "通信",
                 "name": "全指通信设备ETF",
                 "code": "515880",
-                "weight": 30,
+                "weight": 40,
                 "return": 9.8,
                 "rps20": 97.6,
                 "streak": 20
+              },
+              {
+                "theme": "非银金融",
+                "name": "香港证券投资(港股通)ETF",
+                "code": "513090",
+                "weight": 30,
+                "return": 1.8,
+                "rps20": 100.0,
+                "streak": 14
               },
               {
                 "theme": "光伏产业",
@@ -38697,22 +38697,22 @@ window.COCKPIT_DATA = {
             "return": 7.7,
             "items": [
               {
-                "theme": "非银金融",
-                "name": "香港证券投资(港股通)ETF",
-                "code": "513090",
-                "weight": 40,
-                "return": 9.7,
-                "rps20": 100.0,
-                "streak": 14
-              },
-              {
                 "theme": "通信",
                 "name": "全指通信设备ETF",
                 "code": "515880",
-                "weight": 30,
+                "weight": 40,
                 "return": 10.1,
                 "rps20": 97.6,
                 "streak": 20
+              },
+              {
+                "theme": "非银金融",
+                "name": "香港证券投资(港股通)ETF",
+                "code": "513090",
+                "weight": 30,
+                "return": 9.7,
+                "rps20": 100.0,
+                "streak": 14
               },
               {
                 "theme": "光伏产业",
@@ -38732,25 +38732,25 @@ window.COCKPIT_DATA = {
             "endDate": "2025-08-08",
             "label": "20个交易日前",
             "holdDays": 20,
-            "return": 8.4,
+            "return": 9.7,
             "items": [
-              {
-                "theme": "非银金融",
-                "name": "香港证券投资(港股通)ETF",
-                "code": "513090",
-                "weight": 40,
-                "return": 5.6,
-                "rps20": 100.0,
-                "streak": 14
-              },
               {
                 "theme": "通信",
                 "name": "全指通信设备ETF",
                 "code": "515880",
-                "weight": 30,
+                "weight": 40,
                 "return": 19.3,
                 "rps20": 97.6,
                 "streak": 20
+              },
+              {
+                "theme": "非银金融",
+                "name": "香港证券投资(港股通)ETF",
+                "code": "513090",
+                "weight": 30,
+                "return": 5.6,
+                "rps20": 100.0,
+                "streak": 14
               },
               {
                 "theme": "光伏产业",
@@ -65575,7 +65575,7 @@ window.COCKPIT_DATA = {
         "rps3": -16,
         "rps5": -40,
         "rps10": -2,
-        "rps20": 16,
+        "rps20": 17,
         "rps50": -13,
         "rps120": 0,
         "rps250": 6
@@ -66240,53 +66240,6 @@ window.COCKPIT_DATA = {
       }
     },
     {
-      "rank": 43,
-      "code": "515100",
-      "name": "红利低波100ETF",
-      "theme": "红利",
-      "streak": 0,
-      "top10Streak": 0,
-      "trendScore": 0.0,
-      "phase": "退潮期",
-      "phaseNote": "跌出前 20",
-      "signal": "回避",
-      "signalNote": "RPS 20=76.7，强势天数=0 天",
-      "rps3": 30.3,
-      "rps5": 65.2,
-      "rps10": 38.2,
-      "rps20": 76.7,
-      "rps50": 92.7,
-      "rps120": 82.6,
-      "rps250": 67.2,
-      "streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 13,
-        "rps120": 0,
-        "rps250": 0
-      },
-      "top10Streaks": {
-        "rps3": 0,
-        "rps5": 0,
-        "rps10": 0,
-        "rps20": 0,
-        "rps50": 0,
-        "rps120": 0,
-        "rps250": 0
-      },
-      "rankMove": {
-        "rps3": 14,
-        "rps5": 70,
-        "rps10": -31,
-        "rps20": -15,
-        "rps50": 0,
-        "rps120": -1,
-        "rps250": 8
-      }
-    },
-    {
       "rank": 42,
       "code": "512980",
       "name": "传媒ETF",
@@ -66327,10 +66280,57 @@ window.COCKPIT_DATA = {
         "rps3": -10,
         "rps5": -101,
         "rps10": -10,
-        "rps20": -34,
+        "rps20": -33,
         "rps50": -11,
         "rps120": -7,
         "rps250": 1
+      }
+    },
+    {
+      "rank": 43,
+      "code": "515100",
+      "name": "红利低波100ETF",
+      "theme": "红利",
+      "streak": 0,
+      "top10Streak": 0,
+      "trendScore": 0.0,
+      "phase": "退潮期",
+      "phaseNote": "跌出前 20",
+      "signal": "回避",
+      "signalNote": "RPS 20=76.7，强势天数=0 天",
+      "rps3": 30.3,
+      "rps5": 65.2,
+      "rps10": 38.2,
+      "rps20": 76.7,
+      "rps50": 92.7,
+      "rps120": 82.6,
+      "rps250": 67.2,
+      "streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 13,
+        "rps120": 0,
+        "rps250": 0
+      },
+      "top10Streaks": {
+        "rps3": 0,
+        "rps5": 0,
+        "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      },
+      "rankMove": {
+        "rps3": 14,
+        "rps5": 70,
+        "rps10": -31,
+        "rps20": -16,
+        "rps50": 0,
+        "rps120": -1,
+        "rps250": 8
       }
     },
     {
@@ -69194,7 +69194,7 @@ window.COCKPIT_DATA = {
         "rps3": -20,
         "rps5": -139,
         "rps10": -14,
-        "rps20": -60,
+        "rps20": -61,
         "rps50": -3,
         "rps120": -3,
         "rps250": 0
