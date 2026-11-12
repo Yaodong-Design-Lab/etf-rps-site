@@ -53,11 +53,12 @@ def test_full_universe_rank_change_is_shared_by_every_board():
 
 def test_previous_session_is_the_prior_trading_day_in_the_file():
     dates = pd.read_csv(ROOT / "automation" / "etf_nav_daily_chart_universe_latest.csv", usecols=["date"])
-    parsed = pd.to_datetime(dates["date"]).drop_duplicates()
-    latest = parsed.max()
-    previous = previous_trading_session(parsed, latest)
-    assert str(latest.date()) == "2026-11-11"
-    assert str(previous.date()) == "2026-11-10"
+    ordered = sorted(pd.to_datetime(dates["date"]).drop_duplicates())
+    latest = ordered[-1]
+    previous = previous_trading_session(ordered, latest)
+    assert previous == ordered[-2]
+    assert str(latest.date()) == "2026-11-12"
+    assert str(previous.date()) == "2026-11-11"
 
 
 if __name__ == "__main__":

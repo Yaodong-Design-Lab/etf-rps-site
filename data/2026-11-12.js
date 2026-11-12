@@ -64348,6 +64348,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 12,
         "rps250": 121
+      },
+      "rankMove": {
+        "rps3": 20,
+        "rps5": -27,
+        "rps10": 2,
+        "rps20": 1,
+        "rps50": 33,
+        "rps120": 0,
+        "rps250": 0
       }
     },
     {
@@ -64386,6 +64395,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 0,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": -99,
+        "rps5": -100,
+        "rps10": -28,
+        "rps20": -1,
+        "rps50": -24,
+        "rps120": -15,
+        "rps250": -19
       }
     },
     {
@@ -64424,6 +64442,15 @@ window.COCKPIT_DATA = {
         "rps50": 3,
         "rps120": 23,
         "rps250": 28
+      },
+      "rankMove": {
+        "rps3": 1,
+        "rps5": 4,
+        "rps10": -9,
+        "rps20": 1,
+        "rps50": 3,
+        "rps120": 0,
+        "rps250": 1
       }
     },
     {
@@ -64462,6 +64489,15 @@ window.COCKPIT_DATA = {
         "rps50": 4,
         "rps120": 0,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": 2,
+        "rps5": -51,
+        "rps10": -25,
+        "rps20": 1,
+        "rps50": 1,
+        "rps120": -1,
+        "rps250": 8
       }
     },
     {
@@ -64500,6 +64536,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 0,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": 36,
+        "rps5": 22,
+        "rps10": 15,
+        "rps20": 3,
+        "rps50": 6,
+        "rps120": 8,
+        "rps250": 10
       }
     },
     {
@@ -64538,6 +64583,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 0,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": -61,
+        "rps5": -94,
+        "rps10": -38,
+        "rps20": -3,
+        "rps50": -34,
+        "rps120": -13,
+        "rps250": -8
       }
     },
     {
@@ -64576,6 +64630,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 0,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": 28,
+        "rps5": -11,
+        "rps10": -2,
+        "rps20": -1,
+        "rps50": 1,
+        "rps120": 1,
+        "rps250": 8
       }
     },
     {
@@ -64614,6 +64677,15 @@ window.COCKPIT_DATA = {
         "rps50": 1,
         "rps120": 0,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": 33,
+        "rps5": 43,
+        "rps10": -12,
+        "rps20": -1,
+        "rps50": 1,
+        "rps120": 0,
+        "rps250": 9
       }
     },
     {
@@ -64652,6 +64724,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 0,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": 18,
+        "rps5": 19,
+        "rps10": -10,
+        "rps20": 2,
+        "rps50": 5,
+        "rps120": 6,
+        "rps250": 6
       }
     },
     {
@@ -64690,6 +64771,15 @@ window.COCKPIT_DATA = {
         "rps50": 1,
         "rps120": 0,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": 41,
+        "rps5": 43,
+        "rps10": 0,
+        "rps20": 2,
+        "rps50": 4,
+        "rps120": 3,
+        "rps250": 14
       }
     },
     {
@@ -64728,6 +64818,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 0,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": -17,
+        "rps5": -27,
+        "rps10": 43,
+        "rps20": 8,
+        "rps50": -15,
+        "rps120": 0,
+        "rps250": 1
       }
     },
     {
@@ -64766,6 +64865,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 0,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": 56,
+        "rps5": 25,
+        "rps10": -7,
+        "rps20": 3,
+        "rps50": -6,
+        "rps120": 0,
+        "rps250": 14
       }
     },
     {
@@ -64804,6 +64912,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 0,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": -13,
+        "rps5": -36,
+        "rps10": 13,
+        "rps20": -3,
+        "rps50": -17,
+        "rps120": 0,
+        "rps250": -5
       }
     },
     {
@@ -64842,6 +64959,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 0,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": 29,
+        "rps5": 31,
+        "rps10": -2,
+        "rps20": 0,
+        "rps50": 4,
+        "rps120": 3,
+        "rps250": 12
       }
     },
     {
@@ -64880,6 +65006,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 17,
         "rps250": 55
+      },
+      "rankMove": {
+        "rps3": -22,
+        "rps5": -36,
+        "rps10": -84,
+        "rps20": 1,
+        "rps50": 4,
+        "rps120": 0,
+        "rps250": -1
       }
     },
     {
@@ -64918,6 +65053,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 0,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": 36,
+        "rps5": -13,
+        "rps10": 0,
+        "rps20": 2,
+        "rps50": -10,
+        "rps120": 0,
+        "rps250": 7
       }
     },
     {
@@ -64956,6 +65100,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 0,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": 33,
+        "rps5": -25,
+        "rps10": -24,
+        "rps20": 0,
+        "rps50": -6,
+        "rps120": -4,
+        "rps250": 2
       }
     },
     {
@@ -64994,6 +65147,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 0,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": 50,
+        "rps5": 30,
+        "rps10": 2,
+        "rps20": 2,
+        "rps50": 3,
+        "rps120": 7,
+        "rps250": -4
       }
     },
     {
@@ -65032,6 +65194,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 0,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": 6,
+        "rps5": -44,
+        "rps10": -5,
+        "rps20": 29,
+        "rps50": 5,
+        "rps120": 7,
+        "rps250": 3
       }
     },
     {
@@ -65070,6 +65241,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 0,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": 39,
+        "rps5": 3,
+        "rps10": -13,
+        "rps20": 2,
+        "rps50": -3,
+        "rps120": 0,
+        "rps250": 3
       }
     },
     {
@@ -65108,6 +65288,15 @@ window.COCKPIT_DATA = {
         "rps50": 15,
         "rps120": 8,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": 34,
+        "rps5": 71,
+        "rps10": -38,
+        "rps20": 2,
+        "rps50": 4,
+        "rps120": 0,
+        "rps250": 2
       }
     },
     {
@@ -65145,6 +65334,15 @@ window.COCKPIT_DATA = {
         "rps20": 0,
         "rps50": 14,
         "rps120": 6,
+        "rps250": 0
+      },
+      "rankMove": {
+        "rps3": 31,
+        "rps5": 44,
+        "rps10": -39,
+        "rps20": 2,
+        "rps50": 4,
+        "rps120": 0,
         "rps250": 0
       }
     },
@@ -65184,6 +65382,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 0,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": -10,
+        "rps5": -53,
+        "rps10": -18,
+        "rps20": 26,
+        "rps50": -1,
+        "rps120": 5,
+        "rps250": 3
       }
     },
     {
@@ -65222,6 +65429,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 0,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": 10,
+        "rps5": -35,
+        "rps10": -18,
+        "rps20": -3,
+        "rps50": -11,
+        "rps120": -2,
+        "rps250": 4
       }
     },
     {
@@ -65260,6 +65476,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 0,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": 61,
+        "rps5": 11,
+        "rps10": 15,
+        "rps20": 12,
+        "rps50": 2,
+        "rps120": 2,
+        "rps250": 10
       }
     },
     {
@@ -65298,6 +65523,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 0,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": 34,
+        "rps5": 27,
+        "rps10": 1,
+        "rps20": 5,
+        "rps50": 0,
+        "rps120": 2,
+        "rps250": 2
       }
     },
     {
@@ -65336,6 +65570,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 0,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": -16,
+        "rps5": -40,
+        "rps10": -2,
+        "rps20": 16,
+        "rps50": -13,
+        "rps120": 0,
+        "rps250": 6
       }
     },
     {
@@ -65374,6 +65617,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 0,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": 3,
+        "rps5": -49,
+        "rps10": -7,
+        "rps20": 31,
+        "rps50": 9,
+        "rps120": 7,
+        "rps250": 2
       }
     },
     {
@@ -65412,6 +65664,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 0,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": -13,
+        "rps5": -29,
+        "rps10": 1,
+        "rps20": 36,
+        "rps50": -9,
+        "rps120": 1,
+        "rps250": 2
       }
     },
     {
@@ -65450,6 +65711,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 0,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": 20,
+        "rps5": 75,
+        "rps10": -41,
+        "rps20": 2,
+        "rps50": 8,
+        "rps120": -2,
+        "rps250": 5
       }
     },
     {
@@ -65488,6 +65758,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 0,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": 40,
+        "rps5": 4,
+        "rps10": 31,
+        "rps20": 19,
+        "rps50": 2,
+        "rps120": 9,
+        "rps250": 3
       }
     },
     {
@@ -65526,6 +65805,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 0,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": -6,
+        "rps5": -34,
+        "rps10": -2,
+        "rps20": 14,
+        "rps50": -12,
+        "rps120": 0,
+        "rps250": -1
       }
     },
     {
@@ -65564,6 +65852,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 0,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": 2,
+        "rps5": -43,
+        "rps10": -8,
+        "rps20": 41,
+        "rps50": 2,
+        "rps120": 12,
+        "rps250": 1
       }
     },
     {
@@ -65602,6 +65899,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 0,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": -24,
+        "rps5": -3,
+        "rps10": -52,
+        "rps20": -1,
+        "rps50": -1,
+        "rps120": -2,
+        "rps250": 3
       }
     },
     {
@@ -65640,6 +65946,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 0,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": 2,
+        "rps5": -11,
+        "rps10": 3,
+        "rps20": 32,
+        "rps50": -6,
+        "rps120": 5,
+        "rps250": 6
       }
     },
     {
@@ -65678,6 +65993,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 0,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": -15,
+        "rps5": -25,
+        "rps10": 0,
+        "rps20": 30,
+        "rps50": -16,
+        "rps120": 0,
+        "rps250": 2
       }
     },
     {
@@ -65716,6 +66040,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 0,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": 4,
+        "rps5": 29,
+        "rps10": -48,
+        "rps20": -2,
+        "rps50": 5,
+        "rps120": 7,
+        "rps250": null
       }
     },
     {
@@ -65754,6 +66087,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 0,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": 1,
+        "rps5": 26,
+        "rps10": -39,
+        "rps20": -13,
+        "rps50": 1,
+        "rps120": 0,
+        "rps250": 3
       }
     },
     {
@@ -65791,6 +66133,15 @@ window.COCKPIT_DATA = {
         "rps20": 0,
         "rps50": 0,
         "rps120": 0,
+        "rps250": 0
+      },
+      "rankMove": {
+        "rps3": 6,
+        "rps5": -31,
+        "rps10": -40,
+        "rps20": 8,
+        "rps50": -3,
+        "rps120": -1,
         "rps250": 0
       }
     },
@@ -65830,6 +66181,15 @@ window.COCKPIT_DATA = {
         "rps50": 14,
         "rps120": 0,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": 35,
+        "rps5": 99,
+        "rps10": -33,
+        "rps20": -12,
+        "rps50": 3,
+        "rps120": 0,
+        "rps250": 2
       }
     },
     {
@@ -65868,6 +66228,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 0,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": -45,
+        "rps5": 4,
+        "rps10": -86,
+        "rps20": -15,
+        "rps50": -13,
+        "rps120": -2,
+        "rps250": -12
       }
     },
     {
@@ -65906,6 +66275,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 0,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": 14,
+        "rps5": 70,
+        "rps10": -31,
+        "rps20": -15,
+        "rps50": 0,
+        "rps120": -1,
+        "rps250": 8
       }
     },
     {
@@ -65944,6 +66322,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 0,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": -10,
+        "rps5": -101,
+        "rps10": -10,
+        "rps20": -34,
+        "rps50": -11,
+        "rps120": -7,
+        "rps250": 1
       }
     },
     {
@@ -65982,6 +66369,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 0,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": 19,
+        "rps5": 17,
+        "rps10": -22,
+        "rps20": 1,
+        "rps50": 14,
+        "rps120": 6,
+        "rps250": 1
       }
     },
     {
@@ -66020,6 +66416,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 0,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": -39,
+        "rps5": -15,
+        "rps10": -76,
+        "rps20": -3,
+        "rps50": -6,
+        "rps120": 2,
+        "rps250": -7
       }
     },
     {
@@ -66058,6 +66463,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 0,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": 31,
+        "rps5": 43,
+        "rps10": 16,
+        "rps20": -17,
+        "rps50": 1,
+        "rps120": -2,
+        "rps250": 19
       }
     },
     {
@@ -66096,6 +66510,15 @@ window.COCKPIT_DATA = {
         "rps50": 1,
         "rps120": 0,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": 28,
+        "rps5": 89,
+        "rps10": -36,
+        "rps20": -11,
+        "rps50": 4,
+        "rps120": -3,
+        "rps250": 5
       }
     },
     {
@@ -66134,6 +66557,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 0,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": 42,
+        "rps5": 68,
+        "rps10": -2,
+        "rps20": 15,
+        "rps50": 9,
+        "rps120": -1,
+        "rps250": 15
       }
     },
     {
@@ -66172,6 +66604,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 0,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": 26,
+        "rps5": 35,
+        "rps10": 36,
+        "rps20": 21,
+        "rps50": 18,
+        "rps120": 13,
+        "rps250": 16
       }
     },
     {
@@ -66210,6 +66651,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 0,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": 10,
+        "rps5": 44,
+        "rps10": -35,
+        "rps20": 6,
+        "rps50": 7,
+        "rps120": 10,
+        "rps250": 9
       }
     },
     {
@@ -66248,6 +66698,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 0,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": -30,
+        "rps5": 14,
+        "rps10": -12,
+        "rps20": -12,
+        "rps50": -11,
+        "rps120": -5,
+        "rps250": -2
       }
     },
     {
@@ -66286,6 +66745,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 0,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": 9,
+        "rps5": 86,
+        "rps10": -14,
+        "rps20": -12,
+        "rps50": 4,
+        "rps120": -1,
+        "rps250": 6
       }
     },
     {
@@ -66324,6 +66792,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 0,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": -35,
+        "rps5": -35,
+        "rps10": -17,
+        "rps20": 2,
+        "rps50": -37,
+        "rps120": -4,
+        "rps250": -5
       }
     },
     {
@@ -66362,6 +66839,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 0,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": 2,
+        "rps5": -67,
+        "rps10": 46,
+        "rps20": 7,
+        "rps50": -3,
+        "rps120": -4,
+        "rps250": 1
       }
     },
     {
@@ -66400,6 +66886,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 0,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": -21,
+        "rps5": -59,
+        "rps10": -15,
+        "rps20": -21,
+        "rps50": 13,
+        "rps120": -7,
+        "rps250": 2
       }
     },
     {
@@ -66438,6 +66933,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 0,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": -23,
+        "rps5": 19,
+        "rps10": -54,
+        "rps20": 1,
+        "rps50": -3,
+        "rps120": 5,
+        "rps250": 1
       }
     },
     {
@@ -66476,6 +66980,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 0,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": -1,
+        "rps5": 25,
+        "rps10": -25,
+        "rps20": -5,
+        "rps50": 7,
+        "rps120": 0,
+        "rps250": -1
       }
     },
     {
@@ -66514,6 +67027,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 0,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": -18,
+        "rps5": -20,
+        "rps10": 8,
+        "rps20": 20,
+        "rps50": 8,
+        "rps120": 0,
+        "rps250": -2
       }
     },
     {
@@ -66552,6 +67074,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 0,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": 13,
+        "rps5": 41,
+        "rps10": -36,
+        "rps20": 3,
+        "rps50": 15,
+        "rps120": 1,
+        "rps250": null
       }
     },
     {
@@ -66590,6 +67121,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 0,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": 8,
+        "rps5": 33,
+        "rps10": 0,
+        "rps20": 8,
+        "rps50": -3,
+        "rps120": 4,
+        "rps250": 7
       }
     },
     {
@@ -66628,6 +67168,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 0,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": 37,
+        "rps5": 6,
+        "rps10": 14,
+        "rps20": 27,
+        "rps50": -11,
+        "rps120": 2,
+        "rps250": 10
       }
     },
     {
@@ -66665,6 +67214,15 @@ window.COCKPIT_DATA = {
         "rps20": 0,
         "rps50": 0,
         "rps120": 0,
+        "rps250": 0
+      },
+      "rankMove": {
+        "rps3": -16,
+        "rps5": -67,
+        "rps10": -20,
+        "rps20": -24,
+        "rps50": 3,
+        "rps120": -7,
         "rps250": 0
       }
     },
@@ -66704,6 +67262,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 0,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": -10,
+        "rps5": -33,
+        "rps10": -13,
+        "rps20": 6,
+        "rps50": -4,
+        "rps120": -5,
+        "rps250": 5
       }
     },
     {
@@ -66742,6 +67309,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 0,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": 17,
+        "rps5": 22,
+        "rps10": -5,
+        "rps20": 7,
+        "rps50": -2,
+        "rps120": -5,
+        "rps250": 7
       }
     },
     {
@@ -66780,6 +67356,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 0,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": 40,
+        "rps5": 47,
+        "rps10": -14,
+        "rps20": -14,
+        "rps50": 1,
+        "rps120": 0,
+        "rps250": 6
       }
     },
     {
@@ -66817,6 +67402,15 @@ window.COCKPIT_DATA = {
         "rps20": 0,
         "rps50": 0,
         "rps120": 0,
+        "rps250": 0
+      },
+      "rankMove": {
+        "rps3": -43,
+        "rps5": -91,
+        "rps10": -62,
+        "rps20": -53,
+        "rps50": -35,
+        "rps120": -6,
         "rps250": 0
       }
     },
@@ -66856,6 +67450,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 0,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": -23,
+        "rps5": -73,
+        "rps10": -26,
+        "rps20": -26,
+        "rps50": 2,
+        "rps120": -4,
+        "rps250": -4
       }
     },
     {
@@ -66894,6 +67497,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 0,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": -7,
+        "rps5": 39,
+        "rps10": -35,
+        "rps20": -14,
+        "rps50": 8,
+        "rps120": -3,
+        "rps250": 2
       }
     },
     {
@@ -66932,6 +67544,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 4,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": 10,
+        "rps5": 42,
+        "rps10": -3,
+        "rps20": 8,
+        "rps50": 1,
+        "rps120": 1,
+        "rps250": 1
       }
     },
     {
@@ -66970,6 +67591,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 0,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": -2,
+        "rps5": 32,
+        "rps10": 120,
+        "rps20": 51,
+        "rps50": 2,
+        "rps120": 2,
+        "rps250": 1
       }
     },
     {
@@ -67008,6 +67638,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 0,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": 18,
+        "rps5": 62,
+        "rps10": 5,
+        "rps20": 8,
+        "rps50": 9,
+        "rps120": -3,
+        "rps250": 3
       }
     },
     {
@@ -67046,6 +67685,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 0,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": 35,
+        "rps5": -60,
+        "rps10": 9,
+        "rps20": 18,
+        "rps50": 7,
+        "rps120": 2,
+        "rps250": 1
       }
     },
     {
@@ -67084,6 +67732,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 0,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": 27,
+        "rps5": 48,
+        "rps10": 0,
+        "rps20": 18,
+        "rps50": 9,
+        "rps120": -1,
+        "rps250": 3
       }
     },
     {
@@ -67122,6 +67779,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 0,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": -1,
+        "rps5": 24,
+        "rps10": -25,
+        "rps20": -16,
+        "rps50": 8,
+        "rps120": -1,
+        "rps250": 5
       }
     },
     {
@@ -67159,6 +67825,15 @@ window.COCKPIT_DATA = {
         "rps20": 0,
         "rps50": 0,
         "rps120": 0,
+        "rps250": 0
+      },
+      "rankMove": {
+        "rps3": -1,
+        "rps5": 22,
+        "rps10": -24,
+        "rps20": 9,
+        "rps50": 6,
+        "rps120": -1,
         "rps250": 0
       }
     },
@@ -67198,6 +67873,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 0,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": 26,
+        "rps5": -104,
+        "rps10": 18,
+        "rps20": 24,
+        "rps50": 4,
+        "rps120": 0,
+        "rps250": -1
       }
     },
     {
@@ -67236,6 +67920,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 0,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": 14,
+        "rps5": 58,
+        "rps10": -25,
+        "rps20": -13,
+        "rps50": 2,
+        "rps120": -3,
+        "rps250": -1
       }
     },
     {
@@ -67274,6 +67967,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 0,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": 6,
+        "rps5": 32,
+        "rps10": -12,
+        "rps20": -2,
+        "rps50": 3,
+        "rps120": 2,
+        "rps250": 2
       }
     },
     {
@@ -67312,6 +68014,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 0,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": 5,
+        "rps5": 65,
+        "rps10": -31,
+        "rps20": -19,
+        "rps50": 3,
+        "rps120": -5,
+        "rps250": 1
       }
     },
     {
@@ -67350,6 +68061,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 0,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": 31,
+        "rps5": 66,
+        "rps10": -28,
+        "rps20": -8,
+        "rps50": 1,
+        "rps120": -5,
+        "rps250": 4
       }
     },
     {
@@ -67387,6 +68107,15 @@ window.COCKPIT_DATA = {
         "rps20": 0,
         "rps50": 0,
         "rps120": 0,
+        "rps250": 0
+      },
+      "rankMove": {
+        "rps3": 0,
+        "rps5": -14,
+        "rps10": 13,
+        "rps20": 5,
+        "rps50": -5,
+        "rps120": 3,
         "rps250": 0
       }
     },
@@ -67426,6 +68155,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 0,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": -25,
+        "rps5": -5,
+        "rps10": -17,
+        "rps20": -1,
+        "rps50": -8,
+        "rps120": 1,
+        "rps250": 1
       }
     },
     {
@@ -67464,6 +68202,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 0,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": -3,
+        "rps5": 40,
+        "rps10": -32,
+        "rps20": -8,
+        "rps50": 9,
+        "rps120": -2,
+        "rps250": 3
       }
     },
     {
@@ -67502,6 +68249,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 25,
         "rps250": 1
+      },
+      "rankMove": {
+        "rps3": 5,
+        "rps5": 39,
+        "rps10": -5,
+        "rps20": 8,
+        "rps50": -3,
+        "rps120": 0,
+        "rps250": 2
       }
     },
     {
@@ -67540,6 +68296,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 0,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": 1,
+        "rps5": -36,
+        "rps10": 35,
+        "rps20": 21,
+        "rps50": -3,
+        "rps120": -4,
+        "rps250": -1
       }
     },
     {
@@ -67578,6 +68343,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 0,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": -7,
+        "rps5": 66,
+        "rps10": -18,
+        "rps20": 1,
+        "rps50": 5,
+        "rps120": 4,
+        "rps250": 4
       }
     },
     {
@@ -67616,6 +68390,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 0,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": 6,
+        "rps5": -41,
+        "rps10": -6,
+        "rps20": 17,
+        "rps50": 3,
+        "rps120": 4,
+        "rps250": -1
       }
     },
     {
@@ -67654,6 +68437,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 0,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": -14,
+        "rps5": -44,
+        "rps10": -18,
+        "rps20": 11,
+        "rps50": 0,
+        "rps120": 1,
+        "rps250": -2
       }
     },
     {
@@ -67691,6 +68483,15 @@ window.COCKPIT_DATA = {
         "rps20": 0,
         "rps50": 0,
         "rps120": 0,
+        "rps250": 0
+      },
+      "rankMove": {
+        "rps3": -18,
+        "rps5": 10,
+        "rps10": -53,
+        "rps20": -16,
+        "rps50": 5,
+        "rps120": -4,
         "rps250": 0
       }
     },
@@ -67730,6 +68531,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 0,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": -10,
+        "rps5": -68,
+        "rps10": -4,
+        "rps20": -5,
+        "rps50": -12,
+        "rps120": -7,
+        "rps250": -11
       }
     },
     {
@@ -67768,6 +68578,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 0,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": 0,
+        "rps5": -67,
+        "rps10": 46,
+        "rps20": 10,
+        "rps50": -4,
+        "rps120": -9,
+        "rps250": -3
       }
     },
     {
@@ -67806,6 +68625,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 0,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": 12,
+        "rps5": 33,
+        "rps10": 90,
+        "rps20": 49,
+        "rps50": 4,
+        "rps120": 2,
+        "rps250": 2
       }
     },
     {
@@ -67844,6 +68672,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 0,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": 1,
+        "rps5": 125,
+        "rps10": -22,
+        "rps20": -4,
+        "rps50": 6,
+        "rps120": -4,
+        "rps250": 6
       }
     },
     {
@@ -67881,6 +68718,15 @@ window.COCKPIT_DATA = {
         "rps20": 0,
         "rps50": 0,
         "rps120": 0,
+        "rps250": 0
+      },
+      "rankMove": {
+        "rps3": -5,
+        "rps5": -127,
+        "rps10": -22,
+        "rps20": -64,
+        "rps50": -7,
+        "rps120": -2,
         "rps250": 0
       }
     },
@@ -67920,6 +68766,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 0,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": 4,
+        "rps5": -28,
+        "rps10": 30,
+        "rps20": 20,
+        "rps50": -2,
+        "rps120": -2,
+        "rps250": -2
       }
     },
     {
@@ -67958,6 +68813,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 0,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": 15,
+        "rps5": 32,
+        "rps10": 2,
+        "rps20": 13,
+        "rps50": 4,
+        "rps120": 1,
+        "rps250": 6
       }
     },
     {
@@ -67996,6 +68860,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 0,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": -10,
+        "rps5": -40,
+        "rps10": 45,
+        "rps20": 17,
+        "rps50": -3,
+        "rps120": -1,
+        "rps250": -5
       }
     },
     {
@@ -68033,6 +68906,15 @@ window.COCKPIT_DATA = {
         "rps20": 0,
         "rps50": 0,
         "rps120": 0,
+        "rps250": 0
+      },
+      "rankMove": {
+        "rps3": -10,
+        "rps5": 23,
+        "rps10": -6,
+        "rps20": 7,
+        "rps50": 12,
+        "rps120": -4,
         "rps250": 0
       }
     },
@@ -68072,6 +68954,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 0,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": 18,
+        "rps5": 31,
+        "rps10": 17,
+        "rps20": 9,
+        "rps50": 6,
+        "rps120": 0,
+        "rps250": 1
       }
     },
     {
@@ -68110,6 +69001,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 0,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": 14,
+        "rps5": 26,
+        "rps10": 25,
+        "rps20": 7,
+        "rps50": 9,
+        "rps120": -1,
+        "rps250": 3
       }
     },
     {
@@ -68147,6 +69047,15 @@ window.COCKPIT_DATA = {
         "rps20": 0,
         "rps50": 0,
         "rps120": 0,
+        "rps250": 0
+      },
+      "rankMove": {
+        "rps3": 9,
+        "rps5": -72,
+        "rps10": 5,
+        "rps20": 16,
+        "rps50": -1,
+        "rps120": 1,
         "rps250": 0
       }
     },
@@ -68186,6 +69095,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 0,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": 20,
+        "rps5": -5,
+        "rps10": 78,
+        "rps20": 49,
+        "rps50": 8,
+        "rps120": 5,
+        "rps250": -1
       }
     },
     {
@@ -68223,6 +69141,15 @@ window.COCKPIT_DATA = {
         "rps20": 0,
         "rps50": 0,
         "rps120": 0,
+        "rps250": 0
+      },
+      "rankMove": {
+        "rps3": 1,
+        "rps5": 29,
+        "rps10": 21,
+        "rps20": -5,
+        "rps50": 10,
+        "rps120": -1,
         "rps250": 0
       }
     },
@@ -68262,6 +69189,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 0,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": -20,
+        "rps5": -139,
+        "rps10": -14,
+        "rps20": -60,
+        "rps50": -3,
+        "rps120": -3,
+        "rps250": 0
       }
     },
     {
@@ -68299,6 +69235,15 @@ window.COCKPIT_DATA = {
         "rps20": 0,
         "rps50": 0,
         "rps120": 0,
+        "rps250": 0
+      },
+      "rankMove": {
+        "rps3": 16,
+        "rps5": 22,
+        "rps10": 9,
+        "rps20": 15,
+        "rps50": 3,
+        "rps120": 1,
         "rps250": 0
       }
     },
@@ -68338,6 +69283,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 0,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": -6,
+        "rps5": 19,
+        "rps10": 71,
+        "rps20": 37,
+        "rps50": 4,
+        "rps120": 2,
+        "rps250": -7
       }
     },
     {
@@ -68376,6 +69330,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 0,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": 2,
+        "rps5": 30,
+        "rps10": -10,
+        "rps20": -11,
+        "rps50": 4,
+        "rps120": -4,
+        "rps250": -6
       }
     },
     {
@@ -68414,6 +69377,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 0,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": -78,
+        "rps5": -52,
+        "rps10": -45,
+        "rps20": -14,
+        "rps50": -1,
+        "rps120": 1,
+        "rps250": 2
       }
     },
     {
@@ -68452,6 +69424,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 0,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": -8,
+        "rps5": 44,
+        "rps10": -13,
+        "rps20": 9,
+        "rps50": 2,
+        "rps120": 3,
+        "rps250": 2
       }
     },
     {
@@ -68488,6 +69469,15 @@ window.COCKPIT_DATA = {
         "rps10": 0,
         "rps20": 0,
         "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      },
+      "rankMove": {
+        "rps3": -5,
+        "rps5": -38,
+        "rps10": 31,
+        "rps20": 18,
+        "rps50": -7,
         "rps120": 0,
         "rps250": 0
       }
@@ -68528,6 +69518,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 0,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": -78,
+        "rps5": -52,
+        "rps10": -47,
+        "rps20": -16,
+        "rps50": 1,
+        "rps120": 1,
+        "rps250": 2
       }
     },
     {
@@ -68566,6 +69565,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 0,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": -4,
+        "rps5": -19,
+        "rps10": -30,
+        "rps20": -9,
+        "rps50": 7,
+        "rps120": 2,
+        "rps250": -7
       }
     },
     {
@@ -68604,6 +69612,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 0,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": 10,
+        "rps5": 31,
+        "rps10": -11,
+        "rps20": -16,
+        "rps50": 11,
+        "rps120": 4,
+        "rps250": 1
       }
     },
     {
@@ -68642,6 +69659,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 2,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": -3,
+        "rps5": 25,
+        "rps10": -16,
+        "rps20": -31,
+        "rps50": -9,
+        "rps120": -1,
+        "rps250": -2
       }
     },
     {
@@ -68680,6 +69706,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 0,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": -33,
+        "rps5": -29,
+        "rps10": 31,
+        "rps20": 1,
+        "rps50": -10,
+        "rps120": -3,
+        "rps250": -12
       }
     },
     {
@@ -68718,6 +69753,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 0,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": 26,
+        "rps5": 26,
+        "rps10": 13,
+        "rps20": 7,
+        "rps50": 7,
+        "rps120": 0,
+        "rps250": 3
       }
     },
     {
@@ -68756,6 +69800,15 @@ window.COCKPIT_DATA = {
         "rps50": 41,
         "rps120": 0,
         "rps250": 27
+      },
+      "rankMove": {
+        "rps3": 106,
+        "rps5": 153,
+        "rps10": 0,
+        "rps20": 14,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 1
       }
     },
     {
@@ -68794,6 +69847,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 0,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": -27,
+        "rps5": -88,
+        "rps10": -6,
+        "rps20": -38,
+        "rps50": -4,
+        "rps120": 3,
+        "rps250": 1
       }
     },
     {
@@ -68831,6 +69893,15 @@ window.COCKPIT_DATA = {
         "rps20": 0,
         "rps50": 0,
         "rps120": 0,
+        "rps250": 0
+      },
+      "rankMove": {
+        "rps3": 28,
+        "rps5": -53,
+        "rps10": 3,
+        "rps20": 11,
+        "rps50": 4,
+        "rps120": 4,
         "rps250": 0
       }
     },
@@ -68870,6 +69941,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 0,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": 6,
+        "rps5": 39,
+        "rps10": -11,
+        "rps20": -27,
+        "rps50": 2,
+        "rps120": -3,
+        "rps250": -1
       }
     },
     {
@@ -68908,6 +69988,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 0,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": 20,
+        "rps5": -5,
+        "rps10": 81,
+        "rps20": 32,
+        "rps50": 10,
+        "rps120": 0,
+        "rps250": 3
       }
     },
     {
@@ -68946,6 +70035,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 0,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": 19,
+        "rps5": 35,
+        "rps10": 76,
+        "rps20": 32,
+        "rps50": 5,
+        "rps120": 4,
+        "rps250": 10
       }
     },
     {
@@ -68984,6 +70082,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 0,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": 24,
+        "rps5": -83,
+        "rps10": 14,
+        "rps20": 2,
+        "rps50": -8,
+        "rps120": -4,
+        "rps250": -1
       }
     },
     {
@@ -69022,6 +70129,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 0,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": 3,
+        "rps5": -37,
+        "rps10": 14,
+        "rps20": -5,
+        "rps50": -5,
+        "rps120": -2,
+        "rps250": -5
       }
     },
     {
@@ -69060,6 +70176,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 0,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": -8,
+        "rps5": -6,
+        "rps10": 70,
+        "rps20": 15,
+        "rps50": 0,
+        "rps120": -6,
+        "rps250": null
       }
     },
     {
@@ -69098,6 +70223,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 0,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": -8,
+        "rps5": -23,
+        "rps10": 15,
+        "rps20": 1,
+        "rps50": -7,
+        "rps120": 0,
+        "rps250": -3
       }
     },
     {
@@ -69136,6 +70270,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 0,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": -33,
+        "rps5": 106,
+        "rps10": -26,
+        "rps20": -17,
+        "rps50": 18,
+        "rps120": -1,
+        "rps250": 2
       }
     },
     {
@@ -69174,6 +70317,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 0,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": 14,
+        "rps5": 47,
+        "rps10": 8,
+        "rps20": 9,
+        "rps50": 3,
+        "rps120": 2,
+        "rps250": 3
       }
     },
     {
@@ -69212,6 +70364,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 0,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": 7,
+        "rps5": -24,
+        "rps10": 22,
+        "rps20": -7,
+        "rps50": 0,
+        "rps120": -4,
+        "rps250": -10
       }
     },
     {
@@ -69249,6 +70410,15 @@ window.COCKPIT_DATA = {
         "rps20": 0,
         "rps50": 0,
         "rps120": 0,
+        "rps250": 0
+      },
+      "rankMove": {
+        "rps3": 9,
+        "rps5": -35,
+        "rps10": 3,
+        "rps20": 5,
+        "rps50": 3,
+        "rps120": 1,
         "rps250": 0
       }
     },
@@ -69288,6 +70458,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 0,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": -15,
+        "rps5": 8,
+        "rps10": 56,
+        "rps20": 7,
+        "rps50": -6,
+        "rps120": -4,
+        "rps250": -17
       }
     },
     {
@@ -69326,6 +70505,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 0,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": 18,
+        "rps5": 47,
+        "rps10": -1,
+        "rps20": 0,
+        "rps50": 3,
+        "rps120": 1,
+        "rps250": 4
       }
     },
     {
@@ -69364,6 +70552,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 0,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": 0,
+        "rps5": -54,
+        "rps10": 25,
+        "rps20": -4,
+        "rps50": -3,
+        "rps120": 2,
+        "rps250": -3
       }
     },
     {
@@ -69402,6 +70599,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 0,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": -6,
+        "rps5": 8,
+        "rps10": 0,
+        "rps20": -22,
+        "rps50": -14,
+        "rps120": 0,
+        "rps250": 1
       }
     },
     {
@@ -69440,6 +70646,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 0,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": 20,
+        "rps5": 5,
+        "rps10": 112,
+        "rps20": 28,
+        "rps50": 6,
+        "rps120": 5,
+        "rps250": 2
       }
     },
     {
@@ -69478,6 +70693,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 0,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": -8,
+        "rps5": -23,
+        "rps10": 52,
+        "rps20": 8,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": -2
       }
     },
     {
@@ -69516,6 +70740,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 0,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": 1,
+        "rps5": -66,
+        "rps10": -3,
+        "rps20": -1,
+        "rps50": -3,
+        "rps120": -1,
+        "rps250": 1
       }
     },
     {
@@ -69554,6 +70787,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 0,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": 39,
+        "rps5": 29,
+        "rps10": 11,
+        "rps20": -14,
+        "rps50": 6,
+        "rps120": 10,
+        "rps250": 0
       }
     },
     {
@@ -69590,6 +70832,15 @@ window.COCKPIT_DATA = {
         "rps10": 0,
         "rps20": 0,
         "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      },
+      "rankMove": {
+        "rps3": -1,
+        "rps5": -110,
+        "rps10": -23,
+        "rps20": -86,
+        "rps50": -9,
         "rps120": 0,
         "rps250": 0
       }
@@ -69630,6 +70881,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 0,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": -37,
+        "rps5": -108,
+        "rps10": -7,
+        "rps20": -58,
+        "rps50": -7,
+        "rps120": 2,
+        "rps250": 0
       }
     },
     {
@@ -69668,6 +70928,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 0,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": 9,
+        "rps5": 21,
+        "rps10": 69,
+        "rps20": 24,
+        "rps50": 7,
+        "rps120": 0,
+        "rps250": 1
       }
     },
     {
@@ -69706,6 +70975,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 0,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": 47,
+        "rps5": -30,
+        "rps10": 20,
+        "rps20": 5,
+        "rps50": -13,
+        "rps120": 12,
+        "rps250": 1
       }
     },
     {
@@ -69743,6 +71021,15 @@ window.COCKPIT_DATA = {
         "rps20": 0,
         "rps50": 0,
         "rps120": 0,
+        "rps250": 0
+      },
+      "rankMove": {
+        "rps3": -23,
+        "rps5": 115,
+        "rps10": -11,
+        "rps20": -17,
+        "rps50": 14,
+        "rps120": 1,
         "rps250": 0
       }
     },
@@ -69782,6 +71069,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 55,
         "rps250": 9
+      },
+      "rankMove": {
+        "rps3": 7,
+        "rps5": 59,
+        "rps10": -5,
+        "rps20": -11,
+        "rps50": -9,
+        "rps120": 0,
+        "rps250": 0
       }
     },
     {
@@ -69820,6 +71116,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 0,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": -23,
+        "rps5": -56,
+        "rps10": -2,
+        "rps20": 3,
+        "rps50": 1,
+        "rps120": 2,
+        "rps250": -10
       }
     },
     {
@@ -69857,6 +71162,15 @@ window.COCKPIT_DATA = {
         "rps20": 0,
         "rps50": 0,
         "rps120": 0,
+        "rps250": 0
+      },
+      "rankMove": {
+        "rps3": -15,
+        "rps5": -30,
+        "rps10": 37,
+        "rps20": -4,
+        "rps50": -13,
+        "rps120": 5,
         "rps250": 0
       }
     },
@@ -69896,6 +71210,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 0,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": 22,
+        "rps5": 9,
+        "rps10": 22,
+        "rps20": -2,
+        "rps50": 0,
+        "rps120": 3,
+        "rps250": 0
       }
     },
     {
@@ -69934,6 +71257,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 0,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": -7,
+        "rps5": -20,
+        "rps10": 29,
+        "rps20": 4,
+        "rps50": -4,
+        "rps120": -2,
+        "rps250": -12
       }
     },
     {
@@ -69972,6 +71304,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 0,
         "rps250": 25
+      },
+      "rankMove": {
+        "rps3": 87,
+        "rps5": 173,
+        "rps10": 0,
+        "rps20": 11,
+        "rps50": 52,
+        "rps120": 7,
+        "rps250": 0
       }
     },
     {
@@ -70010,6 +71351,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 0,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": -39,
+        "rps5": -87,
+        "rps10": -2,
+        "rps20": -39,
+        "rps50": -3,
+        "rps120": 4,
+        "rps250": -2
       }
     },
     {
@@ -70046,6 +71396,15 @@ window.COCKPIT_DATA = {
         "rps10": 0,
         "rps20": 0,
         "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      },
+      "rankMove": {
+        "rps3": -53,
+        "rps5": -117,
+        "rps10": -1,
+        "rps20": -49,
+        "rps50": -9,
         "rps120": 0,
         "rps250": 0
       }
@@ -70086,6 +71445,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 0,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": 9,
+        "rps5": 2,
+        "rps10": -11,
+        "rps20": 7,
+        "rps50": -5,
+        "rps120": 4,
+        "rps250": 2
       }
     },
     {
@@ -70124,6 +71492,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 0,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": -121,
+        "rps5": -124,
+        "rps10": -63,
+        "rps20": -19,
+        "rps50": 0,
+        "rps120": -6,
+        "rps250": -24
       }
     },
     {
@@ -70162,6 +71539,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 0,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": 3,
+        "rps5": 6,
+        "rps10": 6,
+        "rps20": 2,
+        "rps50": -1,
+        "rps120": 3,
+        "rps250": 0
       }
     },
     {
@@ -70198,6 +71584,15 @@ window.COCKPIT_DATA = {
         "rps10": 0,
         "rps20": 0,
         "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      },
+      "rankMove": {
+        "rps3": -12,
+        "rps5": 57,
+        "rps10": -4,
+        "rps20": -16,
+        "rps50": 9,
         "rps120": 0,
         "rps250": 0
       }
@@ -70238,6 +71633,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 0,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": -51,
+        "rps5": -111,
+        "rps10": -3,
+        "rps20": -43,
+        "rps50": -7,
+        "rps120": -4,
+        "rps250": 0
       }
     },
     {
@@ -70276,6 +71680,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 0,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": -93,
+        "rps5": -38,
+        "rps10": -36,
+        "rps20": -2,
+        "rps50": -1,
+        "rps120": 0,
+        "rps250": -23
       }
     },
     {
@@ -70314,6 +71727,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 0,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": -79,
+        "rps5": -30,
+        "rps10": -31,
+        "rps20": -1,
+        "rps50": 2,
+        "rps120": 0,
+        "rps250": -14
       }
     },
     {
@@ -70352,6 +71774,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 0,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": -75,
+        "rps5": -23,
+        "rps10": -20,
+        "rps20": -1,
+        "rps50": 1,
+        "rps120": 0,
+        "rps250": -14
       }
     },
     {
@@ -70390,6 +71821,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 0,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": -107,
+        "rps5": 121,
+        "rps10": -20,
+        "rps20": -11,
+        "rps50": 4,
+        "rps120": -1,
+        "rps250": -1
       }
     },
     {
@@ -70428,6 +71868,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 0,
         "rps250": 2
+      },
+      "rankMove": {
+        "rps3": -20,
+        "rps5": 28,
+        "rps10": -4,
+        "rps20": -11,
+        "rps50": 6,
+        "rps120": -4,
+        "rps250": 0
       }
     },
     {
@@ -70466,6 +71915,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 0,
         "rps250": 145
+      },
+      "rankMove": {
+        "rps3": 24,
+        "rps5": 59,
+        "rps10": 6,
+        "rps20": 6,
+        "rps50": -3,
+        "rps120": -3,
+        "rps250": -1
       }
     },
     {
@@ -70504,6 +71962,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 0,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": -73,
+        "rps5": -4,
+        "rps10": -11,
+        "rps20": 1,
+        "rps50": 5,
+        "rps120": -3,
+        "rps250": -19
       }
     },
     {
@@ -70542,6 +72009,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 0,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": -1,
+        "rps5": 2,
+        "rps10": 57,
+        "rps20": -3,
+        "rps50": -11,
+        "rps120": 1,
+        "rps250": null
       }
     },
     {
@@ -70580,6 +72056,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 0,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": 4,
+        "rps5": 52,
+        "rps10": 35,
+        "rps20": 2,
+        "rps50": -3,
+        "rps120": -7,
+        "rps250": -8
       }
     },
     {
@@ -70618,6 +72103,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 0,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": -8,
+        "rps5": 68,
+        "rps10": -8,
+        "rps20": -4,
+        "rps50": -3,
+        "rps120": -3,
+        "rps250": -4
       }
     },
     {
@@ -70656,6 +72150,15 @@ window.COCKPIT_DATA = {
         "rps50": 2,
         "rps120": 76,
         "rps250": 46
+      },
+      "rankMove": {
+        "rps3": 10,
+        "rps5": 75,
+        "rps10": 0,
+        "rps20": -21,
+        "rps50": -4,
+        "rps120": 0,
+        "rps250": 0
       }
     },
     {
@@ -70694,6 +72197,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 0,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": -4,
+        "rps5": -23,
+        "rps10": 21,
+        "rps20": -2,
+        "rps50": -1,
+        "rps120": -3,
+        "rps250": -2
       }
     },
     {
@@ -70732,6 +72244,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 0,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": 1,
+        "rps5": 43,
+        "rps10": 69,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": -3,
+        "rps250": -4
       }
     },
     {
@@ -70770,6 +72291,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 0,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": 1,
+        "rps5": 10,
+        "rps10": 82,
+        "rps20": 1,
+        "rps50": 0,
+        "rps120": 1,
+        "rps250": -7
       }
     },
     {
@@ -70806,6 +72336,15 @@ window.COCKPIT_DATA = {
         "rps10": 0,
         "rps20": 0,
         "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      },
+      "rankMove": {
+        "rps3": 3,
+        "rps5": 36,
+        "rps10": 87,
+        "rps20": 1,
+        "rps50": 2,
         "rps120": 0,
         "rps250": 0
       }
@@ -70846,6 +72385,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 0,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": -10,
+        "rps5": -7,
+        "rps10": 10,
+        "rps20": -2,
+        "rps50": -1,
+        "rps120": -1,
+        "rps250": -7
       }
     },
     {
@@ -70884,6 +72432,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 0,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": 0,
+        "rps5": -9,
+        "rps10": 19,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": -4,
+        "rps250": -10
       }
     },
     {
@@ -70918,6 +72475,15 @@ window.COCKPIT_DATA = {
         "rps3": 2,
         "rps5": 1,
         "rps10": 0,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      },
+      "rankMove": {
+        "rps3": -1,
+        "rps5": 13,
+        "rps10": 7,
         "rps20": 0,
         "rps50": 0,
         "rps120": 0,
@@ -70960,6 +72526,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 0,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": 0,
+        "rps5": 4,
+        "rps10": 8,
+        "rps20": 1,
+        "rps50": -1,
+        "rps120": -1,
+        "rps250": -11
       }
     },
     {
@@ -70995,6 +72570,15 @@ window.COCKPIT_DATA = {
         "rps5": 2,
         "rps10": 0,
         "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": 0
+      },
+      "rankMove": {
+        "rps3": -3,
+        "rps5": -1,
+        "rps10": 6,
+        "rps20": -1,
         "rps50": 0,
         "rps120": 0,
         "rps250": 0
@@ -71036,6 +72620,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 0,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": 1,
+        "rps5": 21,
+        "rps10": 16,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": -17
       }
     },
     {
@@ -71074,6 +72667,15 @@ window.COCKPIT_DATA = {
         "rps50": 0,
         "rps120": 0,
         "rps250": 0
+      },
+      "rankMove": {
+        "rps3": 38,
+        "rps5": -18,
+        "rps10": 8,
+        "rps20": 0,
+        "rps50": 0,
+        "rps120": 0,
+        "rps250": -1
       }
     }
   ],
