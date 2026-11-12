@@ -1,44 +1,54 @@
 {
-  "date": "2026-11-11",
+  "date": "2026-11-12",
   "latestReport": {
-    "date": "2026-11-11",
-    "title": "2026-11-11 ETF RPS 日报",
-    "url": "reports/2026-11-11.html?v=trend-decision",
+    "date": "2026-11-12",
+    "title": "2026-11-12 ETF RPS 日报",
+    "url": "reports/2026-11-12.html?v=trend-decision",
     "summary": {
       "mainlines": [
         "消费",
-        "机器人50",
+        "医药",
         "半导体"
       ],
       "action": "持有为主",
       "position": 90,
       "risk": "低",
       "topName": "标普消费ETF",
-      "topStreak": 19,
+      "topStreak": 20,
       "shortTermMainlines": [
+        "半导体",
         "医药",
-        "半导体"
+        "德国"
       ],
       "shortTermMainlineDetails": [
+        {
+          "theme": "半导体",
+          "name": "科创芯片ETF",
+          "code": "588200",
+          "rps3": 96.1,
+          "rps5": 98.3,
+          "rps10": 98.3
+        },
         {
           "theme": "医药",
           "name": "纳指生物科技ETF",
           "code": "513290",
-          "rps3": 94.4,
-          "rps5": 92.1,
-          "rps10": 90.4
+          "rps3": 94.9,
+          "rps5": 94.4,
+          "rps10": 85.4
         },
         {
-          "theme": "半导体",
-          "name": "半导体设备ETF",
-          "code": "159516",
-          "rps3": 64.6,
-          "rps5": 100.0,
-          "rps10": 94.9
+          "theme": "德国",
+          "name": "德国ETF",
+          "code": "513030",
+          "rps3": 91.0,
+          "rps5": 91.0,
+          "rps10": 93.3
         }
       ],
       "weeklyChanges": [
-        "主线延续"
+        "↑ 医药",
+        "↓ 机器人50"
       ],
       "weeklyRule": "对比上一个交易日的主线前三方向",
       "mainlineRule": "中期主线按 RPS 20 前 12 的主题聚合",
@@ -47,6 +57,11 @@
     }
   },
   "history": [
+    {
+      "date": "2026-11-12",
+      "title": "2026-11-12 ETF RPS 日报",
+      "url": "reports/2026-11-12.html?v=trend-decision"
+    },
     {
       "date": "2026-11-11",
       "title": "2026-11-11 ETF RPS 日报",
