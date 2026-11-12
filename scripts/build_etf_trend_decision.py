@@ -35,6 +35,52 @@ def esc(value) -> str:
     return html.escape(str(value), quote=True)
 
 
+RPS_RANK_COLUMNS = ["rps3", "rps5", "rps10", "rps20", "rps50", "rps120", "rps250"]
+
+
+def previous_trading_session(dates, latest: pd.Timestamp):
+    latest = pd.Timestamp(latest)
+    prior = sorted(pd.Timestamp(date) for date in set(dates) if pd.Timestamp(date) < latest)
+    return prior[-1] if prior else None
+
+
+def ranks_for(rows: list[dict], column: str) -> dict[str, int]:
+    """Rank every ETF that has a value for this RPS period.
+
+    ``rows`` must already be in RPS 20 descending order, which is the tie break
+    the page gets from a stable sort. The same full-universe order is used on
+    the strength, trend, and all-ETF boards.
+    """
+    selected = []
+    for row in rows:
+        value = row.get(column)
+        if value is None:
+            continue
+        selected.append((float(value), row["code"]))
+    selected.sort(key=lambda item: item[0], reverse=True)
+    return {code: index for index, (_, code) in enumerate(selected, start=1)}
+
+
+def rank_moves(current_rows: list[dict], previous_rows: list[dict]) -> dict[str, dict[str, int | None]]:
+    """Signed full-universe rank change for each RPS period.
+
+    Positive means the ETF climbed (a smaller rank number). None means it had
+    no value for that period on the previous session.
+    """
+    previous_ranks = {column: ranks_for(previous_rows, column) for column in RPS_RANK_COLUMNS}
+    current_ranks = {column: ranks_for(current_rows, column) for column in RPS_RANK_COLUMNS}
+    moves = {}
+    for row in current_rows:
+        code = row["code"]
+        by_column = {}
+        for column in RPS_RANK_COLUMNS:
+            current = current_ranks[column].get(code)
+            previous = previous_ranks[column].get(code)
+            by_column[column] = None if previous is None or current is None else int(previous - current)
+        moves[code] = by_column
+    return moves
+
+
 def set_history_prefix(payload: dict, prefix: str) -> dict:
     copied = json.loads(json.dumps(payload, ensure_ascii=False))
     for item in copied.get("history", []):
@@ -674,6 +720,20 @@ def build_payload(history_csv: Path, latest_date: str, today: str) -> dict:
                 "top10Streaks": {col: int(row.get(f"{col}_top10_streak", 0)) for col in rps_cols},
             }
         )
+    previous_date = previous_trading_session(ranked["date"].unique(), latest)
+    previous_rows = []
+    if previous_date is not None:
+        previous_day = ranked[ranked["date"] == previous_date].sort_values("rps20", ascending=False)
+        for _, row in previous_day.iterrows():
+            previous_rows.append(
+                {
+                    "code": row["code"],
+                    **{column: clean(row.get(column)) for column in rps_cols},
+                }
+            )
+    moves = rank_moves(ranking_rows, previous_rows)
+    for row in ranking_rows:
+        row["rankMove"] = moves.get(row["code"], {})
 
     def alert_item(row: pd.Series, label: str, reason: str, score: float) -> dict:
         return {
@@ -1094,7 +1154,13 @@ def render(payload: dict) -> str:
     .rank-table .signal-col {{ width: 86px; text-align: center; }}
     .rank-table .phase-col {{ width: 92px; text-align: center; }}
     .rank-table .score-col {{ width: 86px; }}
-    .rank-name {{ overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }}
+    .rank-name {{ display: flex; align-items: center; gap: 4px; min-width: 0; overflow: hidden; }}
+    .rank-name-text {{ min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }}
+    .rank-move {{ flex: 0 0 auto; font-size: 10px; line-height: 1.2; font-weight: 800; font-variant-numeric: tabular-nums; white-space: nowrap; }}
+    .rank-move-up {{ color: #c0181f; }}
+    .rank-move-down {{ color: #067a73; }}
+    .rank-move-flat {{ color: #a1a1aa; }}
+    .rank-move-new {{ color: #c0181f; font-size: 10px; line-height: 1.2; border: 1px solid #fecaca; border-radius: 999px; padding: 0 3px; background: #fff5f5; }}
     .tone-hot {{ background: #f39ab0; }}
     .tone-mid {{ background: #ffd88e; }}
     .tone-soft {{ background: #fff2bb; }}
@@ -1382,6 +1448,13 @@ def render(payload: dict) -> str:
       if (rank > 10) return "分歧期";
       return "观察期";
     }}
+    function rankMoveMarkup(row) {{
+      const delta = row.rankMove ? row.rankMove[state.rps] : null;
+      if (delta === null || delta === undefined) return '<span class="rank-move rank-move-new">新</span>';
+      if (delta > 0) return `<span class="rank-move rank-move-up">↑${{delta}}</span>`;
+      if (delta < 0) return `<span class="rank-move rank-move-down">↓${{Math.abs(delta)}}</span>`;
+      return '<span class="rank-move rank-move-flat">–</span>';
+    }}
     function renderRank() {{
       const rows = [...window.COCKPIT_DATA.rankings]
         .filter(row => state.mode === "all" || Number(row[state.rps]) >= 90)
@@ -1417,7 +1490,7 @@ def render(payload: dict) -> str:
         return `<tr class="${{resonance ? `resonance-row-${{resonance}}` : ""}}">
           <td class="rank-col">${{idx + 1}}</td>
           <td class="left code-col">${{row.code}}</td>
-          <td class="left name-col name-cell"><div class="rank-name">${{row.name}}</div></td>
+          <td class="left name-col name-cell"><div class="rank-name"><span class="rank-name-text">${{row.name}}</span>${{rankMoveMarkup(row)}}</div></td>
           <td class="rps-col ${{t ? `tone-${{t}}` : ""}}">${{fmt(v)}}</td>
           <td class="streak-col"><span class="streak-chip ${{streakTone(streak)}}">${{streak}}天</span></td>
           <td class="signal-col"><span class="badge ${{signalClass(signal)}}">${{signal}}</span></td>
