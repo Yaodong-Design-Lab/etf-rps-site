@@ -1,6 +1,9 @@
 {
-  "status": "updated",
+  "status": "refreshed",
   "date": "2026-11-16",
-  "detail": "site and automation baseline rebuilt",
-  "updatedAt": "2026-11-16T10:14:04.226646+00:00"
+  "detail": "refreshed 2026-11-16 from 178 ETF quotes; history unchanged",
+  "updatedAt": "2026-11-16T20:13:29.668695+00:00",
+  "etfCount": 178,
+  "quoteDate": "2026-11-16",
+  "historyRows": 77457
 }
