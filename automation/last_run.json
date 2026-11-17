@@ -1,9 +1,9 @@
 {
-  "status": "refreshed",
-  "date": "2026-11-16",
-  "detail": "refreshed 2026-11-16 from 178 ETF quotes; history unchanged",
-  "updatedAt": "2026-11-16T20:13:29.668695+00:00",
+  "status": "updated",
+  "date": "2026-11-17",
+  "detail": "updated 2026-11-17 from 178 ETF quotes; history appended",
+  "updatedAt": "2026-11-17T09:46:26.606902+00:00",
   "etfCount": 178,
-  "quoteDate": "2026-11-16",
-  "historyRows": 77457
+  "quoteDate": "2026-11-17",
+  "historyRows": 77635
 }
