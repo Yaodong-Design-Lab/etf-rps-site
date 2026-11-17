@@ -1,9 +1,6 @@
 {
   "status": "updated",
   "date": "2026-11-17",
-  "detail": "updated 2026-11-17 from 178 ETF quotes; history appended",
-  "updatedAt": "2026-11-17T10:00:35+00:00",
-  "etfCount": 178,
-  "quoteDate": "2026-11-17",
-  "historyRows": 77635
+  "detail": "site and automation baseline rebuilt",
+  "updatedAt": "2026-11-17T10:04:55.105266+00:00"
 }
