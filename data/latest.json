@@ -1,9 +1,9 @@
 {
-  "date": "2026-11-19",
+  "date": "2026-11-20",
   "latestReport": {
-    "date": "2026-11-19",
-    "title": "2026-11-19 ETF RPS 日报",
-    "url": "reports/2026-11-19.html?v=trend-decision",
+    "date": "2026-11-20",
+    "title": "2026-11-20 ETF RPS 日报",
+    "url": "reports/2026-11-20.html?v=trend-decision",
     "summary": {
       "mainlines": [
         "红利",
@@ -14,36 +14,36 @@
       "position": 90,
       "risk": "低",
       "topName": "消费50ETF",
-      "topStreak": 18,
+      "topStreak": 19,
       "shortTermMainlines": [
-        "半导体",
-        "家电",
+        "能源",
+        "兴全沪深300质量",
         "红利"
       ],
       "shortTermMainlineDetails": [
         {
-          "theme": "半导体",
-          "name": "半导体设备ETF",
-          "code": "159516",
+          "theme": "能源",
+          "name": "能源ETF",
+          "code": "159930",
           "rps3": 100.0,
-          "rps5": 87.1,
-          "rps10": 96.1
+          "rps5": 93.3,
+          "rps10": 95.5
         },
         {
-          "theme": "家电",
-          "name": "家电ETF",
-          "code": "159996",
-          "rps3": 94.4,
-          "rps5": 94.4,
+          "theme": "兴全沪深300质量",
+          "name": "兴全沪深300质量ETF",
+          "code": "563960",
+          "rps3": 99.4,
+          "rps5": 97.8,
           "rps10": 94.4
         },
         {
           "theme": "红利",
-          "name": "红利低波50ETF",
-          "code": "515450",
-          "rps3": 93.8,
+          "name": "300红利低波ETF",
+          "code": "515300",
+          "rps3": 98.9,
           "rps5": 99.4,
-          "rps10": 98.3
+          "rps10": 98.9
         }
       ],
       "weeklyChanges": [
@@ -56,6 +56,11 @@
     }
   },
   "history": [
+    {
+      "date": "2026-11-20",
+      "title": "2026-11-20 ETF RPS 日报",
+      "url": "reports/2026-11-20.html?v=trend-decision"
+    },
     {
       "date": "2026-11-19",
       "title": "2026-11-19 ETF RPS 日报",
@@ -170,11 +175,6 @@
       "date": "2026-10-20",
       "title": "2026-10-20 ETF RPS 日报",
       "url": "reports/2026-10-20.html?v=trend-decision"
-    },
-    {
-      "date": "2026-10-19",
-      "title": "2026-10-19 ETF RPS 日报",
-      "url": "reports/2026-10-19.html?v=trend-decision"
     }
   ]
 }
