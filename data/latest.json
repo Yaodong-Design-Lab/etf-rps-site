@@ -1,53 +1,54 @@
 {
-  "date": "2026-11-23",
+  "date": "2026-11-24",
   "latestReport": {
-    "date": "2026-11-23",
-    "title": "2026-11-23 ETF RPS 日报",
-    "url": "reports/2026-11-23.html?v=trend-decision",
+    "date": "2026-11-24",
+    "title": "2026-11-24 ETF RPS 日报",
+    "url": "reports/2026-11-24.html?v=trend-decision",
     "summary": {
       "mainlines": [
         "消费",
         "红利",
-        "银行"
+        "半导体"
       ],
       "action": "持有为主",
       "position": 90,
       "risk": "低",
       "topName": "消费50ETF",
-      "topStreak": 20,
+      "topStreak": 21,
       "shortTermMainlines": [
-        "兴全沪深300质量",
-        "非银金融",
-        "银行"
+        "豆粕",
+        "银行",
+        "非银金融"
       ],
       "shortTermMainlineDetails": [
         {
-          "theme": "兴全沪深300质量",
-          "name": "兴全沪深300质量ETF",
-          "code": "563960",
-          "rps3": 98.9,
-          "rps5": 98.3,
-          "rps10": 95.5
-        },
-        {
-          "theme": "非银金融",
-          "name": "金融ETF",
-          "code": "510230",
-          "rps3": 98.3,
-          "rps5": 93.8,
-          "rps10": 98.9
+          "theme": "豆粕",
+          "name": "豆粕ETF",
+          "code": "159985",
+          "rps3": 99.4,
+          "rps5": 99.4,
+          "rps10": 97.2
         },
         {
           "theme": "银行",
           "name": "银行ETF",
           "code": "512800",
-          "rps3": 97.8,
-          "rps5": 92.1,
+          "rps3": 96.6,
+          "rps5": 95.5,
           "rps10": 100.0
+        },
+        {
+          "theme": "非银金融",
+          "name": "金融ETF",
+          "code": "510230",
+          "rps3": 96.1,
+          "rps5": 93.8,
+          "rps10": 98.3
         }
       ],
       "weeklyChanges": [
-        "主线延续"
+        "↑ 半导体",
+        "↓ 银行"
       ],
       "weeklyRule": "对比上一个交易日的主线前三方向",
       "mainlineRule": "中期主线按 RPS 20 前 12 的主题聚合",
@@ -56,6 +57,11 @@
     }
   },
   "history": [
+    {
+      "date": "2026-11-24",
+      "title": "2026-11-24 ETF RPS 日报",
+      "url": "reports/2026-11-24.html?v=trend-decision"
+    },
     {
       "date": "2026-11-23",
       "title": "2026-11-23 ETF RPS 日报",
@@ -160,11 +166,6 @@
       "date": "2026-10-26",
       "title": "2026-10-26 ETF RPS 日报",
       "url": "reports/2026-10-26.html?v=trend-decision"
-    },
-    {
-      "date": "2026-10-23",
-      "title": "2026-10-23 ETF RPS 日报",
-      "url": "reports/2026-10-23.html?v=trend-decision"
     }
   ]
 }
