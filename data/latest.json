@@ -1,45 +1,53 @@
 {
-  "date": "2026-11-25",
+  "date": "2026-11-26",
   "latestReport": {
-    "date": "2026-11-25",
-    "title": "2026-11-25 ETF RPS 日报",
-    "url": "reports/2026-11-25.html?v=trend-decision",
+    "date": "2026-11-26",
+    "title": "2026-11-26 ETF RPS 日报",
+    "url": "reports/2026-11-26.html?v=trend-decision",
     "summary": {
       "mainlines": [
-        "红利",
         "消费",
+        "红利",
         "银行"
       ],
       "action": "持有为主",
       "position": 90,
       "risk": "低",
       "topName": "消费50ETF",
-      "topStreak": 22,
+      "topStreak": 23,
       "shortTermMainlines": [
-        "豆粕",
-        "能源化工"
+        "医药",
+        "能源化工",
+        "银行"
       ],
       "shortTermMainlineDetails": [
         {
-          "theme": "豆粕",
-          "name": "豆粕ETF",
-          "code": "159985",
-          "rps3": 93.3,
-          "rps5": 94.4,
+          "theme": "医药",
+          "name": "标普生物科技ETF",
+          "code": "159502",
+          "rps3": 99.4,
+          "rps5": 100.0,
           "rps10": 82.0
         },
         {
           "theme": "能源化工",
           "name": "能源化工ETF",
           "code": "159981",
-          "rps3": 76.4,
-          "rps5": 98.9,
-          "rps10": 87.1
+          "rps3": 98.9,
+          "rps5": 99.4,
+          "rps10": 92.7
+        },
+        {
+          "theme": "银行",
+          "name": "银行ETF",
+          "code": "512800",
+          "rps3": 95.5,
+          "rps5": 97.8,
+          "rps10": 99.4
         }
       ],
       "weeklyChanges": [
-        "↑ 银行",
-        "↓ 半导体"
+        "主线延续"
       ],
       "weeklyRule": "对比上一个交易日的主线前三方向",
       "mainlineRule": "中期主线按 RPS 20 前 12 的主题聚合",
@@ -48,6 +56,11 @@
     }
   },
   "history": [
+    {
+      "date": "2026-11-26",
+      "title": "2026-11-26 ETF RPS 日报",
+      "url": "reports/2026-11-26.html?v=trend-decision"
+    },
     {
       "date": "2026-11-25",
       "title": "2026-11-25 ETF RPS 日报",
